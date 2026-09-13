@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+phase1_output/payloads/
+db/*.sqlite-journal
+db/*.sqlite-wal
+db/*.sqlite-shm
+.pytest_cache/
