@@ -45,13 +45,23 @@ BASE_URL = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons"
 
 USER_AGENT = (
     "espn-ffl-league-intelligence/0.1 (private league analytics; "
-    "single daily request cycle)"
+    "daily automation, plus an opt-in game-day live-refresh mode)"
 )
 
 REQUEST_DELAY_SECONDS = 1.0
 REQUEST_TIMEOUT_SECONDS = 20
 MAX_RETRIES = 3
 BACKOFF_BASE_SECONDS = 2.0  # 2s, 4s, 8s
+
+# --- Live refresh (opt-in, game-day only — see src/live_refresh.py) --------
+# NOT the scheduled daily job's cadence — a separate mode the owner starts
+# manually while actively watching. Shared by src/live_refresh.py (how often
+# it re-runs the pipeline) and build_dashboard.py (how often the open page
+# reloads itself to pick up the freshly-written file) so the two can never
+# drift out of sync. 240s = 4 minutes, the middle of the owner's requested
+# 3-5 minute range (2026-09-14).
+
+LIVE_REFRESH_SECONDS = 240
 
 # --- Analytics gates --------------------------------------------------------
 # Sized down from FPL's GW10/GW15 thresholds to fit a ~14-17 week NFL season.

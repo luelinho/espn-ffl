@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T02:50:30.562644+00:00",
+  "generated_at": "2026-09-14T03:10:25.399149+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -275,7 +275,7 @@
             "a": {
               "team_id": 16,
               "name": "Bijan, demons!",
-              "score": 120.0
+              "score": 125.0
             },
             "b": {
               "team_id": 17,
@@ -293,7 +293,7 @@
             "b": {
               "team_id": 15,
               "name": "Uncle Rico's QB Camp",
-              "score": 157.0
+              "score": 160.0
             },
             "live": true
           },
@@ -301,12 +301,12 @@
             "a": {
               "team_id": 19,
               "name": "Shivakamini Somakandarkram",
-              "score": 104.0
+              "score": 105.0
             },
             "b": {
               "team_id": 30,
               "name": "Fleetwood Mac S3x Pants",
-              "score": 80.0
+              "score": 82.0
             },
             "live": true
           },
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 26,
               "name": "Purdy Good Team",
-              "score": 107.0
+              "score": 109.0
             },
             "b": {
               "team_id": 25,
@@ -380,7 +380,7 @@
           "team_id": 16,
           "team_name": "Bijan, demons!",
           "manager": "tripleH_08",
-          "lineup_efficiency": 0.8955223880597015,
+          "lineup_efficiency": 0.8992805755395683,
           "bench_points": 26.0,
           "is_provisional": true
         },
@@ -404,7 +404,7 @@
           "team_id": 26,
           "team_name": "Purdy Good Team",
           "manager": "hayrich_06",
-          "lineup_efficiency": 0.8359375,
+          "lineup_efficiency": 0.8384615384615385,
           "bench_points": 59.0,
           "is_provisional": true
         },
@@ -414,6 +414,14 @@
           "manager": "ryanga9559742",
           "lineup_efficiency": 0.8273381294964028,
           "bench_points": 52.0,
+          "is_provisional": true
+        },
+        {
+          "team_id": 19,
+          "team_name": "Shivakamini Somakandarkram",
+          "manager": "kcstrack",
+          "lineup_efficiency": 0.8203125,
+          "bench_points": 45.0,
           "is_provisional": true
         },
         {
@@ -433,18 +441,10 @@
           "is_provisional": true
         },
         {
-          "team_id": 19,
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "kcstrack",
-          "lineup_efficiency": 0.8125,
-          "bench_points": 45.0,
-          "is_provisional": true
-        },
-        {
           "team_id": 30,
           "team_name": "Fleetwood Mac S3x Pants",
           "manager": "Kwnilson",
-          "lineup_efficiency": 0.7843137254901961,
+          "lineup_efficiency": 0.7884615384615384,
           "bench_points": 40.0,
           "is_provisional": true
         },
@@ -476,7 +476,7 @@
         "season_stats": {
           "weeks_played": 1,
           "points_for": 137.0,
-          "points_against": 107.0,
+          "points_against": 109.0,
           "record": {
             "w": 0,
             "l": 0,
@@ -884,22 +884,22 @@
         },
         "16": {
           "week_stats": {
-            "actual_points": 120.0,
-            "optimal_points": 134.0,
-            "efficiency": 0.8955223880597015,
+            "actual_points": 125.0,
+            "optimal_points": 139.0,
+            "efficiency": 0.8992805755395683,
             "bench_points": 26.0,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 1,
-            "points_for": 120.0,
+            "points_for": 125.0,
             "points_against": 110.0,
             "record": {
               "w": 0,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8955223880597015,
+            "lineup_efficiency": 0.8992805755395683,
             "total_bench_points": 26.0,
             "is_provisional": true
           },
@@ -917,7 +917,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 22.0,
+              "points": 27.0,
               "pro_team_id": 19
             },
             {
@@ -1156,22 +1156,22 @@
         },
         "30": {
           "week_stats": {
-            "actual_points": 80.0,
-            "optimal_points": 102.0,
-            "efficiency": 0.7843137254901961,
+            "actual_points": 82.0,
+            "optimal_points": 104.0,
+            "efficiency": 0.7884615384615384,
             "bench_points": 40.0,
             "rank": 12
           },
           "season_stats": {
             "weeks_played": 1,
-            "points_for": 80.0,
-            "points_against": 104.0,
+            "points_for": 82.0,
+            "points_against": 105.0,
             "record": {
               "w": 0,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.7843137254901961,
+            "lineup_efficiency": 0.7884615384615384,
             "total_bench_points": 40.0,
             "is_provisional": true
           },
@@ -1183,6 +1183,14 @@
               "slot_id": 4,
               "points": 28.0,
               "pro_team_id": 18
+            },
+            {
+              "name": "Dak Prescott",
+              "position_id": 1,
+              "is_starter": true,
+              "slot_id": 0,
+              "points": 10.0,
+              "pro_team_id": 6
             },
             {
               "name": "Tetairoa McMillan",
@@ -1207,14 +1215,6 @@
               "slot_id": 6,
               "points": 9.0,
               "pro_team_id": 8
-            },
-            {
-              "name": "Dak Prescott",
-              "position_id": 1,
-              "is_starter": true,
-              "slot_id": 0,
-              "points": 8.0,
-              "pro_team_id": 6
             },
             {
               "name": "Jason Myers",
@@ -1301,7 +1301,7 @@
           "season_stats": {
             "weeks_played": 1,
             "points_for": 120.0,
-            "points_against": 157.0,
+            "points_against": 160.0,
             "record": {
               "w": 0,
               "l": 0,
@@ -1437,7 +1437,7 @@
           "season_stats": {
             "weeks_played": 1,
             "points_for": 137.0,
-            "points_against": 107.0,
+            "points_against": 109.0,
             "record": {
               "w": 0,
               "l": 0,
@@ -1972,22 +1972,22 @@
         },
         "26": {
           "week_stats": {
-            "actual_points": 107.0,
-            "optimal_points": 128.0,
-            "efficiency": 0.8359375,
+            "actual_points": 109.0,
+            "optimal_points": 130.0,
+            "efficiency": 0.8384615384615385,
             "bench_points": 59.0,
             "rank": 8
           },
           "season_stats": {
             "weeks_played": 1,
-            "points_for": 107.0,
+            "points_for": 109.0,
             "points_against": 137.0,
             "record": {
               "w": 0,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8359375,
+            "lineup_efficiency": 0.8384615384615385,
             "total_bench_points": 59.0,
             "is_provisional": true
           },
@@ -2021,7 +2021,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 13.0,
+              "points": 15.0,
               "pro_team_id": 6
             },
             {
@@ -2108,22 +2108,22 @@
         },
         "19": {
           "week_stats": {
-            "actual_points": 104.0,
+            "actual_points": 105.0,
             "optimal_points": 128.0,
-            "efficiency": 0.8125,
+            "efficiency": 0.8203125,
             "bench_points": 45.0,
             "rank": 9
           },
           "season_stats": {
             "weeks_played": 1,
-            "points_for": 104.0,
-            "points_against": 80.0,
+            "points_for": 105.0,
+            "points_against": 82.0,
             "record": {
               "w": 0,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8125,
+            "lineup_efficiency": 0.8203125,
             "total_bench_points": 45.0,
             "is_provisional": true
           },
@@ -2153,20 +2153,20 @@
               "pro_team_id": 14
             },
             {
+              "name": "Malik Nabers",
+              "position_id": 3,
+              "is_starter": true,
+              "slot_id": 23,
+              "points": 12.0,
+              "pro_team_id": 19
+            },
+            {
               "name": "Chase McLaughlin",
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
               "points": 11.0,
               "pro_team_id": 27
-            },
-            {
-              "name": "Malik Nabers",
-              "position_id": 3,
-              "is_starter": true,
-              "slot_id": 23,
-              "points": 11.0,
-              "pro_team_id": 19
             },
             {
               "name": "Drake Maye",
@@ -2261,7 +2261,7 @@
           "season_stats": {
             "weeks_played": 1,
             "points_for": 110.0,
-            "points_against": 120.0,
+            "points_against": 125.0,
             "record": {
               "w": 0,
               "l": 0,
@@ -2388,15 +2388,15 @@
         },
         "15": {
           "week_stats": {
-            "actual_points": 157.0,
-            "optimal_points": 157.0,
+            "actual_points": 160.0,
+            "optimal_points": 160.0,
             "efficiency": 1.0,
             "bench_points": 3.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 1,
-            "points_for": 157.0,
+            "points_for": 160.0,
             "points_against": 120.0,
             "record": {
               "w": 0,
@@ -2449,20 +2449,20 @@
               "pro_team_id": 15
             },
             {
+              "name": "Javonte Williams",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 15.0,
+              "pro_team_id": 6
+            },
+            {
               "name": "Matthew Golden",
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
               "points": 15.0,
               "pro_team_id": 9
-            },
-            {
-              "name": "Javonte Williams",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 12.0,
-              "pro_team_id": 6
             },
             {
               "name": "Jake Bates",
@@ -2550,17 +2550,17 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 1 team 30: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=80.0"
+            "description": "League 1618731 week 1 team 30: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=82.0"
           },
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 1 team 19: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=104.0"
+            "description": "League 1618731 week 1 team 19: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=105.0"
           },
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 1 team 15: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=157.0"
+            "description": "League 1618731 week 1 team 15: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=160.0"
           }
         ],
         "total_unresolved": 14
@@ -2810,7 +2810,7 @@
             "b": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 70.24
+              "score": 71.52
             },
             "live": true
           },
@@ -2818,7 +2818,7 @@
             "a": {
               "team_id": 5,
               "name": "Johnny Sins",
-              "score": 121.02
+              "score": 129.12
             },
             "b": {
               "team_id": 11,
@@ -2831,7 +2831,7 @@
             "a": {
               "team_id": 7,
               "name": "Nabers know my name",
-              "score": 77.36
+              "score": 79.16
             },
             "b": {
               "team_id": 6,
@@ -2918,19 +2918,19 @@
           "is_provisional": true
         },
         {
+          "team_id": 5,
+          "team_name": "Johnny Sins",
+          "manager": "Gibtwig",
+          "lineup_efficiency": 0.8191853825656643,
+          "bench_points": 68.7,
+          "is_provisional": true
+        },
+        {
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "rmb3zz",
           "lineup_efficiency": 0.7987421383647798,
           "bench_points": 46.42,
-          "is_provisional": true
-        },
-        {
-          "team_id": 5,
-          "team_name": "Johnny Sins",
-          "manager": "Gibtwig",
-          "lineup_efficiency": 0.7982849604221635,
-          "bench_points": 68.7,
           "is_provisional": true
         },
         {
@@ -2953,7 +2953,7 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "espnfan0251579405",
-          "lineup_efficiency": 0.6927021696252464,
+          "lineup_efficiency": 0.7081188118811881,
           "bench_points": 49.3,
           "is_provisional": true
         },
@@ -2961,7 +2961,7 @@
           "team_id": 7,
           "team_name": "Nabers know my name",
           "manager": "ferrari360spider92",
-          "lineup_efficiency": 0.6631236070632608,
+          "lineup_efficiency": 0.6682424447070741,
           "bench_points": 79.94,
           "is_provisional": true
         }
@@ -3290,7 +3290,7 @@
           "season_stats": {
             "weeks_played": 1,
             "points_for": 108.06,
-            "points_against": 70.24,
+            "points_against": 71.52,
             "record": {
               "w": 0,
               "l": 0,
@@ -3433,22 +3433,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 70.24,
-            "optimal_points": 101.4,
-            "efficiency": 0.6927021696252464,
+            "actual_points": 71.52,
+            "optimal_points": 101.0,
+            "efficiency": 0.7081188118811881,
             "bench_points": 49.3,
             "rank": 12
           },
           "season_stats": {
             "weeks_played": 1,
-            "points_for": 70.24,
+            "points_for": 71.52,
             "points_against": 108.06,
             "record": {
               "w": 0,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.6927021696252464,
+            "lineup_efficiency": 0.7081188118811881,
             "total_bench_points": 49.3,
             "is_provisional": true
           },
@@ -3466,7 +3466,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 13.8,
+              "points": 15.4,
               "pro_team_id": 6
             },
             {
@@ -3478,20 +3478,20 @@
               "pro_team_id": 2
             },
             {
+              "name": "Dak Prescott",
+              "position_id": 1,
+              "is_starter": true,
+              "slot_id": 0,
+              "points": 9.72,
+              "pro_team_id": 6
+            },
+            {
               "name": "Saquon Barkley",
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
               "points": 9.0,
               "pro_team_id": 21
-            },
-            {
-              "name": "Dak Prescott",
-              "position_id": 1,
-              "is_starter": true,
-              "slot_id": 0,
-              "points": 8.04,
-              "pro_team_id": 6
             },
             {
               "name": "Marvin Harrison Jr.",
@@ -3502,19 +3502,19 @@
               "pro_team_id": 22
             },
             {
-              "name": "Cowboys D/ST",
-              "position_id": 16,
-              "is_starter": true,
-              "slot_id": 16,
-              "points": 4.0,
-              "pro_team_id": 6
-            },
-            {
               "name": "Jake Ferguson",
               "position_id": 4,
               "is_starter": true,
               "slot_id": 23,
               "points": 2.6,
+              "pro_team_id": 6
+            },
+            {
+              "name": "Cowboys D/ST",
+              "position_id": 16,
+              "is_starter": true,
+              "slot_id": 16,
+              "points": 2.0,
               "pro_team_id": 6
             },
             {
@@ -3898,7 +3898,7 @@
           "season_stats": {
             "weeks_played": 1,
             "points_for": 98.96,
-            "points_against": 121.02,
+            "points_against": 129.12,
             "record": {
               "w": 0,
               "l": 0,
@@ -4050,7 +4050,7 @@
           "season_stats": {
             "weeks_played": 1,
             "points_for": 154.52,
-            "points_against": 77.36,
+            "points_against": 79.16,
             "record": {
               "w": 0,
               "l": 0,
@@ -4193,26 +4193,34 @@
         },
         "5": {
           "week_stats": {
-            "actual_points": 121.02,
-            "optimal_points": 151.60000000000002,
-            "efficiency": 0.7982849604221635,
+            "actual_points": 129.12,
+            "optimal_points": 157.62,
+            "efficiency": 0.8191853825656643,
             "bench_points": 68.7,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 1,
-            "points_for": 121.02,
+            "points_for": 129.12,
             "points_against": 98.96,
             "record": {
               "w": 0,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.7982849604221635,
+            "lineup_efficiency": 0.8191853825656643,
             "total_bench_points": 68.7,
             "is_provisional": true
           },
           "roster": [
+            {
+              "name": "Jaxson Dart",
+              "position_id": 1,
+              "is_starter": true,
+              "slot_id": 0,
+              "points": 26.32,
+              "pro_team_id": 19
+            },
             {
               "name": "Jaxon Smith-Njigba",
               "position_id": 3,
@@ -4220,14 +4228,6 @@
               "slot_id": 4,
               "points": 26.2,
               "pro_team_id": 26
-            },
-            {
-              "name": "Jaxson Dart",
-              "position_id": 1,
-              "is_starter": true,
-              "slot_id": 0,
-              "points": 21.12,
-              "pro_team_id": 19
             },
             {
               "name": "DJ Moore",
@@ -4238,20 +4238,20 @@
               "pro_team_id": 2
             },
             {
+              "name": "Javonte Williams",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 15.5,
+              "pro_team_id": 6
+            },
+            {
               "name": "T.J. Hockenson",
               "position_id": 4,
               "is_starter": true,
               "slot_id": 6,
               "points": 13.6,
               "pro_team_id": 16
-            },
-            {
-              "name": "Javonte Williams",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 12.6,
-              "pro_team_id": 6
             },
             {
               "name": "Cam Little",
@@ -4657,22 +4657,22 @@
         },
         "7": {
           "week_stats": {
-            "actual_points": 77.36,
-            "optimal_points": 116.66,
-            "efficiency": 0.6631236070632608,
+            "actual_points": 79.16,
+            "optimal_points": 118.46000000000001,
+            "efficiency": 0.6682424447070741,
             "bench_points": 79.94,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 1,
-            "points_for": 77.36,
+            "points_for": 79.16,
             "points_against": 154.52,
             "record": {
               "w": 0,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.6631236070632608,
+            "lineup_efficiency": 0.6682424447070741,
             "total_bench_points": 79.94,
             "is_provisional": true
           },
@@ -4698,7 +4698,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 11.1,
+              "points": 12.9,
               "pro_team_id": 19
             },
             {
@@ -5022,12 +5022,12 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 1 team 7: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=77.36"
+            "description": "League 581297461 week 1 team 7: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=79.16"
           },
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 1 team 1: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=70.24"
+            "description": "League 581297461 week 1 team 1: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=71.52"
           },
           {
             "severity": "warning",

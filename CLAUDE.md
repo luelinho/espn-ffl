@@ -162,16 +162,35 @@ with five pages: Home, My Team, League, Managers (dropdown over every team
 in the current league, reusing My Team's exact render function), Analytics.
 A league switcher in the header re-renders whichever page is active for
 either league — every render function reads `currentLeague` fresh, nothing
-is cached per-league. Fresh visual identity, not a reskin of the FPL
-dashboard (owner's explicit call, 2026-09-13): dark navy/charcoal ground,
-amber accent, no purple/lime. Team logos are embedded as base64 at digest
-build time (`src/digest.py`), same reasoning as club badges in the FPL
-project — ESPN's logo CDN needs the same auth cookies as the API, so a
+is cached per-league.
+
+**Visual identity, redesigned 2026-09-14** from an owner-supplied reference
+image: an app-shell layout — a fixed left sidebar (collapses to a
+horizontal scrollable bar below 820px, never just hidden — a bare
+`display:none` there was a real regression caught live, see below), a
+topbar with the league switcher and an owner profile chip, gradient KPI
+cards, and real chart components (`ringChart`/`barList`/`dotMatrix`/
+`weeklyBarHistory` in the JS) — every one driven by actual digest numbers,
+no fabricated trend deltas or placeholder history. Dark navy/violet ground,
+amber/blue-purple/cyan/pink gradients — not a reskin of the FPL dashboard's
+purple/lime (owner's explicit call). Team logos are embedded as base64 at
+digest build time (`src/digest.py`), same reasoning as club badges in the
+FPL project — ESPN's logo CDN needs the same auth cookies as the API, so a
 plain browser opening the finished file could never load them by URL. Two
 of 26 teams' logos are dead third-party links (not our bug) and fall back
 to a plain "?" placeholder.
 
-It is a snapshot, not a live view — regenerate it after any data change:
+**Live-refresh mode, opt-in, game-day only.** The page embeds `<meta
+http-equiv="refresh" content="{LIVE_REFRESH_SECONDS}">` (default 240s = 4
+minutes, config.py) and persists the active tab/league to `localStorage`
+across reloads — otherwise every auto-reload would silently dump you back
+to Home/the first league. That reload only shows new data if
+`src/live_refresh.py` is actually running in the background (a separate,
+manually-started loop — see below); otherwise it's a harmless reload of
+identical content, and the topbar says so. This does NOT change the
+scheduled daily job's cadence.
+
+It is a snapshot, not a live view by default — regenerate it after any data change:
 
 ```bash
 python -m src.daily_sync
@@ -181,10 +200,20 @@ python -m src.digest
 python -m src.build_dashboard
 ```
 
+For game-day, run the whole chain on a loop instead: `python -m
+src.live_refresh` (Ctrl+C to stop; `--interval` overrides the default
+240s). It shares `config.LIVE_REFRESH_SECONDS` with the page's own
+auto-reload so the two can never drift out of sync — change the interval
+in one place, not two.
+
 If you edit `src/build_dashboard.py`, always run `build_dashboard` again
 afterward and re-open the file — editing the generator does not change the
 already-written `dashboard.html` on disk. **Always include `<meta
 charset="utf-8">` in the HTML output** — omitting it was caught live: a
 plain local `http.server` preview rendered `·`/`—` as mojibake (`Â·`)
 without it, exactly the kind of bug that's invisible until someone actually
-looks at the rendered page.
+looks at the rendered page. **Never hide primary navigation at a
+breakpoint without a working replacement** — the same class of bug,
+caught the same way: `display:none` on the sidebar below 820px looked fine
+in a screenshot and was still a real dead end, since nothing else let you
+reach any tab but Home at that width.
