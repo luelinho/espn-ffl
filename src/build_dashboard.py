@@ -148,7 +148,14 @@ main { flex: 1; min-width: 0; height: 100vh; overflow: hidden; display: flex; fl
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th, td { text-align: left; padding: 8px 8px; border-bottom: 1px solid var(--border); }
 th { color: var(--ink-soft); font-weight: 700; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.04em; }
+/* "My team" gets a consistent, subtle accent tint everywhere it shows up
+   among other teams (owner's ask, 2026-09-14) — standings already had
+   this for table rows; the same tint now extends to the scoreboard and
+   matchup headers via .mine on the specific team's own block, not the
+   whole row, so it reads as "this one is you" rather than a full-row
+   highlight competing with LIVE badges etc. */
 tr.owner-row td { background: var(--accent-soft); }
+tr.owner-row td:first-child { border-left: 2px solid var(--accent); padding-left: 6px; }
 .muted { color: var(--ink-soft); font-size: 12px; }
 .badge { display: inline-block; font-size: 9.5px; font-weight: 800; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; }
 .badge.live { background: rgba(241,88,163,0.16); color: var(--pink-a); }
@@ -180,6 +187,8 @@ tr.owner-row td { background: var(--accent-soft); }
 .team-cell { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .team-cell-id { display: flex; flex-direction: column; min-width: 0; }
 .team-cell-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.team-cell.mine, .side.mine, .mc-team.mine { background: var(--accent-soft); border-radius: 8px; padding: 3px 8px; margin: -3px -8px; }
+.mp.mine { background: var(--accent-soft); border-radius: 8px; padding: 4px 8px; margin: -4px -8px; }
 /* Every scoreboard matchup is clickable — opens the same position-aligned
    comparison used for "my matchup" on Home, but for any two managers
    (owner's explicit ask, 2026-09-14: "see the live scoring between all
@@ -381,10 +390,11 @@ function barList(rows, colorA, colorB) {
 function matchRow(lg, m) {
   const L = DIGEST.leagues[lg];
   const mgrA = teamManager(L, m.a.team_id), mgrB = teamManager(L, m.b.team_id);
+  const aMine = m.a.team_id === L.my_team_id, bMine = m.b.team_id === L.my_team_id;
   return `<div class="match-row" onclick="openMatchupModal('${lg}', ${m.a.team_id}, ${m.b.team_id}, ${m.a.score}, ${m.b.score}, ${m.live ? 'true' : 'false'})">
-    <div class="side">${logoImg(lg, m.a.team_id)}<div class="side-id"><span class="side-name">${m.a.name}</span>${mgrA ? `<span class="side-owner">${mgrA}</span>` : ''}</div></div>
+    <div class="side${aMine ? ' mine' : ''}">${logoImg(lg, m.a.team_id)}<div class="side-id"><span class="side-name">${m.a.name}</span>${mgrA ? `<span class="side-owner">${mgrA}</span>` : ''}</div></div>
     <div class="score">${m.a.score.toFixed(1)} - ${m.b.score.toFixed(1)} ${m.live ? '<span class="badge live">LIVE</span>' : ''}</div>
-    <div class="side right"><div class="side-id"><span class="side-name">${m.b.name}</span>${mgrB ? `<span class="side-owner">${mgrB}</span>` : ''}</div>${logoImg(lg, m.b.team_id)}</div>
+    <div class="side right${bMine ? ' mine' : ''}"><div class="side-id"><span class="side-name">${m.b.name}</span>${mgrB ? `<span class="side-owner">${mgrB}</span>` : ''}</div>${logoImg(lg, m.b.team_id)}</div>
   </div>`;
 }
 
@@ -462,6 +472,14 @@ function teamCellHtml(logoHtml, name, manager) {
 // click-through modal for every other matchup on the scoreboard.
 function matchupRowsHtml(leagueId, teamAId, teamBId) {
   const L = DIGEST.leagues[leagueId];
+  // Which side (if either) is actually the owner's own team — teamAId is
+  // always "mine" when called from matchupComparisonCard, but this same
+  // function also renders the generic click-through modal for any two
+  // OTHER managers, where neither side is mine. Computed here rather than
+  // assumed from position, so the "mine" player tint (owner's ask,
+  // 2026-09-14: same tactic as the team-name highlight, applied to every
+  // player on my roster during a matchup) only ever lights up for real.
+  const aIsMe = teamAId === L.my_team_id, bIsMe = teamBId === L.my_team_id;
   const aDetail = L.teams_detail[String(teamAId)];
   const bDetail = L.teams_detail[String(teamBId)];
   const aStarters = (aDetail ? aDetail.roster : []).filter(p => p.is_starter);
@@ -485,9 +503,9 @@ function matchupRowsHtml(leagueId, teamAId, teamBId) {
         <div class="mp-main"><span class="mp-pts">${op.points === null ? '—' : op.points.toFixed(1)}${liveDot(op.game_status)}</span><span class="mp-id">${injBadge(op.injury_status)}<span class="mp-name">${op.name}</span></span></div>
         ${subLinesHtml(op, 'mp-sub')}` : '<span class="muted">—</span>';
       rows += `<div class="matchup-row">
-        <div class="mp mp-mine${mp ? statusClass(mp.game_status) : ''}">${mineHtml}</div>
+        <div class="mp mp-mine${aIsMe ? ' mine' : ''}${mp ? statusClass(mp.game_status) : ''}">${mineHtml}</div>
         <div class="mp-slot">${SLOT_LABELS[slotId] || slotId}</div>
-        <div class="mp mp-theirs${op ? statusClass(op.game_status) : ''}">${theirsHtml}</div>
+        <div class="mp mp-theirs${bIsMe ? ' mine' : ''}${op ? statusClass(op.game_status) : ''}">${theirsHtml}</div>
       </div>`;
     }
   });
@@ -497,11 +515,12 @@ function matchupRowsHtml(leagueId, teamAId, teamBId) {
 function matchupCompareHead(leagueId, teamAId, teamBId, nameA, nameB, scoreA, scoreB, live) {
   const L = DIGEST.leagues[leagueId];
   const mgrA = teamManager(L, teamAId), mgrB = teamManager(L, teamBId);
+  const aMine = teamAId === L.my_team_id, bMine = teamBId === L.my_team_id;
   return `
     <div class="matchup-card-head">
-      <div class="mc-team">${logoImg(leagueId, teamAId, 26)}<div class="mc-team-id"><span class="mc-name">${nameA}</span>${mgrA ? `<span class="mc-owner">${mgrA}</span>` : ''}</div></div>
+      <div class="mc-team${aMine ? ' mine' : ''}">${logoImg(leagueId, teamAId, 26)}<div class="mc-team-id"><span class="mc-name">${nameA}</span>${mgrA ? `<span class="mc-owner">${mgrA}</span>` : ''}</div></div>
       <div class="mc-score">${scoreA.toFixed(1)}<span class="mc-dash">–</span>${scoreB.toFixed(1)}</div>
-      <div class="mc-team right"><div class="mc-team-id"><span class="mc-name">${nameB}</span>${mgrB ? `<span class="mc-owner">${mgrB}</span>` : ''}</div>${logoImg(leagueId, teamBId, 26)}</div>
+      <div class="mc-team right${bMine ? ' mine' : ''}"><div class="mc-team-id"><span class="mc-name">${nameB}</span>${mgrB ? `<span class="mc-owner">${mgrB}</span>` : ''}</div>${logoImg(leagueId, teamBId, 26)}</div>
     </div>
     ${live ? '<div class="mc-live-row"><span class="badge live">LIVE</span></div>' : ''}
     <div class="matchup-divider"></div>`;
@@ -689,7 +708,7 @@ function renderAnalytics(root) {
 
   const tblCard = el('div', 'card');
   tblCard.innerHTML = `<table><thead><tr><th>Team</th><th>Efficiency</th><th>Bench pts</th></tr></thead><tbody>
-    ${L.leaderboard.map(t => `<tr><td>${teamCellHtml(logoImg(currentLeague, t.team_id), t.team_name, t.manager)}</td><td>${fmtPct(t.lineup_efficiency)}</td><td>${t.bench_points.toFixed(1)}</td></tr>`).join('')}
+    ${L.leaderboard.map(t => `<tr class="${t.team_id === L.my_team_id ? 'owner-row' : ''}"><td>${teamCellHtml(logoImg(currentLeague, t.team_id), t.team_name, t.manager)}</td><td>${fmtPct(t.lineup_efficiency)}</td><td>${t.bench_points.toFixed(1)}</td></tr>`).join('')}
   </tbody></table>
   <p class="muted">Luck index, power rankings, and playoff odds unlock at 5 and 7 weeks played (owner-confirmed gates) — insufficient sample right now.</p>`;
   root.appendChild(tblCard);
