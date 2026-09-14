@@ -383,8 +383,11 @@ function gameLine(p) {
   const score = (p.own_score != null && p.opp_score != null) ? `${p.own_score.toFixed(0)}-${p.opp_score.toFixed(0)} ` : '';
   return `${prefix}${p.opponent} ${score}${p.game_detail || ''}`.trim();
 }
-function mpSub(p) { return p.stat_line || gameLine(p); }
-function fullSub(p) { return [gameLine(p), p.stat_line].filter(Boolean).join(' · '); }
+// Two separate lines under a player, matching the real ESPN matchup
+// card: the game's schedule/live score first, the real stat line below
+// it (when they've actually recorded stats yet) — not one-or-the-other.
+function subLines(p) { return [gameLine(p), p.stat_line].filter(Boolean); }
+function subLinesHtml(p, cls) { return subLines(p).map(l => `<div class="${cls}">${l}</div>`).join(''); }
 
 function matchupComparisonCard(leagueId) {
   const L = DIGEST.leagues[leagueId];
@@ -415,10 +418,10 @@ function matchupComparisonCard(leagueId) {
       const mp = mine[i], op = theirs[i];
       const mineHtml = mp ? `
         <div class="mp-main"><span class="mp-id"><span class="mp-name">${mp.name}</span>${injBadge(mp.injury_status)}</span><span class="mp-pts">${liveDot(mp.game_status)}${mp.points === null ? '—' : mp.points.toFixed(1)}</span></div>
-        <div class="mp-sub">${mpSub(mp)}</div>` : '<span class="muted">—</span>';
+        ${subLinesHtml(mp, 'mp-sub')}` : '<span class="muted">—</span>';
       const theirsHtml = op ? `
         <div class="mp-main"><span class="mp-pts">${op.points === null ? '—' : op.points.toFixed(1)}${liveDot(op.game_status)}</span><span class="mp-id">${injBadge(op.injury_status)}<span class="mp-name">${op.name}</span></span></div>
-        <div class="mp-sub">${mpSub(op)}</div>` : '<span class="muted">—</span>';
+        ${subLinesHtml(op, 'mp-sub')}` : '<span class="muted">—</span>';
       rows += `<div class="matchup-row">
         <div class="mp mp-mine${mp ? statusClass(mp.game_status) : ''}">${mineHtml}</div>
         <div class="mp-slot">${SLOT_LABELS[slotId] || slotId}</div>
@@ -495,7 +498,7 @@ function renderTeamDetail(container, detail, leagueId) {
   rosterCard.appendChild(el('div', null, cardHead('myteam', 'Roster')));
   const starters = detail.roster.filter(p => p.is_starter);
   const bench = detail.roster.filter(p => !p.is_starter);
-  const rosterRowHtml = p => `<div class="name"><div class="name-main"><span>${p.name}</span>${injBadge(p.injury_status)}</div><div class="sub">${fullSub(p)}</div></div><div class="pts">${liveDot(p.game_status)}${p.points === null ? '—' : p.points.toFixed(1)}</div>`;
+  const rosterRowHtml = p => `<div class="name"><div class="name-main"><span>${p.name}</span>${injBadge(p.injury_status)}</div>${subLinesHtml(p, 'sub')}</div><div class="pts">${liveDot(p.game_status)}${p.points === null ? '—' : p.points.toFixed(1)}</div>`;
   starters.forEach(p => rosterCard.appendChild(el('div', 'roster-row' + statusClass(p.game_status), rosterRowHtml(p))));
   if (bench.length) {
     rosterCard.appendChild(el('div', 'muted', 'Bench'));
