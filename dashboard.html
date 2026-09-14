@@ -125,8 +125,13 @@ tr.owner-row td { background: var(--accent-soft); }
    comparison used for "my matchup" on Home, but for any two managers
    (owner's explicit ask, 2026-09-14: "see the live scoring between all
    managers", not just their own). */
-.modal-overlay { position: fixed; inset: 0; background: rgba(5,3,12,0.6); backdrop-filter: blur(2px); z-index: 300; display: flex; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
-.modal-box { position: relative; width: 100%; max-width: 640px; padding: 26px 28px; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(5,3,12,0.78); backdrop-filter: blur(3px); z-index: 300; display: flex; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
+/* .card's own background is a ~4.5% translucent overlay, meant to sit on
+   the page's solid ground — stacked on the modal backdrop instead, the
+   page behind it was still bleeding through and washing out the stat
+   text. Force a fully opaque panel here so the modal reads cleanly no
+   matter what's behind it. */
+.modal-box { position: relative; width: 100%; max-width: 640px; padding: 26px 28px; background: var(--sidebar); box-shadow: 0 24px 60px rgba(0,0,0,0.5); }
 .modal-close { position: absolute; top: 14px; right: 14px; width: 30px; height: 30px; border-radius: 50%; border: none; background: var(--card-2); color: var(--ink); font-size: 15px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 .modal-close:hover { background: var(--accent-soft); color: var(--accent); }
 .logo { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 6px; background: var(--card-2); }
