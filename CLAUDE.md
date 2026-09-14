@@ -92,15 +92,20 @@ depends on it. Two real examples from Phase 1 of why this matters:
   similarly-numbered schemes. Confirmed by sampling real players, not
   assumed from memory or community folklore. Conflating them silently
   breaks every lineup-efficiency number in the system.
-- **`mMatchup.totalPoints` cannot be trusted for a live week.** Confirmed
-  live in Phase 3 (2026-09-13): every team in both leagues showed
-  `totalPoints: 0.0` while real per-player `appliedTotal` values were
-  already populated for completed games. Same shape of bug as the FPL
-  project's `entry_history.points` lag. `raw_team_week.total_points` and
-  `raw_matchups` scores are always computed by summing starters' real
-  per-player points — never taken from `mMatchup.totalPoints` directly.
-  That field is still fetched and diffed against the computed total; a
-  mismatch beyond rounding is a logged `data_issue`, not a bug to silence.
+- **No ESPN-reported season aggregate can be trusted during a live week —
+  this has now bitten twice, in two different fields.** `mMatchup.totalPoints`
+  (Phase 3) and `standings_snapshots`'s source, `record.overall.pointsFor`
+  (Phase 7), both showed `0.0`/stale values while more granular data (real
+  per-player `appliedTotal`, our own `raw_team_week` totals) was already
+  correct. Same shape of bug as the FPL project's `entry_history.points`
+  lag, confirmed a second time in a different field — treat it as a general
+  rule, not a one-off: **`derived_team_season.points_for/points_against`
+  are computed from `raw_team_week`/`raw_matchups`, never taken from
+  `standings_snapshots` directly.** `standings_snapshots.wins/losses/ties`
+  IS still trusted from ESPN, since a decided result isn't subject to this
+  lag the way a running point total is — only fields that accumulate
+  *during* a live week are suspect. If a third such field turns up, assume
+  the same pattern applies rather than re-litigating it as a new bug.
 
 ## 8. Phase discipline
 
@@ -152,8 +157,34 @@ drop the ones that matter. Banter is welcome, but only over real numbers.
 
 ## 13. The dashboard
 
-Not yet built — Phase 7. When it exists: a single self-contained HTML file
-(data baked in, no server), with a league switcher since every page needs
-to know which of the two leagues it's showing. Fresh visual identity for
-this project, not a reskin of the FPL dashboard (owner's explicit call,
-2026-09-13).
+`dashboard.html` is a single self-contained file (data baked in, no server)
+with five pages: Home, My Team, League, Managers (dropdown over every team
+in the current league, reusing My Team's exact render function), Analytics.
+A league switcher in the header re-renders whichever page is active for
+either league — every render function reads `currentLeague` fresh, nothing
+is cached per-league. Fresh visual identity, not a reskin of the FPL
+dashboard (owner's explicit call, 2026-09-13): dark navy/charcoal ground,
+amber accent, no purple/lime. Team logos are embedded as base64 at digest
+build time (`src/digest.py`), same reasoning as club badges in the FPL
+project — ESPN's logo CDN needs the same auth cookies as the API, so a
+plain browser opening the finished file could never load them by URL. Two
+of 26 teams' logos are dead third-party links (not our bug) and fall back
+to a plain "?" placeholder.
+
+It is a snapshot, not a live view — regenerate it after any data change:
+
+```bash
+python -m src.daily_sync
+python -m src.calculate
+python -m src.recap
+python -m src.digest
+python -m src.build_dashboard
+```
+
+If you edit `src/build_dashboard.py`, always run `build_dashboard` again
+afterward and re-open the file — editing the generator does not change the
+already-written `dashboard.html` on disk. **Always include `<meta
+charset="utf-8">` in the HTML output** — omitting it was caught live: a
+plain local `http.server` preview rendered `·`/`—` as mojibake (`Â·`)
+without it, exactly the kind of bug that's invisible until someone actually
+looks at the rendered page.

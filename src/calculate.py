@@ -114,11 +114,34 @@ def backfill_score_ranks(conn, league_id: int, season_year: int, week: int) -> N
 
 
 def calc_team_season(conn, league_id: int, season_year: int, through_week: int, team_id: int) -> None:
+    # Win/loss/tie record comes from ESPN's own standings snapshot — that's
+    # genuinely decided-results-only and not subject to the live-week lag.
+    # points_for/points_against are NOT: standings_snapshots.points_for is
+    # sourced from ESPN's record.overall.pointsFor, which lags exactly like
+    # mMatchup.totalPoints did (confirmed live, same bug — team 25 showed
+    # points_for=0.0 in standings_snapshots while raw_team_week.total_points
+    # already had 137.0). So points_for/against are computed from our own
+    # already-correct raw_team_week/raw_matchups instead of trusted from ESPN.
     standing = conn.execute(
-        "SELECT wins, losses, ties, points_for, points_against FROM standings_snapshots WHERE league_id=? AND season_year=? AND week=? AND team_id=?",
+        "SELECT wins, losses, ties FROM standings_snapshots WHERE league_id=? AND season_year=? AND week=? AND team_id=?",
         (league_id, season_year, through_week, team_id),
     ).fetchone()
-    w, l, t, pf, pa = standing if standing else (0, 0, 0, 0.0, 0.0)
+    w, l, t = standing if standing else (0, 0, 0)
+
+    pf = conn.execute(
+        "SELECT COALESCE(SUM(total_points), 0) FROM raw_team_week WHERE league_id=? AND season_year=? AND team_id=? AND week<=?",
+        (league_id, season_year, team_id, through_week),
+    ).fetchone()[0]
+    pa = conn.execute(
+        """
+        SELECT COALESCE(SUM(opp.total_points), 0)
+        FROM raw_matchups m
+        JOIN raw_team_week opp ON opp.league_id=m.league_id AND opp.season_year=m.season_year AND opp.week=m.week
+            AND opp.team_id = CASE WHEN m.team_a = ? THEN m.team_b ELSE m.team_a END
+        WHERE m.league_id=? AND m.season_year=? AND m.week<=? AND (m.team_a=? OR m.team_b=?)
+        """,
+        (team_id, league_id, season_year, through_week, team_id, team_id),
+    ).fetchone()[0]
 
     weekly = conn.execute(
         "SELECT lineup_efficiency, bench_points FROM derived_team_week WHERE league_id=? AND season_year=? AND team_id=? AND week<=?",
