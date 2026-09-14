@@ -67,6 +67,8 @@ body {
 .league-switch { display: flex; gap: 4px; background: var(--card); border: 1px solid var(--border); border-radius: 999px; padding: 4px; }
 .league-switch button { border: none; background: transparent; color: var(--ink-soft); padding: 8px 16px; border-radius: 999px; font-size: 12.5px; font-weight: 700; cursor: pointer; }
 .league-switch button.active { background: linear-gradient(135deg, var(--blue-a), var(--blue-b)); color: #fff; }
+.league-switch button.active.league-pink { background: linear-gradient(135deg, var(--pink-a), var(--pink-b)); }
+.league-switch button.active.league-purple { background: linear-gradient(135deg, var(--blue-a), var(--blue-b)); }
 .topbar-icons { display: flex; align-items: center; gap: 10px; }
 .refresh-note { font-size: 10.5px; color: var(--ink-faint); font-weight: 600; cursor: help; white-space: nowrap; }
 .icon-btn { position: relative; width: 36px; height: 36px; border-radius: 50%; background: var(--card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--ink-soft); }
@@ -102,6 +104,11 @@ main { flex: 1; min-width: 0; height: 100vh; overflow: hidden; display: flex; fl
 @media (max-width: 900px) { .grid-2, .grid-4 { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 620px) { .grid-2, .grid-4 { grid-template-columns: 1fr; } }
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px; box-shadow: var(--shadow); overflow-x: auto; }
+/* One league pink, the other purple (owner's ask, 2026-09-14) — a
+   consistent accent stripe so the two side-by-side leagues on Home are
+   tellable apart without reading. */
+.card.league-pink { border-left: 3px solid var(--pink-a); }
+.card.league-purple { border-left: 3px solid var(--blue-a); }
 .card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
 .card-head h2 { margin: 0; font-size: 13.5px; display: flex; align-items: center; gap: 8px; }
 .card-head .icon-chip { width: 22px; height: 22px; border-radius: 7px; background: var(--accent-soft); color: var(--accent); display: flex; align-items: center; justify-content: center; }
@@ -255,7 +262,7 @@ select { background: var(--card-2); color: var(--ink); border: 1px solid var(--b
         <button class="hamburger-btn" onclick="toggleNav()" aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg></button>
         <div class="topbar-brand">Fantasy Football<span class="brand-sub">Week 1</span></div>
       </div>
-      <div class="league-switch"><button data-lid="1618731" class="active" onclick="switchLeague('1618731')">No More Domestic Violence</button><button data-lid="581297461" class="" onclick="switchLeague('581297461')">My 2023 League</button></div>
+      <div class="league-switch"><button data-lid="1618731" class="active league-pink" onclick="switchLeague('1618731')">No More Domestic Violence</button><button data-lid="581297461" class=" league-purple" onclick="switchLeague('581297461')">My 2023 League</button></div>
       <div class="topbar-icons">
         <div class="refresh-note" title="This page reloads itself automatically. It only shows new scores if src/live_refresh.py is running in the background — otherwise it's a harmless reload of the same file.">Auto-refresh every 1.5m</div>
         <div class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9.5a6 6 0 0 1 12 0c0 4 1.5 5.5 1.5 5.5H4.5S6 13.5 6 9.5Z"/><path d="M10 19a2 2 0 0 0 4 0"/></svg><span class="dot"></span></div>
@@ -454,6 +461,15 @@ function teamManager(L, teamId) {
   const t = L.teams.find(t => t.team_id === teamId);
   return t && t.manager ? t.manager : '';
 }
+// One league pink, the other purple (owner's ask, 2026-09-14) — a
+// consistent accent so the two side-by-side leagues on Home are tellable
+// apart at a glance without reading. First league in DIGEST.leagues
+// (insertion order, matches config.LEAGUES) is pink, second is purple;
+// used on every card that belongs to one league, plus the league-switch
+// pill (build_html, Python side — kept in sync with this same convention).
+function leagueAccentClass(leagueId) {
+  return Object.keys(DIGEST.leagues).indexOf(leagueId) === 0 ? 'league-pink' : 'league-purple';
+}
 // Real owner name under a fantasy team name, wherever the team name is a
 // prominent label — same idea as a player's stat line underneath their
 // name (owner's ask, 2026-09-14). Omitted whenever no manager is on
@@ -526,7 +542,7 @@ function matchupCompareHead(leagueId, teamAId, teamBId, nameA, nameB, scoreA, sc
 function matchupComparisonCard(leagueId) {
   const L = DIGEST.leagues[leagueId];
   const matchup = findMyMatchup(L);
-  const card = el('div', 'card matchup-card');
+  const card = el('div', `card matchup-card ${leagueAccentClass(leagueId)}`);
   if (!matchup) {
     card.innerHTML = cardHead('league', L.name) + '<p class="muted">No matchup this week (bye).</p>';
     return card;
@@ -541,6 +557,9 @@ function matchupComparisonCard(leagueId) {
 
 function openMatchupModal(leagueId, teamAId, teamBId, scoreA, scoreB, live) {
   const L = DIGEST.leagues[leagueId];
+  const box = document.querySelector('.modal-box');
+  box.classList.remove('league-pink', 'league-purple');
+  box.classList.add(leagueAccentClass(leagueId));
   document.getElementById('matchup-modal-content').innerHTML = `
     <div class="mc-league-label">${L.name}</div>
     ${matchupCompareHead(leagueId, teamAId, teamBId, teamName(L, teamAId), teamName(L, teamBId), scoreA, scoreB, live)}
@@ -573,7 +592,7 @@ function activityRowHtml(a) {
 }
 function activityCard(leagueId) {
   const L = DIGEST.leagues[leagueId];
-  const card = el('div', 'card');
+  const card = el('div', `card ${leagueAccentClass(leagueId)}`);
   card.innerHTML = cardHead('trend', `${L.name} — Recent activity`) +
     (L.activity.length ? L.activity.map(activityRowHtml).join('') : '<p class="muted">No waiver, free-agent, or trade activity yet.</p>');
   return card;
@@ -598,7 +617,7 @@ function renderHome(root) {
   const bothFixtures = el('div', 'grid grid-2');
   leagueIds.forEach(lid => {
     const L = DIGEST.leagues[lid];
-    const card = el('div', 'card');
+    const card = el('div', `card ${leagueAccentClass(lid)}`);
     card.innerHTML = cardHead('league', `${L.name} — Week ${L.this_week.week} matchups`);
     L.this_week.matchups.forEach(m => card.appendChild(el('div', null, matchRow(lid, m))));
     bothFixtures.appendChild(card);
