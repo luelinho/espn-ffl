@@ -142,6 +142,7 @@ main { flex: 1; min-width: 0; height: 100vh; overflow: hidden; display: flex; fl
 .card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
 .card-head h2 { margin: 0; font-size: 13.5px; display: flex; align-items: center; gap: 8px; }
 .card-head .icon-chip { width: 22px; height: 22px; border-radius: 7px; background: var(--accent-soft); color: var(--accent); display: flex; align-items: center; justify-content: center; }
+.card-head-title { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
 .card h3 { margin: 0 0 8px; font-size: 11.5px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.05em; }
 
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
@@ -155,9 +156,19 @@ tr.owner-row td { background: var(--accent-soft); }
 .match-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; cursor: pointer; border-radius: 8px; transition: background 0.15s ease; }
 .match-row:hover { background: var(--card-2); }
 .match-row:last-child { border-bottom: none; }
-.match-row .side { flex: 1; font-weight: 700; }
-.match-row .side.right { text-align: right; }
+.match-row .side { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; font-weight: 700; }
+.match-row .side.right { flex-direction: row-reverse; text-align: right; }
 .match-row .score { min-width: 90px; text-align: center; font-weight: 800; font-variant-numeric: tabular-nums; }
+/* Fantasy team name + real owner name stacked, like a player's stat line
+   underneath their name — everywhere a team name is a prominent label
+   (owner's ask, 2026-09-14), whenever a manager is actually on record. */
+.side-id { display: flex; flex-direction: column; min-width: 0; }
+.side.right .side-id { align-items: flex-end; }
+.side-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.side-owner, .mc-owner, .team-cell-owner, .header-owner { font-size: 10.5px; font-weight: 500; color: var(--ink-faint); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.team-cell { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.team-cell-id { display: flex; flex-direction: column; min-width: 0; }
+.team-cell-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 /* Every scoreboard matchup is clickable — opens the same position-aligned
    comparison used for "my matchup" on Home, but for any two managers
    (owner's explicit ask, 2026-09-14: "see the live scoring between all
@@ -187,6 +198,8 @@ tr.owner-row td { background: var(--accent-soft); }
 .matchup-card-head { display: flex; align-items: center; gap: 12px; padding-bottom: 8px; }
 .mc-team { display: flex; align-items: center; gap: 10px; flex: 1 1 0; min-width: 0; overflow: hidden; }
 .mc-team.right { flex-direction: row-reverse; text-align: right; }
+.mc-team-id { display: flex; flex-direction: column; min-width: 0; }
+.mc-team.right .mc-team-id { align-items: flex-end; }
 .mc-name { font-weight: 800; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; min-width: 0; }
 .mc-score { flex: none; font-size: 30px; font-weight: 800; font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; padding: 0 8px; }
 .mc-dash { color: var(--ink-faint); font-weight: 500; margin: 0 5px; }
@@ -355,15 +368,20 @@ function barList(rows, colorA, colorB) {
 /* ---------------------------------------------------------------------- */
 
 function matchRow(lg, m) {
+  const L = DIGEST.leagues[lg];
+  const mgrA = teamManager(L, m.a.team_id), mgrB = teamManager(L, m.b.team_id);
   return `<div class="match-row" onclick="openMatchupModal('${lg}', ${m.a.team_id}, ${m.b.team_id}, ${m.a.score}, ${m.b.score}, ${m.live ? 'true' : 'false'})">
-    <div class="side">${logoImg(lg, m.a.team_id)}${m.a.name}</div>
+    <div class="side">${logoImg(lg, m.a.team_id)}<div class="side-id"><span class="side-name">${m.a.name}</span>${mgrA ? `<span class="side-owner">${mgrA}</span>` : ''}</div></div>
     <div class="score">${m.a.score.toFixed(1)} - ${m.b.score.toFixed(1)} ${m.live ? '<span class="badge live">LIVE</span>' : ''}</div>
-    <div class="side right">${m.b.name}${logoImg(lg, m.b.team_id)}</div>
+    <div class="side right"><div class="side-id"><span class="side-name">${m.b.name}</span>${mgrB ? `<span class="side-owner">${mgrB}</span>` : ''}</div>${logoImg(lg, m.b.team_id)}</div>
   </div>`;
 }
 
-function cardHead(iconName, title) {
-  return `<div class="card-head"><h2><span class="icon-chip">${ICON_SVG[iconName]}</span>${title}</h2></div>`;
+function cardHead(iconName, title, subtitle) {
+  const titleHtml = subtitle
+    ? `<span class="card-head-title"><span>${title}</span><span class="header-owner">${subtitle}</span></span>`
+    : title;
+  return `<div class="card-head"><h2><span class="icon-chip">${ICON_SVG[iconName]}</span>${titleHtml}</h2></div>`;
 }
 
 // Confirmed live, Phase 1 (2026-09-13) — a roster SLOT scheme, not a
@@ -414,6 +432,17 @@ function teamName(L, teamId) {
   const t = L.teams.find(t => t.team_id === teamId);
   return t ? t.team_name : '';
 }
+function teamManager(L, teamId) {
+  const t = L.teams.find(t => t.team_id === teamId);
+  return t && t.manager ? t.manager : '';
+}
+// Real owner name under a fantasy team name, wherever the team name is a
+// prominent label — same idea as a player's stat line underneath their
+// name (owner's ask, 2026-09-14). Omitted whenever no manager is on
+// record (an orphaned/auto-drafted team), never fabricated.
+function teamCellHtml(logoHtml, name, manager) {
+  return `<div class="team-cell">${logoHtml}<div class="team-cell-id"><span class="team-cell-name">${name}</span>${manager ? `<span class="team-cell-owner">${manager}</span>` : ''}</div></div>`;
+}
 
 // Position-aligned rows for any two teams in a league/week — group each
 // side's starters by lineup slot, then pair them up slot-instance by
@@ -455,11 +484,13 @@ function matchupRowsHtml(leagueId, teamAId, teamBId) {
 }
 
 function matchupCompareHead(leagueId, teamAId, teamBId, nameA, nameB, scoreA, scoreB, live) {
+  const L = DIGEST.leagues[leagueId];
+  const mgrA = teamManager(L, teamAId), mgrB = teamManager(L, teamBId);
   return `
     <div class="matchup-card-head">
-      <div class="mc-team">${logoImg(leagueId, teamAId, 26)}<span class="mc-name">${nameA}</span></div>
+      <div class="mc-team">${logoImg(leagueId, teamAId, 26)}<div class="mc-team-id"><span class="mc-name">${nameA}</span>${mgrA ? `<span class="mc-owner">${mgrA}</span>` : ''}</div></div>
       <div class="mc-score">${scoreA.toFixed(1)}<span class="mc-dash">–</span>${scoreB.toFixed(1)}</div>
-      <div class="mc-team right"><span class="mc-name">${nameB}</span>${logoImg(leagueId, teamBId, 26)}</div>
+      <div class="mc-team right"><div class="mc-team-id"><span class="mc-name">${nameB}</span>${mgrB ? `<span class="mc-owner">${mgrB}</span>` : ''}</div>${logoImg(leagueId, teamBId, 26)}</div>
     </div>
     ${live ? '<div class="mc-live-row"><span class="badge live">LIVE</span></div>' : ''}
     <div class="matchup-divider"></div>`;
@@ -562,7 +593,7 @@ function renderTeamDetail(container, detail, leagueId) {
 
 function renderMyTeam(root) {
   const L = DIGEST.leagues[currentLeague];
-  root.innerHTML = `<div class="card">${cardHead('myteam', L.my_team_name)}</div>`;
+  root.innerHTML = `<div class="card">${cardHead('myteam', L.my_team_name, teamManager(L, L.my_team_id))}</div>`;
   const wrap = el('div');
   renderTeamDetail(wrap, L.my_team_detail, currentLeague);
   root.appendChild(wrap);
@@ -579,7 +610,7 @@ function renderMyTeam(root) {
 function renderLeague(root) {
   const L = DIGEST.leagues[currentLeague];
   root.innerHTML = `<div class="card">${cardHead('league', `Standings — after Week ${L.this_week.week}`)}<table><thead><tr><th>#</th><th>Team</th><th>W-L-T</th><th>PF</th><th>PA</th></tr></thead><tbody>
-    ${L.standings.map((s,i) => `<tr class="${s.is_owner ? 'owner-row' : ''}"><td>${i+1}</td><td>${logoImg(currentLeague, s.team_id)}${s.team_name}</td><td>${s.wins}-${s.losses}-${s.ties}</td><td>${s.points_for.toFixed(1)}</td><td>${s.points_against.toFixed(1)}</td></tr>`).join('')}
+    ${L.standings.map((s,i) => `<tr class="${s.is_owner ? 'owner-row' : ''}"><td>${i+1}</td><td>${teamCellHtml(logoImg(currentLeague, s.team_id), s.team_name, s.manager)}</td><td>${s.wins}-${s.losses}-${s.ties}</td><td>${s.points_for.toFixed(1)}</td><td>${s.points_against.toFixed(1)}</td></tr>`).join('')}
   </tbody></table></div>`;
   const mCard = el('div', 'card');
   mCard.innerHTML = cardHead('league', `Week ${L.this_week.week} matchups`);
@@ -618,7 +649,7 @@ function renderAnalytics(root) {
 
   const tblCard = el('div', 'card');
   tblCard.innerHTML = `<table><thead><tr><th>Team</th><th>Efficiency</th><th>Bench pts</th></tr></thead><tbody>
-    ${L.leaderboard.map(t => `<tr><td>${logoImg(currentLeague, t.team_id)}${t.team_name}</td><td>${fmtPct(t.lineup_efficiency)}</td><td>${t.bench_points.toFixed(1)}</td></tr>`).join('')}
+    ${L.leaderboard.map(t => `<tr><td>${teamCellHtml(logoImg(currentLeague, t.team_id), t.team_name, t.manager)}</td><td>${fmtPct(t.lineup_efficiency)}</td><td>${t.bench_points.toFixed(1)}</td></tr>`).join('')}
   </tbody></table>
   <p class="muted">Luck index, power rankings, and playoff odds unlock at 5 and 7 weeks played (owner-confirmed gates) — insufficient sample right now.</p>`;
   root.appendChild(tblCard);

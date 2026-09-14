@@ -23,6 +23,14 @@ from datetime import datetime, timezone
 from . import config
 from .espn_client import ESPNClient
 
+# Owner-confirmed corrections (2026-09-14) to real members' ESPN
+# firstName+lastName, for the entries where ESPN's own stored case doesn't
+# match the person's real name. See the comment where this is applied.
+MANAGER_NAME_FIXES = {
+    "marcus bess": "Marcus Bess",
+    "Nkhrumba Overton jr": "Nkhrumba Overton Jr.",
+}
+
 
 def connect() -> sqlite3.Connection:
     config.DB_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -183,7 +191,22 @@ def run() -> int:
         for t in teams:
             member_id = t.get("primaryOwner")
             member = members_by_id.get(member_id, {})
-            display_name = member.get("displayName") or f"{member.get('firstName', '')} {member.get('lastName', '')}".strip()
+            # Real first/last name preferred over the ESPN username/handle
+            # (displayName) — confirmed live, 2026-09-14: every member has
+            # both, e.g. displayName "ESPNFAN4770479651" vs. the real
+            # "Nkhrumba Overton jr". The dashboard shows this as the real
+            # person's name under their fantasy team, so it needs to
+            # actually be a name, not a handle.
+            full_name = " ".join(p.strip() for p in (member.get("firstName", ""), member.get("lastName", "")) if p and p.strip())
+            # ESPN's firstName/lastName is exactly what each real member
+            # typed into their own profile — usually proper case, but not
+            # always. Never auto-title-cased (a generic pass would wrongly
+            # mangle names ESPN already had right, e.g. "DeLoach" ->
+            # "Deloach") — the owner personally knows these real people and
+            # supplied the correct capitalization for the two ESPN had
+            # wrong (owner-confirmed, 2026-09-14).
+            full_name = MANAGER_NAME_FIXES.get(full_name, full_name)
+            display_name = full_name or member.get("displayName")
             is_owner = member_id == config.ESPN_SWID
             if is_owner:
                 found_owner_here = True
