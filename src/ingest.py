@@ -139,14 +139,16 @@ def load_week(conn: sqlite3.Connection, client: ESPNClient, league_id: int, seas
 
             conn.execute(
                 """
-                INSERT INTO players (player_id, full_name, default_position_id, pro_team_id)
-                VALUES (?, ?, ?, ?)
+                INSERT INTO players (player_id, full_name, default_position_id, eligible_slots_json, pro_team_id)
+                VALUES (?, ?, ?, ?, ?)
                 ON CONFLICT (player_id) DO UPDATE SET
                     full_name = excluded.full_name,
                     default_position_id = excluded.default_position_id,
+                    eligible_slots_json = excluded.eligible_slots_json,
                     pro_team_id = excluded.pro_team_id
                 """,
-                (player_id, player.get("fullName", ""), player.get("defaultPositionId"), player.get("proTeamId")),
+                (player_id, player.get("fullName", ""), player.get("defaultPositionId"),
+                 json.dumps(player.get("eligibleSlots", [])), player.get("proTeamId")),
             )
 
             wk_stat = _actual_week_stat(player.get("stats", []), week)

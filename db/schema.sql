@@ -42,6 +42,10 @@ CREATE TABLE IF NOT EXISTS players (
   player_id           INTEGER PRIMARY KEY,   -- ESPN's global player ID
   full_name           TEXT NOT NULL,
   default_position_id INTEGER NOT NULL,      -- 1 QB | 2 RB | 3 WR | 4 TE | 5 K | 16 D/ST (confirmed Phase 1)
+  eligible_slots_json TEXT,                  -- raw eligibleSlots array — real data shows this is
+                                              -- broader than a naive position->slot mapping (e.g. a
+                                              -- WR's eligibleSlots includes slot 3, not just 4/23),
+                                              -- so lineup optimization uses this, never a hand-guessed map
   pro_team_id          INTEGER
 );
 

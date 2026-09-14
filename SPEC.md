@@ -517,8 +517,8 @@ Same as FPL: $0 ongoing. Free API, free SQLite, free GitHub Actions tier, Claude
 **GitHub Actions workflow is written (`.github/workflows/daily.yml`, cron 06:05 UTC) but not yet active** — this repo has no remote yet, and activating it means pushing code to GitHub and storing `ESPN_S2`/`ESPN_SWID`/`SEASON_YEAR` as repository secrets. Both are real, consequential steps (unlike the FPL project's environment, this one genuinely has `gh` access to do them) — held for explicit confirmation before doing either, rather than done automatically as part of "building Phase 4."
 *Exit: three consecutive clean automated runs.* ✅ locally — GitHub scheduling itself is a separate, not-yet-taken step.
 
-**Phase 5 — Tier 0–2 analytics.** Ledger and lineup-efficiency/waiver/trade metrics. Hand-verify lineup efficiency for at least one team per league against the live ESPN app.
-*Exit: manually verified correct, gates confirmed by the owner.*
+**Phase 5 — Tier 0–2 analytics.** ✅ Complete 2026-09-13. `src/calculate.py` computes `derived_team_week` (exact optimal lineup via a bitmask DP over real per-player `eligible_slots_json`, not a hand-guessed position map), `derived_team_season`, and `derived_waiver_moves`. Hand-verified against raw data for team 25 (league `1618731`): actual 137.0 / optimal 157.0 = 87.3% efficiency, bench 62.0 — both traced by hand to the exact underlying roster decisions (started Mayer for 9 over the benched Likely's 24 at TE, plus a suboptimal WR/FLEX split) and matched the code's output exactly. Re-ran the full pipeline (`daily_sync` → `calculate`) and confirmed the same numbers came back unchanged, with no duplicate rows (26 `derived_team_week` rows, exactly 14+12 team-weeks). `derived_trade_evaluation` correctly has zero rows — no trade has actually executed yet this season (only `PENDING`/`CANCELED` proposals exist), an honest empty state, not a bug.
+*Exit: manually verified correct, gates confirmed by the owner.* ✅
 
 **Phase 6 — Claude interface.** `CLAUDE.md`, query library, per-league recap generator.
 *Exit: real questions answered accurately from real data, across both leagues.*
