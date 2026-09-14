@@ -159,6 +159,17 @@ tr.owner-row td { background: var(--accent-soft); }
 .match-row .side { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; font-weight: 700; }
 .match-row .side.right { flex-direction: row-reverse; text-align: right; }
 .match-row .score { min-width: 90px; text-align: center; font-weight: 800; font-variant-numeric: tabular-nums; }
+/* League activity feed (Home) — real waiver/free-agent/trade moves, so
+   the owner doesn't have to open the ESPN app to see who moved. */
+.activity-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 12.5px; }
+.activity-row:last-child { border-bottom: none; }
+.activity-main { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.activity-tag { flex: none; font-size: 9px; font-weight: 800; padding: 2px 6px; border-radius: 5px; text-transform: uppercase; letter-spacing: 0.02em; }
+.activity-tag.waiver { background: rgba(52,223,214,0.16); color: var(--cyan-a); }
+.activity-tag.freeagent { background: var(--accent-soft); color: var(--accent); }
+.activity-tag.trade { background: rgba(247,195,88,0.18); color: var(--amber-a); }
+.activity-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.activity-date { flex: none; color: var(--ink-faint); font-size: 11px; }
 /* Fantasy team name + real owner name stacked, like a player's stat line
    underneath their name — everywhere a team name is a prominent label
    (owner's ask, 2026-09-14), whenever a manager is actually on record. */
@@ -528,15 +539,40 @@ function closeMatchupModal(evt) {
   document.body.style.overflow = '';
 }
 
+function activityDate(iso) {
+  return new Date(iso).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+}
+function activityRowHtml(a) {
+  const when = activityDate(a.proposed_at);
+  if (a.kind === 'trade') {
+    const text = a.sides.map(s => `<b>${s.manager || s.team_name}</b> got ${s.received.join(', ')}`).join(' · ');
+    return `<div class="activity-row"><div class="activity-main"><span class="activity-tag trade">Trade</span><span class="activity-text">${text}</span></div><div class="activity-date">${when}</div></div>`;
+  }
+  const who = a.manager || a.team_name;
+  const parts = [];
+  if (a.adds.length) parts.push(`added ${a.adds.join(', ')}`);
+  if (a.drops.length) parts.push(`dropped ${a.drops.join(', ')}`);
+  const tag = a.kind === 'waiver' ? 'Waiver' : 'Free agent';
+  return `<div class="activity-row"><div class="activity-main"><span class="activity-tag ${a.kind}">${tag}</span><span class="activity-text"><b>${who}</b> ${parts.join(', ')}</span></div><div class="activity-date">${when}</div></div>`;
+}
+function activityCard(leagueId) {
+  const L = DIGEST.leagues[leagueId];
+  const card = el('div', 'card');
+  card.innerHTML = cardHead('trend', `${L.name} — Recent activity`) +
+    (L.activity.length ? L.activity.map(activityRowHtml).join('') : '<p class="muted">No waiver, free-agent, or trade activity yet.</p>');
+  return card;
+}
+
 function renderHome(root) {
   root.innerHTML = '';
 
   // Home shows both leagues, always, regardless of the league switcher
   // (owner's explicit call, 2026-09-14) — the switcher only affects the
   // other single-team-scoped tabs (My Team/League/Managers/Analytics).
-  // Two sections, both side by side per league: your own matchup
-  // (position-by-position vs. this week's opponent), then the full
-  // league scoreboard below it.
+  // Three sections, both side by side per league: your own matchup
+  // (position-by-position vs. this week's opponent), the full league
+  // scoreboard, then a real activity feed — so the owner doesn't have to
+  // open the ESPN app to see who moved (owner's ask, 2026-09-14).
   const leagueIds = Object.keys(DIGEST.leagues);
 
   const bothMatchups = el('div', 'grid grid-2 matchup-grid');
@@ -552,6 +588,10 @@ function renderHome(root) {
     bothFixtures.appendChild(card);
   });
   root.appendChild(bothFixtures);
+
+  const bothActivity = el('div', 'grid grid-2');
+  leagueIds.forEach(lid => bothActivity.appendChild(activityCard(lid)));
+  root.appendChild(bothActivity);
 }
 
 function renderTeamDetail(container, detail, leagueId) {

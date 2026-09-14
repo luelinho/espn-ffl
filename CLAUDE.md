@@ -280,3 +280,29 @@ get there:
   already carries `injuryStatus` and `ownership.percentOwned`, just wasn't
   being persisted. `ingest.load_week()` now captures one row per player
   per calendar day.
+
+**Real owner names, not ESPN handles (2026-09-14).** `build_db.py` was
+storing `member.displayName` (the ESPN username, e.g.
+`"ESPNFAN4770479651"`) as each manager's name, only falling back to real
+`firstName`+`lastName` when displayName was missing — backwards, since
+displayName is almost always present. Flipped the priority. Two real
+members have inconsistent capitalization in ESPN's own stored data
+(`"marcus bess"`, `"Nkhrumba Overton jr"`); fixed via an explicit,
+owner-confirmed `MANAGER_NAME_FIXES` map rather than a generic
+title-case pass, which would wrongly mangle names ESPN already had right
+(e.g. `"DeLoach"` → `"Deloach"`). The real name now shows under the
+fantasy team name everywhere a team name is a prominent label — matchup
+cards, the click-through modal, the scoreboard, standings, the analytics
+leaderboard — the same idea as a player's stat line under their name.
+
+**League activity feed (2026-09-14).** Home now shows each league's
+recent real waiver claims, free-agent adds/drops, and completed trades
+directly below that league's weekly scoreboard — `digest.league_activity()`,
+built from `raw_transactions`/`raw_transaction_items` (already ingested
+since Phase 3, never surfaced anywhere before this). Filters out `DRAFT`
+items (pre-season) and `LINEUP` items (starter/bench moves aren't a real
+transaction) and requires `status='EXECUTED'` — a `PENDING` or `CANCELED`
+trade proposal never happened. Grouped by `transaction_id`: confirmed live
+that ESPN records one waiver swap's add+drop as either one transaction or
+two, depending on the swap — shown as one feed line or two accordingly,
+never merged or split ourselves past what ESPN itself grouped.

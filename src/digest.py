@@ -375,6 +375,74 @@ def waiver_moves(conn, league_id: int, season_year: int, team_id: int) -> list[d
     ]
 
 
+def league_activity(conn, league_id: int, season_year: int, limit: int = 12) -> list[dict]:
+    """Recent real roster moves — waiver claims, free-agent adds/drops, and
+    completed trades — for the whole league, not just the owner's own team
+    (waiver_moves() above is owner-scoped; this is the Home page's "what
+    did I miss" feed). Excludes DRAFT items (pre-season) and LINEUP items
+    (starter/bench moves, not a real transaction) since neither is
+    activity worth seeing in a feed. EXECUTED only — a PENDING or CANCELED
+    trade proposal never happened. Grouped by transaction_id: ESPN records
+    a single waiver swap's add+drop as either one transaction or two
+    (confirmed live, 2026-09-14, both shapes exist in real data) — either
+    way each transaction_id becomes one feed entry, so a paired swap shows
+    as one line when ESPN grouped it and two when it didn't, never merged
+    or split ourselves.
+    """
+    rows = conn.execute(
+        """
+        SELECT t.transaction_id, t.type, t.proposed_at, t.team_id,
+               i.item_type, p.full_name, i.from_team_id, i.to_team_id
+        FROM raw_transaction_items i
+        JOIN raw_transactions t ON t.transaction_id = i.transaction_id
+        JOIN players p ON p.player_id = i.player_id
+        WHERE t.league_id=? AND t.season_year=? AND t.status='EXECUTED'
+          AND i.item_type IN ('ADD','DROP','TRADE')
+        ORDER BY t.proposed_at DESC
+        """,
+        (league_id, season_year),
+    ).fetchall()
+
+    team_info = {t["team_id"]: (t["team_name"], t["manager"]) for t in team_list(conn, league_id, season_year)}
+
+    groups: dict[str, dict] = {}
+    order: list[str] = []
+    for txid, ttype, proposed_at, txteam, item_type, pname, from_id, to_id in rows:
+        if txid not in groups:
+            groups[txid] = {"type": ttype, "proposed_at": proposed_at, "team_id": txteam,
+                             "adds": [], "drops": [], "trade_items": []}
+            order.append(txid)
+        g = groups[txid]
+        if item_type == "ADD":
+            g["adds"].append(pname)
+        elif item_type == "DROP":
+            g["drops"].append(pname)
+        else:
+            g["trade_items"].append({"player": pname, "from_team_id": from_id, "to_team_id": to_id})
+
+    activity = []
+    for txid in order[:limit]:
+        g = groups[txid]
+        if g["trade_items"]:
+            team_ids = sorted({x["from_team_id"] for x in g["trade_items"]} | {x["to_team_id"] for x in g["trade_items"]})
+            sides = [
+                {"team_id": tid, "team_name": team_info.get(tid, (f"Team {tid}", None))[0],
+                 "manager": team_info.get(tid, (None, None))[1],
+                 "received": [x["player"] for x in g["trade_items"] if x["to_team_id"] == tid]}
+                for tid in team_ids
+            ]
+            activity.append({"kind": "trade", "proposed_at": g["proposed_at"], "sides": sides})
+        else:
+            team_name, manager = team_info.get(g["team_id"], (None, None))
+            activity.append({
+                "kind": "waiver" if g["type"] == "WAIVER" else "freeagent",
+                "proposed_at": g["proposed_at"], "team_id": g["team_id"],
+                "team_name": team_name, "manager": manager,
+                "adds": g["adds"], "drops": g["drops"],
+            })
+    return activity
+
+
 def alerts(conn, league_id: int) -> dict:
     total = conn.execute("SELECT COUNT(*) FROM data_issues WHERE resolved=0 AND league_id=?", (league_id,)).fetchone()[0]
     rows = conn.execute(
@@ -403,6 +471,7 @@ def build_league_digest(conn, league_id: int, season_year: int) -> dict:
         "my_team_detail": team_detail(conn, league_id, season_year, info["my_team_id"], week, gstatus, ginfo, inj) if info["my_team_id"] else None,
         "teams_detail": {str(t["team_id"]): team_detail(conn, league_id, season_year, t["team_id"], week, gstatus, ginfo, inj) for t in teams},
         "waiver_moves": waiver_moves(conn, league_id, season_year, info["my_team_id"]) if info["my_team_id"] else [],
+        "activity": league_activity(conn, league_id, season_year),
         "alerts": alerts(conn, league_id),
     }
 
