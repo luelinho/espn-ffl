@@ -47,6 +47,9 @@ def run() -> int:
 
         n_standings = ingest.load_standings(conn, client, league_id, config.SEASON_YEAR, current_matchup_period)
         print(f"  standings snapshot (week {current_matchup_period}): {n_standings} teams")
+
+        n_games = ingest.load_pro_games(conn, client, config.SEASON_YEAR, current_matchup_period)
+        print(f"  real NFL games, week {current_matchup_period}: {n_games} games")
         print()
 
     # Validators

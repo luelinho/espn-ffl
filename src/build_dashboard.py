@@ -29,6 +29,8 @@ ICONS = {
     "trend": '<path d="M4 15 9 9l4 3 7-8"/><path d="M16 4h4v4"/>',
     "bench": '<path d="M3 11h18"/><path d="M5 11V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v4"/><path d="M4 11v8"/><path d="M20 11v8"/>',
     "trophy": '<path d="M8 4h8v5a4 4 0 0 1-8 0V4Z"/><path d="M8 5H5a3 3 0 0 0 3 4"/><path d="M16 5h3a3 3 0 0 1-3 4"/><path d="M12 13v3"/><path d="M9 20h6"/><path d="M10 17h4v3h-4z"/>',
+    "menu": '<path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/>',
+    "close": '<path d="M6 6l12 12"/><path d="M18 6 6 18"/>',
 }
 
 
@@ -69,27 +71,36 @@ body {
 }
 .shell { display: flex; height: 100vh; }
 
-/* --- sidebar --- */
-.sidebar { width: 216px; flex: none; background: var(--sidebar); border-right: 1px solid var(--border); padding: 20px 14px; display: flex; flex-direction: column; gap: 4px; height: 100vh; overflow-y: auto; }
-.sidebar .brand { font-weight: 800; font-size: 15px; letter-spacing: -0.01em; padding: 6px 10px 18px; }
+/* --- nav drawer: hidden by default, slides in from the left over a
+   backdrop (owner's call, 2026-09-14) — replaces both the old always-
+   visible sidebar and its separate mobile fallback with one pattern that
+   works at every width. --- */
+.sidebar {
+  position: fixed; top: 0; left: 0; width: 240px; height: 100vh; z-index: 200;
+  background: var(--sidebar); border-right: 1px solid var(--border);
+  padding: 20px 14px; display: flex; flex-direction: column; gap: 4px; overflow-y: auto;
+  transform: translateX(-100%); transition: transform 0.22s ease;
+  box-shadow: 20px 0 40px rgba(0,0,0,0.4);
+}
+.sidebar.open { transform: translateX(0); }
+.sidebar .brand { font-weight: 800; font-size: 15px; letter-spacing: -0.01em; padding: 6px 10px 18px; display: flex; align-items: center; justify-content: space-between; }
 .sidebar .brand-sub { display: block; color: var(--ink-faint); font-size: 10.5px; font-weight: 500; margin-top: 3px; }
+.nav-close { background: none; border: none; color: var(--ink-soft); cursor: pointer; padding: 4px; display: flex; }
+.nav-backdrop { position: fixed; inset: 0; background: rgba(5,3,12,0.55); backdrop-filter: blur(1px); z-index: 190; opacity: 0; pointer-events: none; transition: opacity 0.22s ease; }
+.nav-backdrop.open { opacity: 1; pointer-events: auto; }
 .navitem { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 11px; color: var(--ink-soft); font-size: 13px; font-weight: 700; cursor: pointer; }
 .navitem svg { flex: none; opacity: 0.85; }
 .navitem.active { background: linear-gradient(135deg, var(--blue-a), var(--blue-b)); color: #fff; }
 .navitem.active svg { opacity: 1; }
 .navitem:not(.active):hover { background: rgba(255,255,255,0.04); color: var(--ink); }
-@media (max-width: 820px) {
-  html, body { height: auto; overflow: visible; }
-  .shell { flex-direction: column; height: auto; }
-  .sidebar { width: 100%; height: auto; flex-direction: row; align-items: center; overflow-x: auto; overflow-y: hidden; padding: 10px 12px; gap: 6px; }
-  .sidebar .brand { display: none; }
-  .navitem { flex: none; white-space: nowrap; }
-  main { height: auto; overflow: visible; }
-  .scroll-area { overflow-y: visible; }
-}
 
 /* --- topbar --- */
 .topbar { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 24px; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+.topbar-left { display: flex; align-items: center; gap: 14px; }
+.hamburger-btn { width: 38px; height: 38px; border-radius: 10px; background: var(--card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--ink); cursor: pointer; flex: none; }
+.hamburger-btn:hover { background: var(--card-2); }
+.topbar-brand { font-weight: 800; font-size: 15px; letter-spacing: -0.01em; white-space: nowrap; }
+.topbar-brand .brand-sub { display: block; color: var(--ink-faint); font-size: 10px; font-weight: 500; margin-top: 1px; }
 .league-switch { display: flex; gap: 4px; background: var(--card); border: 1px solid var(--border); border-radius: 999px; padding: 4px; }
 .league-switch button { border: none; background: transparent; color: var(--ink-soft); padding: 8px 16px; border-radius: 999px; font-size: 12.5px; font-weight: 700; cursor: pointer; }
 .league-switch button.active { background: linear-gradient(135deg, var(--blue-a), var(--blue-b)); color: #fff; }
@@ -149,27 +160,58 @@ tr.owner-row td { background: var(--accent-soft); }
 .logo { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 6px; background: var(--card-2); }
 
 /* --- head-to-head matchup comparison (Home) --- */
-.mc-league-label { font-size: 10.5px; font-weight: 700; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
-.matchup-card-head { display: flex; align-items: center; gap: 8px; padding-bottom: 6px; }
-.mc-team { display: flex; align-items: center; gap: 7px; flex: 1 1 0; min-width: 0; overflow: hidden; }
+.matchup-grid { gap: 20px; }
+.matchup-card { padding: 26px 28px; }
+.mc-league-label { font-size: 12px; font-weight: 700; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 14px; }
+.matchup-card-head { display: flex; align-items: center; gap: 12px; padding-bottom: 8px; }
+.mc-team { display: flex; align-items: center; gap: 10px; flex: 1 1 0; min-width: 0; overflow: hidden; }
 .mc-team.right { flex-direction: row-reverse; text-align: right; }
-.mc-name { font-weight: 800; font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; min-width: 0; }
-.mc-score { flex: none; font-size: 18px; font-weight: 800; font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; padding: 0 4px; }
-.mc-dash { color: var(--ink-faint); font-weight: 500; margin: 0 3px; }
-.mc-live-row { text-align: center; margin: -2px 0 10px; }
-.matchup-divider { height: 1px; background: var(--border); margin: 4px 0 10px; }
-.matchup-row { display: grid; grid-template-columns: 1fr 46px 1fr; align-items: center; gap: 8px; padding: 5px 0; font-size: 12px; }
-.mp { display: flex; align-items: center; gap: 6px; min-width: 0; }
-.mp-mine { justify-content: flex-start; }
-.mp-theirs { justify-content: flex-end; text-align: right; }
-.mp-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.mp-pts { font-weight: 800; font-variant-numeric: tabular-nums; flex: none; }
-.mp-slot { text-align: center; font-size: 9.5px; font-weight: 800; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.03em; }
+.mc-name { font-weight: 800; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; min-width: 0; }
+.mc-score { flex: none; font-size: 30px; font-weight: 800; font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; padding: 0 8px; }
+.mc-dash { color: var(--ink-faint); font-weight: 500; margin: 0 5px; }
+.mc-live-row { text-align: center; margin: -4px 0 14px; }
+.matchup-divider { height: 1px; background: var(--border); margin: 6px 0 14px; }
+.matchup-row { display: grid; grid-template-columns: 1fr 56px 1fr; align-items: center; gap: 12px; padding: 9px 0; font-size: 14.5px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.matchup-row:last-child { border-bottom: none; }
+.mp { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+/* space-between pushes points toward the shared center slot column (like
+   ESPN's own matchup card), keeping the name pinned to the outer edge —
+   .mp-id groups name+injury-badge into one flex item so they move
+   together instead of space-between prying them apart too. */
+.mp-main { display: flex; align-items: center; gap: 6px; min-width: 0; justify-content: space-between; }
+.mp-mine { text-align: left; }
+.mp-theirs { text-align: right; }
+.mp-id { display: flex; align-items: center; gap: 6px; min-width: 0; overflow: hidden; }
+.mp-theirs .mp-id { flex-direction: row-reverse; }
+.mp-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; }
+.mp-pts { font-weight: 800; font-variant-numeric: tabular-nums; flex: none; min-width: 34px; }
+.mp-sub { font-size: 10px; color: var(--ink-faint); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mp-slot { text-align: center; font-size: 10.5px; font-weight: 800; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.04em; }
+/* Three real states from raw_pro_games, not just played/not-played:
+   not_started (their game hasn't kicked off — points is null, no upside
+   spent yet), live (game in progress — points can still change), final
+   (settled). Dim not-started, pulse a dot on live, leave final plain. */
+.mp.not-played { opacity: 0.42; }
+.mp.not-played .mp-pts { font-weight: 600; }
+.mp.live-game .mp-pts { color: var(--pink-a); }
+.live-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--pink-a); animation: livedot 1.4s ease-in-out infinite; flex: none; }
+@keyframes livedot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+/* Injury status — real values from ESPN's mRoster player.injuryStatus,
+   captured daily into raw_player_snapshots (previously an unused table).
+   Amber for still-probable-to-play, pink for likely/certainly out. */
+.inj-badge { font-size: 8.5px; font-weight: 800; padding: 1px 4px; border-radius: 4px; flex: none; letter-spacing: 0.02em; }
+.inj-badge.inj-q { background: rgba(247,195,88,0.18); color: var(--amber-a); }
+.inj-badge.inj-o { background: rgba(241,88,163,0.18); color: var(--pink-a); }
 .roster-row { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 12.5px; }
 .roster-row:last-child { border-bottom: none; }
 .roster-row.bench { opacity: 0.55; }
-.roster-row .name { flex: 1; }
-.roster-row .pts { font-weight: 800; font-variant-numeric: tabular-nums; }
+.roster-row.not-played { opacity: 0.55; }
+.roster-row.live-game .pts { color: var(--pink-a); }
+.roster-row .name { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.roster-row .name-main { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.roster-row .name-main span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.roster-row .sub { font-size: 10.5px; color: var(--ink-faint); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.roster-row .pts { font-weight: 800; font-variant-numeric: tabular-nums; flex: none; }
 select { background: var(--card-2); color: var(--ink); border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; font-size: 13px; }
 .footer { text-align: center; color: var(--ink-faint); font-size: 11px; padding: 20px; }
 
@@ -226,6 +268,19 @@ function switchTab(tab) {
   document.querySelectorAll('.page').forEach(p => p.classList.toggle('active', p.id === 'page-' + tab));
   saveViewState();
   renderCurrentTab();
+  closeNav();
+}
+
+function openNav() {
+  document.getElementById('sidebar').classList.add('open');
+  document.getElementById('nav-backdrop').classList.add('open');
+}
+function closeNav() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('nav-backdrop').classList.remove('open');
+}
+function toggleNav() {
+  document.getElementById('sidebar').classList.contains('open') ? closeNav() : openNav();
 }
 function renderCurrentTab() {
   const root = document.getElementById('page-' + currentTab);
@@ -304,10 +359,37 @@ function findMyMatchup(L) {
   return { mine, opp, live: m.live };
 }
 
+function statusClass(status) {
+  if (status === 'live') return ' live-game';
+  if (status === 'not_started' || status === 'bye') return ' not-played';
+  return '';
+}
+function liveDot(status) { return status === 'live' ? '<span class="live-dot" title="Game in progress"></span>' : ''; }
+
+const INJ_LABELS = { QUESTIONABLE: ['Q', 'q'], DOUBTFUL: ['D', 'o'], OUT: ['O', 'o'], INJURY_RESERVE: ['IR', 'o'], DAY_TO_DAY: ['DTD', 'q'], SUSPENSION: ['SUSP', 'o'] };
+function injBadge(status) {
+  if (!status) return '';
+  const [label, sev] = INJ_LABELS[status] || [status.slice(0, 3), 'q'];
+  return `<span class="inj-badge inj-${sev}" title="${status}">${label}</span>`;
+}
+function gameLine(p) {
+  if (p.game_status === 'bye') return 'BYE';
+  if (!p.opponent) return '';
+  const prefix = p.is_home ? '' : '@';
+  if (p.game_status === 'not_started') {
+    const when = p.kickoff_utc ? new Date(p.kickoff_utc).toLocaleString(undefined, { weekday: 'short', hour: 'numeric', minute: '2-digit' }) : '';
+    return `${prefix}${p.opponent} ${when}`.trim();
+  }
+  const score = (p.own_score != null && p.opp_score != null) ? `${p.own_score.toFixed(0)}-${p.opp_score.toFixed(0)} ` : '';
+  return `${prefix}${p.opponent} ${score}${p.game_detail || ''}`.trim();
+}
+function mpSub(p) { return p.stat_line || gameLine(p); }
+function fullSub(p) { return [gameLine(p), p.stat_line].filter(Boolean).join(' · '); }
+
 function matchupComparisonCard(leagueId) {
   const L = DIGEST.leagues[leagueId];
   const matchup = findMyMatchup(L);
-  const card = el('div', 'card');
+  const card = el('div', 'card matchup-card');
   if (!matchup) {
     card.innerHTML = cardHead('league', L.name) + '<p class="muted">No matchup this week (bye).</p>';
     return card;
@@ -331,10 +413,16 @@ function matchupComparisonCard(leagueId) {
     const count = Math.max(mine.length, theirs.length);
     for (let i = 0; i < count; i++) {
       const mp = mine[i], op = theirs[i];
+      const mineHtml = mp ? `
+        <div class="mp-main"><span class="mp-id"><span class="mp-name">${mp.name}</span>${injBadge(mp.injury_status)}</span><span class="mp-pts">${liveDot(mp.game_status)}${mp.points === null ? '—' : mp.points.toFixed(1)}</span></div>
+        <div class="mp-sub">${mpSub(mp)}</div>` : '<span class="muted">—</span>';
+      const theirsHtml = op ? `
+        <div class="mp-main"><span class="mp-pts">${op.points === null ? '—' : op.points.toFixed(1)}${liveDot(op.game_status)}</span><span class="mp-id">${injBadge(op.injury_status)}<span class="mp-name">${op.name}</span></span></div>
+        <div class="mp-sub">${mpSub(op)}</div>` : '<span class="muted">—</span>';
       rows += `<div class="matchup-row">
-        <div class="mp mp-mine">${mp ? `<span class="mp-name">${mp.name}</span><span class="mp-pts">${mp.points === null ? '—' : mp.points.toFixed(1)}</span>` : '<span class="muted">—</span>'}</div>
+        <div class="mp mp-mine${mp ? statusClass(mp.game_status) : ''}">${mineHtml}</div>
         <div class="mp-slot">${SLOT_LABELS[slotId] || slotId}</div>
-        <div class="mp mp-theirs">${op ? `<span class="mp-pts">${op.points === null ? '—' : op.points.toFixed(1)}</span><span class="mp-name">${op.name}</span>` : '<span class="muted">—</span>'}</div>
+        <div class="mp mp-theirs${op ? statusClass(op.game_status) : ''}">${theirsHtml}</div>
       </div>`;
     }
   });
@@ -364,7 +452,7 @@ function renderHome(root) {
   // league scoreboard below it.
   const leagueIds = Object.keys(DIGEST.leagues);
 
-  const bothMatchups = el('div', 'grid grid-2');
+  const bothMatchups = el('div', 'grid grid-2 matchup-grid');
   leagueIds.forEach(lid => bothMatchups.appendChild(matchupComparisonCard(lid)));
   root.appendChild(bothMatchups);
 
@@ -407,10 +495,11 @@ function renderTeamDetail(container, detail, leagueId) {
   rosterCard.appendChild(el('div', null, cardHead('myteam', 'Roster')));
   const starters = detail.roster.filter(p => p.is_starter);
   const bench = detail.roster.filter(p => !p.is_starter);
-  starters.forEach(p => rosterCard.appendChild(el('div', 'roster-row', `<div class="name">${p.name}</div><div class="pts">${p.points === null ? '—' : p.points.toFixed(1)}</div>`)));
+  const rosterRowHtml = p => `<div class="name"><div class="name-main"><span>${p.name}</span>${injBadge(p.injury_status)}</div><div class="sub">${fullSub(p)}</div></div><div class="pts">${liveDot(p.game_status)}${p.points === null ? '—' : p.points.toFixed(1)}</div>`;
+  starters.forEach(p => rosterCard.appendChild(el('div', 'roster-row' + statusClass(p.game_status), rosterRowHtml(p))));
   if (bench.length) {
     rosterCard.appendChild(el('div', 'muted', 'Bench'));
-    bench.forEach(p => rosterCard.appendChild(el('div', 'roster-row bench', `<div class="name">${p.name}</div><div class="pts">${p.points === null ? '—' : p.points.toFixed(1)}</div>`)));
+    bench.forEach(p => rosterCard.appendChild(el('div', 'roster-row bench' + statusClass(p.game_status), rosterRowHtml(p))));
   }
   container.appendChild(rosterCard);
 }
@@ -518,12 +607,20 @@ def build_html(digest: dict) -> str:
 <title>Fantasy Football — Multi-League Dashboard</title>
 <style>{CSS}</style>
 <div class="shell">
-  <div class="sidebar">
-    <div class="brand">Fantasy Football<span class="brand-sub">{digest['season_year']} season · Week {list(digest['leagues'].values())[0]['current_week']}</span></div>
+  <div class="nav-backdrop" id="nav-backdrop" onclick="closeNav()"></div>
+  <div class="sidebar" id="sidebar">
+    <div class="brand">
+      <span>Fantasy Football<span class="brand-sub">{digest['season_year']} season · Week {list(digest['leagues'].values())[0]['current_week']}</span></span>
+      <button class="nav-close" onclick="closeNav()" aria-label="Close menu">{icon('close', 20)}</button>
+    </div>
     {nav_items}
   </div>
   <main>
     <div class="topbar">
+      <div class="topbar-left">
+        <button class="hamburger-btn" onclick="toggleNav()" aria-label="Open menu">{icon('menu', 20)}</button>
+        <div class="topbar-brand">Fantasy Football<span class="brand-sub">Week {list(digest['leagues'].values())[0]['current_week']}</span></div>
+      </div>
       <div class="league-switch">{league_buttons}</div>
       <div class="topbar-icons">
         <div class="refresh-note" title="This page reloads itself automatically. It only shows new scores if src/live_refresh.py is running in the background — otherwise it's a harmless reload of the same file.">Auto-refresh every {refresh_minutes:g}m</div>

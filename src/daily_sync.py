@@ -41,6 +41,7 @@ def run() -> int:
 
     weeks_touched = 0
     weeks_skipped = 0
+    current_weeks_seen: set[int] = set()
 
     for league_id in config.LEAGUES:
         res = client.get_league(league_id, config.SEASON_YEAR, views=["mSettings"])
@@ -49,6 +50,7 @@ def run() -> int:
             continue
         current_matchup_period = res.json_body["status"]["currentMatchupPeriod"]
         team_count = res.json_body["settings"]["size"]
+        current_weeks_seen.add(current_matchup_period)
         print(f"=== League {league_id} — current matchup period: {current_matchup_period} ===")
 
         for week in range(1, current_matchup_period + 1):
@@ -64,6 +66,12 @@ def run() -> int:
         n_standings = ingest.load_standings(conn, client, league_id, config.SEASON_YEAR, current_matchup_period)
         print(f"  transactions: {n_tx} rows | standings: {n_standings} teams")
         print()
+
+    # Real NFL game status — universal, not per-league, so fetched once per
+    # distinct current week (usually just one) rather than once per league.
+    for week in current_weeks_seen:
+        n_games = ingest.load_pro_games(conn, client, config.SEASON_YEAR, week)
+        print(f"Real NFL games, week {week}: {n_games} games (status refreshed)")
 
     unresolved = conn.execute(
         "SELECT COUNT(*) FROM data_issues WHERE resolved = 0 AND detected_at > ?", (started,)

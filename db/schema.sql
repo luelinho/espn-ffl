@@ -58,6 +58,28 @@ CREATE TABLE IF NOT EXISTS raw_player_snapshots (
   PRIMARY KEY (player_id, snapshot_date)
 );
 
+-- Real-world NFL game status, universal (not league-scoped) — confirmed
+-- live in ESPN's proTeamSchedules response (2026-09-14): each game carries
+-- inProgress and detail ('Final' once done), which is exactly what's
+-- needed to tell "hasn't played" from "playing right now" from "done" —
+-- something points_scored alone can't distinguish (null vs. a real number
+-- doesn't say whether that number is still changing).
+CREATE TABLE IF NOT EXISTS raw_pro_games (
+  season_year       INTEGER NOT NULL,
+  week              INTEGER NOT NULL,
+  game_id           INTEGER NOT NULL,
+  home_team_id      INTEGER NOT NULL,
+  away_team_id      INTEGER NOT NULL,
+  home_score        INTEGER,
+  away_score        INTEGER,
+  detail            TEXT,
+  in_progress       BOOLEAN NOT NULL DEFAULT 0,
+  percent_complete  REAL,
+  kickoff_utc       TIMESTAMP,
+  fetched_at        TIMESTAMP NOT NULL,
+  PRIMARY KEY (season_year, week, game_id)
+);
+
 -- === Managers and teams ======================================================
 
 CREATE TABLE IF NOT EXISTS managers (

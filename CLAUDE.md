@@ -227,3 +227,56 @@ breakpoint without a working replacement** — the same class of bug,
 caught the same way: `display:none` on the sidebar below 820px looked fine
 in a screenshot and was still a real dead end, since nothing else let you
 reach any tab but Home at that width.
+
+**Real per-game status, live vs. finished (2026-09-14).** `raw_pro_games`
+(new table) holds ESPN's real per-game state from `proTeamSchedules` —
+`inProgress`, `detail`, `percentComplete`, scores, kickoff — fetched by
+`ingest.load_pro_games()` once per distinct current week per sync, since a
+game's status is universal, not league-scoped. `digest.game_status_map()`
+turns this into `pro_team_id -> 'not_started' | 'live' | 'final'` per
+player. **Bug found live:** an exact `detail == 'Final'` check missed
+overtime games (`detail` is literally `'Final/OT'` there) — a Lions/Bills
+OT game showed as `not_started` even with real settled stats already
+recorded (Jared Goff, 18.0 pts). Fixed by using `percent_complete >= 100`
+as the primary signal instead; `detail` is stored for display only. The
+dashboard dims not-started players, puts a pulsing dot on live ones (their
+points can still change), and leaves final ones plain.
+
+**Two real logo bugs found and fixed (2026-09-14).** Both were live in
+production, not caught until actually inspecting the cached files.
+(1) `digest.fetch_logo_b64()` always wrapped the cached bytes as
+`data:image/png;base64,...` regardless of the source's actual type — but
+roughly half of real team logos are SVGs (custom logo-pack uploads), and a
+raster PNG decoder can't parse raw SVG XML, so those rendered as a
+broken/missing image in the browser. Fixed by deriving the real MIME type
+from the URL extension (`mimetypes.guess_type`). (2) The cache filename was
+keyed only by `team_id`, but ESPN team IDs are assigned per-league
+starting at 1, so both leagues' team 1, team 12, etc. silently shared (and
+could steal) each other's cached logo — a correctness bug, not just a
+missing-icon one. Fixed by keying the cache on `(league_id, team_id)`.
+Two of 26 teams still show the "?" placeholder — those are genuinely dead
+third-party logo URLs (an expired Twitter image, an SSL-dead meme host),
+not a bug in our code.
+
+**Per-player real stat lines, opponent/game context, and injury status
+(2026-09-14).** Every roster entry now carries a compact stat line (e.g.
+"206 YDS, 2 TD" for a QB, "5 REC, 63 YDS" for a WR), the real game context
+("@CAR 59-37 Final" or, pre-kickoff, "Mon 8:15 PM" in the viewer's own
+timezone), and injury status (Q/D/O/IR badges). Two real gaps closed to
+get there:
+- `raw_player_week_stats.stats_json` (ESPN's numeric stat-ID blob) was
+  already being stored but never parsed into anything human-readable.
+  ESPN doesn't publish a stat-ID reference, and CLAUDE.md rule 7 says don't
+  guess at the API — so `digest._stat_line()`'s ID-to-category mapping was
+  derived by cross-checking real week-1 box scores line-by-line against
+  the owner's own ESPN app screenshot (Jared Goff 206 YDS/2 TD, Brock Purdy
+  205/3/INT, D'Andre Swift's exact 124 YDS/3 TD, A.J. Brown's exact 3
+  REC/26 YDS, Cam Little's exact 2/2 FG · 4/4 XP, the Jaguars D/ST's exact
+  INT/FR/10 PA), not assumed from memory. Every category shown was
+  confirmed against a real number before being trusted; anything not
+  confirmed (e.g. fumbles) was left out rather than guessed.
+- `raw_player_snapshots` (injury status, ownership %) existed in schema
+  since Phase 2 but nothing ever wrote to it — `mRoster`'s player object
+  already carries `injuryStatus` and `ownership.percentOwned`, just wasn't
+  being persisted. `ingest.load_week()` now captures one row per player
+  per calendar day.

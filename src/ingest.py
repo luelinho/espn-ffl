@@ -100,6 +100,46 @@ def load_pro_teams(conn: sqlite3.Connection, client: ESPNClient, season_year: st
     return len(teams)
 
 
+def load_pro_games(conn: sqlite3.Connection, client: ESPNClient, season_year: str, week: int) -> int:
+    """Real NFL game status for one week — inProgress/detail/percentComplete,
+    confirmed live in proTeamSchedules (2026-09-14). Universal, not
+    league-scoped: a game's status is the same fact regardless of which
+    league is asking. Fetched fresh each pipeline run since this genuinely
+    changes during a live week (unlike pro_teams' static name/abbrev)."""
+    res = client.get_season_reference(season_year, views=["proTeamSchedules"])
+    if not res.ok:
+        log_issue(conn, "error", "pro_games_fetch", f"proTeamSchedules failed: {res.summary()}")
+        return 0
+
+    seen_game_ids: set[int] = set()
+    teams = res.json_body.get("settings", {}).get("proTeams", [])
+    for t in teams:
+        games = t.get("proGamesByScoringPeriod", {}).get(str(week), [])
+        for g in games:
+            if g["id"] in seen_game_ids:
+                continue  # each game appears once per side (home + away) — dedupe
+            seen_game_ids.add(g["id"])
+            conn.execute(
+                """
+                INSERT INTO raw_pro_games
+                    (season_year, week, game_id, home_team_id, away_team_id, home_score, away_score,
+                     detail, in_progress, percent_complete, kickoff_utc, fetched_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT (season_year, week, game_id) DO UPDATE SET
+                    home_score = excluded.home_score, away_score = excluded.away_score,
+                    detail = excluded.detail, in_progress = excluded.in_progress,
+                    percent_complete = excluded.percent_complete, fetched_at = excluded.fetched_at
+                """,
+                (int(season_year), week, g["id"], g["homeProTeamId"], g["awayProTeamId"],
+                 g.get("homeScore"), g.get("awayScore"), g.get("detail"), int(g.get("inProgress", False)),
+                 g.get("percentComplete"),
+                 datetime.fromtimestamp(g["date"] / 1000, tz=timezone.utc).isoformat() if g.get("date") else None,
+                 now()),
+            )
+    conn.commit()
+    return len(seen_game_ids)
+
+
 # --- per-week extraction helpers ---------------------------------------------
 
 def _actual_week_stat(stats: list[dict], week: int) -> Optional[dict]:
@@ -149,6 +189,21 @@ def load_week(conn: sqlite3.Connection, client: ESPNClient, league_id: int, seas
                 """,
                 (player_id, player.get("fullName", ""), player.get("defaultPositionId"),
                  json.dumps(player.get("eligibleSlots", [])), player.get("proTeamId")),
+            )
+
+            # Injury status + ownership % — already present on every mRoster
+            # player object (injuryStatus, ownership.percentOwned), just not
+            # persisted until now. One row per player per calendar day.
+            conn.execute(
+                """
+                INSERT INTO raw_player_snapshots (player_id, snapshot_date, ownership_pct, injury_status, fetched_at)
+                VALUES (?, ?, ?, ?, ?)
+                ON CONFLICT (player_id, snapshot_date) DO UPDATE SET
+                    ownership_pct = excluded.ownership_pct, injury_status = excluded.injury_status,
+                    fetched_at = excluded.fetched_at
+                """,
+                (player_id, datetime.now(timezone.utc).date().isoformat(),
+                 (player.get("ownership") or {}).get("percentOwned"), player.get("injuryStatus"), now()),
             )
 
             wk_stat = _actual_week_stat(player.get("stats", []), week)

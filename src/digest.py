@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import base64
 import json
+import mimetypes
 import sys
 from datetime import datetime, timezone
 
@@ -30,11 +31,23 @@ from .ingest import connect
 LOGO_CACHE_DIR = config.REPO_ROOT / "digest" / ".logo_cache"
 
 
-def fetch_logo_b64(url: str, team_id: int) -> str | None:
+def fetch_logo_b64(url: str, league_id: int, team_id: int) -> str | None:
+    """Fetch and cache a team's logo, embedded as a correctly-typed data URI.
+
+    Two real bugs found by inspecting the cache directly: (1) ESPN team logos
+    are a mix of PNG, JPEG, and SVG sources, but every one was being wrapped
+    as `data:image/png` regardless of actual type — a raster PNG decoder
+    can't parse raw SVG XML, so any SVG-sourced team logo rendered as a
+    broken/missing image in the browser. Fixed by deriving the real MIME
+    type from the URL's extension. (2) The cache filename was keyed only by
+    team_id, but ESPN team IDs are assigned per-league starting at 1, so two
+    leagues' same-numbered teams silently shared (and could steal) each
+    other's cached logo bytes. Fixed by keying the cache on league_id too.
+    """
     if not url:
         return None
     LOGO_CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    cache_path = LOGO_CACHE_DIR / f"team_{team_id}.img"
+    cache_path = LOGO_CACHE_DIR / f"team_{league_id}_{team_id}.img"
     if not cache_path.exists():
         try:
             s = requests.Session()
@@ -46,7 +59,8 @@ def fetch_logo_b64(url: str, team_id: int) -> str | None:
             cache_path.write_bytes(resp.content)
         except requests.RequestException:
             return None
-    return "data:image/png;base64," + base64.b64encode(cache_path.read_bytes()).decode()
+    mime = mimetypes.guess_type(url)[0] or "image/png"
+    return f"data:{mime};base64," + base64.b64encode(cache_path.read_bytes()).decode()
 
 
 def league_info(conn, league_id: int, season_year: int) -> dict:
@@ -130,23 +144,174 @@ def week_matchups(conn, league_id: int, season_year: int, week: int) -> list[dic
     ]
 
 
-def roster_for(conn, league_id: int, season_year: int, team_id: int, week: int) -> list[dict]:
+def game_status_map(conn, season_year: int, week: int) -> dict[int, str]:
+    """pro_team_id -> 'not_started' | 'live' | 'final'. A team missing from
+    this map has a bye that week (no game at all) — confirmed real from
+    ESPN's proTeamSchedules (2026-09-14): `percentComplete` reaches 100
+    once a game ends, `inProgress` is true while it's live. Real bug found
+    testing this: `detail == 'Final'` looks right but misses overtime games
+    (`detail` is literally 'Final/OT' there) — a Lions/Bills OT game showed
+    as 'not_started' with real settled stats already in, a real
+    misclassification, not a display nit. percent_complete >= 100 is the
+    correct, robust signal; `detail` stays stored for display only."""
+    rows = conn.execute(
+        "SELECT home_team_id, away_team_id, in_progress, percent_complete FROM raw_pro_games WHERE season_year=? AND week=?",
+        (season_year, week),
+    ).fetchall()
+    status: dict[int, str] = {}
+    for home_id, away_id, in_progress, percent_complete in rows:
+        if (percent_complete or 0) >= 100:
+            s = "final"
+        elif in_progress:
+            s = "live"
+        else:
+            s = "not_started"
+        status[home_id] = s
+        status[away_id] = s
+    return status
+
+
+def game_info_map(conn, season_year: int, week: int) -> dict[int, dict]:
+    """pro_team_id -> {opp_abbrev, own_score, opp_score, is_home, detail,
+    kickoff_utc} — the same raw_pro_games rows game_status_map() reads, plus
+    the score/opponent/clock detail needed to show a real per-player game
+    line (e.g. "@LAR 27-7 Final"), joined against pro_teams for abbrevs."""
     rows = conn.execute(
         """
-        SELECT p.full_name, p.default_position_id, r.is_starter, r.lineup_slot_id, r.points_scored, p.pro_team_id
-        FROM raw_roster_entries r JOIN players p ON p.player_id = r.player_id
+        SELECT g.home_team_id, g.away_team_id, g.home_score, g.away_score, g.detail, g.kickoff_utc,
+               ht.abbrev, at.abbrev
+        FROM raw_pro_games g
+        JOIN pro_teams ht ON ht.pro_team_id = g.home_team_id AND ht.season_year = g.season_year
+        JOIN pro_teams at ON at.pro_team_id = g.away_team_id AND at.season_year = g.season_year
+        WHERE g.season_year=? AND g.week=?
+        """,
+        (season_year, week),
+    ).fetchall()
+    info: dict[int, dict] = {}
+    for home_id, away_id, home_score, away_score, detail, kickoff, home_abbr, away_abbr in rows:
+        info[home_id] = {"opp_abbrev": away_abbr, "own_score": home_score, "opp_score": away_score,
+                          "is_home": True, "detail": detail, "kickoff_utc": kickoff}
+        info[away_id] = {"opp_abbrev": home_abbr, "own_score": away_score, "opp_score": home_score,
+                          "is_home": False, "detail": detail, "kickoff_utc": kickoff}
+    return info
+
+
+def injury_map(conn) -> dict[int, dict]:
+    """player_id -> {injury_status, ownership_pct} from each player's most
+    recent raw_player_snapshots row. That table existed in schema since
+    Phase 2 but nothing ever wrote to it — mRoster's player object already
+    carries injuryStatus/ownership.percentOwned, just wasn't being
+    persisted; ingest.load_week() now captures one row per player per day."""
+    rows = conn.execute(
+        """
+        SELECT s.player_id, s.injury_status, s.ownership_pct
+        FROM raw_player_snapshots s
+        JOIN (SELECT player_id, MAX(snapshot_date) AS md FROM raw_player_snapshots GROUP BY player_id) latest
+          ON latest.player_id = s.player_id AND latest.md = s.snapshot_date
+        """
+    ).fetchall()
+    return {pid: {"injury_status": status, "ownership_pct": pct} for pid, status, pct in rows}
+
+
+def _td_label(td: float | None) -> str | None:
+    if not td:
+        return None
+    return "TD" if td == 1 else f"{td:.0f} TD"
+
+
+def _stat_line(position_id: int | None, stats_json: str | None) -> str | None:
+    """Compact per-player stat line, ESPN-app style — one headline category
+    per position (passing for QB, rushing for RB, receiving for WR/TE,
+    made/attempted for K, turnovers + points-allowed for D/ST), matching
+    what ESPN's own matchup card shows (it doesn't show a RB's incidental
+    receiving line either — confirmed against the real card, 2026-09-14).
+
+    Stat IDs are confirmed empirically against real week-1 box scores, not
+    assumed from any published mapping (there is no ESPN-documented key for
+    these — CLAUDE.md rule 7 says don't guess at the API). E.g. ids 3/4/20
+    cross-checked against Jared Goff's real 206 YDS/2 TD and Brock Purdy's
+    205 YDS/3 TD/1 INT; ids 24/25 against D'Andre Swift's exact 124 YDS/3
+    TD; ids 53/42/43 against A.J. Brown's exact 3 REC/26 YDS and CeeDee
+    Lamb/Ladd McConkey's receiving TDs; ids 83/84/86/87 against Cam
+    Little's exact 2/2 FG, 4/4 XP; ids 95/96/100 against the Jaguars
+    D/ST's real INT/FR/10 PA line.
+    """
+    if not stats_json:
+        return None
+    s = json.loads(stats_json)
+
+    if position_id == 1:  # QB
+        yds, td, ints = s.get("3"), s.get("4"), s.get("20")
+        if yds is None:
+            return None
+        parts = [f"{yds:.0f} YDS", _td_label(td)]
+        if ints:
+            parts.append("INT" if ints == 1 else f"{ints:.0f} INT")
+        return ", ".join(p for p in parts if p)
+    if position_id == 2:  # RB
+        yds, td = s.get("24"), s.get("25")
+        if yds is None:
+            return None
+        return ", ".join(p for p in [f"{yds:.0f} YDS", _td_label(td)] if p)
+    if position_id in (3, 4):  # WR / TE
+        rec, yds, td = s.get("53"), s.get("42"), s.get("43")
+        if rec is None:
+            return None
+        return ", ".join(p for p in [f"{rec:.0f} REC", f"{(yds or 0):.0f} YDS", _td_label(td)] if p)
+    if position_id == 5:  # K
+        fgm, fga, xpm, xpa = s.get("83"), s.get("84"), s.get("86"), s.get("87")
+        parts = []
+        if fga:
+            parts.append(f"{fgm or 0:.0f}/{fga:.0f} FG")
+        if xpa:
+            parts.append(f"{xpm or 0:.0f}/{xpa:.0f} XP")
+        return ", ".join(parts) if parts else None
+    if position_id == 16:  # D/ST
+        ints, fr, pa = s.get("95"), s.get("96"), s.get("100")
+        parts = []
+        if ints:
+            parts.append("INT" if ints == 1 else f"{ints:.0f} INT")
+        if fr:
+            parts.append("FR" if fr == 1 else f"{fr:.0f} FR")
+        if pa is not None:
+            parts.append(f"{pa:.0f} PA")
+        return ", ".join(parts) if parts else None
+    return None
+
+
+def roster_for(conn, league_id: int, season_year: int, team_id: int, week: int, game_status: dict[int, str],
+                game_info: dict[int, dict], injuries: dict[int, dict]) -> list[dict]:
+    rows = conn.execute(
+        """
+        SELECT p.full_name, p.default_position_id, r.is_starter, r.lineup_slot_id, r.points_scored,
+               p.pro_team_id, p.player_id, s.stats_json
+        FROM raw_roster_entries r
+        JOIN players p ON p.player_id = r.player_id
+        LEFT JOIN raw_player_week_stats s
+          ON s.player_id = r.player_id AND s.season_year = r.season_year AND s.week = r.week
         WHERE r.league_id=? AND r.season_year=? AND r.team_id=? AND r.week=?
         ORDER BY r.is_starter DESC, r.points_scored DESC
         """,
         (league_id, season_year, team_id, week),
     ).fetchall()
-    return [
-        {"name": n, "position_id": pos, "is_starter": bool(st), "slot_id": slot, "points": pts, "pro_team_id": pt}
-        for n, pos, st, slot, pts, pt in rows
-    ]
+    out = []
+    for n, pos, st, slot, pts, pt, pid, stats_json in rows:
+        gi = game_info.get(pt, {})
+        inj = injuries.get(pid, {})
+        inj_status = inj.get("injury_status")
+        out.append({
+            "name": n, "position_id": pos, "is_starter": bool(st), "slot_id": slot, "points": pts,
+            "pro_team_id": pt, "game_status": game_status.get(pt, "bye"),
+            "opponent": gi.get("opp_abbrev"), "own_score": gi.get("own_score"), "opp_score": gi.get("opp_score"),
+            "is_home": gi.get("is_home"), "game_detail": gi.get("detail"), "kickoff_utc": gi.get("kickoff_utc"),
+            "stat_line": _stat_line(pos, stats_json),
+            "injury_status": inj_status if inj_status not in (None, "ACTIVE") else None,
+        })
+    return out
 
 
-def team_detail(conn, league_id: int, season_year: int, team_id: int, week: int) -> dict:
+def team_detail(conn, league_id: int, season_year: int, team_id: int, week: int, game_status: dict[int, str],
+                 game_info: dict[int, dict], injuries: dict[int, dict]) -> dict:
     dw = conn.execute(
         "SELECT actual_starter_points, optimal_lineup_points, lineup_efficiency, bench_points, score_rank FROM derived_team_week "
         "WHERE league_id=? AND season_year=? AND week=? AND team_id=?",
@@ -167,7 +332,7 @@ def team_detail(conn, league_id: int, season_year: int, team_id: int, week: int)
             "record": {"w": ds[3], "l": ds[4], "t": ds[5]},
             "lineup_efficiency": ds[6], "total_bench_points": ds[7], "is_provisional": bool(ds[8]),
         },
-        "roster": roster_for(conn, league_id, season_year, team_id, week),
+        "roster": roster_for(conn, league_id, season_year, team_id, week, game_status, game_info, injuries),
     }
 
 
@@ -224,6 +389,9 @@ def build_league_digest(conn, league_id: int, season_year: int) -> dict:
     week = current_week(conn, league_id, season_year)
     info = league_info(conn, league_id, season_year)
     teams = team_list(conn, league_id, season_year)
+    gstatus = game_status_map(conn, season_year, week)
+    ginfo = game_info_map(conn, season_year, week)
+    inj = injury_map(conn)
 
     return {
         **info,
@@ -232,8 +400,8 @@ def build_league_digest(conn, league_id: int, season_year: int) -> dict:
         "standings": standings(conn, league_id, season_year, week),
         "this_week": {"week": week, "matchups": week_matchups(conn, league_id, season_year, week)},
         "leaderboard": leaderboard(conn, league_id, season_year, week),
-        "my_team_detail": team_detail(conn, league_id, season_year, info["my_team_id"], week) if info["my_team_id"] else None,
-        "teams_detail": {str(t["team_id"]): team_detail(conn, league_id, season_year, t["team_id"], week) for t in teams},
+        "my_team_detail": team_detail(conn, league_id, season_year, info["my_team_id"], week, gstatus, ginfo, inj) if info["my_team_id"] else None,
+        "teams_detail": {str(t["team_id"]): team_detail(conn, league_id, season_year, t["team_id"], week, gstatus, ginfo, inj) for t in teams},
         "waiver_moves": waiver_moves(conn, league_id, season_year, info["my_team_id"]) if info["my_team_id"] else [],
         "alerts": alerts(conn, league_id),
     }
@@ -252,7 +420,7 @@ def build_digest() -> dict:
         res = client.get_league(league_id, config.SEASON_YEAR, views=["mTeam"])
         if res.ok:
             for t in res.json_body.get("teams", []):
-                b64 = fetch_logo_b64(t.get("logo"), t["id"])
+                b64 = fetch_logo_b64(t.get("logo"), league_id, t["id"])
                 if b64:
                     logos[f"{league_id}_{t['id']}"] = b64
 
