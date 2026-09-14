@@ -152,11 +152,20 @@ tr.owner-row td { background: var(--accent-soft); }
 .badge { display: inline-block; font-size: 9.5px; font-weight: 800; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; }
 .badge.live { background: rgba(241,88,163,0.16); color: var(--pink-a); }
 .badge.prov { background: var(--accent-soft); color: var(--accent); }
-.match-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.match-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; cursor: pointer; border-radius: 8px; transition: background 0.15s ease; }
+.match-row:hover { background: var(--card-2); }
 .match-row:last-child { border-bottom: none; }
 .match-row .side { flex: 1; font-weight: 700; }
 .match-row .side.right { text-align: right; }
 .match-row .score { min-width: 90px; text-align: center; font-weight: 800; font-variant-numeric: tabular-nums; }
+/* Every scoreboard matchup is clickable — opens the same position-aligned
+   comparison used for "my matchup" on Home, but for any two managers
+   (owner's explicit ask, 2026-09-14: "see the live scoring between all
+   managers", not just their own). */
+.modal-overlay { position: fixed; inset: 0; background: rgba(5,3,12,0.6); backdrop-filter: blur(2px); z-index: 300; display: flex; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
+.modal-box { position: relative; width: 100%; max-width: 640px; padding: 26px 28px; }
+.modal-close { position: absolute; top: 14px; right: 14px; width: 30px; height: 30px; border-radius: 50%; border: none; background: var(--card-2); color: var(--ink); font-size: 15px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.modal-close:hover { background: var(--accent-soft); color: var(--accent); }
 .logo { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 6px; background: var(--card-2); }
 
 /* --- head-to-head matchup comparison (Home) --- */
@@ -334,7 +343,7 @@ function barList(rows, colorA, colorB) {
 /* ---------------------------------------------------------------------- */
 
 function matchRow(lg, m) {
-  return `<div class="match-row">
+  return `<div class="match-row" onclick="openMatchupModal('${lg}', ${m.a.team_id}, ${m.b.team_id}, ${m.a.score}, ${m.b.score}, ${m.live ? 'true' : 'false'})">
     <div class="side">${logoImg(lg, m.a.team_id)}${m.a.name}</div>
     <div class="score">${m.a.score.toFixed(1)} - ${m.b.score.toFixed(1)} ${m.live ? '<span class="badge live">LIVE</span>' : ''}</div>
     <div class="side right">${m.b.name}${logoImg(lg, m.b.team_id)}</div>
@@ -389,30 +398,31 @@ function gameLine(p) {
 function subLines(p) { return [gameLine(p), p.stat_line].filter(Boolean); }
 function subLinesHtml(p, cls) { return subLines(p).map(l => `<div class="${cls}">${l}</div>`).join(''); }
 
-function matchupComparisonCard(leagueId) {
-  const L = DIGEST.leagues[leagueId];
-  const matchup = findMyMatchup(L);
-  const card = el('div', 'card matchup-card');
-  if (!matchup) {
-    card.innerHTML = cardHead('league', L.name) + '<p class="muted">No matchup this week (bye).</p>';
-    return card;
-  }
-  const myDetail = L.teams_detail[String(L.my_team_id)];
-  const oppDetail = L.teams_detail[String(matchup.opp.team_id)];
-  const myStarters = (myDetail ? myDetail.roster : []).filter(p => p.is_starter);
-  const oppStarters = (oppDetail ? oppDetail.roster : []).filter(p => p.is_starter);
+function teamName(L, teamId) {
+  const t = L.teams.find(t => t.team_id === teamId);
+  return t ? t.team_name : '';
+}
 
-  // Position-aligned rows: group each side's starters by lineup slot, then
-  // pair them up slot-instance by slot-instance (e.g. RB1 vs RB1, RB2 vs
-  // RB2) — same idea as ESPN's own side-by-side matchup view.
+// Position-aligned rows for any two teams in a league/week — group each
+// side's starters by lineup slot, then pair them up slot-instance by
+// slot-instance (e.g. RB1 vs RB1, RB2 vs RB2), same idea as ESPN's own
+// side-by-side matchup view. Shared by "my matchup" on Home and the
+// click-through modal for every other matchup on the scoreboard.
+function matchupRowsHtml(leagueId, teamAId, teamBId) {
+  const L = DIGEST.leagues[leagueId];
+  const aDetail = L.teams_detail[String(teamAId)];
+  const bDetail = L.teams_detail[String(teamBId)];
+  const aStarters = (aDetail ? aDetail.roster : []).filter(p => p.is_starter);
+  const bStarters = (bDetail ? bDetail.roster : []).filter(p => p.is_starter);
+
   const bySlot = (players) => players.reduce((acc, p) => { (acc[p.slot_id] = acc[p.slot_id] || []).push(p); return acc; }, {});
-  const mySlots = bySlot(myStarters), oppSlots = bySlot(oppStarters);
-  const allSlotIds = [...new Set([...Object.keys(mySlots), ...Object.keys(oppSlots)])]
-    .sort((a, b) => a - b);
+  const aSlots = bySlot(aStarters), bSlots = bySlot(bStarters);
+  const allSlotIds = [...new Set([...Object.keys(aSlots), ...Object.keys(bSlots)])]
+    .sort((x, y) => x - y);
 
   let rows = '';
   allSlotIds.forEach(slotId => {
-    const mine = mySlots[slotId] || [], theirs = oppSlots[slotId] || [];
+    const mine = aSlots[slotId] || [], theirs = bSlots[slotId] || [];
     const count = Math.max(mine.length, theirs.length);
     for (let i = 0; i < count; i++) {
       const mp = mine[i], op = theirs[i];
@@ -429,19 +439,50 @@ function matchupComparisonCard(leagueId) {
       </div>`;
     }
   });
+  return rows;
+}
 
+function matchupCompareHead(leagueId, teamAId, teamBId, nameA, nameB, scoreA, scoreB, live) {
+  return `
+    <div class="matchup-card-head">
+      <div class="mc-team">${logoImg(leagueId, teamAId, 26)}<span class="mc-name">${nameA}</span></div>
+      <div class="mc-score">${scoreA.toFixed(1)}<span class="mc-dash">–</span>${scoreB.toFixed(1)}</div>
+      <div class="mc-team right"><span class="mc-name">${nameB}</span>${logoImg(leagueId, teamBId, 26)}</div>
+    </div>
+    ${live ? '<div class="mc-live-row"><span class="badge live">LIVE</span></div>' : ''}
+    <div class="matchup-divider"></div>`;
+}
+
+function matchupComparisonCard(leagueId) {
+  const L = DIGEST.leagues[leagueId];
+  const matchup = findMyMatchup(L);
+  const card = el('div', 'card matchup-card');
+  if (!matchup) {
+    card.innerHTML = cardHead('league', L.name) + '<p class="muted">No matchup this week (bye).</p>';
+    return card;
+  }
   card.innerHTML = `
     <div class="mc-league-label">${L.name}</div>
-    <div class="matchup-card-head">
-      <div class="mc-team">${logoImg(leagueId, matchup.mine.team_id, 26)}<span class="mc-name">${L.my_team_name}</span></div>
-      <div class="mc-score">${matchup.mine.score.toFixed(1)}<span class="mc-dash">–</span>${matchup.opp.score.toFixed(1)}</div>
-      <div class="mc-team right"><span class="mc-name">${matchup.opp.name}</span>${logoImg(leagueId, matchup.opp.team_id, 26)}</div>
-    </div>
-    ${matchup.live ? '<div class="mc-live-row"><span class="badge live">LIVE</span></div>' : ''}
-    <div class="matchup-divider"></div>
-    ${rows}
+    ${matchupCompareHead(leagueId, matchup.mine.team_id, matchup.opp.team_id, L.my_team_name, matchup.opp.name, matchup.mine.score, matchup.opp.score, matchup.live)}
+    ${matchupRowsHtml(leagueId, matchup.mine.team_id, matchup.opp.team_id)}
   `;
   return card;
+}
+
+function openMatchupModal(leagueId, teamAId, teamBId, scoreA, scoreB, live) {
+  const L = DIGEST.leagues[leagueId];
+  document.getElementById('matchup-modal-content').innerHTML = `
+    <div class="mc-league-label">${L.name}</div>
+    ${matchupCompareHead(leagueId, teamAId, teamBId, teamName(L, teamAId), teamName(L, teamBId), scoreA, scoreB, live)}
+    ${matchupRowsHtml(leagueId, teamAId, teamBId)}
+  `;
+  document.getElementById('matchup-modal').hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+function closeMatchupModal(evt) {
+  if (evt && evt.target !== evt.currentTarget) return;
+  document.getElementById('matchup-modal').hidden = true;
+  document.body.style.overflow = '';
 }
 
 function renderHome(root) {
@@ -578,6 +619,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.page').forEach(p => p.classList.toggle('active', p.id === 'page-' + currentTab));
   renderCurrentTab();
 });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMatchupModal(); });
 """
 
 
@@ -636,6 +678,12 @@ def build_html(digest: dict) -> str:
       <div class="footer">Generated {digest['generated_at']} · Fact = stored raw data. Computed = derived by a documented formula. See CLAUDE.md.</div>
     </div>
   </main>
+</div>
+<div class="modal-overlay" id="matchup-modal" hidden onclick="closeMatchupModal(event)">
+  <div class="card modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeMatchupModal()" aria-label="Close">{icon('close', 16)}</button>
+    <div id="matchup-modal-content"></div>
+  </div>
 </div>
 <script>const DIGEST = {digest_json}; const ICON_SVG = {icon_svg_map};</script>
 <script>{JS}</script>
