@@ -42,6 +42,8 @@ def connect() -> sqlite3.Connection:
 def log_issue(conn: sqlite3.Connection, severity: str, category: str, description: str,
               league_id: Optional[int] = None, season_year: Optional[int] = None,
               week: Optional[int] = None, team_id: Optional[int] = None) -> None:
+    """Always inserts a new row — for genuinely discrete, one-off events
+    (a failed fetch, a count mismatch on a specific run)."""
     conn.execute(
         """
         INSERT INTO data_issues (detected_at, severity, category, league_id, season_year, week, team_id, description)
@@ -49,6 +51,31 @@ def log_issue(conn: sqlite3.Connection, severity: str, category: str, descriptio
         """,
         (now(), severity, category, league_id, season_year, week, team_id, description),
     )
+
+
+def log_issue_deduped(conn: sqlite3.Connection, severity: str, category: str, description: str,
+                       league_id: int, season_year: int, week: int, team_id: int) -> None:
+    """For an *ongoing condition*, not a one-off event — e.g. ESPN's
+    mMatchup.totalPoints staying stale across many daily syncs of the same
+    still-live week. Without this, a condition true every day would log a
+    fresh duplicate row every day, unboundedly, for the same fact. Updates
+    the existing unresolved row's detected_at/description instead of
+    appending a near-identical one — still append-only for genuinely NEW
+    issues (a different (league, week, team, category) tuple)."""
+    existing = conn.execute(
+        """
+        SELECT issue_id FROM data_issues
+        WHERE resolved = 0 AND category = ? AND league_id = ? AND season_year = ? AND week = ? AND team_id = ?
+        """,
+        (category, league_id, season_year, week, team_id),
+    ).fetchone()
+    if existing:
+        conn.execute(
+            "UPDATE data_issues SET detected_at = ?, description = ?, severity = ? WHERE issue_id = ?",
+            (now(), description, severity, existing[0]),
+        )
+    else:
+        log_issue(conn, severity, category, description, league_id, season_year, week, team_id)
 
 
 # --- reference: real NFL teams ------------------------------------------------
@@ -185,10 +212,13 @@ def load_week(conn: sqlite3.Connection, client: ESPNClient, league_id: int, seas
             # `is not None` instead. Found live, 2026-09-13: League 1618731
             # team 25 was ESPN-reported 0.0 vs. our computed 137.0.
             if espn_total is not None and abs(espn_total - our_total) > 0.05:
-                log_issue(conn, "warning", "team_total_mismatch",
-                          f"League {league_id} week {week} team {side['teamId']}: "
-                          f"ESPN mMatchup.totalPoints={espn_total} vs. summed roster points={our_total}",
-                          league_id, int(season_year), week, side["teamId"])
+                # Deduped: this condition is typically true every sync for
+                # as long as the week stays live — an ongoing fact, not a
+                # fresh event each run. See log_issue_deduped's docstring.
+                log_issue_deduped(conn, "warning", "team_total_mismatch",
+                                  f"League {league_id} week {week} team {side['teamId']}: "
+                                  f"ESPN mMatchup.totalPoints={espn_total} vs. summed roster points={our_total}",
+                                  league_id, int(season_year), week, side["teamId"])
 
         conn.execute(
             """
