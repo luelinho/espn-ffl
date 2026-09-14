@@ -1,0 +1,551 @@
+# ESPN Fantasy Football — Multi-League Intelligence System
+## Locked Specification v1.0
+
+**Date:** 13 September 2026
+**Season:** 2026
+**Leagues:**
+- `1618731` — *No More Domestic Violence* (14 teams, 2 divisions) — your team: *Goff Is My Copilot*
+- `581297461` — *My 2023 League* (12 teams) — your team: *LaPorta Authority*
+
+**Owner:** identified by ESPN `SWID` (stable across both leagues, confirmed live)
+**Status:** Design locked following Phase 1 API verification (2026-09-13, see `phase1_output/VERIFICATION_REPORT.md`). No schema built yet. Approval required before Phase 2.
+
+---
+
+## 0. Confirmed Requirements
+
+| Topic | Decision |
+|---|---|
+| Platform | ESPN Fantasy Football, API v3, real host `lm-api-reads.fantasy.espn.com` (found in Phase 1 — `fantasy.espn.com` itself only serves the website) |
+| Scope | **Two** private leagues, tracked from day one as first-class, not bolted on later |
+| Identity | Your ESPN `SWID` is the cross-league "this is you" key — confirmed live against both leagues' `primaryOwner` fields |
+| League type | Both H2H points-based (`scoringType: H2H_POINTS`), not category scoring |
+| Auth | Private leagues — `espn_s2` + `SWID` cookies required, loaded from a gitignored `.env`, never committed |
+| Update frequency | Once daily, matching the FPL project's cadence |
+| Audience | Owner only. No sharing, no multi-user, no publishing |
+| Analytics priority | Ledger → Recap → Lineup-efficiency/waiver/trade skill → Luck (week 5+) → Power rankings (week 5+) → Playoff odds (week 7+) — thresholds provisional, see §13 |
+| Stack | Python + SQLite + Git, queried through Claude Code, mirroring the FPL project's architecture |
+
+### Standing constraint
+
+Every endpoint's *shape* was verified live in Phase 1 against real data. What was **not** yet verified: full player-pool pagination, and league `581297461`'s exact playoff format. Both are Phase 3 items, not schema blockers — see §13.
+
+---
+
+## 1. Product Specification
+
+### What it is
+
+A local, file-based database accumulating a complete, permanent record of two ESPN H2H fantasy football leagues, plus a derived analytics layer, queried in natural language through Claude Code.
+
+### What it must do
+
+1. Record, permanently and without overwriting, every team's roster, starting lineup, and transactions for every week, in both leagues.
+2. Record every matchup result and the standings after every week.
+3. Compute manager-skill metrics that are exact rather than estimated — lineup efficiency, waiver-pickup value, trade outcomes.
+4. Compute luck and strength metrics, but withhold them until the (short, 14-17 week) sample supports them.
+5. Answer natural-language questions against real stored data, scoped to either league or both.
+6. Never present an estimate as a fact, and never invent a number.
+
+### What it explicitly will not do
+
+- Live in-game scoring (a "live" week shows real partial data, same idea as FPL's provisional gameweeks, but this is not a play-by-play tracker).
+- Anything requiring write access to either league — read-only, always.
+- FAAB-budget ROI — **neither league uses FAAB** (confirmed Phase 1: both `WAIVERS_TRADITIONAL`), so there is no bid budget to evaluate. Waiver value is measured by outcome instead (§5).
+- Player recommendations / start-sit advice as a live feature — this system looks backward at decisions made, not forward at ones to make. (A retrospective "here's what your data says about your decision-making" is in scope; a forward-looking "start X over Y this week" is not, the same boundary FPL drew around projections vs. facts.)
+
+### The three layers, kept separate
+
+| Layer | Definition | Storage | Mutability |
+|---|---|---|---|
+| **Raw** | What ESPN reported. | `raw_*` tables | Append-only once finalized |
+| **Derived** | What our code computed from raw. | `derived_*` tables | Recomputable from scratch |
+| **Interpretation** | What Claude says about it. | Never stored as fact | Ephemeral |
+
+One nuance specific to this project, absent from the FPL build: a player's **real-world stat line** (yards, TDs, etc.) is universal — the same regardless of which league you're asking about. What differs *per league* is how many fantasy points those stats are worth, because each league's `scoringItems` weights them differently (confirmed live: league `1618731` and `581297461` score several stat categories differently). So raw stats are stored once, globally, per player per week; fantasy points are a **derived**, per-league calculation applied on top. Getting this backwards — storing "points" as if they were raw — would make it impossible to ever audit a scoring dispute or fix a scoring-rule bug retroactively.
+
+---
+
+## 2. Data Source Architecture
+
+### Source
+
+`https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{year}/segments/0/leagues/{leagueId}?view=...`
+
+Undocumented, no published stability guarantee — same risk profile as FPL's API, mitigated the same way: archive every raw payload so parsing can be replayed after a schema change.
+
+### Endpoints — verified live, Phase 1 (2026-09-13)
+
+| View | Purpose | Status |
+|---|---|---|
+| `mSettings` | Roster slots, scoring rules, schedule/playoff/waiver/trade config | Verified — differs meaningfully between the two leagues |
+| `mTeam` | Team names, `primaryOwner`, `members` | Verified — `primaryOwner` requires this view explicitly; combining `mRoster` alone omits it |
+| `mRoster` | Current roster, `lineupSlotId`, injury status | Verified |
+| `mMatchup` | Weekly schedule, `totalPoints`, `winner` | Verified — `winner: "UNDECIDED"` and `totalPoints: 0.0` both sides is real, current state (week 1 hasn't scored yet), not a bug |
+| `mTransactions2` | Draft picks, waiver moves, trades | Verified — 221 rows already, mostly `DRAFT` |
+| `kona_player_info` | Full player pool, ownership %, stats | Verified working, but returns only 50 players per call — pagination unresolved, Phase 3 item |
+
+### Two ID namespaces — confirmed empirically, not from memory
+
+- **`defaultPositionId`** (a player's real position): `1=QB, 2=RB, 3=WR, 4=TE, 5=K, 16=D/ST` — confirmed by sampling real players (Lamar Jackson, Saquon Barkley, Terry McLaurin, Jake Ferguson, Tyler Loop, Jets D/ST), not assumed from community folklore.
+- **`lineupSlotId`** (a roster slot type — a different scheme): `0=QB, 2=RB, 4=WR, 6=TE, 16=D/ST, 17=K, 20=Bench, 21=IR, 23=FLEX`.
+
+These are stored in clearly separate, clearly named columns everywhere. Conflating them would silently corrupt every lineup-efficiency number the project exists to produce.
+
+### Fallback
+
+If `mMatchup`'s reported score ever disagrees with a matchup result reconstructed from summed roster points (independently computed from `raw_roster_entries` × that league's scoring rules), the disagreement is logged as a `data_issue`, not silently resolved — same cross-check discipline as FPL's H2H reconstruction.
+
+### Politeness
+
+Sequential requests, ~1 second apart, identifying User-Agent, exponential backoff on failure — same client design as the FPL project, adapted for cookie-based auth.
+
+---
+
+## 3. Database Schema
+
+SQLite, Postgres-shaped. `league_id` and `season_year` are first-class on nearly every table from day one — this was a design mistake worth avoiding twice; the FPL schema had to retrofit multi-league thinking it never used, this one starts with it because it's used immediately.
+
+### 3.1 Reference
+
+```sql
+CREATE TABLE leagues (
+  league_id       INTEGER PRIMARY KEY,     -- ESPN's own numeric league ID
+  name            TEXT NOT NULL,           -- as ESPN reports it, may be stale/joke names
+  my_team_hint    TEXT                     -- owner-supplied hint for Phase 1 identification only
+);
+
+CREATE TABLE league_seasons (
+  league_id             INTEGER NOT NULL REFERENCES leagues(league_id),
+  season_year           INTEGER NOT NULL,
+  team_count            INTEGER NOT NULL,
+  scoring_type          TEXT NOT NULL,           -- 'H2H_POINTS'
+  waiver_type           TEXT NOT NULL,           -- 'WAIVERS_TRADITIONAL' | 'WAIVERS_BUDGET' — verify, don't assume, per league
+  regular_season_weeks  INTEGER NOT NULL,
+  final_week            INTEGER NOT NULL,
+  playoff_team_count    INTEGER,
+  playoff_seeding_rule  TEXT,                    -- e.g. 'TOTAL_POINTS_SCORED' — confirmed non-default in league 1618731
+  trade_veto_votes_required INTEGER,
+  roster_slot_counts_json TEXT NOT NULL,         -- raw lineupSlotCounts, since it varies per league (5 vs 7 bench, confirmed)
+  scoring_items_json    TEXT NOT NULL,           -- full raw scoringItems array — this is what makes points a derived, not raw, value
+  config_json           TEXT,                    -- full settings object as returned
+  last_verified         TIMESTAMP,
+  PRIMARY KEY (league_id, season_year)
+);
+
+CREATE TABLE pro_teams (
+  pro_team_id   INTEGER PRIMARY KEY,      -- ESPN's real-NFL team ID
+  season_year   INTEGER NOT NULL,
+  name          TEXT NOT NULL,
+  abbrev        TEXT NOT NULL
+);
+
+CREATE TABLE players (
+  player_id           INTEGER PRIMARY KEY,     -- ESPN's global player ID — same across every league
+  full_name           TEXT NOT NULL,
+  default_position_id INTEGER NOT NULL,        -- 1 QB | 2 RB | 3 WR | 4 TE | 5 K | 16 D/ST — confirmed Phase 1
+  pro_team_id         INTEGER
+);
+
+CREATE TABLE raw_player_snapshots (
+  player_id      INTEGER NOT NULL,
+  snapshot_date  DATE NOT NULL,
+  ownership_pct  REAL,                     -- ESPN's own % rostered, league-universe-wide
+  injury_status  TEXT,
+  fetched_at     TIMESTAMP NOT NULL,
+  PRIMARY KEY (player_id, snapshot_date)
+);
+```
+
+### 3.2 Managers and teams
+
+Managers are global (keyed by the ESPN `SWID`/member GUID, confirmed stable across leagues) — teams are league+season-scoped, since the same person's roster in League A and League B are entirely different entities.
+
+```sql
+CREATE TABLE managers (
+  manager_id    INTEGER PRIMARY KEY,      -- our surrogate key
+  espn_member_id TEXT NOT NULL UNIQUE,    -- the SWID/GUID, e.g. '{E1AB20C5-...}'
+  display_name  TEXT,
+  is_owner      BOOLEAN NOT NULL DEFAULT 0 -- exactly one row true
+);
+
+CREATE TABLE teams (
+  league_id     INTEGER NOT NULL,
+  season_year   INTEGER NOT NULL,
+  team_id       INTEGER NOT NULL,          -- ESPN's team ID — unique only within this league+season
+  manager_id    INTEGER REFERENCES managers(manager_id),
+  team_name     TEXT NOT NULL,
+  division_id   INTEGER,
+  PRIMARY KEY (league_id, season_year, team_id),
+  FOREIGN KEY (league_id, season_year) REFERENCES league_seasons(league_id, season_year)
+);
+```
+
+### 3.3 Raw weekly facts
+
+Real stat lines are universal — not league-scoped. Fantasy points from them are league-specific and computed (§3.4).
+
+```sql
+CREATE TABLE raw_player_week_stats (
+  season_year   INTEGER NOT NULL,
+  week          INTEGER NOT NULL,
+  player_id     INTEGER NOT NULL,
+  stats_json    TEXT NOT NULL,            -- raw {statId: value} — ESPN's own stat IDs, undecoded
+  is_final      BOOLEAN NOT NULL DEFAULT 0,
+  source        TEXT NOT NULL,
+  fetched_at    TIMESTAMP NOT NULL,
+  PRIMARY KEY (season_year, week, player_id)
+);
+
+CREATE TABLE raw_roster_entries (
+  league_id       INTEGER NOT NULL,
+  season_year     INTEGER NOT NULL,
+  week            INTEGER NOT NULL,
+  team_id         INTEGER NOT NULL,
+  player_id       INTEGER NOT NULL,
+  lineup_slot_id  INTEGER NOT NULL,        -- roster SLOT scheme, not position — see §2
+  is_starter      BOOLEAN NOT NULL,        -- slot not in {Bench, IR}
+  points_scored   REAL,                    -- this league's scoring rules applied to raw stats
+  is_final        BOOLEAN NOT NULL DEFAULT 0,
+  fetched_at      TIMESTAMP NOT NULL,
+  PRIMARY KEY (league_id, season_year, week, team_id, player_id),
+  FOREIGN KEY (league_id, season_year, team_id) REFERENCES teams(league_id, season_year, team_id)
+);
+
+CREATE TABLE raw_team_week (
+  league_id       INTEGER NOT NULL,
+  season_year     INTEGER NOT NULL,
+  week            INTEGER NOT NULL,
+  team_id         INTEGER NOT NULL,
+  total_points    REAL NOT NULL,           -- ESPN's own reported total for the week
+  is_final        BOOLEAN NOT NULL DEFAULT 0, -- true once every game in this week has finished
+  source          TEXT NOT NULL,
+  fetched_at      TIMESTAMP NOT NULL,
+  PRIMARY KEY (league_id, season_year, week, team_id)
+);
+```
+
+Hit cost has no NFL equivalent — no chips, no transfer penalties. `total_points` is simply the match score; there's no gross/net distinction to get backwards (unlike FPL rule 10 — noted so nobody goes looking for one).
+
+### 3.4 Matchups and standings
+
+```sql
+CREATE TABLE raw_matchups (
+  league_id     INTEGER NOT NULL,
+  season_year   INTEGER NOT NULL,
+  week          INTEGER NOT NULL,
+  team_a        INTEGER NOT NULL,
+  team_b        INTEGER NOT NULL,
+  score_a       REAL,
+  score_b       REAL,
+  winner        TEXT,                      -- 'HOME' | 'AWAY' | 'UNDECIDED' | 'TIE', as ESPN reports it
+  status        TEXT NOT NULL,              -- scheduled | provisional | final
+  source        TEXT NOT NULL,
+  fetched_at    TIMESTAMP NOT NULL,
+  PRIMARY KEY (league_id, season_year, week, team_a, team_b)
+);
+
+CREATE TABLE standings_snapshots (
+  league_id      INTEGER NOT NULL,
+  season_year    INTEGER NOT NULL,
+  week           INTEGER NOT NULL,          -- standings AFTER this week
+  team_id        INTEGER NOT NULL,
+  wins           INTEGER NOT NULL,
+  losses         INTEGER NOT NULL,
+  ties           INTEGER NOT NULL,
+  points_for     REAL NOT NULL,
+  points_against REAL NOT NULL,
+  playoff_seed   INTEGER,                   -- NULL until the league's own seeding is computed by ESPN
+  created_at     TIMESTAMP NOT NULL,
+  PRIMARY KEY (league_id, season_year, week, team_id)
+);
+```
+
+### 3.5 Transactions — waivers, trades, drafts
+
+```sql
+CREATE TABLE raw_transactions (
+  transaction_id  TEXT PRIMARY KEY,         -- ESPN's own UUID
+  league_id       INTEGER NOT NULL,
+  season_year     INTEGER NOT NULL,
+  week            INTEGER NOT NULL,          -- scoringPeriodId at proposal time
+  team_id         INTEGER,
+  type            TEXT NOT NULL,             -- DRAFT | WAIVER | FREEAGENT | TRADE
+  bid_amount      INTEGER,                   -- always 0 for both these leagues (no FAAB), stored anyway in case that ever changes
+  status          TEXT NOT NULL,             -- EXECUTED | PENDING | ...
+  proposed_at     TIMESTAMP,
+  fetched_at      TIMESTAMP NOT NULL
+);
+
+CREATE TABLE raw_transaction_items (
+  transaction_id  TEXT NOT NULL REFERENCES raw_transactions(transaction_id),
+  player_id       INTEGER NOT NULL,
+  from_team_id    INTEGER,                  -- 0 = free agent pool, per ESPN's own convention
+  to_team_id      INTEGER,
+  item_type       TEXT NOT NULL,            -- as ESPN reports it
+  PRIMARY KEY (transaction_id, player_id)
+);
+```
+
+### 3.6 Derived
+
+```sql
+CREATE TABLE derived_team_week (
+  league_id           INTEGER NOT NULL,
+  season_year         INTEGER NOT NULL,
+  week                INTEGER NOT NULL,
+  team_id             INTEGER NOT NULL,
+  actual_starter_points REAL NOT NULL,
+  optimal_lineup_points REAL NOT NULL,      -- best legal lineup from the same roster, respecting eligibleSlots
+  lineup_efficiency   REAL NOT NULL,        -- actual / optimal — the FPL project's XI-efficiency analog; there's no captain, so this is THE core "did you set your lineup right" number
+  bench_points        REAL NOT NULL,
+  score_rank          INTEGER NOT NULL,     -- 1..N that week, within this league
+  calc_version        TEXT NOT NULL,
+  calculated_at       TIMESTAMP NOT NULL,
+  PRIMARY KEY (league_id, season_year, week, team_id)
+);
+
+CREATE TABLE derived_team_season (
+  league_id            INTEGER NOT NULL,
+  season_year          INTEGER NOT NULL,
+  team_id              INTEGER NOT NULL,
+  through_week         INTEGER NOT NULL,
+  weeks_played         INTEGER NOT NULL,     -- confidence gate for every estimate
+  points_for REAL, points_against REAL, avg_pf REAL, avg_pa REAL,
+  actual_w INTEGER, actual_l INTEGER, actual_t INTEGER,
+  allplay_w INTEGER, allplay_l INTEGER, allplay_t INTEGER,   -- withheld below the gate, §5
+  expected_wins REAL, luck_index REAL,                        -- withheld below the gate
+  season_lineup_efficiency REAL,
+  total_bench_points REAL,
+  is_provisional       BOOLEAN NOT NULL,
+  calc_version         TEXT NOT NULL,
+  calculated_at        TIMESTAMP NOT NULL,
+  PRIMARY KEY (league_id, season_year, team_id, through_week)
+);
+
+CREATE TABLE derived_waiver_moves (
+  transaction_id      TEXT PRIMARY KEY REFERENCES raw_transactions(transaction_id),
+  player_added        INTEGER NOT NULL,
+  player_dropped       INTEGER,
+  points_added_over_horizon   REAL,          -- added player's points over N weeks (configurable horizon)
+  points_dropped_over_horizon REAL,          -- what the dropped player scored over the same span, elsewhere
+  net_value            REAL,                 -- added minus dropped — the outcome-based replacement for FAAB ROI
+  horizon_weeks         INTEGER NOT NULL,
+  is_complete           BOOLEAN NOT NULL,    -- false until the full horizon has elapsed
+  calc_version          TEXT NOT NULL,
+  calculated_at         TIMESTAMP NOT NULL
+);
+
+CREATE TABLE derived_trade_evaluation (
+  trade_group_id       TEXT PRIMARY KEY,     -- groups the paired transaction_ids of one trade
+  team_a_id            INTEGER NOT NULL,
+  team_b_id            INTEGER NOT NULL,
+  team_a_points_gained REAL,                 -- players received minus players given up, over the horizon
+  team_b_points_gained REAL,
+  horizon_weeks         INTEGER NOT NULL,
+  is_complete           BOOLEAN NOT NULL,
+  calc_version          TEXT NOT NULL,
+  calculated_at          TIMESTAMP NOT NULL
+);
+```
+
+Plus `derived_power_rankings` and `derived_playoff_projections` (model-versioned, defined in Phase 8 once real data shows what's worth modeling, same discipline as FPL's Tier 4/5).
+
+### 3.7 Operations
+
+```sql
+CREATE TABLE ingest_runs (
+  run_id        INTEGER PRIMARY KEY AUTOINCREMENT,
+  started_at    TIMESTAMP NOT NULL,
+  finished_at   TIMESTAMP,
+  job_name      TEXT NOT NULL,
+  status        TEXT NOT NULL,             -- success | partial | failed
+  requests_made INTEGER,
+  rows_written  INTEGER,
+  error_text    TEXT
+);
+
+CREATE TABLE data_issues (
+  issue_id     INTEGER PRIMARY KEY AUTOINCREMENT,
+  detected_at  TIMESTAMP NOT NULL,
+  severity     TEXT NOT NULL,              -- info | warning | error
+  category     TEXT NOT NULL,
+  league_id INTEGER, season_year INTEGER, week INTEGER, team_id INTEGER,
+  description  TEXT NOT NULL,
+  resolved     BOOLEAN NOT NULL DEFAULT 0
+);
+
+CREATE TABLE raw_payloads (
+  payload_id   INTEGER PRIMARY KEY AUTOINCREMENT,
+  league_id    INTEGER,
+  endpoint     TEXT NOT NULL,
+  params       TEXT,
+  fetched_at   TIMESTAMP NOT NULL,
+  week         INTEGER,
+  body_gzip    BLOB NOT NULL
+);
+```
+
+---
+
+## 4. Historical Integrity
+
+Same five mechanisms as the FPL project, adapted:
+
+1. **Finalization gate.** A week's data is provisional (`is_final = 0`) until every game in that week has finished — not one single deadline like FPL's gameweeks, since NFL games kick off across Thursday/Sunday/Monday. A "final" week means every real-world game feeding it is over.
+2. **Application-level immutability.** No UPDATE on any `is_final = 1` row, ever — a disagreement becomes a `data_issues` row, not a silent correction.
+3. **Natural keys everywhere.** Every raw table's primary key is its natural key — idempotent upserts, safe to rerun.
+4. **Snapshot, don't mutate.** Player ownership/injury state is dated rows, never overwritten fields.
+5. **Provenance.** `source` and `fetched_at` on every raw row.
+
+Target questions:
+
+- *"What was my Week 3 lineup in League A?"* → `raw_roster_entries` where league_id/week=3
+- *"Who was leading League B after Week 5?"* → `standings_snapshots` where week=5
+- *"Did I have the right optimal lineup in Week 2?"* → `derived_team_week.lineup_efficiency`
+
+---
+
+## 5. Analytics — Methodology
+
+No captain, no chips — the FPL-specific mechanics don't exist here. What replaces them:
+
+### Tier 0 — Ledger (exact, from week 1)
+
+Points for/against, margins, bench points, rank movement. No assumptions.
+
+### Tier 1 — Weekly recap (from week 1)
+
+Week's high/low score, biggest blowout, closest margin, unluckiest loss (highest score among that week's losers), luckiest win (lowest score among that week's winners) — direct analogs of the FPL recap, per league.
+
+### Tier 2 — Manager skill (exact, from week 1) — priority tier
+
+**Lineup efficiency** = actual starting-lineup points ÷ best possible legal lineup from the same full roster that week, respecting `eligibleSlots`. This is the single most important metric in the whole system — with no captain multiplier, it's the entire "did you make the right call" story that FPL split across captain-efficiency and XI-efficiency.
+
+**Points left on bench** = sum of bench/IR players' actual scores (not their zeroed lineup contribution).
+
+**Waiver value** (replaces FAAB ROI, since neither league uses FAAB): for each add/drop pair, the added player's points over a stated horizon (default 3 weeks, configurable) minus the dropped player's points over the same span, wherever they ended up. Reported with the horizon stated, and as incomplete until it's elapsed — same "don't report early" discipline as FPL's Transfer ROI.
+
+**Trade evaluation**: for each trade, each side's points gained (players received minus players given up) over a stated horizon. No single "won the trade" verdict when the horizon isn't complete; report both sides' numbers with the horizon stated.
+
+### Tier 3 — Luck and true strength (computed from week 1, hidden until the gate opens)
+
+All-play record, expected wins, luck index — same formulas as FPL, computed weekly against all other teams in that specific league (never across leagues — that comparison means nothing, different schedules and rosters entirely).
+
+### Tier 4 — Power rankings (gated)
+
+Same four-model structure as FPL (statistical / form / roster strength / hybrid), scoped per league.
+
+### Tier 5 — Playoff odds (gated)
+
+Monte Carlo over each league's own remaining schedule and its own playoff format (team count, seeding rule) — the two leagues' playoff structures are already confirmed different (§0), so this can never be a shared calculation.
+
+### Confidence gating
+
+| Tier | Provisional minimum weeks | Below threshold |
+|---|---|---|
+| 0 Ledger | 1 | Always shown |
+| 1 Recap | 1 | Always shown |
+| 2 Skill | 1 (waiver/trade: horizon+1) | Shown; incomplete-horizon items marked so |
+| 3 Luck | 5 (placeholder) | **Withheld** |
+| 4 Power | 5 (placeholder) | **Withheld** |
+| 5 Playoff odds | 7 (placeholder) | **Withheld** |
+
+**These thresholds are my initial placeholders, scaled down from FPL's GW10/GW15 to fit a 14-17 week season — not yet your decision the way FPL's close/blowout thresholds were.** Confirm or override before Phase 5 locks them in (§13).
+
+---
+
+## 6. Automation
+
+Same daily-job shape as FPL: fetch both leagues' current state, determine which weeks are newly final, write with `is_final=1`, recompute derived tables, log the run. GitHub Actions + a committed SQLite file, same reasoning as before (no machine needs to stay awake, commit history is a second audit trail).
+
+One real difference: **the credential**. FPL needed none; this needs `ESPN_S2`/`ESPN_SWID` available to the scheduled job. GitHub Actions repository secrets are the standard place for this — never committed, injected as environment variables at run time.
+
+---
+
+## 7. Claude Integration
+
+Same shape as FPL: Claude Code against the repo, a `CLAUDE.md` with the schema/rules/gates, a `queries/` library, `reports/week{N}_{league}.md` recaps, `digest/season.json` per league (or one combined digest with a league key — TBD in Phase 7).
+
+Every question maps to a direct lookup: *"What was my lineup in Week 4 of the copilot league?"*, *"How's my waiver record this year?"*, *"Compare my two teams' luck so far"* (once the gate opens) are all real queries over this schema, nothing improvised.
+
+---
+
+## 8. Dashboard
+
+Self-contained HTML file, same reasoning as FPL (baked-in data, no server, `file://`-safe). Fresh visual identity for this project — not a reskin of the FPL dashboard (owner's call). A league switcher replaces FPL's single-league assumption; every other page (Home, My Team, League, Managers-equivalent, Players, Analytics, History) carries a `league_id` in its own state.
+
+Roster views show real team logos (already present in ESPN's `mTeam` response — a `logo` field observed on every team) rather than jersey art, since ESPN doesn't expose the same kind of per-club kit CDN FPL's Premier League data did; player photos are ESPN's own headshot CDN and are opt-in, not default, per the earlier decision to keep player-photo usage a deliberate choice rather than an assumption.
+
+---
+
+## 9. Security
+
+- **Real credentials this time** — `ESPN_S2`/`ESPN_SWID` are session cookies, stored only in a gitignored `.env` locally and as GitHub Actions repository secrets for the scheduled job. Never logged, never printed, never committed.
+- **Read-only.** The client only ever GETs. Nothing here can modify either league, place a waiver claim, or execute a trade.
+- **No inbound surface.** Nothing listens on a port.
+- **Private repo**, same as FPL.
+
+---
+
+## 10. Cost
+
+Same as FPL: $0 ongoing. Free API, free SQLite, free GitHub Actions tier, Claude Code included in the existing subscription.
+
+---
+
+## 11. Roadmap
+
+**Phase 0 — Environment.** ✅ Complete 2026-09-13. Git repo, Python 3.13 venv, `requests` + `python-dotenv`, `.env.example`.
+
+**Phase 1 — Verify the API.** ✅ Complete 2026-09-13. Real host found (`lm-api-reads.fantasy.espn.com`), auth confirmed, cross-league identity resolved via SWID, both ID namespaces empirically mapped, core endpoints verified against both leagues. Two items deferred to Phase 3 (player-pool pagination, league `581297461`'s exact playoff format) — neither blocks schema design. See `phase1_output/VERIFICATION_REPORT.md`.
+
+**Phase 2 — Schema and league/team resolution.** Create the database from §3. Resolve both leagues' teams to `manager_id`s via `SWID`/`primaryOwner` matching, confirmed already possible.
+*Exit: both leagues' teams and managers stored, your identity confirmed correct in both.*
+
+**Phase 3 — Historical backfill.** Ingest week 1 (the season just started, per Phase 1's observed `latestScoringPeriod: 1`) for both leagues: rosters, lineups, matchups, transactions. Resolve player-pool pagination as part of this phase. Validators: right team count per league, no missing weeks, `raw_team_week.total_points` cross-checked against `raw_matchups`.
+*Exit: every played week present for both leagues, all validators pass.*
+
+**Phase 4 — Automation.** Daily job, idempotent, scheduled, proven safe on repeated runs — same bar as FPL (byte-identical reruns on already-complete weeks).
+*Exit: three consecutive clean automated runs.*
+
+**Phase 5 — Tier 0–2 analytics.** Ledger and lineup-efficiency/waiver/trade metrics. Hand-verify lineup efficiency for at least one team per league against the live ESPN app. **Confirm or override the placeholder confidence-gate thresholds from §5 before this phase closes.**
+*Exit: manually verified correct, gates confirmed by the owner.*
+
+**Phase 6 — Claude interface.** `CLAUDE.md`, query library, per-league recap generator.
+*Exit: real questions answered accurately from real data, across both leagues.*
+
+**Phase 7 — Dashboard.** HTML + digest JSON, fresh visual identity, league switcher.
+*Exit: opens, renders both leagues' current state, gates respected.*
+
+**Phase 8 — Tier 3–5.** Luck framework, power rankings, playoff odds — per league, using each league's own confirmed playoff format.
+*Exit: methodology documented, outputs labeled, sample sizes stated.*
+
+---
+
+## 12. MVP
+
+**Phases 1–3 plus a minimal query layer**, exactly as FPL defined it: verified endpoints, populated database for both leagues, complete week-1-to-now history, and the ability to ask "what was my roster in Week 2 of the LaPorta league" and get a correct answer. History not captured now is gone forever; everything above MVP can be added later from stored data.
+
+---
+
+## 13. Open Items and Assumptions
+
+**Resolved in Phase 1 (2026-09-13):** real API host; auth mechanism; cross-league identity via SWID; both leagues' roster/scoring/waiver configuration; the position-ID vs. lineup-slot-ID distinction; core endpoint shapes.
+
+**Open, to resolve in Phase 3:**
+- Full player-pool pagination (`kona_player_info` returns 50 players per call; likely needs an `X-Fantasy-Filter` header, unconfirmed).
+- League `581297461`'s exact playoff format (team count, seeding rule) — don't assume it matches league `1618731`.
+- `scoringItems`' `statId` meanings (e.g. `53`, `72`, `89`, `123`, `133`) have no embedded label in the API response — will be cross-referenced against real player stat lines once real games are played, the same way FPL's `net_points` was cross-checked against reported scores.
+
+**Open, needs the owner's decision (not to be guessed):**
+- The confidence-gate thresholds in §5 (5/5/7 weeks) are my placeholders, not a decision — FPL's close/blowout thresholds were explicitly the owner's call; these should be too, once Phase 5 shows what "noisy early" actually looks like for a 14-17 week season.
+- The waiver/trade ROI horizon (placeholder: 3 weeks) — FPL used 5 gameweeks against a 38-week season; 3 weeks against a 14-17 week season is a proportional guess, not a verified-right number.
+
+**Accepted risks:** ESPN's API is undocumented and can change without notice — mitigated by payload archiving, same as FPL. Two leagues' differing configs mean every query must filter by `league_id` — a real discipline cost, accepted in exchange for one shared codebase and one dashboard.
+
+**Deliberately excluded:** FAAB-budget analysis (doesn't apply to either league), live in-game tracking, write access of any kind, cross-league score comparison (different scoring rules make raw point totals incomparable — only rank/efficiency/percentile metrics are safe to compare across your two teams).
+
+---
+
+*Design locked 13 September 2026, following live Phase 1 verification. Approval required before Phase 2 begins.*
