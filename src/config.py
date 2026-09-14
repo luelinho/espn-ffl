@@ -37,7 +37,11 @@ ESPN_SWID = os.environ.get("ESPN_SWID") or None
 
 # --- HTTP -------------------------------------------------------------------
 
-BASE_URL = "https://fantasy.espn.com/apis/v3/games/ffl/seasons"
+BASE_URL = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons"
+# fantasy.espn.com itself only serves the website (redirects/HTML) — found
+# live during Phase 1 (2026-09-13): a plain request to it 302-redirected
+# instead of returning JSON, while this lm-api-reads subdomain correctly
+# 401'd with no cookies (a real auth gate, not a missing/wrong endpoint).
 
 USER_AGENT = (
     "espn-ffl-league-intelligence/0.1 (private league analytics; "
