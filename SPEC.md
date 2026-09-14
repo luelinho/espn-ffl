@@ -28,7 +28,7 @@
 
 ### Standing constraint
 
-Every endpoint's *shape* was verified live in Phase 1 against real data. What was **not** yet verified: full player-pool pagination, and league `581297461`'s exact playoff format. Both are Phase 3 items, not schema blockers — see §13.
+Every endpoint's *shape* was verified live in Phase 1 against real data. What was **not** yet verified as of the spec lock: full player-pool pagination — a Phase 3 item, not a schema blocker. (League `581297461`'s playoff format was resolved during Phase 2: 4-team playoff, `TOTAL_POINTS_SCORED` seeding, season runs through week 18 — see §13.)
 
 ---
 
@@ -447,11 +447,11 @@ Monte Carlo over each league's own remaining schedule and its own playoff format
 | 0 Ledger | 1 | Always shown |
 | 1 Recap | 1 | Always shown |
 | 2 Skill | 1 (waiver/trade: horizon+1) | Shown; incomplete-horizon items marked so |
-| 3 Luck | 5 (placeholder) | **Withheld** |
-| 4 Power | 5 (placeholder) | **Withheld** |
-| 5 Playoff odds | 7 (placeholder) | **Withheld** |
+| 3 Luck | 5 | **Withheld** |
+| 4 Power | 5 | **Withheld** |
+| 5 Playoff odds | 7 | **Withheld** |
 
-**These thresholds are my initial placeholders, scaled down from FPL's GW10/GW15 to fit a 14-17 week season — not yet your decision the way FPL's close/blowout thresholds were.** Confirm or override before Phase 5 locks them in (§13).
+Confirmed by the owner 2026-09-13, along with the 3-week waiver/trade ROI horizon (§13).
 
 ---
 
@@ -498,9 +498,9 @@ Same as FPL: $0 ongoing. Free API, free SQLite, free GitHub Actions tier, Claude
 
 **Phase 0 — Environment.** ✅ Complete 2026-09-13. Git repo, Python 3.13 venv, `requests` + `python-dotenv`, `.env.example`.
 
-**Phase 1 — Verify the API.** ✅ Complete 2026-09-13. Real host found (`lm-api-reads.fantasy.espn.com`), auth confirmed, cross-league identity resolved via SWID, both ID namespaces empirically mapped, core endpoints verified against both leagues. Two items deferred to Phase 3 (player-pool pagination, league `581297461`'s exact playoff format) — neither blocks schema design. See `phase1_output/VERIFICATION_REPORT.md`.
+**Phase 1 — Verify the API.** ✅ Complete 2026-09-13. Real host found (`lm-api-reads.fantasy.espn.com`), auth confirmed, cross-league identity resolved via SWID, both ID namespaces empirically mapped, core endpoints verified against both leagues. See `phase1_output/VERIFICATION_REPORT.md`.
 
-**Phase 2 — Schema and league/team resolution.** Create the database from §3. Resolve both leagues' teams to `manager_id`s via `SWID`/`primaryOwner` matching, confirmed already possible.
+**Phase 2 — Schema and league/team resolution.** ✅ Complete 2026-09-13. `db/schema.sql` applied; `src/build_db.py` resolved both leagues live — 26 teams stored across the two leagues, your SWID matched your team in both (`Goff Is My Copilot` in `1618731`, `LaPorta Authority` in `581297461`), zero `data_issues` logged. Resolved league `581297461`'s playoff format as a side effect: 4-team playoff, `TOTAL_POINTS_SCORED` seeding, season runs through week 18 (vs. league `1618731`'s week-17 finish and 8-team playoff) — confirmed different, not assumed.
 *Exit: both leagues' teams and managers stored, your identity confirmed correct in both.*
 
 **Phase 3 — Historical backfill.** Ingest week 1 (the season just started, per Phase 1's observed `latestScoringPeriod: 1`) for both leagues: rosters, lineups, matchups, transactions. Resolve player-pool pagination as part of this phase. Validators: right team count per league, no missing weeks, `raw_team_week.total_points` cross-checked against `raw_matchups`.
@@ -509,7 +509,7 @@ Same as FPL: $0 ongoing. Free API, free SQLite, free GitHub Actions tier, Claude
 **Phase 4 — Automation.** Daily job, idempotent, scheduled, proven safe on repeated runs — same bar as FPL (byte-identical reruns on already-complete weeks).
 *Exit: three consecutive clean automated runs.*
 
-**Phase 5 — Tier 0–2 analytics.** Ledger and lineup-efficiency/waiver/trade metrics. Hand-verify lineup efficiency for at least one team per league against the live ESPN app. **Confirm or override the placeholder confidence-gate thresholds from §5 before this phase closes.**
+**Phase 5 — Tier 0–2 analytics.** Ledger and lineup-efficiency/waiver/trade metrics. Hand-verify lineup efficiency for at least one team per league against the live ESPN app.
 *Exit: manually verified correct, gates confirmed by the owner.*
 
 **Phase 6 — Claude interface.** `CLAUDE.md`, query library, per-league recap generator.
@@ -533,14 +533,13 @@ Same as FPL: $0 ongoing. Free API, free SQLite, free GitHub Actions tier, Claude
 
 **Resolved in Phase 1 (2026-09-13):** real API host; auth mechanism; cross-league identity via SWID; both leagues' roster/scoring/waiver configuration; the position-ID vs. lineup-slot-ID distinction; core endpoint shapes.
 
+**Resolved by the owner (2026-09-13):** the confidence-gate thresholds in §5 (5 weeks for Luck/Power, 7 for Playoff odds) and the waiver/trade ROI horizon (3 weeks) — approved as proposed, scaled down proportionally from FPL's GW10/GW15/5-gameweek-horizon to fit a 14-17 week season.
+
+**Resolved in Phase 2 (2026-09-13):** league `581297461`'s playoff format — 4-team playoff, `TOTAL_POINTS_SCORED` seeding, season through week 18. Confirmed different from league `1618731` (8-team playoff, week 17 finish), not assumed to match.
+
 **Open, to resolve in Phase 3:**
 - Full player-pool pagination (`kona_player_info` returns 50 players per call; likely needs an `X-Fantasy-Filter` header, unconfirmed).
-- League `581297461`'s exact playoff format (team count, seeding rule) — don't assume it matches league `1618731`.
 - `scoringItems`' `statId` meanings (e.g. `53`, `72`, `89`, `123`, `133`) have no embedded label in the API response — will be cross-referenced against real player stat lines once real games are played, the same way FPL's `net_points` was cross-checked against reported scores.
-
-**Open, needs the owner's decision (not to be guessed):**
-- The confidence-gate thresholds in §5 (5/5/7 weeks) are my placeholders, not a decision — FPL's close/blowout thresholds were explicitly the owner's call; these should be too, once Phase 5 shows what "noisy early" actually looks like for a 14-17 week season.
-- The waiver/trade ROI horizon (placeholder: 3 weeks) — FPL used 5 gameweeks against a 38-week season; 3 weeks against a 14-17 week season is a proportional guess, not a verified-right number.
 
 **Accepted risks:** ESPN's API is undocumented and can change without notice — mitigated by payload archiving, same as FPL. Two leagues' differing configs mean every query must filter by `league_id` — a real discipline cost, accepted in exchange for one shared codebase and one dashboard.
 

@@ -55,13 +55,12 @@ them.
 | Metrics | Minimum weeks | Below that |
 |---|---|---|
 | Ledger, recap, lineup efficiency, waiver/trade value | 1 | Show normally |
-| Luck, all-play, expected wins, power rankings | 5 (placeholder) | **Withhold** |
-| Playoff odds | 7 (placeholder) | **Withhold** |
+| Luck, all-play, expected wins, power rankings | 5 | **Withhold** |
+| Playoff odds | 7 | **Withhold** |
 
-**These thresholds are placeholders, not the owner's decision yet** — see
-SPEC.md §13. Confirm with the owner before Phase 5 closes; don't treat them
-as settled until then. Below the threshold, say "insufficient sample — N
-weeks, need M." Do not show the number with a caveat attached.
+Confirmed by the owner 2026-09-13 (see SPEC.md §13). Below the threshold,
+say "insufficient sample — N weeks, need M." Do not show the number with a
+caveat attached.
 
 ## 5. Never overwrite finalized history
 
@@ -108,8 +107,9 @@ run.
   **seeded by total points scored, not win/loss record** — confirmed live,
   not the default assumption
 - League `581297461` — *My 2023 League* — 12 teams, 17-man roster (7
-  bench); playoff format not yet verified — do not assume it matches
-  league `1618731`
+  bench), season runs through week 18 (one week longer than league
+  `1618731`'s week-17 finish), **4-team playoff** seeded by total points
+  scored — confirmed different from league `1618731`'s 8-team playoff
 - Owner identified by ESPN `SWID` — confirmed stable across both leagues by
   matching it against `primaryOwner` live in each
 - **Neither league uses FAAB.** Both are `WAIVERS_TRADITIONAL` (confirmed

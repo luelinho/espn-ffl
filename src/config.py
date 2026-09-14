@@ -54,8 +54,8 @@ MAX_RETRIES = 3
 BACKOFF_BASE_SECONDS = 2.0  # 2s, 4s, 8s
 
 # --- Analytics gates --------------------------------------------------------
-# Sized down from FPL's GW10/GW15 thresholds to fit a ~17-18 week NFL season.
-# Revisit once Phase 5 establishes what "noisy early" actually looks like here.
+# Sized down from FPL's GW10/GW15 thresholds to fit a ~14-17 week NFL season.
+# Confirmed by the owner 2026-09-13 (SPEC.md §13) — not a guess left unconfirmed.
 
 GATE_LUCK_METRICS = 5
 GATE_POWER_RANKINGS = 5
