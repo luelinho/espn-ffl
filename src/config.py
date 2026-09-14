@@ -55,13 +55,21 @@ BACKOFF_BASE_SECONDS = 2.0  # 2s, 4s, 8s
 
 # --- Live refresh (opt-in, game-day only — see src/live_refresh.py) --------
 # NOT the scheduled daily job's cadence — a separate mode the owner starts
-# manually while actively watching. Shared by src/live_refresh.py (how often
-# it re-runs the pipeline) and build_dashboard.py (how often the open page
-# reloads itself to pick up the freshly-written file) so the two can never
-# drift out of sync. 240s = 4 minutes, the middle of the owner's requested
-# 3-5 minute range (2026-09-14).
+# manually. Two cadences: LIVE_REFRESH_SECONDS while a real NFL game is
+# actually in progress (owner-confirmed exact value, 2026-09-14: "update
+# the fantasy score every 90 seconds" during games), IDLE_REFRESH_SECONDS
+# otherwise (owner's ask was "do not update on non-game days, unless it's
+# to update rosters and transfers" — the *that* it should back off to is
+# confirmed, but no exact number was given, so 900s/15min below is a
+# placeholder pick, not an owner-confirmed value). live_refresh.py checks
+# real game state each cycle (raw_pro_games.in_progress) to pick which one
+# applies. LIVE_REFRESH_SECONDS is also what build_dashboard.py embeds as
+# the open page's own auto-reload interval, so the two can never drift out
+# of sync — during idle windows this just means some of those reloads are
+# harmless no-ops against an unchanged file, same as before.
 
-LIVE_REFRESH_SECONDS = 240
+LIVE_REFRESH_SECONDS = 90
+IDLE_REFRESH_SECONDS = 900
 
 # --- Analytics gates --------------------------------------------------------
 # Sized down from FPL's GW10/GW15 thresholds to fit a ~14-17 week NFL season.

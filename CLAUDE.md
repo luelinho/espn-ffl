@@ -191,14 +191,31 @@ of 26 teams' logos are dead third-party links (not our bug) and fall back
 to a plain "?" placeholder.
 
 **Live-refresh mode, opt-in, game-day only.** The page embeds `<meta
-http-equiv="refresh" content="{LIVE_REFRESH_SECONDS}">` (default 240s = 4
-minutes, config.py) and persists the active tab/league to `localStorage`
-across reloads — otherwise every auto-reload would silently dump you back
-to Home/the first league. That reload only shows new data if
-`src/live_refresh.py` is actually running in the background (a separate,
-manually-started loop — see below); otherwise it's a harmless reload of
-identical content, and the topbar says so. This does NOT change the
-scheduled daily job's cadence.
+http-equiv="refresh" content="{LIVE_REFRESH_SECONDS}">` (config.py) and
+persists the active tab/league to `localStorage` across reloads —
+otherwise every auto-reload would silently dump you back to Home/the
+first league. That reload only shows new data if `src/live_refresh.py` is
+actually running in the background (a separate, manually-started loop —
+see below); otherwise it's a harmless reload of identical content, and
+the topbar says so. This does NOT change the scheduled daily job's
+cadence.
+
+**Self-pacing live refresh (2026-09-14).** `live_refresh.py` no longer
+runs one flat interval — each cycle first checks whether a real NFL game
+is actually in progress (`any_game_live()`: current week + a fresh
+`proTeamSchedules` pull, 2 cheap requests, not the full pipeline). If one
+is live, it runs the full pipeline every `LIVE_REFRESH_SECONDS` (90s,
+owner-confirmed exact value: "update the fantasy score every 90
+seconds"). If nothing is live, it does NOT re-poll scores at all — it
+only checks `raw_transactions` for real waiver/free-agent/trade activity
+(skips `load_week`/`load_standings`, which the scheduled daily job
+already covers once a day) and still rebuilds the local digest/dashboard
+since that's free, every `IDLE_REFRESH_SECONDS` (900s = 15 min — the
+owner asked for this backoff to exist and specifically to still catch
+"rosters and transfers," but never gave an exact idle number, so this is
+a placeholder pick, not an owner-confirmed value, unlike the 90s live
+figure). Safe to just leave running continuously — it paces itself up and
+down rather than needing to be started/stopped around kickoff.
 
 It is a snapshot, not a live view by default — regenerate it after any data change:
 

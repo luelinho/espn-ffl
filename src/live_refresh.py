@@ -1,18 +1,30 @@
 """Opt-in, game-day live-refresh mode — NOT the scheduled daily job.
 
-Loops the full pipeline (daily_sync -> calculate -> recap -> digest ->
-build_dashboard) every LIVE_REFRESH_SECONDS (default 4 minutes). Start it
-manually while actively watching games; the scheduled GitHub Actions job
-still runs once daily as before, unaffected — this is a separate,
-session-scoped mode you start and stop yourself, not a change to that
-cadence.
+Self-pacing: each cycle first checks whether any real NFL game is actually
+in progress right now (raw_pro_games.in_progress, refreshed from ESPN's
+own proTeamSchedules — two cheap requests, not the full pipeline). If one
+is live, runs the full pipeline (daily_sync -> calculate -> recap -> digest
+-> build_dashboard) and loops again after LIVE_REFRESH_SECONDS (default
+90s). If nothing is live, it does NOT re-poll scores — instead it only
+checks for real waiver/free-agent/trade activity (load_transactions, no
+load_week/load_standings — the scheduled daily job already covers those
+once a day) and still rebuilds the local digest/dashboard so the activity
+feed stays current, then loops again after the much longer
+IDLE_REFRESH_SECONDS (default 900s). Owner's exact ask, 2026-09-14:
+"if there's a game, update the fantasy score every 90 seconds, otherwise
+we do not update on non-game days, unless it's to update rosters and
+transfers."
+
+Safe to just leave running across a whole Sunday (or a whole week) — it
+paces itself up and down on its own rather than needing to be started and
+stopped around kickoff.
 
 Pair with an open dashboard.html: build_dashboard.py embeds a matching
 auto-reload, so the page picks up each freshly-written file on its own.
 
 Usage:
     python -m src.live_refresh
-    python -m src.live_refresh --interval 180   # override, seconds
+    python -m src.live_refresh --live-interval 60 --idle-interval 600  # override, seconds
     (Ctrl+C to stop)
 """
 
@@ -23,8 +35,9 @@ import sys
 import time
 from datetime import datetime, timezone
 
-from . import calculate, config, daily_sync, digest, recap
+from . import calculate, config, daily_sync, digest, ingest, recap
 from . import build_dashboard as build_dashboard_module
+from .espn_client import ESPNClient
 
 STEPS = [
     ("daily_sync", daily_sync.run),
@@ -34,10 +47,40 @@ STEPS = [
     ("build_dashboard", build_dashboard_module.run),
 ]
 
+# calculate, recap, digest, build_dashboard — everything after daily_sync,
+# reused for the idle cycle's own lightweight ingestion step below.
+POST_INGEST_STEPS = STEPS[1:]
 
-def run_once() -> bool:
+
+def any_game_live() -> bool:
+    """Cheap check (current-week lookup + proTeamSchedules — 2 requests
+    total, vs. the full pipeline's ~10) for whether a real NFL game is in
+    progress anywhere right now. Uses the first configured league's
+    current matchup period, since the real-world NFL week is the same
+    fact regardless of which league is asking."""
+    if not (config.ESPN_S2 and config.ESPN_SWID and config.SEASON_YEAR):
+        return False
+    conn = ingest.connect()
+    client = ESPNClient(archive_dir=config.PHASE1_PAYLOADS, verbose=False)
+    try:
+        league_id = next(iter(config.LEAGUES))
+        res = client.get_league(league_id, config.SEASON_YEAR, views=["mSettings"])
+        if not res.ok:
+            return False
+        week = res.json_body["status"]["currentMatchupPeriod"]
+        ingest.load_pro_games(conn, client, config.SEASON_YEAR, week)
+        row = conn.execute(
+            "SELECT COUNT(*) FROM raw_pro_games WHERE season_year=? AND week=? AND in_progress=1",
+            (int(config.SEASON_YEAR), week),
+        ).fetchone()
+        return row[0] > 0
+    finally:
+        conn.close()
+
+
+def run_steps(steps) -> bool:
     ok = True
-    for name, step_fn in STEPS:
+    for name, step_fn in steps:
         try:
             code = step_fn()
         except Exception as exc:  # noqa: BLE001 — a live loop must not die on one bad cycle
@@ -51,23 +94,54 @@ def run_once() -> bool:
     return ok
 
 
+def run_live_cycle() -> bool:
+    return run_steps(STEPS)
+
+
+def run_idle_cycle() -> bool:
+    """Non-game-day cycle — catches real waiver/free-agent/trade activity
+    without re-polling scores that can't be changing. Skips
+    load_week/load_standings (the scheduled daily job already covers
+    those once a day); still reruns calculate/recap/digest/build_dashboard
+    afterward, since those are free and local, so the activity feed and
+    any roster change show up right away rather than waiting for the next
+    live window."""
+    if not (config.ESPN_S2 and config.ESPN_SWID and config.SEASON_YEAR):
+        print("  FAILED: .env is missing ESPN_S2 / ESPN_SWID / SEASON_YEAR.")
+        return False
+    conn = ingest.connect()
+    client = ESPNClient(archive_dir=config.PHASE1_PAYLOADS, verbose=True)
+    try:
+        for league_id in config.LEAGUES:
+            n_tx = ingest.load_transactions(conn, client, league_id, config.SEASON_YEAR)
+            print(f"  League {league_id}: {n_tx} transactions (roster/waiver/trade check only)")
+    finally:
+        conn.close()
+    return run_steps(POST_INGEST_STEPS)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--interval", type=int, default=config.LIVE_REFRESH_SECONDS,
-                         help=f"seconds between refreshes (default {config.LIVE_REFRESH_SECONDS})")
+    parser.add_argument("--live-interval", type=int, default=config.LIVE_REFRESH_SECONDS,
+                         help=f"seconds between refreshes while a game is live (default {config.LIVE_REFRESH_SECONDS})")
+    parser.add_argument("--idle-interval", type=int, default=config.IDLE_REFRESH_SECONDS,
+                         help=f"seconds between roster/transaction-only checks when nothing is live (default {config.IDLE_REFRESH_SECONDS})")
     args = parser.parse_args()
 
-    print(f"Live refresh mode — every {args.interval}s. Ctrl+C to stop.")
+    print(f"Live refresh mode — {args.live_interval}s while a game is live, "
+          f"{args.idle_interval}s (rosters/transactions only) otherwise. Ctrl+C to stop.")
     print("This does not change the scheduled daily job — it's a separate, opt-in loop.\n")
 
     try:
         while True:
             started = datetime.now(timezone.utc)
-            print(f"[{started.strftime('%H:%M:%S')} UTC] refreshing...")
-            ok = run_once()
+            live = any_game_live()
+            print(f"[{started.strftime('%H:%M:%S')} UTC] {'LIVE — a game is in progress' if live else 'idle — no game in progress'}, refreshing...")
+            ok = run_live_cycle() if live else run_idle_cycle()
+            interval = args.live_interval if live else args.idle_interval
             elapsed = (datetime.now(timezone.utc) - started).total_seconds()
-            print(f"  {'done' if ok else 'done with errors'} in {elapsed:.1f}s\n")
-            time.sleep(max(1, args.interval - elapsed))
+            print(f"  {'done' if ok else 'done with errors'} in {elapsed:.1f}s — next check in {max(1, interval - elapsed):.0f}s\n")
+            time.sleep(max(1, interval - elapsed))
     except KeyboardInterrupt:
         print("\nLive refresh stopped.")
         return 0
