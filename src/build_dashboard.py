@@ -147,13 +147,30 @@ tr.owner-row td { background: var(--accent-soft); }
 .match-row .side.right { text-align: right; }
 .match-row .score { min-width: 90px; text-align: center; font-weight: 800; font-variant-numeric: tabular-nums; }
 .logo { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 6px; background: var(--card-2); }
+
+/* --- head-to-head matchup comparison (Home) --- */
+.mc-league-label { font-size: 10.5px; font-weight: 700; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+.matchup-card-head { display: flex; align-items: center; gap: 8px; padding-bottom: 6px; }
+.mc-team { display: flex; align-items: center; gap: 7px; flex: 1 1 0; min-width: 0; overflow: hidden; }
+.mc-team.right { flex-direction: row-reverse; text-align: right; }
+.mc-name { font-weight: 800; font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; min-width: 0; }
+.mc-score { flex: none; font-size: 18px; font-weight: 800; font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; padding: 0 4px; }
+.mc-dash { color: var(--ink-faint); font-weight: 500; margin: 0 3px; }
+.mc-live-row { text-align: center; margin: -2px 0 10px; }
+.matchup-divider { height: 1px; background: var(--border); margin: 4px 0 10px; }
+.matchup-row { display: grid; grid-template-columns: 1fr 46px 1fr; align-items: center; gap: 8px; padding: 5px 0; font-size: 12px; }
+.mp { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.mp-mine { justify-content: flex-start; }
+.mp-theirs { justify-content: flex-end; text-align: right; }
+.mp-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mp-pts { font-weight: 800; font-variant-numeric: tabular-nums; flex: none; }
+.mp-slot { text-align: center; font-size: 9.5px; font-weight: 800; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.03em; }
 .roster-row { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 12.5px; }
 .roster-row:last-child { border-bottom: none; }
 .roster-row.bench { opacity: 0.55; }
 .roster-row .name { flex: 1; }
 .roster-row .pts { font-weight: 800; font-variant-numeric: tabular-nums; }
 select { background: var(--card-2); color: var(--ink); border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; font-size: 13px; }
-.alert { padding: 8px 10px; border-radius: 8px; background: var(--card-2); border: 1px solid var(--border); font-size: 12px; margin-bottom: 6px; }
 .footer { text-align: center; color: var(--ink-faint); font-size: 11px; padding: 20px; }
 
 /* --- bar list (horizontal) --- */
@@ -163,23 +180,6 @@ select { background: var(--card-2); color: var(--ink); border: 1px solid var(--b
 .barlist-row .bl-fill { height: 100%; border-radius: 999px; }
 .barlist-row .bl-val { width: 38px; flex: none; text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
 
-/* --- ring gauges --- */
-.ring-row { display: flex; gap: 22px; flex-wrap: wrap; justify-content: space-around; }
-.ring-item { display: flex; flex-direction: column; align-items: center; gap: 6px; }
-.ring-item .ring-value { font-size: 15px; font-weight: 800; }
-.ring-item .ring-label { font-size: 10.5px; color: var(--ink-soft); text-align: center; }
-
-/* --- weekly bar history --- */
-.hist-bars { display: flex; align-items: flex-end; gap: 8px; height: 110px; }
-.hist-bar { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; height: 100%; }
-.hist-bar .bar { width: 100%; border-radius: 6px 6px 3px 3px; background: linear-gradient(180deg, var(--cyan-a), var(--cyan-b)); min-height: 4px; }
-.hist-bar .wk-label { font-size: 10px; color: var(--ink-faint); }
-
-/* --- dot matrix --- */
-.dotgrid { display: flex; flex-wrap: wrap; gap: 8px; }
-.dotwrap { display: flex; flex-direction: column; align-items: center; gap: 4px; width: 46px; }
-.dotwrap .dot { width: 14px; height: 14px; border-radius: 50%; }
-.dotwrap .dot-label { font-size: 9px; color: var(--ink-faint); text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; }
 """
 
 JS = """
@@ -276,25 +276,6 @@ function barList(rows, colorA, colorB) {
     </div>`).join('');
 }
 
-function weeklyBarHistory(weeklyPoints) {
-  if (!weeklyPoints.length) return '<p class="muted">No weeks played yet.</p>';
-  const max = Math.max(1, ...weeklyPoints.map(w => w.points));
-  return `<div class="hist-bars">${weeklyPoints.map(w => `
-    <div class="hist-bar">
-      <div class="bar" style="height:${Math.max(4, w.points/max*100)}%"></div>
-      <div class="wk-label">Wk${w.week}</div>
-    </div>`).join('')}</div>`;
-}
-
-function dotMatrix(items) {
-  const max = Math.max(1, ...items.map(i => i.value));
-  return `<div class="dotgrid">${items.map(i => {
-    const t = Math.max(0.15, i.value / max);
-    const color = i.highlight ? 'var(--pink-a)' : `rgba(139,124,246,${t.toFixed(2)})`;
-    return `<div class="dotwrap"><div class="dot" style="background:${color}" title="${i.label}: ${i.value.toFixed(1)}"></div><div class="dot-label">${i.label}</div></div>`;
-  }).join('')}</div>`;
-}
-
 /* ---------------------------------------------------------------------- */
 
 function matchRow(lg, m) {
@@ -309,75 +290,93 @@ function cardHead(iconName, title) {
   return `<div class="card-head"><h2><span class="icon-chip">${ICON_SVG[iconName]}</span>${title}</h2></div>`;
 }
 
-function renderHome(root) {
-  const L = DIGEST.leagues[currentLeague];
-  root.innerHTML = '';
-  const w = L.my_team_detail && L.my_team_detail.week_stats;
-  const s = L.my_team_detail && L.my_team_detail.season_stats;
-  const myRankPos = L.standings.findIndex(t => t.is_owner) + 1;
+// Confirmed live, Phase 1 (2026-09-13) — a roster SLOT scheme, not a
+// player's real position (see CLAUDE.md rule 7). Used only for display
+// labels here; storage keeps lineup_slot_id and default_position_id
+// separate on purpose.
+const SLOT_LABELS = { 0: 'QB', 2: 'RB', 4: 'WR', 6: 'TE', 16: 'D/ST', 17: 'K', 20: 'BE', 21: 'IR', 23: 'FLEX' };
 
-  const kpis = el('div', 'kpi-row');
-  kpis.innerHTML = `
-    <div class="kpi amber"><div class="kpi-top"><div class="kpi-icon">${ICON_SVG.analytics}</div></div><div class="value">${s ? fmtPct(s.lineup_efficiency) : '—'}</div><div class="label">Lineup efficiency</div></div>
-    <div class="kpi blue"><div class="kpi-top"><div class="kpi-icon">${ICON_SVG.trend}</div></div><div class="value">${s ? s.points_for.toFixed(1) : '—'}</div><div class="label">Points for (season)</div></div>
-    <div class="kpi cyan"><div class="kpi-top"><div class="kpi-icon">${ICON_SVG.bench}</div></div><div class="value">${s ? s.total_bench_points.toFixed(1) : '—'}</div><div class="label">Bench points left</div></div>
-    <div class="kpi pink"><div class="kpi-top"><div class="kpi-icon">${ICON_SVG.trophy}</div></div><div class="value">${myRankPos || '—'} of ${L.teams.length}</div><div class="label">League rank</div></div>
-  `;
-  root.appendChild(kpis);
+function findMyMatchup(L) {
+  const m = L.this_week.matchups.find(x => x.a.team_id === L.my_team_id || x.b.team_id === L.my_team_id);
+  if (!m) return null;
+  const mine = m.a.team_id === L.my_team_id ? m.a : m.b;
+  const opp = m.a.team_id === L.my_team_id ? m.b : m.a;
+  return { mine, opp, live: m.live };
+}
 
-  const grid1 = el('div', 'grid grid-2');
-  const rosterCard = el('div', 'card');
-  const starters = (L.my_team_detail ? L.my_team_detail.roster : []).filter(p => p.is_starter).sort((a,b) => b.points - a.points);
-  rosterCard.innerHTML = cardHead('myteam', `This week's roster points — ${L.my_team_name}`) +
-    barList(starters.map(p => ({ label: p.name, value: p.points || 0 })), 'var(--blue-a)', 'var(--blue-b)');
-  grid1.appendChild(rosterCard);
-
-  const effCard = el('div', 'card');
-  effCard.innerHTML = cardHead('analytics', 'Lineup efficiency') +
-    `<div style="display:flex;justify-content:center;padding:6px 0">${ringWithLabel(s ? s.lineup_efficiency : 0, 'var(--cyan-a)', 'var(--cyan-b)', s ? fmtPct(s.lineup_efficiency) : '—', 'actual vs. optimal')}</div>
-     <p class="muted" style="text-align:center">${w ? `${w.actual_points.toFixed(1)} / ${w.optimal_points.toFixed(1)} pts this week` : ''}</p>`;
-  grid1.appendChild(effCard);
-  root.appendChild(grid1);
-
-  const grid2 = el('div', 'grid grid-2');
-  const histCard = el('div', 'card');
-  // The digest only carries the current week's detail per team (not a full
-  // week-by-week history array yet) — render exactly the real weeks that
-  // exist. This grows on its own as more weeks are added to the digest.
-  histCard.innerHTML = cardHead('trend', 'Weekly score (weeks played so far)') +
-    weeklyBarHistory(w ? [{ week: L.current_week, points: w.actual_points }] : []);
-  grid2.appendChild(histCard);
-
-  const dotCard = el('div', 'card');
-  dotCard.innerHTML = cardHead('league', `Week ${L.current_week} scores — whole league`) +
-    dotMatrix(L.this_week.matchups.flatMap(m => [
-      { label: m.a.name.slice(0,8), value: m.a.score, highlight: m.a.team_id === L.my_team_id },
-      { label: m.b.name.slice(0,8), value: m.b.score, highlight: m.b.team_id === L.my_team_id },
-    ]));
-  grid2.appendChild(dotCard);
-  root.appendChild(grid2);
-
-  const gaugeCard = el('div', 'card');
-  const rank1based = myRankPos || 0;
-  const rankPct = L.teams.length ? 1 - ((rank1based - 1) / (L.teams.length - 1 || 1)) : 0;
-  gaugeCard.innerHTML = cardHead('trophy', 'At a glance') + `<div class="ring-row">
-    <div class="ring-item">${ringWithLabel(s ? s.lineup_efficiency : 0, 'var(--amber-a)', 'var(--amber-b)', s ? fmtPct(s.lineup_efficiency) : '—', null, 86)}<div class="ring-label">Lineup efficiency</div></div>
-    <div class="ring-item">${ringWithLabel(rankPct, 'var(--pink-a)', 'var(--pink-b)', myRankPos ? ('#' + myRankPos) : '—', null, 86)}<div class="ring-label">League rank</div></div>
-    <div class="ring-item">${ringWithLabel(w ? w.efficiency : 0, 'var(--cyan-a)', 'var(--cyan-b)', w ? fmtPct(w.efficiency) : '—', null, 86)}<div class="ring-label">This week's efficiency</div></div>
-  </div>`;
-  root.appendChild(gaugeCard);
-
-  const fixturesCard = el('div', 'card');
-  fixturesCard.innerHTML = cardHead('league', `Week ${L.this_week.week} matchups`);
-  L.this_week.matchups.forEach(m => fixturesCard.appendChild(el('div', null, matchRow(currentLeague, m))));
-  root.appendChild(fixturesCard);
-
-  if (L.alerts.items.length) {
-    const box = el('div', 'card');
-    box.innerHTML = cardHead('bell', 'Alerts') + L.alerts.items.map(a => `<div class="alert">[${a.severity}] ${a.description}</div>`).join('');
-    if (L.alerts.total_unresolved > L.alerts.items.length) box.innerHTML += `<p class="muted">+${L.alerts.total_unresolved - L.alerts.items.length} more not shown.</p>`;
-    root.appendChild(box);
+function matchupComparisonCard(leagueId) {
+  const L = DIGEST.leagues[leagueId];
+  const matchup = findMyMatchup(L);
+  const card = el('div', 'card');
+  if (!matchup) {
+    card.innerHTML = cardHead('league', L.name) + '<p class="muted">No matchup this week (bye).</p>';
+    return card;
   }
+  const myDetail = L.teams_detail[String(L.my_team_id)];
+  const oppDetail = L.teams_detail[String(matchup.opp.team_id)];
+  const myStarters = (myDetail ? myDetail.roster : []).filter(p => p.is_starter);
+  const oppStarters = (oppDetail ? oppDetail.roster : []).filter(p => p.is_starter);
+
+  // Position-aligned rows: group each side's starters by lineup slot, then
+  // pair them up slot-instance by slot-instance (e.g. RB1 vs RB1, RB2 vs
+  // RB2) — same idea as ESPN's own side-by-side matchup view.
+  const bySlot = (players) => players.reduce((acc, p) => { (acc[p.slot_id] = acc[p.slot_id] || []).push(p); return acc; }, {});
+  const mySlots = bySlot(myStarters), oppSlots = bySlot(oppStarters);
+  const allSlotIds = [...new Set([...Object.keys(mySlots), ...Object.keys(oppSlots)])]
+    .sort((a, b) => a - b);
+
+  let rows = '';
+  allSlotIds.forEach(slotId => {
+    const mine = mySlots[slotId] || [], theirs = oppSlots[slotId] || [];
+    const count = Math.max(mine.length, theirs.length);
+    for (let i = 0; i < count; i++) {
+      const mp = mine[i], op = theirs[i];
+      rows += `<div class="matchup-row">
+        <div class="mp mp-mine">${mp ? `<span class="mp-name">${mp.name}</span><span class="mp-pts">${mp.points === null ? '—' : mp.points.toFixed(1)}</span>` : '<span class="muted">—</span>'}</div>
+        <div class="mp-slot">${SLOT_LABELS[slotId] || slotId}</div>
+        <div class="mp mp-theirs">${op ? `<span class="mp-pts">${op.points === null ? '—' : op.points.toFixed(1)}</span><span class="mp-name">${op.name}</span>` : '<span class="muted">—</span>'}</div>
+      </div>`;
+    }
+  });
+
+  card.innerHTML = `
+    <div class="mc-league-label">${L.name}</div>
+    <div class="matchup-card-head">
+      <div class="mc-team">${logoImg(leagueId, matchup.mine.team_id, 26)}<span class="mc-name">${L.my_team_name}</span></div>
+      <div class="mc-score">${matchup.mine.score.toFixed(1)}<span class="mc-dash">–</span>${matchup.opp.score.toFixed(1)}</div>
+      <div class="mc-team right"><span class="mc-name">${matchup.opp.name}</span>${logoImg(leagueId, matchup.opp.team_id, 26)}</div>
+    </div>
+    ${matchup.live ? '<div class="mc-live-row"><span class="badge live">LIVE</span></div>' : ''}
+    <div class="matchup-divider"></div>
+    ${rows}
+  `;
+  return card;
+}
+
+function renderHome(root) {
+  root.innerHTML = '';
+
+  // Home shows both leagues, always, regardless of the league switcher
+  // (owner's explicit call, 2026-09-14) — the switcher only affects the
+  // other single-team-scoped tabs (My Team/League/Managers/Analytics).
+  // Two sections, both side by side per league: your own matchup
+  // (position-by-position vs. this week's opponent), then the full
+  // league scoreboard below it.
+  const leagueIds = Object.keys(DIGEST.leagues);
+
+  const bothMatchups = el('div', 'grid grid-2');
+  leagueIds.forEach(lid => bothMatchups.appendChild(matchupComparisonCard(lid)));
+  root.appendChild(bothMatchups);
+
+  const bothFixtures = el('div', 'grid grid-2');
+  leagueIds.forEach(lid => {
+    const L = DIGEST.leagues[lid];
+    const card = el('div', 'card');
+    card.innerHTML = cardHead('league', `${L.name} — Week ${L.this_week.week} matchups`);
+    L.this_week.matchups.forEach(m => card.appendChild(el('div', null, matchRow(lid, m))));
+    bothFixtures.appendChild(card);
+  });
+  root.appendChild(bothFixtures);
 }
 
 function renderTeamDetail(container, detail, leagueId) {

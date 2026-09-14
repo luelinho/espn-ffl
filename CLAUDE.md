@@ -164,6 +164,16 @@ A league switcher in the header re-renders whichever page is active for
 either league — every render function reads `currentLeague` fresh, nothing
 is cached per-league.
 
+**Home is the one exception, deliberately** (owner's call, 2026-09-14):
+it ignores the league switcher entirely and always shows both leagues side
+by side — your own matchup, position-by-position vs. this week's opponent
+(`matchupComparisonCard()`), then both leagues' full scoreboards below.
+Nothing else lives on Home; KPI cards, the lineup-efficiency ring, roster
+bar list, weekly history, and the league-scores dot matrix only exist on
+My Team/Managers/Analytics now. Alerts (`data_issues`) aren't surfaced on
+the dashboard at all as of this decision — still fully queryable via
+`queries/open_data_issues.sql`, just not shown in the UI.
+
 **Visual identity, redesigned 2026-09-14** from an owner-supplied reference
 image: an app-shell layout — a fixed left sidebar (collapses to a
 horizontal scrollable bar below 820px, never just hidden — a bare
