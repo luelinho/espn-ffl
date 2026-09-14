@@ -111,6 +111,14 @@ class ESPNClient:
         url = f"{config.BASE_URL}/{season_year}/segments/0/leagues/{league_id}?{query}"
         return self._get(url, archive_key=f"league_{league_id}__{'_'.join(views)}", archive=archive)
 
+    def get_season_reference(self, season_year: str, views: list[str], archive: bool = True) -> FetchResult:
+        """GET season-wide (not league-scoped) reference data, e.g. real NFL
+        pro teams via view=proTeamSchedules. Different URL shape from
+        get_league — no /segments/0/leagues/{id} suffix."""
+        query = "&".join(f"view={v}" for v in views)
+        url = f"{config.BASE_URL}/{season_year}?{query}"
+        return self._get(url, archive_key=f"season_ref__{'_'.join(views)}", archive=archive)
+
     def _get(self, url: str, archive_key: str, archive: bool) -> FetchResult:
         last_error = None
         status = None

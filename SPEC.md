@@ -92,9 +92,11 @@ Undocumented, no published stability guarantee — same risk profile as FPL's AP
 
 These are stored in clearly separate, clearly named columns everywhere. Conflating them would silently corrupt every lineup-efficiency number the project exists to produce.
 
-### Fallback
+### Fallback — confirmed necessary, not hypothetical
 
-If `mMatchup`'s reported score ever disagrees with a matchup result reconstructed from summed roster points (independently computed from `raw_roster_entries` × that league's scoring rules), the disagreement is logged as a `data_issue`, not silently resolved — same cross-check discipline as FPL's H2H reconstruction.
+`mMatchup.totalPoints` **cannot be trusted for a live week.** Confirmed live during Phase 3 (2026-09-13, Week 1, both leagues): every single team in both leagues showed `totalPoints: 0.0` in `mMatchup` while each player's own `stats` entry already had real, non-zero `appliedTotal` values for completed games (round numbers like 18.0, 33.0 — clearly actual results, not projections). This is the same shape of bug as the FPL project's `entry_history.points` lag: a coarse summary field ESPN computes on its own schedule, stuck behind the more granular per-player data that's already current.
+
+**Fix, not a workaround:** `raw_team_week.total_points` and `raw_matchups.score_a/score_b` are always computed by summing each team's starters' real per-player `appliedTotal` — never taken directly from `mMatchup.totalPoints`. That field is still fetched and compared; any disagreement beyond rounding is logged as a `data_issue` (confirmed: 26 such warnings (one per team-side) logged across both leagues' Week 1, entirely expected given the field-wide lag, not something to "fix" by suppressing the check).
 
 ### Politeness
 
@@ -503,8 +505,10 @@ Same as FPL: $0 ongoing. Free API, free SQLite, free GitHub Actions tier, Claude
 **Phase 2 — Schema and league/team resolution.** ✅ Complete 2026-09-13. `db/schema.sql` applied; `src/build_db.py` resolved both leagues live — 26 teams stored across the two leagues, your SWID matched your team in both (`Goff Is My Copilot` in `1618731`, `LaPorta Authority` in `581297461`), zero `data_issues` logged. Resolved league `581297461`'s playoff format as a side effect: 4-team playoff, `TOTAL_POINTS_SCORED` seeding, season runs through week 18 (vs. league `1618731`'s week-17 finish and 8-team playoff) — confirmed different, not assumed.
 *Exit: both leagues' teams and managers stored, your identity confirmed correct in both.*
 
-**Phase 3 — Historical backfill.** Ingest week 1 (the season just started, per Phase 1's observed `latestScoringPeriod: 1`) for both leagues: rosters, lineups, matchups, transactions. Resolve player-pool pagination as part of this phase. Validators: right team count per league, no missing weeks, `raw_team_week.total_points` cross-checked against `raw_matchups`.
-*Exit: every played week present for both leagues, all validators pass.*
+**Phase 3 — Historical backfill.** ✅ Complete 2026-09-13, scoped honestly: the season is genuinely at Week 1 for both leagues (`currentMatchupPeriod: 1` — there is no finalized history yet to backfill, only a live week to capture provisionally, same idea as an FPL provisional gameweek). `src/backfill.py` ingested Week 1's rosters/lineups/matchups/transactions for both leagues (33 real NFL teams, 26 team rosters, 458 transactions total, 26 standings rows) and, in the process, **confirmed and fixed a real, systemic bug**: `mMatchup.totalPoints` was `0.0` for every team in both leagues while real per-player stats were already populated — `raw_team_week`/`raw_matchups` now always compute totals from summed roster points instead, with the disagreement logged as 26 `data_issues` (one per team-side, every single one flagged) rather than silently trusted or silently fixed (see §2 Fallback, CLAUDE.md rule 7).
+
+**Scope note:** the `players` table is populated only from players who actually appear on a roster in one of the two leagues, not ESPN's full free-agent universe — `kona_player_info`'s pagination (deferred from Phase 1) is only needed once a feature requires seeing undrafted free agents, which isn't yet the case. Revisit if/when a waiver-suggestion-adjacent feature needs it.
+*Exit: every played week present for both leagues, all validators pass.* ✅ — team counts match `league_seasons`, roster data present for week 1 in both leagues, zero unexpected validator failures (the 26 total-points `data_issues` are the expected, documented finding above, not a validator failure).
 
 **Phase 4 — Automation.** Daily job, idempotent, scheduled, proven safe on repeated runs — same bar as FPL (byte-identical reruns on already-complete weeks).
 *Exit: three consecutive clean automated runs.*

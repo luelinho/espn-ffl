@@ -166,7 +166,9 @@ CREATE TABLE IF NOT EXISTS raw_transaction_items (
   player_id       INTEGER NOT NULL,
   from_team_id    INTEGER,
   to_team_id      INTEGER,
-  item_type       TEXT NOT NULL,
+  item_type       TEXT,                     -- nullable: real data has null here for
+                                             -- some paired/cancelled items (fromTeamId=
+                                             -- toTeamId=0) — confirmed live, not a bug
   PRIMARY KEY (transaction_id, player_id)
 );
 

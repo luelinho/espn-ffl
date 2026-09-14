@@ -92,6 +92,15 @@ depends on it. Two real examples from Phase 1 of why this matters:
   similarly-numbered schemes. Confirmed by sampling real players, not
   assumed from memory or community folklore. Conflating them silently
   breaks every lineup-efficiency number in the system.
+- **`mMatchup.totalPoints` cannot be trusted for a live week.** Confirmed
+  live in Phase 3 (2026-09-13): every team in both leagues showed
+  `totalPoints: 0.0` while real per-player `appliedTotal` values were
+  already populated for completed games. Same shape of bug as the FPL
+  project's `entry_history.points` lag. `raw_team_week.total_points` and
+  `raw_matchups` scores are always computed by summing starters' real
+  per-player points — never taken from `mMatchup.totalPoints` directly.
+  That field is still fetched and diffed against the computed total; a
+  mismatch beyond rounding is a logged `data_issue`, not a bug to silence.
 
 ## 8. Phase discipline
 
