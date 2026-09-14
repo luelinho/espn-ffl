@@ -162,7 +162,14 @@ tr.owner-row td { background: var(--accent-soft); }
    comparison used for "my matchup" on Home, but for any two managers
    (owner's explicit ask, 2026-09-14: "see the live scoring between all
    managers", not just their own). */
+/* An author `display` rule always beats the UA stylesheet's default
+   `[hidden]{display:none}`, regardless of selector specificity — so
+   .modal-overlay's own `display:flex` was silently winning over the
+   `hidden` attribute closeMatchupModal() sets, leaving an empty opaque
+   panel stuck on screen after the first close. The `[hidden]` rule below
+   needs to come from author CSS too, and after the base rule so it wins. */
 .modal-overlay { position: fixed; inset: 0; background: rgba(5,3,12,0.78); backdrop-filter: blur(3px); z-index: 300; display: flex; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
+.modal-overlay[hidden] { display: none; }
 /* .card's own background is a ~4.5% translucent overlay, meant to sit on
    the page's solid ground — stacked on the modal backdrop instead, the
    page behind it was still bleeding through and washing out the stat
