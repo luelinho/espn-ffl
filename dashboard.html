@@ -193,7 +193,11 @@ tr.owner-row td:first-child { border-left: 2px solid var(--accent); padding-left
 .mc-name { font-weight: 800; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; min-width: 0; }
 .mc-score { flex: none; font-size: 30px; font-weight: 800; font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; padding: 0 8px; }
 .mc-dash { color: var(--ink-faint); font-weight: 500; margin: 0 5px; }
-.mc-live-row { text-align: center; margin: -4px 0 14px; }
+/* Always reserve the LIVE badge's row height, live or not — otherwise a
+   card jumps taller/shorter the moment a game goes live or ends, and two
+   side-by-side matchup cards on Home sit at mismatched heights whenever
+   only one of them is actually live. */
+.mc-live-row { text-align: center; margin: -4px 0 14px; min-height: 17px; }
 .matchup-divider { height: 1px; background: var(--border); margin: 6px 0 14px; }
 .matchup-row { display: grid; grid-template-columns: 1fr 56px 1fr; align-items: center; gap: 12px; padding: 9px 0; font-size: 14.5px; border-bottom: 1px solid rgba(255,255,255,0.04); }
 .matchup-row:last-child { border-bottom: none; }
@@ -535,7 +539,7 @@ function matchupCompareHead(leagueId, teamAId, teamBId, nameA, nameB, scoreA, sc
       <div class="mc-score">${scoreA.toFixed(1)}<span class="mc-dash">–</span>${scoreB.toFixed(1)}</div>
       <div class="mc-team right${bMine ? ' mine' : ''}"><div class="mc-team-id"><span class="mc-name">${nameB}</span>${mgrB ? `<span class="mc-owner">${mgrB}</span>` : ''}</div>${logoImg(leagueId, teamBId, 26)}</div>
     </div>
-    ${live ? '<div class="mc-live-row"><span class="badge live">LIVE</span></div>' : ''}
+    <div class="mc-live-row">${live ? '<span class="badge live">LIVE</span>' : ''}</div>
     <div class="matchup-divider"></div>`;
 }
 
