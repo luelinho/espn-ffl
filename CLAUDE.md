@@ -236,6 +236,23 @@ the existing finalization check. A long-running `live_refresh.py`
 process needs restarting to pick up a fix like this one — it's a normal
 Python process, not hot-reloaded.
 
+**Live scoring ticker (2026-09-15).** A new `scoring_events` table records
+every time a player's real points go up between two syncs of a still-live
+week — "who scored and who owns them," the owner's ask. Detected inline in
+`ingest.load_week()`: the pre-update `points_scored`/`is_final` is read
+before each roster-entry upsert, and an event is logged only when the
+*previous* row was itself still live (`is_final=0`) and the new points are
+higher — so a backfill/rebuild replaying already-final history can never
+manufacture a fake event, only a genuine second observation of a still-live
+row can. `digest.recent_scoring_events()` joins it back to the real
+player/team/manager names for display. The dashboard shows it as a global,
+auto-scrolling marquee (`.ticker`, pure CSS `@keyframes`, pauses on hover)
+above the tab content on every page, tagged pink/purple by league, empty
+(genuinely, not a placeholder) whenever nothing has been detected yet.
+Verified against real data the same day: a live `backfill` run caught
+Chiefs D/ST's real late stat correction (13.0 → 14.0 pts) in both leagues
+where it's rostered, correctly attributed to each real owner.
+
 It is a snapshot, not a live view by default — regenerate it after any data change:
 
 ```bash

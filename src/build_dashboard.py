@@ -96,6 +96,22 @@ body {
 
 /* --- topbar --- */
 .topbar { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 24px; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+/* Live scoring ticker — "X just scored, owned by Y", across both leagues
+   (owner's ask, 2026-09-15). Global, above the tab content, since live
+   scoring is relevant no matter which tab is open. Empty (real silence,
+   not a fabricated placeholder) whenever nothing has been detected yet —
+   see ingest.load_week()'s scoring_events insert for when an event fires. */
+.ticker { flex: none; overflow: hidden; white-space: nowrap; background: var(--card-2); border-bottom: 1px solid var(--border); }
+.ticker-track { display: inline-flex; align-items: center; width: max-content; animation: ticker-scroll 45s linear infinite; }
+.ticker:hover .ticker-track { animation-play-state: paused; }
+@keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.ticker-item { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; padding: 8px 0; }
+.ticker-item .tag { flex: none; font-size: 8.5px; font-weight: 800; padding: 2px 6px; border-radius: 5px; text-transform: uppercase; letter-spacing: 0.02em; }
+.ticker-item.league-pink .tag { background: rgba(241,88,163,0.18); color: var(--pink-a); }
+.ticker-item.league-purple .tag { background: var(--accent-soft); color: var(--accent); }
+.ticker-item .delta { color: var(--cyan-a); font-weight: 800; }
+.ticker-sep { color: var(--ink-faint); padding: 0 18px; }
+.ticker-empty { padding: 8px 20px; font-size: 12px; color: var(--ink-faint); }
 .topbar-left { display: flex; align-items: center; gap: 14px; }
 .hamburger-btn { width: 38px; height: 38px; border-radius: 10px; background: var(--card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--ink); cursor: pointer; flex: none; }
 .hamburger-btn:hover { background: var(--card-2); }
@@ -477,6 +493,25 @@ function teamManager(L, teamId) {
 function leagueAccentClass(leagueId) {
   return Object.keys(DIGEST.leagues).indexOf(leagueId) === 0 ? 'league-pink' : 'league-purple';
 }
+
+function tickerItemHtml(ev) {
+  const who = ev.manager || ev.team_name;
+  const cls = leagueAccentClass(ev.leagueId);
+  return `<span class="ticker-item ${cls}"><span class="tag">${DIGEST.leagues[ev.leagueId].name}</span><b>${ev.player}</b> scored — <span class="delta">+${ev.delta.toFixed(1)}</span> now ${ev.points_after.toFixed(1)} pts <span class="muted">(${who})</span></span>`;
+}
+function renderTicker() {
+  const tickerEl = document.getElementById('ticker');
+  const events = Object.keys(DIGEST.leagues)
+    .flatMap(lid => (DIGEST.leagues[lid].scoring_events || []).map(ev => ({ ...ev, leagueId: lid })))
+    .sort((a, b) => new Date(b.detected_at) - new Date(a.detected_at))
+    .slice(0, 20);
+  if (!events.length) {
+    tickerEl.innerHTML = '<div class="ticker-empty">No live scoring detected yet this week.</div>';
+    return;
+  }
+  const itemsHtml = events.map(tickerItemHtml).join('<span class="ticker-sep">•</span>');
+  tickerEl.innerHTML = `<div class="ticker-track">${itemsHtml}<span class="ticker-sep">•</span>${itemsHtml}<span class="ticker-sep">•</span></div>`;
+}
 // Real owner name under a fantasy team name, wherever the team name is a
 // prominent label — same idea as a player's stat line underneath their
 // name (owner's ask, 2026-09-14). Omitted whenever no manager is on
@@ -743,6 +778,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.navitem').forEach(t => t.classList.toggle('active', t.dataset.tab === currentTab));
   document.querySelectorAll('.page').forEach(p => p.classList.toggle('active', p.id === 'page-' + currentTab));
   renderCurrentTab();
+  renderTicker();
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMatchupModal(); });
 """
@@ -801,6 +837,7 @@ def build_html(digest: dict) -> str:
         <div class="profile-chip"><div class="avatar">{initials}</div><div><div class="name">{owner_name}</div><div class="role">League owner</div></div></div>
       </div>
     </div>
+    <div class="ticker" id="ticker"></div>
     <div class="scroll-area">
       <div class="content">{pages}</div>
       <div class="footer">Generated {digest['generated_at']} · Fact = stored raw data. Computed = derived by a documented formula. See CLAUDE.md.</div>

@@ -222,6 +222,20 @@ def load_week(conn: sqlite3.Connection, client: ESPNClient, league_id: int, seas
                     (int(season_year), week, player_id, json.dumps(wk_stat.get("stats", {})), int(is_final), now()),
                 )
 
+            # Scoring events — a player's real points going up between two
+            # syncs of a still-live week, so the Home ticker can say "X
+            # just scored, owned by Y" instead of the viewer having to
+            # notice a number changed on their own. Read the pre-update
+            # row before the upsert below overwrites it; only fires while
+            # the existing row was itself still live (prev_final=0), so a
+            # backfill/rebuild replaying already-final history never
+            # generates fake events.
+            prev = conn.execute(
+                "SELECT points_scored, is_final FROM raw_roster_entries "
+                "WHERE league_id=? AND season_year=? AND week=? AND team_id=? AND player_id=?",
+                (league_id, int(season_year), week, team_id, player_id),
+            ).fetchone()
+
             conn.execute(
                 """
                 INSERT INTO raw_roster_entries
@@ -235,6 +249,16 @@ def load_week(conn: sqlite3.Connection, client: ESPNClient, league_id: int, seas
                 (league_id, int(season_year), week, team_id, player_id, entry["lineupSlotId"],
                  int(is_starter), points, int(is_final), now()),
             )
+
+            if prev and points is not None and prev[0] is not None and not prev[1] and points > prev[0]:
+                conn.execute(
+                    """
+                    INSERT INTO scoring_events
+                        (league_id, season_year, week, team_id, player_id, is_starter, points_before, points_after, detected_at)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (league_id, int(season_year), week, team_id, player_id, int(is_starter), prev[0], points, now()),
+                )
 
             if is_starter and points is not None:
                 team_total += points

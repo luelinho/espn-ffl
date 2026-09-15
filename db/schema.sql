@@ -281,6 +281,19 @@ CREATE TABLE IF NOT EXISTS data_issues (
   resolved     BOOLEAN NOT NULL DEFAULT 0
 );
 
+CREATE TABLE IF NOT EXISTS scoring_events (
+  event_id       INTEGER PRIMARY KEY AUTOINCREMENT,
+  league_id      INTEGER NOT NULL,
+  season_year    INTEGER NOT NULL,
+  week           INTEGER NOT NULL,
+  team_id        INTEGER NOT NULL,
+  player_id      INTEGER NOT NULL,
+  is_starter     BOOLEAN NOT NULL,
+  points_before  REAL NOT NULL,
+  points_after   REAL NOT NULL,
+  detected_at    TIMESTAMP NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS raw_payloads (
   payload_id   INTEGER PRIMARY KEY AUTOINCREMENT,
   league_id    INTEGER,

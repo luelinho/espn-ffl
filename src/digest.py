@@ -396,6 +396,33 @@ def waiver_moves(conn, league_id: int, season_year: int, team_id: int) -> list[d
     ]
 
 
+def recent_scoring_events(conn, league_id: int, season_year: int, limit: int = 20) -> list[dict]:
+    """Real point increases detected between two syncs of a still-live
+    week — for the Home ticker ("X just scored, owned by Y"), owner's ask
+    2026-09-15. See ingest.load_week()'s scoring_events insert for exactly
+    when these fire: never on a backfill/rebuild replaying already-final
+    history, only while a week was genuinely live between two real syncs."""
+    rows = conn.execute(
+        """
+        SELECT e.detected_at, e.week, e.team_id, e.points_before, e.points_after, e.is_starter,
+               p.full_name, t.team_name, m.display_name
+        FROM scoring_events e
+        JOIN players p ON p.player_id = e.player_id
+        JOIN teams t ON t.league_id=e.league_id AND t.season_year=e.season_year AND t.team_id=e.team_id
+        LEFT JOIN managers m ON m.manager_id = t.manager_id
+        WHERE e.league_id=? AND e.season_year=?
+        ORDER BY e.detected_at DESC
+        LIMIT ?
+        """,
+        (league_id, season_year, limit),
+    ).fetchall()
+    return [
+        {"detected_at": da, "week": wk, "team_id": tid, "points_before": pb, "points_after": pa,
+         "delta": round(pa - pb, 2), "is_starter": bool(st), "player": pname, "team_name": tn, "manager": mgr}
+        for da, wk, tid, pb, pa, st, pname, tn, mgr in rows
+    ]
+
+
 def league_activity(conn, league_id: int, season_year: int, limit: int = 12) -> list[dict]:
     """Recent real roster moves — waiver claims, free-agent adds/drops, and
     completed trades — for the whole league, not just the owner's own team
@@ -494,6 +521,7 @@ def build_league_digest(conn, league_id: int, season_year: int) -> dict:
         "teams_detail": {str(t["team_id"]): team_detail(conn, league_id, season_year, t["team_id"], week, gstatus, ginfo, inj) for t in teams},
         "waiver_moves": waiver_moves(conn, league_id, season_year, info["my_team_id"]) if info["my_team_id"] else [],
         "activity": league_activity(conn, league_id, season_year),
+        "scoring_events": recent_scoring_events(conn, league_id, season_year),
         "alerts": alerts(conn, league_id),
     }
 
