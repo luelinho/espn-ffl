@@ -217,6 +217,25 @@ a placeholder pick, not an owner-confirmed value, unlike the 90s live
 figure). Safe to just leave running continuously — it paces itself up and
 down rather than needing to be started/stopped around kickoff.
 
+**Verified live end-to-end (2026-09-14), then a second real bug found and
+fixed (2026-09-15).** Ran `live_refresh.py` against the real Monday-night
+Broncos/Chiefs game: `any_game_live()` correctly caught it, the loop ran
+the full pipeline in ~13s and correctly scheduled its next check for the
+remaining ~77s, and real per-player data flowed through — Broncos/Chiefs
+starters showed `game_status: "live"` with a real live clock ("CHI 0-0
+12:59 - 1st") and in-progress stats (a Chiefs D/ST interception already
+recorded). While verifying, found that the matchup-level **LIVE badge**
+was wrong: it was driven purely by `raw_matchups.status != 'final'`
+(ESPN's own fantasy-week finalization flag), which stays "not final" for
+an entire week regardless of whether any real game is actually being
+played — so the badge stayed lit even Tuesday morning with every real
+game already Final. Fixed with `digest.teams_with_live_player()`: a
+matchup is only really LIVE when at least one starter on either side has
+a real NFL game currently `in_progress`, combined with (not replacing)
+the existing finalization check. A long-running `live_refresh.py`
+process needs restarting to pick up a fix like this one — it's a normal
+Python process, not hot-reloaded.
+
 It is a snapshot, not a live view by default — regenerate it after any data change:
 
 ```bash

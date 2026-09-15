@@ -127,7 +127,27 @@ def standings(conn, league_id: int, season_year: int, week: int) -> list[dict]:
     ]
 
 
-def week_matchups(conn, league_id: int, season_year: int, week: int) -> list[dict]:
+def teams_with_live_player(conn, league_id: int, season_year: int, week: int, game_status: dict[int, str]) -> set[int]:
+    """Fantasy team_ids with at least one starter whose real NFL game is
+    currently in progress — the actual meaning of "LIVE" a viewer expects
+    (their score could still move right now), not just "this fantasy week
+    hasn't been finalized by ESPN yet." Real bug found live, 2026-09-15:
+    the LIVE badge was driven purely by raw_matchups.status != 'final',
+    so it stayed lit for an entire week even when every real NFL game
+    that week was already Final and nothing could possibly still change —
+    confirmed by screenshot, not a display nit."""
+    rows = conn.execute(
+        """
+        SELECT DISTINCT r.team_id, p.pro_team_id
+        FROM raw_roster_entries r JOIN players p ON p.player_id = r.player_id
+        WHERE r.league_id=? AND r.season_year=? AND r.week=? AND r.is_starter=1
+        """,
+        (league_id, season_year, week),
+    ).fetchall()
+    return {team_id for team_id, pro_team_id in rows if game_status.get(pro_team_id) == "live"}
+
+
+def week_matchups(conn, league_id: int, season_year: int, week: int, live_teams: set[int] = frozenset()) -> list[dict]:
     rows = conn.execute(
         """
         SELECT m.team_a, ta.team_name, m.score_a, m.team_b, tb.team_name, m.score_b, m.status
@@ -139,7 +159,8 @@ def week_matchups(conn, league_id: int, season_year: int, week: int) -> list[dic
         (league_id, season_year, week),
     ).fetchall()
     return [
-        {"a": {"team_id": a, "name": an, "score": sa}, "b": {"team_id": b, "name": bn, "score": sb}, "live": status != "final"}
+        {"a": {"team_id": a, "name": an, "score": sa}, "b": {"team_id": b, "name": bn, "score": sb},
+         "live": status != "final" and (a in live_teams or b in live_teams)}
         for a, an, sa, b, bn, sb, status in rows
     ]
 
@@ -460,13 +481,14 @@ def build_league_digest(conn, league_id: int, season_year: int) -> dict:
     gstatus = game_status_map(conn, season_year, week)
     ginfo = game_info_map(conn, season_year, week)
     inj = injury_map(conn)
+    live_teams = teams_with_live_player(conn, league_id, season_year, week, gstatus)
 
     return {
         **info,
         "current_week": week,
         "teams": teams,
         "standings": standings(conn, league_id, season_year, week),
-        "this_week": {"week": week, "matchups": week_matchups(conn, league_id, season_year, week)},
+        "this_week": {"week": week, "matchups": week_matchups(conn, league_id, season_year, week, live_teams)},
         "leaderboard": leaderboard(conn, league_id, season_year, week),
         "my_team_detail": team_detail(conn, league_id, season_year, info["my_team_id"], week, gstatus, ginfo, inj) if info["my_team_id"] else None,
         "teams_detail": {str(t["team_id"]): team_detail(conn, league_id, season_year, t["team_id"], week, gstatus, ginfo, inj) for t in teams},
