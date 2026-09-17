@@ -253,6 +253,37 @@ Verified against real data the same day: a live `backfill` run caught
 Chiefs D/ST's real late stat correction (13.0 → 14.0 pts) in both leagues
 where it's rostered, correctly attributed to each real owner.
 
+**Public GitHub Pages hosting, live at 90s cadence during games
+(2026-09-17).** The repo is public (`github.com/luelinho/espn-ffl` —
+GitHub Pages' free tier requires a public repo; the owner explicitly
+chose free over private, and understands that means the dashboard and
+all managers' real names are visible to anyone with the link, not
+indexed/discoverable otherwise). `ESPN_S2`/`ESPN_SWID`/`SEASON_YEAR` are
+GitHub Actions repository secrets, never committed. `daily.yml` runs the
+full pipeline once a day and commits the outputs. Two workflows split the
+"generate data" and "publish to Pages" concerns: `pages-deploy.yml`
+triggers on any push to `main` that touches `dashboard.html` and does the
+actual Pages deployment, regardless of which process made that push. This
+split exists specifically because GitHub Actions' `schedule` trigger
+can't reliably hit the owner's 90-second live-game cadence (cron's floor
+is one minute, and scheduled runs are routinely delayed further under
+load) — real 90s precision can only come from `live_refresh.py` itself
+pushing on its own already-live-paced loop (`push_to_github()`, new),
+which `pages-deploy.yml` then picks up and redeploys within seconds.
+Two real deploy bugs found live standing this up, both fixed: (1)
+`derived_team_week.lineup_efficiency`'s `NOT NULL` constraint crashed the
+first Actions run — week 2 had just started with zero games played
+anywhere, so `optimal_lineup_points()` correctly returned `0.0`, and
+`0.0` is falsy in Python, so `actual/optimal` legitimately evaluated to
+`None`; fixed by making the column nullable (matching the pattern already
+used correctly in `derived_team_season.season_lineup_efficiency`), migrated
+in place since SQLite can't drop `NOT NULL` directly. (2) `configure-pages`
+can't create a Pages site for the first time using the workflow's own
+`GITHUB_TOKEN` — that's a genuine GitHub platform limitation, not a
+workflow bug — so first-time enablement needed one manual step (Settings →
+Pages → Source → GitHub Actions) before any workflow-driven deploy could
+succeed; every deploy since has worked automatically.
+
 It is a snapshot, not a live view by default — regenerate it after any data change:
 
 ```bash

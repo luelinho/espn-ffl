@@ -19,6 +19,17 @@ Safe to just leave running across a whole Sunday (or a whole week) — it
 paces itself up and down on its own rather than needing to be started and
 stopped around kickoff.
 
+If this repo has a `origin` remote (i.e. it's been pushed to GitHub),
+each successful cycle also commits and pushes the freshly-written files —
+that push is what makes the public GitHub Pages site update on the same
+90s live cadence (owner's ask, 2026-09-17): GitHub Actions' `schedule`
+trigger can't reliably hit 90 seconds on its own (cron's floor is one
+minute, and runs are often delayed further), so this local loop pushing
+on its own cadence is the only way to get real 90s precision on the
+public site too. A `.github/workflows/pages-deploy.yml` redeploys Pages
+automatically on every push to `main` that touches `dashboard.html`,
+whether that push comes from here or from the once-daily scheduled job.
+
 Pair with an open dashboard.html: build_dashboard.py embeds a matching
 auto-reload, so the page picks up each freshly-written file on its own.
 
@@ -31,6 +42,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import subprocess
 import sys
 import time
 from datetime import datetime, timezone
@@ -78,6 +90,42 @@ def any_game_live() -> bool:
         conn.close()
 
 
+def push_to_github() -> None:
+    """Best-effort: push the freshly-written files to GitHub so the public
+    Pages site picks them up via the push-triggered pages-deploy workflow —
+    the actual mechanism behind the GitHub dashboard updating every 90
+    seconds during a live game (owner's ask, 2026-09-17). GitHub Actions'
+    own `schedule` trigger can't do that: cron's floor is one minute and
+    scheduled runs are often delayed well past their nominal time under
+    load, so real 90s precision can only come from this local loop pushing
+    on its own live cadence — not from anything running on GitHub's side.
+    Quietly does nothing if this repo has no `origin` remote yet (never
+    pushed to GitHub), and never lets a push failure crash the live loop —
+    a rejected push (e.g. the scheduled daily job committed in the
+    meantime) just means this cycle's update waits for the next one."""
+    try:
+        remote = subprocess.run(["git", "remote", "get-url", "origin"], cwd=config.REPO_ROOT,
+                                 capture_output=True, text=True, timeout=10)
+        if remote.returncode != 0:
+            return
+        subprocess.run(["git", "add", "db/league.sqlite", "digest/season.json", "dashboard.html"],
+                        cwd=config.REPO_ROOT, check=True, timeout=10)
+        staged = subprocess.run(["git", "diff", "--staged", "--quiet"], cwd=config.REPO_ROOT, timeout=10)
+        if staged.returncode == 0:
+            return  # nothing actually changed this cycle
+        subprocess.run(["git", "commit", "-m", f"Live sync {datetime.now(timezone.utc).isoformat()}"],
+                        cwd=config.REPO_ROOT, check=True, timeout=10)
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=config.REPO_ROOT, timeout=20)
+        push = subprocess.run(["git", "push", "origin", "main"], cwd=config.REPO_ROOT,
+                               capture_output=True, text=True, timeout=20)
+        if push.returncode == 0:
+            print("  Pushed to GitHub — Pages will redeploy automatically.")
+        else:
+            print(f"  GitHub push failed (will retry next cycle): {push.stderr.strip()[:200]}")
+    except Exception as exc:  # noqa: BLE001 — a live loop must not die over a push failure
+        print(f"  GitHub push skipped: {exc!r}")
+
+
 def run_steps(steps) -> bool:
     ok = True
     for name, step_fn in steps:
@@ -95,7 +143,10 @@ def run_steps(steps) -> bool:
 
 
 def run_live_cycle() -> bool:
-    return run_steps(STEPS)
+    ok = run_steps(STEPS)
+    if ok:
+        push_to_github()
+    return ok
 
 
 def run_idle_cycle() -> bool:
@@ -117,7 +168,10 @@ def run_idle_cycle() -> bool:
             print(f"  League {league_id}: {n_tx} transactions (roster/waiver/trade check only)")
     finally:
         conn.close()
-    return run_steps(POST_INGEST_STEPS)
+    ok = run_steps(POST_INGEST_STEPS)
+    if ok:
+        push_to_github()
+    return ok
 
 
 def main() -> int:

@@ -1,0 +1,53 @@
+name: Deploy dashboard to Pages
+
+# Triggered by any push to main that changes dashboard.html — whether from
+# the once-daily scheduled job (daily.yml) or from src/live_refresh.py
+# pushing on its own 90-second live cadence from the owner's machine. This
+# is what makes the public site update that fast during a live game:
+# GitHub Actions' own `schedule` trigger can't reliably hit 90 seconds
+# (cron's floor is one minute, and scheduled runs are often delayed
+# further under load) — only a push-triggered deploy can, since it fires
+# the moment new data actually lands on main.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "dashboard.html"
+  workflow_dispatch: {}
+
+permissions:
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  # A rapid run of live-cadence pushes should always converge on showing
+  # the freshest state, not queue every single one — cancel an in-flight
+  # deploy if a newer push has already superseded it.
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p _site
+          cp dashboard.html _site/index.html
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - uses: actions/deploy-pages@v4
+        id: deployment
