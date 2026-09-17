@@ -207,7 +207,15 @@ CREATE TABLE IF NOT EXISTS derived_team_week (
   team_id               INTEGER NOT NULL,
   actual_starter_points REAL NOT NULL,
   optimal_lineup_points REAL NOT NULL,
-  lineup_efficiency     REAL NOT NULL,
+  -- Nullable, not NOT NULL: genuinely undefined (not zero) before anyone
+  -- in the league has recorded a single point that week — optimal_lineup_
+  -- points is a real 0.0 then (no players to assign), and 0.0 is falsy in
+  -- Python, so actual/optimal legitimately evaluates to None. Found live
+  -- via the first GitHub Actions run, 2026-09-17: week 2 had just started
+  -- with zero games played, and this NOT NULL constraint crashed the
+  -- whole calculate step. Same nullable pattern derived_team_season.
+  -- season_lineup_efficiency already used correctly for the same reason.
+  lineup_efficiency     REAL,
   bench_points          REAL NOT NULL,
   score_rank            INTEGER NOT NULL,
   calc_version          TEXT NOT NULL,
