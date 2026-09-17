@@ -5,6 +5,15 @@ on:
     - cron: "5 6 * * *"   # 06:05 UTC daily
   workflow_dispatch: {}   # allow manual triggering from the Actions tab
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -17,17 +26,43 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Run daily sync
+      - name: Run full pipeline
         env:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
           SEASON_YEAR: ${{ secrets.SEASON_YEAR }}
-        run: python -m src.daily_sync
+        run: |
+          python -m src.daily_sync
+          python -m src.calculate
+          python -m src.recap
+          python -m src.digest
+          python -m src.build_dashboard
 
-      - name: Commit database if changed
+      - name: Commit data if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add db/league.sqlite
+          git add db/league.sqlite digest/season.json dashboard.html
           git diff --staged --quiet && echo "No changes to commit" || git commit -m "Daily sync $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p _site
+          cp dashboard.html _site/index.html
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: sync
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
