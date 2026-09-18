@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T01:19:34.155267+00:00",
+  "generated_at": "2026-09-18T01:21:04.086604+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -340,7 +340,7 @@
             "a": {
               "team_id": 30,
               "name": "Fleetwood Mac S3x Pants",
-              "score": 10.0
+              "score": 12.0
             },
             "b": {
               "team_id": 16,
@@ -1348,7 +1348,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 135.0,
-            "points_against": 120.0,
+            "points_against": 122.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -1863,15 +1863,15 @@
         },
         "30": {
           "week_stats": {
-            "actual_points": 10.0,
-            "optimal_points": 10.0,
+            "actual_points": 12.0,
+            "optimal_points": 12.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 97.0,
+            "points_for": 99.0,
             "points_against": 105.0,
             "record": {
               "w": 0,
@@ -1888,7 +1888,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 9.0,
+              "points": 11.0,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -1897,7 +1897,7 @@
               "is_home": true,
               "game_detail": "4:21 - 2nd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "94 YDS",
+              "stat_line": "101 YDS",
               "injury_status": null
             },
             {
@@ -4857,6 +4857,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T01:20:54.040758+00:00",
+          "week": 2,
+          "team_id": 30,
+          "points_before": 9.0,
+          "points_after": 11.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "James Cook III",
+          "team_name": "Fleetwood Mac S3x Pants",
+          "manager": "Ken Nilson"
+        },
+        {
           "detected_at": "2026-09-18T01:19:24.028501+00:00",
           "week": 2,
           "team_id": 30,
@@ -5023,7 +5035,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 30: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=10.0"
+            "description": "League 1618731 week 2 team 30: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=12.0"
           },
           {
             "severity": "warning",
@@ -5283,7 +5295,7 @@
             "a": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 9.4
+              "score": 10.1
             },
             "b": {
               "team_id": 10,
@@ -5423,7 +5435,7 @@
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.8208024850000494,
+          "lineup_efficiency": 0.8283611028527849,
           "bench_points": 34.4,
           "is_provisional": true
         },
@@ -5455,7 +5467,7 @@
         "season_stats": {
           "weeks_played": 2,
           "points_for": 153.45999999999998,
-          "points_against": 104.94000000000001,
+          "points_against": 105.64,
           "record": {
             "w": 1,
             "l": 0,
@@ -8290,7 +8302,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 153.45999999999998,
-            "points_against": 104.94000000000001,
+            "points_against": 105.64,
             "record": {
               "w": 1,
               "l": 0,
@@ -8611,22 +8623,22 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 9.4,
-            "optimal_points": 13.600000000000001,
-            "efficiency": 0.6911764705882353,
+            "actual_points": 10.1,
+            "optimal_points": 14.3,
+            "efficiency": 0.7062937062937062,
             "bench_points": 4.2,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 122.52000000000001,
+            "points_for": 123.22,
             "points_against": 113.9,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8208024850000494,
+            "lineup_efficiency": 0.8283611028527849,
             "total_bench_points": 34.4,
             "is_provisional": true
           },
@@ -8636,7 +8648,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 9.4,
+              "points": 10.1,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -8645,7 +8657,7 @@
               "is_home": true,
               "game_detail": "4:21 - 2nd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "94 YDS",
+              "stat_line": "101 YDS",
               "injury_status": null
             },
             {
@@ -9740,6 +9752,18 @@
         }
       ],
       "scoring_events": [
+        {
+          "detected_at": "2026-09-18T01:20:58.434186+00:00",
+          "week": 2,
+          "team_id": 2,
+          "points_before": 9.4,
+          "points_after": 10.1,
+          "delta": 0.7,
+          "is_starter": true,
+          "player": "James Cook III",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
         {
           "detected_at": "2026-09-18T01:19:28.530012+00:00",
           "week": 2,
