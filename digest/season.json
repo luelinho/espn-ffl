@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T01:51:04.107135+00:00",
+  "generated_at": "2026-09-18T01:52:34.263179+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -275,7 +275,7 @@
             "a": {
               "team_id": 15,
               "name": "Uncle Rico's QB Camp",
-              "score": 19.0
+              "score": 22.0
             },
             "b": {
               "team_id": 25,
@@ -476,7 +476,7 @@
         "season_stats": {
           "weeks_played": 2,
           "points_for": 168.0,
-          "points_against": 135.0,
+          "points_against": 138.0,
           "record": {
             "w": 1,
             "l": 0,
@@ -2430,7 +2430,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 168.0,
-            "points_against": 135.0,
+            "points_against": 138.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -4374,15 +4374,15 @@
         },
         "15": {
           "week_stats": {
-            "actual_points": 19.0,
-            "optimal_points": 19.0,
+            "actual_points": 22.0,
+            "optimal_points": 22.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 2
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 188.0,
+            "points_for": 191.0,
             "points_against": 130.0,
             "record": {
               "w": 1,
@@ -4416,7 +4416,7 @@
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
-              "points": 1.0,
+              "points": 4.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -4425,7 +4425,7 @@
               "is_home": false,
               "game_detail": "0:10 - 2nd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "1/1 XP",
+              "stat_line": "1/1 FG, 1/1 XP",
               "injury_status": null
             },
             {
@@ -4857,6 +4857,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T01:52:24.363666+00:00",
+          "week": 2,
+          "team_id": 15,
+          "points_before": 1.0,
+          "points_after": 4.0,
+          "delta": 3.0,
+          "is_starter": true,
+          "player": "Jake Bates",
+          "team_name": "Uncle Rico's QB Camp",
+          "manager": "Ben Williams"
+        },
+        {
           "detected_at": "2026-09-18T01:47:54.330608+00:00",
           "week": 2,
           "team_id": 32,
@@ -5083,18 +5095,6 @@
           "player": "Amon-Ra St. Brown",
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda"
-        },
-        {
-          "detected_at": "2026-09-18T01:13:24.234066+00:00",
-          "week": 2,
-          "team_id": 25,
-          "points_before": 1.0,
-          "points_after": 2.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jared Goff",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -5117,7 +5117,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 15: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=19.0"
+            "description": "League 1618731 week 2 team 15: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=22.0"
           },
           {
             "severity": "warning",
@@ -5406,7 +5406,7 @@
             "a": {
               "team_id": 8,
               "name": "Hawk Tua on my Penix",
-              "score": 6.3
+              "score": 9.3
             },
             "b": {
               "team_id": 12,
@@ -6860,7 +6860,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 112.7,
-            "points_against": 119.42,
+            "points_against": 122.42,
             "record": {
               "w": 0,
               "l": 1,
@@ -7164,15 +7164,15 @@
         },
         "8": {
           "week_stats": {
-            "actual_points": 6.3,
-            "optimal_points": 6.3,
+            "actual_points": 9.3,
+            "optimal_points": 9.3,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 168.56,
+            "points_for": 171.56,
             "points_against": 127.96,
             "record": {
               "w": 1,
@@ -7206,7 +7206,7 @@
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
-              "points": 1.0,
+              "points": 4.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -7215,7 +7215,7 @@
               "is_home": false,
               "game_detail": "0:10 - 2nd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "1/1 XP",
+              "stat_line": "1/1 FG, 1/1 XP",
               "injury_status": null
             },
             {
@@ -9825,6 +9825,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T01:52:28.782835+00:00",
+          "week": 2,
+          "team_id": 8,
+          "points_before": 1.0,
+          "points_after": 4.0,
+          "delta": 3.0,
+          "is_starter": true,
+          "player": "Jake Bates",
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians"
+        },
+        {
           "detected_at": "2026-09-18T01:49:28.564586+00:00",
           "week": 2,
           "team_id": 3,
@@ -10051,18 +10063,6 @@
           "player": "Jake Bates",
           "team_name": "Hawk Tua on my Penix",
           "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-09-18T01:14:58.489444+00:00",
-          "week": 2,
-          "team_id": 4,
-          "points_before": 2.14,
-          "points_after": 6.58,
-          "delta": 4.44,
-          "is_starter": false,
-          "player": "Jared Goff",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
         }
       ],
       "alerts": {
