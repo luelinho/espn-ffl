@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T02:07:34.118849+00:00",
+  "generated_at": "2026-09-18T02:09:04.248317+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -280,7 +280,7 @@
             "b": {
               "team_id": 25,
               "name": "Goff Is My Copilot",
-              "score": 10.0
+              "score": 11.0
             },
             "live": true
           },
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 28,
               "name": "Maybe to much Jagging off? ",
-              "score": 9.0
+              "score": 12.0
             },
             "b": {
               "team_id": 18,
@@ -467,15 +467,15 @@
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 10.0,
-          "optimal_points": 10.0,
+          "actual_points": 11.0,
+          "optimal_points": 11.0,
           "efficiency": 1.0,
           "bench_points": 0.0,
-          "rank": 5
+          "rank": 6
         },
         "season_stats": {
           "weeks_played": 2,
-          "points_for": 168.0,
+          "points_for": 169.0,
           "points_against": 138.0,
           "record": {
             "w": 1,
@@ -492,7 +492,7 @@
             "position_id": 1,
             "is_starter": true,
             "slot_id": 0,
-            "points": 10.0,
+            "points": 11.0,
             "pro_team_id": 8,
             "game_status": "live",
             "opponent": "BUF",
@@ -501,7 +501,7 @@
             "is_home": false,
             "game_detail": "Halftime",
             "kickoff_utc": "2026-09-18T00:15:00+00:00",
-            "stat_line": "128 YDS, TD",
+            "stat_line": "155 YDS, TD",
             "injury_status": null
           },
           {
@@ -2151,7 +2151,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 120.0,
-            "points_against": 178.0,
+            "points_against": 181.0,
             "record": {
               "w": 0,
               "l": 1,
@@ -2421,15 +2421,15 @@
         },
         "25": {
           "week_stats": {
-            "actual_points": 10.0,
-            "optimal_points": 10.0,
+            "actual_points": 11.0,
+            "optimal_points": 11.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 5
+            "rank": 6
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 168.0,
+            "points_for": 169.0,
             "points_against": 138.0,
             "record": {
               "w": 1,
@@ -2446,7 +2446,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 10.0,
+              "points": 11.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -2455,7 +2455,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "128 YDS, TD",
+              "stat_line": "155 YDS, TD",
               "injury_status": null
             },
             {
@@ -3292,15 +3292,15 @@
         },
         "28": {
           "week_stats": {
-            "actual_points": 9.0,
-            "optimal_points": 9.0,
+            "actual_points": 12.0,
+            "optimal_points": 12.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 6
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 147.0,
+            "points_for": 150.0,
             "points_against": 100.0,
             "record": {
               "w": 1,
@@ -3317,7 +3317,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 5.0,
+              "points": 8.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -3326,7 +3326,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "2 REC, 33 YDS",
+              "stat_line": "3 REC, 54 YDS",
               "injury_status": null
             },
             {
@@ -4383,7 +4383,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 191.0,
-            "points_against": 130.0,
+            "points_against": 131.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -4857,6 +4857,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:08:54.300171+00:00",
+          "week": 2,
+          "team_id": 28,
+          "points_before": 5.0,
+          "points_after": 8.0,
+          "delta": 3.0,
+          "is_starter": true,
+          "player": "Amon-Ra St. Brown",
+          "team_name": "Maybe to much Jagging off? ",
+          "manager": "Ryan Gajda"
+        },
+        {
+          "detected_at": "2026-09-18T02:08:54.299116+00:00",
+          "week": 2,
+          "team_id": 25,
+          "points_before": 10.0,
+          "points_after": 11.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Jared Goff",
+          "team_name": "Goff Is My Copilot",
+          "manager": "Luel Waktola"
+        },
+        {
           "detected_at": "2026-09-18T01:52:24.363666+00:00",
           "week": 2,
           "team_id": 15,
@@ -5071,30 +5095,6 @@
           "player": "Jake Bates",
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams"
-        },
-        {
-          "detected_at": "2026-09-18T01:14:54.104767+00:00",
-          "week": 2,
-          "team_id": 15,
-          "points_before": 8.0,
-          "points_after": 16.0,
-          "delta": 8.0,
-          "is_starter": true,
-          "player": "Jahmyr Gibbs",
-          "team_name": "Uncle Rico's QB Camp",
-          "manager": "Ben Williams"
-        },
-        {
-          "detected_at": "2026-09-18T01:13:24.234603+00:00",
-          "week": 2,
-          "team_id": 28,
-          "points_before": 0.0,
-          "points_after": 2.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Amon-Ra St. Brown",
-          "team_name": "Maybe to much Jagging off? ",
-          "manager": "Ryan Gajda"
         }
       ],
       "alerts": {
@@ -5102,7 +5102,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 28: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=9.0"
+            "description": "League 1618731 week 2 team 28: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=12.0"
           },
           {
             "severity": "warning",
@@ -5112,7 +5112,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 25: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=10.0"
+            "description": "League 1618731 week 2 team 25: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=11.0"
           },
           {
             "severity": "warning",
@@ -5406,7 +5406,7 @@
             "a": {
               "team_id": 8,
               "name": "Hawk Tua on my Penix",
-              "score": 9.3
+              "score": 12.4
             },
             "b": {
               "team_id": 12,
@@ -5500,7 +5500,7 @@
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey",
           "lineup_efficiency": 0.8765852993317877,
-          "bench_points": 85.66,
+          "bench_points": 86.74,
           "is_provisional": true
         },
         {
@@ -6160,7 +6160,7 @@
             "actual_points": 28.56,
             "optimal_points": 28.56,
             "efficiency": 1.0,
-            "bench_points": 9.42,
+            "bench_points": 10.5,
             "rank": 1
           },
           "season_stats": {
@@ -6173,7 +6173,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8765852993317877,
-            "total_bench_points": 85.66,
+            "total_bench_points": 86.74,
             "is_provisional": true
           },
           "roster": [
@@ -6369,7 +6369,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 9.42,
+              "points": 10.5,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -6378,7 +6378,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "128 YDS, TD",
+              "stat_line": "155 YDS, TD",
               "injury_status": null
             },
             {
@@ -6860,7 +6860,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 112.7,
-            "points_against": 122.42,
+            "points_against": 125.52000000000001,
             "record": {
               "w": 0,
               "l": 1,
@@ -7164,15 +7164,15 @@
         },
         "8": {
           "week_stats": {
-            "actual_points": 9.3,
-            "optimal_points": 9.3,
+            "actual_points": 12.4,
+            "optimal_points": 12.4,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 4
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 171.56,
+            "points_for": 174.66,
             "points_against": 127.96,
             "record": {
               "w": 1,
@@ -7189,7 +7189,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 5.3,
+              "points": 8.4,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -7198,7 +7198,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "2 REC, 33 YDS",
+              "stat_line": "3 REC, 54 YDS",
               "injury_status": null
             },
             {
@@ -8699,7 +8699,7 @@
             "optimal_points": 14.3,
             "efficiency": 0.7062937062937062,
             "bench_points": 4.2,
-            "rank": 3
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 2,
@@ -9825,6 +9825,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:08:58.676458+00:00",
+          "week": 2,
+          "team_id": 8,
+          "points_before": 5.3,
+          "points_after": 8.4,
+          "delta": 3.1,
+          "is_starter": true,
+          "player": "Amon-Ra St. Brown",
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians"
+        },
+        {
+          "detected_at": "2026-09-18T02:08:58.675205+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 9.42,
+          "points_after": 10.5,
+          "delta": 1.08,
+          "is_starter": false,
+          "player": "Jared Goff",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
           "detected_at": "2026-09-18T02:07:28.672709+00:00",
           "week": 2,
           "team_id": 3,
@@ -10039,30 +10063,6 @@
           "player": "Josh Allen",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-09-18T01:20:58.434186+00:00",
-          "week": 2,
-          "team_id": 2,
-          "points_before": 9.4,
-          "points_after": 10.1,
-          "delta": 0.7,
-          "is_starter": true,
-          "player": "James Cook III",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-09-18T01:19:28.530012+00:00",
-          "week": 2,
-          "team_id": 2,
-          "points_before": 3.9,
-          "points_after": 9.4,
-          "delta": 5.5,
-          "is_starter": true,
-          "player": "James Cook III",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
         }
       ],
       "alerts": {
