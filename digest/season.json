@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T02:54:04.429053+00:00",
+  "generated_at": "2026-09-18T02:55:34.336060+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -293,7 +293,7 @@
             "b": {
               "team_id": 32,
               "name": "Bama boys heavy 251",
-              "score": 42.0
+              "score": 43.0
             },
             "live": true
           },
@@ -340,7 +340,7 @@
             "a": {
               "team_id": 30,
               "name": "Fleetwood Mac S3x Pants",
-              "score": 29.0
+              "score": 30.0
             },
             "b": {
               "team_id": 16,
@@ -1077,15 +1077,15 @@
         },
         "32": {
           "week_stats": {
-            "actual_points": 42.0,
-            "optimal_points": 42.0,
+            "actual_points": 43.0,
+            "optimal_points": 43.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 149.0,
+            "points_for": 150.0,
             "points_against": 149.0,
             "record": {
               "w": 0,
@@ -1102,7 +1102,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 40.0,
+              "points": 41.0,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -1348,7 +1348,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 135.0,
-            "points_against": 139.0,
+            "points_against": 140.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -1863,15 +1863,15 @@
         },
         "30": {
           "week_stats": {
-            "actual_points": 29.0,
-            "optimal_points": 29.0,
+            "actual_points": 30.0,
+            "optimal_points": 30.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 3
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 116.0,
+            "points_for": 117.0,
             "points_against": 105.0,
             "record": {
               "w": 0,
@@ -1905,7 +1905,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 12.0,
+              "points": 13.0,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -1914,7 +1914,7 @@
               "is_home": true,
               "game_detail": "10:53 - 4th",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "108 YDS",
+              "stat_line": "110 YDS",
               "injury_status": null
             },
             {
@@ -3296,7 +3296,7 @@
             "optimal_points": 29.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 2
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 2,
@@ -4104,7 +4104,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 110.0,
-            "points_against": 177.0,
+            "points_against": 178.0,
             "record": {
               "w": 0,
               "l": 1,
@@ -4857,6 +4857,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:55:24.406048+00:00",
+          "week": 2,
+          "team_id": 32,
+          "points_before": 40.0,
+          "points_after": 41.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Josh Allen",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
+          "detected_at": "2026-09-18T02:55:24.405081+00:00",
+          "week": 2,
+          "team_id": 30,
+          "points_before": 12.0,
+          "points_after": 13.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "James Cook III",
+          "team_name": "Fleetwood Mac S3x Pants",
+          "manager": "Ken Nilson"
+        },
+        {
           "detected_at": "2026-09-18T02:53:54.490941+00:00",
           "week": 2,
           "team_id": 26,
@@ -5071,30 +5095,6 @@
           "player": "Amon-Ra St. Brown",
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda"
-        },
-        {
-          "detected_at": "2026-09-18T02:14:54.376637+00:00",
-          "week": 2,
-          "team_id": 25,
-          "points_before": 13.0,
-          "points_after": 17.0,
-          "delta": 4.0,
-          "is_starter": true,
-          "player": "Jared Goff",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-09-18T02:14:54.375175+00:00",
-          "week": 2,
-          "team_id": 15,
-          "points_before": 4.0,
-          "points_after": 5.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jake Bates",
-          "team_name": "Uncle Rico's QB Camp",
-          "manager": "Ben Williams"
         }
       ],
       "alerts": {
@@ -5107,7 +5107,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 30: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=29.0"
+            "description": "League 1618731 week 2 team 30: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=30.0"
           },
           {
             "severity": "warning",
@@ -5367,7 +5367,7 @@
             "a": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 12.2
+              "score": 12.4
             },
             "b": {
               "team_id": 10,
@@ -5398,7 +5398,7 @@
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 39.04
+              "score": 39.64
             },
             "live": true
           },
@@ -5507,7 +5507,7 @@
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.8471654692181269,
+          "lineup_efficiency": 0.8487082256095462,
           "bench_points": 34.4,
           "is_provisional": true
         },
@@ -5539,7 +5539,7 @@
         "season_stats": {
           "weeks_played": 2,
           "points_for": 169.45999999999998,
-          "points_against": 107.74000000000001,
+          "points_against": 107.94000000000001,
           "record": {
             "w": 1,
             "l": 0,
@@ -6157,15 +6157,15 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 39.04,
-            "optimal_points": 39.04,
+            "actual_points": 39.64,
+            "optimal_points": 39.64,
             "efficiency": 1.0,
             "bench_points": 22.74,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 149.5,
+            "points_for": 150.1,
             "points_against": 88.8,
             "record": {
               "w": 1,
@@ -6182,7 +6182,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 39.04,
+              "points": 39.64,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -8374,7 +8374,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 169.45999999999998,
-            "points_against": 107.74000000000001,
+            "points_against": 107.94000000000001,
             "record": {
               "w": 1,
               "l": 0,
@@ -8695,22 +8695,22 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 12.2,
-            "optimal_points": 16.4,
-            "efficiency": 0.7439024390243902,
+            "actual_points": 12.4,
+            "optimal_points": 16.6,
+            "efficiency": 0.7469879518072289,
             "bench_points": 4.2,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 125.32000000000001,
+            "points_for": 125.52000000000001,
             "points_against": 129.9,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8471654692181269,
+            "lineup_efficiency": 0.8487082256095462,
             "total_bench_points": 34.4,
             "is_provisional": true
           },
@@ -8720,7 +8720,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 12.2,
+              "points": 12.4,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -8729,7 +8729,7 @@
               "is_home": true,
               "game_detail": "10:53 - 4th",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "108 YDS",
+              "stat_line": "110 YDS",
               "injury_status": null
             },
             {
@@ -9017,7 +9017,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 89.26,
-            "points_against": 193.56,
+            "points_against": 194.16000000000003,
             "record": {
               "w": 0,
               "l": 1,
@@ -9825,6 +9825,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:55:28.853730+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 39.04,
+          "points_after": 39.64,
+          "delta": 0.6,
+          "is_starter": true,
+          "player": "Josh Allen",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
+          "detected_at": "2026-09-18T02:55:28.852957+00:00",
+          "week": 2,
+          "team_id": 2,
+          "points_before": 12.2,
+          "points_after": 12.4,
+          "delta": 0.2,
+          "is_starter": true,
+          "player": "James Cook III",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-09-18T02:53:58.892392+00:00",
           "week": 2,
           "team_id": 6,
@@ -10039,30 +10063,6 @@
           "player": "Josh Allen",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-09-18T02:23:58.734667+00:00",
-          "week": 2,
-          "team_id": 4,
-          "points_before": 29.98,
-          "points_after": 30.54,
-          "delta": 0.56,
-          "is_starter": true,
-          "player": "Josh Allen",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-09-18T02:22:28.822444+00:00",
-          "week": 2,
-          "team_id": 11,
-          "points_before": 1.0,
-          "points_after": 2.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Lions D/ST",
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach"
         }
       ],
       "alerts": {
@@ -10070,7 +10070,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=39.04"
+            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=39.64"
           },
           {
             "severity": "warning",
