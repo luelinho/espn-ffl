@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T01:01:59.106591+00:00",
+  "generated_at": "2026-09-18T01:03:04.188520+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -1897,7 +1897,7 @@
               "is_home": true,
               "game_detail": "12:41 - 2nd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "38 YDS",
+              "stat_line": "39 YDS",
               "injury_status": null
             },
             {
@@ -5139,7 +5139,7 @@
             "a": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 3.8
+              "score": 3.9
             },
             "b": {
               "team_id": 10,
@@ -5287,7 +5287,7 @@
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.7127142497059318,
+          "lineup_efficiency": 0.7159549904466724,
           "bench_points": 34.4,
           "is_provisional": true
         },
@@ -5311,7 +5311,7 @@
         "season_stats": {
           "weeks_played": 2,
           "points_for": 153.45999999999998,
-          "points_against": 99.34,
+          "points_against": 99.44000000000001,
           "record": {
             "w": 1,
             "l": 0,
@@ -8146,7 +8146,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 153.45999999999998,
-            "points_against": 99.34,
+            "points_against": 99.44000000000001,
             "record": {
               "w": 1,
               "l": 0,
@@ -8467,22 +8467,22 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 3.8,
-            "optimal_points": 8.0,
-            "efficiency": 0.475,
+            "actual_points": 3.9,
+            "optimal_points": 8.1,
+            "efficiency": 0.4814814814814815,
             "bench_points": 4.2,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 116.92,
+            "points_for": 117.02000000000001,
             "points_against": 113.9,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.7127142497059318,
+            "lineup_efficiency": 0.7159549904466724,
             "total_bench_points": 34.4,
             "is_provisional": true
           },
@@ -8492,7 +8492,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 3.8,
+              "points": 3.9,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -8501,7 +8501,7 @@
               "is_home": true,
               "game_detail": "12:41 - 2nd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "38 YDS",
+              "stat_line": "39 YDS",
               "injury_status": null
             },
             {
@@ -9596,6 +9596,18 @@
         }
       ],
       "scoring_events": [
+        {
+          "detected_at": "2026-09-18T01:02:58.525184+00:00",
+          "week": 2,
+          "team_id": 2,
+          "points_before": 3.8,
+          "points_after": 3.9,
+          "delta": 0.1,
+          "is_starter": true,
+          "player": "James Cook III",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
         {
           "detected_at": "2026-09-15T16:41:48.785529+00:00",
           "week": 1,
