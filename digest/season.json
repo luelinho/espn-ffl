@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T02:52:34.514595+00:00",
+  "generated_at": "2026-09-18T02:54:04.429053+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -332,7 +332,7 @@
             "b": {
               "team_id": 26,
               "name": "Purdy Good Team",
-              "score": 20.0
+              "score": 22.0
             },
             "live": true
           },
@@ -1111,7 +1111,7 @@
               "is_home": true,
               "game_detail": "10:53 - 4th",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "204 YDS, 3 TD",
+              "stat_line": "211 YDS, 3 TD",
               "injury_status": null
             },
             {
@@ -2726,7 +2726,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 61.0,
-            "points_against": 136.0,
+            "points_against": 138.0,
             "record": {
               "w": 0,
               "l": 1,
@@ -3554,15 +3554,15 @@
         },
         "26": {
           "week_stats": {
-            "actual_points": 20.0,
-            "optimal_points": 20.0,
+            "actual_points": 22.0,
+            "optimal_points": 22.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 136.0,
+            "points_for": 138.0,
             "points_against": 158.0,
             "record": {
               "w": 0,
@@ -3579,7 +3579,7 @@
               "position_id": 4,
               "is_starter": true,
               "slot_id": 6,
-              "points": 20.0,
+              "points": 22.0,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -3588,7 +3588,7 @@
               "is_home": true,
               "game_detail": "10:53 - 4th",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "6 REC, 88 YDS, TD",
+              "stat_line": "7 REC, 95 YDS, TD",
               "injury_status": null
             },
             {
@@ -4857,6 +4857,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:53:54.490941+00:00",
+          "week": 2,
+          "team_id": 26,
+          "points_before": 20.0,
+          "points_after": 22.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Dalton Kincaid",
+          "team_name": "Purdy Good Team",
+          "manager": "Hayley Hinson"
+        },
+        {
           "detected_at": "2026-09-18T02:49:24.603241+00:00",
           "week": 2,
           "team_id": 30,
@@ -5083,18 +5095,6 @@
           "player": "Jake Bates",
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams"
-        },
-        {
-          "detected_at": "2026-09-18T02:13:24.350094+00:00",
-          "week": 2,
-          "team_id": 28,
-          "points_before": 9.0,
-          "points_after": 11.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Amon-Ra St. Brown",
-          "team_name": "Maybe to much Jagging off? ",
-          "manager": "Ryan Gajda"
         }
       ],
       "alerts": {
@@ -5122,7 +5122,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 26: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=20.0"
+            "description": "League 1618731 week 2 team 26: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=22.0"
           }
         ],
         "total_unresolved": 20
@@ -5398,7 +5398,7 @@
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 38.76
+              "score": 39.04
             },
             "live": true
           },
@@ -5524,7 +5524,7 @@
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
           "lineup_efficiency": 0.4135531527673697,
-          "bench_points": 128.4,
+          "bench_points": 130.10000000000002,
           "is_provisional": true
         }
       ],
@@ -6157,15 +6157,15 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 38.76,
-            "optimal_points": 38.76,
+            "actual_points": 39.04,
+            "optimal_points": 39.04,
             "efficiency": 1.0,
             "bench_points": 22.74,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 149.22,
+            "points_for": 149.5,
             "points_against": 88.8,
             "record": {
               "w": 1,
@@ -6182,7 +6182,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 38.76,
+              "points": 39.04,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -6191,7 +6191,7 @@
               "is_home": true,
               "game_detail": "10:53 - 4th",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "204 YDS, 3 TD",
+              "stat_line": "211 YDS, 3 TD",
               "injury_status": null
             },
             {
@@ -7757,9 +7757,9 @@
         "6": {
           "week_stats": {
             "actual_points": 0.0,
-            "optimal_points": 20.8,
+            "optimal_points": 22.5,
             "efficiency": 0.0,
-            "bench_points": 20.8,
+            "bench_points": 22.5,
             "rank": 8
           },
           "season_stats": {
@@ -7772,7 +7772,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.4135531527673697,
-            "total_bench_points": 128.4,
+            "total_bench_points": 130.10000000000002,
             "is_provisional": true
           },
           "roster": [
@@ -7934,7 +7934,7 @@
               "position_id": 4,
               "is_starter": false,
               "slot_id": 20,
-              "points": 20.8,
+              "points": 22.5,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -7943,7 +7943,7 @@
               "is_home": true,
               "game_detail": "10:53 - 4th",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "6 REC, 88 YDS, TD",
+              "stat_line": "7 REC, 95 YDS, TD",
               "injury_status": null
             },
             {
@@ -9017,7 +9017,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 89.26,
-            "points_against": 193.28,
+            "points_against": 193.56,
             "record": {
               "w": 0,
               "l": 1,
@@ -9825,6 +9825,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:53:58.892392+00:00",
+          "week": 2,
+          "team_id": 6,
+          "points_before": 20.8,
+          "points_after": 22.5,
+          "delta": 1.7,
+          "is_starter": false,
+          "player": "Dalton Kincaid",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
+          "detected_at": "2026-09-18T02:53:58.891438+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 38.76,
+          "points_after": 39.04,
+          "delta": 0.28,
+          "is_starter": true,
+          "player": "Josh Allen",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
           "detected_at": "2026-09-18T02:49:28.983108+00:00",
           "week": 2,
           "team_id": 8,
@@ -10039,30 +10063,6 @@
           "player": "Lions D/ST",
           "team_name": "I'M RICK JAMES, BLITZ! ",
           "manager": "Katherine DeLoach"
-        },
-        {
-          "detected_at": "2026-09-18T02:22:28.819829+00:00",
-          "week": 2,
-          "team_id": 4,
-          "points_before": 29.82,
-          "points_after": 29.98,
-          "delta": 0.16,
-          "is_starter": true,
-          "player": "Josh Allen",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-09-18T02:20:58.798529+00:00",
-          "week": 2,
-          "team_id": 4,
-          "points_before": 29.66,
-          "points_after": 29.82,
-          "delta": 0.16,
-          "is_starter": true,
-          "player": "Josh Allen",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
         }
       ],
       "alerts": {
@@ -10070,7 +10070,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=38.76"
+            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=39.04"
           },
           {
             "severity": "warning",
