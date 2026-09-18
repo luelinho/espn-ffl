@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T02:21:04.295469+00:00",
+  "generated_at": "2026-09-18T02:22:34.307232+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -461,7 +461,7 @@
           "team_name": "Teenage Tuten Ninja Turtles",
           "manager": "Holden Shepherd",
           "lineup_efficiency": 0.49107142857142855,
-          "bench_points": 16.0,
+          "bench_points": 17.0,
           "is_provisional": true
         }
       ],
@@ -1111,7 +1111,7 @@
               "is_home": true,
               "game_detail": "9:29 - 3rd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "168 YDS, 3 TD",
+              "stat_line": "172 YDS, 3 TD",
               "injury_status": null
             },
             {
@@ -4096,9 +4096,9 @@
         "17": {
           "week_stats": {
             "actual_points": 0.0,
-            "optimal_points": 1.0,
+            "optimal_points": 2.0,
             "efficiency": 0.0,
-            "bench_points": 1.0,
+            "bench_points": 2.0,
             "rank": 10
           },
           "season_stats": {
@@ -4111,7 +4111,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.49107142857142855,
-            "total_bench_points": 16.0,
+            "total_bench_points": 17.0,
             "is_provisional": true
           },
           "roster": [
@@ -4273,7 +4273,7 @@
               "position_id": 16,
               "is_starter": false,
               "slot_id": 20,
-              "points": 1.0,
+              "points": 2.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -4282,7 +4282,7 @@
               "is_home": false,
               "game_detail": "9:29 - 3rd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "2 PA",
+              "stat_line": "4 PA",
               "injury_status": null
             },
             {
@@ -4857,6 +4857,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:22:24.434426+00:00",
+          "week": 2,
+          "team_id": 17,
+          "points_before": 1.0,
+          "points_after": 2.0,
+          "delta": 1.0,
+          "is_starter": false,
+          "player": "Lions D/ST",
+          "team_name": "Teenage Tuten Ninja Turtles",
+          "manager": "Holden Shepherd"
+        },
+        {
           "detected_at": "2026-09-18T02:20:54.404349+00:00",
           "week": 2,
           "team_id": 30,
@@ -5083,18 +5095,6 @@
           "player": "Amon-Ra St. Brown",
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda"
-        },
-        {
-          "detected_at": "2026-09-18T01:44:54.191603+00:00",
-          "week": 2,
-          "team_id": 25,
-          "points_before": 7.0,
-          "points_after": 9.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Jared Goff",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -5398,7 +5398,7 @@
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 29.82
+              "score": 29.98
             },
             "live": true
           },
@@ -5419,7 +5419,7 @@
             "a": {
               "team_id": 11,
               "name": "I'M RICK JAMES, BLITZ! ",
-              "score": 1.0
+              "score": 2.0
             },
             "b": {
               "team_id": 3,
@@ -5870,7 +5870,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 116.54,
-            "points_against": 153.26,
+            "points_against": 154.26,
             "record": {
               "w": 0,
               "l": 1,
@@ -6157,15 +6157,15 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 29.82,
-            "optimal_points": 29.82,
+            "actual_points": 29.98,
+            "optimal_points": 29.98,
             "efficiency": 1.0,
             "bench_points": 16.22,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 140.28,
+            "points_for": 140.44,
             "points_against": 88.8,
             "record": {
               "w": 1,
@@ -6182,7 +6182,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 29.82,
+              "points": 29.98,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -6191,7 +6191,7 @@
               "is_home": true,
               "game_detail": "9:29 - 3rd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "168 YDS, 3 TD",
+              "stat_line": "172 YDS, 3 TD",
               "injury_status": null
             },
             {
@@ -7460,15 +7460,15 @@
         },
         "11": {
           "week_stats": {
-            "actual_points": 1.0,
-            "optimal_points": 1.0,
+            "actual_points": 2.0,
+            "optimal_points": 2.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 8
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 134.06,
+            "points_for": 135.06,
             "points_against": 159.1,
             "record": {
               "w": 0,
@@ -7485,7 +7485,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 1.0,
+              "points": 2.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -7494,7 +7494,7 @@
               "is_home": false,
               "game_detail": "9:29 - 3rd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "2 PA",
+              "stat_line": "4 PA",
               "injury_status": null
             },
             {
@@ -9017,7 +9017,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 89.26,
-            "points_against": 184.34,
+            "points_against": 184.5,
             "record": {
               "w": 0,
               "l": 1,
@@ -9825,6 +9825,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:22:28.822444+00:00",
+          "week": 2,
+          "team_id": 11,
+          "points_before": 1.0,
+          "points_after": 2.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Lions D/ST",
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach"
+        },
+        {
+          "detected_at": "2026-09-18T02:22:28.819829+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 29.82,
+          "points_after": 29.98,
+          "delta": 0.16,
+          "is_starter": true,
+          "player": "Josh Allen",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
           "detected_at": "2026-09-18T02:20:58.798529+00:00",
           "week": 2,
           "team_id": 4,
@@ -10039,30 +10063,6 @@
           "player": "Jahmyr Gibbs",
           "team_name": "8 - 9",
           "manager": "Marcus Bess"
-        },
-        {
-          "detected_at": "2026-09-18T01:52:28.782835+00:00",
-          "week": 2,
-          "team_id": 8,
-          "points_before": 1.0,
-          "points_after": 4.0,
-          "delta": 3.0,
-          "is_starter": true,
-          "player": "Jake Bates",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-09-18T01:49:28.564586+00:00",
-          "week": 2,
-          "team_id": 3,
-          "points_before": 18.0,
-          "points_after": 18.7,
-          "delta": 0.7,
-          "is_starter": true,
-          "player": "Jahmyr Gibbs",
-          "team_name": "8 - 9",
-          "manager": "Marcus Bess"
         }
       ],
       "alerts": {
@@ -10070,7 +10070,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=29.82"
+            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=29.98"
           },
           {
             "severity": "warning",
@@ -10090,7 +10090,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 11: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=1.0"
+            "description": "League 581297461 week 2 team 11: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=2.0"
           }
         ],
         "total_unresolved": 20
