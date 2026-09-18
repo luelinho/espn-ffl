@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T02:06:04.334643+00:00",
+  "generated_at": "2026-09-18T02:07:34.118849+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -4408,7 +4408,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "47 YDS",
+              "stat_line": "49 YDS",
               "injury_status": null
             },
             {
@@ -5424,7 +5424,7 @@
             "b": {
               "team_id": 3,
               "name": "8 - 9",
-              "score": 18.7
+              "score": 18.9
             },
             "live": true
           }
@@ -5861,15 +5861,15 @@
       "teams_detail": {
         "3": {
           "week_stats": {
-            "actual_points": 18.7,
-            "optimal_points": 18.7,
+            "actual_points": 18.9,
+            "optimal_points": 18.9,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 2
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 114.24000000000001,
+            "points_for": 114.44,
             "points_against": 155.26,
             "record": {
               "w": 0,
@@ -5886,7 +5886,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 18.7,
+              "points": 18.9,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -5895,7 +5895,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "47 YDS",
+              "stat_line": "49 YDS",
               "injury_status": null
             },
             {
@@ -7469,7 +7469,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 136.06,
-            "points_against": 156.79999999999998,
+            "points_against": 157.0,
             "record": {
               "w": 0,
               "l": 1,
@@ -9825,6 +9825,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:07:28.672709+00:00",
+          "week": 2,
+          "team_id": 3,
+          "points_before": 18.7,
+          "points_after": 18.9,
+          "delta": 0.2,
+          "is_starter": true,
+          "player": "Jahmyr Gibbs",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-09-18T01:52:28.782835+00:00",
           "week": 2,
           "team_id": 8,
@@ -10051,18 +10063,6 @@
           "player": "James Cook III",
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-09-18T01:14:58.490960+00:00",
-          "week": 2,
-          "team_id": 8,
-          "points_before": 0.0,
-          "points_after": 1.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jake Bates",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
         }
       ],
       "alerts": {
@@ -10085,7 +10085,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=18.7"
+            "description": "League 581297461 week 2 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=18.9"
           },
           {
             "severity": "warning",
