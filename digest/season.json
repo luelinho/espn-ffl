@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T01:03:04.188520+00:00",
+  "generated_at": "2026-09-18T01:04:33.927039+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -293,7 +293,7 @@
             "b": {
               "team_id": 32,
               "name": "Bama boys heavy 251",
-              "score": 20.0
+              "score": 24.0
             },
             "live": true
           },
@@ -461,7 +461,7 @@
           "team_name": "Teenage Tuten Ninja Turtles",
           "manager": "Holden Shepherd",
           "lineup_efficiency": 0.49107142857142855,
-          "bench_points": 19.0,
+          "bench_points": 18.0,
           "is_provisional": true
         }
       ],
@@ -1077,15 +1077,15 @@
         },
         "32": {
           "week_stats": {
-            "actual_points": 20.0,
-            "optimal_points": 20.0,
+            "actual_points": 24.0,
+            "optimal_points": 24.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 127.0,
+            "points_for": 131.0,
             "points_against": 149.0,
             "record": {
               "w": 0,
@@ -1102,7 +1102,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 20.0,
+              "points": 24.0,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -1111,7 +1111,7 @@
               "is_home": true,
               "game_detail": "12:41 - 2nd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "135 YDS, TD",
+              "stat_line": "136 YDS, 2 TD",
               "injury_status": null
             },
             {
@@ -4096,22 +4096,22 @@
         "17": {
           "week_stats": {
             "actual_points": 0.0,
-            "optimal_points": 4.0,
+            "optimal_points": 3.0,
             "efficiency": 0.0,
-            "bench_points": 4.0,
+            "bench_points": 3.0,
             "rank": 9
           },
           "season_stats": {
             "weeks_played": 2,
             "points_for": 110.0,
-            "points_against": 155.0,
+            "points_against": 159.0,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
             "lineup_efficiency": 0.49107142857142855,
-            "total_bench_points": 19.0,
+            "total_bench_points": 18.0,
             "is_provisional": true
           },
           "roster": [
@@ -4273,7 +4273,7 @@
               "position_id": 16,
               "is_starter": false,
               "slot_id": 20,
-              "points": 4.0,
+              "points": 3.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -4857,6 +4857,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T01:04:24.043406+00:00",
+          "week": 2,
+          "team_id": 32,
+          "points_before": 20.0,
+          "points_after": 24.0,
+          "delta": 4.0,
+          "is_starter": true,
+          "player": "Josh Allen",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
           "detected_at": "2026-09-15T16:41:41.532036+00:00",
           "week": 1,
           "team_id": 28,
@@ -4894,7 +4906,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=20.0"
+            "description": "League 1618731 week 2 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=24.0"
           }
         ],
         "total_unresolved": 19
@@ -5126,7 +5138,7 @@
             "a": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 2.0
+              "score": 3.0
             },
             "b": {
               "team_id": 9,
@@ -5170,7 +5182,7 @@
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 19.4
+              "score": 23.44
             },
             "live": true
           },
@@ -5191,7 +5203,7 @@
             "a": {
               "team_id": 11,
               "name": "I'M RICK JAMES, BLITZ! ",
-              "score": 4.0
+              "score": 3.0
             },
             "b": {
               "team_id": 3,
@@ -5637,12 +5649,12 @@
             "optimal_points": 2.5,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 4
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 2,
             "points_for": 98.04,
-            "points_against": 156.26,
+            "points_against": 155.26,
             "record": {
               "w": 0,
               "l": 1,
@@ -5929,15 +5941,15 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 19.4,
-            "optimal_points": 19.4,
+            "actual_points": 23.44,
+            "optimal_points": 23.44,
             "efficiency": 1.0,
             "bench_points": 0.08,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 129.85999999999999,
+            "points_for": 133.9,
             "points_against": 88.8,
             "record": {
               "w": 1,
@@ -5954,7 +5966,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 19.4,
+              "points": 23.44,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -5963,7 +5975,7 @@
               "is_home": true,
               "game_detail": "12:41 - 2nd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "135 YDS, TD",
+              "stat_line": "136 YDS, 2 TD",
               "injury_status": null
             },
             {
@@ -6293,15 +6305,15 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 2.0,
-            "optimal_points": 2.0,
+            "actual_points": 3.0,
+            "optimal_points": 3.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 5
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 90.8,
+            "points_for": 91.8,
             "points_against": 110.46,
             "record": {
               "w": 0,
@@ -6318,7 +6330,7 @@
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
-              "points": 2.0,
+              "points": 3.0,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -6327,7 +6339,7 @@
               "is_home": true,
               "game_detail": "12:41 - 2nd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "2/2 XP",
+              "stat_line": "3/3 XP",
               "injury_status": null
             },
             {
@@ -7232,15 +7244,15 @@
         },
         "11": {
           "week_stats": {
-            "actual_points": 4.0,
-            "optimal_points": 4.0,
+            "actual_points": 3.0,
+            "optimal_points": 3.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 2
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 137.06,
+            "points_for": 136.06,
             "points_against": 140.6,
             "record": {
               "w": 0,
@@ -7257,7 +7269,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 4.0,
+              "points": 3.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -8471,7 +8483,7 @@
             "optimal_points": 8.1,
             "efficiency": 0.4814814814814815,
             "bench_points": 4.2,
-            "rank": 3
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 2,
@@ -8789,7 +8801,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 89.26,
-            "points_against": 173.92000000000002,
+            "points_against": 177.96,
             "record": {
               "w": 0,
               "l": 1,
@@ -9085,7 +9097,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 127.96,
-            "points_against": 164.26,
+            "points_against": 165.26,
             "record": {
               "w": 0,
               "l": 1,
@@ -9597,6 +9609,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T01:04:28.456221+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 19.4,
+          "points_after": 23.44,
+          "delta": 4.04,
+          "is_starter": true,
+          "player": "Josh Allen",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
+          "detected_at": "2026-09-18T01:04:28.455227+00:00",
+          "week": 2,
+          "team_id": 1,
+          "points_before": 2.0,
+          "points_after": 3.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Tyler Bass",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-09-18T01:02:58.525184+00:00",
           "week": 2,
           "team_id": 2,
@@ -9626,7 +9662,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=19.4"
+            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=23.44"
           },
           {
             "severity": "warning",
@@ -9636,7 +9672,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 1: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=2.0"
+            "description": "League 581297461 week 2 team 1: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=3.0"
           },
           {
             "severity": "warning",
@@ -9646,7 +9682,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 11: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=4.0"
+            "description": "League 581297461 week 2 team 11: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=3.0"
           }
         ],
         "total_unresolved": 19
