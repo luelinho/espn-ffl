@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T02:18:04.332985+00:00",
+  "generated_at": "2026-09-18T02:19:34.850432+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -293,7 +293,7 @@
             "b": {
               "team_id": 32,
               "name": "Bama boys heavy 251",
-              "score": 32.0
+              "score": 33.0
             },
             "live": true
           },
@@ -461,7 +461,7 @@
           "team_name": "Teenage Tuten Ninja Turtles",
           "manager": "Holden Shepherd",
           "lineup_efficiency": 0.49107142857142855,
-          "bench_points": 18.0,
+          "bench_points": 16.0,
           "is_provisional": true
         }
       ],
@@ -1077,15 +1077,15 @@
         },
         "32": {
           "week_stats": {
-            "actual_points": 32.0,
-            "optimal_points": 32.0,
+            "actual_points": 33.0,
+            "optimal_points": 33.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 139.0,
+            "points_for": 140.0,
             "points_against": 149.0,
             "record": {
               "w": 0,
@@ -1102,7 +1102,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 30.0,
+              "points": 31.0,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -1897,7 +1897,7 @@
               "is_home": true,
               "game_detail": "9:29 - 3rd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "101 YDS",
+              "stat_line": "102 YDS",
               "injury_status": null
             },
             {
@@ -4096,22 +4096,22 @@
         "17": {
           "week_stats": {
             "actual_points": 0.0,
-            "optimal_points": 3.0,
+            "optimal_points": 1.0,
             "efficiency": 0.0,
-            "bench_points": 3.0,
+            "bench_points": 1.0,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 2,
             "points_for": 110.0,
-            "points_against": 167.0,
+            "points_against": 168.0,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
             "lineup_efficiency": 0.49107142857142855,
-            "total_bench_points": 18.0,
+            "total_bench_points": 16.0,
             "is_provisional": true
           },
           "roster": [
@@ -4273,7 +4273,7 @@
               "position_id": 16,
               "is_starter": false,
               "slot_id": 20,
-              "points": 3.0,
+              "points": 1.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -4857,6 +4857,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:19:24.356914+00:00",
+          "week": 2,
+          "team_id": 32,
+          "points_before": 30.0,
+          "points_after": 31.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Josh Allen",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
           "detected_at": "2026-09-18T02:14:54.377053+00:00",
           "week": 2,
           "team_id": 28,
@@ -5083,18 +5095,6 @@
           "player": "Josh Allen",
           "team_name": "Bama boys heavy 251",
           "manager": "Nkhrumba Overton Jr."
-        },
-        {
-          "detected_at": "2026-09-18T01:38:54.242259+00:00",
-          "week": 2,
-          "team_id": 26,
-          "points_before": 15.0,
-          "points_after": 17.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Dalton Kincaid",
-          "team_name": "Purdy Good Team",
-          "manager": "Hayley Hinson"
         }
       ],
       "alerts": {
@@ -5367,7 +5367,7 @@
             "a": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 10.1
+              "score": 10.2
             },
             "b": {
               "team_id": 10,
@@ -5398,7 +5398,7 @@
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 28.56
+              "score": 29.66
             },
             "live": true
           },
@@ -5419,7 +5419,7 @@
             "a": {
               "team_id": 11,
               "name": "I'M RICK JAMES, BLITZ! ",
-              "score": 3.0
+              "score": 1.0
             },
             "b": {
               "team_id": 3,
@@ -5507,7 +5507,7 @@
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.8283611028527849,
+          "lineup_efficiency": 0.8293809163725985,
           "bench_points": 34.4,
           "is_provisional": true
         },
@@ -5539,7 +5539,7 @@
         "season_stats": {
           "weeks_played": 2,
           "points_for": 160.66,
-          "points_against": 105.64,
+          "points_against": 105.74000000000001,
           "record": {
             "w": 1,
             "l": 0,
@@ -5870,7 +5870,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 116.54,
-            "points_against": 155.26,
+            "points_against": 153.26,
             "record": {
               "w": 0,
               "l": 1,
@@ -6157,15 +6157,15 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 28.56,
-            "optimal_points": 28.56,
+            "actual_points": 29.66,
+            "optimal_points": 29.66,
             "efficiency": 1.0,
             "bench_points": 16.22,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 139.01999999999998,
+            "points_for": 140.12,
             "points_against": 88.8,
             "record": {
               "w": 1,
@@ -6182,7 +6182,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 28.56,
+              "points": 29.66,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -7460,15 +7460,15 @@
         },
         "11": {
           "week_stats": {
-            "actual_points": 3.0,
-            "optimal_points": 3.0,
+            "actual_points": 1.0,
+            "optimal_points": 1.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 7
+            "rank": 8
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 136.06,
+            "points_for": 134.06,
             "points_against": 159.1,
             "record": {
               "w": 0,
@@ -7485,7 +7485,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 3.0,
+              "points": 1.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -8056,7 +8056,7 @@
             "optimal_points": 2.6,
             "efficiency": 0.9615384615384615,
             "bench_points": 0.0,
-            "rank": 8
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 2,
@@ -8374,7 +8374,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 160.66,
-            "points_against": 105.64,
+            "points_against": 105.74000000000001,
             "record": {
               "w": 1,
               "l": 0,
@@ -8695,22 +8695,22 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 10.1,
-            "optimal_points": 14.3,
-            "efficiency": 0.7062937062937062,
+            "actual_points": 10.2,
+            "optimal_points": 14.399999999999999,
+            "efficiency": 0.7083333333333334,
             "bench_points": 4.2,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 123.22,
+            "points_for": 123.32000000000001,
             "points_against": 121.10000000000001,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8283611028527849,
+            "lineup_efficiency": 0.8293809163725985,
             "total_bench_points": 34.4,
             "is_provisional": true
           },
@@ -8720,7 +8720,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 10.1,
+              "points": 10.2,
               "pro_team_id": 2,
               "game_status": "live",
               "opponent": "DET",
@@ -8729,7 +8729,7 @@
               "is_home": true,
               "game_detail": "9:29 - 3rd",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "101 YDS",
+              "stat_line": "102 YDS",
               "injury_status": null
             },
             {
@@ -9017,7 +9017,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 89.26,
-            "points_against": 183.08,
+            "points_against": 184.18,
             "record": {
               "w": 0,
               "l": 1,
@@ -9825,6 +9825,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:19:28.728916+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 28.56,
+          "points_after": 29.66,
+          "delta": 1.1,
+          "is_starter": true,
+          "player": "Josh Allen",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
+          "detected_at": "2026-09-18T02:19:28.728130+00:00",
+          "week": 2,
+          "team_id": 2,
+          "points_before": 10.1,
+          "points_after": 10.2,
+          "delta": 0.1,
+          "is_starter": true,
+          "player": "James Cook III",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-09-18T02:14:58.763894+00:00",
           "week": 2,
           "team_id": 8,
@@ -10039,30 +10063,6 @@
           "player": "Jared Goff",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-09-18T01:44:58.578929+00:00",
-          "week": 2,
-          "team_id": 10,
-          "points_before": 3.4,
-          "points_after": 5.6,
-          "delta": 2.2,
-          "is_starter": true,
-          "player": "Sam LaPorta",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-09-18T01:44:58.578181+00:00",
-          "week": 2,
-          "team_id": 8,
-          "points_before": 2.1,
-          "points_after": 5.3,
-          "delta": 3.2,
-          "is_starter": true,
-          "player": "Amon-Ra St. Brown",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
         }
       ],
       "alerts": {
@@ -10070,7 +10070,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=28.56"
+            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=29.66"
           },
           {
             "severity": "warning",
@@ -10090,7 +10090,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 11: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=3.0"
+            "description": "League 581297461 week 2 team 11: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=1.0"
           }
         ],
         "total_unresolved": 20
