@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T02:09:04.248317+00:00",
+  "generated_at": "2026-09-18T02:10:34.179756+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 28,
               "name": "Maybe to much Jagging off? ",
-              "score": 12.0
+              "score": 13.0
             },
             "b": {
               "team_id": 18,
@@ -501,7 +501,7 @@
             "is_home": false,
             "game_detail": "Halftime",
             "kickoff_utc": "2026-09-18T00:15:00+00:00",
-            "stat_line": "155 YDS, TD",
+            "stat_line": "160 YDS, TD",
             "injury_status": null
           },
           {
@@ -2151,7 +2151,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 120.0,
-            "points_against": 181.0,
+            "points_against": 182.0,
             "record": {
               "w": 0,
               "l": 1,
@@ -2455,7 +2455,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "155 YDS, TD",
+              "stat_line": "160 YDS, TD",
               "injury_status": null
             },
             {
@@ -3292,15 +3292,15 @@
         },
         "28": {
           "week_stats": {
-            "actual_points": 12.0,
-            "optimal_points": 12.0,
+            "actual_points": 13.0,
+            "optimal_points": 13.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 150.0,
+            "points_for": 151.0,
             "points_against": 100.0,
             "record": {
               "w": 1,
@@ -3317,7 +3317,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 8.0,
+              "points": 9.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -3326,7 +3326,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "3 REC, 54 YDS",
+              "stat_line": "4 REC, 59 YDS",
               "injury_status": null
             },
             {
@@ -4857,6 +4857,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:10:24.331770+00:00",
+          "week": 2,
+          "team_id": 28,
+          "points_before": 8.0,
+          "points_after": 9.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Amon-Ra St. Brown",
+          "team_name": "Maybe to much Jagging off? ",
+          "manager": "Ryan Gajda"
+        },
+        {
           "detected_at": "2026-09-18T02:08:54.300171+00:00",
           "week": 2,
           "team_id": 28,
@@ -5083,18 +5095,6 @@
           "player": "Jared Goff",
           "team_name": "Goff Is My Copilot",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-09-18T01:14:54.105034+00:00",
-          "week": 2,
-          "team_id": 15,
-          "points_before": 0.0,
-          "points_after": 1.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jake Bates",
-          "team_name": "Uncle Rico's QB Camp",
-          "manager": "Ben Williams"
         }
       ],
       "alerts": {
@@ -5102,7 +5102,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 28: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=12.0"
+            "description": "League 1618731 week 2 team 28: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=13.0"
           },
           {
             "severity": "warning",
@@ -5406,7 +5406,7 @@
             "a": {
               "team_id": 8,
               "name": "Hawk Tua on my Penix",
-              "score": 12.4
+              "score": 13.9
             },
             "b": {
               "team_id": 12,
@@ -5500,7 +5500,7 @@
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey",
           "lineup_efficiency": 0.8765852993317877,
-          "bench_points": 86.74,
+          "bench_points": 86.94,
           "is_provisional": true
         },
         {
@@ -6160,7 +6160,7 @@
             "actual_points": 28.56,
             "optimal_points": 28.56,
             "efficiency": 1.0,
-            "bench_points": 10.5,
+            "bench_points": 10.7,
             "rank": 1
           },
           "season_stats": {
@@ -6173,7 +6173,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8765852993317877,
-            "total_bench_points": 86.74,
+            "total_bench_points": 86.94,
             "is_provisional": true
           },
           "roster": [
@@ -6369,7 +6369,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 10.5,
+              "points": 10.7,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -6378,7 +6378,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "155 YDS, TD",
+              "stat_line": "160 YDS, TD",
               "injury_status": null
             },
             {
@@ -6860,7 +6860,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 112.7,
-            "points_against": 125.52000000000001,
+            "points_against": 127.02000000000001,
             "record": {
               "w": 0,
               "l": 1,
@@ -7164,15 +7164,15 @@
         },
         "8": {
           "week_stats": {
-            "actual_points": 12.4,
-            "optimal_points": 12.4,
+            "actual_points": 13.9,
+            "optimal_points": 13.9,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 174.66,
+            "points_for": 176.16,
             "points_against": 127.96,
             "record": {
               "w": 1,
@@ -7189,7 +7189,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 8.4,
+              "points": 9.9,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "BUF",
@@ -7198,7 +7198,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-18T00:15:00+00:00",
-              "stat_line": "3 REC, 54 YDS",
+              "stat_line": "4 REC, 59 YDS",
               "injury_status": null
             },
             {
@@ -9825,6 +9825,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-18T02:10:28.706652+00:00",
+          "week": 2,
+          "team_id": 8,
+          "points_before": 8.4,
+          "points_after": 9.9,
+          "delta": 1.5,
+          "is_starter": true,
+          "player": "Amon-Ra St. Brown",
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians"
+        },
+        {
+          "detected_at": "2026-09-18T02:10:28.705443+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 10.5,
+          "points_after": 10.7,
+          "delta": 0.2,
+          "is_starter": false,
+          "player": "Jared Goff",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
           "detected_at": "2026-09-18T02:08:58.676458+00:00",
           "week": 2,
           "team_id": 8,
@@ -10037,30 +10061,6 @@
           "delta": 0.48,
           "is_starter": false,
           "player": "Jared Goff",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-09-18T01:25:28.523233+00:00",
-          "week": 2,
-          "team_id": 6,
-          "points_before": 5.7,
-          "points_after": 14.3,
-          "delta": 8.6,
-          "is_starter": false,
-          "player": "Dalton Kincaid",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
-        },
-        {
-          "detected_at": "2026-09-18T01:25:28.522341+00:00",
-          "week": 2,
-          "team_id": 4,
-          "points_before": 23.44,
-          "points_after": 28.08,
-          "delta": 4.64,
-          "is_starter": true,
-          "player": "Josh Allen",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
         }
