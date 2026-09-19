@@ -102,7 +102,7 @@ body {
    not a fabricated placeholder) whenever nothing has been detected yet —
    see ingest.load_week()'s scoring_events insert for when an event fires. */
 .ticker { flex: none; overflow: hidden; white-space: nowrap; background: var(--card-2); border-bottom: 1px solid var(--border); }
-.ticker-track { display: inline-flex; align-items: center; width: max-content; animation: ticker-scroll 45s linear infinite; }
+.ticker-track { display: inline-flex; align-items: center; width: max-content; animation: ticker-scroll 30s linear infinite; }
 .ticker:hover .ticker-track { animation-play-state: paused; }
 @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .ticker-item { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; padding: 8px 0; }
@@ -510,7 +510,11 @@ function renderTicker() {
     return;
   }
   const itemsHtml = events.map(tickerItemHtml).join('<span class="ticker-sep">•</span>');
-  tickerEl.innerHTML = `<div class="ticker-track">${itemsHtml}<span class="ticker-sep">•</span>${itemsHtml}<span class="ticker-sep">•</span></div>`;
+  // ~6s of reading time per item, floor at 30s — a fixed duration made a
+  // long list of scoring events whip past unreadably fast (owner's ask,
+  // 2026-09-18: "the update is scrolling too fast").
+  const duration = Math.max(30, events.length * 6);
+  tickerEl.innerHTML = `<div class="ticker-track" style="animation-duration: ${duration}s">${itemsHtml}<span class="ticker-sep">•</span>${itemsHtml}<span class="ticker-sep">•</span></div>`;
 }
 // Real owner name under a fantasy team name, wherever the team name is a
 // prominent label — same idea as a player's stat line underneath their

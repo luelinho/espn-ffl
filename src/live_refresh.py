@@ -102,7 +102,19 @@ def push_to_github() -> None:
     Quietly does nothing if this repo has no `origin` remote yet (never
     pushed to GitHub), and never lets a push failure crash the live loop —
     a rejected push (e.g. the scheduled daily job committed in the
-    meantime) just means this cycle's update waits for the next one."""
+    meantime) just means this cycle's update waits for the next one.
+
+    Real bug found live, 2026-09-19: an earlier version of this function
+    ran `git pull --rebase` without ever checking whether it actually
+    succeeded. When it hit a genuine conflict, the repo was left stuck
+    mid-rebase — every cycle after that kept committing on top of the
+    broken state for hours, silently failing to push each time, until a
+    human noticed the public site had gone stale. Two fixes: prefer this
+    cycle's freshly-generated content on any conflict (`-X theirs`) —
+    these are machine-generated data snapshots, so "newest wins" is the
+    correct policy, not something to leave half-resolved — and if the
+    rebase still fails despite that, abort it immediately so the repo is
+    never left mid-rebase across cycles."""
     try:
         remote = subprocess.run(["git", "remote", "get-url", "origin"], cwd=config.REPO_ROOT,
                                  capture_output=True, text=True, timeout=10)
@@ -115,7 +127,14 @@ def push_to_github() -> None:
             return  # nothing actually changed this cycle
         subprocess.run(["git", "commit", "-m", f"Live sync {datetime.now(timezone.utc).isoformat()}"],
                         cwd=config.REPO_ROOT, check=True, timeout=10)
-        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=config.REPO_ROOT, timeout=20)
+
+        rebase = subprocess.run(["git", "pull", "--rebase", "-X", "theirs", "origin", "main"],
+                                 cwd=config.REPO_ROOT, capture_output=True, text=True, timeout=30)
+        if rebase.returncode != 0:
+            subprocess.run(["git", "rebase", "--abort"], cwd=config.REPO_ROOT, timeout=10)
+            print(f"  GitHub rebase failed, aborted cleanly (will retry next cycle): {rebase.stderr.strip()[:200]}")
+            return
+
         push = subprocess.run(["git", "push", "origin", "main"], cwd=config.REPO_ROOT,
                                capture_output=True, text=True, timeout=20)
         if push.returncode == 0:
