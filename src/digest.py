@@ -254,8 +254,19 @@ def _stat_line(position_id: int | None, stats_json: str | None) -> str | None:
     205 YDS/3 TD/1 INT; ids 24/25 against D'Andre Swift's exact 124 YDS/3
     TD; ids 53/42/43 against A.J. Brown's exact 3 REC/26 YDS and CeeDee
     Lamb/Ladd McConkey's receiving TDs; ids 83/84/86/87 against Cam
-    Little's exact 2/2 FG, 4/4 XP; ids 95/96/100 against the Jaguars
-    D/ST's real INT/FR/10 PA line.
+    Little's exact 2/2 FG, 4/4 XP.
+
+    D/ST's points-allowed field is id 120, NOT id 100 — id 100 was
+    originally (wrongly) confirmed against the Jaguars D/ST's real
+    INT/FR/10 PA line, but that was a coincidence: id 100 is actually
+    `defensiveSacks * 2` (id 99 is sacks; 100/99 == 2.0 in every real
+    example checked, 10 of 10 across week 1-2 box scores), and the
+    Jaguars just happened to have 5 sacks that week (5*2 == 10 == their
+    real points allowed). Re-confirmed 2026-09-18 against 10 real D/ST
+    box scores: id 120 matched real points allowed in all 10; id 100
+    matched only that one coincidental case. See id 91/92/etc's
+    points-allowed-bracket flags (0.0/1.0) for an independent
+    cross-check of which bracket a real value should fall in.
     """
     if not stats_json:
         return None
@@ -288,7 +299,7 @@ def _stat_line(position_id: int | None, stats_json: str | None) -> str | None:
             parts.append(f"{xpm or 0:.0f}/{xpa:.0f} XP")
         return ", ".join(parts) if parts else None
     if position_id == 16:  # D/ST
-        ints, fr, pa = s.get("95"), s.get("96"), s.get("100")
+        ints, fr, pa = s.get("95"), s.get("96"), s.get("120")
         parts = []
         if ints:
             parts.append("INT" if ints == 1 else f"{ints:.0f} INT")

@@ -106,6 +106,23 @@ depends on it. Two real examples from Phase 1 of why this matters:
   lag the way a running point total is — only fields that accumulate
   *during* a live week are suspect. If a third such field turns up, assume
   the same pattern applies rather than re-litigating it as a new bug.
+- **A single real example is not enough to confirm a statId mapping —
+  two different stats can coincidentally produce the same value.**
+  `digest._stat_line()`'s D/ST points-allowed field was confirmed against
+  exactly one real box score (Jaguars D/ST week 1: statId 100 == 10 ==
+  their real points allowed) and shipped as `s.get("100")`. Found wrong
+  2026-09-18, while building the sibling NFL-market-projections project,
+  which needed to independently decode the same statId and got a
+  different answer from a community reference. statId 100 is actually
+  `defensiveSacks * 2` (statId 99 is sacks; 100/99 == 2.0 in 10 of 10 real
+  box scores checked) — it only looked like points allowed because the
+  Jaguars happened to have 5 sacks that same week (5*2 == 10 too). The
+  real points-allowed field is statId 120, confirmed against all 10.
+  Fixed in `digest.py`. Lesson: when a stat's real value could plausibly
+  collide with another stat's value (small integers, round numbers),
+  confirm against several examples before trusting a single match — this
+  is a stricter bar than the "confirm against a real response" rule 7
+  already asked for, not a new rule.
 
 ## 8. Phase discipline
 
