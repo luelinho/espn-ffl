@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T20:11:32.802006+00:00",
+  "generated_at": "2026-09-20T20:13:03.387993+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -393,19 +393,19 @@
           "is_provisional": true
         },
         {
-          "team_id": 32,
-          "team_name": "Bama boys heavy 251",
-          "manager": "Nkhrumba Overton Jr.",
-          "lineup_efficiency": 0.8484513274336283,
-          "bench_points": 78.0,
-          "is_provisional": true
-        },
-        {
           "team_id": 30,
           "team_name": "Fleetwood Mac S3x Pants",
           "manager": "Ken Nilson",
           "lineup_efficiency": 0.8410468545216252,
           "bench_points": 60.0,
+          "is_provisional": true
+        },
+        {
+          "team_id": 32,
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr.",
+          "lineup_efficiency": 0.8340282505105514,
+          "bench_points": 82.0,
           "is_provisional": true
         },
         {
@@ -1078,9 +1078,9 @@
         "32": {
           "week_stats": {
             "actual_points": 75.0,
-            "optimal_points": 100.0,
-            "efficiency": 0.75,
-            "bench_points": 45.0,
+            "optimal_points": 104.0,
+            "efficiency": 0.7211538461538461,
+            "bench_points": 49.0,
             "rank": 4
           },
           "season_stats": {
@@ -1092,8 +1092,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8484513274336283,
-            "total_bench_points": 78.0,
+            "lineup_efficiency": 0.8340282505105514,
+            "total_bench_points": 82.0,
             "is_provisional": true
           },
           "roster": [
@@ -1255,7 +1255,7 @@
               "position_id": 4,
               "is_starter": false,
               "slot_id": 20,
-              "points": 22.0,
+              "points": 26.0,
               "pro_team_id": 34,
               "game_status": "live",
               "opponent": "CIN",
@@ -1264,7 +1264,7 @@
               "is_home": true,
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "11 REC, 115 YDS",
+              "stat_line": "12 REC, 140 YDS",
               "injury_status": null
             },
             {
@@ -3530,7 +3530,7 @@
               "is_home": false,
               "game_detail": "13:02 - 1st",
               "kickoff_utc": "2026-09-20T20:05:00+00:00",
-              "stat_line": null,
+              "stat_line": "7 YDS",
               "injury_status": null
             },
             {
@@ -4197,7 +4197,7 @@
               "is_home": true,
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "28 YDS",
+              "stat_line": "29 YDS",
               "injury_status": null
             },
             {
@@ -4874,6 +4874,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-20T20:12:51.217762+00:00",
+          "week": 2,
+          "team_id": 32,
+          "points_before": 22.0,
+          "points_after": 26.0,
+          "delta": 4.0,
+          "is_starter": false,
+          "player": "Dalton Schultz",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
           "detected_at": "2026-09-20T20:11:20.686310+00:00",
           "week": 2,
           "team_id": 32,
@@ -5098,18 +5110,6 @@
           "delta": 2.0,
           "is_starter": true,
           "player": "Luther Burden III",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-09-20T19:57:50.857332+00:00",
-          "week": 2,
-          "team_id": 25,
-          "points_before": 11.0,
-          "points_after": 12.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Bucky Irving",
           "team_name": "Goff Is My Copilot",
           "manager": "Luel Waktola"
         }
@@ -5441,7 +5441,7 @@
             "b": {
               "team_id": 3,
               "name": "8 - 9",
-              "score": 66.3
+              "score": 66.4
             },
             "live": true
           }
@@ -5460,8 +5460,8 @@
           "team_id": 9,
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison",
-          "lineup_efficiency": 0.9084573534619919,
-          "bench_points": 43.800000000000004,
+          "lineup_efficiency": 0.9020086588312465,
+          "bench_points": 44.5,
           "is_provisional": true
         },
         {
@@ -5476,7 +5476,7 @@
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
-          "lineup_efficiency": 0.8868656375235195,
+          "lineup_efficiency": 0.8868977731982651,
           "bench_points": 58.52,
           "is_provisional": true
         },
@@ -5878,22 +5878,22 @@
       "teams_detail": {
         "3": {
           "week_stats": {
-            "actual_points": 66.3,
-            "optimal_points": 69.4,
-            "efficiency": 0.9553314121037463,
+            "actual_points": 66.4,
+            "optimal_points": 69.5,
+            "efficiency": 0.9553956834532374,
             "bench_points": 12.1,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 161.84,
+            "points_for": 161.94,
             "points_against": 184.39999999999998,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8868656375235195,
+            "lineup_efficiency": 0.8868977731982651,
             "total_bench_points": 58.52,
             "is_provisional": true
           },
@@ -5937,7 +5937,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 14.1,
+              "points": 14.2,
               "pro_team_id": 20,
               "game_status": "live",
               "opponent": "GB",
@@ -5946,7 +5946,7 @@
               "is_home": true,
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "28 YDS",
+              "stat_line": "29 YDS",
               "injury_status": null
             },
             {
@@ -7537,7 +7537,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 165.2,
-            "points_against": 204.39999999999998,
+            "points_against": 204.5,
             "record": {
               "w": 0,
               "l": 1,
@@ -9373,9 +9373,9 @@
         "9": {
           "week_stats": {
             "actual_points": 38.9,
-            "optimal_points": 45.6,
-            "efficiency": 0.8530701754385964,
-            "bench_points": 6.7,
+            "optimal_points": 46.300000000000004,
+            "efficiency": 0.8401727861771057,
+            "bench_points": 7.4,
             "rank": 9
           },
           "season_stats": {
@@ -9387,8 +9387,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9084573534619919,
-            "total_bench_points": 43.800000000000004,
+            "lineup_efficiency": 0.9020086588312465,
+            "total_bench_points": 44.5,
             "is_provisional": true
           },
           "roster": [
@@ -9567,7 +9567,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 0.0,
+              "points": 0.7,
               "pro_team_id": 30,
               "game_status": "live",
               "opponent": "DEN",
@@ -9576,7 +9576,7 @@
               "is_home": false,
               "game_detail": "13:02 - 1st",
               "kickoff_utc": "2026-09-20T20:05:00+00:00",
-              "stat_line": null,
+              "stat_line": "7 YDS",
               "injury_status": null
             },
             {
@@ -9910,6 +9910,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-20T20:12:56.376375+00:00",
+          "week": 2,
+          "team_id": 9,
+          "points_before": 0.0,
+          "points_after": 0.7,
+          "delta": 0.7,
+          "is_starter": false,
+          "player": "Chris Rodriguez Jr.",
+          "team_name": "Spider 2 Y Banana",
+          "manager": "Stacks Harrison"
+        },
+        {
+          "detected_at": "2026-09-20T20:12:56.373193+00:00",
+          "week": 2,
+          "team_id": 3,
+          "points_before": 14.1,
+          "points_after": 14.2,
+          "delta": 0.1,
+          "is_starter": true,
+          "player": "Breece Hall",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-09-20T20:11:25.805504+00:00",
           "week": 2,
           "team_id": 12,
@@ -10124,30 +10148,6 @@
           "player": "Baker Mayfield",
           "team_name": "God of Warren",
           "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-09-20T19:57:55.789599+00:00",
-          "week": 2,
-          "team_id": 12,
-          "points_before": 11.5,
-          "points_after": 12.1,
-          "delta": 0.6,
-          "is_starter": true,
-          "player": "Bucky Irving",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-09-20T19:57:55.787357+00:00",
-          "week": 2,
-          "team_id": 6,
-          "points_before": 10.2,
-          "points_after": 12.3,
-          "delta": 2.1,
-          "is_starter": false,
-          "player": "Adonai Mitchell",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
