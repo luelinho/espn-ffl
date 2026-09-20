@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T18:34:02.877503+00:00",
+  "generated_at": "2026-09-20T18:35:32.599101+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -396,8 +396,8 @@
           "team_id": 28,
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda",
-          "lineup_efficiency": 0.8740573152337858,
-          "bench_points": 55.0,
+          "lineup_efficiency": 0.8660747317795043,
+          "bench_points": 56.0,
           "is_provisional": true
         },
         {
@@ -444,8 +444,8 @@
           "team_id": 29,
           "team_name": "Kelsey not  Kelce ",
           "manager": "Kelsey Prince",
-          "lineup_efficiency": 0.7677845528455285,
-          "bench_points": 44.0,
+          "lineup_efficiency": 0.7445002391200383,
+          "bench_points": 47.0,
           "is_provisional": true
         },
         {
@@ -2735,9 +2735,9 @@
         "29": {
           "week_stats": {
             "actual_points": 38.0,
-            "optimal_points": 48.0,
-            "efficiency": 0.7916666666666666,
-            "bench_points": 10.0,
+            "optimal_points": 51.0,
+            "efficiency": 0.7450980392156863,
+            "bench_points": 13.0,
             "rank": 9
           },
           "season_stats": {
@@ -2749,8 +2749,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.7677845528455285,
-            "total_bench_points": 44.0,
+            "lineup_efficiency": 0.7445002391200383,
+            "total_bench_points": 47.0,
             "is_provisional": true
           },
           "roster": [
@@ -2929,7 +2929,7 @@
               "position_id": 4,
               "is_starter": false,
               "slot_id": 20,
-              "points": 2.0,
+              "points": 5.0,
               "pro_team_id": 18,
               "game_status": "live",
               "opponent": "BAL",
@@ -2938,7 +2938,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "1 REC, 10 YDS",
+              "stat_line": "2 REC, 35 YDS",
               "injury_status": null
             },
             {
@@ -3310,9 +3310,9 @@
         "28": {
           "week_stats": {
             "actual_points": 44.0,
-            "optimal_points": 52.0,
-            "efficiency": 0.8461538461538461,
-            "bench_points": 8.0,
+            "optimal_points": 53.0,
+            "efficiency": 0.8301886792452831,
+            "bench_points": 9.0,
             "rank": 7
           },
           "season_stats": {
@@ -3324,8 +3324,8 @@
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8740573152337858,
-            "total_bench_points": 55.0,
+            "lineup_efficiency": 0.8660747317795043,
+            "total_bench_points": 56.0,
             "is_provisional": true
           },
           "roster": [
@@ -3487,7 +3487,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 7.0,
+              "points": 8.0,
               "pro_team_id": 18,
               "game_status": "live",
               "opponent": "BAL",
@@ -3496,7 +3496,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "102 YDS",
+              "stat_line": "127 YDS",
               "injury_status": null
             },
             {
@@ -4874,6 +4874,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-20T18:35:20.758835+00:00",
+          "week": 2,
+          "team_id": 29,
+          "points_before": 2.0,
+          "points_after": 5.0,
+          "delta": 3.0,
+          "is_starter": false,
+          "player": "Juwan Johnson",
+          "team_name": "Kelsey not  Kelce ",
+          "manager": "Kelsey Prince"
+        },
+        {
+          "detected_at": "2026-09-20T18:35:20.758030+00:00",
+          "week": 2,
+          "team_id": 28,
+          "points_before": 7.0,
+          "points_after": 8.0,
+          "delta": 1.0,
+          "is_starter": false,
+          "player": "Tyler Shough",
+          "team_name": "Maybe to much Jagging off? ",
+          "manager": "Ryan Gajda"
+        },
+        {
           "detected_at": "2026-09-20T18:33:50.935963+00:00",
           "week": 2,
           "team_id": 12,
@@ -5088,30 +5112,6 @@
           "player": "Rome Odunze",
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer"
-        },
-        {
-          "detected_at": "2026-09-20T18:23:23.027720+00:00",
-          "week": 2,
-          "team_id": 16,
-          "points_before": 3.0,
-          "points_after": 4.0,
-          "delta": 1.0,
-          "is_starter": false,
-          "player": "Woody Marks",
-          "team_name": "Bijan, demons!",
-          "manager": "Harry Hinson"
-        },
-        {
-          "detected_at": "2026-09-20T18:23:23.026003+00:00",
-          "week": 2,
-          "team_id": 12,
-          "points_before": 1.0,
-          "points_after": 3.0,
-          "delta": 2.0,
-          "is_starter": false,
-          "player": "Kenny Gainwell",
-          "team_name": "Auto Drafted \ud83d\ude43",
-          "manager": "Marvin Cox"
         }
       ],
       "alerts": {
@@ -5540,8 +5540,8 @@
           "team_id": 11,
           "team_name": "I'M RICK JAMES, BLITZ! ",
           "manager": "Katherine DeLoach",
-          "lineup_efficiency": 0.567727253565786,
-          "bench_points": 58.8,
+          "lineup_efficiency": 0.5554028067624872,
+          "bench_points": 62.3,
           "is_provisional": true
         }
       ],
@@ -7529,9 +7529,9 @@
         "11": {
           "week_stats": {
             "actual_points": 6.9,
-            "optimal_points": 29.6,
-            "efficiency": 0.23310810810810811,
-            "bench_points": 20.0,
+            "optimal_points": 33.1,
+            "efficiency": 0.2084592145015106,
+            "bench_points": 23.5,
             "rank": 12
           },
           "season_stats": {
@@ -7543,8 +7543,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.567727253565786,
-            "total_bench_points": 58.8,
+            "lineup_efficiency": 0.5554028067624872,
+            "total_bench_points": 62.3,
             "is_provisional": true
           },
           "roster": [
@@ -7719,6 +7719,23 @@
               "injury_status": null
             },
             {
+              "name": "Juwan Johnson",
+              "position_id": 4,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 5.5,
+              "pro_team_id": 18,
+              "game_status": "live",
+              "opponent": "BAL",
+              "own_score": 6,
+              "opp_score": 14,
+              "is_home": false,
+              "game_detail": "Halftime",
+              "kickoff_utc": "2026-09-20T17:00:00+00:00",
+              "stat_line": "2 REC, 35 YDS",
+              "injury_status": null
+            },
+            {
               "name": "KC Concepcion",
               "position_id": 3,
               "is_starter": false,
@@ -7733,23 +7750,6 @@
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "3 REC, 15 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Juwan Johnson",
-              "position_id": 4,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": 2.0,
-              "pro_team_id": 18,
-              "game_status": "live",
-              "opponent": "BAL",
-              "own_score": 6,
-              "opp_score": 14,
-              "is_home": false,
-              "game_detail": "Halftime",
-              "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "1 REC, 10 YDS",
               "injury_status": null
             },
             {
@@ -8409,7 +8409,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "102 YDS",
+              "stat_line": "127 YDS",
               "injury_status": null
             },
             {
@@ -9910,6 +9910,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-20T18:35:25.973091+00:00",
+          "week": 2,
+          "team_id": 11,
+          "points_before": 2.0,
+          "points_after": 5.5,
+          "delta": 3.5,
+          "is_starter": false,
+          "player": "Juwan Johnson",
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach"
+        },
+        {
           "detected_at": "2026-09-20T18:33:56.297707+00:00",
           "week": 2,
           "team_id": 6,
@@ -10134,18 +10146,6 @@
           "delta": 2.1,
           "is_starter": false,
           "player": "Kenny Gainwell",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-09-20T18:23:28.887132+00:00",
-          "week": 2,
-          "team_id": 4,
-          "points_before": 0.0,
-          "points_after": 1.7,
-          "delta": 1.7,
-          "is_starter": true,
-          "player": "Rome Odunze",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
         }
