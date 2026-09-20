@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T19:41:33.516133+00:00",
+  "generated_at": "2026-09-20T19:43:03.246639+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -306,7 +306,7 @@
             "b": {
               "team_id": 1,
               "name": "Lights, Kamara, Action! ",
-              "score": 32.0
+              "score": 35.0
             },
             "live": true
           },
@@ -345,7 +345,7 @@
             "b": {
               "team_id": 16,
               "name": "Bijan, demons!",
-              "score": 29.0
+              "score": 30.0
             },
             "live": true
           }
@@ -385,19 +385,19 @@
           "is_provisional": true
         },
         {
+          "team_id": 1,
+          "team_name": "Lights, Kamara, Action! ",
+          "manager": "James Prince",
+          "lineup_efficiency": 0.8629194938565927,
+          "bench_points": 29.0,
+          "is_provisional": true
+        },
+        {
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
           "lineup_efficiency": 0.8604651162790697,
           "bench_points": 24.0,
-          "is_provisional": true
-        },
-        {
-          "team_id": 1,
-          "team_name": "Lights, Kamara, Action! ",
-          "manager": "James Prince",
-          "lineup_efficiency": 0.8571428571428571,
-          "bench_points": 29.0,
           "is_provisional": true
         },
         {
@@ -444,7 +444,7 @@
           "team_id": 16,
           "team_name": "Bijan, demons!",
           "manager": "Harry Hinson",
-          "lineup_efficiency": 0.7475961538461539,
+          "lineup_efficiency": 0.7517688679245282,
           "bench_points": 49.0,
           "is_provisional": true
         },
@@ -1339,22 +1339,22 @@
         },
         "16": {
           "week_stats": {
-            "actual_points": 29.0,
-            "optimal_points": 52.0,
-            "efficiency": 0.5576923076923077,
+            "actual_points": 30.0,
+            "optimal_points": 53.0,
+            "efficiency": 0.5660377358490566,
             "bench_points": 23.0,
             "rank": 13
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 164.0,
+            "points_for": 165.0,
             "points_against": 207.0,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.7475961538461539,
+            "lineup_efficiency": 0.7517688679245282,
             "total_bench_points": 49.0,
             "is_provisional": true
           },
@@ -1398,7 +1398,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 4.0,
+              "points": 5.0,
               "pro_team_id": 21,
               "game_status": "live",
               "opponent": "TEN",
@@ -1872,7 +1872,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 184.0,
-            "points_against": 134.0,
+            "points_against": 135.0,
             "record": {
               "w": 0,
               "l": 1,
@@ -2836,7 +2836,7 @@
               "is_home": false,
               "game_detail": "12:03 - 4th",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "14 PA",
+              "stat_line": "17 PA",
               "injury_status": null
             },
             {
@@ -3013,22 +3013,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 32.0,
-            "optimal_points": 38.0,
-            "efficiency": 0.8421052631578947,
+            "actual_points": 35.0,
+            "optimal_points": 41.0,
+            "efficiency": 0.8536585365853658,
             "bench_points": 6.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 148.0,
+            "points_for": 151.0,
             "points_against": 114.0,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8571428571428571,
+            "lineup_efficiency": 0.8629194938565927,
             "total_bench_points": 29.0,
             "is_provisional": true
           },
@@ -3085,6 +3085,23 @@
               "injury_status": null
             },
             {
+              "name": "T.J. Hockenson",
+              "position_id": 4,
+              "is_starter": true,
+              "slot_id": 6,
+              "points": 4.0,
+              "pro_team_id": 16,
+              "game_status": "live",
+              "opponent": "CHI",
+              "own_score": 6,
+              "opp_score": 3,
+              "is_home": false,
+              "game_detail": "4:51 - 4th",
+              "kickoff_utc": "2026-09-20T17:00:00+00:00",
+              "stat_line": "2 REC, 26 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Saquon Barkley",
               "position_id": 2,
               "is_starter": true,
@@ -3099,23 +3116,6 @@
               "game_detail": "2:44 - 4th",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "9 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "T.J. Hockenson",
-              "position_id": 4,
-              "is_starter": true,
-              "slot_id": 6,
-              "points": 1.0,
-              "pro_team_id": 16,
-              "game_status": "live",
-              "opponent": "CHI",
-              "own_score": 6,
-              "opp_score": 3,
-              "is_home": false,
-              "game_detail": "4:51 - 4th",
-              "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "1 REC, 7 YDS",
               "injury_status": null
             },
             {
@@ -3842,7 +3842,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 158.0,
-            "points_against": 119.0,
+            "points_against": 122.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -4874,6 +4874,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-20T19:42:50.677236+00:00",
+          "week": 2,
+          "team_id": 16,
+          "points_before": 4.0,
+          "points_after": 5.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Eagles D/ST",
+          "team_name": "Bijan, demons!",
+          "manager": "Harry Hinson"
+        },
+        {
+          "detected_at": "2026-09-20T19:42:50.674974+00:00",
+          "week": 2,
+          "team_id": 1,
+          "points_before": 1.0,
+          "points_after": 4.0,
+          "delta": 3.0,
+          "is_starter": true,
+          "player": "T.J. Hockenson",
+          "team_name": "Lights, Kamara, Action! ",
+          "manager": "James Prince"
+        },
+        {
           "detected_at": "2026-09-20T19:41:21.368293+00:00",
           "week": 2,
           "team_id": 30,
@@ -5088,30 +5112,6 @@
           "player": "Devaughn Vele",
           "team_name": "Kelsey not  Kelce ",
           "manager": "Kelsey Prince"
-        },
-        {
-          "detected_at": "2026-09-20T19:35:20.713331+00:00",
-          "week": 2,
-          "team_id": 28,
-          "points_before": 16.0,
-          "points_after": 17.0,
-          "delta": 1.0,
-          "is_starter": false,
-          "player": "Tyler Shough",
-          "team_name": "Maybe to much Jagging off? ",
-          "manager": "Ryan Gajda"
-        },
-        {
-          "detected_at": "2026-09-20T19:35:20.712322+00:00",
-          "week": 2,
-          "team_id": 25,
-          "points_before": 9.0,
-          "points_after": 10.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Bucky Irving",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -5129,7 +5129,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 1: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=32.0"
+            "description": "League 1618731 week 2 team 1: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=35.0"
           },
           {
             "severity": "warning",
@@ -5428,7 +5428,7 @@
             "b": {
               "team_id": 12,
               "name": "God of Warren",
-              "score": 72.1
+              "score": 73.1
             },
             "live": true
           },
@@ -5441,7 +5441,7 @@
             "b": {
               "team_id": 3,
               "name": "8 - 9",
-              "score": 64.0
+              "score": 65.0
             },
             "live": true
           }
@@ -5476,8 +5476,16 @@
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
-          "lineup_efficiency": 0.9068671165416309,
+          "lineup_efficiency": 0.906902841119426,
           "bench_points": 56.72,
+          "is_provisional": true
+        },
+        {
+          "team_id": 12,
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis",
+          "lineup_efficiency": 0.8809291572379325,
+          "bench_points": 63.6,
           "is_provisional": true
         },
         {
@@ -5489,19 +5497,11 @@
           "is_provisional": true
         },
         {
-          "team_id": 12,
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis",
-          "lineup_efficiency": 0.8799796468070975,
-          "bench_points": 63.6,
-          "is_provisional": true
-        },
-        {
           "team_id": 5,
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger",
-          "lineup_efficiency": 0.7774099487510739,
-          "bench_points": 115.06,
+          "lineup_efficiency": 0.7525272520355659,
+          "bench_points": 117.96,
           "is_provisional": true
         },
         {
@@ -5878,22 +5878,22 @@
       "teams_detail": {
         "3": {
           "week_stats": {
-            "actual_points": 64.0,
-            "optimal_points": 64.3,
-            "efficiency": 0.995334370139969,
+            "actual_points": 65.0,
+            "optimal_points": 65.3,
+            "efficiency": 0.995405819295559,
             "bench_points": 10.3,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 159.54000000000002,
+            "points_for": 160.54000000000002,
             "points_against": 171.16,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9068671165416309,
+            "lineup_efficiency": 0.906902841119426,
             "total_bench_points": 56.72,
             "is_provisional": true
           },
@@ -5920,7 +5920,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 17.0,
+              "points": 18.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "PIT",
@@ -6902,22 +6902,22 @@
         },
         "12": {
           "week_stats": {
-            "actual_points": 72.1,
-            "optimal_points": 86.46000000000001,
-            "efficiency": 0.8339116354383529,
+            "actual_points": 73.1,
+            "optimal_points": 87.46000000000001,
+            "efficiency": 0.8358106563000227,
             "bench_points": 14.36,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 184.8,
+            "points_for": 185.8,
             "points_against": 189.74,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8799796468070975,
+            "lineup_efficiency": 0.8809291572379325,
             "total_bench_points": 63.6,
             "is_provisional": true
           },
@@ -6995,7 +6995,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 4.0,
+              "points": 5.0,
               "pro_team_id": 21,
               "game_status": "live",
               "opponent": "TEN",
@@ -7241,7 +7241,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 238.88,
-            "points_against": 200.06,
+            "points_against": 201.06,
             "record": {
               "w": 1,
               "l": 0,
@@ -7537,7 +7537,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 151.96,
-            "points_against": 202.1,
+            "points_against": 203.1,
             "record": {
               "w": 0,
               "l": 1,
@@ -8121,9 +8121,9 @@
         "5": {
           "week_stats": {
             "actual_points": 28.6,
-            "optimal_points": 39.400000000000006,
-            "efficiency": 0.7258883248730964,
-            "bench_points": 17.7,
+            "optimal_points": 42.300000000000004,
+            "efficiency": 0.6761229314420804,
+            "bench_points": 20.599999999999998,
             "rank": 10
           },
           "season_stats": {
@@ -8135,8 +8135,8 @@
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.7774099487510739,
-            "total_bench_points": 115.06,
+            "lineup_efficiency": 0.7525272520355659,
+            "total_bench_points": 117.96,
             "is_provisional": true
           },
           "roster": [
@@ -8328,6 +8328,23 @@
               "injury_status": null
             },
             {
+              "name": "T.J. Hockenson",
+              "position_id": 4,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 4.6,
+              "pro_team_id": 16,
+              "game_status": "live",
+              "opponent": "CHI",
+              "own_score": 6,
+              "opp_score": 3,
+              "is_home": false,
+              "game_detail": "4:51 - 4th",
+              "kickoff_utc": "2026-09-20T17:00:00+00:00",
+              "stat_line": "2 REC, 26 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Makai Lemon",
               "position_id": 3,
               "is_starter": false,
@@ -8342,23 +8359,6 @@
               "game_detail": "2:44 - 4th",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "1 REC, 14 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "T.J. Hockenson",
-              "position_id": 4,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": 1.7,
-              "pro_team_id": 16,
-              "game_status": "live",
-              "opponent": "CHI",
-              "own_score": 6,
-              "opp_score": 3,
-              "is_home": false,
-              "game_detail": "4:51 - 4th",
-              "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "1 REC, 7 YDS",
               "injury_status": null
             },
             {
@@ -9910,6 +9910,42 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-20T19:42:55.807285+00:00",
+          "week": 2,
+          "team_id": 12,
+          "points_before": 4.0,
+          "points_after": 5.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Eagles D/ST",
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis"
+        },
+        {
+          "detected_at": "2026-09-20T19:42:55.802661+00:00",
+          "week": 2,
+          "team_id": 5,
+          "points_before": 1.7,
+          "points_after": 4.6,
+          "delta": 2.9,
+          "is_starter": false,
+          "player": "T.J. Hockenson",
+          "team_name": "Johnny Sins",
+          "manager": "Gib Terwilliger"
+        },
+        {
+          "detected_at": "2026-09-20T19:42:55.801633+00:00",
+          "week": 2,
+          "team_id": 3,
+          "points_before": 17.0,
+          "points_after": 18.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Patriots D/ST",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-09-20T19:41:26.519841+00:00",
           "week": 2,
           "team_id": 11,
@@ -10112,42 +10148,6 @@
           "player": "Chuba Hubbard",
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger"
-        },
-        {
-          "detected_at": "2026-09-20T19:36:55.710107+00:00",
-          "week": 2,
-          "team_id": 4,
-          "points_before": 2.8,
-          "points_after": 3.8,
-          "delta": 1.0,
-          "is_starter": false,
-          "player": "Jaylen Warren",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-09-20T19:35:25.873454+00:00",
-          "week": 2,
-          "team_id": 12,
-          "points_before": 7.0,
-          "points_after": 12.0,
-          "delta": 5.0,
-          "is_starter": true,
-          "player": "Evan McPherson",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-09-20T19:35:25.873375+00:00",
-          "week": 2,
-          "team_id": 12,
-          "points_before": 10.84,
-          "points_after": 11.16,
-          "delta": 0.32,
-          "is_starter": false,
-          "player": "Baker Mayfield",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
         }
       ],
       "alerts": {
