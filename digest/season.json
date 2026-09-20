@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T17:58:04.030108+00:00",
+  "generated_at": "2026-09-20T17:59:32.324558+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -267,7 +267,7 @@
             "b": {
               "team_id": 31,
               "name": "Father Drew",
-              "score": 15.0
+              "score": 16.0
             },
             "live": true
           },
@@ -332,7 +332,7 @@
             "b": {
               "team_id": 26,
               "name": "Purdy Good Team",
-              "score": 41.0
+              "score": 42.0
             },
             "live": true
           },
@@ -356,7 +356,7 @@
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.96875,
+          "lineup_efficiency": 0.9705882352941176,
           "bench_points": 13.0,
           "is_provisional": true
         },
@@ -369,19 +369,19 @@
           "is_provisional": true
         },
         {
-          "team_id": 25,
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola",
-          "lineup_efficiency": 0.9371462264150944,
-          "bench_points": 50.0,
-          "is_provisional": true
-        },
-        {
           "team_id": 17,
           "team_name": "Teenage Tuten Ninja Turtles",
           "manager": "Holden Shepherd",
           "lineup_efficiency": 0.9322478991596639,
           "bench_points": 16.0,
+          "is_provisional": true
+        },
+        {
+          "team_id": 25,
+          "team_name": "Goff Is My Copilot",
+          "manager": "Luel Waktola",
+          "lineup_efficiency": 0.9133928571428571,
+          "bench_points": 53.0,
           "is_provisional": true
         },
         {
@@ -396,7 +396,7 @@
           "team_id": 26,
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson",
-          "lineup_efficiency": 0.9001018502800883,
+          "lineup_efficiency": 0.9006303915063039,
           "bench_points": 68.0,
           "is_provisional": true
         },
@@ -425,14 +425,6 @@
           "is_provisional": true
         },
         {
-          "team_id": 12,
-          "team_name": "Auto Drafted \ud83d\ude43",
-          "manager": "Marvin Cox",
-          "lineup_efficiency": 0.7944514501891551,
-          "bench_points": 59.0,
-          "is_provisional": true
-        },
-        {
           "team_id": 18,
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer",
@@ -457,6 +449,14 @@
           "is_provisional": true
         },
         {
+          "team_id": 12,
+          "team_name": "Auto Drafted \ud83d\ude43",
+          "manager": "Marvin Cox",
+          "lineup_efficiency": 0.7223360655737705,
+          "bench_points": 63.0,
+          "is_provisional": true
+        },
+        {
           "team_id": 1,
           "team_name": "Lights, Kamara, Action! ",
           "manager": "James Prince",
@@ -468,9 +468,9 @@
       "my_team_detail": {
         "week_stats": {
           "actual_points": 47.0,
-          "optimal_points": 53.0,
-          "efficiency": 0.8867924528301887,
-          "bench_points": 6.0,
+          "optimal_points": 56.0,
+          "efficiency": 0.8392857142857143,
+          "bench_points": 9.0,
           "rank": 3
         },
         "season_stats": {
@@ -482,8 +482,8 @@
             "l": 0,
             "t": 0
           },
-          "lineup_efficiency": 0.9371462264150944,
-          "total_bench_points": 50.0,
+          "lineup_efficiency": 0.9133928571428571,
+          "total_bench_points": 53.0,
           "is_provisional": true
         },
         "roster": [
@@ -645,7 +645,7 @@
             "position_id": 3,
             "is_starter": false,
             "slot_id": 20,
-            "points": 6.0,
+            "points": 9.0,
             "pro_team_id": 21,
             "game_status": "live",
             "opponent": "TEN",
@@ -654,7 +654,7 @@
             "is_home": false,
             "game_detail": "3:20 - 2nd",
             "kickoff_utc": "2026-09-20T17:00:00+00:00",
-            "stat_line": "3 REC, 39 YDS",
+            "stat_line": "4 REC, 54 YDS",
             "injury_status": null
           },
           {
@@ -765,22 +765,22 @@
         "12": {
           "week_stats": {
             "actual_points": 10.0,
-            "optimal_points": 13.0,
-            "efficiency": 0.7692307692307693,
-            "bench_points": 3.0,
+            "optimal_points": 16.0,
+            "efficiency": 0.625,
+            "bench_points": 7.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 2,
             "points_for": 110.0,
-            "points_against": 153.0,
+            "points_against": 154.0,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.7944514501891551,
-            "total_bench_points": 59.0,
+            "lineup_efficiency": 0.7223360655737705,
+            "total_bench_points": 63.0,
             "is_provisional": true
           },
           "roster": [
@@ -938,6 +938,23 @@
               "injury_status": null
             },
             {
+              "name": "Kalif Raymond",
+              "position_id": 3,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 4.0,
+              "pro_team_id": 3,
+              "game_status": "live",
+              "opponent": "MIN",
+              "own_score": 3,
+              "opp_score": 6,
+              "is_home": true,
+              "game_detail": "8:11 - 2nd",
+              "kickoff_utc": "2026-09-20T17:00:00+00:00",
+              "stat_line": "2 REC, 20 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Adonai Mitchell",
               "position_id": 3,
               "is_starter": false,
@@ -952,23 +969,6 @@
               "game_detail": "13:41 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "2 REC, 15 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Kalif Raymond",
-              "position_id": 3,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": 0.0,
-              "pro_team_id": 3,
-              "game_status": "live",
-              "opponent": "MIN",
-              "own_score": 3,
-              "opp_score": 6,
-              "is_home": true,
-              "game_detail": "8:11 - 2nd",
-              "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": null,
               "injury_status": null
             },
             {
@@ -1601,22 +1601,22 @@
         },
         "31": {
           "week_stats": {
-            "actual_points": 15.0,
-            "optimal_points": 16.0,
-            "efficiency": 0.9375,
+            "actual_points": 16.0,
+            "optimal_points": 17.0,
+            "efficiency": 0.9411764705882353,
             "bench_points": 1.0,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 164.0,
+            "points_for": 165.0,
             "points_against": 117.0,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.96875,
+            "lineup_efficiency": 0.9705882352941176,
             "total_bench_points": 13.0,
             "is_provisional": true
           },
@@ -1673,6 +1673,23 @@
               "injury_status": null
             },
             {
+              "name": "Caleb Williams",
+              "position_id": 1,
+              "is_starter": true,
+              "slot_id": 0,
+              "points": 1.0,
+              "pro_team_id": 3,
+              "game_status": "live",
+              "opponent": "MIN",
+              "own_score": 3,
+              "opp_score": 6,
+              "is_home": true,
+              "game_detail": "8:11 - 2nd",
+              "kickoff_utc": "2026-09-20T17:00:00+00:00",
+              "stat_line": "34 YDS, INT",
+              "injury_status": null
+            },
+            {
               "name": "Travis Etienne Jr.",
               "position_id": 2,
               "is_starter": true,
@@ -1687,23 +1704,6 @@
               "game_detail": "3:46 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "9 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Caleb Williams",
-              "position_id": 1,
-              "is_starter": true,
-              "slot_id": 0,
-              "points": 0.0,
-              "pro_team_id": 3,
-              "game_status": "live",
-              "opponent": "MIN",
-              "own_score": 3,
-              "opp_score": 6,
-              "is_home": true,
-              "game_detail": "8:11 - 2nd",
-              "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "14 YDS, INT",
               "injury_status": null
             },
             {
@@ -2439,9 +2439,9 @@
         "25": {
           "week_stats": {
             "actual_points": 47.0,
-            "optimal_points": 53.0,
-            "efficiency": 0.8867924528301887,
-            "bench_points": 6.0,
+            "optimal_points": 56.0,
+            "efficiency": 0.8392857142857143,
+            "bench_points": 9.0,
             "rank": 3
           },
           "season_stats": {
@@ -2453,8 +2453,8 @@
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.9371462264150944,
-            "total_bench_points": 50.0,
+            "lineup_efficiency": 0.9133928571428571,
+            "total_bench_points": 53.0,
             "is_provisional": true
           },
           "roster": [
@@ -2616,7 +2616,7 @@
               "position_id": 3,
               "is_starter": false,
               "slot_id": 20,
-              "points": 6.0,
+              "points": 9.0,
               "pro_team_id": 21,
               "game_status": "live",
               "opponent": "TEN",
@@ -2625,7 +2625,7 @@
               "is_home": false,
               "game_detail": "3:20 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "3 REC, 39 YDS",
+              "stat_line": "4 REC, 54 YDS",
               "injury_status": null
             },
             {
@@ -2743,7 +2743,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 82.0,
-            "points_against": 157.0,
+            "points_against": 158.0,
             "record": {
               "w": 0,
               "l": 1,
@@ -3571,22 +3571,22 @@
         },
         "26": {
           "week_stats": {
-            "actual_points": 41.0,
-            "optimal_points": 43.0,
-            "efficiency": 0.9534883720930233,
+            "actual_points": 42.0,
+            "optimal_points": 44.0,
+            "efficiency": 0.9545454545454546,
             "bench_points": 2.0,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 157.0,
+            "points_for": 158.0,
             "points_against": 179.0,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9001018502800883,
+            "lineup_efficiency": 0.9006303915063039,
             "total_bench_points": 68.0,
             "is_provisional": true
           },
@@ -3613,7 +3613,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 13.0,
+              "points": 14.0,
               "pro_team_id": 33,
               "game_status": "live",
               "opponent": "NO",
@@ -3622,7 +3622,7 @@
               "is_home": true,
               "game_detail": "3:46 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "34 YDS, TD",
+              "stat_line": "42 YDS, TD",
               "injury_status": null
             },
             {
@@ -4180,7 +4180,7 @@
               "is_home": false,
               "game_detail": "3:20 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "104 YDS, INT",
+              "stat_line": "119 YDS, INT",
               "injury_status": null
             },
             {
@@ -4232,7 +4232,7 @@
               "game_detail": "3:20 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "1 REC, 4 YDS",
-              "injury_status": null
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Ka'imi Fairbairn",
@@ -4874,6 +4874,54 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-20T17:59:20.490083+00:00",
+          "week": 2,
+          "team_id": 31,
+          "points_before": 0.0,
+          "points_after": 1.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Caleb Williams",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
+          "detected_at": "2026-09-20T17:59:20.488554+00:00",
+          "week": 2,
+          "team_id": 26,
+          "points_before": 13.0,
+          "points_after": 14.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Derrick Henry",
+          "team_name": "Purdy Good Team",
+          "manager": "Hayley Hinson"
+        },
+        {
+          "detected_at": "2026-09-20T17:59:20.488469+00:00",
+          "week": 2,
+          "team_id": 25,
+          "points_before": 6.0,
+          "points_after": 9.0,
+          "delta": 3.0,
+          "is_starter": false,
+          "player": "Dontayvion Wicks",
+          "team_name": "Goff Is My Copilot",
+          "manager": "Luel Waktola"
+        },
+        {
+          "detected_at": "2026-09-20T17:59:20.485665+00:00",
+          "week": 2,
+          "team_id": 12,
+          "points_before": 0.0,
+          "points_after": 4.0,
+          "delta": 4.0,
+          "is_starter": false,
+          "player": "Kalif Raymond",
+          "team_name": "Auto Drafted \ud83d\ude43",
+          "manager": "Marvin Cox"
+        },
+        {
           "detected_at": "2026-09-20T17:57:51.215520+00:00",
           "week": 2,
           "team_id": 32,
@@ -5064,54 +5112,6 @@
           "player": "Packers D/ST",
           "team_name": "Kelsey not  Kelce ",
           "manager": "Kelsey Prince"
-        },
-        {
-          "detected_at": "2026-09-20T17:51:50.043249+00:00",
-          "week": 2,
-          "team_id": 25,
-          "points_before": 6.0,
-          "points_after": 7.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Bucky Irving",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-09-20T17:51:50.042990+00:00",
-          "week": 2,
-          "team_id": 19,
-          "points_before": 11.0,
-          "points_after": 12.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Texans D/ST",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
-        },
-        {
-          "detected_at": "2026-09-20T17:51:50.039155+00:00",
-          "week": 2,
-          "team_id": 1,
-          "points_before": 5.0,
-          "points_after": 6.0,
-          "delta": 1.0,
-          "is_starter": false,
-          "player": "Alvin Kamara",
-          "team_name": "Lights, Kamara, Action! ",
-          "manager": "James Prince"
-        },
-        {
-          "detected_at": "2026-09-20T17:50:20.484269+00:00",
-          "week": 2,
-          "team_id": 29,
-          "points_before": 2.0,
-          "points_after": 6.0,
-          "delta": 4.0,
-          "is_starter": false,
-          "player": "Devaughn Vele",
-          "team_name": "Kelsey not  Kelce ",
-          "manager": "Kelsey Prince"
         }
       ],
       "alerts": {
@@ -5139,7 +5139,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 31: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=15.0"
+            "description": "League 1618731 week 2 team 31: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=16.0"
           }
         ],
         "total_unresolved": 28
@@ -5384,7 +5384,7 @@
             "a": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 50.46
+              "score": 51.26
             },
             "b": {
               "team_id": 10,
@@ -5397,7 +5397,7 @@
             "a": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 17.66
+              "score": 18.26
             },
             "b": {
               "team_id": 5,
@@ -5423,7 +5423,7 @@
             "a": {
               "team_id": 8,
               "name": "Hawk Tua on my Penix",
-              "score": 52.26
+              "score": 53.06
             },
             "b": {
               "team_id": 12,
@@ -5460,7 +5460,7 @@
           "team_id": 8,
           "team_name": "Hawk Tua on my Penix",
           "manager": "William Millians",
-          "lineup_efficiency": 0.9346497115100628,
+          "lineup_efficiency": 0.9350485513236425,
           "bench_points": 49.9,
           "is_provisional": true
         },
@@ -5468,7 +5468,7 @@
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.909017550943896,
+          "lineup_efficiency": 0.9099157422432451,
           "bench_points": 40.0,
           "is_provisional": true
         },
@@ -5524,15 +5524,15 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.6887733956119865,
-          "bench_points": 51.800000000000004,
+          "lineup_efficiency": 0.6696653100892911,
+          "bench_points": 54.300000000000004,
           "is_provisional": true
         },
         {
           "team_id": 6,
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
-          "lineup_efficiency": 0.6032009190903938,
+          "lineup_efficiency": 0.6071494207911186,
           "bench_points": 137.9,
           "is_provisional": true
         },
@@ -5556,7 +5556,7 @@
         "season_stats": {
           "weeks_played": 2,
           "points_for": 197.06,
-          "points_against": 146.0,
+          "points_against": 146.8,
           "record": {
             "w": 1,
             "l": 0,
@@ -6556,9 +6556,9 @@
         "1": {
           "week_stats": {
             "actual_points": 15.0,
-            "optimal_points": 30.1,
-            "efficiency": 0.4983388704318937,
-            "bench_points": 15.100000000000001,
+            "optimal_points": 32.6,
+            "efficiency": 0.460122699386503,
+            "bench_points": 17.6,
             "rank": 10
           },
           "season_stats": {
@@ -6570,8 +6570,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.6887733956119865,
-            "total_bench_points": 51.800000000000004,
+            "lineup_efficiency": 0.6696653100892911,
+            "total_bench_points": 54.300000000000004,
             "is_provisional": true
           },
           "roster": [
@@ -6733,7 +6733,7 @@
               "position_id": 3,
               "is_starter": false,
               "slot_id": 20,
-              "points": 6.9,
+              "points": 9.4,
               "pro_team_id": 21,
               "game_status": "live",
               "opponent": "TEN",
@@ -6742,7 +6742,7 @@
               "is_home": false,
               "game_detail": "3:20 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "3 REC, 39 YDS",
+              "stat_line": "4 REC, 54 YDS",
               "injury_status": null
             },
             {
@@ -6911,7 +6911,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 135.5,
-            "points_against": 165.38,
+            "points_against": 166.18,
             "record": {
               "w": 0,
               "l": 1,
@@ -7232,22 +7232,22 @@
         },
         "8": {
           "week_stats": {
-            "actual_points": 52.260000000000005,
-            "optimal_points": 55.36000000000001,
-            "efficiency": 0.9440028901734104,
+            "actual_points": 53.06,
+            "optimal_points": 56.160000000000004,
+            "efficiency": 0.9448005698005698,
             "bench_points": 5.8,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 214.51999999999998,
+            "points_for": 215.32,
             "points_against": 150.76,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.9346497115100628,
+            "lineup_efficiency": 0.9350485513236425,
             "total_bench_points": 49.9,
             "is_provisional": true
           },
@@ -7321,6 +7321,23 @@
               "injury_status": null
             },
             {
+              "name": "Caleb Williams",
+              "position_id": 1,
+              "is_starter": true,
+              "slot_id": 0,
+              "points": 1.66,
+              "pro_team_id": 3,
+              "game_status": "live",
+              "opponent": "MIN",
+              "own_score": 3,
+              "opp_score": 6,
+              "is_home": true,
+              "game_detail": "8:11 - 2nd",
+              "kickoff_utc": "2026-09-20T17:00:00+00:00",
+              "stat_line": "34 YDS, INT",
+              "injury_status": null
+            },
+            {
               "name": "David Montgomery",
               "position_id": 2,
               "is_starter": true,
@@ -7335,23 +7352,6 @@
               "game_detail": "8:45 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "11 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Caleb Williams",
-              "position_id": 1,
-              "is_starter": true,
-              "slot_id": 0,
-              "points": 0.86,
-              "pro_team_id": 3,
-              "game_status": "live",
-              "opponent": "MIN",
-              "own_score": 3,
-              "opp_score": 6,
-              "is_home": true,
-              "game_detail": "8:11 - 2nd",
-              "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "14 YDS, INT",
               "injury_status": null
             },
             {
@@ -7824,22 +7824,22 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 17.66,
-            "optimal_points": 46.56,
-            "efficiency": 0.3792955326460481,
+            "actual_points": 18.259999999999998,
+            "optimal_points": 47.160000000000004,
+            "efficiency": 0.3871925360474978,
             "bench_points": 30.3,
             "rank": 9
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 172.18,
+            "points_for": 172.78,
             "points_against": 112.06,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.6032009190903938,
+            "lineup_efficiency": 0.6071494207911186,
             "total_bench_points": 137.9,
             "is_provisional": true
           },
@@ -7866,7 +7866,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 3.16,
+              "points": 3.76,
               "pro_team_id": 21,
               "game_status": "live",
               "opponent": "TEN",
@@ -7875,7 +7875,7 @@
               "is_home": false,
               "game_detail": "3:20 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "104 YDS, INT",
+              "stat_line": "119 YDS, INT",
               "injury_status": null
             },
             {
@@ -7910,7 +7910,7 @@
               "game_detail": "3:20 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "1 REC, 4 YDS",
-              "injury_status": null
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Nico Collins",
@@ -8129,7 +8129,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 160.9,
-            "points_against": 150.72,
+            "points_against": 151.32,
             "record": {
               "w": 1,
               "l": 0,
@@ -8442,7 +8442,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 197.06,
-            "points_against": 146.0,
+            "points_against": 146.8,
             "record": {
               "w": 1,
               "l": 0,
@@ -8763,22 +8763,22 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 50.46,
-            "optimal_points": 58.16,
-            "efficiency": 0.8676066024759286,
+            "actual_points": 51.26,
+            "optimal_points": 58.96,
+            "efficiency": 0.8694029850746268,
             "bench_points": 9.8,
             "rank": 2
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 163.58,
+            "points_for": 164.38,
             "points_against": 157.5,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.909017550943896,
+            "lineup_efficiency": 0.9099157422432451,
             "total_bench_points": 40.0,
             "is_provisional": true
           },
@@ -8805,7 +8805,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 13.6,
+              "points": 14.4,
               "pro_team_id": 33,
               "game_status": "live",
               "opponent": "NO",
@@ -8814,7 +8814,7 @@
               "is_home": true,
               "game_detail": "3:46 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "34 YDS, TD",
+              "stat_line": "42 YDS, TD",
               "injury_status": null
             },
             {
@@ -9729,7 +9729,7 @@
           "added": "Jaguars D/ST",
           "dropped": "Dontayvion Wicks",
           "added_pts": null,
-          "dropped_pts": 12.9,
+          "dropped_pts": 18.4,
           "net": null,
           "horizon_weeks": 3,
           "is_complete": false,
@@ -9738,7 +9738,7 @@
         {
           "added": "Dontayvion Wicks",
           "dropped": null,
-          "added_pts": 6.9,
+          "added_pts": 9.4,
           "dropped_pts": null,
           "net": null,
           "horizon_weeks": 3,
@@ -9909,6 +9909,54 @@
         }
       ],
       "scoring_events": [
+        {
+          "detected_at": "2026-09-20T17:59:25.334075+00:00",
+          "week": 2,
+          "team_id": 8,
+          "points_before": 0.86,
+          "points_after": 1.66,
+          "delta": 0.8,
+          "is_starter": true,
+          "player": "Caleb Williams",
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians"
+        },
+        {
+          "detected_at": "2026-09-20T17:59:25.333212+00:00",
+          "week": 2,
+          "team_id": 6,
+          "points_before": 3.16,
+          "points_after": 3.76,
+          "delta": 0.6,
+          "is_starter": true,
+          "player": "Jalen Hurts",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
+          "detected_at": "2026-09-20T17:59:25.331335+00:00",
+          "week": 2,
+          "team_id": 2,
+          "points_before": 13.6,
+          "points_after": 14.4,
+          "delta": 0.8,
+          "is_starter": true,
+          "player": "Derrick Henry",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
+          "detected_at": "2026-09-20T17:59:25.331133+00:00",
+          "week": 2,
+          "team_id": 1,
+          "points_before": 6.9,
+          "points_after": 9.4,
+          "delta": 2.5,
+          "is_starter": false,
+          "player": "Dontayvion Wicks",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
         {
           "detected_at": "2026-09-20T17:57:57.635512+00:00",
           "week": 2,
@@ -10100,54 +10148,6 @@
           "player": "Baker Mayfield",
           "team_name": "God of Warren",
           "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-09-20T17:53:24.773405+00:00",
-          "week": 2,
-          "team_id": 12,
-          "points_before": 7.0,
-          "points_after": 7.4,
-          "delta": 0.4,
-          "is_starter": true,
-          "player": "Bucky Irving",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-09-20T17:53:24.772503+00:00",
-          "week": 2,
-          "team_id": 10,
-          "points_before": 4.2,
-          "points_after": 5.1,
-          "delta": 0.9,
-          "is_starter": true,
-          "player": "Chase Brown",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-09-20T17:53:24.771990+00:00",
-          "week": 2,
-          "team_id": 8,
-          "points_before": 0.0,
-          "points_after": 3.1,
-          "delta": 3.1,
-          "is_starter": false,
-          "player": "Ted Hurst III",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-09-20T17:51:55.288238+00:00",
-          "week": 2,
-          "team_id": 8,
-          "points_before": 3.6,
-          "points_after": 5.4,
-          "delta": 1.8,
-          "is_starter": true,
-          "player": "Tetairoa McMillan",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
         }
       ],
       "alerts": {
@@ -10170,7 +10170,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 6: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=17.66"
+            "description": "League 581297461 week 2 team 6: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=18.26"
           },
           {
             "severity": "warning",
