@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T20:13:03.387993+00:00",
+  "generated_at": "2026-09-20T20:14:32.881781+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -2085,7 +2085,7 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "22 YDS",
-              "injury_status": "OUT"
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Jordan Addison",
@@ -3428,7 +3428,7 @@
               "is_home": false,
               "game_detail": "12:33 - 1st",
               "kickoff_utc": "2026-09-20T20:05:00+00:00",
-              "stat_line": null,
+              "stat_line": "2 YDS",
               "injury_status": null
             },
             {
@@ -3530,7 +3530,7 @@
               "is_home": false,
               "game_detail": "13:02 - 1st",
               "kickoff_utc": "2026-09-20T20:05:00+00:00",
-              "stat_line": "7 YDS",
+              "stat_line": "9 YDS",
               "injury_status": null
             },
             {
@@ -5397,7 +5397,7 @@
             "a": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 46.26
+              "score": 46.46
             },
             "b": {
               "team_id": 5,
@@ -5460,8 +5460,8 @@
           "team_id": 9,
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison",
-          "lineup_efficiency": 0.9020086588312465,
-          "bench_points": 44.5,
+          "lineup_efficiency": 0.9002018356351666,
+          "bench_points": 44.7,
           "is_provisional": true
         },
         {
@@ -5532,7 +5532,7 @@
           "team_id": 6,
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
-          "lineup_efficiency": 0.6568731611831071,
+          "lineup_efficiency": 0.6574120652175062,
           "bench_points": 165.9,
           "is_provisional": true
         },
@@ -5964,7 +5964,7 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "22 YDS",
-              "injury_status": "OUT"
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Tucker Kraft",
@@ -7824,22 +7824,22 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 46.26,
-            "optimal_points": 95.06,
-            "efficiency": 0.48664001683147484,
+            "actual_points": 46.46,
+            "optimal_points": 95.26,
+            "efficiency": 0.48771782490027293,
             "bench_points": 58.3,
             "rank": 8
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 200.78,
+            "points_for": 200.98000000000002,
             "points_against": 116.86000000000001,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.6568731611831071,
+            "lineup_efficiency": 0.6574120652175062,
             "total_bench_points": 165.9,
             "is_provisional": true
           },
@@ -7930,6 +7930,23 @@
               "injury_status": "QUESTIONABLE"
             },
             {
+              "name": "Ashton Jeanty",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 0.2,
+              "pro_team_id": 13,
+              "game_status": "live",
+              "opponent": "LAC",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "12:33 - 1st",
+              "kickoff_utc": "2026-09-20T20:05:00+00:00",
+              "stat_line": "2 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Nico Collins",
               "position_id": 3,
               "is_starter": true,
@@ -7945,23 +7962,6 @@
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": null,
               "injury_status": "OUT"
-            },
-            {
-              "name": "Ashton Jeanty",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 0.0,
-              "pro_team_id": 13,
-              "game_status": "live",
-              "opponent": "LAC",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": false,
-              "game_detail": "12:33 - 1st",
-              "kickoff_utc": "2026-09-20T20:05:00+00:00",
-              "stat_line": null,
-              "injury_status": null
             },
             {
               "name": "Christian McCaffrey",
@@ -8129,7 +8129,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 165.7,
-            "points_against": 179.32,
+            "points_against": 179.52,
             "record": {
               "w": 1,
               "l": 0,
@@ -9373,9 +9373,9 @@
         "9": {
           "week_stats": {
             "actual_points": 38.9,
-            "optimal_points": 46.300000000000004,
-            "efficiency": 0.8401727861771057,
-            "bench_points": 7.4,
+            "optimal_points": 46.50000000000001,
+            "efficiency": 0.8365591397849461,
+            "bench_points": 7.6000000000000005,
             "rank": 9
           },
           "season_stats": {
@@ -9387,8 +9387,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9020086588312465,
-            "total_bench_points": 44.5,
+            "lineup_efficiency": 0.9002018356351666,
+            "total_bench_points": 44.7,
             "is_provisional": true
           },
           "roster": [
@@ -9567,7 +9567,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 0.7,
+              "points": 0.9,
               "pro_team_id": 30,
               "game_status": "live",
               "opponent": "DEN",
@@ -9576,7 +9576,7 @@
               "is_home": false,
               "game_detail": "13:02 - 1st",
               "kickoff_utc": "2026-09-20T20:05:00+00:00",
-              "stat_line": "7 YDS",
+              "stat_line": "9 YDS",
               "injury_status": null
             },
             {
@@ -9910,6 +9910,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-20T20:14:25.961318+00:00",
+          "week": 2,
+          "team_id": 9,
+          "points_before": 0.7,
+          "points_after": 0.9,
+          "delta": 0.2,
+          "is_starter": false,
+          "player": "Chris Rodriguez Jr.",
+          "team_name": "Spider 2 Y Banana",
+          "manager": "Stacks Harrison"
+        },
+        {
+          "detected_at": "2026-09-20T20:14:25.959434+00:00",
+          "week": 2,
+          "team_id": 6,
+          "points_before": 0.0,
+          "points_after": 0.2,
+          "delta": 0.2,
+          "is_starter": true,
+          "player": "Ashton Jeanty",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
           "detected_at": "2026-09-20T20:12:56.376375+00:00",
           "week": 2,
           "team_id": 9,
@@ -10124,30 +10148,6 @@
           "player": "Jalen Hurts",
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach"
-        },
-        {
-          "detected_at": "2026-09-20T19:59:26.251057+00:00",
-          "week": 2,
-          "team_id": 2,
-          "points_before": 24.8,
-          "points_after": 27.7,
-          "delta": 2.9,
-          "is_starter": true,
-          "player": "DeVonta Smith",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-09-20T19:57:55.789778+00:00",
-          "week": 2,
-          "team_id": 12,
-          "points_before": 11.32,
-          "points_after": 11.64,
-          "delta": 0.32,
-          "is_starter": false,
-          "player": "Baker Mayfield",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
         }
       ],
       "alerts": {
@@ -10170,7 +10170,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 6: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=46.26"
+            "description": "League 581297461 week 2 team 6: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=46.46"
           },
           {
             "severity": "warning",
