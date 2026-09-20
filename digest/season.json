@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T17:44:32.990614+00:00",
+  "generated_at": "2026-09-20T17:46:03.152154+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -275,7 +275,7 @@
             "a": {
               "team_id": 15,
               "name": "Uncle Rico's QB Camp",
-              "score": 41.0
+              "score": 42.0
             },
             "b": {
               "team_id": 25,
@@ -364,7 +364,7 @@
           "team_id": 15,
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams",
-          "lineup_efficiency": 0.9623763699545576,
+          "lineup_efficiency": 0.9629049111807733,
           "bench_points": 28.0,
           "is_provisional": true
         },
@@ -460,8 +460,8 @@
           "team_id": 16,
           "team_name": "Bijan, demons!",
           "manager": "Harry Hinson",
-          "lineup_efficiency": 0.7544642857142857,
-          "bench_points": 31.0,
+          "lineup_efficiency": 0.7354166666666666,
+          "bench_points": 32.0,
           "is_provisional": true
         }
       ],
@@ -476,7 +476,7 @@
         "season_stats": {
           "weeks_played": 2,
           "points_for": 201.0,
-          "points_against": 157.0,
+          "points_against": 158.0,
           "record": {
             "w": 1,
             "l": 0,
@@ -1340,9 +1340,9 @@
         "16": {
           "week_stats": {
             "actual_points": 8.0,
-            "optimal_points": 14.0,
-            "efficiency": 0.5714285714285714,
-            "bench_points": 5.0,
+            "optimal_points": 15.0,
+            "efficiency": 0.5333333333333333,
+            "bench_points": 6.0,
             "rank": 12
           },
           "season_stats": {
@@ -1354,8 +1354,8 @@
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.7544642857142857,
-            "total_bench_points": 31.0,
+            "lineup_efficiency": 0.7354166666666666,
+            "total_bench_points": 32.0,
             "is_provisional": true
           },
           "roster": [
@@ -1517,7 +1517,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 2.0,
+              "points": 3.0,
               "pro_team_id": 34,
               "game_status": "live",
               "opponent": "CIN",
@@ -2447,7 +2447,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 201.0,
-            "points_against": 157.0,
+            "points_against": 158.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -4391,22 +4391,22 @@
         },
         "15": {
           "week_stats": {
-            "actual_points": 41.0,
-            "optimal_points": 43.0,
-            "efficiency": 0.9534883720930233,
+            "actual_points": 42.0,
+            "optimal_points": 44.0,
+            "efficiency": 0.9545454545454546,
             "bench_points": 2.0,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 210.0,
+            "points_for": 211.0,
             "points_against": 163.0,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.9623763699545576,
+            "lineup_efficiency": 0.9629049111807733,
             "total_bench_points": 28.0,
             "is_provisional": true
           },
@@ -4433,7 +4433,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 9.0,
+              "points": 10.0,
               "pro_team_id": 23,
               "game_status": "live",
               "opponent": "NE",
@@ -4442,7 +4442,7 @@
               "is_home": false,
               "game_detail": "15:00 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "FR, 7 PA",
+              "stat_line": "FR, 10 PA",
               "injury_status": null
             },
             {
@@ -4874,6 +4874,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-20T17:45:50.425437+00:00",
+          "week": 2,
+          "team_id": 16,
+          "points_before": 2.0,
+          "points_after": 3.0,
+          "delta": 1.0,
+          "is_starter": false,
+          "player": "Woody Marks",
+          "team_name": "Bijan, demons!",
+          "manager": "Harry Hinson"
+        },
+        {
+          "detected_at": "2026-09-20T17:45:50.424678+00:00",
+          "week": 2,
+          "team_id": 15,
+          "points_before": 9.0,
+          "points_after": 10.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Steelers D/ST",
+          "team_name": "Uncle Rico's QB Camp",
+          "manager": "Ben Williams"
+        },
+        {
           "detected_at": "2026-09-20T17:44:20.836272+00:00",
           "week": 2,
           "team_id": 28,
@@ -5088,30 +5112,6 @@
           "player": "Drake Maye",
           "team_name": "Shivakamini Somakandarkram",
           "manager": "Kenneth Strack"
-        },
-        {
-          "detected_at": "2026-09-20T17:36:49.467490+00:00",
-          "week": 2,
-          "team_id": 17,
-          "points_before": 0.0,
-          "points_after": 2.0,
-          "delta": 2.0,
-          "is_starter": false,
-          "player": "Kayshon Boutte",
-          "team_name": "Teenage Tuten Ninja Turtles",
-          "manager": "Holden Shepherd"
-        },
-        {
-          "detected_at": "2026-09-20T17:36:49.467146+00:00",
-          "week": 2,
-          "team_id": 17,
-          "points_before": 2.0,
-          "points_after": 4.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Breece Hall",
-          "team_name": "Teenage Tuten Ninja Turtles",
-          "manager": "Holden Shepherd"
         }
       ],
       "alerts": {
@@ -5397,7 +5397,7 @@
             "a": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 11.62
+              "score": 12.62
             },
             "b": {
               "team_id": 5,
@@ -5476,8 +5476,8 @@
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
-          "lineup_efficiency": 0.891552872648117,
-          "bench_points": 50.92,
+          "lineup_efficiency": 0.882641040016681,
+          "bench_points": 52.32,
           "is_provisional": true
         },
         {
@@ -5532,7 +5532,7 @@
           "team_id": 6,
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
-          "lineup_efficiency": 0.562833728306938,
+          "lineup_efficiency": 0.5716192850318987,
           "bench_points": 134.9,
           "is_provisional": true
         },
@@ -5879,9 +5879,9 @@
         "3": {
           "week_stats": {
             "actual_points": 41.0,
-            "optimal_points": 42.5,
-            "efficiency": 0.9647058823529412,
-            "bench_points": 4.5,
+            "optimal_points": 43.300000000000004,
+            "efficiency": 0.9468822170900691,
+            "bench_points": 5.9,
             "rank": 5
           },
           "season_stats": {
@@ -5893,8 +5893,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.891552872648117,
-            "total_bench_points": 50.92,
+            "lineup_efficiency": 0.882641040016681,
+            "total_bench_points": 52.32,
             "is_provisional": true
           },
           "roster": [
@@ -6073,7 +6073,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 2.2,
+              "points": 3.6,
               "pro_team_id": 34,
               "game_status": "live",
               "opponent": "CIN",
@@ -7824,22 +7824,22 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 11.62,
-            "optimal_points": 38.92,
-            "efficiency": 0.29856115107913667,
+            "actual_points": 12.62,
+            "optimal_points": 39.92,
+            "efficiency": 0.31613226452905807,
             "bench_points": 27.3,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 166.14000000000001,
+            "points_for": 167.14000000000001,
             "points_against": 113.56,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.562833728306938,
+            "lineup_efficiency": 0.5716192850318987,
             "total_bench_points": 134.9,
             "is_provisional": true
           },
@@ -7849,7 +7849,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 9.0,
+              "points": 10.0,
               "pro_team_id": 23,
               "game_status": "live",
               "opponent": "NE",
@@ -7858,7 +7858,7 @@
               "is_home": false,
               "game_detail": "15:00 - 2nd",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
-              "stat_line": "FR, 7 PA",
+              "stat_line": "FR, 10 PA",
               "injury_status": null
             },
             {
@@ -8129,7 +8129,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 162.4,
-            "points_against": 144.68,
+            "points_against": 145.68,
             "record": {
               "w": 1,
               "l": 0,
@@ -9910,6 +9910,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-20T17:45:56.550509+00:00",
+          "week": 2,
+          "team_id": 6,
+          "points_before": 9.0,
+          "points_after": 10.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Steelers D/ST",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
+          "detected_at": "2026-09-20T17:45:56.549290+00:00",
+          "week": 2,
+          "team_id": 3,
+          "points_before": 2.2,
+          "points_after": 3.6,
+          "delta": 1.4,
+          "is_starter": false,
+          "player": "Woody Marks",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-09-20T17:44:25.759909+00:00",
           "week": 2,
           "team_id": 10,
@@ -10124,30 +10148,6 @@
           "player": "Jonathon Brooks",
           "team_name": "8 - 9",
           "manager": "Marcus Bess"
-        },
-        {
-          "detected_at": "2026-09-20T17:39:55.021113+00:00",
-          "week": 2,
-          "team_id": 2,
-          "points_before": 12.9,
-          "points_after": 13.5,
-          "delta": 0.6,
-          "is_starter": true,
-          "player": "Derrick Henry",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-09-20T17:38:26.904092+00:00",
-          "week": 2,
-          "team_id": 7,
-          "points_before": 1.6,
-          "points_after": 2.3,
-          "delta": 0.7,
-          "is_starter": false,
-          "player": "Aaron Jones Sr.",
-          "team_name": "Nabers know my name",
-          "manager": "Aaron Lechelt"
         }
       ],
       "alerts": {
@@ -10170,7 +10170,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 6: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=11.62"
+            "description": "League 581297461 week 2 team 6: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=12.62"
           },
           {
             "severity": "warning",
