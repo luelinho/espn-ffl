@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T03:29:14.348870+00:00",
+  "generated_at": "2026-09-21T03:30:44.329685+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -275,7 +275,7 @@
             "a": {
               "team_id": 15,
               "name": "Uncle Rico's QB Camp",
-              "score": 125.0
+              "score": 126.0
             },
             "b": {
               "team_id": 25,
@@ -306,7 +306,7 @@
             "b": {
               "team_id": 1,
               "name": "Lights, Kamara, Action! ",
-              "score": 74.0
+              "score": 75.0
             },
             "live": true
           },
@@ -380,7 +380,7 @@
           "team_id": 15,
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams",
-          "lineup_efficiency": 0.922695120970983,
+          "lineup_efficiency": 0.923132183908046,
           "bench_points": 66.0,
           "is_provisional": true
         },
@@ -428,7 +428,7 @@
           "team_id": 1,
           "team_name": "Lights, Kamara, Action! ",
           "manager": "James Prince",
-          "lineup_efficiency": 0.8339396879295011,
+          "lineup_efficiency": 0.8350263957766757,
           "bench_points": 53.0,
           "is_provisional": true
         },
@@ -476,7 +476,7 @@
         "season_stats": {
           "weeks_played": 2,
           "points_for": 248.0,
-          "points_against": 241.0,
+          "points_against": 242.0,
           "record": {
             "w": 1,
             "l": 0,
@@ -2447,7 +2447,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 248.0,
-            "points_against": 241.0,
+            "points_against": 242.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -3013,26 +3013,43 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 74.0,
-            "optimal_points": 93.0,
-            "efficiency": 0.7956989247311828,
+            "actual_points": 75.0,
+            "optimal_points": 94.0,
+            "efficiency": 0.7978723404255319,
             "bench_points": 30.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 190.0,
+            "points_for": 191.0,
             "points_against": 124.0,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8339396879295011,
+            "lineup_efficiency": 0.8350263957766757,
             "total_bench_points": 53.0,
             "is_provisional": true
           },
           "roster": [
+            {
+              "name": "Kenneth Walker III",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 17.0,
+              "pro_team_id": 12,
+              "game_status": "live",
+              "opponent": "IND",
+              "own_score": 27,
+              "opp_score": 27,
+              "is_home": true,
+              "game_detail": "7:20 - OT",
+              "kickoff_utc": "2026-09-21T00:20:00+00:00",
+              "stat_line": "96 YDS",
+              "injury_status": null
+            },
             {
               "name": "Lamar Jackson",
               "position_id": 1,
@@ -3048,23 +3065,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "235 YDS, TD, INT",
-              "injury_status": null
-            },
-            {
-              "name": "Kenneth Walker III",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 16.0,
-              "pro_team_id": 12,
-              "game_status": "live",
-              "opponent": "IND",
-              "own_score": 27,
-              "opp_score": 27,
-              "is_home": true,
-              "game_detail": "7:20 - OT",
-              "kickoff_utc": "2026-09-21T00:20:00+00:00",
-              "stat_line": "96 YDS",
               "injury_status": null
             },
             {
@@ -3842,7 +3842,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 168.0,
-            "points_against": 161.0,
+            "points_against": 162.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -4391,22 +4391,22 @@
         },
         "15": {
           "week_stats": {
-            "actual_points": 125.0,
-            "optimal_points": 143.0,
-            "efficiency": 0.8741258741258742,
+            "actual_points": 126.0,
+            "optimal_points": 144.0,
+            "efficiency": 0.875,
             "bench_points": 40.0,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 294.0,
+            "points_for": 295.0,
             "points_against": 210.0,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.922695120970983,
+            "lineup_efficiency": 0.923132183908046,
             "total_bench_points": 66.0,
             "is_provisional": true
           },
@@ -4416,7 +4416,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 31.0,
+              "points": 32.0,
               "pro_team_id": 12,
               "game_status": "live",
               "opponent": "IND",
@@ -4874,6 +4874,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-21T03:30:32.725158+00:00",
+          "week": 2,
+          "team_id": 15,
+          "points_before": 31.0,
+          "points_after": 32.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Patrick Mahomes",
+          "team_name": "Uncle Rico's QB Camp",
+          "manager": "Ben Williams"
+        },
+        {
+          "detected_at": "2026-09-21T03:30:32.722770+00:00",
+          "week": 2,
+          "team_id": 1,
+          "points_before": 16.0,
+          "points_after": 17.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Kenneth Walker III",
+          "team_name": "Lights, Kamara, Action! ",
+          "manager": "James Prince"
+        },
+        {
           "detected_at": "2026-09-21T03:29:02.488904+00:00",
           "week": 2,
           "team_id": 32,
@@ -5088,30 +5112,6 @@
           "player": "Brock Purdy",
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson"
-        },
-        {
-          "detected_at": "2026-09-20T23:22:12.488845+00:00",
-          "week": 2,
-          "team_id": 26,
-          "points_before": 5.0,
-          "points_after": 6.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Ladd McConkey",
-          "team_name": "Purdy Good Team",
-          "manager": "Hayley Hinson"
-        },
-        {
-          "detected_at": "2026-09-20T23:22:12.488764+00:00",
-          "week": 2,
-          "team_id": 26,
-          "points_before": 21.0,
-          "points_after": 25.0,
-          "delta": 4.0,
-          "is_starter": true,
-          "player": "CeeDee Lamb",
-          "team_name": "Purdy Good Team",
-          "manager": "Hayley Hinson"
         }
       ],
       "alerts": {
@@ -5139,7 +5139,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 1: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=74.0"
+            "description": "League 1618731 week 2 team 1: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=75.0"
           }
         ],
         "total_unresolved": 30
@@ -5540,8 +5540,8 @@
           "team_id": 5,
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger",
-          "lineup_efficiency": 0.7166674908599802,
-          "bench_points": 172.16,
+          "lineup_efficiency": 0.7139028025003104,
+          "bench_points": 173.45999999999998,
           "is_provisional": true
         }
       ],
@@ -8121,9 +8121,9 @@
         "5": {
           "week_stats": {
             "actual_points": 85.1,
-            "optimal_points": 140.8,
-            "efficiency": 0.604403409090909,
-            "bench_points": 74.8,
+            "optimal_points": 142.10000000000002,
+            "efficiency": 0.5988740323715692,
+            "bench_points": 76.1,
             "rank": 9
           },
           "season_stats": {
@@ -8135,8 +8135,8 @@
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.7166674908599802,
-            "total_bench_points": 172.16,
+            "lineup_efficiency": 0.7139028025003104,
+            "total_bench_points": 173.45999999999998,
             "is_provisional": true
           },
           "roster": [
@@ -8298,7 +8298,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 26.4,
+              "points": 27.7,
               "pro_team_id": 12,
               "game_status": "live",
               "opponent": "IND",
@@ -9910,6 +9910,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-21T03:30:37.305389+00:00",
+          "week": 2,
+          "team_id": 5,
+          "points_before": 26.4,
+          "points_after": 27.7,
+          "delta": 1.3,
+          "is_starter": false,
+          "player": "Patrick Mahomes",
+          "team_name": "Johnny Sins",
+          "manager": "Gib Terwilliger"
+        },
+        {
           "detected_at": "2026-09-21T03:29:07.081587+00:00",
           "week": 2,
           "team_id": 11,
@@ -10134,18 +10146,6 @@
           "delta": 1.8,
           "is_starter": false,
           "player": "Deebo Samuel Sr.",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
-        },
-        {
-          "detected_at": "2026-09-20T23:21:58.935585+00:00",
-          "week": 2,
-          "team_id": 6,
-          "points_before": 8.7,
-          "points_after": 10.3,
-          "delta": 1.6,
-          "is_starter": true,
-          "player": "Ashton Jeanty",
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach"
         }
