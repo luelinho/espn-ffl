@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T03:32:13.087887+00:00",
+  "generated_at": "2026-09-21T03:33:43.014821+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -332,7 +332,7 @@
             "b": {
               "team_id": 26,
               "name": "Purdy Good Team",
-              "score": 148.0
+              "score": 151.0
             },
             "live": true
           },
@@ -2743,7 +2743,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 145.0,
-            "points_against": 264.0,
+            "points_against": 267.0,
             "record": {
               "w": 0,
               "l": 1,
@@ -3571,15 +3571,15 @@
         },
         "26": {
           "week_stats": {
-            "actual_points": 148.0,
-            "optimal_points": 148.0,
+            "actual_points": 151.0,
+            "optimal_points": 151.0,
             "efficiency": 1.0,
             "bench_points": 26.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 264.0,
+            "points_for": 267.0,
             "points_against": 242.0,
             "record": {
               "w": 0,
@@ -3677,6 +3677,23 @@
               "injury_status": null
             },
             {
+              "name": "Harrison Butker",
+              "position_id": 5,
+              "is_starter": true,
+              "slot_id": 17,
+              "points": 12.0,
+              "pro_team_id": 12,
+              "game_status": "live",
+              "opponent": "IND",
+              "own_score": 27,
+              "opp_score": 27,
+              "is_home": true,
+              "game_detail": "6:49 - OT",
+              "kickoff_utc": "2026-09-21T00:20:00+00:00",
+              "stat_line": "3/4 FG, 3/3 XP",
+              "injury_status": null
+            },
+            {
               "name": "Aaron Jones Sr.",
               "position_id": 2,
               "is_starter": true,
@@ -3691,23 +3708,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "105 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Harrison Butker",
-              "position_id": 5,
-              "is_starter": true,
-              "slot_id": 17,
-              "points": 9.0,
-              "pro_team_id": 12,
-              "game_status": "live",
-              "opponent": "IND",
-              "own_score": 27,
-              "opp_score": 27,
-              "is_home": true,
-              "game_detail": "6:49 - OT",
-              "kickoff_utc": "2026-09-21T00:20:00+00:00",
-              "stat_line": "2/3 FG, 3/3 XP",
               "injury_status": null
             },
             {
@@ -4874,6 +4874,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-21T03:33:31.924461+00:00",
+          "week": 2,
+          "team_id": 26,
+          "points_before": 9.0,
+          "points_after": 12.0,
+          "delta": 3.0,
+          "is_starter": true,
+          "player": "Harrison Butker",
+          "team_name": "Purdy Good Team",
+          "manager": "Hayley Hinson"
+        },
+        {
           "detected_at": "2026-09-21T03:30:32.725158+00:00",
           "week": 2,
           "team_id": 15,
@@ -5100,18 +5112,6 @@
           "player": "Ashton Jeanty",
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda"
-        },
-        {
-          "detected_at": "2026-09-20T23:22:12.489024+00:00",
-          "week": 2,
-          "team_id": 26,
-          "points_before": 29.0,
-          "points_after": 31.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Brock Purdy",
-          "team_name": "Purdy Good Team",
-          "manager": "Hayley Hinson"
         }
       ],
       "alerts": {
@@ -5540,8 +5540,8 @@
           "team_id": 5,
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger",
-          "lineup_efficiency": 0.7139028025003104,
-          "bench_points": 173.45999999999998,
+          "lineup_efficiency": 0.707711823530239,
+          "bench_points": 176.45999999999998,
           "is_provisional": true
         }
       ],
@@ -8121,9 +8121,9 @@
         "5": {
           "week_stats": {
             "actual_points": 85.1,
-            "optimal_points": 142.10000000000002,
-            "efficiency": 0.5988740323715692,
-            "bench_points": 76.1,
+            "optimal_points": 145.10000000000002,
+            "efficiency": 0.5864920744314265,
+            "bench_points": 79.1,
             "rank": 9
           },
           "season_stats": {
@@ -8135,8 +8135,8 @@
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.7139028025003104,
-            "total_bench_points": 173.45999999999998,
+            "lineup_efficiency": 0.707711823530239,
+            "total_bench_points": 176.45999999999998,
             "is_provisional": true
           },
           "roster": [
@@ -8328,6 +8328,23 @@
               "injury_status": null
             },
             {
+              "name": "Harrison Butker",
+              "position_id": 5,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 12.0,
+              "pro_team_id": 12,
+              "game_status": "live",
+              "opponent": "IND",
+              "own_score": 27,
+              "opp_score": 27,
+              "is_home": true,
+              "game_detail": "6:49 - OT",
+              "kickoff_utc": "2026-09-21T00:20:00+00:00",
+              "stat_line": "3/4 FG, 3/3 XP",
+              "injury_status": null
+            },
+            {
               "name": "Quinshon Judkins",
               "position_id": 2,
               "is_starter": false,
@@ -8342,23 +8359,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "21 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Harrison Butker",
-              "position_id": 5,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": 9.0,
-              "pro_team_id": 12,
-              "game_status": "live",
-              "opponent": "IND",
-              "own_score": 27,
-              "opp_score": 27,
-              "is_home": true,
-              "game_detail": "6:49 - OT",
-              "kickoff_utc": "2026-09-21T00:20:00+00:00",
-              "stat_line": "2/3 FG, 3/3 XP",
               "injury_status": null
             },
             {
@@ -9910,6 +9910,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-21T03:33:36.303367+00:00",
+          "week": 2,
+          "team_id": 5,
+          "points_before": 9.0,
+          "points_after": 12.0,
+          "delta": 3.0,
+          "is_starter": false,
+          "player": "Harrison Butker",
+          "team_name": "Johnny Sins",
+          "manager": "Gib Terwilliger"
+        },
+        {
           "detected_at": "2026-09-21T03:32:06.421826+00:00",
           "week": 2,
           "team_id": 11,
@@ -10136,18 +10148,6 @@
           "player": "De'Von Achane",
           "team_name": "Nabers know my name",
           "manager": "Aaron Lechelt"
-        },
-        {
-          "detected_at": "2026-09-20T23:21:58.936016+00:00",
-          "week": 2,
-          "team_id": 6,
-          "points_before": 4.72,
-          "points_after": 12.48,
-          "delta": 7.76,
-          "is_starter": false,
-          "player": "Malik Willis",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
