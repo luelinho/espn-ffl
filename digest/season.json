@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T03:52:03.699075+00:00",
+  "generated_at": "2026-09-21T03:53:33.578624+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -3047,7 +3047,7 @@
               "is_home": true,
               "game_detail": "2:00 - OT",
               "kickoff_utc": "2026-09-21T00:20:00+00:00",
-              "stat_line": "115 YDS",
+              "stat_line": "117 YDS",
               "injury_status": null
             },
             {
@@ -5436,7 +5436,7 @@
             "a": {
               "team_id": 11,
               "name": "I'M RICK JAMES, BLITZ! ",
-              "score": 100.98
+              "score": 101.18
             },
             "b": {
               "team_id": 3,
@@ -5492,7 +5492,7 @@
           "team_id": 11,
           "team_name": "I'M RICK JAMES, BLITZ! ",
           "manager": "Katherine DeLoach",
-          "lineup_efficiency": 0.8647544577030819,
+          "lineup_efficiency": 0.8648958033717253,
           "bench_points": 95.1,
           "is_provisional": true
         },
@@ -5887,7 +5887,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 206.86,
-            "points_against": 253.24,
+            "points_against": 253.44,
             "record": {
               "w": 0,
               "l": 1,
@@ -7528,22 +7528,22 @@
         },
         "11": {
           "week_stats": {
-            "actual_points": 100.98,
-            "optimal_points": 122.08,
-            "efficiency": 0.8271625163826999,
+            "actual_points": 101.18,
+            "optimal_points": 122.28,
+            "efficiency": 0.827445207719987,
             "bench_points": 56.3,
             "rank": 8
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 234.04000000000002,
+            "points_for": 234.24,
             "points_against": 249.42,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8647544577030819,
+            "lineup_efficiency": 0.8648958033717253,
             "total_bench_points": 95.1,
             "is_provisional": true
           },
@@ -7570,7 +7570,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 23.6,
+              "points": 23.8,
               "pro_team_id": 12,
               "game_status": "live",
               "opponent": "IND",
@@ -7579,7 +7579,7 @@
               "is_home": true,
               "game_detail": "2:00 - OT",
               "kickoff_utc": "2026-09-21T00:20:00+00:00",
-              "stat_line": "115 YDS",
+              "stat_line": "117 YDS",
               "injury_status": null
             },
             {
@@ -9910,6 +9910,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-21T03:53:27.118523+00:00",
+          "week": 2,
+          "team_id": 11,
+          "points_before": 23.6,
+          "points_after": 23.8,
+          "delta": 0.2,
+          "is_starter": true,
+          "player": "Kenneth Walker III",
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach"
+        },
+        {
           "detected_at": "2026-09-21T03:51:57.096284+00:00",
           "week": 2,
           "team_id": 11,
@@ -10136,18 +10148,6 @@
           "player": "Kaelon Black",
           "team_name": "God of Warren",
           "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-09-20T23:21:58.938249+00:00",
-          "week": 2,
-          "team_id": 11,
-          "points_before": 9.3,
-          "points_after": 14.3,
-          "delta": 5.0,
-          "is_starter": false,
-          "player": "Rachaad White",
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach"
         }
       ],
       "alerts": {
