@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T02:18:35.304407+00:00",
+  "generated_at": "2026-09-22T02:20:05.383900+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -2887,7 +2887,7 @@
               "is_home": false,
               "game_detail": "6:21 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "24 YDS",
+              "stat_line": "26 YDS",
               "injury_status": null
             },
             {
@@ -5415,7 +5415,7 @@
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 115.52
+              "score": 115.72
             },
             "live": true
           },
@@ -5524,7 +5524,7 @@
           "team_id": 4,
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey",
-          "lineup_efficiency": 0.8170978069583894,
+          "lineup_efficiency": 0.8178604671170226,
           "bench_points": 160.51999999999998,
           "is_provisional": true
         },
@@ -6191,22 +6191,22 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 115.52,
+            "actual_points": 115.72,
             "optimal_points": 131.12,
-            "efficiency": 0.8810250152532031,
+            "efficiency": 0.8825503355704698,
             "bench_points": 84.28,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 225.98,
+            "points_for": 226.18,
             "points_against": 213.18,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8170978069583894,
+            "lineup_efficiency": 0.8178604671170226,
             "total_bench_points": 160.51999999999998,
             "is_provisional": true
           },
@@ -6314,6 +6314,23 @@
               "injury_status": null
             },
             {
+              "name": "Cam Skattebo",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 7.5,
+              "pro_team_id": 19,
+              "game_status": "live",
+              "opponent": "LAR",
+              "own_score": 3,
+              "opp_score": 21,
+              "is_home": false,
+              "game_detail": "6:21 - 3rd",
+              "kickoff_utc": "2026-09-22T00:15:00+00:00",
+              "stat_line": "26 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Rome Odunze",
               "position_id": 3,
               "is_starter": true,
@@ -6328,23 +6345,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "3 REC, 43 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Cam Skattebo",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 7.3,
-              "pro_team_id": 19,
-              "game_status": "live",
-              "opponent": "LAR",
-              "own_score": 3,
-              "opp_score": 21,
-              "is_home": false,
-              "game_detail": "6:21 - 3rd",
-              "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "24 YDS",
               "injury_status": null
             },
             {
@@ -9085,7 +9085,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 213.64,
-            "points_against": 270.04,
+            "points_against": 270.24,
             "record": {
               "w": 0,
               "l": 1,
@@ -9910,6 +9910,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T02:19:58.746021+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 7.3,
+          "points_after": 7.5,
+          "delta": 0.2,
+          "is_starter": true,
+          "player": "Cam Skattebo",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
           "detected_at": "2026-09-22T02:15:28.695199+00:00",
           "week": 2,
           "team_id": 10,
@@ -10136,18 +10148,6 @@
           "player": "Rams D/ST",
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-09-22T01:24:28.352366+00:00",
-          "week": 2,
-          "team_id": 4,
-          "points_before": 3.0,
-          "points_after": 5.9,
-          "delta": 2.9,
-          "is_starter": true,
-          "player": "Cam Skattebo",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
         }
       ],
       "alerts": {
@@ -10155,7 +10155,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=115.52"
+            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=115.72"
           },
           {
             "severity": "warning",
