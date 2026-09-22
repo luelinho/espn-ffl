@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T01:09:34.908560+00:00",
+  "generated_at": "2026-09-22T01:11:04.845825+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -280,7 +280,7 @@
             "b": {
               "team_id": 25,
               "name": "Goff Is My Copilot",
-              "score": 91.0
+              "score": 92.0
             },
             "live": true
           },
@@ -364,7 +364,7 @@
           "team_id": 25,
           "team_name": "Goff Is My Copilot",
           "manager": "Luel Waktola",
-          "lineup_efficiency": 0.9442450495049506,
+          "lineup_efficiency": 0.9491955445544555,
           "bench_points": 65.0,
           "is_provisional": true
         },
@@ -467,22 +467,22 @@
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 91.0,
+          "actual_points": 92.0,
           "optimal_points": 101.0,
-          "efficiency": 0.900990099009901,
+          "efficiency": 0.9108910891089109,
           "bench_points": 21.0,
           "rank": 10
         },
         "season_stats": {
           "weeks_played": 2,
-          "points_for": 249.0,
+          "points_for": 250.0,
           "points_against": 243.0,
           "record": {
             "w": 1,
             "l": 0,
             "t": 0
           },
-          "lineup_efficiency": 0.9442450495049506,
+          "lineup_efficiency": 0.9491955445544555,
           "total_bench_points": 65.0,
           "is_provisional": true
         },
@@ -607,6 +607,23 @@
             "injury_status": null
           },
           {
+            "name": "Isaiah Likely",
+            "position_id": 4,
+            "is_starter": true,
+            "slot_id": 6,
+            "points": 2.0,
+            "pro_team_id": 19,
+            "game_status": "live",
+            "opponent": "LAR",
+            "own_score": 0,
+            "opp_score": 14,
+            "is_home": false,
+            "game_detail": "11:07 - 2nd",
+            "kickoff_utc": "2026-09-22T00:15:00+00:00",
+            "stat_line": "2 REC, 9 YDS",
+            "injury_status": null
+          },
+          {
             "name": "Jaguars D/ST",
             "position_id": 16,
             "is_starter": true,
@@ -621,23 +638,6 @@
             "game_detail": "Final",
             "kickoff_utc": "2026-09-20T20:05:00+00:00",
             "stat_line": "INT, 20 PA",
-            "injury_status": null
-          },
-          {
-            "name": "Isaiah Likely",
-            "position_id": 4,
-            "is_starter": true,
-            "slot_id": 6,
-            "points": 1.0,
-            "pro_team_id": 19,
-            "game_status": "live",
-            "opponent": "LAR",
-            "own_score": 0,
-            "opp_score": 14,
-            "is_home": false,
-            "game_detail": "11:07 - 2nd",
-            "kickoff_utc": "2026-09-22T00:15:00+00:00",
-            "stat_line": "1 REC, 4 YDS",
             "injury_status": null
           },
           {
@@ -2438,22 +2438,22 @@
         },
         "25": {
           "week_stats": {
-            "actual_points": 91.0,
+            "actual_points": 92.0,
             "optimal_points": 101.0,
-            "efficiency": 0.900990099009901,
+            "efficiency": 0.9108910891089109,
             "bench_points": 21.0,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 249.0,
+            "points_for": 250.0,
             "points_against": 243.0,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.9442450495049506,
+            "lineup_efficiency": 0.9491955445544555,
             "total_bench_points": 65.0,
             "is_provisional": true
           },
@@ -2578,6 +2578,23 @@
               "injury_status": null
             },
             {
+              "name": "Isaiah Likely",
+              "position_id": 4,
+              "is_starter": true,
+              "slot_id": 6,
+              "points": 2.0,
+              "pro_team_id": 19,
+              "game_status": "live",
+              "opponent": "LAR",
+              "own_score": 0,
+              "opp_score": 14,
+              "is_home": false,
+              "game_detail": "11:07 - 2nd",
+              "kickoff_utc": "2026-09-22T00:15:00+00:00",
+              "stat_line": "2 REC, 9 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Jaguars D/ST",
               "position_id": 16,
               "is_starter": true,
@@ -2592,23 +2609,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-09-20T20:05:00+00:00",
               "stat_line": "INT, 20 PA",
-              "injury_status": null
-            },
-            {
-              "name": "Isaiah Likely",
-              "position_id": 4,
-              "is_starter": true,
-              "slot_id": 6,
-              "points": 1.0,
-              "pro_team_id": 19,
-              "game_status": "live",
-              "opponent": "LAR",
-              "own_score": 0,
-              "opp_score": 14,
-              "is_home": false,
-              "game_detail": "11:07 - 2nd",
-              "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "1 REC, 4 YDS",
               "injury_status": null
             },
             {
@@ -4400,7 +4400,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 296.0,
-            "points_against": 211.0,
+            "points_against": 212.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -4874,6 +4874,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T01:10:53.855810+00:00",
+          "week": 2,
+          "team_id": 25,
+          "points_before": 1.0,
+          "points_after": 2.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Isaiah Likely",
+          "team_name": "Goff Is My Copilot",
+          "manager": "Luel Waktola"
+        },
+        {
           "detected_at": "2026-09-22T01:04:53.888472+00:00",
           "week": 2,
           "team_id": 29,
@@ -5096,18 +5108,6 @@
           "points_before": 20.0,
           "points_after": 24.0,
           "delta": 4.0,
-          "is_starter": true,
-          "player": "Kenneth Walker III",
-          "team_name": "Lights, Kamara, Action! ",
-          "manager": "James Prince"
-        },
-        {
-          "detected_at": "2026-09-21T03:48:52.821311+00:00",
-          "week": 2,
-          "team_id": 1,
-          "points_before": 19.0,
-          "points_after": 20.0,
-          "delta": 1.0,
           "is_starter": true,
           "player": "Kenneth Walker III",
           "team_name": "Lights, Kamara, Action! ",
@@ -5376,7 +5376,7 @@
             "b": {
               "team_id": 9,
               "name": "Spider 2 Y Banana",
-              "score": 83.34
+              "score": 84.84
             },
             "live": true
           },
@@ -5484,7 +5484,7 @@
           "team_id": 9,
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison",
-          "lineup_efficiency": 0.8918986529918083,
+          "lineup_efficiency": 0.8992776376435201,
           "bench_points": 79.28,
           "is_provisional": true
         },
@@ -6564,7 +6564,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 206.86,
-            "points_against": 193.8,
+            "points_against": 195.3,
             "record": {
               "w": 0,
               "l": 1,
@@ -9372,22 +9372,22 @@
         },
         "9": {
           "week_stats": {
-            "actual_points": 83.34,
+            "actual_points": 84.84,
             "optimal_points": 101.64,
-            "efficiency": 0.8199527744982291,
+            "efficiency": 0.8347107438016529,
             "bench_points": 42.18,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 211.3,
+            "points_for": 212.8,
             "points_against": 280.32,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8918986529918083,
+            "lineup_efficiency": 0.8992776376435201,
             "total_bench_points": 79.28,
             "is_provisional": true
           },
@@ -9533,7 +9533,7 @@
               "position_id": 4,
               "is_starter": true,
               "slot_id": 6,
-              "points": 1.4,
+              "points": 2.9,
               "pro_team_id": 19,
               "game_status": "live",
               "opponent": "LAR",
@@ -9542,7 +9542,7 @@
               "is_home": false,
               "game_detail": "11:07 - 2nd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "1 REC, 4 YDS",
+              "stat_line": "2 REC, 9 YDS",
               "injury_status": null
             },
             {
@@ -9910,6 +9910,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T01:10:58.263956+00:00",
+          "week": 2,
+          "team_id": 9,
+          "points_before": 1.4,
+          "points_after": 2.9,
+          "delta": 1.5,
+          "is_starter": true,
+          "player": "Isaiah Likely",
+          "team_name": "Spider 2 Y Banana",
+          "manager": "Stacks Harrison"
+        },
+        {
           "detected_at": "2026-09-22T01:04:58.302445+00:00",
           "week": 2,
           "team_id": 9,
@@ -10136,18 +10148,6 @@
           "player": "Blake Corum",
           "team_name": "God of Warren",
           "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-09-22T00:37:58.154049+00:00",
-          "week": 2,
-          "team_id": 7,
-          "points_before": 0.0,
-          "points_after": 1.1,
-          "delta": 1.1,
-          "is_starter": true,
-          "player": "Malik Nabers",
-          "team_name": "Nabers know my name",
-          "manager": "Aaron Lechelt"
         }
       ],
       "alerts": {
@@ -10175,7 +10175,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 9: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=83.34"
+            "description": "League 581297461 week 2 team 9: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=84.84"
           }
         ],
         "total_unresolved": 24
