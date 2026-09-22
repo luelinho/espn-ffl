@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T02:02:05.547347+00:00",
+  "generated_at": "2026-09-22T02:03:35.354960+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -2887,7 +2887,7 @@
               "is_home": false,
               "game_detail": "13:32 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "18 YDS",
+              "stat_line": "19 YDS",
               "injury_status": null
             },
             {
@@ -5415,7 +5415,7 @@
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 114.12
+              "score": 114.22
             },
             "live": true
           },
@@ -5524,7 +5524,7 @@
           "team_id": 4,
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey",
-          "lineup_efficiency": 0.8117591858479563,
+          "lineup_efficiency": 0.8121405159272728,
           "bench_points": 160.51999999999998,
           "is_provisional": true
         },
@@ -6191,22 +6191,22 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 114.12,
+            "actual_points": 114.22,
             "optimal_points": 131.12,
-            "efficiency": 0.8703477730323368,
+            "efficiency": 0.87111043319097,
             "bench_points": 84.28,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 224.57999999999998,
+            "points_for": 224.68,
             "points_against": 213.18,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8117591858479563,
+            "lineup_efficiency": 0.8121405159272728,
             "total_bench_points": 160.51999999999998,
             "is_provisional": true
           },
@@ -6335,7 +6335,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 5.9,
+              "points": 6.0,
               "pro_team_id": 19,
               "game_status": "live",
               "opponent": "LAR",
@@ -6344,7 +6344,7 @@
               "is_home": false,
               "game_detail": "13:32 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "18 YDS",
+              "stat_line": "19 YDS",
               "injury_status": null
             },
             {
@@ -9085,7 +9085,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 213.64,
-            "points_against": 268.64,
+            "points_against": 268.74,
             "record": {
               "w": 0,
               "l": 1,
@@ -9910,6 +9910,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T02:03:28.724258+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 5.9,
+          "points_after": 6.0,
+          "delta": 0.1,
+          "is_starter": true,
+          "player": "Cam Skattebo",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
           "detected_at": "2026-09-22T01:57:28.558743+00:00",
           "week": 2,
           "team_id": 12,
@@ -10136,18 +10148,6 @@
           "player": "Matthew Stafford",
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-09-22T00:52:58.298506+00:00",
-          "week": 2,
-          "team_id": 4,
-          "points_before": 2.6,
-          "points_after": 2.7,
-          "delta": 0.1,
-          "is_starter": true,
-          "player": "Cam Skattebo",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
         }
       ],
       "alerts": {
@@ -10155,7 +10155,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=114.12"
+            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=114.22"
           },
           {
             "severity": "warning",
