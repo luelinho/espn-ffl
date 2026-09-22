@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T02:12:35.393975+00:00",
+  "generated_at": "2026-09-22T02:14:06.389463+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -319,7 +319,7 @@
             "b": {
               "team_id": 18,
               "name": "G.E.T S.O.M.E ",
-              "score": 109.0
+              "score": 114.0
             },
             "live": true
           },
@@ -373,7 +373,7 @@
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams",
           "lineup_efficiency": 0.9235632183908046,
-          "bench_points": 74.0,
+          "bench_points": 72.0,
           "is_provisional": true
         },
         {
@@ -420,7 +420,7 @@
           "team_id": 18,
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer",
-          "lineup_efficiency": 0.8700276720857835,
+          "lineup_efficiency": 0.8715778994524639,
           "bench_points": 72.0,
           "is_provisional": true
         },
@@ -444,8 +444,8 @@
           "team_id": 29,
           "team_name": "Kelsey not  Kelce ",
           "manager": "Kelsey Prince",
-          "lineup_efficiency": 0.8410233844606487,
-          "bench_points": 75.0,
+          "lineup_efficiency": 0.8362369337979094,
+          "bench_points": 78.0,
           "is_provisional": true
         },
         {
@@ -618,7 +618,7 @@
             "own_score": 3,
             "opp_score": 14,
             "is_home": false,
-            "game_detail": "9:56 - 3rd",
+            "game_detail": "8:11 - 3rd",
             "kickoff_utc": "2026-09-22T00:15:00+00:00",
             "stat_line": "3 REC, 22 YDS",
             "injury_status": null
@@ -1490,7 +1490,7 @@
               "own_score": 3,
               "opp_score": 14,
               "is_home": false,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "20 YDS",
               "injury_status": "OUT"
@@ -1558,7 +1558,7 @@
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "27 YDS",
               "injury_status": null
@@ -2159,26 +2159,43 @@
         },
         "18": {
           "week_stats": {
-            "actual_points": 109.0,
-            "optimal_points": 118.0,
-            "efficiency": 0.923728813559322,
+            "actual_points": 114.0,
+            "optimal_points": 123.0,
+            "efficiency": 0.926829268292683,
             "bench_points": 25.0,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 229.0,
+            "points_for": 234.0,
             "points_against": 265.0,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8700276720857835,
+            "lineup_efficiency": 0.8715778994524639,
             "total_bench_points": 72.0,
             "is_provisional": true
           },
           "roster": [
+            {
+              "name": "Davante Adams",
+              "position_id": 3,
+              "is_starter": true,
+              "slot_id": 4,
+              "points": 31.0,
+              "pro_team_id": 14,
+              "game_status": "live",
+              "opponent": "NYG",
+              "own_score": 14,
+              "opp_score": 3,
+              "is_home": true,
+              "game_detail": "8:11 - 3rd",
+              "kickoff_utc": "2026-09-22T00:15:00+00:00",
+              "stat_line": "7 REC, 184 YDS, TD",
+              "injury_status": null
+            },
             {
               "name": "Jonathan Taylor",
               "position_id": 2,
@@ -2197,20 +2214,20 @@
               "injury_status": null
             },
             {
-              "name": "Davante Adams",
-              "position_id": 3,
+              "name": "Kyren Williams",
+              "position_id": 2,
               "is_starter": true,
-              "slot_id": 4,
-              "points": 28.0,
+              "slot_id": 2,
+              "points": 12.0,
               "pro_team_id": 14,
               "game_status": "live",
               "opponent": "NYG",
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "6 REC, 161 YDS, TD",
+              "stat_line": "50 YDS",
               "injury_status": null
             },
             {
@@ -2225,26 +2242,9 @@
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "INT, 3 PA",
-              "injury_status": null
-            },
-            {
-              "name": "Kyren Williams",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 10.0,
-              "pro_team_id": 14,
-              "game_status": "live",
-              "opponent": "NYG",
-              "own_score": 14,
-              "opp_score": 3,
-              "is_home": true,
-              "game_detail": "9:56 - 3rd",
-              "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "30 YDS",
               "injury_status": null
             },
             {
@@ -2378,7 +2378,7 @@
               "own_score": 3,
               "opp_score": 14,
               "is_home": false,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "1 REC, 14 YDS",
               "injury_status": null
@@ -2589,7 +2589,7 @@
               "own_score": 3,
               "opp_score": 14,
               "is_home": false,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "3 REC, 22 YDS",
               "injury_status": null
@@ -2735,9 +2735,9 @@
         "29": {
           "week_stats": {
             "actual_points": 91.0,
-            "optimal_points": 97.0,
-            "efficiency": 0.9381443298969072,
-            "bench_points": 41.0,
+            "optimal_points": 98.0,
+            "efficiency": 0.9285714285714286,
+            "bench_points": 44.0,
             "rank": 11
           },
           "season_stats": {
@@ -2749,8 +2749,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8410233844606487,
-            "total_bench_points": 75.0,
+            "lineup_efficiency": 0.8362369337979094,
+            "total_bench_points": 78.0,
             "is_provisional": true
           },
           "roster": [
@@ -2885,7 +2885,7 @@
               "own_score": 3,
               "opp_score": 14,
               "is_home": false,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "24 YDS",
               "injury_status": null
@@ -2902,7 +2902,7 @@
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "0/1 FG, 2/2 XP",
               "injury_status": null
@@ -2912,16 +2912,16 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 16.0,
+              "points": 19.0,
               "pro_team_id": 14,
               "game_status": "live",
               "opponent": "NYG",
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "219 YDS, 2 TD, INT",
+              "stat_line": "262 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -3318,7 +3318,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 234.0,
-            "points_against": 209.0,
+            "points_against": 214.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -3984,7 +3984,7 @@
               "own_score": 3,
               "opp_score": 14,
               "is_home": false,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "1 REC, 1 YDS",
               "injury_status": null
@@ -4001,7 +4001,7 @@
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": null,
               "injury_status": "OUT"
@@ -4394,7 +4394,7 @@
             "actual_points": 127.0,
             "optimal_points": 145.0,
             "efficiency": 0.8758620689655172,
-            "bench_points": 48.0,
+            "bench_points": 46.0,
             "rank": 4
           },
           "season_stats": {
@@ -4407,7 +4407,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.9235632183908046,
-            "total_bench_points": 74.0,
+            "total_bench_points": 72.0,
             "is_provisional": true
           },
           "roster": [
@@ -4599,23 +4599,6 @@
               "injury_status": null
             },
             {
-              "name": "Giants D/ST",
-              "position_id": 16,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": 8.0,
-              "pro_team_id": 19,
-              "game_status": "live",
-              "opponent": "LAR",
-              "own_score": 3,
-              "opp_score": 14,
-              "is_home": false,
-              "game_detail": "9:56 - 3rd",
-              "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "INT, FR, 14 PA",
-              "injury_status": null
-            },
-            {
               "name": "KC Concepcion",
               "position_id": 3,
               "is_starter": false,
@@ -4630,6 +4613,23 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "6 REC, 28 YDS",
+              "injury_status": null
+            },
+            {
+              "name": "Giants D/ST",
+              "position_id": 16,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 6.0,
+              "pro_team_id": 19,
+              "game_status": "live",
+              "opponent": "LAR",
+              "own_score": 3,
+              "opp_score": 14,
+              "is_home": false,
+              "game_detail": "8:11 - 3rd",
+              "kickoff_utc": "2026-09-22T00:15:00+00:00",
+              "stat_line": "INT, FR, 14 PA",
               "injury_status": null
             },
             {
@@ -4678,7 +4678,7 @@
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": null,
               "injury_status": null
@@ -4873,6 +4873,42 @@
         }
       ],
       "scoring_events": [
+        {
+          "detected_at": "2026-09-22T02:13:55.300415+00:00",
+          "week": 2,
+          "team_id": 29,
+          "points_before": 16.0,
+          "points_after": 19.0,
+          "delta": 3.0,
+          "is_starter": false,
+          "player": "Matthew Stafford",
+          "team_name": "Kelsey not  Kelce ",
+          "manager": "Kelsey Prince"
+        },
+        {
+          "detected_at": "2026-09-22T02:13:55.297959+00:00",
+          "week": 2,
+          "team_id": 18,
+          "points_before": 28.0,
+          "points_after": 31.0,
+          "delta": 3.0,
+          "is_starter": true,
+          "player": "Davante Adams",
+          "team_name": "G.E.T S.O.M.E ",
+          "manager": "Donnie Palmer"
+        },
+        {
+          "detected_at": "2026-09-22T02:13:55.297879+00:00",
+          "week": 2,
+          "team_id": 18,
+          "points_before": 10.0,
+          "points_after": 12.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Kyren Williams",
+          "team_name": "G.E.T S.O.M.E ",
+          "manager": "Donnie Palmer"
+        },
         {
           "detected_at": "2026-09-22T02:12:24.341845+00:00",
           "week": 2,
@@ -5076,42 +5112,6 @@
           "player": "Harrison Mevis",
           "team_name": "Kelsey not  Kelce ",
           "manager": "Kelsey Prince"
-        },
-        {
-          "detected_at": "2026-09-22T01:04:53.888438+00:00",
-          "week": 2,
-          "team_id": 29,
-          "points_before": 11.0,
-          "points_after": 15.0,
-          "delta": 4.0,
-          "is_starter": false,
-          "player": "Matthew Stafford",
-          "team_name": "Kelsey not  Kelce ",
-          "manager": "Kelsey Prince"
-        },
-        {
-          "detected_at": "2026-09-22T01:04:53.884961+00:00",
-          "week": 2,
-          "team_id": 18,
-          "points_before": 1.0,
-          "points_after": 9.0,
-          "delta": 8.0,
-          "is_starter": true,
-          "player": "Kyren Williams",
-          "team_name": "G.E.T S.O.M.E ",
-          "manager": "Donnie Palmer"
-        },
-        {
-          "detected_at": "2026-09-22T01:01:54.043125+00:00",
-          "week": 2,
-          "team_id": 29,
-          "points_before": 8.0,
-          "points_after": 11.0,
-          "delta": 3.0,
-          "is_starter": false,
-          "player": "Matthew Stafford",
-          "team_name": "Kelsey not  Kelce ",
-          "manager": "Kelsey Prince"
         }
       ],
       "alerts": {
@@ -5129,7 +5129,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 18: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=109.0"
+            "description": "League 1618731 week 2 team 18: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=114.0"
           },
           {
             "severity": "warning",
@@ -5371,7 +5371,7 @@
             "a": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 118.36
+              "score": 120.36
             },
             "b": {
               "team_id": 9,
@@ -5389,7 +5389,7 @@
             "b": {
               "team_id": 10,
               "name": "LaPorta Authority ",
-              "score": 108.3
+              "score": 111.6
             },
             "live": true
           },
@@ -5468,7 +5468,7 @@
           "team_id": 10,
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
-          "lineup_efficiency": 0.9325507843772181,
+          "lineup_efficiency": 0.9335202112474668,
           "bench_points": 79.6,
           "is_provisional": true
         },
@@ -5476,8 +5476,8 @@
           "team_id": 9,
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison",
-          "lineup_efficiency": 0.9105077467578422,
-          "bench_points": 79.75999999999999,
+          "lineup_efficiency": 0.9033770925950828,
+          "bench_points": 81.48,
           "is_provisional": true
         },
         {
@@ -5492,7 +5492,7 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.8813776241762725,
+          "lineup_efficiency": 0.8822341457446715,
           "bench_points": 99.88,
           "is_provisional": true
         },
@@ -5547,22 +5547,22 @@
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 108.3,
-          "optimal_points": 116.50000000000001,
-          "efficiency": 0.9296137339055792,
+          "actual_points": 111.6,
+          "optimal_points": 119.80000000000001,
+          "efficiency": 0.9315525876460766,
           "bench_points": 30.5,
-          "rank": 7
+          "rank": 6
         },
         "season_stats": {
           "weeks_played": 2,
-          "points_for": 260.56,
+          "points_for": 263.86,
           "points_against": 209.36,
           "record": {
             "w": 1,
             "l": 0,
             "t": 0
           },
-          "lineup_efficiency": 0.9325507843772181,
+          "lineup_efficiency": 0.9335202112474668,
           "total_bench_points": 79.6,
           "is_provisional": true
         },
@@ -5572,16 +5572,16 @@
             "position_id": 3,
             "is_starter": true,
             "slot_id": 4,
-            "points": 28.1,
+            "points": 31.4,
             "pro_team_id": 14,
             "game_status": "live",
             "opponent": "NYG",
             "own_score": 14,
             "opp_score": 3,
             "is_home": true,
-            "game_detail": "9:56 - 3rd",
+            "game_detail": "8:11 - 3rd",
             "kickoff_utc": "2026-09-22T00:15:00+00:00",
-            "stat_line": "6 REC, 161 YDS, TD",
+            "stat_line": "7 REC, 184 YDS, TD",
             "injury_status": null
           },
           {
@@ -5882,7 +5882,7 @@
             "optimal_points": 129.52,
             "efficiency": 0.8594811612106237,
             "bench_points": 41.1,
-            "rank": 6
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 2,
@@ -6342,7 +6342,7 @@
               "own_score": 3,
               "opp_score": 14,
               "is_home": false,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "24 YDS",
               "injury_status": null
@@ -6546,7 +6546,7 @@
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": null,
               "injury_status": null
@@ -6555,22 +6555,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 118.36,
-            "optimal_points": 133.96,
-            "efficiency": 0.8835473275604657,
+            "actual_points": 120.36,
+            "optimal_points": 135.96,
+            "efficiency": 0.8852603706972638,
             "bench_points": 63.18,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 207.16,
+            "points_for": 209.16,
             "points_against": 197.6,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8813776241762725,
+            "lineup_efficiency": 0.8822341457446715,
             "total_bench_points": 99.88,
             "is_provisional": true
           },
@@ -6631,16 +6631,16 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 10.2,
+              "points": 12.2,
               "pro_team_id": 14,
               "game_status": "live",
               "opponent": "NYG",
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "30 YDS",
+              "stat_line": "50 YDS",
               "injury_status": null
             },
             {
@@ -7155,7 +7155,7 @@
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "27 YDS",
               "injury_status": null
@@ -7975,7 +7975,7 @@
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "0/1 FG, 2/2 XP",
               "injury_status": null
@@ -8254,7 +8254,7 @@
               "own_score": 3,
               "opp_score": 14,
               "is_home": false,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "20 YDS",
               "injury_status": "OUT"
@@ -8433,22 +8433,22 @@
         },
         "10": {
           "week_stats": {
-            "actual_points": 108.3,
-            "optimal_points": 116.50000000000001,
-            "efficiency": 0.9296137339055792,
+            "actual_points": 111.6,
+            "optimal_points": 119.80000000000001,
+            "efficiency": 0.9315525876460766,
             "bench_points": 30.5,
-            "rank": 7
+            "rank": 6
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 260.56,
+            "points_for": 263.86,
             "points_against": 209.36,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.9325507843772181,
+            "lineup_efficiency": 0.9335202112474668,
             "total_bench_points": 79.6,
             "is_provisional": true
           },
@@ -8458,16 +8458,16 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 28.1,
+              "points": 31.4,
               "pro_team_id": 14,
               "game_status": "live",
               "opponent": "NYG",
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "6 REC, 161 YDS, TD",
+              "stat_line": "7 REC, 184 YDS, TD",
               "injury_status": null
             },
             {
@@ -8772,7 +8772,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 226.94,
-            "points_against": 221.0,
+            "points_against": 224.3,
             "record": {
               "w": 1,
               "l": 0,
@@ -9244,7 +9244,7 @@
               "own_score": 3,
               "opp_score": 14,
               "is_home": false,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "1 REC, 1 YDS",
               "injury_status": null
@@ -9373,22 +9373,22 @@
         "9": {
           "week_stats": {
             "actual_points": 87.14,
-            "optimal_points": 101.66000000000001,
-            "efficiency": 0.857170962030297,
-            "bench_points": 42.66,
+            "optimal_points": 103.38000000000001,
+            "efficiency": 0.8429096537047784,
+            "bench_points": 44.38,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 2,
             "points_for": 215.1,
-            "points_against": 280.62,
+            "points_against": 282.62,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9105077467578422,
-            "total_bench_points": 79.75999999999999,
+            "lineup_efficiency": 0.9033770925950828,
+            "total_bench_points": 81.48,
             "is_provisional": true
           },
           "roster": [
@@ -9472,7 +9472,7 @@
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "INT, 3 PA",
               "injury_status": null
@@ -9523,7 +9523,7 @@
               "own_score": 3,
               "opp_score": 14,
               "is_home": false,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "3 REC, 22 YDS",
               "injury_status": null
@@ -9567,16 +9567,16 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 14.76,
+              "points": 16.48,
               "pro_team_id": 14,
               "game_status": "live",
               "opponent": "NYG",
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "219 YDS, 2 TD, INT",
+              "stat_line": "262 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -9642,7 +9642,7 @@
               "own_score": 14,
               "opp_score": 3,
               "is_home": true,
-              "game_detail": "9:56 - 3rd",
+              "game_detail": "8:11 - 3rd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": null,
               "injury_status": "OUT"
@@ -9910,6 +9910,42 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T02:13:59.718187+00:00",
+          "week": 2,
+          "team_id": 10,
+          "points_before": 28.1,
+          "points_after": 31.4,
+          "delta": 3.3,
+          "is_starter": true,
+          "player": "Davante Adams",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
+          "detected_at": "2026-09-22T02:13:59.717810+00:00",
+          "week": 2,
+          "team_id": 9,
+          "points_before": 14.76,
+          "points_after": 16.48,
+          "delta": 1.72,
+          "is_starter": false,
+          "player": "Matthew Stafford",
+          "team_name": "Spider 2 Y Banana",
+          "manager": "Stacks Harrison"
+        },
+        {
+          "detected_at": "2026-09-22T02:13:59.713153+00:00",
+          "week": 2,
+          "team_id": 1,
+          "points_before": 10.2,
+          "points_after": 12.2,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Kyren Williams",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-09-22T02:12:28.775435+00:00",
           "week": 2,
           "team_id": 10,
@@ -10112,42 +10148,6 @@
           "player": "Cam Skattebo",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-09-22T01:10:58.263956+00:00",
-          "week": 2,
-          "team_id": 9,
-          "points_before": 1.4,
-          "points_after": 2.9,
-          "delta": 1.5,
-          "is_starter": true,
-          "player": "Isaiah Likely",
-          "team_name": "Spider 2 Y Banana",
-          "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-09-22T01:04:58.302445+00:00",
-          "week": 2,
-          "team_id": 9,
-          "points_before": 9.88,
-          "points_after": 14.28,
-          "delta": 4.4,
-          "is_starter": false,
-          "player": "Matthew Stafford",
-          "team_name": "Spider 2 Y Banana",
-          "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-09-22T01:04:58.301106+00:00",
-          "week": 2,
-          "team_id": 6,
-          "points_before": 1.0,
-          "points_after": 2.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Harrison Mevis",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
