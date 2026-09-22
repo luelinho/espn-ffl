@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T01:30:34.918470+00:00",
+  "generated_at": "2026-09-22T01:32:05.066211+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -319,7 +319,7 @@
             "b": {
               "team_id": 18,
               "name": "G.E.T S.O.M.E ",
-              "score": 102.0
+              "score": 101.0
             },
             "live": true
           },
@@ -373,7 +373,7 @@
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams",
           "lineup_efficiency": 0.9235632183908046,
-          "bench_points": 72.0,
+          "bench_points": 74.0,
           "is_provisional": true
         },
         {
@@ -428,7 +428,7 @@
           "team_id": 18,
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer",
-          "lineup_efficiency": 0.8676227247655819,
+          "lineup_efficiency": 0.8672541743970316,
           "bench_points": 72.0,
           "is_provisional": true
         },
@@ -2159,22 +2159,22 @@
         },
         "18": {
           "week_stats": {
-            "actual_points": 102.0,
-            "optimal_points": 111.0,
-            "efficiency": 0.918918918918919,
+            "actual_points": 101.0,
+            "optimal_points": 110.0,
+            "efficiency": 0.9181818181818182,
             "bench_points": 25.0,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 222.0,
+            "points_for": 221.0,
             "points_against": 265.0,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8676227247655819,
+            "lineup_efficiency": 0.8672541743970316,
             "total_bench_points": 72.0,
             "is_provisional": true
           },
@@ -2252,7 +2252,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 9.0,
+              "points": 8.0,
               "pro_team_id": 14,
               "game_status": "live",
               "opponent": "NYG",
@@ -2261,7 +2261,7 @@
               "is_home": true,
               "game_detail": "0:31 - 2nd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "7 YDS",
+              "stat_line": "12 YDS",
               "injury_status": null
             },
             {
@@ -3318,7 +3318,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 234.0,
-            "points_against": 202.0,
+            "points_against": 201.0,
             "record": {
               "w": 1,
               "l": 0,
@@ -4394,7 +4394,7 @@
             "actual_points": 127.0,
             "optimal_points": 145.0,
             "efficiency": 0.8758620689655172,
-            "bench_points": 46.0,
+            "bench_points": 48.0,
             "rank": 4
           },
           "season_stats": {
@@ -4407,7 +4407,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.9235632183908046,
-            "total_bench_points": 72.0,
+            "total_bench_points": 74.0,
             "is_provisional": true
           },
           "roster": [
@@ -4599,6 +4599,23 @@
               "injury_status": null
             },
             {
+              "name": "Giants D/ST",
+              "position_id": 16,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 8.0,
+              "pro_team_id": 19,
+              "game_status": "live",
+              "opponent": "LAR",
+              "own_score": 0,
+              "opp_score": 14,
+              "is_home": false,
+              "game_detail": "0:31 - 2nd",
+              "kickoff_utc": "2026-09-22T00:15:00+00:00",
+              "stat_line": "INT, FR, 14 PA",
+              "injury_status": null
+            },
+            {
               "name": "KC Concepcion",
               "position_id": 3,
               "is_starter": false,
@@ -4613,23 +4630,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-09-20T17:00:00+00:00",
               "stat_line": "6 REC, 28 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Giants D/ST",
-              "position_id": 16,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": 6.0,
-              "pro_team_id": 19,
-              "game_status": "live",
-              "opponent": "LAR",
-              "own_score": 0,
-              "opp_score": 14,
-              "is_home": false,
-              "game_detail": "0:31 - 2nd",
-              "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "INT, 14 PA",
               "injury_status": null
             },
             {
@@ -4874,6 +4874,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T01:31:53.996952+00:00",
+          "week": 2,
+          "team_id": 15,
+          "points_before": 6.0,
+          "points_after": 8.0,
+          "delta": 2.0,
+          "is_starter": false,
+          "player": "Giants D/ST",
+          "team_name": "Uncle Rico's QB Camp",
+          "manager": "Ben Williams"
+        },
+        {
           "detected_at": "2026-09-22T01:25:53.982244+00:00",
           "week": 2,
           "team_id": 18,
@@ -5100,18 +5112,6 @@
           "player": "Davante Adams",
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer"
-        },
-        {
-          "detected_at": "2026-09-22T00:37:53.760677+00:00",
-          "week": 2,
-          "team_id": 19,
-          "points_before": 0.0,
-          "points_after": 1.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Malik Nabers",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
         }
       ],
       "alerts": {
@@ -5129,7 +5129,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 2 team 18: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=102.0"
+            "description": "League 1618731 week 2 team 18: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=101.0"
           },
           {
             "severity": "warning",
@@ -5371,7 +5371,7 @@
             "a": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 118.06
+              "score": 116.56
             },
             "b": {
               "team_id": 9,
@@ -5492,7 +5492,7 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.8812469351079953,
+          "lineup_efficiency": 0.8805845899359912,
           "bench_points": 99.88,
           "is_provisional": true
         },
@@ -6555,22 +6555,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 118.06,
-            "optimal_points": 133.66,
-            "efficiency": 0.8832859494239115,
+            "actual_points": 116.56,
+            "optimal_points": 132.16,
+            "efficiency": 0.8819612590799032,
             "bench_points": 63.18,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 206.86,
+            "points_for": 205.36,
             "points_against": 196.3,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8812469351079953,
+            "lineup_efficiency": 0.8805845899359912,
             "total_bench_points": 99.88,
             "is_provisional": true
           },
@@ -6627,23 +6627,6 @@
               "injury_status": null
             },
             {
-              "name": "Kyren Williams",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 9.9,
-              "pro_team_id": 14,
-              "game_status": "live",
-              "opponent": "NYG",
-              "own_score": 14,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "0:31 - 2nd",
-              "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "7 YDS",
-              "injury_status": null
-            },
-            {
               "name": "Mike Evans",
               "position_id": 3,
               "is_starter": true,
@@ -6659,6 +6642,23 @@
               "kickoff_utc": "2026-09-20T20:25:00+00:00",
               "stat_line": "3 REC, 54 YDS",
               "injury_status": "QUESTIONABLE"
+            },
+            {
+              "name": "Kyren Williams",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 8.4,
+              "pro_team_id": 14,
+              "game_status": "live",
+              "opponent": "NYG",
+              "own_score": 14,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "0:31 - 2nd",
+              "kickoff_utc": "2026-09-22T00:15:00+00:00",
+              "stat_line": "12 YDS",
+              "injury_status": null
             },
             {
               "name": "Tyler Bass",
@@ -9381,7 +9381,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 213.8,
-            "points_against": 280.32,
+            "points_against": 278.82,
             "record": {
               "w": 0,
               "l": 1,
