@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T01:02:05.321674+00:00",
+  "generated_at": "2026-09-22T01:03:34.993235+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -2329,7 +2329,7 @@
               "is_home": true,
               "game_detail": "12:01 - 2nd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "3 YDS",
+              "stat_line": "7 YDS",
               "injury_status": null
             },
             {
@@ -3987,7 +3987,7 @@
               "game_detail": "12:01 - 2nd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "1 REC, 1 YDS",
-              "injury_status": null
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Puka Nacua",
@@ -5371,7 +5371,7 @@
             "a": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 109.66
+              "score": 110.06
             },
             "b": {
               "team_id": 9,
@@ -5500,7 +5500,7 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.858281419162075,
+          "lineup_efficiency": 0.8598086030350134,
           "bench_points": 99.88,
           "is_provisional": true
         },
@@ -6555,22 +6555,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 109.66,
+            "actual_points": 110.06,
             "optimal_points": 130.96,
-            "efficiency": 0.8373549175320708,
+            "efficiency": 0.8404092852779474,
             "bench_points": 63.18,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 198.45999999999998,
+            "points_for": 198.86,
             "points_against": 193.8,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.858281419162075,
+            "lineup_efficiency": 0.8598086030350134,
             "total_bench_points": 99.88,
             "is_provisional": true
           },
@@ -6716,7 +6716,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 1.5,
+              "points": 1.9,
               "pro_team_id": 14,
               "game_status": "live",
               "opponent": "NYG",
@@ -6725,7 +6725,7 @@
               "is_home": true,
               "game_detail": "12:01 - 2nd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "3 YDS",
+              "stat_line": "7 YDS",
               "injury_status": null
             },
             {
@@ -9247,7 +9247,7 @@
               "game_detail": "12:01 - 2nd",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
               "stat_line": "1 REC, 1 YDS",
-              "injury_status": null
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Josh Downs",
@@ -9381,7 +9381,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 211.3,
-            "points_against": 271.91999999999996,
+            "points_against": 272.32,
             "record": {
               "w": 0,
               "l": 1,
@@ -9910,6 +9910,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T01:03:28.322859+00:00",
+          "week": 2,
+          "team_id": 1,
+          "points_before": 1.5,
+          "points_after": 1.9,
+          "delta": 0.4,
+          "is_starter": true,
+          "player": "Kyren Williams",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-09-22T01:01:58.514151+00:00",
           "week": 2,
           "team_id": 10,
@@ -10136,18 +10148,6 @@
           "player": "Matthew Stafford",
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-09-22T00:27:28.104346+00:00",
-          "week": 2,
-          "team_id": 1,
-          "points_before": 0.0,
-          "points_after": 1.5,
-          "delta": 1.5,
-          "is_starter": true,
-          "player": "Kyren Williams",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
         }
       ],
       "alerts": {
