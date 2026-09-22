@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T02:05:05.443565+00:00",
+  "generated_at": "2026-09-22T02:06:35.393749+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -327,7 +327,7 @@
             "a": {
               "team_id": 29,
               "name": "Kelsey not  Kelce ",
-              "score": 90.0
+              "score": 91.0
             },
             "b": {
               "team_id": 26,
@@ -444,7 +444,7 @@
           "team_id": 29,
           "team_name": "Kelsey not  Kelce ",
           "manager": "Kelsey Prince",
-          "lineup_efficiency": 0.835868745285391,
+          "lineup_efficiency": 0.8410233844606487,
           "bench_points": 75.0,
           "is_provisional": true
         },
@@ -2734,22 +2734,22 @@
         },
         "29": {
           "week_stats": {
-            "actual_points": 90.0,
+            "actual_points": 91.0,
             "optimal_points": 97.0,
-            "efficiency": 0.9278350515463918,
+            "efficiency": 0.9381443298969072,
             "bench_points": 41.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 151.0,
+            "points_for": 152.0,
             "points_against": 271.0,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.835868745285391,
+            "lineup_efficiency": 0.8410233844606487,
             "total_bench_points": 75.0,
             "is_provisional": true
           },
@@ -2878,7 +2878,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 5.0,
+              "points": 6.0,
               "pro_team_id": 19,
               "game_status": "live",
               "opponent": "LAR",
@@ -3580,7 +3580,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 271.0,
-            "points_against": 248.0,
+            "points_against": 249.0,
             "record": {
               "w": 0,
               "l": 1,
@@ -4874,6 +4874,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T02:06:24.231963+00:00",
+          "week": 2,
+          "team_id": 29,
+          "points_before": 5.0,
+          "points_after": 6.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Cam Skattebo",
+          "team_name": "Kelsey not  Kelce ",
+          "manager": "Kelsey Prince"
+        },
+        {
           "detected_at": "2026-09-22T02:04:54.168751+00:00",
           "week": 2,
           "team_id": 25,
@@ -5100,18 +5112,6 @@
           "player": "Davante Adams",
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer"
-        },
-        {
-          "detected_at": "2026-09-22T00:49:53.947237+00:00",
-          "week": 2,
-          "team_id": 29,
-          "points_before": 0.0,
-          "points_after": 1.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Harrison Mevis",
-          "team_name": "Kelsey not  Kelce ",
-          "manager": "Kelsey Prince"
         }
       ],
       "alerts": {
@@ -5415,7 +5415,7 @@
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 114.72
+              "score": 115.52
             },
             "live": true
           },
@@ -5524,7 +5524,7 @@
           "team_id": 4,
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey",
-          "lineup_efficiency": 0.8140471663238561,
+          "lineup_efficiency": 0.8170978069583894,
           "bench_points": 160.51999999999998,
           "is_provisional": true
         },
@@ -6191,22 +6191,22 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 114.72,
+            "actual_points": 115.52,
             "optimal_points": 131.12,
-            "efficiency": 0.8749237339841366,
+            "efficiency": 0.8810250152532031,
             "bench_points": 84.28,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 225.18,
+            "points_for": 225.98,
             "points_against": 213.18,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8140471663238561,
+            "lineup_efficiency": 0.8170978069583894,
             "total_bench_points": 160.51999999999998,
             "is_provisional": true
           },
@@ -6335,7 +6335,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 6.5,
+              "points": 7.3,
               "pro_team_id": 19,
               "game_status": "live",
               "opponent": "LAR",
@@ -9085,7 +9085,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 213.64,
-            "points_against": 269.24,
+            "points_against": 270.04,
             "record": {
               "w": 0,
               "l": 1,
@@ -9910,6 +9910,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T02:06:28.655839+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 6.5,
+          "points_after": 7.3,
+          "delta": 0.8,
+          "is_starter": true,
+          "player": "Cam Skattebo",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
           "detected_at": "2026-09-22T02:04:58.620958+00:00",
           "week": 2,
           "team_id": 9,
@@ -10136,18 +10148,6 @@
           "player": "Davante Adams",
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-09-22T01:01:58.513740+00:00",
-          "week": 2,
-          "team_id": 9,
-          "points_before": 7.32,
-          "points_after": 9.88,
-          "delta": 2.56,
-          "is_starter": false,
-          "player": "Matthew Stafford",
-          "team_name": "Spider 2 Y Banana",
-          "manager": "Stacks Harrison"
         }
       ],
       "alerts": {
@@ -10155,7 +10155,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=114.72"
+            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=115.52"
           },
           {
             "severity": "warning",
