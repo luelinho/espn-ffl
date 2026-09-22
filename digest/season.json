@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T01:56:05.410968+00:00",
+  "generated_at": "2026-09-22T01:57:35.169522+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -1560,7 +1560,7 @@
               "is_home": true,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "24 YDS",
+              "stat_line": "27 YDS",
               "injury_status": null
             },
             {
@@ -2921,7 +2921,7 @@
               "is_home": true,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "184 YDS, 2 TD, INT",
+              "stat_line": "203 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -5453,7 +5453,7 @@
           "team_name": "God of Warren",
           "manager": "Spencer Gillis",
           "lineup_efficiency": 0.9405073718766703,
-          "bench_points": 79.62,
+          "bench_points": 79.92,
           "is_provisional": true
         },
         {
@@ -5485,7 +5485,7 @@
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison",
           "lineup_efficiency": 0.8992776376435201,
-          "bench_points": 78.36,
+          "bench_points": 79.12,
           "is_provisional": true
         },
         {
@@ -6905,7 +6905,7 @@
             "actual_points": 127.66,
             "optimal_points": 133.68,
             "efficiency": 0.9549670855774984,
-            "bench_points": 30.38,
+            "bench_points": 30.68,
             "rank": 1
           },
           "season_stats": {
@@ -6918,7 +6918,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.9405073718766703,
-            "total_bench_points": 79.62,
+            "total_bench_points": 79.92,
             "is_provisional": true
           },
           "roster": [
@@ -7144,6 +7144,23 @@
               "injury_status": null
             },
             {
+              "name": "Blake Corum",
+              "position_id": 2,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 2.7,
+              "pro_team_id": 14,
+              "game_status": "live",
+              "opponent": "NYG",
+              "own_score": 14,
+              "opp_score": 3,
+              "is_home": true,
+              "game_detail": "Halftime",
+              "kickoff_utc": "2026-09-22T00:15:00+00:00",
+              "stat_line": "27 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Kaelon Black",
               "position_id": 2,
               "is_starter": false,
@@ -7158,23 +7175,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-09-20T20:25:00+00:00",
               "stat_line": "25 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Blake Corum",
-              "position_id": 2,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": 2.4,
-              "pro_team_id": 14,
-              "game_status": "live",
-              "opponent": "NYG",
-              "own_score": 14,
-              "opp_score": 3,
-              "is_home": true,
-              "game_detail": "Halftime",
-              "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "24 YDS",
               "injury_status": null
             },
             {
@@ -9375,7 +9375,7 @@
             "actual_points": 84.84,
             "optimal_points": 101.64,
             "efficiency": 0.8347107438016529,
-            "bench_points": 41.26,
+            "bench_points": 42.019999999999996,
             "rank": 11
           },
           "season_stats": {
@@ -9388,7 +9388,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8992776376435201,
-            "total_bench_points": 78.36,
+            "total_bench_points": 79.12,
             "is_provisional": true
           },
           "roster": [
@@ -9567,7 +9567,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 13.36,
+              "points": 14.12,
               "pro_team_id": 14,
               "game_status": "live",
               "opponent": "NYG",
@@ -9576,7 +9576,7 @@
               "is_home": true,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "184 YDS, 2 TD, INT",
+              "stat_line": "203 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -9910,6 +9910,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T01:57:28.558743+00:00",
+          "week": 2,
+          "team_id": 12,
+          "points_before": 2.4,
+          "points_after": 2.7,
+          "delta": 0.3,
+          "is_starter": false,
+          "player": "Blake Corum",
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis"
+        },
+        {
+          "detected_at": "2026-09-22T01:57:28.557094+00:00",
+          "week": 2,
+          "team_id": 9,
+          "points_before": 13.36,
+          "points_after": 14.12,
+          "delta": 0.76,
+          "is_starter": false,
+          "player": "Matthew Stafford",
+          "team_name": "Spider 2 Y Banana",
+          "manager": "Stacks Harrison"
+        },
+        {
           "detected_at": "2026-09-22T01:42:28.582670+00:00",
           "week": 2,
           "team_id": 10,
@@ -10124,30 +10148,6 @@
           "player": "Cam Skattebo",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-09-22T00:49:58.330053+00:00",
-          "week": 2,
-          "team_id": 6,
-          "points_before": 0.0,
-          "points_after": 1.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Harrison Mevis",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
-        },
-        {
-          "detected_at": "2026-09-22T00:48:28.332283+00:00",
-          "week": 2,
-          "team_id": 12,
-          "points_before": 1.8,
-          "points_after": 1.9,
-          "delta": 0.1,
-          "is_starter": false,
-          "player": "Blake Corum",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
         }
       ],
       "alerts": {
