@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T00:32:04.950213+00:00",
+  "generated_at": "2026-09-22T00:33:34.797687+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -327,7 +327,7 @@
             "a": {
               "team_id": 29,
               "name": "Kelsey not  Kelce ",
-              "score": 85.0
+              "score": 86.0
             },
             "b": {
               "team_id": 26,
@@ -441,19 +441,19 @@
           "is_provisional": true
         },
         {
+          "team_id": 29,
+          "team_name": "Kelsey not  Kelce ",
+          "manager": "Kelsey Prince",
+          "lineup_efficiency": 0.8198678861788617,
+          "bench_points": 59.0,
+          "is_provisional": true
+        },
+        {
           "team_id": 19,
           "team_name": "Shivakamini Somakandarkram",
           "manager": "Kenneth Strack",
           "lineup_efficiency": 0.8192471590909092,
           "bench_points": 62.0,
-          "is_provisional": true
-        },
-        {
-          "team_id": 29,
-          "team_name": "Kelsey not  Kelce ",
-          "manager": "Kelsey Prince",
-          "lineup_efficiency": 0.8146595528455285,
-          "bench_points": 59.0,
           "is_provisional": true
         },
         {
@@ -689,7 +689,7 @@
             "game_detail": "Final/OT",
             "kickoff_utc": "2026-09-21T00:20:00+00:00",
             "stat_line": "1 REC, 11 YDS",
-            "injury_status": "QUESTIONABLE"
+            "injury_status": "DOUBTFUL"
           },
           {
             "name": "Keenan Allen",
@@ -2660,7 +2660,7 @@
               "game_detail": "Final/OT",
               "kickoff_utc": "2026-09-21T00:20:00+00:00",
               "stat_line": "1 REC, 11 YDS",
-              "injury_status": "QUESTIONABLE"
+              "injury_status": "DOUBTFUL"
             },
             {
               "name": "Keenan Allen",
@@ -2734,22 +2734,22 @@
         },
         "29": {
           "week_stats": {
-            "actual_points": 85.0,
+            "actual_points": 86.0,
             "optimal_points": 96.0,
-            "efficiency": 0.8854166666666666,
+            "efficiency": 0.8958333333333334,
             "bench_points": 25.0,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 146.0,
+            "points_for": 147.0,
             "points_against": 271.0,
             "record": {
               "w": 0,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8146595528455285,
+            "lineup_efficiency": 0.8198678861788617,
             "total_bench_points": 59.0,
             "is_provisional": true
           },
@@ -2878,7 +2878,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 1.0,
+              "points": 2.0,
               "pro_team_id": 19,
               "game_status": "live",
               "opponent": "LAR",
@@ -2887,7 +2887,7 @@
               "is_home": false,
               "game_detail": "9:51 - 1st",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "10 YDS",
+              "stat_line": "14 YDS",
               "injury_status": null
             },
             {
@@ -3580,7 +3580,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 271.0,
-            "points_against": 243.0,
+            "points_against": 244.0,
             "record": {
               "w": 0,
               "l": 1,
@@ -4874,6 +4874,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T00:33:23.765917+00:00",
+          "week": 2,
+          "team_id": 29,
+          "points_before": 1.0,
+          "points_after": 2.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Cam Skattebo",
+          "team_name": "Kelsey not  Kelce ",
+          "manager": "Kelsey Prince"
+        },
+        {
           "detected_at": "2026-09-22T00:27:23.707296+00:00",
           "week": 2,
           "team_id": 18,
@@ -5098,18 +5110,6 @@
           "delta": 6.0,
           "is_starter": false,
           "player": "Rachaad White",
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-09-20T23:22:12.490526+00:00",
-          "week": 2,
-          "team_id": 31,
-          "points_before": 30.0,
-          "points_after": 42.0,
-          "delta": 12.0,
-          "is_starter": true,
-          "player": "Jaxon Smith-Njigba",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
         }
@@ -5415,7 +5415,7 @@
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 110.42
+              "score": 110.82
             },
             "live": true
           },
@@ -5524,7 +5524,7 @@
           "team_id": 4,
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey",
-          "lineup_efficiency": 0.7976499729132399,
+          "lineup_efficiency": 0.7991752932305065,
           "bench_points": 160.51999999999998,
           "is_provisional": true
         },
@@ -5803,7 +5803,7 @@
             "game_detail": "Final/OT",
             "kickoff_utc": "2026-09-21T00:20:00+00:00",
             "stat_line": "1 REC, 11 YDS",
-            "injury_status": "QUESTIONABLE"
+            "injury_status": "DOUBTFUL"
           },
           {
             "name": "Jaguars D/ST",
@@ -6191,22 +6191,22 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 110.42,
+            "actual_points": 110.82,
             "optimal_points": 131.12,
-            "efficiency": 0.8421293471629042,
+            "efficiency": 0.8451799877974374,
             "bench_points": 84.28,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 2,
-            "points_for": 220.88,
+            "points_for": 221.27999999999997,
             "points_against": 212.07999999999998,
             "record": {
               "w": 1,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.7976499729132399,
+            "lineup_efficiency": 0.7991752932305065,
             "total_bench_points": 160.51999999999998,
             "is_provisional": true
           },
@@ -6352,7 +6352,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 2.2,
+              "points": 2.6,
               "pro_team_id": 19,
               "game_status": "live",
               "opponent": "LAR",
@@ -6361,7 +6361,7 @@
               "is_home": false,
               "game_detail": "9:51 - 1st",
               "kickoff_utc": "2026-09-22T00:15:00+00:00",
-              "stat_line": "10 YDS",
+              "stat_line": "14 YDS",
               "injury_status": null
             },
             {
@@ -8689,7 +8689,7 @@
               "game_detail": "Final/OT",
               "kickoff_utc": "2026-09-21T00:20:00+00:00",
               "stat_line": "1 REC, 11 YDS",
-              "injury_status": "QUESTIONABLE"
+              "injury_status": "DOUBTFUL"
             },
             {
               "name": "Jaguars D/ST",
@@ -9085,7 +9085,7 @@
           "season_stats": {
             "weeks_played": 2,
             "points_for": 212.54000000000002,
-            "points_against": 264.94,
+            "points_against": 265.34000000000003,
             "record": {
               "w": 0,
               "l": 1,
@@ -9910,6 +9910,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-09-22T00:33:28.178654+00:00",
+          "week": 2,
+          "team_id": 4,
+          "points_before": 2.2,
+          "points_after": 2.6,
+          "delta": 0.4,
+          "is_starter": true,
+          "player": "Cam Skattebo",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
           "detected_at": "2026-09-22T00:31:58.304939+00:00",
           "week": 2,
           "team_id": 4,
@@ -10136,18 +10148,6 @@
           "player": "Patrick Mahomes",
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger"
-        },
-        {
-          "detected_at": "2026-09-20T23:40:05.031666+00:00",
-          "week": 2,
-          "team_id": 7,
-          "points_before": 16.0,
-          "points_after": 17.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Brandon Aubrey",
-          "team_name": "Nabers know my name",
-          "manager": "Aaron Lechelt"
         }
       ],
       "alerts": {
@@ -10155,7 +10155,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=110.42"
+            "description": "League 581297461 week 2 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=110.82"
           },
           {
             "severity": "warning",
