@@ -5,11 +5,14 @@ in progress right now (raw_pro_games.in_progress, refreshed from ESPN's
 own proTeamSchedules — two cheap requests, not the full pipeline). If one
 is live, runs the full pipeline (daily_sync -> calculate -> recap -> digest
 -> build_dashboard) and loops again after LIVE_REFRESH_SECONDS (default
-90s). If nothing is live, it does NOT re-poll scores — instead it only
-checks for real waiver/free-agent/trade activity (load_transactions, no
-load_week/load_standings — the scheduled daily job already covers those
-once a day) and still rebuilds the local digest/dashboard so the activity
-feed stays current, then loops again after the much longer
+90s). If nothing is live, it does NOT re-poll scores for weeks it already
+knows about — instead it only checks for real waiver/free-agent/trade
+activity (load_transactions) and whether ESPN has advanced to a brand-new
+week it hasn't seen yet (catch_new_week — a discrete real event worth
+catching within one idle cycle, not left stale until the next scheduled
+daily job; see that function's docstring for the real gap this closed,
+found live 2026-09-27), then still rebuilds the local digest/dashboard so
+everything stays current, and loops again after the much longer
 IDLE_REFRESH_SECONDS (default 900s). Owner's exact ask, 2026-09-14:
 "if there's a game, update the fantasy score every 90 seconds, otherwise
 we do not update on non-game days, unless it's to update rosters and
@@ -168,14 +171,42 @@ def run_live_cycle() -> bool:
     return ok
 
 
+def catch_new_week(conn, client, league_id: int) -> int | None:
+    """If ESPN's real current matchup period has advanced past the newest
+    week we've actually ingested, load that new week immediately instead
+    of waiting for the once-a-day scheduled job. Real gap found live,
+    2026-09-27: ESPN flips `currentMatchupPeriod` at some point during the
+    day that has no fixed relationship to when `daily.yml` happens to run
+    (06:05 UTC) — the owner saw last week's matchup still showing as
+    "current" hours after Thursday Night Football had already started the
+    new week, because the daily job had already run *before* ESPN's own
+    flip that day, and the idle loop was (by design) skipping load_week
+    entirely. A brand-new week appearing is a discrete, real event worth
+    catching within one idle cycle (~15 min), not something to leave
+    stale for up to 24h. Returns the new week if one was caught, else
+    None — the normal case, so this stays cheap on every other cycle."""
+    res = client.get_league(league_id, config.SEASON_YEAR, views=["mSettings"])
+    if not res.ok:
+        return None
+    current_matchup_period = res.json_body["status"]["currentMatchupPeriod"]
+    known = conn.execute(
+        "SELECT COALESCE(MAX(week), 0) FROM raw_roster_entries WHERE league_id=? AND season_year=?",
+        (league_id, int(config.SEASON_YEAR)),
+    ).fetchone()[0]
+    if current_matchup_period <= known:
+        return None
+    ingest.load_week(conn, client, league_id, config.SEASON_YEAR, current_matchup_period)
+    return current_matchup_period
+
+
 def run_idle_cycle() -> bool:
-    """Non-game-day cycle — catches real waiver/free-agent/trade activity
-    without re-polling scores that can't be changing. Skips
-    load_week/load_standings (the scheduled daily job already covers
-    those once a day); still reruns calculate/recap/digest/build_dashboard
-    afterward, since those are free and local, so the activity feed and
-    any roster change show up right away rather than waiting for the next
-    live window."""
+    """Non-game-day cycle — catches real waiver/free-agent/trade activity,
+    and a brand-new week the moment ESPN itself advances to it (see
+    catch_new_week), without re-polling scores for already-known weeks
+    that can't be changing. Still reruns
+    calculate/recap/digest/build_dashboard afterward, since those are
+    free and local, so any change shows up right away rather than waiting
+    for the next live window."""
     if not (config.ESPN_S2 and config.ESPN_SWID and config.SEASON_YEAR):
         print("  FAILED: .env is missing ESPN_S2 / ESPN_SWID / SEASON_YEAR.")
         return False
@@ -183,6 +214,9 @@ def run_idle_cycle() -> bool:
     client = ESPNClient(archive_dir=config.PHASE1_PAYLOADS, verbose=True)
     try:
         for league_id in config.LEAGUES:
+            new_week = catch_new_week(conn, client, league_id)
+            if new_week:
+                print(f"  League {league_id}: ESPN advanced to week {new_week} — caught up immediately")
             n_tx = ingest.load_transactions(conn, client, league_id, config.SEASON_YEAR)
             print(f"  League {league_id}: {n_tx} transactions (roster/waiver/trade check only)")
     finally:
