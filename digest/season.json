@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T23:22:40.065059+00:00",
+  "generated_at": "2026-10-04T23:24:53.167913+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 28,
               "name": "Maybe to much Jagging off? ",
-              "score": 63.0
+              "score": 65.0
             },
             "b": {
               "team_id": 15,
@@ -420,7 +420,7 @@
           "team_id": 28,
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda",
-          "lineup_efficiency": 0.880924978687127,
+          "lineup_efficiency": 0.8823784670592201,
           "bench_points": 133.0,
           "is_provisional": true
         },
@@ -3462,22 +3462,22 @@
         },
         "28": {
           "week_stats": {
-            "actual_points": 63.0,
-            "optimal_points": 84.0,
-            "efficiency": 0.75,
+            "actual_points": 65.0,
+            "optimal_points": 86.0,
+            "efficiency": 0.7558139534883721,
             "bench_points": 34.0,
             "rank": 13
           },
           "season_stats": {
             "weeks_played": 4,
-            "points_for": 402.0,
+            "points_for": 404.0,
             "points_against": 452.0,
             "record": {
               "w": 2,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.880924978687127,
+            "lineup_efficiency": 0.8823784670592201,
             "total_bench_points": 133.0,
             "is_provisional": true
           },
@@ -3504,7 +3504,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 13.0,
+              "points": 15.0,
               "pro_team_id": 13,
               "game_status": "live",
               "opponent": "KC",
@@ -4638,7 +4638,7 @@
           "season_stats": {
             "weeks_played": 4,
             "points_for": 598.0,
-            "points_against": 410.0,
+            "points_against": 412.0,
             "record": {
               "w": 3,
               "l": 0,
@@ -5191,6 +5191,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-04T23:24:36.249018+00:00",
+          "week": 4,
+          "team_id": 28,
+          "points_before": 13.0,
+          "points_after": 15.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Ashton Jeanty",
+          "team_name": "Maybe to much Jagging off? ",
+          "manager": "Ryan Gajda"
+        },
+        {
           "detected_at": "2026-10-04T23:21:43.705419+00:00",
           "week": 4,
           "team_id": 28,
@@ -5417,18 +5429,6 @@
           "player": "Mike Evans",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-04T23:12:03.023192+00:00",
-          "week": 4,
-          "team_id": 30,
-          "points_before": 3.0,
-          "points_after": 6.0,
-          "delta": 3.0,
-          "is_starter": true,
-          "player": "Jason Myers",
-          "team_name": "Fleetwood Mac S3x Pants",
-          "manager": "Ken Nilson"
         }
       ],
       "alerts": {
@@ -5740,7 +5740,7 @@
             "a": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 109.02
+              "score": 111.02
             },
             "b": {
               "team_id": 10,
@@ -5777,7 +5777,7 @@
           "team_id": 6,
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
-          "lineup_efficiency": 0.8930954741669609,
+          "lineup_efficiency": 0.8937472824490502,
           "bench_points": 274.78000000000003,
           "is_provisional": true
         },
@@ -5873,7 +5873,7 @@
         "season_stats": {
           "weeks_played": 4,
           "points_for": 450.88,
-          "points_against": 509.36,
+          "points_against": 511.36,
           "record": {
             "w": 2,
             "l": 1,
@@ -8243,22 +8243,22 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 109.02,
-            "optimal_points": 132.12,
-            "efficiency": 0.8251589464123523,
+            "actual_points": 111.02,
+            "optimal_points": 134.12,
+            "efficiency": 0.8277661795407097,
             "bench_points": 55.7,
-            "rank": 3
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 4,
-            "points_for": 510.52,
+            "points_for": 512.52,
             "points_against": 444.96,
             "record": {
               "w": 2,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8930954741669609,
+            "lineup_efficiency": 0.8937472824490502,
             "total_bench_points": 274.78000000000003,
             "is_provisional": true
           },
@@ -8298,6 +8298,23 @@
               "injury_status": null
             },
             {
+              "name": "Ashton Jeanty",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 16.4,
+              "pro_team_id": 13,
+              "game_status": "live",
+              "opponent": "KC",
+              "own_score": 19,
+              "opp_score": 30,
+              "is_home": true,
+              "game_detail": "3:02 - 4th",
+              "kickoff_utc": "2026-10-04T20:25:00+00:00",
+              "stat_line": "58 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Christian McCaffrey",
               "position_id": 2,
               "is_starter": true,
@@ -8312,23 +8329,6 @@
               "game_detail": "2:15 - 4th",
               "kickoff_utc": "2026-10-04T20:25:00+00:00",
               "stat_line": "52 YDS, TD",
-              "injury_status": null
-            },
-            {
-              "name": "Ashton Jeanty",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 14.4,
-              "pro_team_id": 13,
-              "game_status": "live",
-              "opponent": "KC",
-              "own_score": 19,
-              "opp_score": 30,
-              "is_home": true,
-              "game_detail": "3:02 - 4th",
-              "kickoff_utc": "2026-10-04T20:25:00+00:00",
-              "stat_line": "58 YDS",
               "injury_status": null
             },
             {
@@ -8827,7 +8827,7 @@
           "season_stats": {
             "weeks_played": 4,
             "points_for": 450.88,
-            "points_against": 509.36,
+            "points_against": 511.36,
             "record": {
               "w": 2,
               "l": 1,
@@ -9812,7 +9812,7 @@
             "optimal_points": 130.32,
             "efficiency": 0.8385512584407613,
             "bench_points": 66.52,
-            "rank": 2
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 4,
@@ -10388,6 +10388,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-04T23:24:42.962647+00:00",
+          "week": 4,
+          "team_id": 6,
+          "points_before": 14.4,
+          "points_after": 16.4,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Ashton Jeanty",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
           "detected_at": "2026-10-04T23:21:48.133595+00:00",
           "week": 4,
           "team_id": 12,
@@ -10612,18 +10624,6 @@
           "delta": 9.5,
           "is_starter": false,
           "player": "RJ Harvey",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-10-04T23:12:07.401493+00:00",
-          "week": 4,
-          "team_id": 12,
-          "points_before": 4.1,
-          "points_after": 7.1,
-          "delta": 3.0,
-          "is_starter": true,
-          "player": "Omarion Hampton",
           "team_name": "God of Warren",
           "manager": "Spencer Gillis"
         }
