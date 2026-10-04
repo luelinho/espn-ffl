@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T22:13:55.637126+00:00",
+  "generated_at": "2026-10-04T22:15:25.905259+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -267,7 +267,7 @@
             "b": {
               "team_id": 17,
               "name": "Teenage Tuten Ninja Turtles",
-              "score": 81.0
+              "score": 82.0
             },
             "live": true
           },
@@ -280,7 +280,7 @@
             "b": {
               "team_id": 26,
               "name": "Purdy Good Team",
-              "score": 108.0
+              "score": 109.0
             },
             "live": true
           },
@@ -356,7 +356,7 @@
           "team_id": 17,
           "team_name": "Teenage Tuten Ninja Turtles",
           "manager": "Holden Shepherd",
-          "lineup_efficiency": 0.9615147752731021,
+          "lineup_efficiency": 0.9616818429020784,
           "bench_points": 79.0,
           "is_provisional": true
         },
@@ -388,7 +388,7 @@
           "team_id": 26,
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson",
-          "lineup_efficiency": 0.9142485475445983,
+          "lineup_efficiency": 0.9161003993964502,
           "bench_points": 182.0,
           "is_provisional": true
         },
@@ -471,7 +471,7 @@
           "optimal_points": 108.0,
           "efficiency": 0.7592592592592593,
           "bench_points": 42.0,
-          "rank": 6
+          "rank": 7
         },
         "season_stats": {
           "weeks_played": 4,
@@ -1365,7 +1365,7 @@
           "season_stats": {
             "weeks_played": 4,
             "points_for": 439.0,
-            "points_against": 457.0,
+            "points_against": 458.0,
             "record": {
               "w": 2,
               "l": 1,
@@ -2561,7 +2561,7 @@
             "optimal_points": 108.0,
             "efficiency": 0.7592592592592593,
             "bench_points": 42.0,
-            "rank": 6
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 4,
@@ -3175,7 +3175,7 @@
           "season_stats": {
             "weeks_played": 4,
             "points_for": 393.0,
-            "points_against": 340.0,
+            "points_against": 341.0,
             "record": {
               "w": 2,
               "l": 1,
@@ -3724,22 +3724,22 @@
         },
         "26": {
           "week_stats": {
-            "actual_points": 108.0,
+            "actual_points": 109.0,
             "optimal_points": 135.0,
-            "efficiency": 0.8,
+            "efficiency": 0.8074074074074075,
             "bench_points": 40.0,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 4,
-            "points_for": 513.0,
+            "points_for": 514.0,
             "points_against": 407.0,
             "record": {
               "w": 2,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9142485475445983,
+            "lineup_efficiency": 0.9161003993964502,
             "total_bench_points": 182.0,
             "is_provisional": true
           },
@@ -3796,6 +3796,23 @@
               "injury_status": null
             },
             {
+              "name": "Aaron Jones Sr.",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 9.0,
+              "pro_team_id": 16,
+              "game_status": "live",
+              "opponent": "MIA",
+              "own_score": 12,
+              "opp_score": 3,
+              "is_home": true,
+              "game_detail": "4:11 - 3rd",
+              "kickoff_utc": "2026-10-04T20:05:00+00:00",
+              "stat_line": "73 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Browns D/ST",
               "position_id": 16,
               "is_starter": true,
@@ -3810,23 +3827,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-02T00:15:00+00:00",
               "stat_line": "2 INT, 24 PA",
-              "injury_status": null
-            },
-            {
-              "name": "Aaron Jones Sr.",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 8.0,
-              "pro_team_id": 16,
-              "game_status": "live",
-              "opponent": "MIA",
-              "own_score": 12,
-              "opp_score": 3,
-              "is_home": true,
-              "game_detail": "4:11 - 3rd",
-              "kickoff_utc": "2026-10-04T20:05:00+00:00",
-              "stat_line": "69 YDS",
               "injury_status": null
             },
             {
@@ -4299,22 +4299,22 @@
         },
         "17": {
           "week_stats": {
-            "actual_points": 81.0,
-            "optimal_points": 86.0,
-            "efficiency": 0.9418604651162791,
+            "actual_points": 82.0,
+            "optimal_points": 87.0,
+            "efficiency": 0.9425287356321839,
             "bench_points": 11.0,
-            "rank": 7
+            "rank": 6
           },
           "season_stats": {
             "weeks_played": 4,
-            "points_for": 427.0,
+            "points_for": 428.0,
             "points_against": 462.0,
             "record": {
               "w": 1,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.9615147752731021,
+            "lineup_efficiency": 0.9616818429020784,
             "total_bench_points": 79.0,
             "is_provisional": true
           },
@@ -4443,7 +4443,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 1.0,
+              "points": 2.0,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "SF",
@@ -4452,7 +4452,7 @@
               "is_home": false,
               "game_detail": "13:56 - 3rd",
               "kickoff_utc": "2026-10-04T20:25:00+00:00",
-              "stat_line": "8 YDS",
+              "stat_line": "10 YDS",
               "injury_status": null
             },
             {
@@ -5191,6 +5191,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-04T22:15:12.208267+00:00",
+          "week": 4,
+          "team_id": 26,
+          "points_before": 8.0,
+          "points_after": 9.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Aaron Jones Sr.",
+          "team_name": "Purdy Good Team",
+          "manager": "Hayley Hinson"
+        },
+        {
+          "detected_at": "2026-10-04T22:15:12.206433+00:00",
+          "week": 4,
+          "team_id": 17,
+          "points_before": 1.0,
+          "points_after": 2.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "J.K. Dobbins",
+          "team_name": "Teenage Tuten Ninja Turtles",
+          "manager": "Holden Shepherd"
+        },
+        {
           "detected_at": "2026-10-04T22:10:45.057875+00:00",
           "week": 4,
           "team_id": 28,
@@ -5405,30 +5429,6 @@
           "player": "Kyler Murray",
           "team_name": "Lights, Kamara, Action! ",
           "manager": "James Prince"
-        },
-        {
-          "detected_at": "2026-10-04T21:48:30.872683+00:00",
-          "week": 4,
-          "team_id": 31,
-          "points_before": 2.0,
-          "points_after": 6.0,
-          "delta": 4.0,
-          "is_starter": false,
-          "player": "Mike Evans",
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-04T21:48:30.872548+00:00",
-          "week": 4,
-          "team_id": 31,
-          "points_before": 7.0,
-          "points_after": 9.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Jaxon Smith-Njigba",
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson"
         }
       ],
       "alerts": {
@@ -5456,7 +5456,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 4 team 26: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=108.0"
+            "description": "League 1618731 week 4 team 26: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=109.0"
           }
         ],
         "total_unresolved": 58
@@ -5753,7 +5753,7 @@
             "a": {
               "team_id": 7,
               "name": "Nabers know my name",
-              "score": 83.92
+              "score": 84.32
             },
             "b": {
               "team_id": 12,
@@ -5794,7 +5794,7 @@
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
           "lineup_efficiency": 0.8775001415749722,
-          "bench_points": 166.0,
+          "bench_points": 166.2,
           "is_provisional": true
         },
         {
@@ -5849,7 +5849,7 @@
           "team_id": 7,
           "team_name": "Nabers know my name",
           "manager": "Aaron Lechelt",
-          "lineup_efficiency": 0.811447149679051,
+          "lineup_efficiency": 0.8117214993918459,
           "bench_points": 242.86,
           "is_provisional": true
         },
@@ -5867,7 +5867,7 @@
           "actual_points": 72.88,
           "optimal_points": 89.88000000000002,
           "efficiency": 0.8108589230084554,
-          "bench_points": 32.8,
+          "bench_points": 33.0,
           "rank": 8
         },
         "season_stats": {
@@ -5880,7 +5880,7 @@
             "t": 0
           },
           "lineup_efficiency": 0.8775001415749722,
-          "total_bench_points": 166.0,
+          "total_bench_points": 166.2,
           "is_provisional": true
         },
         "roster": [
@@ -6093,7 +6093,7 @@
             "position_id": 2,
             "is_starter": false,
             "slot_id": 20,
-            "points": 2.3,
+            "points": 2.5,
             "pro_team_id": 7,
             "game_status": "live",
             "opponent": "SF",
@@ -6102,7 +6102,7 @@
             "is_home": false,
             "game_detail": "13:56 - 3rd",
             "kickoff_utc": "2026-10-04T20:25:00+00:00",
-            "stat_line": "8 YDS",
+            "stat_line": "10 YDS",
             "injury_status": null
           },
           {
@@ -7279,7 +7279,7 @@
           "season_stats": {
             "weeks_played": 4,
             "points_for": 436.64,
-            "points_against": 438.36,
+            "points_against": 438.76,
             "record": {
               "w": 1,
               "l": 2,
@@ -8821,7 +8821,7 @@
             "actual_points": 72.88,
             "optimal_points": 89.88000000000002,
             "efficiency": 0.8108589230084554,
-            "bench_points": 32.8,
+            "bench_points": 33.0,
             "rank": 8
           },
           "season_stats": {
@@ -8834,7 +8834,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8775001415749722,
-            "total_bench_points": 166.0,
+            "total_bench_points": 166.2,
             "is_provisional": true
           },
           "roster": [
@@ -9047,7 +9047,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 2.3,
+              "points": 2.5,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "SF",
@@ -9056,7 +9056,7 @@
               "is_home": false,
               "game_detail": "13:56 - 3rd",
               "kickoff_utc": "2026-10-04T20:25:00+00:00",
-              "stat_line": "8 YDS",
+              "stat_line": "10 YDS",
               "injury_status": null
             },
             {
@@ -9495,22 +9495,22 @@
         },
         "7": {
           "week_stats": {
-            "actual_points": 83.92,
-            "optimal_points": 131.52,
-            "efficiency": 0.6380778588807785,
+            "actual_points": 84.32,
+            "optimal_points": 131.92000000000002,
+            "efficiency": 0.6391752577319586,
             "bench_points": 65.42,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 4,
-            "points_for": 440.94,
+            "points_for": 441.34,
             "points_against": 447.72,
             "record": {
               "w": 2,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.811447149679051,
+            "lineup_efficiency": 0.8117214993918459,
             "total_bench_points": 242.86,
             "is_provisional": true
           },
@@ -9588,7 +9588,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 9.4,
+              "points": 9.8,
               "pro_team_id": 16,
               "game_status": "live",
               "opponent": "MIA",
@@ -9597,7 +9597,7 @@
               "is_home": true,
               "game_detail": "4:11 - 3rd",
               "kickoff_utc": "2026-10-04T20:05:00+00:00",
-              "stat_line": "69 YDS",
+              "stat_line": "73 YDS",
               "injury_status": null
             },
             {
@@ -10388,6 +10388,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-04T22:15:16.911286+00:00",
+          "week": 4,
+          "team_id": 10,
+          "points_before": 2.3,
+          "points_after": 2.5,
+          "delta": 0.2,
+          "is_starter": false,
+          "player": "J.K. Dobbins",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
+          "detected_at": "2026-10-04T22:15:16.909737+00:00",
+          "week": 4,
+          "team_id": 7,
+          "points_before": 9.4,
+          "points_after": 9.8,
+          "delta": 0.4,
+          "is_starter": true,
+          "player": "Aaron Jones Sr.",
+          "team_name": "Nabers know my name",
+          "manager": "Aaron Lechelt"
+        },
+        {
           "detected_at": "2026-10-04T22:10:49.570426+00:00",
           "week": 4,
           "team_id": 11,
@@ -10602,30 +10626,6 @@
           "player": "T.J. Hockenson",
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger"
-        },
-        {
-          "detected_at": "2026-10-04T22:01:57.483984+00:00",
-          "week": 4,
-          "team_id": 3,
-          "points_before": 5.88,
-          "points_after": 6.28,
-          "delta": 0.4,
-          "is_starter": true,
-          "player": "Kyler Murray",
-          "team_name": "8 - 9",
-          "manager": "Marcus Bess"
-        },
-        {
-          "detected_at": "2026-10-04T22:01:57.483568+00:00",
-          "week": 4,
-          "team_id": 2,
-          "points_before": 15.0,
-          "points_after": 17.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Seahawks D/ST",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
         }
       ],
       "alerts": {
