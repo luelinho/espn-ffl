@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T20:05:07.920510+00:00",
+  "generated_at": "2026-10-11T20:06:38.428055+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -262,7 +262,7 @@
             "a": {
               "team_id": 12,
               "name": "Auto Drafted \ud83d\ude43",
-              "score": 66.0
+              "score": 76.0
             },
             "b": {
               "team_id": 18,
@@ -332,7 +332,7 @@
             "b": {
               "team_id": 1,
               "name": "Lights, Kamara, Action! ",
-              "score": 75.0
+              "score": 77.0
             },
             "live": true
           },
@@ -428,7 +428,7 @@
           "team_id": 12,
           "team_name": "Auto Drafted \ud83d\ude43",
           "manager": "Marvin Cox",
-          "lineup_efficiency": 0.8763651546184248,
+          "lineup_efficiency": 0.8806069361666751,
           "bench_points": 211.0,
           "is_provisional": false
         },
@@ -436,7 +436,7 @@
           "team_id": 1,
           "team_name": "Lights, Kamara, Action! ",
           "manager": "James Prince",
-          "lineup_efficiency": 0.8459436159746335,
+          "lineup_efficiency": 0.8461936550432381,
           "bench_points": 172.0,
           "is_provisional": false
         },
@@ -764,22 +764,22 @@
       "teams_detail": {
         "12": {
           "week_stats": {
-            "actual_points": 66.0,
-            "optimal_points": 82.0,
-            "efficiency": 0.8048780487804879,
+            "actual_points": 76.0,
+            "optimal_points": 92.0,
+            "efficiency": 0.8260869565217391,
             "bench_points": 16.0,
-            "rank": 9
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 471.0,
+            "points_for": 481.0,
             "points_against": 545.0,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8763651546184248,
+            "lineup_efficiency": 0.8806069361666751,
             "total_bench_points": 211.0,
             "is_provisional": false
           },
@@ -815,7 +815,7 @@
               "is_home": true,
               "game_detail": "1:59 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "114 YDS, TD",
+              "stat_line": "116 YDS, TD",
               "injury_status": null
             },
             {
@@ -833,6 +833,23 @@
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "243 YDS, TD",
+              "injury_status": null
+            },
+            {
+              "name": "Broncos D/ST",
+              "position_id": 16,
+              "is_starter": true,
+              "slot_id": 16,
+              "points": 10.0,
+              "pro_team_id": 7,
+              "game_status": "not_started",
+              "opponent": "LAC",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": "0 PA",
               "injury_status": null
             },
             {
@@ -870,6 +887,23 @@
               "injury_status": null
             },
             {
+              "name": "Omarion Hampton",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 0.0,
+              "pro_team_id": 24,
+              "game_status": "not_started",
+              "opponent": "DEN",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Harold Fannin Jr.",
               "position_id": 4,
               "is_starter": true,
@@ -883,23 +917,6 @@
               "is_home": false,
               "game_detail": "1:59 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
-              "name": "Broncos D/ST",
-              "position_id": 16,
-              "is_starter": true,
-              "slot_id": 16,
-              "points": null,
-              "pro_team_id": 7,
-              "game_status": "not_started",
-              "opponent": "LAC",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": false,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -936,23 +953,6 @@
               "kickoff_utc": "2026-10-12T00:20:00+00:00",
               "stat_line": null,
               "injury_status": "QUESTIONABLE"
-            },
-            {
-              "name": "Omarion Hampton",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": null,
-              "pro_team_id": 24,
-              "game_status": "not_started",
-              "opponent": "DEN",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": null,
-              "injury_status": null
             },
             {
               "name": "Emeka Egbuka",
@@ -1132,6 +1132,23 @@
               "injury_status": "OUT"
             },
             {
+              "name": "Cameron Dicker",
+              "position_id": 5,
+              "is_starter": true,
+              "slot_id": 17,
+              "points": 0.0,
+              "pro_team_id": 24,
+              "game_status": "not_started",
+              "opponent": "DEN",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Seahawks D/ST",
               "position_id": 16,
               "is_starter": true,
@@ -1217,23 +1234,6 @@
               "injury_status": null
             },
             {
-              "name": "Cameron Dicker",
-              "position_id": 5,
-              "is_starter": true,
-              "slot_id": 17,
-              "points": null,
-              "pro_team_id": 24,
-              "game_status": "not_started",
-              "opponent": "DEN",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
               "name": "Jameson Williams",
               "position_id": 3,
               "is_starter": true,
@@ -1306,7 +1306,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": null,
+              "points": 0.0,
               "pro_team_id": 7,
               "game_status": "not_started",
               "opponent": "LAC",
@@ -1945,6 +1945,23 @@
               "injury_status": "OUT"
             },
             {
+              "name": "Keaton Mitchell",
+              "position_id": 2,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 0.0,
+              "pro_team_id": 24,
+              "game_status": "not_started",
+              "opponent": "DEN",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Tyreek Hill",
               "position_id": 3,
               "is_starter": false,
@@ -1977,23 +1994,6 @@
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
               "stat_line": null,
               "injury_status": null
-            },
-            {
-              "name": "Keaton Mitchell",
-              "position_id": 2,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": null,
-              "pro_team_id": 24,
-              "game_status": "not_started",
-              "opponent": "DEN",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": null,
-              "injury_status": null
             }
           ]
         },
@@ -2008,7 +2008,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 476.0,
-            "points_against": 503.0,
+            "points_against": 505.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -2287,7 +2287,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 620.0,
-            "points_against": 556.0,
+            "points_against": 566.0,
             "record": {
               "w": 3,
               "l": 1,
@@ -2486,6 +2486,23 @@
               "injury_status": null
             },
             {
+              "name": "Tre' Harris",
+              "position_id": 3,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 0.0,
+              "pro_team_id": 24,
+              "game_status": "not_started",
+              "opponent": "DEN",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Darren Waller",
               "position_id": 4,
               "is_starter": false,
@@ -2533,23 +2550,6 @@
               "is_home": false,
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
-              "name": "Tre' Harris",
-              "position_id": 3,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": null,
-              "pro_team_id": 24,
-              "game_status": "not_started",
-              "opponent": "DEN",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -2874,7 +2874,7 @@
             "optimal_points": 89.0,
             "efficiency": 0.7528089887640449,
             "bench_points": 22.0,
-            "rank": 8
+            "rank": 9
           },
           "season_stats": {
             "weeks_played": 5,
@@ -2976,6 +2976,23 @@
               "injury_status": null
             },
             {
+              "name": "Jaylen Waddle",
+              "position_id": 3,
+              "is_starter": true,
+              "slot_id": 4,
+              "points": 0.0,
+              "pro_team_id": 7,
+              "game_status": "not_started",
+              "opponent": "LAC",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Michael Wilson",
               "position_id": 3,
               "is_starter": true,
@@ -2989,23 +3006,6 @@
               "is_home": true,
               "game_detail": "10/11 - 4:25 PM EDT",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
-              "name": "Jaylen Waddle",
-              "position_id": 3,
-              "is_starter": true,
-              "slot_id": 4,
-              "points": null,
-              "pro_team_id": 7,
-              "game_status": "not_started",
-              "opponent": "LAC",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": false,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -3132,22 +3132,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 75.0,
-            "optimal_points": 79.0,
-            "efficiency": 0.9493670886075949,
+            "actual_points": 77.0,
+            "optimal_points": 81.0,
+            "efficiency": 0.9506172839506173,
             "bench_points": 4.0,
-            "rank": 7
+            "rank": 6
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 478.0,
+            "points_for": 480.0,
             "points_against": 394.0,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8459436159746335,
+            "lineup_efficiency": 0.8461936550432381,
             "total_bench_points": 172.0,
             "is_provisional": false
           },
@@ -3191,7 +3191,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 9.0,
+              "points": 11.0,
               "pro_team_id": 15,
               "game_status": "live",
               "opponent": "CIN",
@@ -3200,7 +3200,7 @@
               "is_home": true,
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "5 REC, 38 YDS",
+              "stat_line": "6 REC, 44 YDS",
               "injury_status": null
             },
             {
@@ -3252,7 +3252,24 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "1 REC, 7 YDS",
-              "injury_status": "OUT"
+              "injury_status": "QUESTIONABLE"
+            },
+            {
+              "name": "Courtland Sutton",
+              "position_id": 3,
+              "is_starter": true,
+              "slot_id": 23,
+              "points": 0.0,
+              "pro_team_id": 7,
+              "game_status": "not_started",
+              "opponent": "LAC",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
             },
             {
               "name": "Giants D/ST",
@@ -3285,23 +3302,6 @@
               "is_home": false,
               "game_detail": "10/11 - 4:25 PM EDT",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
-              "name": "Courtland Sutton",
-              "position_id": 3,
-              "is_starter": true,
-              "slot_id": 23,
-              "points": null,
-              "pro_team_id": 7,
-              "game_status": "not_started",
-              "opponent": "LAC",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": false,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -3432,7 +3432,7 @@
             "optimal_points": 79.0,
             "efficiency": 0.9620253164556962,
             "bench_points": 1.0,
-            "rank": 6
+            "rank": 8
           },
           "season_stats": {
             "weeks_played": 5,
@@ -3949,28 +3949,11 @@
               "injury_status": null
             },
             {
-              "name": "Kyle Pitts Sr.",
-              "position_id": 4,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": null,
-              "pro_team_id": 1,
-              "game_status": "not_started",
-              "opponent": "BAL",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "10/11 - 8:20 PM EDT",
-              "kickoff_utc": "2026-10-12T00:20:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
               "name": "RJ Harvey",
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": null,
+              "points": 0.0,
               "pro_team_id": 7,
               "game_status": "not_started",
               "opponent": "LAC",
@@ -3987,7 +3970,7 @@
               "position_id": 3,
               "is_starter": false,
               "slot_id": 20,
-              "points": null,
+              "points": 0.0,
               "pro_team_id": 24,
               "game_status": "not_started",
               "opponent": "DEN",
@@ -3996,6 +3979,23 @@
               "is_home": true,
               "game_detail": "10/11 - 4:05 PM EDT",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
+              "name": "Kyle Pitts Sr.",
+              "position_id": 4,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": null,
+              "pro_team_id": 1,
+              "game_status": "not_started",
+              "opponent": "BAL",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "10/11 - 8:20 PM EDT",
+              "kickoff_utc": "2026-10-12T00:20:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -4439,6 +4439,23 @@
               "injury_status": null
             },
             {
+              "name": "J.K. Dobbins",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 0.0,
+              "pro_team_id": 7,
+              "game_status": "not_started",
+              "opponent": "LAC",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Kenyon Sadiq",
               "position_id": 4,
               "is_starter": true,
@@ -4469,23 +4486,6 @@
               "is_home": false,
               "game_detail": "Final",
               "kickoff_utc": "2026-10-09T00:15:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
-              "name": "J.K. Dobbins",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": null,
-              "pro_team_id": 7,
-              "game_status": "not_started",
-              "opponent": "LAC",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": false,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T20:06:23.200612+00:00",
+          "week": 5,
+          "team_id": 1,
+          "points_before": 9.0,
+          "points_after": 11.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Malik Washington",
+          "team_name": "Lights, Kamara, Action! ",
+          "manager": "James Prince"
+        },
+        {
           "detected_at": "2026-10-11T20:04:53.073591+00:00",
           "week": 5,
           "team_id": 29,
@@ -5374,18 +5386,6 @@
           "player": "Isaiah Likely",
           "team_name": "Goff Is My Copilot",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-11T19:52:52.977413+00:00",
-          "week": 5,
-          "team_id": 19,
-          "points_before": 38.0,
-          "points_after": 39.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Drake Maye",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
         }
       ],
       "alerts": {
@@ -5650,7 +5650,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 67.16
+              "score": 78.66
             },
             "live": true
           },
@@ -5671,7 +5671,7 @@
             "a": {
               "team_id": 8,
               "name": "Hawk Tua on my Penix",
-              "score": 23.68
+              "score": 24.2
             },
             "b": {
               "team_id": 7,
@@ -5684,12 +5684,12 @@
             "a": {
               "team_id": 10,
               "name": "LaPorta Authority ",
-              "score": 75.54
+              "score": 75.74
             },
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 88.1
+              "score": 86.1
             },
             "live": true
           },
@@ -5734,7 +5734,7 @@
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.9260797888228488,
+          "lineup_efficiency": 0.9265853546631277,
           "bench_points": 213.16,
           "is_provisional": false
         },
@@ -5759,7 +5759,7 @@
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
           "lineup_efficiency": 0.8852822695939399,
-          "bench_points": 338.86,
+          "bench_points": 339.1,
           "is_provisional": false
         },
         {
@@ -5774,7 +5774,7 @@
           "team_id": 4,
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey",
-          "lineup_efficiency": 0.8826599559591797,
+          "lineup_efficiency": 0.8818129351514052,
           "bench_points": 329.36,
           "is_provisional": false
         },
@@ -5798,7 +5798,7 @@
           "team_id": 10,
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
-          "lineup_efficiency": 0.8349603495760846,
+          "lineup_efficiency": 0.8350485675487018,
           "bench_points": 254.48000000000002,
           "is_provisional": false
         },
@@ -5806,7 +5806,7 @@
           "team_id": 8,
           "team_name": "Hawk Tua on my Penix",
           "manager": "William Millians",
-          "lineup_efficiency": 0.803714219654559,
+          "lineup_efficiency": 0.8047398606802,
           "bench_points": 187.02,
           "is_provisional": false
         },
@@ -5821,22 +5821,22 @@
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 75.53999999999999,
-          "optimal_points": 95.84,
-          "efficiency": 0.7881886477462436,
+          "actual_points": 75.74000000000001,
+          "optimal_points": 96.03999999999999,
+          "efficiency": 0.7886297376093296,
           "bench_points": 27.3,
-          "rank": 7
+          "rank": 8
         },
         "season_stats": {
           "weeks_played": 5,
-          "points_for": 537.26,
-          "points_against": 605.96,
+          "points_for": 537.46,
+          "points_against": 603.96,
           "record": {
             "w": 2,
             "l": 2,
             "t": 0
           },
-          "lineup_efficiency": 0.8349603495760846,
+          "lineup_efficiency": 0.8350485675487018,
           "total_bench_points": 254.48000000000002,
           "is_provisional": false
         },
@@ -5863,7 +5863,7 @@
             "position_id": 2,
             "is_starter": true,
             "slot_id": 23,
-            "points": 18.4,
+            "points": 18.6,
             "pro_team_id": 20,
             "game_status": "live",
             "opponent": "CLE",
@@ -5872,7 +5872,7 @@
             "is_home": true,
             "game_detail": "1:59 - 4th",
             "kickoff_utc": "2026-10-11T17:00:00+00:00",
-            "stat_line": "114 YDS, TD",
+            "stat_line": "116 YDS, TD",
             "injury_status": null
           },
           {
@@ -6046,6 +6046,23 @@
             "injury_status": null
           },
           {
+            "name": "J.K. Dobbins",
+            "position_id": 2,
+            "is_starter": false,
+            "slot_id": 20,
+            "points": 0.0,
+            "pro_team_id": 7,
+            "game_status": "not_started",
+            "opponent": "LAC",
+            "own_score": 0,
+            "opp_score": 0,
+            "is_home": false,
+            "game_detail": "10/11 - 4:05 PM EDT",
+            "kickoff_utc": "2026-10-11T20:05:00+00:00",
+            "stat_line": null,
+            "injury_status": null
+          },
+          {
             "name": "Alec Pierce",
             "position_id": 3,
             "is_starter": false,
@@ -6112,23 +6129,6 @@
             "kickoff_utc": "2026-10-11T17:00:00+00:00",
             "stat_line": null,
             "injury_status": "INJURY_RESERVE"
-          },
-          {
-            "name": "J.K. Dobbins",
-            "position_id": 2,
-            "is_starter": false,
-            "slot_id": 20,
-            "points": null,
-            "pro_team_id": 7,
-            "game_status": "not_started",
-            "opponent": "LAC",
-            "own_score": 0,
-            "opp_score": 0,
-            "is_home": false,
-            "game_detail": "10/11 - 4:05 PM EDT",
-            "kickoff_utc": "2026-10-11T20:05:00+00:00",
-            "stat_line": null,
-            "injury_status": null
           },
           {
             "name": "Rashod Bateman",
@@ -6326,6 +6326,23 @@
               "injury_status": "OUT"
             },
             {
+              "name": "Jaylen Waddle",
+              "position_id": 3,
+              "is_starter": true,
+              "slot_id": 4,
+              "points": 0.0,
+              "pro_team_id": 7,
+              "game_status": "not_started",
+              "opponent": "LAC",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Eddy Pineiro",
               "position_id": 5,
               "is_starter": true,
@@ -6339,23 +6356,6 @@
               "is_home": false,
               "game_detail": "10/11 - 4:25 PM EDT",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
-              "name": "Jaylen Waddle",
-              "position_id": 3,
-              "is_starter": true,
-              "slot_id": 4,
-              "points": null,
-              "pro_team_id": 7,
-              "game_status": "not_started",
-              "opponent": "LAC",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": false,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -6445,6 +6445,23 @@
               "injury_status": "INJURY_RESERVE"
             },
             {
+              "name": "Bo Nix",
+              "position_id": 1,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 0.0,
+              "pro_team_id": 7,
+              "game_status": "not_started",
+              "opponent": "LAC",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Breece Hall",
               "position_id": 2,
               "is_starter": false,
@@ -6460,23 +6477,6 @@
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": null,
               "injury_status": "OUT"
-            },
-            {
-              "name": "Bo Nix",
-              "position_id": 1,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": null,
-              "pro_team_id": 7,
-              "game_status": "not_started",
-              "opponent": "LAC",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": false,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": null,
-              "injury_status": null
             },
             {
               "name": "Jonathon Brooks",
@@ -6499,22 +6499,22 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 88.1,
-            "optimal_points": 116.19999999999999,
-            "efficiency": 0.7581755593803787,
+            "actual_points": 86.1,
+            "optimal_points": 114.19999999999999,
+            "efficiency": 0.7539404553415061,
             "bench_points": 32.3,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 574.26,
-            "points_against": 500.8,
+            "points_for": 572.26,
+            "points_against": 501.0,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.8826599559591797,
+            "lineup_efficiency": 0.8818129351514052,
             "total_bench_points": 329.36,
             "is_provisional": false
           },
@@ -6571,23 +6571,6 @@
               "injury_status": null
             },
             {
-              "name": "Commanders D/ST",
-              "position_id": 16,
-              "is_starter": true,
-              "slot_id": 16,
-              "points": 6.0,
-              "pro_team_id": 28,
-              "game_status": "live",
-              "opponent": "NYG",
-              "own_score": 27,
-              "opp_score": 20,
-              "is_home": true,
-              "game_detail": "2:00 - 4th",
-              "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "FR, 20 PA",
-              "injury_status": null
-            },
-            {
               "name": "Cam Skattebo",
               "position_id": 2,
               "is_starter": true,
@@ -6602,6 +6585,23 @@
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "27 YDS",
+              "injury_status": null
+            },
+            {
+              "name": "Commanders D/ST",
+              "position_id": 16,
+              "is_starter": true,
+              "slot_id": 16,
+              "points": 4.0,
+              "pro_team_id": 28,
+              "game_status": "live",
+              "opponent": "NYG",
+              "own_score": 27,
+              "opp_score": 20,
+              "is_home": true,
+              "game_detail": "2:00 - 4th",
+              "kickoff_utc": "2026-10-11T17:00:00+00:00",
+              "stat_line": "FR, 20 PA",
               "injury_status": null
             },
             {
@@ -6850,12 +6850,12 @@
             "optimal_points": 90.14000000000001,
             "efficiency": 0.7969824717106722,
             "bench_points": 18.3,
-            "rank": 8
+            "rank": 9
           },
           "season_stats": {
             "weeks_played": 5,
             "points_for": 636.3,
-            "points_against": 523.7,
+            "points_against": 535.2,
             "record": {
               "w": 3,
               "l": 1,
@@ -7299,6 +7299,23 @@
               "injury_status": null
             },
             {
+              "name": "RJ Harvey",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 23,
+              "points": 0.0,
+              "pro_team_id": 7,
+              "game_status": "not_started",
+              "opponent": "LAC",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Cardinals D/ST",
               "position_id": 16,
               "is_starter": true,
@@ -7329,23 +7346,6 @@
               "is_home": true,
               "game_detail": "10/11 - 4:25 PM EDT",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
-              "name": "RJ Harvey",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 23,
-              "points": null,
-              "pro_team_id": 7,
-              "game_status": "not_started",
-              "opponent": "LAC",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": false,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -7401,6 +7401,23 @@
               "injury_status": null
             },
             {
+              "name": "Omarion Hampton",
+              "position_id": 2,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 0.0,
+              "pro_team_id": 24,
+              "game_status": "not_started",
+              "opponent": "DEN",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Rashee Rice",
               "position_id": 3,
               "is_starter": false,
@@ -7431,23 +7448,6 @@
               "is_home": true,
               "game_detail": "10/12 - 8:15 PM EDT",
               "kickoff_utc": "2026-10-13T00:15:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
-              "name": "Omarion Hampton",
-              "position_id": 2,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": null,
-              "pro_team_id": 24,
-              "game_status": "not_started",
-              "opponent": "DEN",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -7489,22 +7489,22 @@
         },
         "8": {
           "week_stats": {
-            "actual_points": 23.68,
-            "optimal_points": 38.480000000000004,
-            "efficiency": 0.6153846153846153,
+            "actual_points": 24.2,
+            "optimal_points": 39.0,
+            "efficiency": 0.6205128205128205,
             "bench_points": 14.8,
             "rank": 12
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 493.0,
+            "points_for": 493.52,
             "points_against": 663.74,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.803714219654559,
+            "lineup_efficiency": 0.8047398606802,
             "total_bench_points": 187.02,
             "is_provisional": false
           },
@@ -7514,7 +7514,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 17.38,
+              "points": 17.9,
               "pro_team_id": 19,
               "game_status": "live",
               "opponent": "WSH",
@@ -7523,7 +7523,7 @@
               "is_home": false,
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "252 YDS, 2 TD",
+              "stat_line": "265 YDS, 2 TD",
               "injury_status": null
             },
             {
@@ -8061,6 +8061,23 @@
               "injury_status": null
             },
             {
+              "name": "Justin Herbert",
+              "position_id": 1,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 0.0,
+              "pro_team_id": 24,
+              "game_status": "not_started",
+              "opponent": "DEN",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Jordan Addison",
               "position_id": 3,
               "is_starter": false,
@@ -8078,11 +8095,11 @@
               "injury_status": "OUT"
             },
             {
-              "name": "Justin Herbert",
-              "position_id": 1,
+              "name": "Ladd McConkey",
+              "position_id": 3,
               "is_starter": false,
               "slot_id": 20,
-              "points": null,
+              "points": 0.0,
               "pro_team_id": 24,
               "game_status": "not_started",
               "opponent": "DEN",
@@ -8112,23 +8129,6 @@
               "injury_status": null
             },
             {
-              "name": "Ladd McConkey",
-              "position_id": 3,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": null,
-              "pro_team_id": 24,
-              "game_status": "not_started",
-              "opponent": "DEN",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
               "name": "Rachaad White",
               "position_id": 2,
               "is_starter": false,
@@ -8152,7 +8152,7 @@
             "actual_points": 83.6,
             "optimal_points": 94.9,
             "efficiency": 0.8809272918861959,
-            "bench_points": 35.78,
+            "bench_points": 36.02,
             "rank": 5
           },
           "season_stats": {
@@ -8165,7 +8165,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8852822695939399,
-            "total_bench_points": 338.86,
+            "total_bench_points": 339.1,
             "is_provisional": false
           },
           "roster": [
@@ -8344,7 +8344,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 10.38,
+              "points": 10.62,
               "pro_team_id": 15,
               "game_status": "live",
               "opponent": "CIN",
@@ -8353,7 +8353,7 @@
               "is_home": true,
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "102 YDS, TD, 2 INT",
+              "stat_line": "108 YDS, TD, 2 INT",
               "injury_status": null
             },
             {
@@ -8684,7 +8684,7 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "1 REC, 7 YDS",
-              "injury_status": "OUT"
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Bears D/ST",
@@ -8775,22 +8775,22 @@
         },
         "10": {
           "week_stats": {
-            "actual_points": 75.53999999999999,
-            "optimal_points": 95.84,
-            "efficiency": 0.7881886477462436,
+            "actual_points": 75.74000000000001,
+            "optimal_points": 96.03999999999999,
+            "efficiency": 0.7886297376093296,
             "bench_points": 27.3,
-            "rank": 7
+            "rank": 8
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 537.26,
-            "points_against": 605.96,
+            "points_for": 537.46,
+            "points_against": 603.96,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.8349603495760846,
+            "lineup_efficiency": 0.8350485675487018,
             "total_bench_points": 254.48000000000002,
             "is_provisional": false
           },
@@ -8817,7 +8817,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 23,
-              "points": 18.4,
+              "points": 18.6,
               "pro_team_id": 20,
               "game_status": "live",
               "opponent": "CLE",
@@ -8826,7 +8826,7 @@
               "is_home": true,
               "game_detail": "1:59 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "114 YDS, TD",
+              "stat_line": "116 YDS, TD",
               "injury_status": null
             },
             {
@@ -9000,6 +9000,23 @@
               "injury_status": null
             },
             {
+              "name": "J.K. Dobbins",
+              "position_id": 2,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 0.0,
+              "pro_team_id": 7,
+              "game_status": "not_started",
+              "opponent": "LAC",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Alec Pierce",
               "position_id": 3,
               "is_starter": false,
@@ -9066,23 +9083,6 @@
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": null,
               "injury_status": "INJURY_RESERVE"
-            },
-            {
-              "name": "J.K. Dobbins",
-              "position_id": 2,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": null,
-              "pro_team_id": 7,
-              "game_status": "not_started",
-              "opponent": "LAC",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": false,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": null,
-              "injury_status": null
             },
             {
               "name": "Rashod Bateman",
@@ -9156,22 +9156,22 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 67.16,
-            "optimal_points": 68.36000000000001,
-            "efficiency": 0.9824458747805732,
+            "actual_points": 78.66,
+            "optimal_points": 79.86,
+            "efficiency": 0.9849737039819684,
             "bench_points": 1.04,
-            "rank": 9
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 557.92,
+            "points_for": 569.42,
             "points_against": 471.70000000000005,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9260797888228488,
+            "lineup_efficiency": 0.9265853546631277,
             "total_bench_points": 213.16,
             "is_provisional": false
           },
@@ -9181,7 +9181,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 39.56,
+              "points": 39.46,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "LV",
@@ -9215,7 +9215,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 10.6,
+              "points": 12.2,
               "pro_team_id": 15,
               "game_status": "live",
               "opponent": "CIN",
@@ -9224,7 +9224,7 @@
               "is_home": true,
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "5 REC, 38 YDS",
+              "stat_line": "6 REC, 44 YDS",
               "injury_status": null
             },
             {
@@ -9232,7 +9232,24 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": null,
+              "points": 10.0,
+              "pro_team_id": 7,
+              "game_status": "not_started",
+              "opponent": "LAC",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": "0 PA",
+              "injury_status": null
+            },
+            {
+              "name": "Courtland Sutton",
+              "position_id": 3,
+              "is_starter": true,
+              "slot_id": 4,
+              "points": 0.0,
               "pro_team_id": 7,
               "game_status": "not_started",
               "opponent": "LAC",
@@ -9275,23 +9292,6 @@
               "is_home": false,
               "game_detail": "10/11 - 8:20 PM EDT",
               "kickoff_utc": "2026-10-12T00:20:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
-              "name": "Courtland Sutton",
-              "position_id": 3,
-              "is_starter": true,
-              "slot_id": 4,
-              "points": null,
-              "pro_team_id": 7,
-              "game_status": "not_started",
-              "opponent": "LAC",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": false,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -9381,6 +9381,23 @@
               "injury_status": "OUT"
             },
             {
+              "name": "Keaton Mitchell",
+              "position_id": 2,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 0.0,
+              "pro_team_id": 24,
+              "game_status": "not_started",
+              "opponent": "DEN",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "10/11 - 4:05 PM EDT",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
               "name": "Tyler Shough",
               "position_id": 1,
               "is_starter": false,
@@ -9449,23 +9466,6 @@
               "injury_status": null
             },
             {
-              "name": "Keaton Mitchell",
-              "position_id": 2,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": null,
-              "pro_team_id": 24,
-              "game_status": "not_started",
-              "opponent": "DEN",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "10/11 - 4:05 PM EDT",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
               "name": "Xavier Worthy",
               "position_id": 3,
               "is_starter": false,
@@ -9495,7 +9495,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 607.04,
-            "points_against": 508.6,
+            "points_against": 509.12,
             "record": {
               "w": 3,
               "l": 1,
@@ -10199,9 +10199,9 @@
         {
           "added": "Braelon Allen",
           "dropped": "Jaguars D/ST",
-          "added_pts": 18.4,
+          "added_pts": 18.6,
           "dropped_pts": 8.0,
-          "net": 10.399999999999999,
+          "net": 10.600000000000001,
           "horizon_weeks": 3,
           "is_complete": false,
           "week": 4
@@ -10449,6 +10449,54 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T20:06:27.755053+00:00",
+          "week": 5,
+          "team_id": 10,
+          "points_before": 18.4,
+          "points_after": 18.6,
+          "delta": 0.2,
+          "is_starter": true,
+          "player": "Braelon Allen",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
+          "detected_at": "2026-10-11T20:06:27.754270+00:00",
+          "week": 5,
+          "team_id": 8,
+          "points_before": 17.38,
+          "points_after": 17.9,
+          "delta": 0.52,
+          "is_starter": true,
+          "player": "Jameis Winston",
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians"
+        },
+        {
+          "detected_at": "2026-10-11T20:06:27.753194+00:00",
+          "week": 5,
+          "team_id": 6,
+          "points_before": 10.38,
+          "points_after": 10.62,
+          "delta": 0.24,
+          "is_starter": false,
+          "player": "Malik Willis",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
+          "detected_at": "2026-10-11T20:06:27.750524+00:00",
+          "week": 5,
+          "team_id": 2,
+          "points_before": 10.6,
+          "points_after": 12.2,
+          "delta": 1.6,
+          "is_starter": true,
+          "player": "Malik Washington",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-11T20:04:57.447620+00:00",
           "week": 5,
           "team_id": 10,
@@ -10639,54 +10687,6 @@
           "player": "Keenan Allen",
           "team_name": "Hawk Tua on my Penix",
           "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-11T19:58:57.480832+00:00",
-          "week": 5,
-          "team_id": 7,
-          "points_before": 10.12,
-          "points_after": 10.68,
-          "delta": 0.56,
-          "is_starter": false,
-          "player": "Daniel Jones",
-          "team_name": "Nabers know my name",
-          "manager": "Aaron Lechelt"
-        },
-        {
-          "detected_at": "2026-10-11T19:58:57.480522+00:00",
-          "week": 5,
-          "team_id": 7,
-          "points_before": 8.5,
-          "points_after": 11.4,
-          "delta": 2.9,
-          "is_starter": true,
-          "player": "Malik Nabers",
-          "team_name": "Nabers know my name",
-          "manager": "Aaron Lechelt"
-        },
-        {
-          "detected_at": "2026-10-11T19:58:57.478138+00:00",
-          "week": 5,
-          "team_id": 3,
-          "points_before": 14.0,
-          "points_after": 15.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jets D/ST",
-          "team_name": "8 - 9",
-          "manager": "Marcus Bess"
-        },
-        {
-          "detected_at": "2026-10-11T19:57:27.404214+00:00",
-          "week": 5,
-          "team_id": 6,
-          "points_before": 10.0,
-          "points_after": 11.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Bengals D/ST",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
@@ -10714,7 +10714,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=88.1"
+            "description": "League 581297461 week 5 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=86.1"
           }
         ],
         "total_unresolved": 60
