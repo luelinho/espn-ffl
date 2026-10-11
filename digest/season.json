@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T21:29:08.431712+00:00",
+  "generated_at": "2026-10-11T21:30:38.216201+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -275,7 +275,7 @@
             "a": {
               "team_id": 15,
               "name": "Uncle Rico's QB Camp",
-              "score": 61.0
+              "score": 62.0
             },
             "b": {
               "team_id": 31,
@@ -372,7 +372,7 @@
           "team_id": 15,
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams",
-          "lineup_efficiency": 0.9486135217964069,
+          "lineup_efficiency": 0.9490819902648754,
           "bench_points": 175.0,
           "is_provisional": false
         },
@@ -1678,7 +1678,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 537.0,
-            "points_against": 555.0,
+            "points_against": 556.0,
             "record": {
               "w": 1,
               "l": 3,
@@ -4595,22 +4595,22 @@
         },
         "15": {
           "week_stats": {
-            "actual_points": 61.0,
-            "optimal_points": 74.0,
-            "efficiency": 0.8243243243243243,
+            "actual_points": 62.0,
+            "optimal_points": 75.0,
+            "efficiency": 0.8266666666666667,
             "bench_points": 14.0,
             "rank": 12
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 706.0,
+            "points_for": 707.0,
             "points_against": 498.0,
             "record": {
               "w": 4,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.9486135217964069,
+            "lineup_efficiency": 0.9490819902648754,
             "total_bench_points": 175.0,
             "is_provisional": false
           },
@@ -4701,6 +4701,23 @@
               "injury_status": null
             },
             {
+              "name": "Jake Bates",
+              "position_id": 5,
+              "is_starter": true,
+              "slot_id": 17,
+              "points": 2.0,
+              "pro_team_id": 8,
+              "game_status": "live",
+              "opponent": "ARI",
+              "own_score": 7,
+              "opp_score": 7,
+              "is_home": false,
+              "game_detail": "10:05 - 2nd",
+              "kickoff_utc": "2026-10-11T20:25:00+00:00",
+              "stat_line": "2/2 XP",
+              "injury_status": null
+            },
+            {
               "name": "Steelers D/ST",
               "position_id": 16,
               "is_starter": true,
@@ -4715,23 +4732,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "22 PA",
-              "injury_status": null
-            },
-            {
-              "name": "Jake Bates",
-              "position_id": 5,
-              "is_starter": true,
-              "slot_id": 17,
-              "points": 1.0,
-              "pro_team_id": 8,
-              "game_status": "live",
-              "opponent": "ARI",
-              "own_score": 7,
-              "opp_score": 7,
-              "is_home": false,
-              "game_detail": "10:05 - 2nd",
-              "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "2/2 XP",
               "injury_status": null
             },
             {
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:30:23.236473+00:00",
+          "week": 5,
+          "team_id": 15,
+          "points_before": 1.0,
+          "points_after": 2.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Jake Bates",
+          "team_name": "Uncle Rico's QB Camp",
+          "manager": "Ben Williams"
+        },
+        {
           "detected_at": "2026-10-11T21:28:53.307330+00:00",
           "week": 5,
           "team_id": 30,
@@ -5374,18 +5386,6 @@
           "player": "Jaxon Smith-Njigba",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-11T21:03:23.181382+00:00",
-          "week": 5,
-          "team_id": 17,
-          "points_before": 8.0,
-          "points_after": 9.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "J.K. Dobbins",
-          "team_name": "Teenage Tuten Ninja Turtles",
-          "manager": "Holden Shepherd"
         }
       ],
       "alerts": {
