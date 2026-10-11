@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T21:18:38.332972+00:00",
+  "generated_at": "2026-10-11T21:20:08.803215+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -340,7 +340,7 @@
             "a": {
               "team_id": 32,
               "name": "Bama boys heavy 251",
-              "score": 46.0
+              "score": 47.0
             },
             "b": {
               "team_id": 25,
@@ -404,7 +404,7 @@
           "team_id": 32,
           "team_name": "Bama boys heavy 251",
           "manager": "Nkhrumba Overton Jr.",
-          "lineup_efficiency": 0.9062620901938411,
+          "lineup_efficiency": 0.9069634344369739,
           "bench_points": 195.0,
           "is_provisional": false
         },
@@ -476,7 +476,7 @@
         "season_stats": {
           "weeks_played": 5,
           "points_for": 626.0,
-          "points_against": 511.0,
+          "points_against": 512.0,
           "record": {
             "w": 2,
             "l": 2,
@@ -1077,22 +1077,22 @@
         },
         "32": {
           "week_stats": {
-            "actual_points": 46.0,
-            "optimal_points": 58.0,
-            "efficiency": 0.7931034482758621,
+            "actual_points": 47.0,
+            "optimal_points": 59.0,
+            "efficiency": 0.7966101694915254,
             "bench_points": 15.0,
             "rank": 14
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 498.0,
+            "points_for": 499.0,
             "points_against": 587.0,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.9062620901938411,
+            "lineup_efficiency": 0.9069634344369739,
             "total_bench_points": 195.0,
             "is_provisional": false
           },
@@ -1119,7 +1119,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 11.0,
+              "points": 12.0,
               "pro_team_id": 26,
               "game_status": "live",
               "opponent": "SF",
@@ -2583,7 +2583,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 626.0,
-            "points_against": 511.0,
+            "points_against": 512.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:19:53.281800+00:00",
+          "week": 5,
+          "team_id": 32,
+          "points_before": 11.0,
+          "points_after": 12.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Seahawks D/ST",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
           "detected_at": "2026-10-11T21:18:23.264027+00:00",
           "week": 5,
           "team_id": 26,
@@ -5374,18 +5386,6 @@
           "player": "Tre' Harris",
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer"
-        },
-        {
-          "detected_at": "2026-10-11T20:57:23.333889+00:00",
-          "week": 5,
-          "team_id": 18,
-          "points_before": 1.0,
-          "points_after": 2.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jeremiyah Love",
-          "team_name": "G.E.T S.O.M.E ",
-          "manager": "Donnie Palmer"
         }
       ],
       "alerts": {
@@ -5408,7 +5408,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 5 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=46.0"
+            "description": "League 1618731 week 5 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=47.0"
           },
           {
             "severity": "warning",
@@ -5658,7 +5658,7 @@
             "a": {
               "team_id": 3,
               "name": "8 - 9",
-              "score": 78.66
+              "score": 78.76
             },
             "b": {
               "team_id": 9,
@@ -5735,7 +5735,7 @@
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
           "lineup_efficiency": 0.9249823189358585,
-          "bench_points": 224.86,
+          "bench_points": 225.86,
           "is_provisional": false
         },
         {
@@ -5782,8 +5782,8 @@
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
-          "lineup_efficiency": 0.8772103540930323,
-          "bench_points": 151.44,
+          "lineup_efficiency": 0.877247470369681,
+          "bench_points": 151.34,
           "is_provisional": false
         },
         {
@@ -6203,23 +6203,23 @@
       "teams_detail": {
         "3": {
           "week_stats": {
-            "actual_points": 78.66,
-            "optimal_points": 95.66000000000001,
-            "efficiency": 0.8222872674053939,
-            "bench_points": 23.04,
+            "actual_points": 78.76,
+            "optimal_points": 95.76,
+            "efficiency": 0.8224728487886382,
+            "bench_points": 22.94,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 510.04,
+            "points_for": 510.14,
             "points_against": 557.68,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8772103540930323,
-            "total_bench_points": 151.44,
+            "lineup_efficiency": 0.877247470369681,
+            "total_bench_points": 151.34,
             "is_provisional": false
           },
           "roster": [
@@ -6313,7 +6313,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 2.7,
+              "points": 2.8,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "LAC",
@@ -6415,7 +6415,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 3.04,
+              "points": 2.94,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "LAC",
@@ -9159,7 +9159,7 @@
             "actual_points": 80.56,
             "optimal_points": 82.46000000000001,
             "efficiency": 0.9769585253456221,
-            "bench_points": 12.74,
+            "bench_points": 13.74,
             "rank": 9
           },
           "season_stats": {
@@ -9172,7 +9172,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.9249823189358585,
-            "total_bench_points": 224.86,
+            "total_bench_points": 225.86,
             "is_provisional": false
           },
           "roster": [
@@ -9334,7 +9334,7 @@
               "position_id": 16,
               "is_starter": false,
               "slot_id": 20,
-              "points": 11.0,
+              "points": 12.0,
               "pro_team_id": 26,
               "game_status": "live",
               "opponent": "SF",
@@ -9808,7 +9808,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 470.14,
-            "points_against": 686.26,
+            "points_against": 686.36,
             "record": {
               "w": 0,
               "l": 4,
@@ -10449,6 +10449,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:19:58.003292+00:00",
+          "week": 5,
+          "team_id": 3,
+          "points_before": 2.7,
+          "points_after": 2.8,
+          "delta": 0.1,
+          "is_starter": true,
+          "player": "Jaylen Waddle",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
+          "detected_at": "2026-10-11T21:19:58.002972+00:00",
+          "week": 5,
+          "team_id": 2,
+          "points_before": 11.0,
+          "points_after": 12.0,
+          "delta": 1.0,
+          "is_starter": false,
+          "player": "Seahawks D/ST",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-11T21:18:27.622395+00:00",
           "week": 5,
           "team_id": 1,
@@ -10663,30 +10687,6 @@
           "player": "Jared Goff",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-10-11T21:09:27.576703+00:00",
-          "week": 5,
-          "team_id": 3,
-          "points_before": 1.9,
-          "points_after": 2.7,
-          "delta": 0.8,
-          "is_starter": true,
-          "player": "Jaylen Waddle",
-          "team_name": "8 - 9",
-          "manager": "Marcus Bess"
-        },
-        {
-          "detected_at": "2026-10-11T21:09:27.576555+00:00",
-          "week": 5,
-          "team_id": 3,
-          "points_before": 3.9,
-          "points_after": 5.5,
-          "delta": 1.6,
-          "is_starter": true,
-          "player": "Jahmyr Gibbs",
-          "team_name": "8 - 9",
-          "manager": "Marcus Bess"
         }
       ],
       "alerts": {
@@ -10699,7 +10699,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=78.66"
+            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=78.76"
           },
           {
             "severity": "warning",
