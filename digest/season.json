@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T18:32:07.281294+00:00",
+  "generated_at": "2026-10-11T18:33:37.828967+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -353,19 +353,19 @@
       },
       "leaderboard": [
         {
-          "team_id": 15,
-          "team_name": "Uncle Rico's QB Camp",
-          "manager": "Ben Williams",
-          "lineup_efficiency": 0.9630590017591283,
-          "bench_points": 170.0,
-          "is_provisional": false
-        },
-        {
           "team_id": 16,
           "team_name": "Bijan, demons!",
           "manager": "Harry Hinson",
           "lineup_efficiency": 0.9547207151276919,
           "bench_points": 137.0,
+          "is_provisional": false
+        },
+        {
+          "team_id": 15,
+          "team_name": "Uncle Rico's QB Camp",
+          "manager": "Ben Williams",
+          "lineup_efficiency": 0.951490592415413,
+          "bench_points": 172.0,
           "is_provisional": false
         },
         {
@@ -2238,7 +2238,7 @@
               "game_detail": "Halftime",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": null,
-              "injury_status": null
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Tetairoa McMillan",
@@ -4596,9 +4596,9 @@
         "15": {
           "week_stats": {
             "actual_points": 26.0,
-            "optimal_points": 29.0,
-            "efficiency": 0.896551724137931,
-            "bench_points": 9.0,
+            "optimal_points": 31.0,
+            "efficiency": 0.8387096774193549,
+            "bench_points": 11.0,
             "rank": 13
           },
           "season_stats": {
@@ -4610,8 +4610,8 @@
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.9630590017591283,
-            "total_bench_points": 170.0,
+            "lineup_efficiency": 0.951490592415413,
+            "total_bench_points": 172.0,
             "is_provisional": false
           },
           "roster": [
@@ -4773,7 +4773,7 @@
               "position_id": 16,
               "is_starter": false,
               "slot_id": 20,
-              "points": 8.0,
+              "points": 10.0,
               "pro_team_id": 16,
               "game_status": "live",
               "opponent": "NO",
@@ -4782,7 +4782,7 @@
               "is_home": false,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "7 PA",
+              "stat_line": "FR, 7 PA",
               "injury_status": null
             },
             {
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T18:33:22.782683+00:00",
+          "week": 5,
+          "team_id": 15,
+          "points_before": 8.0,
+          "points_after": 10.0,
+          "delta": 2.0,
+          "is_starter": false,
+          "player": "Vikings D/ST",
+          "team_name": "Uncle Rico's QB Camp",
+          "manager": "Ben Williams"
+        },
+        {
           "detected_at": "2026-10-11T18:31:52.566158+00:00",
           "week": 5,
           "team_id": 1,
@@ -5374,18 +5386,6 @@
           "player": "Pat Freiermuth",
           "team_name": "Fleetwood Mac S3x Pants",
           "manager": "Ken Nilson"
-        },
-        {
-          "detected_at": "2026-10-11T18:21:22.715761+00:00",
-          "week": 5,
-          "team_id": 29,
-          "points_before": 13.0,
-          "points_after": 14.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Joe Burrow",
-          "team_name": "Kelsey not  Kelce ",
-          "manager": "Kelsey Prince"
         }
       ],
       "alerts": {
@@ -5645,7 +5645,7 @@
             "a": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 51.14
+              "score": 53.14
             },
             "b": {
               "team_id": 2,
@@ -5723,19 +5723,19 @@
       },
       "leaderboard": [
         {
+          "team_id": 1,
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels",
+          "lineup_efficiency": 0.9246739893175336,
+          "bench_points": 234.72,
+          "is_provisional": false
+        },
+        {
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
           "lineup_efficiency": 0.9233242953288752,
           "bench_points": 214.8,
-          "is_provisional": false
-        },
-        {
-          "team_id": 1,
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels",
-          "lineup_efficiency": 0.9231984189571785,
-          "bench_points": 234.72,
           "is_provisional": false
         },
         {
@@ -5751,7 +5751,7 @@
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
           "lineup_efficiency": 0.8943080788223344,
-          "bench_points": 317.0,
+          "bench_points": 317.16,
           "is_provisional": false
         },
         {
@@ -6789,7 +6789,7 @@
               "game_detail": "Halftime",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": null,
-              "injury_status": null
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Darren Waller",
@@ -6846,22 +6846,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 51.14,
-            "optimal_points": 69.44,
-            "efficiency": 0.736463133640553,
+            "actual_points": 53.14,
+            "optimal_points": 71.44,
+            "efficiency": 0.7438409854423292,
             "bench_points": 18.3,
-            "rank": 6
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 615.6,
+            "points_for": 617.6,
             "points_against": 493.64,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9231984189571785,
+            "lineup_efficiency": 0.9246739893175336,
             "total_bench_points": 234.72,
             "is_provisional": false
           },
@@ -6901,6 +6901,23 @@
               "injury_status": null
             },
             {
+              "name": "Vikings D/ST",
+              "position_id": 16,
+              "is_starter": true,
+              "slot_id": 16,
+              "points": 10.0,
+              "pro_team_id": 16,
+              "game_status": "live",
+              "opponent": "NO",
+              "own_score": 6,
+              "opp_score": 7,
+              "is_home": false,
+              "game_detail": "Halftime",
+              "kickoff_utc": "2026-10-11T17:00:00+00:00",
+              "stat_line": "FR, 7 PA",
+              "injury_status": null
+            },
+            {
               "name": "Ollie Gordon II",
               "position_id": 2,
               "is_starter": true,
@@ -6915,23 +6932,6 @@
               "game_detail": "0:55 - 2nd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "33 YDS, TD",
-              "injury_status": null
-            },
-            {
-              "name": "Vikings D/ST",
-              "position_id": 16,
-              "is_starter": true,
-              "slot_id": 16,
-              "points": 8.0,
-              "pro_team_id": 16,
-              "game_status": "live",
-              "opponent": "NO",
-              "own_score": 6,
-              "opp_score": 7,
-              "is_home": false,
-              "game_detail": "Halftime",
-              "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "7 PA",
               "injury_status": null
             },
             {
@@ -8152,8 +8152,8 @@
             "actual_points": 52.6,
             "optimal_points": 56.8,
             "efficiency": 0.9260563380281691,
-            "bench_points": 13.92,
-            "rank": 5
+            "bench_points": 14.08,
+            "rank": 6
           },
           "season_stats": {
             "weeks_played": 5,
@@ -8165,7 +8165,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8943080788223344,
-            "total_bench_points": 317.0,
+            "total_bench_points": 317.16,
             "is_provisional": false
           },
           "roster": [
@@ -8395,7 +8395,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": -2.28,
+              "points": -2.12,
               "pro_team_id": 15,
               "game_status": "live",
               "opponent": "CIN",
@@ -8404,7 +8404,7 @@
               "is_home": true,
               "game_detail": "0:55 - 2nd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "43 YDS, 2 INT",
+              "stat_line": "47 YDS, 2 INT",
               "injury_status": null
             },
             {
@@ -9165,7 +9165,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 527.86,
-            "points_against": 451.0,
+            "points_against": 453.0,
             "record": {
               "w": 3,
               "l": 1,
@@ -10449,6 +10449,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T18:33:27.292213+00:00",
+          "week": 5,
+          "team_id": 6,
+          "points_before": -2.28,
+          "points_after": -2.12,
+          "delta": 0.16,
+          "is_starter": false,
+          "player": "Malik Willis",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
+          "detected_at": "2026-10-11T18:33:27.288856+00:00",
+          "week": 5,
+          "team_id": 1,
+          "points_before": 8.0,
+          "points_after": 10.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Vikings D/ST",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-11T18:31:56.937220+00:00",
           "week": 5,
           "team_id": 6,
@@ -10663,30 +10687,6 @@
           "player": "Drake Maye",
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-10-11T18:24:27.229133+00:00",
-          "week": 5,
-          "team_id": 10,
-          "points_before": 11.4,
-          "points_after": 13.4,
-          "delta": 2.0,
-          "is_starter": false,
-          "player": "Rhamondre Stevenson",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-11T18:22:56.902154+00:00",
-          "week": 5,
-          "team_id": 10,
-          "points_before": 10.7,
-          "points_after": 11.4,
-          "delta": 0.7,
-          "is_starter": false,
-          "player": "Rhamondre Stevenson",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
