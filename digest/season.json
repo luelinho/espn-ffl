@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T23:32:08.916153+00:00",
+  "generated_at": "2026-10-11T23:33:38.919611+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -306,7 +306,7 @@
             "b": {
               "team_id": 28,
               "name": "Maybe to much Jagging off? ",
-              "score": 96.0
+              "score": 100.0
             },
             "live": true
           },
@@ -420,7 +420,7 @@
           "team_id": 28,
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda",
-          "lineup_efficiency": 0.8986793768890955,
+          "lineup_efficiency": 0.8989147402312551,
           "bench_points": 150.0,
           "is_provisional": false
         },
@@ -1162,7 +1162,7 @@
               "is_home": true,
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "INT, 2 FR, 29 PA",
+              "stat_line": "INT, 2 FR, 32 PA",
               "injury_status": null
             },
             {
@@ -3428,22 +3428,22 @@
         },
         "28": {
           "week_stats": {
-            "actual_points": 96.0,
-            "optimal_points": 99.0,
-            "efficiency": 0.9696969696969697,
+            "actual_points": 100.0,
+            "optimal_points": 103.0,
+            "efficiency": 0.970873786407767,
             "bench_points": 1.0,
-            "rank": 8
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 518.0,
+            "points_for": 522.0,
             "points_against": 634.0,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.8986793768890955,
+            "lineup_efficiency": 0.8989147402312551,
             "total_bench_points": 150.0,
             "is_provisional": false
           },
@@ -3534,6 +3534,23 @@
               "injury_status": "QUESTIONABLE"
             },
             {
+              "name": "Eddy Pineiro",
+              "position_id": 5,
+              "is_starter": true,
+              "slot_id": 17,
+              "points": 6.0,
+              "pro_team_id": 25,
+              "game_status": "live",
+              "opponent": "SEA",
+              "own_score": 29,
+              "opp_score": 29,
+              "is_home": false,
+              "game_detail": "2:00 - 4th",
+              "kickoff_utc": "2026-10-11T20:25:00+00:00",
+              "stat_line": "1/2 FG, 3/3 XP",
+              "injury_status": null
+            },
+            {
               "name": "Colston Loveland",
               "position_id": 4,
               "is_starter": true,
@@ -3548,23 +3565,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "2 REC, 19 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Eddy Pineiro",
-              "position_id": 5,
-              "is_starter": true,
-              "slot_id": 17,
-              "points": 2.0,
-              "pro_team_id": 25,
-              "game_status": "live",
-              "opponent": "SEA",
-              "own_score": 29,
-              "opp_score": 29,
-              "is_home": false,
-              "game_detail": "2:00 - 4th",
-              "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "0/1 FG, 3/3 XP",
               "injury_status": null
             },
             {
@@ -4029,7 +4029,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 498.0,
-            "points_against": 521.0,
+            "points_against": 525.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -4303,7 +4303,7 @@
             "optimal_points": 114.0,
             "efficiency": 0.8508771929824561,
             "bench_points": 18.0,
-            "rank": 7
+            "rank": 8
           },
           "season_stats": {
             "weeks_played": 5,
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T23:33:23.862097+00:00",
+          "week": 5,
+          "team_id": 28,
+          "points_before": 2.0,
+          "points_after": 6.0,
+          "delta": 4.0,
+          "is_starter": true,
+          "player": "Eddy Pineiro",
+          "team_name": "Maybe to much Jagging off? ",
+          "manager": "Ryan Gajda"
+        },
+        {
           "detected_at": "2026-10-11T23:28:54.093589+00:00",
           "week": 5,
           "team_id": 32,
@@ -5374,18 +5386,6 @@
           "player": "Brock Purdy",
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson"
-        },
-        {
-          "detected_at": "2026-10-11T23:09:23.766967+00:00",
-          "week": 5,
-          "team_id": 15,
-          "points_before": 9.0,
-          "points_after": 10.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jake Bates",
-          "team_name": "Uncle Rico's QB Camp",
-          "manager": "Ben Williams"
         }
       ],
       "alerts": {
@@ -5658,7 +5658,7 @@
             "a": {
               "team_id": 3,
               "name": "8 - 9",
-              "score": 107.56
+              "score": 111.56
             },
             "b": {
               "team_id": 9,
@@ -5758,7 +5758,7 @@
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
-          "lineup_efficiency": 0.8854568184025764,
+          "lineup_efficiency": 0.8863061053412628,
           "bench_points": 156.32,
           "is_provisional": false
         },
@@ -6203,22 +6203,22 @@
       "teams_detail": {
         "3": {
           "week_stats": {
-            "actual_points": 107.56,
-            "optimal_points": 124.56,
-            "efficiency": 0.863519588953115,
+            "actual_points": 111.56,
+            "optimal_points": 128.56,
+            "efficiency": 0.8677660236465463,
             "bench_points": 27.92,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 538.94,
+            "points_for": 542.94,
             "points_against": 565.28,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8854568184025764,
+            "lineup_efficiency": 0.8863061053412628,
             "total_bench_points": 156.32,
             "is_provisional": false
           },
@@ -6309,6 +6309,23 @@
               "injury_status": null
             },
             {
+              "name": "Eddy Pineiro",
+              "position_id": 5,
+              "is_starter": true,
+              "slot_id": 17,
+              "points": 6.0,
+              "pro_team_id": 25,
+              "game_status": "live",
+              "opponent": "SEA",
+              "own_score": 29,
+              "opp_score": 29,
+              "is_home": false,
+              "game_detail": "2:00 - 4th",
+              "kickoff_utc": "2026-10-11T20:25:00+00:00",
+              "stat_line": "1/2 FG, 3/3 XP",
+              "injury_status": null
+            },
+            {
               "name": "Jaylen Waddle",
               "position_id": 3,
               "is_starter": true,
@@ -6340,23 +6357,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "8 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Eddy Pineiro",
-              "position_id": 5,
-              "is_starter": true,
-              "slot_id": 17,
-              "points": 2.0,
-              "pro_team_id": 25,
-              "game_status": "live",
-              "opponent": "SEA",
-              "own_score": 29,
-              "opp_score": 29,
-              "is_home": false,
-              "game_detail": "2:00 - 4th",
-              "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "0/1 FG, 3/3 XP",
               "injury_status": null
             },
             {
@@ -9343,7 +9343,7 @@
               "is_home": true,
               "game_detail": "2:00 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "INT, 2 FR, 29 PA",
+              "stat_line": "INT, 2 FR, 32 PA",
               "injury_status": null
             },
             {
@@ -9808,7 +9808,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 477.74,
-            "points_against": 715.16,
+            "points_against": 719.16,
             "record": {
               "w": 0,
               "l": 4,
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T23:33:28.264063+00:00",
+          "week": 5,
+          "team_id": 3,
+          "points_before": 2.0,
+          "points_after": 6.0,
+          "delta": 4.0,
+          "is_starter": true,
+          "player": "Eddy Pineiro",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-10-11T23:28:58.757628+00:00",
           "week": 5,
           "team_id": 12,
@@ -10675,18 +10687,6 @@
           "player": "Tyler Allgeier",
           "team_name": "Hawk Tua on my Penix",
           "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-11T23:13:58.580975+00:00",
-          "week": 5,
-          "team_id": 8,
-          "points_before": 12.4,
-          "points_after": 13.7,
-          "delta": 1.3,
-          "is_starter": true,
-          "player": "Trey McBride",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
         }
       ],
       "alerts": {
@@ -10699,7 +10699,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=107.56"
+            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=111.56"
           },
           {
             "severity": "warning",
