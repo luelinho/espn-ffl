@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T18:33:37.828967+00:00",
+  "generated_at": "2026-10-11T18:35:07.433523+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -5751,7 +5751,7 @@
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
           "lineup_efficiency": 0.8943080788223344,
-          "bench_points": 317.16,
+          "bench_points": 318.46000000000004,
           "is_provisional": false
         },
         {
@@ -5807,7 +5807,7 @@
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison",
           "lineup_efficiency": 0.8107402739896882,
-          "bench_points": 295.82,
+          "bench_points": 295.72,
           "is_provisional": false
         },
         {
@@ -8152,7 +8152,7 @@
             "actual_points": 52.6,
             "optimal_points": 56.8,
             "efficiency": 0.9260563380281691,
-            "bench_points": 14.08,
+            "bench_points": 15.38,
             "rank": 6
           },
           "season_stats": {
@@ -8165,7 +8165,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8943080788223344,
-            "total_bench_points": 317.16,
+            "total_bench_points": 318.46000000000004,
             "is_provisional": false
           },
           "roster": [
@@ -8395,7 +8395,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": -2.12,
+              "points": -0.82,
               "pro_team_id": 15,
               "game_status": "live",
               "opponent": "CIN",
@@ -9802,7 +9802,7 @@
             "actual_points": 35.2,
             "optimal_points": 56.82000000000001,
             "efficiency": 0.6195001759943681,
-            "bench_points": 26.52,
+            "bench_points": 26.419999999999998,
             "rank": 10
           },
           "season_stats": {
@@ -9815,7 +9815,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8107402739896882,
-            "total_bench_points": 295.82,
+            "total_bench_points": 295.72,
             "is_provisional": false
           },
           "roster": [
@@ -10011,7 +10011,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 4.9,
+              "points": 4.8,
               "pro_team_id": 28,
               "game_status": "live",
               "opponent": "NYG",
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T18:34:57.019935+00:00",
+          "week": 5,
+          "team_id": 6,
+          "points_before": -2.12,
+          "points_after": -0.82,
+          "delta": 1.3,
+          "is_starter": false,
+          "player": "Malik Willis",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
           "detected_at": "2026-10-11T18:33:27.292213+00:00",
           "week": 5,
           "team_id": 6,
@@ -10675,18 +10687,6 @@
           "player": "Jerry Jeudy",
           "team_name": "Nabers know my name",
           "manager": "Aaron Lechelt"
-        },
-        {
-          "detected_at": "2026-10-11T18:25:57.004070+00:00",
-          "week": 5,
-          "team_id": 2,
-          "points_before": 10.72,
-          "points_after": 11.76,
-          "delta": 1.04,
-          "is_starter": true,
-          "player": "Drake Maye",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
         }
       ],
       "alerts": {
