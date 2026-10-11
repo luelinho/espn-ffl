@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T23:26:09.088288+00:00",
+  "generated_at": "2026-10-11T23:27:39.492150+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -340,7 +340,7 @@
             "a": {
               "team_id": 32,
               "name": "Bama boys heavy 251",
-              "score": 78.0
+              "score": 80.0
             },
             "b": {
               "team_id": 25,
@@ -404,7 +404,7 @@
           "team_id": 32,
           "team_name": "Bama boys heavy 251",
           "manager": "Nkhrumba Overton Jr.",
-          "lineup_efficiency": 0.9153833360225396,
+          "lineup_efficiency": 0.9160624531702476,
           "bench_points": 201.0,
           "is_provisional": false
         },
@@ -476,7 +476,7 @@
         "season_stats": {
           "weeks_played": 5,
           "points_for": 662.0,
-          "points_against": 543.0,
+          "points_against": 545.0,
           "record": {
             "w": 2,
             "l": 2,
@@ -1077,22 +1077,22 @@
         },
         "32": {
           "week_stats": {
-            "actual_points": 78.0,
-            "optimal_points": 93.0,
-            "efficiency": 0.8387096774193549,
+            "actual_points": 80.0,
+            "optimal_points": 95.0,
+            "efficiency": 0.8421052631578947,
             "bench_points": 21.0,
             "rank": 13
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 530.0,
+            "points_for": 532.0,
             "points_against": 623.0,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.9153833360225396,
+            "lineup_efficiency": 0.9160624531702476,
             "total_bench_points": 201.0,
             "is_provisional": false
           },
@@ -1136,7 +1136,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 13.0,
+              "points": 15.0,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "SEA",
@@ -2567,7 +2567,7 @@
               "is_home": false,
               "game_detail": "6:09 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "1 YDS",
+              "stat_line": "12 YDS",
               "injury_status": null
             }
           ]
@@ -2583,7 +2583,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 662.0,
-            "points_against": 543.0,
+            "points_against": 545.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -3775,7 +3775,7 @@
               "is_home": false,
               "game_detail": "6:09 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "182 YDS, 2 TD, INT",
+              "stat_line": "189 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T23:27:23.922981+00:00",
+          "week": 5,
+          "team_id": 32,
+          "points_before": 13.0,
+          "points_after": 15.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Christian McCaffrey",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
           "detected_at": "2026-10-11T23:25:53.997646+00:00",
           "week": 5,
           "team_id": 32,
@@ -5374,18 +5386,6 @@
           "player": "Jahmyr Gibbs",
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams"
-        },
-        {
-          "detected_at": "2026-10-11T23:07:53.715926+00:00",
-          "week": 5,
-          "team_id": 28,
-          "points_before": 10.0,
-          "points_after": 12.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Amon-Ra St. Brown",
-          "team_name": "Maybe to much Jagging off? ",
-          "manager": "Ryan Gajda"
         }
       ],
       "alerts": {
@@ -5408,7 +5408,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 5 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=78.0"
+            "description": "League 1618731 week 5 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=80.0"
           },
           {
             "severity": "warning",
@@ -5702,7 +5702,7 @@
             "b": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 98.7
+              "score": 101.4
             },
             "live": true
           },
@@ -5726,8 +5726,8 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.9436951579326068,
-          "bench_points": 250.8,
+          "lineup_efficiency": 0.9432945010811913,
+          "bench_points": 251.08,
           "is_provisional": false
         },
         {
@@ -5751,7 +5751,7 @@
           "team_name": "God of Warren",
           "manager": "Spencer Gillis",
           "lineup_efficiency": 0.9027143319797141,
-          "bench_points": 252.28,
+          "bench_points": 253.38000000000002,
           "is_provisional": false
         },
         {
@@ -5774,7 +5774,7 @@
           "team_id": 6,
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
-          "lineup_efficiency": 0.8832015916012482,
+          "lineup_efficiency": 0.883803909769423,
           "bench_points": 347.36,
           "is_provisional": false
         },
@@ -6847,9 +6847,9 @@
         "1": {
           "week_stats": {
             "actual_points": 98.14,
-            "optimal_points": 116.98,
-            "efficiency": 0.8389468285176953,
-            "bench_points": 34.379999999999995,
+            "optimal_points": 117.26,
+            "efficiency": 0.8369435442606173,
+            "bench_points": 34.66,
             "rank": 8
           },
           "season_stats": {
@@ -6861,8 +6861,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9436951579326068,
-            "total_bench_points": 250.8,
+            "lineup_efficiency": 0.9432945010811913,
+            "total_bench_points": 251.08,
             "is_provisional": false
           },
           "roster": [
@@ -7041,7 +7041,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 16.08,
+              "points": 16.36,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "SEA",
@@ -7050,7 +7050,7 @@
               "is_home": false,
               "game_detail": "6:09 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "182 YDS, 2 TD, INT",
+              "stat_line": "189 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -7179,7 +7179,7 @@
             "actual_points": 126.52,
             "optimal_points": 131.52,
             "efficiency": 0.9619829683698295,
-            "bench_points": 12.3,
+            "bench_points": 13.4,
             "rank": 2
           },
           "season_stats": {
@@ -7192,7 +7192,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.9027143319797141,
-            "total_bench_points": 252.28,
+            "total_bench_points": 253.38000000000002,
             "is_provisional": false
           },
           "roster": [
@@ -7422,7 +7422,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 0.1,
+              "points": 1.2,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "SEA",
@@ -7431,7 +7431,7 @@
               "is_home": false,
               "game_detail": "6:09 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "1 YDS",
+              "stat_line": "12 YDS",
               "injury_status": null
             },
             {
@@ -7811,7 +7811,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 603.88,
-            "points_against": 590.3199999999999,
+            "points_against": 593.02,
             "record": {
               "w": 1,
               "l": 3,
@@ -8149,22 +8149,22 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 98.69999999999999,
-            "optimal_points": 113.38,
-            "efficiency": 0.8705239019227377,
+            "actual_points": 101.39999999999999,
+            "optimal_points": 116.08,
+            "efficiency": 0.8735354927636112,
             "bench_points": 44.28,
             "rank": 7
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 617.72,
+            "points_for": 620.42,
             "points_against": 561.88,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8832015916012482,
+            "lineup_efficiency": 0.883803909769423,
             "total_bench_points": 347.36,
             "is_provisional": false
           },
@@ -8191,7 +8191,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 14.6,
+              "points": 17.3,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "SEA",
@@ -10449,6 +10449,42 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T23:27:28.451323+00:00",
+          "week": 5,
+          "team_id": 12,
+          "points_before": 0.1,
+          "points_after": 1.2,
+          "delta": 1.1,
+          "is_starter": false,
+          "player": "Kaelon Black",
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis"
+        },
+        {
+          "detected_at": "2026-10-11T23:27:28.448009+00:00",
+          "week": 5,
+          "team_id": 6,
+          "points_before": 14.6,
+          "points_after": 17.3,
+          "delta": 2.7,
+          "is_starter": true,
+          "player": "Christian McCaffrey",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
+          "detected_at": "2026-10-11T23:27:28.445227+00:00",
+          "week": 5,
+          "team_id": 1,
+          "points_before": 16.08,
+          "points_after": 16.36,
+          "delta": 0.28,
+          "is_starter": false,
+          "player": "Brock Purdy",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-11T23:25:58.396209+00:00",
           "week": 5,
           "team_id": 6,
@@ -10651,42 +10687,6 @@
           "player": "Keaton Mitchell",
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-10-11T23:12:28.141911+00:00",
-          "week": 5,
-          "team_id": 1,
-          "points_before": 14.08,
-          "points_after": 16.08,
-          "delta": 2.0,
-          "is_starter": false,
-          "player": "Brock Purdy",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-11T23:12:28.141822+00:00",
-          "week": 5,
-          "team_id": 1,
-          "points_before": 24.3,
-          "points_after": 26.3,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Mike Evans",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-11T23:10:58.714043+00:00",
-          "week": 5,
-          "team_id": 1,
-          "points_before": 9.8,
-          "points_after": 14.08,
-          "delta": 4.28,
-          "is_starter": false,
-          "player": "Brock Purdy",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
         }
       ],
       "alerts": {
