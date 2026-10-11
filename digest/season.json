@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T22:45:39.130722+00:00",
+  "generated_at": "2026-10-11T22:47:08.834615+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -1162,7 +1162,7 @@
               "is_home": true,
               "game_detail": "5:05 - 3rd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "INT, FR, 21 PA",
+              "stat_line": "INT, 2 FR, 21 PA",
               "injury_status": null
             },
             {
@@ -5702,7 +5702,7 @@
             "b": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 98.2
+              "score": 96.2
             },
             "live": true
           },
@@ -5731,14 +5731,6 @@
           "is_provisional": false
         },
         {
-          "team_id": 2,
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.9099055744966554,
-          "bench_points": 227.46,
-          "is_provisional": false
-        },
-        {
           "team_id": 5,
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger",
@@ -5747,19 +5739,19 @@
           "is_provisional": false
         },
         {
+          "team_id": 2,
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers",
+          "lineup_efficiency": 0.905824203726399,
+          "bench_points": 229.46,
+          "is_provisional": false
+        },
+        {
           "team_id": 12,
           "team_name": "God of Warren",
           "manager": "Spencer Gillis",
           "lineup_efficiency": 0.9026147649580359,
           "bench_points": 252.68,
-          "is_provisional": false
-        },
-        {
-          "team_id": 6,
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach",
-          "lineup_efficiency": 0.8862252383451278,
-          "bench_points": 347.36,
           "is_provisional": false
         },
         {
@@ -5776,6 +5768,14 @@
           "manager": "Marcus Bess",
           "lineup_efficiency": 0.8830482002799597,
           "bench_points": 151.78,
+          "is_provisional": false
+        },
+        {
+          "team_id": 6,
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach",
+          "lineup_efficiency": 0.8826177347376241,
+          "bench_points": 347.36,
           "is_provisional": false
         },
         {
@@ -6207,7 +6207,7 @@
             "optimal_points": 114.46,
             "efficiency": 0.8514764983400316,
             "bench_points": 23.38,
-            "rank": 6
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 5,
@@ -7806,12 +7806,12 @@
             "optimal_points": 105.82,
             "efficiency": 0.9121149121149121,
             "bench_points": 29.54,
-            "rank": 7
+            "rank": 6
           },
           "season_stats": {
             "weeks_played": 5,
             "points_for": 594.32,
-            "points_against": 589.8199999999999,
+            "points_against": 587.8199999999999,
             "record": {
               "w": 1,
               "l": 3,
@@ -8149,22 +8149,22 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 98.19999999999999,
+            "actual_points": 96.19999999999999,
             "optimal_points": 110.88000000000001,
-            "efficiency": 0.8856421356421355,
+            "efficiency": 0.8676046176046174,
             "bench_points": 44.28,
-            "rank": 5
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 617.22,
+            "points_for": 615.22,
             "points_against": 552.3199999999999,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8862252383451278,
+            "lineup_efficiency": 0.8826177347376241,
             "total_bench_points": 347.36,
             "is_provisional": false
           },
@@ -8293,7 +8293,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 23,
-              "points": 4.5,
+              "points": 2.5,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "SEA",
@@ -9157,9 +9157,9 @@
         "2": {
           "week_stats": {
             "actual_points": 77.86,
-            "optimal_points": 86.36,
-            "efficiency": 0.9015748031496063,
-            "bench_points": 15.34,
+            "optimal_points": 88.36,
+            "efficiency": 0.881167949298325,
+            "bench_points": 17.34,
             "rank": 10
           },
           "season_stats": {
@@ -9171,8 +9171,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9099055744966554,
-            "total_bench_points": 227.46,
+            "lineup_efficiency": 0.905824203726399,
+            "total_bench_points": 229.46,
             "is_provisional": false
           },
           "roster": [
@@ -9334,7 +9334,7 @@
               "position_id": 16,
               "is_starter": false,
               "slot_id": 20,
-              "points": 10.0,
+              "points": 12.0,
               "pro_team_id": 26,
               "game_status": "live",
               "opponent": "SF",
@@ -9343,7 +9343,7 @@
               "is_home": true,
               "game_detail": "5:05 - 3rd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "INT, FR, 21 PA",
+              "stat_line": "INT, 2 FR, 21 PA",
               "injury_status": null
             },
             {
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T22:46:58.147722+00:00",
+          "week": 5,
+          "team_id": 2,
+          "points_before": 10.0,
+          "points_after": 12.0,
+          "delta": 2.0,
+          "is_starter": false,
+          "player": "Seahawks D/ST",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-11T22:45:28.334741+00:00",
           "week": 5,
           "team_id": 3,
@@ -10675,18 +10687,6 @@
           "player": "Emanuel Wilson",
           "team_name": "God of Warren",
           "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-10-11T22:36:28.157107+00:00",
-          "week": 5,
-          "team_id": 9,
-          "points_before": 1.5,
-          "points_after": 2.4,
-          "delta": 0.9,
-          "is_starter": true,
-          "player": "George Kittle",
-          "team_name": "Spider 2 Y Banana",
-          "manager": "Stacks Harrison"
         }
       ],
       "alerts": {
