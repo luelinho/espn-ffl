@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T23:08:08.847241+00:00",
+  "generated_at": "2026-10-11T23:09:38.972574+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -275,7 +275,7 @@
             "a": {
               "team_id": 15,
               "name": "Uncle Rico's QB Camp",
-              "score": 106.0
+              "score": 114.0
             },
             "b": {
               "team_id": 31,
@@ -356,7 +356,7 @@
           "team_id": 15,
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams",
-          "lineup_efficiency": 0.9618999174357438,
+          "lineup_efficiency": 0.9632762159866601,
           "bench_points": 175.0,
           "is_provisional": false
         },
@@ -1678,7 +1678,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 573.0,
-            "points_against": 600.0,
+            "points_against": 608.0,
             "record": {
               "w": 1,
               "l": 3,
@@ -4384,7 +4384,7 @@
               "is_home": false,
               "game_detail": "2:29 - 4th",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "61 YDS, TD",
+              "stat_line": "68 YDS, TD",
               "injury_status": null
             },
             {
@@ -4595,22 +4595,22 @@
         },
         "15": {
           "week_stats": {
-            "actual_points": 106.0,
-            "optimal_points": 119.0,
-            "efficiency": 0.8907563025210085,
+            "actual_points": 114.0,
+            "optimal_points": 127.0,
+            "efficiency": 0.8976377952755905,
             "bench_points": 14.0,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 751.0,
+            "points_for": 759.0,
             "points_against": 534.0,
             "record": {
               "w": 4,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.9618999174357438,
+            "lineup_efficiency": 0.9632762159866601,
             "total_bench_points": 175.0,
             "is_provisional": false
           },
@@ -4620,7 +4620,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 31.0,
+              "points": 38.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "ARI",
@@ -4629,7 +4629,7 @@
               "is_home": false,
               "game_detail": "8:04 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "148 YDS, TD",
+              "stat_line": "151 YDS, 2 TD",
               "injury_status": null
             },
             {
@@ -4705,7 +4705,7 @@
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
-              "points": 9.0,
+              "points": 10.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "ARI",
@@ -4714,7 +4714,7 @@
               "is_home": false,
               "game_detail": "8:04 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "1/1 FG, 5/5 XP",
+              "stat_line": "1/1 FG, 6/6 XP",
               "injury_status": null
             },
             {
@@ -5148,6 +5148,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T23:09:23.766967+00:00",
+          "week": 5,
+          "team_id": 15,
+          "points_before": 9.0,
+          "points_after": 10.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Jake Bates",
+          "team_name": "Uncle Rico's QB Camp",
+          "manager": "Ben Williams"
+        },
+        {
+          "detected_at": "2026-10-11T23:09:23.765643+00:00",
+          "week": 5,
+          "team_id": 15,
+          "points_before": 31.0,
+          "points_after": 38.0,
+          "delta": 7.0,
+          "is_starter": true,
+          "player": "Jahmyr Gibbs",
+          "team_name": "Uncle Rico's QB Camp",
+          "manager": "Ben Williams"
+        },
+        {
           "detected_at": "2026-10-11T23:07:53.715926+00:00",
           "week": 5,
           "team_id": 28,
@@ -5360,30 +5384,6 @@
           "delta": 1.0,
           "is_starter": true,
           "player": "Jahmyr Gibbs",
-          "team_name": "Uncle Rico's QB Camp",
-          "manager": "Ben Williams"
-        },
-        {
-          "detected_at": "2026-10-11T23:00:23.693394+00:00",
-          "week": 5,
-          "team_id": 12,
-          "points_before": 10.0,
-          "points_after": 11.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Broncos D/ST",
-          "team_name": "Auto Drafted \ud83d\ude43",
-          "manager": "Marvin Cox"
-        },
-        {
-          "detected_at": "2026-10-11T22:58:53.664904+00:00",
-          "week": 5,
-          "team_id": 15,
-          "points_before": 4.0,
-          "points_after": 6.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "George Kittle",
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams"
         }
@@ -5658,7 +5658,7 @@
             "a": {
               "team_id": 3,
               "name": "8 - 9",
-              "score": 101.26
+              "score": 107.56
             },
             "b": {
               "team_id": 9,
@@ -5671,7 +5671,7 @@
             "a": {
               "team_id": 8,
               "name": "Hawk Tua on my Penix",
-              "score": 66.34
+              "score": 67.34
             },
             "b": {
               "team_id": 7,
@@ -5755,19 +5755,19 @@
           "is_provisional": false
         },
         {
+          "team_id": 3,
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess",
+          "lineup_efficiency": 0.8854568184025764,
+          "bench_points": 156.32,
+          "is_provisional": false
+        },
+        {
           "team_id": 7,
           "team_name": "Nabers know my name",
           "manager": "Aaron Lechelt",
           "lineup_efficiency": 0.8851561456374768,
           "bench_points": 277.53999999999996,
-          "is_provisional": false
-        },
-        {
-          "team_id": 3,
-          "team_name": "8 - 9",
-          "manager": "Marcus Bess",
-          "lineup_efficiency": 0.8840026892133401,
-          "bench_points": 156.32,
           "is_provisional": false
         },
         {
@@ -5791,7 +5791,7 @@
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
           "lineup_efficiency": 0.8602771654813814,
-          "bench_points": 269.18,
+          "bench_points": 269.88,
           "is_provisional": false
         },
         {
@@ -5806,7 +5806,7 @@
           "team_id": 8,
           "team_name": "Hawk Tua on my Penix",
           "manager": "William Millians",
-          "lineup_efficiency": 0.8419699814025385,
+          "lineup_efficiency": 0.8424345094560597,
           "bench_points": 189.22,
           "is_provisional": false
         },
@@ -5824,7 +5824,7 @@
           "actual_points": 112.7,
           "optimal_points": 123.2,
           "efficiency": 0.9147727272727273,
-          "bench_points": 42.0,
+          "bench_points": 42.7,
           "rank": 4
         },
         "season_stats": {
@@ -5837,7 +5837,7 @@
             "t": 0
           },
           "lineup_efficiency": 0.8602771654813814,
-          "total_bench_points": 269.18,
+          "total_bench_points": 269.88,
           "is_provisional": false
         },
         "roster": [
@@ -6033,7 +6033,7 @@
             "position_id": 2,
             "is_starter": false,
             "slot_id": 20,
-            "points": 14.7,
+            "points": 15.4,
             "pro_team_id": 7,
             "game_status": "live",
             "opponent": "LAC",
@@ -6042,7 +6042,7 @@
             "is_home": false,
             "game_detail": "2:29 - 4th",
             "kickoff_utc": "2026-10-11T20:05:00+00:00",
-            "stat_line": "61 YDS, TD",
+            "stat_line": "68 YDS, TD",
             "injury_status": null
           },
           {
@@ -6203,22 +6203,22 @@
       "teams_detail": {
         "3": {
           "week_stats": {
-            "actual_points": 101.26,
-            "optimal_points": 118.25999999999999,
-            "efficiency": 0.856248943006934,
+            "actual_points": 107.56,
+            "optimal_points": 124.56,
+            "efficiency": 0.863519588953115,
             "bench_points": 27.92,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 532.64,
+            "points_for": 538.94,
             "points_against": 565.28,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8840026892133401,
+            "lineup_efficiency": 0.8854568184025764,
             "total_bench_points": 156.32,
             "is_provisional": false
           },
@@ -6228,7 +6228,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 31.4,
+              "points": 37.7,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "ARI",
@@ -6237,7 +6237,7 @@
               "is_home": false,
               "game_detail": "8:04 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "148 YDS, TD",
+              "stat_line": "151 YDS, 2 TD",
               "injury_status": null
             },
             {
@@ -7489,22 +7489,22 @@
         },
         "8": {
           "week_stats": {
-            "actual_points": 66.34,
-            "optimal_points": 82.24000000000001,
-            "efficiency": 0.8066634241245135,
+            "actual_points": 67.34,
+            "optimal_points": 83.24000000000001,
+            "efficiency": 0.8089860643921192,
             "bench_points": 17.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 535.66,
+            "points_for": 536.66,
             "points_against": 678.64,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8419699814025385,
+            "lineup_efficiency": 0.8424345094560597,
             "total_bench_points": 189.22,
             "is_provisional": false
           },
@@ -7565,7 +7565,7 @@
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
-              "points": 9.0,
+              "points": 10.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "ARI",
@@ -7574,7 +7574,7 @@
               "is_home": false,
               "game_detail": "8:04 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "1/1 FG, 5/5 XP",
+              "stat_line": "1/1 FG, 6/6 XP",
               "injury_status": null
             },
             {
@@ -8778,7 +8778,7 @@
             "actual_points": 112.7,
             "optimal_points": 123.2,
             "efficiency": 0.9147727272727273,
-            "bench_points": 42.0,
+            "bench_points": 42.7,
             "rank": 4
           },
           "season_stats": {
@@ -8791,7 +8791,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8602771654813814,
-            "total_bench_points": 269.18,
+            "total_bench_points": 269.88,
             "is_provisional": false
           },
           "roster": [
@@ -8987,7 +8987,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 14.7,
+              "points": 15.4,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "LAC",
@@ -8996,7 +8996,7 @@
               "is_home": false,
               "game_detail": "2:29 - 4th",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "61 YDS, TD",
+              "stat_line": "68 YDS, TD",
               "injury_status": null
             },
             {
@@ -9495,7 +9495,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 621.94,
-            "points_against": 551.26,
+            "points_against": 552.26,
             "record": {
               "w": 3,
               "l": 1,
@@ -9808,7 +9808,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 477.74,
-            "points_against": 708.86,
+            "points_against": 715.16,
             "record": {
               "w": 0,
               "l": 4,
@@ -10449,6 +10449,42 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T23:09:28.154372+00:00",
+          "week": 5,
+          "team_id": 10,
+          "points_before": 14.7,
+          "points_after": 15.4,
+          "delta": 0.7,
+          "is_starter": false,
+          "player": "J.K. Dobbins",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
+          "detected_at": "2026-10-11T23:09:28.153518+00:00",
+          "week": 5,
+          "team_id": 8,
+          "points_before": 9.0,
+          "points_after": 10.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Jake Bates",
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians"
+        },
+        {
+          "detected_at": "2026-10-11T23:09:28.150008+00:00",
+          "week": 5,
+          "team_id": 3,
+          "points_before": 31.4,
+          "points_after": 37.7,
+          "delta": 6.3,
+          "is_starter": true,
+          "player": "Jahmyr Gibbs",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-10-11T23:07:58.121019+00:00",
           "week": 5,
           "team_id": 9,
@@ -10651,42 +10687,6 @@
           "player": "Jahmyr Gibbs",
           "team_name": "8 - 9",
           "manager": "Marcus Bess"
-        },
-        {
-          "detected_at": "2026-10-11T23:01:58.108183+00:00",
-          "week": 5,
-          "team_id": 2,
-          "points_before": 11.0,
-          "points_after": 13.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Broncos D/ST",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-10-11T23:01:58.107469+00:00",
-          "week": 5,
-          "team_id": 1,
-          "points_before": 6.92,
-          "points_after": 7.28,
-          "delta": 0.36,
-          "is_starter": false,
-          "player": "Brock Purdy",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-11T23:01:58.107321+00:00",
-          "week": 5,
-          "team_id": 1,
-          "points_before": 15.3,
-          "points_after": 17.2,
-          "delta": 1.9,
-          "is_starter": true,
-          "player": "Mike Evans",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
         }
       ],
       "alerts": {
@@ -10699,7 +10699,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=101.26"
+            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=107.56"
           },
           {
             "severity": "warning",
