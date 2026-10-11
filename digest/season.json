@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T21:03:38.201162+00:00",
+  "generated_at": "2026-10-11T21:05:08.154979+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -280,7 +280,7 @@
             "b": {
               "team_id": 31,
               "name": "Father Drew",
-              "score": 63.0
+              "score": 67.0
             },
             "live": true
           },
@@ -388,7 +388,7 @@
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.9105688564476886,
+          "lineup_efficiency": 0.9219974278762599,
           "bench_points": 165.0,
           "is_provisional": false
         },
@@ -1669,22 +1669,22 @@
         },
         "31": {
           "week_stats": {
-            "actual_points": 63.0,
+            "actual_points": 67.0,
             "optimal_points": 70.0,
-            "efficiency": 0.9,
+            "efficiency": 0.9571428571428572,
             "bench_points": 10.0,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 532.0,
+            "points_for": 536.0,
             "points_against": 545.0,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.9105688564476886,
+            "lineup_efficiency": 0.9219974278762599,
             "total_bench_points": 165.0,
             "is_provisional": false
           },
@@ -1792,6 +1792,23 @@
               "injury_status": null
             },
             {
+              "name": "Jaxon Smith-Njigba",
+              "position_id": 3,
+              "is_starter": true,
+              "slot_id": 4,
+              "points": 4.0,
+              "pro_team_id": 26,
+              "game_status": "live",
+              "opponent": "SF",
+              "own_score": 7,
+              "opp_score": 7,
+              "is_home": true,
+              "game_detail": "0:39 - 1st",
+              "kickoff_utc": "2026-10-11T20:25:00+00:00",
+              "stat_line": "1 REC, 38 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Rachaad White",
               "position_id": 2,
               "is_starter": true,
@@ -1823,23 +1840,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "0/1 FG, 1/1 XP",
-              "injury_status": null
-            },
-            {
-              "name": "Jaxon Smith-Njigba",
-              "position_id": 3,
-              "is_starter": true,
-              "slot_id": 4,
-              "points": 0.0,
-              "pro_team_id": 26,
-              "game_status": "live",
-              "opponent": "SF",
-              "own_score": 7,
-              "opp_score": 7,
-              "is_home": true,
-              "game_detail": "0:39 - 1st",
-              "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": null,
               "injury_status": null
             },
             {
@@ -4604,7 +4604,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 696.0,
-            "points_against": 493.0,
+            "points_against": 497.0,
             "record": {
               "w": 4,
               "l": 0,
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:04:53.149374+00:00",
+          "week": 5,
+          "team_id": 31,
+          "points_before": 0.0,
+          "points_after": 4.0,
+          "delta": 4.0,
+          "is_starter": true,
+          "player": "Jaxon Smith-Njigba",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
           "detected_at": "2026-10-11T21:03:23.181382+00:00",
           "week": 5,
           "team_id": 17,
@@ -5374,18 +5386,6 @@
           "player": "Rashid Shaheed",
           "team_name": "Bama boys heavy 251",
           "manager": "Nkhrumba Overton Jr."
-        },
-        {
-          "detected_at": "2026-10-11T20:42:23.334168+00:00",
-          "week": 5,
-          "team_id": 28,
-          "points_before": 30.0,
-          "points_after": 31.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jayden Daniels",
-          "team_name": "Maybe to much Jagging off? ",
-          "manager": "Ryan Gajda"
         }
       ],
       "alerts": {
@@ -5715,7 +5715,7 @@
             "b": {
               "team_id": 5,
               "name": "Johnny Sins",
-              "score": 116.54
+              "score": 121.34
             },
             "live": true
           }
@@ -5750,7 +5750,7 @@
           "team_id": 5,
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger",
-          "lineup_efficiency": 0.8915208758806686,
+          "lineup_efficiency": 0.8945327667265313,
           "bench_points": 271.86,
           "is_provisional": false
         },
@@ -5791,7 +5791,7 @@
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
           "lineup_efficiency": 0.871814538146452,
-          "bench_points": 150.76,
+          "bench_points": 150.96,
           "is_provisional": false
         },
         {
@@ -6206,7 +6206,7 @@
             "actual_points": 69.16,
             "optimal_points": 86.96000000000001,
             "efficiency": 0.795308187672493,
-            "bench_points": 22.36,
+            "bench_points": 22.56,
             "rank": 10
           },
           "season_stats": {
@@ -6219,7 +6219,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.871814538146452,
-            "total_bench_points": 150.76,
+            "total_bench_points": 150.96,
             "is_provisional": false
           },
           "roster": [
@@ -6415,7 +6415,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 2.36,
+              "points": 2.56,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "LAC",
@@ -7180,12 +7180,12 @@
             "optimal_points": 123.64000000000001,
             "efficiency": 0.9432222581688772,
             "bench_points": 10.7,
-            "rank": 2
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 5,
             "points_for": 590.46,
-            "points_against": 609.5,
+            "points_against": 614.3,
             "record": {
               "w": 1,
               "l": 3,
@@ -8479,22 +8479,22 @@
         },
         "5": {
           "week_stats": {
-            "actual_points": 116.53999999999999,
-            "optimal_points": 127.54,
-            "efficiency": 0.9137525482201662,
+            "actual_points": 121.34,
+            "optimal_points": 130.64000000000001,
+            "efficiency": 0.9288120024494794,
             "bench_points": 9.0,
-            "rank": 3
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 690.9,
+            "points_for": 695.7,
             "points_against": 608.78,
             "record": {
               "w": 4,
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8915208758806686,
+            "lineup_efficiency": 0.8945327667265313,
             "total_bench_points": 271.86,
             "is_provisional": false
           },
@@ -8619,6 +8619,23 @@
               "injury_status": "QUESTIONABLE"
             },
             {
+              "name": "Jaxon Smith-Njigba",
+              "position_id": 3,
+              "is_starter": true,
+              "slot_id": 4,
+              "points": 4.8,
+              "pro_team_id": 26,
+              "game_status": "live",
+              "opponent": "SF",
+              "own_score": 7,
+              "opp_score": 7,
+              "is_home": true,
+              "game_detail": "0:39 - 1st",
+              "kickoff_utc": "2026-10-11T20:25:00+00:00",
+              "stat_line": "1 REC, 38 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Jameson Williams",
               "position_id": 3,
               "is_starter": true,
@@ -8631,23 +8648,6 @@
               "opp_score": 7,
               "is_home": false,
               "game_detail": "14:42 - 2nd",
-              "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": null,
-              "injury_status": null
-            },
-            {
-              "name": "Jaxon Smith-Njigba",
-              "position_id": 3,
-              "is_starter": true,
-              "slot_id": 4,
-              "points": 0.0,
-              "pro_team_id": 26,
-              "game_status": "live",
-              "opponent": "SF",
-              "own_score": 7,
-              "opp_score": 7,
-              "is_home": true,
-              "game_detail": "0:39 - 1st",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
               "stat_line": null,
               "injury_status": null
@@ -10449,6 +10449,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:04:57.506161+00:00",
+          "week": 5,
+          "team_id": 5,
+          "points_before": 0.0,
+          "points_after": 4.8,
+          "delta": 4.8,
+          "is_starter": true,
+          "player": "Jaxon Smith-Njigba",
+          "team_name": "Johnny Sins",
+          "manager": "Gib Terwilliger"
+        },
+        {
+          "detected_at": "2026-10-11T21:04:57.504727+00:00",
+          "week": 5,
+          "team_id": 3,
+          "points_before": 2.36,
+          "points_after": 2.56,
+          "delta": 0.2,
+          "is_starter": false,
+          "player": "Bo Nix",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-10-11T21:03:27.550956+00:00",
           "week": 5,
           "team_id": 10,
@@ -10663,30 +10687,6 @@
           "player": "Emanuel Wilson",
           "team_name": "God of Warren",
           "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-10-11T20:45:27.467205+00:00",
-          "week": 5,
-          "team_id": 10,
-          "points_before": 0.0,
-          "points_after": 1.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jason Myers",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-11T20:45:27.467173+00:00",
-          "week": 5,
-          "team_id": 10,
-          "points_before": 7.8,
-          "points_after": 7.9,
-          "delta": 0.1,
-          "is_starter": false,
-          "player": "J.K. Dobbins",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -10704,7 +10704,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 5: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=116.54"
+            "description": "League 581297461 week 5 team 5: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=121.34"
           },
           {
             "severity": "warning",
