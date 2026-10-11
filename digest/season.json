@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T21:05:08.154979+00:00",
+  "generated_at": "2026-10-11T21:06:38.210351+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -4697,7 +4697,7 @@
               "is_home": false,
               "game_detail": "14:42 - 2nd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "5 YDS",
+              "stat_line": "12 YDS",
               "injury_status": null
             },
             {
@@ -5658,7 +5658,7 @@
             "a": {
               "team_id": 3,
               "name": "8 - 9",
-              "score": 69.16
+              "score": 69.86
             },
             "b": {
               "team_id": 9,
@@ -5790,8 +5790,8 @@
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
-          "lineup_efficiency": 0.871814538146452,
-          "bench_points": 150.96,
+          "lineup_efficiency": 0.8721414472694938,
+          "bench_points": 150.76,
           "is_provisional": false
         },
         {
@@ -6203,23 +6203,23 @@
       "teams_detail": {
         "3": {
           "week_stats": {
-            "actual_points": 69.16,
-            "optimal_points": 86.96000000000001,
-            "efficiency": 0.795308187672493,
-            "bench_points": 22.56,
+            "actual_points": 69.86,
+            "optimal_points": 87.66,
+            "efficiency": 0.7969427332877025,
+            "bench_points": 22.36,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 500.54,
+            "points_for": 501.24,
             "points_against": 557.68,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.871814538146452,
-            "total_bench_points": 150.96,
+            "lineup_efficiency": 0.8721414472694938,
+            "total_bench_points": 150.76,
             "is_provisional": false
           },
           "roster": [
@@ -6296,7 +6296,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 3.2,
+              "points": 3.9,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "ARI",
@@ -6305,7 +6305,7 @@
               "is_home": false,
               "game_detail": "14:42 - 2nd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "5 YDS",
+              "stat_line": "12 YDS",
               "injury_status": null
             },
             {
@@ -6415,7 +6415,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 2.56,
+              "points": 2.36,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "LAC",
@@ -9808,7 +9808,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 470.14,
-            "points_against": 676.76,
+            "points_against": 677.46,
             "record": {
               "w": 0,
               "l": 4,
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:06:27.533926+00:00",
+          "week": 5,
+          "team_id": 3,
+          "points_before": 3.2,
+          "points_after": 3.9,
+          "delta": 0.7,
+          "is_starter": true,
+          "player": "Jahmyr Gibbs",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-10-11T21:04:57.506161+00:00",
           "week": 5,
           "team_id": 5,
@@ -10675,18 +10687,6 @@
           "player": "Deebo Samuel Sr.",
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach"
-        },
-        {
-          "detected_at": "2026-10-11T20:45:27.468314+00:00",
-          "week": 5,
-          "team_id": 12,
-          "points_before": 3.1,
-          "points_after": 9.3,
-          "delta": 6.2,
-          "is_starter": true,
-          "player": "Emanuel Wilson",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
         }
       ],
       "alerts": {
@@ -10699,7 +10699,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=69.16"
+            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=69.86"
           },
           {
             "severity": "warning",
