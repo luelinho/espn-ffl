@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T22:00:38.664566+00:00",
+  "generated_at": "2026-10-11T22:02:08.574101+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -603,7 +603,7 @@
             "is_home": true,
             "game_detail": "0:13 - 2nd",
             "kickoff_utc": "2026-10-11T20:25:00+00:00",
-            "stat_line": "26 YDS, TD",
+            "stat_line": "29 YDS, TD",
             "injury_status": null
           },
           {
@@ -2710,7 +2710,7 @@
               "is_home": true,
               "game_detail": "0:13 - 2nd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "26 YDS, TD",
+              "stat_line": "29 YDS, TD",
               "injury_status": null
             },
             {
@@ -5710,7 +5710,7 @@
             "a": {
               "team_id": 12,
               "name": "God of Warren",
-              "score": 117.62
+              "score": 117.92
             },
             "b": {
               "team_id": 5,
@@ -5750,7 +5750,7 @@
           "team_id": 12,
           "team_name": "God of Warren",
           "manager": "Spencer Gillis",
-          "lineup_efficiency": 0.9005797894218919,
+          "lineup_efficiency": 0.900603360380946,
           "bench_points": 251.88000000000002,
           "is_provisional": false
         },
@@ -7176,22 +7176,22 @@
         },
         "12": {
           "week_stats": {
-            "actual_points": 117.61999999999999,
-            "optimal_points": 123.63999999999999,
-            "efficiency": 0.9513102555807182,
+            "actual_points": 117.92,
+            "optimal_points": 123.94,
+            "efficiency": 0.9514281103759884,
             "bench_points": 11.9,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 591.46,
+            "points_for": 591.76,
             "points_against": 625.1,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.9005797894218919,
+            "lineup_efficiency": 0.900603360380946,
             "total_bench_points": 251.88000000000002,
             "is_provisional": false
           },
@@ -7269,7 +7269,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 8.5,
+              "points": 8.8,
               "pro_team_id": 26,
               "game_status": "live",
               "opponent": "SF",
@@ -7278,7 +7278,7 @@
               "is_home": true,
               "game_detail": "0:13 - 2nd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "26 YDS, TD",
+              "stat_line": "29 YDS, TD",
               "injury_status": null
             },
             {
@@ -8488,7 +8488,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 706.5,
-            "points_against": 609.78,
+            "points_against": 610.08,
             "record": {
               "w": 4,
               "l": 0,
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T22:01:57.751054+00:00",
+          "week": 5,
+          "team_id": 12,
+          "points_before": 8.5,
+          "points_after": 8.8,
+          "delta": 0.3,
+          "is_starter": true,
+          "player": "Emanuel Wilson",
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis"
+        },
+        {
           "detected_at": "2026-10-11T21:58:57.795510+00:00",
           "week": 5,
           "team_id": 11,
@@ -10675,18 +10687,6 @@
           "player": "Deebo Samuel Sr.",
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach"
-        },
-        {
-          "detected_at": "2026-10-11T21:51:28.502587+00:00",
-          "week": 5,
-          "team_id": 6,
-          "points_before": 11.1,
-          "points_after": 11.2,
-          "delta": 0.1,
-          "is_starter": true,
-          "player": "Christian McCaffrey",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
@@ -10709,7 +10709,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 12: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=117.62"
+            "description": "League 581297461 week 5 team 12: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=117.92"
           },
           {
             "severity": "warning",
