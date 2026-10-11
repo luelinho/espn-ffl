@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T20:02:07.715889+00:00",
+  "generated_at": "2026-10-11T20:03:37.731671+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 29,
               "name": "Kelsey not  Kelce ",
-              "score": 65.0
+              "score": 66.0
             },
             "b": {
               "team_id": 16,
@@ -460,7 +460,7 @@
           "team_id": 29,
           "team_name": "Kelsey not  Kelce ",
           "manager": "Kelsey Prince",
-          "lineup_efficiency": 0.80517569997323,
+          "lineup_efficiency": 0.8057504126169082,
           "bench_points": 239.0,
           "is_provisional": false
         }
@@ -1348,7 +1348,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 616.0,
-            "points_against": 570.0,
+            "points_against": 571.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -2870,22 +2870,22 @@
         },
         "29": {
           "week_stats": {
-            "actual_points": 65.0,
-            "optimal_points": 87.0,
-            "efficiency": 0.7471264367816092,
+            "actual_points": 66.0,
+            "optimal_points": 88.0,
+            "efficiency": 0.75,
             "bench_points": 22.0,
             "rank": 9
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 456.0,
+            "points_for": 457.0,
             "points_against": 684.0,
             "record": {
               "w": 0,
               "l": 4,
               "t": 0
             },
-            "lineup_efficiency": 0.80517569997323,
+            "lineup_efficiency": 0.8057504126169082,
             "total_bench_points": 239.0,
             "is_provisional": false
           },
@@ -2929,7 +2929,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 13.0,
+              "points": 14.0,
               "pro_team_id": 15,
               "game_status": "live",
               "opponent": "CIN",
@@ -2938,7 +2938,7 @@
               "is_home": true,
               "game_detail": "2:19 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "73 YDS, TD",
+              "stat_line": "88 YDS, TD",
               "injury_status": null
             },
             {
@@ -3166,7 +3166,7 @@
               "is_home": true,
               "game_detail": "3:43 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "90 YDS, TD",
+              "stat_line": "96 YDS, TD",
               "injury_status": null
             },
             {
@@ -4157,7 +4157,7 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "11 YDS",
-              "injury_status": "OUT"
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Mike Washington Jr.",
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T20:03:22.982981+00:00",
+          "week": 5,
+          "team_id": 29,
+          "points_before": 13.0,
+          "points_after": 14.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Ollie Gordon II",
+          "team_name": "Kelsey not  Kelce ",
+          "manager": "Kelsey Prince"
+        },
+        {
           "detected_at": "2026-10-11T20:01:52.942184+00:00",
           "week": 5,
           "team_id": 16,
@@ -5374,18 +5386,6 @@
           "player": "Tyjae Spears",
           "team_name": "Teenage Tuten Ninja Turtles",
           "manager": "Holden Shepherd"
-        },
-        {
-          "detected_at": "2026-10-11T19:52:52.971441+00:00",
-          "week": 5,
-          "team_id": 1,
-          "points_before": 35.0,
-          "points_after": 36.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jaylen Warren",
-          "team_name": "Lights, Kamara, Action! ",
-          "manager": "James Prince"
         }
       ],
       "alerts": {
@@ -5645,7 +5645,7 @@
             "a": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 70.34
+              "score": 71.84
             },
             "b": {
               "team_id": 2,
@@ -5689,7 +5689,7 @@
             "b": {
               "team_id": 4,
               "name": "Ashley's Astounding Team",
-              "score": 87.5
+              "score": 88.1
             },
             "live": true
           },
@@ -5726,7 +5726,7 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.9346151785106562,
+          "lineup_efficiency": 0.9353022865712022,
           "bench_points": 234.72,
           "is_provisional": false
         },
@@ -5774,7 +5774,7 @@
           "team_id": 4,
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey",
-          "lineup_efficiency": 0.8824089271280867,
+          "lineup_efficiency": 0.8826599559591797,
           "bench_points": 329.36,
           "is_provisional": false
         },
@@ -5830,7 +5830,7 @@
         "season_stats": {
           "weeks_played": 5,
           "points_for": 537.06,
-          "points_against": 605.36,
+          "points_against": 605.96,
           "record": {
             "w": 2,
             "l": 2,
@@ -6499,22 +6499,22 @@
         },
         "4": {
           "week_stats": {
-            "actual_points": 87.5,
-            "optimal_points": 115.6,
-            "efficiency": 0.7569204152249135,
+            "actual_points": 88.1,
+            "optimal_points": 116.19999999999999,
+            "efficiency": 0.7581755593803787,
             "bench_points": 32.3,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 573.66,
+            "points_for": 574.26,
             "points_against": 500.6,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.8824089271280867,
+            "lineup_efficiency": 0.8826599559591797,
             "total_bench_points": 329.36,
             "is_provisional": false
           },
@@ -6524,7 +6524,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 35.7,
+              "points": 36.3,
               "pro_team_id": 23,
               "game_status": "live",
               "opponent": "IND",
@@ -6533,7 +6533,7 @@
               "is_home": true,
               "game_detail": "3:43 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "90 YDS, TD",
+              "stat_line": "96 YDS, TD",
               "injury_status": null
             },
             {
@@ -6846,22 +6846,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 70.34,
-            "optimal_points": 88.64000000000001,
-            "efficiency": 0.7935469314079422,
+            "actual_points": 71.84,
+            "optimal_points": 90.14000000000001,
+            "efficiency": 0.7969824717106722,
             "bench_points": 18.3,
             "rank": 8
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 634.8,
+            "points_for": 636.3,
             "points_against": 524.0,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9346151785106562,
+            "lineup_efficiency": 0.9353022865712022,
             "total_bench_points": 234.72,
             "is_provisional": false
           },
@@ -6888,7 +6888,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 13.3,
+              "points": 14.8,
               "pro_team_id": 15,
               "game_status": "live",
               "opponent": "CIN",
@@ -6897,7 +6897,7 @@
               "is_home": true,
               "game_detail": "2:19 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "73 YDS, TD",
+              "stat_line": "88 YDS, TD",
               "injury_status": null
             },
             {
@@ -7558,7 +7558,7 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "11 YDS",
-              "injury_status": "OUT"
+              "injury_status": "QUESTIONABLE"
             },
             {
               "name": "Brian Thomas Jr.",
@@ -8784,7 +8784,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 537.06,
-            "points_against": 605.36,
+            "points_against": 605.96,
             "record": {
               "w": 2,
               "l": 2,
@@ -9165,7 +9165,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 558.22,
-            "points_against": 470.20000000000005,
+            "points_against": 471.70000000000005,
             "record": {
               "w": 3,
               "l": 1,
@@ -10449,6 +10449,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T20:03:27.360094+00:00",
+          "week": 5,
+          "team_id": 4,
+          "points_before": 35.7,
+          "points_after": 36.3,
+          "delta": 0.6,
+          "is_starter": true,
+          "player": "Jaylen Warren",
+          "team_name": "Ashley's Astounding Team",
+          "manager": "Ashley Couey"
+        },
+        {
+          "detected_at": "2026-10-11T20:03:27.357982+00:00",
+          "week": 5,
+          "team_id": 1,
+          "points_before": 13.3,
+          "points_after": 14.8,
+          "delta": 1.5,
+          "is_starter": true,
+          "player": "Ollie Gordon II",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-11T20:01:57.317532+00:00",
           "week": 5,
           "team_id": 10,
@@ -10663,30 +10687,6 @@
           "player": "Tre Tucker",
           "team_name": "8 - 9",
           "manager": "Marcus Bess"
-        },
-        {
-          "detected_at": "2026-10-11T19:55:57.552443+00:00",
-          "week": 5,
-          "team_id": 10,
-          "points_before": 9.8,
-          "points_after": 18.0,
-          "delta": 8.2,
-          "is_starter": true,
-          "player": "Braelon Allen",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-11T19:55:57.552073+00:00",
-          "week": 5,
-          "team_id": 9,
-          "points_before": 2.4,
-          "points_after": 2.5,
-          "delta": 0.1,
-          "is_starter": false,
-          "player": "Rachaad White",
-          "team_name": "Spider 2 Y Banana",
-          "manager": "Stacks Harrison"
         }
       ],
       "alerts": {
@@ -10714,7 +10714,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=87.5"
+            "description": "League 581297461 week 5 team 4: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=88.1"
           }
         ],
         "total_unresolved": 60
