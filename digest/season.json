@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T20:20:08.014334+00:00",
+  "generated_at": "2026-10-11T20:21:38.280822+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 29,
               "name": "Kelsey not  Kelce ",
-              "score": 68.0
+              "score": 70.0
             },
             "b": {
               "team_id": 16,
@@ -421,7 +421,7 @@
           "team_name": "Bama boys heavy 251",
           "manager": "Nkhrumba Overton Jr.",
           "lineup_efficiency": 0.8861029390002072,
-          "bench_points": 193.0,
+          "bench_points": 194.0,
           "is_provisional": false
         },
         {
@@ -460,7 +460,7 @@
           "team_id": 29,
           "team_name": "Kelsey not  Kelce ",
           "manager": "Kelsey Prince",
-          "lineup_efficiency": 0.8068615237280191,
+          "lineup_efficiency": 0.8079243256603863,
           "bench_points": 239.0,
           "is_provisional": false
         }
@@ -1080,7 +1080,7 @@
             "actual_points": 27.0,
             "optimal_points": 39.0,
             "efficiency": 0.6923076923076923,
-            "bench_points": 13.0,
+            "bench_points": 14.0,
             "rank": 14
           },
           "season_stats": {
@@ -1093,7 +1093,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8861029390002072,
-            "total_bench_points": 193.0,
+            "total_bench_points": 194.0,
             "is_provisional": false
           },
           "roster": [
@@ -1289,7 +1289,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 1.0,
+              "points": 2.0,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "LAC",
@@ -1298,7 +1298,7 @@
               "is_home": false,
               "game_detail": "8:36 - 1st",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "24 YDS",
+              "stat_line": "59 YDS",
               "injury_status": null
             },
             {
@@ -1348,7 +1348,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 619.0,
-            "points_against": 573.0,
+            "points_against": 575.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -2870,22 +2870,22 @@
         },
         "29": {
           "week_stats": {
-            "actual_points": 68.0,
-            "optimal_points": 90.0,
-            "efficiency": 0.7555555555555555,
+            "actual_points": 70.0,
+            "optimal_points": 92.0,
+            "efficiency": 0.7608695652173914,
             "bench_points": 22.0,
             "rank": 9
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 459.0,
+            "points_for": 461.0,
             "points_against": 687.0,
             "record": {
               "w": 0,
               "l": 4,
               "t": 0
             },
-            "lineup_efficiency": 0.8068615237280191,
+            "lineup_efficiency": 0.8079243256603863,
             "total_bench_points": 239.0,
             "is_provisional": false
           },
@@ -2963,7 +2963,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 3.0,
+              "points": 5.0,
               "pro_team_id": 19,
               "game_status": "live",
               "opponent": "WSH",
@@ -5148,6 +5148,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T20:21:23.166101+00:00",
+          "week": 5,
+          "team_id": 32,
+          "points_before": 1.0,
+          "points_after": 2.0,
+          "delta": 1.0,
+          "is_starter": false,
+          "player": "Bo Nix",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
+          "detected_at": "2026-10-11T20:21:23.164219+00:00",
+          "week": 5,
+          "team_id": 29,
+          "points_before": 3.0,
+          "points_after": 5.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Cam Skattebo",
+          "team_name": "Kelsey not  Kelce ",
+          "manager": "Kelsey Prince"
+        },
+        {
           "detected_at": "2026-10-11T20:19:53.044309+00:00",
           "week": 5,
           "team_id": 12,
@@ -5362,30 +5386,6 @@
           "player": "Isaiah Likely",
           "team_name": "Goff Is My Copilot",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-11T19:58:53.088948+00:00",
-          "week": 5,
-          "team_id": 19,
-          "points_before": 8.0,
-          "points_after": 11.0,
-          "delta": 3.0,
-          "is_starter": true,
-          "player": "Malik Nabers",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
-        },
-        {
-          "detected_at": "2026-10-11T19:58:53.088821+00:00",
-          "week": 5,
-          "team_id": 18,
-          "points_before": 5.0,
-          "points_after": 8.0,
-          "delta": 3.0,
-          "is_starter": false,
-          "player": "Tre Tucker",
-          "team_name": "G.E.T S.O.M.E ",
-          "manager": "Donnie Palmer"
         }
       ],
       "alerts": {
@@ -5791,7 +5791,7 @@
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
           "lineup_efficiency": 0.8647392520621118,
-          "bench_points": 149.36,
+          "bench_points": 150.76,
           "is_provisional": false
         },
         {
@@ -6206,7 +6206,7 @@
             "actual_points": 62.36,
             "optimal_points": 82.06,
             "efficiency": 0.7599317572507921,
-            "bench_points": 20.96,
+            "bench_points": 22.36,
             "rank": 10
           },
           "season_stats": {
@@ -6219,7 +6219,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8647392520621118,
-            "total_bench_points": 149.36,
+            "total_bench_points": 150.76,
             "is_provisional": false
           },
           "roster": [
@@ -6415,7 +6415,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 0.96,
+              "points": 2.36,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "LAC",
@@ -6424,7 +6424,7 @@
               "is_home": false,
               "game_detail": "8:36 - 1st",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "24 YDS",
+              "stat_line": "59 YDS",
               "injury_status": null
             },
             {
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T20:21:27.686348+00:00",
+          "week": 5,
+          "team_id": 3,
+          "points_before": 0.96,
+          "points_after": 2.36,
+          "delta": 1.4,
+          "is_starter": false,
+          "player": "Bo Nix",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-10-11T20:19:57.413591+00:00",
           "week": 5,
           "team_id": 11,
@@ -10675,18 +10687,6 @@
           "player": "Malik Nabers",
           "team_name": "Nabers know my name",
           "manager": "Aaron Lechelt"
-        },
-        {
-          "detected_at": "2026-10-11T20:07:57.348966+00:00",
-          "week": 5,
-          "team_id": 6,
-          "points_before": 10.62,
-          "points_after": 10.86,
-          "delta": 0.24,
-          "is_starter": false,
-          "player": "Malik Willis",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
