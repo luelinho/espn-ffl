@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T21:35:08.358409+00:00",
+  "generated_at": "2026-10-11T21:36:38.678012+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -4646,7 +4646,7 @@
               "is_home": false,
               "game_detail": "9:19 - 2nd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "32 YDS, TD",
+              "stat_line": "36 YDS, TD",
               "injury_status": null
             },
             {
@@ -5658,7 +5658,7 @@
             "a": {
               "team_id": 3,
               "name": "8 - 9",
-              "score": 83.06
+              "score": 83.46
             },
             "b": {
               "team_id": 9,
@@ -5774,7 +5774,7 @@
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
-          "lineup_efficiency": 0.878773288379293,
+          "lineup_efficiency": 0.8789085844662237,
           "bench_points": 151.78,
           "is_provisional": false
         },
@@ -6203,22 +6203,22 @@
       "teams_detail": {
         "3": {
           "week_stats": {
-            "actual_points": 83.06,
-            "optimal_points": 100.06,
-            "efficiency": 0.830101938836698,
+            "actual_points": 83.46,
+            "optimal_points": 100.46,
+            "efficiency": 0.8307784192713518,
             "bench_points": 23.38,
             "rank": 8
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 514.44,
+            "points_for": 514.84,
             "points_against": 558.38,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.878773288379293,
+            "lineup_efficiency": 0.8789085844662237,
             "total_bench_points": 151.78,
             "is_provisional": false
           },
@@ -6262,7 +6262,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 15.2,
+              "points": 15.6,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "ARI",
@@ -6271,7 +6271,7 @@
               "is_home": false,
               "game_detail": "9:19 - 2nd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "32 YDS, TD",
+              "stat_line": "36 YDS, TD",
               "injury_status": null
             },
             {
@@ -9808,7 +9808,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 470.84000000000003,
-            "points_against": 690.66,
+            "points_against": 691.06,
             "record": {
               "w": 0,
               "l": 4,
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:36:27.864199+00:00",
+          "week": 5,
+          "team_id": 3,
+          "points_before": 15.2,
+          "points_after": 15.6,
+          "delta": 0.4,
+          "is_starter": true,
+          "player": "Jahmyr Gibbs",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-10-11T21:34:57.616337+00:00",
           "week": 5,
           "team_id": 4,
@@ -10675,18 +10687,6 @@
           "player": "Brock Purdy",
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-11T21:16:57.598046+00:00",
-          "week": 5,
-          "team_id": 12,
-          "points_before": 0.0,
-          "points_after": 0.5,
-          "delta": 0.5,
-          "is_starter": false,
-          "player": "Kaelon Black",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
         }
       ],
       "alerts": {
@@ -10699,7 +10699,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=83.06"
+            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=83.46"
           },
           {
             "severity": "warning",
