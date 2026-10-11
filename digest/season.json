@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T19:56:08.219111+00:00",
+  "generated_at": "2026-10-11T19:57:37.828805+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -280,7 +280,7 @@
             "b": {
               "team_id": 31,
               "name": "Father Drew",
-              "score": 48.0
+              "score": 49.0
             },
             "live": true
           },
@@ -396,7 +396,7 @@
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.8989899090792676,
+          "lineup_efficiency": 0.8995343736890679,
           "bench_points": 164.0,
           "is_provisional": false
         },
@@ -1669,22 +1669,22 @@
         },
         "31": {
           "week_stats": {
-            "actual_points": 48.0,
-            "optimal_points": 57.0,
-            "efficiency": 0.8421052631578947,
+            "actual_points": 49.0,
+            "optimal_points": 58.0,
+            "efficiency": 0.8448275862068966,
             "bench_points": 9.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 517.0,
+            "points_for": 518.0,
             "points_against": 541.0,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8989899090792676,
+            "lineup_efficiency": 0.8995343736890679,
             "total_bench_points": 164.0,
             "is_provisional": false
           },
@@ -1711,7 +1711,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 10.0,
+              "points": 11.0,
               "pro_team_id": 4,
               "game_status": "live",
               "opponent": "MIA",
@@ -2465,7 +2465,7 @@
               "is_home": false,
               "game_detail": "6:06 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "3 REC, 25 YDS",
+              "stat_line": "4 REC, 41 YDS",
               "injury_status": null
             },
             {
@@ -4604,7 +4604,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 692.0,
-            "points_against": 478.0,
+            "points_against": 479.0,
             "record": {
               "w": 4,
               "l": 0,
@@ -4925,7 +4925,7 @@
           "added": "Emanuel Wilson",
           "dropped": "Tre Tucker",
           "added_pts": null,
-          "dropped_pts": 9.9,
+          "dropped_pts": 12.5,
           "net": null,
           "horizon_weeks": 3,
           "is_complete": false,
@@ -5147,6 +5147,18 @@
         }
       ],
       "scoring_events": [
+        {
+          "detected_at": "2026-10-11T19:57:23.015348+00:00",
+          "week": 5,
+          "team_id": 31,
+          "points_before": 10.0,
+          "points_after": 11.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Bengals D/ST",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
         {
           "detected_at": "2026-10-11T19:55:53.008989+00:00",
           "week": 5,
@@ -5374,18 +5386,6 @@
           "player": "Vikings D/ST",
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams"
-        },
-        {
-          "detected_at": "2026-10-11T19:45:23.012534+00:00",
-          "week": 5,
-          "team_id": 32,
-          "points_before": 4.0,
-          "points_after": 5.0,
-          "delta": 1.0,
-          "is_starter": false,
-          "player": "Cam Ward",
-          "team_name": "Bama boys heavy 251",
-          "manager": "Nkhrumba Overton Jr."
         }
       ],
       "alerts": {
@@ -5702,7 +5702,7 @@
             "b": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 82.6
+              "score": 83.6
             },
             "live": true
           },
@@ -5758,7 +5758,7 @@
           "team_id": 6,
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
-          "lineup_efficiency": 0.8850286536022172,
+          "lineup_efficiency": 0.8852822695939399,
           "bench_points": 338.86,
           "is_provisional": false
         },
@@ -5790,8 +5790,8 @@
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
-          "lineup_efficiency": 0.863502971373346,
-          "bench_points": 145.8,
+          "lineup_efficiency": 0.8581528460118989,
+          "bench_points": 148.4,
           "is_provisional": false
         },
         {
@@ -6204,9 +6204,9 @@
         "3": {
           "week_stats": {
             "actual_points": 53.260000000000005,
-            "optimal_points": 70.66,
-            "efficiency": 0.753750353806963,
-            "bench_points": 17.4,
+            "optimal_points": 73.26,
+            "efficiency": 0.726999726999727,
+            "bench_points": 20.0,
             "rank": 10
           },
           "season_stats": {
@@ -6218,8 +6218,8 @@
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.863502971373346,
-            "total_bench_points": 145.8,
+            "lineup_efficiency": 0.8581528460118989,
+            "total_bench_points": 148.4,
             "is_provisional": false
           },
           "roster": [
@@ -6398,7 +6398,7 @@
               "position_id": 3,
               "is_starter": false,
               "slot_id": 20,
-              "points": 4.9,
+              "points": 7.5,
               "pro_team_id": 13,
               "game_status": "live",
               "opponent": "NE",
@@ -6407,7 +6407,7 @@
               "is_home": false,
               "game_detail": "6:06 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "3 REC, 25 YDS",
+              "stat_line": "4 REC, 41 YDS",
               "injury_status": null
             },
             {
@@ -7811,7 +7811,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 578.6,
-            "points_against": 574.22,
+            "points_against": 575.22,
             "record": {
               "w": 1,
               "l": 3,
@@ -8149,22 +8149,22 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 82.6,
-            "optimal_points": 93.9,
-            "efficiency": 0.8796592119275825,
+            "actual_points": 83.6,
+            "optimal_points": 94.9,
+            "efficiency": 0.8809272918861959,
             "bench_points": 35.78,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 601.62,
+            "points_for": 602.62,
             "points_against": 536.6,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8850286536022172,
+            "lineup_efficiency": 0.8852822695939399,
             "total_bench_points": 338.86,
             "is_provisional": false
           },
@@ -8204,6 +8204,23 @@
               "injury_status": null
             },
             {
+              "name": "Bengals D/ST",
+              "position_id": 16,
+              "is_starter": true,
+              "slot_id": 16,
+              "points": 11.0,
+              "pro_team_id": 4,
+              "game_status": "live",
+              "opponent": "MIA",
+              "own_score": 28,
+              "opp_score": 18,
+              "is_home": false,
+              "game_detail": "2:39 - 4th",
+              "kickoff_utc": "2026-10-11T17:00:00+00:00",
+              "stat_line": "2 INT, FR, 18 PA",
+              "injury_status": null
+            },
+            {
               "name": "Ashton Jeanty",
               "position_id": 2,
               "is_starter": true,
@@ -8235,23 +8252,6 @@
               "game_detail": "0:58 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "5 REC, 56 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Bengals D/ST",
-              "position_id": 16,
-              "is_starter": true,
-              "slot_id": 16,
-              "points": 10.0,
-              "pro_team_id": 4,
-              "game_status": "live",
-              "opponent": "MIA",
-              "own_score": 28,
-              "opp_score": 18,
-              "is_home": false,
-              "game_detail": "2:39 - 4th",
-              "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "2 INT, FR, 18 PA",
               "injury_status": null
             },
             {
@@ -10449,6 +10449,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T19:57:27.404214+00:00",
+          "week": 5,
+          "team_id": 6,
+          "points_before": 10.0,
+          "points_after": 11.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Bengals D/ST",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
+          "detected_at": "2026-10-11T19:57:27.401941+00:00",
+          "week": 5,
+          "team_id": 3,
+          "points_before": 4.9,
+          "points_after": 7.5,
+          "delta": 2.6,
+          "is_starter": false,
+          "player": "Tre Tucker",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
           "detected_at": "2026-10-11T19:55:57.552443+00:00",
           "week": 5,
           "team_id": 10,
@@ -10663,30 +10687,6 @@
           "player": "Daniel Jones",
           "team_name": "Nabers know my name",
           "manager": "Aaron Lechelt"
-        },
-        {
-          "detected_at": "2026-10-11T19:48:27.569516+00:00",
-          "week": 5,
-          "team_id": 7,
-          "points_before": 17.2,
-          "points_after": 18.7,
-          "delta": 1.5,
-          "is_starter": true,
-          "player": "Aaron Jones Sr.",
-          "team_name": "Nabers know my name",
-          "manager": "Aaron Lechelt"
-        },
-        {
-          "detected_at": "2026-10-11T19:46:57.561257+00:00",
-          "week": 5,
-          "team_id": 11,
-          "points_before": 19.9,
-          "points_after": 21.4,
-          "delta": 1.5,
-          "is_starter": true,
-          "player": "Garrett Wilson",
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach"
         }
       ],
       "alerts": {
