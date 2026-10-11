@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T19:06:37.791066+00:00",
+  "generated_at": "2026-10-11T19:08:07.812761+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -301,7 +301,7 @@
             "a": {
               "team_id": 19,
               "name": "Shivakamini Somakandarkram",
-              "score": 80.0
+              "score": 86.0
             },
             "b": {
               "team_id": 28,
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 29,
               "name": "Kelsey not  Kelce ",
-              "score": 42.0
+              "score": 44.0
             },
             "b": {
               "team_id": 16,
@@ -401,19 +401,19 @@
           "is_provisional": false
         },
         {
-          "team_id": 26,
-          "team_name": "Purdy Good Team",
-          "manager": "Hayley Hinson",
-          "lineup_efficiency": 0.9008841567807941,
-          "bench_points": 216.0,
-          "is_provisional": false
-        },
-        {
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
           "lineup_efficiency": 0.8978415837204159,
           "bench_points": 164.0,
+          "is_provisional": false
+        },
+        {
+          "team_id": 26,
+          "team_name": "Purdy Good Team",
+          "manager": "Hayley Hinson",
+          "lineup_efficiency": 0.8962186336247051,
+          "bench_points": 218.0,
           "is_provisional": false
         },
         {
@@ -444,7 +444,7 @@
           "team_id": 19,
           "team_name": "Shivakamini Somakandarkram",
           "manager": "Kenneth Strack",
-          "lineup_efficiency": 0.8324436202758767,
+          "lineup_efficiency": 0.8341379832605622,
           "bench_points": 148.0,
           "is_provisional": false
         },
@@ -460,7 +460,7 @@
           "team_id": 29,
           "team_name": "Kelsey not  Kelce ",
           "manager": "Kelsey Prince",
-          "lineup_efficiency": 0.8113059681724637,
+          "lineup_efficiency": 0.8128932697597653,
           "bench_points": 229.0,
           "is_provisional": false
         }
@@ -569,7 +569,7 @@
             "is_home": true,
             "game_detail": "8:45 - 3rd",
             "kickoff_utc": "2026-10-11T17:00:00+00:00",
-            "stat_line": "7 PA",
+            "stat_line": "10 PA",
             "injury_status": null
           },
           {
@@ -1343,12 +1343,12 @@
             "optimal_points": 93.0,
             "efficiency": 0.9139784946236559,
             "bench_points": 9.0,
-            "rank": 1
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 5,
             "points_for": 580.0,
-            "points_against": 547.0,
+            "points_against": 549.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -2676,7 +2676,7 @@
               "is_home": true,
               "game_detail": "8:45 - 3rd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "7 PA",
+              "stat_line": "10 PA",
               "injury_status": null
             },
             {
@@ -2870,22 +2870,22 @@
         },
         "29": {
           "week_stats": {
-            "actual_points": 42.0,
-            "optimal_points": 54.0,
-            "efficiency": 0.7777777777777778,
+            "actual_points": 44.0,
+            "optimal_points": 56.0,
+            "efficiency": 0.7857142857142857,
             "bench_points": 12.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 433.0,
+            "points_for": 435.0,
             "points_against": 648.0,
             "record": {
               "w": 0,
               "l": 4,
               "t": 0
             },
-            "lineup_efficiency": 0.8113059681724637,
+            "lineup_efficiency": 0.8128932697597653,
             "total_bench_points": 229.0,
             "is_provisional": false
           },
@@ -2908,6 +2908,23 @@
               "injury_status": null
             },
             {
+              "name": "Ollie Gordon II",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 11.0,
+              "pro_team_id": 15,
+              "game_status": "live",
+              "opponent": "CIN",
+              "own_score": 7,
+              "opp_score": 21,
+              "is_home": true,
+              "game_detail": "9:22 - 3rd",
+              "kickoff_utc": "2026-10-11T17:00:00+00:00",
+              "stat_line": "52 YDS, TD",
+              "injury_status": null
+            },
+            {
               "name": "Packers D/ST",
               "position_id": 16,
               "is_starter": true,
@@ -2922,23 +2939,6 @@
               "game_detail": "4:08 - 3rd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "INT, 7 PA",
-              "injury_status": null
-            },
-            {
-              "name": "Ollie Gordon II",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 9.0,
-              "pro_team_id": 15,
-              "game_status": "live",
-              "opponent": "CIN",
-              "own_score": 7,
-              "opp_score": 21,
-              "is_home": true,
-              "game_detail": "9:22 - 3rd",
-              "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "35 YDS, TD",
               "injury_status": null
             },
             {
@@ -3437,7 +3437,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 475.0,
-            "points_against": 579.0,
+            "points_against": 585.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -3708,9 +3708,9 @@
         "26": {
           "week_stats": {
             "actual_points": 34.0,
-            "optimal_points": 53.0,
-            "efficiency": 0.6415094339622641,
-            "bench_points": 19.0,
+            "optimal_points": 55.0,
+            "efficiency": 0.6181818181818182,
+            "bench_points": 21.0,
             "rank": 12
           },
           "season_stats": {
@@ -3722,8 +3722,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9008841567807941,
-            "total_bench_points": 216.0,
+            "lineup_efficiency": 0.8962186336247051,
+            "total_bench_points": 218.0,
             "is_provisional": false
           },
           "roster": [
@@ -3919,7 +3919,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 19.0,
+              "points": 21.0,
               "pro_team_id": 9,
               "game_status": "live",
               "opponent": "CHI",
@@ -3928,7 +3928,7 @@
               "is_home": true,
               "game_detail": "4:08 - 3rd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "209 YDS, 2 TD",
+              "stat_line": "255 YDS, 2 TD",
               "injury_status": null
             },
             {
@@ -4020,22 +4020,22 @@
         },
         "19": {
           "week_stats": {
-            "actual_points": 80.0,
-            "optimal_points": 93.0,
-            "efficiency": 0.8602150537634409,
+            "actual_points": 86.0,
+            "optimal_points": 99.0,
+            "efficiency": 0.8686868686868687,
             "bench_points": 13.0,
-            "rank": 2
+            "rank": 1
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 443.0,
+            "points_for": 449.0,
             "points_against": 478.0,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.8324436202758767,
+            "lineup_efficiency": 0.8341379832605622,
             "total_bench_points": 148.0,
             "is_provisional": false
           },
@@ -4092,6 +4092,23 @@
               "injury_status": null
             },
             {
+              "name": "Tucker Kraft",
+              "position_id": 4,
+              "is_starter": true,
+              "slot_id": 6,
+              "points": 11.0,
+              "pro_team_id": 9,
+              "game_status": "live",
+              "opponent": "CHI",
+              "own_score": 20,
+              "opp_score": 7,
+              "is_home": true,
+              "game_detail": "4:08 - 3rd",
+              "kickoff_utc": "2026-10-11T17:00:00+00:00",
+              "stat_line": "4 REC, 70 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Chase McLaughlin",
               "position_id": 5,
               "is_starter": true,
@@ -4106,23 +4123,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-09T00:15:00+00:00",
               "stat_line": "1/1 FG, 3/3 XP",
-              "injury_status": null
-            },
-            {
-              "name": "Tucker Kraft",
-              "position_id": 4,
-              "is_starter": true,
-              "slot_id": 6,
-              "points": 5.0,
-              "pro_team_id": 9,
-              "game_status": "live",
-              "opponent": "CHI",
-              "own_score": 20,
-              "opp_score": 7,
-              "is_home": true,
-              "game_detail": "4:08 - 3rd",
-              "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "3 REC, 24 YDS",
               "injury_status": null
             },
             {
@@ -5148,6 +5148,42 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T19:07:53.232425+00:00",
+          "week": 5,
+          "team_id": 29,
+          "points_before": 9.0,
+          "points_after": 11.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Ollie Gordon II",
+          "team_name": "Kelsey not  Kelce ",
+          "manager": "Kelsey Prince"
+        },
+        {
+          "detected_at": "2026-10-11T19:07:53.231564+00:00",
+          "week": 5,
+          "team_id": 26,
+          "points_before": 19.0,
+          "points_after": 21.0,
+          "delta": 2.0,
+          "is_starter": false,
+          "player": "Jordan Love",
+          "team_name": "Purdy Good Team",
+          "manager": "Hayley Hinson"
+        },
+        {
+          "detected_at": "2026-10-11T19:07:53.230447+00:00",
+          "week": 5,
+          "team_id": 19,
+          "points_before": 5.0,
+          "points_after": 11.0,
+          "delta": 6.0,
+          "is_starter": true,
+          "player": "Tucker Kraft",
+          "team_name": "Shivakamini Somakandarkram",
+          "manager": "Kenneth Strack"
+        },
+        {
           "detected_at": "2026-10-11T19:06:22.895452+00:00",
           "week": 5,
           "team_id": 31,
@@ -5350,42 +5386,6 @@
           "player": "Tony Pollard",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-11T18:57:22.741493+00:00",
-          "week": 5,
-          "team_id": 29,
-          "points_before": 18.0,
-          "points_after": 19.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Joe Burrow",
-          "team_name": "Kelsey not  Kelce ",
-          "manager": "Kelsey Prince"
-        },
-        {
-          "detected_at": "2026-10-11T18:57:22.740255+00:00",
-          "week": 5,
-          "team_id": 25,
-          "points_before": 4.0,
-          "points_after": 5.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Chase Brown",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-11T18:57:22.739804+00:00",
-          "week": 5,
-          "team_id": 19,
-          "points_before": 3.0,
-          "points_after": 5.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Tucker Kraft",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
         }
       ],
       "alerts": {
@@ -5645,7 +5645,7 @@
             "a": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 56.34
+              "score": 58.04
             },
             "b": {
               "team_id": 2,
@@ -5658,7 +5658,7 @@
             "a": {
               "team_id": 3,
               "name": "8 - 9",
-              "score": 38.3
+              "score": 43.9
             },
             "b": {
               "team_id": 9,
@@ -5726,7 +5726,7 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.9268704224541482,
+          "lineup_efficiency": 0.9279623811732648,
           "bench_points": 234.72,
           "is_provisional": false
         },
@@ -5782,7 +5782,7 @@
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
-          "lineup_efficiency": 0.8659529006119534,
+          "lineup_efficiency": 0.8706665696767015,
           "bench_points": 140.1,
           "is_provisional": false
         },
@@ -6203,22 +6203,22 @@
       "teams_detail": {
         "3": {
           "week_stats": {
-            "actual_points": 38.3,
-            "optimal_points": 50.00000000000001,
-            "efficiency": 0.7659999999999998,
+            "actual_points": 43.9,
+            "optimal_points": 55.60000000000001,
+            "efficiency": 0.7895683453237409,
             "bench_points": 11.7,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 469.68,
+            "points_for": 475.28000000000003,
             "points_against": 553.38,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8659529006119534,
+            "lineup_efficiency": 0.8706665696767015,
             "total_bench_points": 140.1,
             "is_provisional": false
           },
@@ -6241,6 +6241,23 @@
               "injury_status": null
             },
             {
+              "name": "Tucker Kraft",
+              "position_id": 4,
+              "is_starter": true,
+              "slot_id": 6,
+              "points": 11.2,
+              "pro_team_id": 9,
+              "game_status": "live",
+              "opponent": "CHI",
+              "own_score": 20,
+              "opp_score": 7,
+              "is_home": true,
+              "game_detail": "4:08 - 3rd",
+              "kickoff_utc": "2026-10-11T17:00:00+00:00",
+              "stat_line": "4 REC, 70 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Jets D/ST",
               "position_id": 16,
               "is_starter": true,
@@ -6255,23 +6272,6 @@
               "game_detail": "5:09 - 3rd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "6 PA",
-              "injury_status": null
-            },
-            {
-              "name": "Tucker Kraft",
-              "position_id": 4,
-              "is_starter": true,
-              "slot_id": 6,
-              "points": 5.6,
-              "pro_team_id": 9,
-              "game_status": "live",
-              "opponent": "CHI",
-              "own_score": 20,
-              "opp_score": 7,
-              "is_home": true,
-              "game_detail": "4:08 - 3rd",
-              "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "3 REC, 24 YDS",
               "injury_status": null
             },
             {
@@ -6846,22 +6846,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 56.34,
-            "optimal_points": 74.64000000000001,
-            "efficiency": 0.7548231511254018,
+            "actual_points": 58.04,
+            "optimal_points": 76.34,
+            "efficiency": 0.760282944720985,
             "bench_points": 18.3,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 620.8,
+            "points_for": 622.5,
             "points_against": 502.36,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9268704224541482,
+            "lineup_efficiency": 0.9279623811732648,
             "total_bench_points": 234.72,
             "is_provisional": false
           },
@@ -6901,6 +6901,23 @@
               "injury_status": null
             },
             {
+              "name": "Ollie Gordon II",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 11.2,
+              "pro_team_id": 15,
+              "game_status": "live",
+              "opponent": "CIN",
+              "own_score": 7,
+              "opp_score": 21,
+              "is_home": true,
+              "game_detail": "9:22 - 3rd",
+              "kickoff_utc": "2026-10-11T17:00:00+00:00",
+              "stat_line": "52 YDS, TD",
+              "injury_status": null
+            },
+            {
               "name": "Vikings D/ST",
               "position_id": 16,
               "is_starter": true,
@@ -6915,23 +6932,6 @@
               "game_detail": "15:00 - 4th",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "INT, FR, 7 PA",
-              "injury_status": null
-            },
-            {
-              "name": "Ollie Gordon II",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 9.5,
-              "pro_team_id": 15,
-              "game_status": "live",
-              "opponent": "CIN",
-              "own_score": 7,
-              "opp_score": 21,
-              "is_home": true,
-              "game_detail": "9:22 - 3rd",
-              "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "35 YDS, TD",
               "injury_status": null
             },
             {
@@ -9165,7 +9165,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 536.58,
-            "points_against": 456.20000000000005,
+            "points_against": 457.90000000000003,
             "record": {
               "w": 3,
               "l": 1,
@@ -9808,7 +9808,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 465.84000000000003,
-            "points_against": 645.9,
+            "points_against": 651.5,
             "record": {
               "w": 0,
               "l": 4,
@@ -10449,6 +10449,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T19:07:57.358152+00:00",
+          "week": 5,
+          "team_id": 3,
+          "points_before": 5.6,
+          "points_after": 11.2,
+          "delta": 5.6,
+          "is_starter": true,
+          "player": "Tucker Kraft",
+          "team_name": "8 - 9",
+          "manager": "Marcus Bess"
+        },
+        {
+          "detected_at": "2026-10-11T19:07:57.357195+00:00",
+          "week": 5,
+          "team_id": 1,
+          "points_before": 9.5,
+          "points_after": 11.2,
+          "delta": 1.7,
+          "is_starter": true,
+          "player": "Ollie Gordon II",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-11T19:06:27.259675+00:00",
           "week": 5,
           "team_id": 12,
@@ -10663,30 +10687,6 @@
           "player": "Daniel Jones",
           "team_name": "Nabers know my name",
           "manager": "Aaron Lechelt"
-        },
-        {
-          "detected_at": "2026-10-11T19:03:27.418162+00:00",
-          "week": 5,
-          "team_id": 5,
-          "points_before": 8.0,
-          "points_after": 10.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Browns D/ST",
-          "team_name": "Johnny Sins",
-          "manager": "Gib Terwilliger"
-        },
-        {
-          "detected_at": "2026-10-11T19:03:27.416237+00:00",
-          "week": 5,
-          "team_id": 3,
-          "points_before": 14.92,
-          "points_after": 16.2,
-          "delta": 1.28,
-          "is_starter": true,
-          "player": "Kyler Murray",
-          "team_name": "8 - 9",
-          "manager": "Marcus Bess"
         }
       ],
       "alerts": {
@@ -10699,7 +10699,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=38.3"
+            "description": "League 581297461 week 5 team 3: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=43.9"
           },
           {
             "severity": "warning",
