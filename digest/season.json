@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T18:38:07.378252+00:00",
+  "generated_at": "2026-10-11T18:39:37.979526+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -267,7 +267,7 @@
             "b": {
               "team_id": 18,
               "name": "G.E.T S.O.M.E ",
-              "score": 60.0
+              "score": 61.0
             },
             "live": true
           },
@@ -396,7 +396,7 @@
           "team_id": 18,
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer",
-          "lineup_efficiency": 0.9125425829060665,
+          "lineup_efficiency": 0.9127348905983741,
           "bench_points": 179.0,
           "is_provisional": false
         },
@@ -773,7 +773,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 450.0,
-            "points_against": 516.0,
+            "points_against": 517.0,
             "record": {
               "w": 1,
               "l": 3,
@@ -2278,22 +2278,22 @@
         },
         "18": {
           "week_stats": {
-            "actual_points": 60.0,
-            "optimal_points": 64.0,
-            "efficiency": 0.9375,
+            "actual_points": 61.0,
+            "optimal_points": 65.0,
+            "efficiency": 0.9384615384615385,
             "bench_points": 4.0,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 591.0,
+            "points_for": 592.0,
             "points_against": 535.0,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9125425829060665,
+            "lineup_efficiency": 0.9127348905983741,
             "total_bench_points": 179.0,
             "is_provisional": false
           },
@@ -2337,7 +2337,7 @@
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
-              "points": 9.0,
+              "points": 10.0,
               "pro_team_id": 16,
               "game_status": "live",
               "opponent": "NO",
@@ -2346,7 +2346,7 @@
               "is_home": false,
               "game_detail": "14:47 - 3rd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "2/2 FG",
+              "stat_line": "2/2 FG, 1/1 XP",
               "injury_status": null
             },
             {
@@ -3057,7 +3057,7 @@
               "is_home": true,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "32 YDS, TD",
+              "stat_line": "30 YDS, TD",
               "injury_status": null
             },
             {
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T18:39:22.718492+00:00",
+          "week": 5,
+          "team_id": 18,
+          "points_before": 9.0,
+          "points_after": 10.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Will Reichard",
+          "team_name": "G.E.T S.O.M.E ",
+          "manager": "Donnie Palmer"
+        },
+        {
           "detected_at": "2026-10-11T18:37:52.616179+00:00",
           "week": 5,
           "team_id": 26,
@@ -5372,18 +5384,6 @@
           "delta": 4.0,
           "is_starter": false,
           "player": "Hunter Henry",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
-        },
-        {
-          "detected_at": "2026-10-11T18:25:52.629827+00:00",
-          "week": 5,
-          "team_id": 19,
-          "points_before": 11.0,
-          "points_after": 12.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Drake Maye",
           "team_name": "Shivakamini Somakandarkram",
           "manager": "Kenneth Strack"
         }
@@ -5697,7 +5697,7 @@
             "a": {
               "team_id": 11,
               "name": "I'M RICK JAMES, BLITZ! ",
-              "score": 38.8
+              "score": 39.8
             },
             "b": {
               "team_id": 6,
@@ -5790,7 +5790,7 @@
           "team_id": 11,
           "team_name": "I'M RICK JAMES, BLITZ! ",
           "manager": "Katherine DeLoach",
-          "lineup_efficiency": 0.8557834667124208,
+          "lineup_efficiency": 0.8565442648588398,
           "bench_points": 230.3,
           "is_provisional": false
         },
@@ -7802,22 +7802,22 @@
         },
         "11": {
           "week_stats": {
-            "actual_points": 38.8,
-            "optimal_points": 47.6,
-            "efficiency": 0.815126050420168,
+            "actual_points": 39.8,
+            "optimal_points": 48.6,
+            "efficiency": 0.8189300411522633,
             "bench_points": 11.600000000000001,
             "rank": 8
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 536.6,
+            "points_for": 537.6,
             "points_against": 548.3199999999999,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8557834667124208,
+            "lineup_efficiency": 0.8565442648588398,
             "total_bench_points": 230.3,
             "is_provisional": false
           },
@@ -7844,7 +7844,7 @@
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
-              "points": 9.0,
+              "points": 10.0,
               "pro_team_id": 16,
               "game_status": "live",
               "opponent": "NO",
@@ -7853,7 +7853,7 @@
               "is_home": false,
               "game_detail": "14:47 - 3rd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "2/2 FG",
+              "stat_line": "2/2 FG, 1/1 XP",
               "injury_status": null
             },
             {
@@ -8158,7 +8158,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 575.72,
-            "points_against": 494.6,
+            "points_against": 495.6,
             "record": {
               "w": 3,
               "l": 1,
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T18:39:27.465752+00:00",
+          "week": 5,
+          "team_id": 11,
+          "points_before": 9.0,
+          "points_after": 10.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Will Reichard",
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach"
+        },
+        {
           "detected_at": "2026-10-11T18:37:57.004848+00:00",
           "week": 5,
           "team_id": 10,
@@ -10675,18 +10687,6 @@
           "player": "Cam Skattebo",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-10-11T18:27:27.249014+00:00",
-          "week": 5,
-          "team_id": 3,
-          "points_before": 10.0,
-          "points_after": 13.0,
-          "delta": 3.0,
-          "is_starter": true,
-          "player": "Jets D/ST",
-          "team_name": "8 - 9",
-          "manager": "Marcus Bess"
         }
       ],
       "alerts": {
