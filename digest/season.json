@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T20:42:38.691710+00:00",
+  "generated_at": "2026-10-11T20:44:08.686335+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -306,7 +306,7 @@
             "b": {
               "team_id": 28,
               "name": "Maybe to much Jagging off? ",
-              "score": 80.0
+              "score": 83.0
             },
             "live": true
           },
@@ -420,7 +420,7 @@
           "team_id": 28,
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda",
-          "lineup_efficiency": 0.897511067287051,
+          "lineup_efficiency": 0.897763238763655,
           "bench_points": 150.0,
           "is_provisional": false
         },
@@ -768,7 +768,7 @@
             "optimal_points": 96.0,
             "efficiency": 0.8333333333333334,
             "bench_points": 16.0,
-            "rank": 7
+            "rank": 8
           },
           "season_stats": {
             "weeks_played": 5,
@@ -3428,22 +3428,22 @@
         },
         "28": {
           "week_stats": {
-            "actual_points": 80.0,
-            "optimal_points": 83.0,
-            "efficiency": 0.963855421686747,
+            "actual_points": 83.0,
+            "optimal_points": 86.0,
+            "efficiency": 0.9651162790697675,
             "bench_points": 1.0,
-            "rank": 8
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 502.0,
+            "points_for": 505.0,
             "points_against": 634.0,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.897511067287051,
+            "lineup_efficiency": 0.897763238763655,
             "total_bench_points": 150.0,
             "is_provisional": false
           },
@@ -3453,7 +3453,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 31.0,
+              "points": 34.0,
               "pro_team_id": 28,
               "game_status": "live",
               "opponent": "NYG",
@@ -3462,7 +3462,7 @@
               "is_home": true,
               "game_detail": "2:00 - OT",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "180 YDS",
+              "stat_line": "199 YDS",
               "injury_status": null
             },
             {
@@ -4029,7 +4029,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 498.0,
-            "points_against": 505.0,
+            "points_against": 508.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T20:43:53.308742+00:00",
+          "week": 5,
+          "team_id": 28,
+          "points_before": 31.0,
+          "points_after": 34.0,
+          "delta": 3.0,
+          "is_starter": true,
+          "player": "Jayden Daniels",
+          "team_name": "Maybe to much Jagging off? ",
+          "manager": "Ryan Gajda"
+        },
+        {
           "detected_at": "2026-10-11T20:42:23.336348+00:00",
           "week": 5,
           "team_id": 32,
@@ -5374,18 +5386,6 @@
           "player": "Brock Purdy",
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson"
-        },
-        {
-          "detected_at": "2026-10-11T20:34:53.112561+00:00",
-          "week": 5,
-          "team_id": 19,
-          "points_before": 22.0,
-          "points_after": 24.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Malik Nabers",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
         }
       ],
       "alerts": {
@@ -5814,8 +5814,8 @@
           "team_id": 9,
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison",
-          "lineup_efficiency": 0.7562822228475019,
-          "bench_points": 357.52,
+          "lineup_efficiency": 0.754860367196159,
+          "bench_points": 359.88,
           "is_provisional": false
         }
       ],
@@ -9800,9 +9800,9 @@
         "9": {
           "week_stats": {
             "actual_points": 39.199999999999996,
-            "optimal_points": 112.89999999999999,
-            "efficiency": 0.34720992028343667,
-            "bench_points": 88.22,
+            "optimal_points": 115.25999999999999,
+            "efficiency": 0.3401006420267222,
+            "bench_points": 90.58,
             "rank": 11
           },
           "season_stats": {
@@ -9814,8 +9814,8 @@
               "l": 4,
               "t": 0
             },
-            "lineup_efficiency": 0.7562822228475019,
-            "total_bench_points": 357.52,
+            "lineup_efficiency": 0.754860367196159,
+            "total_bench_points": 359.88,
             "is_provisional": false
           },
           "roster": [
@@ -9994,7 +9994,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 29.9,
+              "points": 32.26,
               "pro_team_id": 28,
               "game_status": "live",
               "opponent": "NYG",
@@ -10003,7 +10003,7 @@
               "is_home": true,
               "game_detail": "2:00 - OT",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "180 YDS",
+              "stat_line": "199 YDS",
               "injury_status": null
             },
             {
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T20:43:57.869389+00:00",
+          "week": 5,
+          "team_id": 9,
+          "points_before": 29.9,
+          "points_after": 32.26,
+          "delta": 2.36,
+          "is_starter": false,
+          "player": "Jayden Daniels",
+          "team_name": "Spider 2 Y Banana",
+          "manager": "Stacks Harrison"
+        },
+        {
           "detected_at": "2026-10-11T20:42:27.863532+00:00",
           "week": 5,
           "team_id": 9,
@@ -10675,18 +10687,6 @@
           "player": "Jameis Winston",
           "team_name": "Hawk Tua on my Penix",
           "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-11T20:36:28.001299+00:00",
-          "week": 5,
-          "team_id": 7,
-          "points_before": 24.5,
-          "points_after": 28.3,
-          "delta": 3.8,
-          "is_starter": true,
-          "player": "Malik Nabers",
-          "team_name": "Nabers know my name",
-          "manager": "Aaron Lechelt"
         }
       ],
       "alerts": {
