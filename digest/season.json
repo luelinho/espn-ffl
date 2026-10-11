@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T22:18:39.455106+00:00",
+  "generated_at": "2026-10-11T22:20:08.451579+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -262,7 +262,7 @@
             "a": {
               "team_id": 12,
               "name": "Auto Drafted \ud83d\ude43",
-              "score": 79.0
+              "score": 76.0
             },
             "b": {
               "team_id": 18,
@@ -340,7 +340,7 @@
             "a": {
               "team_id": 32,
               "name": "Bama boys heavy 251",
-              "score": 58.0
+              "score": 59.0
             },
             "b": {
               "team_id": 25,
@@ -393,19 +393,19 @@
           "is_provisional": false
         },
         {
+          "team_id": 32,
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr.",
+          "lineup_efficiency": 0.9138385836372602,
+          "bench_points": 194.0,
+          "is_provisional": false
+        },
+        {
           "team_id": 26,
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson",
           "lineup_efficiency": 0.9136079110139825,
           "bench_points": 230.0,
-          "is_provisional": false
-        },
-        {
-          "team_id": 32,
-          "team_name": "Bama boys heavy 251",
-          "manager": "Nkhrumba Overton Jr.",
-          "lineup_efficiency": 0.9133556862529545,
-          "bench_points": 194.0,
           "is_provisional": false
         },
         {
@@ -428,7 +428,7 @@
           "team_id": 12,
           "team_name": "Auto Drafted \ud83d\ude43",
           "manager": "Marvin Cox",
-          "lineup_efficiency": 0.8817053343360115,
+          "lineup_efficiency": 0.8806069361666751,
           "bench_points": 211.0,
           "is_provisional": false
         },
@@ -476,7 +476,7 @@
         "season_stats": {
           "weeks_played": 5,
           "points_for": 641.0,
-          "points_against": 523.0,
+          "points_against": 524.0,
           "record": {
             "w": 2,
             "l": 2,
@@ -764,22 +764,22 @@
       "teams_detail": {
         "12": {
           "week_stats": {
-            "actual_points": 79.0,
-            "optimal_points": 95.0,
-            "efficiency": 0.8315789473684211,
+            "actual_points": 76.0,
+            "optimal_points": 92.0,
+            "efficiency": 0.8260869565217391,
             "bench_points": 16.0,
-            "rank": 8
+            "rank": 9
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 484.0,
+            "points_for": 481.0,
             "points_against": 547.0,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8817053343360115,
+            "lineup_efficiency": 0.8806069361666751,
             "total_bench_points": 211.0,
             "is_provisional": false
           },
@@ -836,23 +836,6 @@
               "injury_status": null
             },
             {
-              "name": "Broncos D/ST",
-              "position_id": 16,
-              "is_starter": true,
-              "slot_id": 16,
-              "points": 9.0,
-              "pro_team_id": 7,
-              "game_status": "live",
-              "opponent": "LAC",
-              "own_score": 10,
-              "opp_score": 10,
-              "is_home": false,
-              "game_detail": "1:07 - 3rd",
-              "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "FR, 10 PA",
-              "injury_status": null
-            },
-            {
               "name": "Will Shipley",
               "position_id": 2,
               "is_starter": true,
@@ -868,6 +851,23 @@
               "kickoff_utc": "2026-10-11T13:30:00+00:00",
               "stat_line": "6 YDS, TD",
               "injury_status": "QUESTIONABLE"
+            },
+            {
+              "name": "Broncos D/ST",
+              "position_id": 16,
+              "is_starter": true,
+              "slot_id": 16,
+              "points": 6.0,
+              "pro_team_id": 7,
+              "game_status": "live",
+              "opponent": "LAC",
+              "own_score": 10,
+              "opp_score": 10,
+              "is_home": false,
+              "game_detail": "1:07 - 3rd",
+              "kickoff_utc": "2026-10-11T20:05:00+00:00",
+              "stat_line": "FR, 17 PA",
+              "injury_status": null
             },
             {
               "name": "Brandon Aubrey",
@@ -1077,22 +1077,22 @@
         },
         "32": {
           "week_stats": {
-            "actual_points": 58.0,
-            "optimal_points": 70.0,
-            "efficiency": 0.8285714285714286,
+            "actual_points": 59.0,
+            "optimal_points": 71.0,
+            "efficiency": 0.8309859154929577,
             "bench_points": 14.0,
             "rank": 13
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 510.0,
+            "points_for": 511.0,
             "points_against": 602.0,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.9133556862529545,
+            "lineup_efficiency": 0.9138385836372602,
             "total_bench_points": 194.0,
             "is_provisional": false
           },
@@ -1170,7 +1170,7 @@
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
-              "points": 5.0,
+              "points": 6.0,
               "pro_team_id": 24,
               "game_status": "live",
               "opponent": "DEN",
@@ -1179,7 +1179,7 @@
               "is_home": true,
               "game_detail": "1:07 - 3rd",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "1/1 FG, 1/1 XP",
+              "stat_line": "1/1 FG, 2/2 XP",
               "injury_status": null
             },
             {
@@ -2287,7 +2287,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 622.0,
-            "points_against": 569.0,
+            "points_against": 566.0,
             "record": {
               "w": 3,
               "l": 1,
@@ -2583,7 +2583,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 641.0,
-            "points_against": 523.0,
+            "points_against": 524.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -4599,7 +4599,7 @@
             "optimal_points": 90.0,
             "efficiency": 0.8555555555555555,
             "bench_points": 14.0,
-            "rank": 9
+            "rank": 8
           },
           "season_stats": {
             "weeks_played": 5,
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T22:19:53.450728+00:00",
+          "week": 5,
+          "team_id": 32,
+          "points_before": 5.0,
+          "points_after": 6.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Cameron Dicker",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
           "detected_at": "2026-10-11T22:16:53.480888+00:00",
           "week": 5,
           "team_id": 29,
@@ -5374,18 +5386,6 @@
           "player": "Omarion Hampton",
           "team_name": "Auto Drafted \ud83d\ude43",
           "manager": "Marvin Cox"
-        },
-        {
-          "detected_at": "2026-10-11T21:49:53.295157+00:00",
-          "week": 5,
-          "team_id": 28,
-          "points_before": 1.0,
-          "points_after": 3.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Amon-Ra St. Brown",
-          "team_name": "Maybe to much Jagging off? ",
-          "manager": "Ryan Gajda"
         }
       ],
       "alerts": {
@@ -5408,7 +5408,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 5 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=58.0"
+            "description": "League 1618731 week 5 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=59.0"
           },
           {
             "severity": "warning",
@@ -5650,7 +5650,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 77.56
+              "score": 74.56
             },
             "live": true
           },
@@ -5734,7 +5734,7 @@
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.9163471753885256,
+          "lineup_efficiency": 0.9113113060431903,
           "bench_points": 225.46,
           "is_provisional": false
         },
@@ -6855,7 +6855,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 649.1,
-            "points_against": 534.1,
+            "points_against": 531.1,
             "record": {
               "w": 3,
               "l": 1,
@@ -9156,22 +9156,22 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 77.56,
-            "optimal_points": 83.06,
-            "efficiency": 0.9337828076089574,
+            "actual_points": 74.56,
+            "optimal_points": 82.06,
+            "efficiency": 0.9086034608822813,
             "bench_points": 13.34,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 568.32,
+            "points_for": 565.32,
             "points_against": 484.5,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9163471753885256,
+            "lineup_efficiency": 0.9113113060431903,
             "total_bench_points": 225.46,
             "is_provisional": false
           },
@@ -9232,7 +9232,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 9.0,
+              "points": 6.0,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "LAC",
@@ -9241,7 +9241,7 @@
               "is_home": false,
               "game_detail": "1:07 - 3rd",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "FR, 10 PA",
+              "stat_line": "FR, 17 PA",
               "injury_status": null
             },
             {
