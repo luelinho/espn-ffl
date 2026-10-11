@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T23:17:08.930390+00:00",
+  "generated_at": "2026-10-11T23:18:38.918975+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -262,7 +262,7 @@
             "a": {
               "team_id": 12,
               "name": "Auto Drafted \ud83d\ude43",
-              "score": 84.0
+              "score": 85.0
             },
             "b": {
               "team_id": 18,
@@ -428,7 +428,7 @@
           "team_id": 12,
           "team_name": "Auto Drafted \ud83d\ude43",
           "manager": "Marvin Cox",
-          "lineup_efficiency": 0.8833895448623272,
+          "lineup_efficiency": 0.8837063765454956,
           "bench_points": 211.0,
           "is_provisional": false
         },
@@ -764,22 +764,22 @@
       "teams_detail": {
         "12": {
           "week_stats": {
-            "actual_points": 84.0,
-            "optimal_points": 100.0,
-            "efficiency": 0.84,
+            "actual_points": 85.0,
+            "optimal_points": 101.0,
+            "efficiency": 0.8415841584158416,
             "bench_points": 16.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 489.0,
+            "points_for": 490.0,
             "points_against": 547.0,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8833895448623272,
+            "lineup_efficiency": 0.8837063765454956,
             "total_bench_points": 211.0,
             "is_provisional": false
           },
@@ -840,7 +840,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 13.0,
+              "points": 14.0,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "LAC",
@@ -2287,7 +2287,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 622.0,
-            "points_against": 574.0,
+            "points_against": 575.0,
             "record": {
               "w": 3,
               "l": 1,
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T23:18:23.795198+00:00",
+          "week": 5,
+          "team_id": 12,
+          "points_before": 13.0,
+          "points_after": 14.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Broncos D/ST",
+          "team_name": "Auto Drafted \ud83d\ude43",
+          "manager": "Marvin Cox"
+        },
+        {
           "detected_at": "2026-10-11T23:16:53.777169+00:00",
           "week": 5,
           "team_id": 31,
@@ -5374,18 +5386,6 @@
           "player": "Mike Evans",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-11T23:04:53.687665+00:00",
-          "week": 5,
-          "team_id": 28,
-          "points_before": 8.0,
-          "points_after": 10.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Amon-Ra St. Brown",
-          "team_name": "Maybe to much Jagging off? ",
-          "manager": "Ryan Gajda"
         }
       ],
       "alerts": {
@@ -5650,7 +5650,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 91.36
+              "score": 92.36
             },
             "live": true
           },
@@ -5734,7 +5734,7 @@
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.9151685135214163,
+          "lineup_efficiency": 0.9153135175466055,
           "bench_points": 229.06,
           "is_provisional": false
         },
@@ -6855,7 +6855,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 662.6,
-            "points_against": 547.9,
+            "points_against": 548.9,
             "record": {
               "w": 3,
               "l": 1,
@@ -9156,22 +9156,22 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 91.36,
-            "optimal_points": 98.46000000000001,
-            "efficiency": 0.9278894982734105,
+            "actual_points": 92.36,
+            "optimal_points": 99.46000000000001,
+            "efficiency": 0.9286145183993565,
             "bench_points": 16.94,
             "rank": 9
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 582.12,
+            "points_for": 583.12,
             "points_against": 498.0,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9151685135214163,
+            "lineup_efficiency": 0.9153135175466055,
             "total_bench_points": 229.06,
             "is_provisional": false
           },
@@ -9215,7 +9215,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 13.0,
+              "points": 14.0,
               "pro_team_id": 7,
               "game_status": "live",
               "opponent": "LAC",
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T23:18:28.189214+00:00",
+          "week": 5,
+          "team_id": 2,
+          "points_before": 13.0,
+          "points_after": 14.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Broncos D/ST",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-11T23:16:58.166121+00:00",
           "week": 5,
           "team_id": 11,
@@ -10675,18 +10687,6 @@
           "player": "Jared Goff",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-10-11T23:07:58.115613+00:00",
-          "week": 5,
-          "team_id": 1,
-          "points_before": 9.72,
-          "points_after": 9.8,
-          "delta": 0.08,
-          "is_starter": false,
-          "player": "Brock Purdy",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
         }
       ],
       "alerts": {
