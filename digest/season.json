@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T23:15:39.175063+00:00",
+  "generated_at": "2026-10-11T23:17:08.930390+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -280,7 +280,7 @@
             "b": {
               "team_id": 31,
               "name": "Father Drew",
-              "score": 108.0
+              "score": 112.0
             },
             "live": true
           },
@@ -332,7 +332,7 @@
             "b": {
               "team_id": 1,
               "name": "Lights, Kamara, Action! ",
-              "score": 104.0
+              "score": 102.0
             },
             "live": true
           },
@@ -396,7 +396,7 @@
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.9251634510422833,
+          "lineup_efficiency": 0.9253514651433408,
           "bench_points": 173.0,
           "is_provisional": false
         },
@@ -436,7 +436,7 @@
           "team_id": 1,
           "team_name": "Lights, Kamara, Action! ",
           "manager": "James Prince",
-          "lineup_efficiency": 0.8504627216176006,
+          "lineup_efficiency": 0.8503559125388289,
           "bench_points": 172.0,
           "is_provisional": false
         },
@@ -1036,7 +1036,7 @@
               "is_home": true,
               "game_detail": "0:15 - 4th",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "120 YDS, TD, INT",
+              "stat_line": "121 YDS, TD, INT",
               "injury_status": null
             },
             {
@@ -1669,22 +1669,22 @@
         },
         "31": {
           "week_stats": {
-            "actual_points": 108.0,
-            "optimal_points": 111.0,
-            "efficiency": 0.972972972972973,
+            "actual_points": 112.0,
+            "optimal_points": 115.0,
+            "efficiency": 0.9739130434782609,
             "bench_points": 18.0,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 577.0,
+            "points_for": 581.0,
             "points_against": 609.0,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.9251634510422833,
+            "lineup_efficiency": 0.9253514651433408,
             "total_bench_points": 173.0,
             "is_provisional": false
           },
@@ -1707,6 +1707,23 @@
               "injury_status": null
             },
             {
+              "name": "Jacoby Brissett",
+              "position_id": 1,
+              "is_starter": true,
+              "slot_id": 0,
+              "points": 22.0,
+              "pro_team_id": 22,
+              "game_status": "live",
+              "opponent": "DET",
+              "own_score": 14,
+              "opp_score": 45,
+              "is_home": true,
+              "game_detail": "3:11 - 4th",
+              "kickoff_utc": "2026-10-11T20:25:00+00:00",
+              "stat_line": "283 YDS, 2 TD, INT",
+              "injury_status": null
+            },
+            {
               "name": "Tyler Warren",
               "position_id": 4,
               "is_starter": true,
@@ -1724,28 +1741,11 @@
               "injury_status": null
             },
             {
-              "name": "Jacoby Brissett",
-              "position_id": 1,
-              "is_starter": true,
-              "slot_id": 0,
-              "points": 20.0,
-              "pro_team_id": 22,
-              "game_status": "live",
-              "opponent": "DET",
-              "own_score": 14,
-              "opp_score": 45,
-              "is_home": true,
-              "game_detail": "3:11 - 4th",
-              "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "275 YDS, 2 TD, INT",
-              "injury_status": null
-            },
-            {
               "name": "Jaxon Smith-Njigba",
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 15.0,
+              "points": 17.0,
               "pro_team_id": 26,
               "game_status": "live",
               "opponent": "SF",
@@ -1754,7 +1754,7 @@
               "is_home": true,
               "game_detail": "11:02 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "3 REC, 58 YDS, TD",
+              "stat_line": "4 REC, 67 YDS, TD",
               "injury_status": null
             },
             {
@@ -2008,7 +2008,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 514.0,
-            "points_against": 532.0,
+            "points_against": 530.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -3132,22 +3132,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 104.0,
-            "optimal_points": 107.0,
-            "efficiency": 0.9719626168224299,
+            "actual_points": 102.0,
+            "optimal_points": 105.0,
+            "efficiency": 0.9714285714285714,
             "bench_points": 4.0,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 507.0,
+            "points_for": 505.0,
             "points_against": 432.0,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8504627216176006,
+            "lineup_efficiency": 0.8503559125388289,
             "total_bench_points": 172.0,
             "is_provisional": false
           },
@@ -3221,23 +3221,6 @@
               "injury_status": null
             },
             {
-              "name": "Lions D/ST",
-              "position_id": 16,
-              "is_starter": true,
-              "slot_id": 16,
-              "points": 10.0,
-              "pro_team_id": 8,
-              "game_status": "live",
-              "opponent": "ARI",
-              "own_score": 45,
-              "opp_score": 14,
-              "is_home": false,
-              "game_detail": "3:11 - 4th",
-              "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "INT, 14 PA",
-              "injury_status": null
-            },
-            {
               "name": "Courtland Sutton",
               "position_id": 3,
               "is_starter": true,
@@ -3252,6 +3235,23 @@
               "game_detail": "0:15 - 4th",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
               "stat_line": "2 REC, 18 YDS, TD",
+              "injury_status": null
+            },
+            {
+              "name": "Lions D/ST",
+              "position_id": 16,
+              "is_starter": true,
+              "slot_id": 16,
+              "points": 8.0,
+              "pro_team_id": 8,
+              "game_status": "live",
+              "opponent": "ARI",
+              "own_score": 45,
+              "opp_score": 14,
+              "is_home": false,
+              "game_detail": "3:11 - 4th",
+              "kickoff_utc": "2026-10-11T20:25:00+00:00",
+              "stat_line": "INT, 14 PA",
               "injury_status": null
             },
             {
@@ -4604,7 +4604,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 760.0,
-            "points_against": 538.0,
+            "points_against": 542.0,
             "record": {
               "w": 4,
               "l": 0,
@@ -5148,6 +5148,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T23:16:53.777169+00:00",
+          "week": 5,
+          "team_id": 31,
+          "points_before": 20.0,
+          "points_after": 22.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Jacoby Brissett",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
+          "detected_at": "2026-10-11T23:16:53.776684+00:00",
+          "week": 5,
+          "team_id": 31,
+          "points_before": 15.0,
+          "points_after": 17.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Jaxon Smith-Njigba",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
           "detected_at": "2026-10-11T23:15:23.791357+00:00",
           "week": 5,
           "team_id": 31,
@@ -5362,30 +5386,6 @@
           "player": "Amon-Ra St. Brown",
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda"
-        },
-        {
-          "detected_at": "2026-10-11T23:04:53.687214+00:00",
-          "week": 5,
-          "team_id": 26,
-          "points_before": 8.0,
-          "points_after": 9.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Brock Purdy",
-          "team_name": "Purdy Good Team",
-          "manager": "Hayley Hinson"
-        },
-        {
-          "detected_at": "2026-10-11T23:03:23.702236+00:00",
-          "week": 5,
-          "team_id": 30,
-          "points_before": 16.0,
-          "points_after": 19.0,
-          "delta": 3.0,
-          "is_starter": true,
-          "player": "Sam LaPorta",
-          "team_name": "Fleetwood Mac S3x Pants",
-          "manager": "Ken Nilson"
         }
       ],
       "alerts": {
@@ -5697,7 +5697,7 @@
             "a": {
               "team_id": 11,
               "name": "I'M RICK JAMES, BLITZ! ",
-              "score": 99.6
+              "score": 101.72
             },
             "b": {
               "team_id": 6,
@@ -5715,7 +5715,7 @@
             "b": {
               "team_id": 5,
               "name": "Johnny Sins",
-              "score": 151.64
+              "score": 153.54
             },
             "live": true
           }
@@ -5782,8 +5782,8 @@
           "team_id": 11,
           "team_name": "I'M RICK JAMES, BLITZ! ",
           "manager": "Katherine DeLoach",
-          "lineup_efficiency": 0.8756783668212247,
-          "bench_points": 246.4,
+          "lineup_efficiency": 0.8760045185631737,
+          "bench_points": 246.44,
           "is_provisional": false
         },
         {
@@ -7185,7 +7185,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 600.06,
-            "points_against": 644.6,
+            "points_against": 646.5,
             "record": {
               "w": 1,
               "l": 3,
@@ -7802,23 +7802,23 @@
         },
         "11": {
           "week_stats": {
-            "actual_points": 99.6,
-            "optimal_points": 108.89999999999999,
-            "efficiency": 0.9146005509641874,
-            "bench_points": 27.7,
+            "actual_points": 101.72,
+            "optimal_points": 111.02,
+            "efficiency": 0.9162313096739326,
+            "bench_points": 27.740000000000002,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 597.4,
+            "points_for": 599.52,
             "points_against": 588.22,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8756783668212247,
-            "total_bench_points": 246.4,
+            "lineup_efficiency": 0.8760045185631737,
+            "total_bench_points": 246.44,
             "is_provisional": false
           },
           "roster": [
@@ -7840,6 +7840,23 @@
               "injury_status": null
             },
             {
+              "name": "Jacoby Brissett",
+              "position_id": 1,
+              "is_starter": true,
+              "slot_id": 0,
+              "points": 20.92,
+              "pro_team_id": 22,
+              "game_status": "live",
+              "opponent": "DET",
+              "own_score": 14,
+              "opp_score": 45,
+              "is_home": true,
+              "game_detail": "3:11 - 4th",
+              "kickoff_utc": "2026-10-11T20:25:00+00:00",
+              "stat_line": "283 YDS, 2 TD, INT",
+              "injury_status": null
+            },
+            {
               "name": "Matthew Golden",
               "position_id": 3,
               "is_starter": true,
@@ -7854,23 +7871,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "6 REC, 123 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Jacoby Brissett",
-              "position_id": 1,
-              "is_starter": true,
-              "slot_id": 0,
-              "points": 18.8,
-              "pro_team_id": 22,
-              "game_status": "live",
-              "opponent": "DET",
-              "own_score": 14,
-              "opp_score": 45,
-              "is_home": true,
-              "game_detail": "3:11 - 4th",
-              "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "275 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -8014,7 +8014,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 10.2,
+              "points": 10.24,
               "pro_team_id": 24,
               "game_status": "live",
               "opponent": "DEN",
@@ -8023,7 +8023,7 @@
               "is_home": true,
               "game_detail": "0:15 - 4th",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "120 YDS, TD, INT",
+              "stat_line": "121 YDS, TD, INT",
               "injury_status": null
             },
             {
@@ -8158,7 +8158,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 615.62,
-            "points_against": 555.4,
+            "points_against": 557.52,
             "record": {
               "w": 3,
               "l": 1,
@@ -8479,15 +8479,15 @@
         },
         "5": {
           "week_stats": {
-            "actual_points": 151.64,
-            "optimal_points": 151.64000000000001,
+            "actual_points": 153.54,
+            "optimal_points": 153.54000000000002,
             "efficiency": 0.9999999999999998,
             "bench_points": 9.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 726.0,
+            "points_for": 727.9,
             "points_against": 618.38,
             "record": {
               "w": 4,
@@ -8572,7 +8572,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 16.4,
+              "points": 18.3,
               "pro_team_id": 26,
               "game_status": "live",
               "opponent": "SF",
@@ -8581,7 +8581,7 @@
               "is_home": true,
               "game_detail": "11:02 - 4th",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "3 REC, 58 YDS, TD",
+              "stat_line": "4 REC, 67 YDS, TD",
               "injury_status": null
             },
             {
@@ -10449,6 +10449,42 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T23:16:58.166121+00:00",
+          "week": 5,
+          "team_id": 11,
+          "points_before": 18.8,
+          "points_after": 20.92,
+          "delta": 2.12,
+          "is_starter": true,
+          "player": "Jacoby Brissett",
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach"
+        },
+        {
+          "detected_at": "2026-10-11T23:16:58.165895+00:00",
+          "week": 5,
+          "team_id": 11,
+          "points_before": 10.2,
+          "points_after": 10.24,
+          "delta": 0.04,
+          "is_starter": false,
+          "player": "Justin Herbert",
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach"
+        },
+        {
+          "detected_at": "2026-10-11T23:16:58.162622+00:00",
+          "week": 5,
+          "team_id": 5,
+          "points_before": 16.4,
+          "points_after": 18.3,
+          "delta": 1.9,
+          "is_starter": true,
+          "player": "Jaxon Smith-Njigba",
+          "team_name": "Johnny Sins",
+          "manager": "Gib Terwilliger"
+        },
+        {
           "detected_at": "2026-10-11T23:15:28.301140+00:00",
           "week": 5,
           "team_id": 11,
@@ -10651,42 +10687,6 @@
           "player": "Brock Purdy",
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-11T23:06:28.123567+00:00",
-          "week": 5,
-          "team_id": 10,
-          "points_before": 14.3,
-          "points_after": 14.7,
-          "delta": 0.4,
-          "is_starter": false,
-          "player": "J.K. Dobbins",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-11T23:06:28.118774+00:00",
-          "week": 5,
-          "team_id": 3,
-          "points_before": 31.2,
-          "points_after": 31.4,
-          "delta": 0.2,
-          "is_starter": true,
-          "player": "Jahmyr Gibbs",
-          "team_name": "8 - 9",
-          "manager": "Marcus Bess"
-        },
-        {
-          "detected_at": "2026-10-11T23:06:28.117782+00:00",
-          "week": 5,
-          "team_id": 1,
-          "points_before": 8.6,
-          "points_after": 9.72,
-          "delta": 1.12,
-          "is_starter": false,
-          "player": "Brock Purdy",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
         }
       ],
       "alerts": {
@@ -10704,7 +10704,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 5: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=151.64"
+            "description": "League 581297461 week 5 team 5: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=153.54"
           },
           {
             "severity": "warning",
