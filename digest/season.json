@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T18:23:07.212371+00:00",
+  "generated_at": "2026-10-11T18:24:37.733792+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -319,7 +319,7 @@
             "b": {
               "team_id": 16,
               "name": "Bijan, demons!",
-              "score": 67.0
+              "score": 69.0
             },
             "live": true
           },
@@ -364,7 +364,7 @@
           "team_id": 16,
           "team_name": "Bijan, demons!",
           "manager": "Harry Hinson",
-          "lineup_efficiency": 0.953866774547724,
+          "lineup_efficiency": 0.9543051307121075,
           "bench_points": 137.0,
           "is_provisional": false
         },
@@ -372,8 +372,8 @@
           "team_id": 17,
           "team_name": "Teenage Tuten Ninja Turtles",
           "manager": "Holden Shepherd",
-          "lineup_efficiency": 0.9410781563677364,
-          "bench_points": 90.0,
+          "lineup_efficiency": 0.9385691957942598,
+          "bench_points": 91.0,
           "is_provisional": false
         },
         {
@@ -471,7 +471,7 @@
           "optimal_points": 90.0,
           "efficiency": 0.7666666666666667,
           "bench_points": 28.0,
-          "rank": 1
+          "rank": 2
         },
         "season_stats": {
           "weeks_played": 5,
@@ -1281,7 +1281,7 @@
               "is_home": true,
               "game_detail": "0:52 - 2nd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "61 YDS, INT",
+              "stat_line": "62 YDS, INT",
               "injury_status": null
             },
             {
@@ -1339,22 +1339,22 @@
         },
         "16": {
           "week_stats": {
-            "actual_points": 67.0,
-            "optimal_points": 73.0,
-            "efficiency": 0.9178082191780822,
+            "actual_points": 69.0,
+            "optimal_points": 75.0,
+            "efficiency": 0.92,
             "bench_points": 7.0,
-            "rank": 2
+            "rank": 1
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 562.0,
+            "points_for": 564.0,
             "points_against": 541.0,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.953866774547724,
+            "lineup_efficiency": 0.9543051307121075,
             "total_bench_points": 137.0,
             "is_provisional": false
           },
@@ -1415,7 +1415,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 10.0,
+              "points": 12.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "LV",
@@ -1424,7 +1424,7 @@
               "is_home": true,
               "game_detail": "1:56 - 2nd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "37 YDS, TD",
+              "stat_line": "57 YDS, TD",
               "injury_status": null
             },
             {
@@ -2578,7 +2578,7 @@
             "optimal_points": 90.0,
             "efficiency": 0.7666666666666667,
             "bench_points": 28.0,
-            "rank": 1
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 5,
@@ -2879,7 +2879,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 427.0,
-            "points_against": 630.0,
+            "points_against": 632.0,
             "record": {
               "w": 0,
               "l": 4,
@@ -4300,9 +4300,9 @@
         "17": {
           "week_stats": {
             "actual_points": 49.0,
-            "optimal_points": 62.0,
-            "efficiency": 0.7903225806451613,
-            "bench_points": 13.0,
+            "optimal_points": 63.0,
+            "efficiency": 0.7777777777777778,
+            "bench_points": 14.0,
             "rank": 5
           },
           "season_stats": {
@@ -4314,8 +4314,8 @@
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.9410781563677364,
-            "total_bench_points": 90.0,
+            "lineup_efficiency": 0.9385691957942598,
+            "total_bench_points": 91.0,
             "is_provisional": false
           },
           "roster": [
@@ -4511,7 +4511,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 4.0,
+              "points": 5.0,
               "pro_team_id": 10,
               "game_status": "live",
               "opponent": "HOU",
@@ -5148,6 +5148,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T18:24:22.686143+00:00",
+          "week": 5,
+          "team_id": 17,
+          "points_before": 4.0,
+          "points_after": 5.0,
+          "delta": 1.0,
+          "is_starter": false,
+          "player": "Tyjae Spears",
+          "team_name": "Teenage Tuten Ninja Turtles",
+          "manager": "Holden Shepherd"
+        },
+        {
+          "detected_at": "2026-10-11T18:24:22.684394+00:00",
+          "week": 5,
+          "team_id": 16,
+          "points_before": 10.0,
+          "points_after": 12.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Rhamondre Stevenson",
+          "team_name": "Bijan, demons!",
+          "manager": "Harry Hinson"
+        },
+        {
           "detected_at": "2026-10-11T18:21:22.717204+00:00",
           "week": 5,
           "team_id": 32,
@@ -5362,30 +5386,6 @@
           "player": "Packers D/ST",
           "team_name": "Kelsey not  Kelce ",
           "manager": "Kelsey Prince"
-        },
-        {
-          "detected_at": "2026-10-11T18:15:22.492392+00:00",
-          "week": 5,
-          "team_id": 29,
-          "points_before": 12.0,
-          "points_after": 13.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Joe Burrow",
-          "team_name": "Kelsey not  Kelce ",
-          "manager": "Kelsey Prince"
-        },
-        {
-          "detected_at": "2026-10-11T18:15:22.490942+00:00",
-          "week": 5,
-          "team_id": 25,
-          "points_before": 12.0,
-          "points_after": 14.0,
-          "delta": 2.0,
-          "is_starter": false,
-          "player": "D'Andre Swift",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -5806,8 +5806,8 @@
           "team_id": 10,
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
-          "lineup_efficiency": 0.8167165594207754,
-          "bench_points": 248.38,
+          "lineup_efficiency": 0.8117488495350326,
+          "bench_points": 250.38,
           "is_provisional": false
         },
         {
@@ -5822,9 +5822,9 @@
       "my_team_detail": {
         "week_stats": {
           "actual_points": 37.72,
-          "optimal_points": 54.12,
-          "efficiency": 0.696969696969697,
-          "bench_points": 21.200000000000003,
+          "optimal_points": 56.12,
+          "efficiency": 0.6721311475409836,
+          "bench_points": 23.200000000000003,
           "rank": 8
         },
         "season_stats": {
@@ -5836,8 +5836,8 @@
             "l": 2,
             "t": 0
           },
-          "lineup_efficiency": 0.8167165594207754,
-          "total_bench_points": 248.38,
+          "lineup_efficiency": 0.8117488495350326,
+          "total_bench_points": 250.38,
           "is_provisional": false
         },
         "roster": [
@@ -6016,7 +6016,7 @@
             "position_id": 2,
             "is_starter": false,
             "slot_id": 20,
-            "points": 11.4,
+            "points": 13.4,
             "pro_team_id": 17,
             "game_status": "live",
             "opponent": "LV",
@@ -6025,7 +6025,7 @@
             "is_home": true,
             "game_detail": "1:56 - 2nd",
             "kickoff_utc": "2026-10-11T17:00:00+00:00",
-            "stat_line": "37 YDS, TD",
+            "stat_line": "57 YDS, TD",
             "injury_status": null
           },
           {
@@ -8776,9 +8776,9 @@
         "10": {
           "week_stats": {
             "actual_points": 37.72,
-            "optimal_points": 54.12,
-            "efficiency": 0.696969696969697,
-            "bench_points": 21.200000000000003,
+            "optimal_points": 56.12,
+            "efficiency": 0.6721311475409836,
+            "bench_points": 23.200000000000003,
             "rank": 8
           },
           "season_stats": {
@@ -8790,8 +8790,8 @@
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.8167165594207754,
-            "total_bench_points": 248.38,
+            "lineup_efficiency": 0.8117488495350326,
+            "total_bench_points": 250.38,
             "is_provisional": false
           },
           "roster": [
@@ -8970,7 +8970,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 11.4,
+              "points": 13.4,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "LV",
@@ -8979,7 +8979,7 @@
               "is_home": true,
               "game_detail": "1:56 - 2nd",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
-              "stat_line": "37 YDS, TD",
+              "stat_line": "57 YDS, TD",
               "injury_status": null
             },
             {
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T18:24:27.229133+00:00",
+          "week": 5,
+          "team_id": 10,
+          "points_before": 11.4,
+          "points_after": 13.4,
+          "delta": 2.0,
+          "is_starter": false,
+          "player": "Rhamondre Stevenson",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
           "detected_at": "2026-10-11T18:22:56.902154+00:00",
           "week": 5,
           "team_id": 10,
@@ -10675,18 +10687,6 @@
           "player": "Cam Skattebo",
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-10-11T18:16:57.170229+00:00",
-          "week": 5,
-          "team_id": 3,
-          "points_before": 4.94,
-          "points_after": 5.78,
-          "delta": 0.84,
-          "is_starter": true,
-          "player": "Kyler Murray",
-          "team_name": "8 - 9",
-          "manager": "Marcus Bess"
         }
       ],
       "alerts": {
