@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T21:42:38.912846+00:00",
+  "generated_at": "2026-10-11T21:44:08.338271+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -327,7 +327,7 @@
             "a": {
               "team_id": 30,
               "name": "Fleetwood Mac S3x Pants",
-              "score": 69.0
+              "score": 74.0
             },
             "b": {
               "team_id": 1,
@@ -452,7 +452,7 @@
           "team_id": 30,
           "team_name": "Fleetwood Mac S3x Pants",
           "manager": "Ken Nilson",
-          "lineup_efficiency": 0.821348947557957,
+          "lineup_efficiency": 0.8237395762933144,
           "bench_points": 217.0,
           "is_provisional": false
         },
@@ -1673,7 +1673,7 @@
             "optimal_points": 72.0,
             "efficiency": 0.9722222222222222,
             "bench_points": 13.0,
-            "rank": 10
+            "rank": 11
           },
           "season_stats": {
             "weeks_played": 5,
@@ -1999,22 +1999,22 @@
         },
         "30": {
           "week_stats": {
-            "actual_points": 69.0,
-            "optimal_points": 89.0,
-            "efficiency": 0.7752808988764045,
+            "actual_points": 74.0,
+            "optimal_points": 94.0,
+            "efficiency": 0.7872340425531915,
             "bench_points": 14.0,
-            "rank": 12
+            "rank": 9
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 496.0,
+            "points_for": 501.0,
             "points_against": 522.0,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.821348947557957,
+            "lineup_efficiency": 0.8237395762933144,
             "total_bench_points": 217.0,
             "is_provisional": false
           },
@@ -2071,6 +2071,23 @@
               "injury_status": null
             },
             {
+              "name": "Jason Myers",
+              "position_id": 5,
+              "is_starter": true,
+              "slot_id": 17,
+              "points": 10.0,
+              "pro_team_id": 26,
+              "game_status": "live",
+              "opponent": "SF",
+              "own_score": 10,
+              "opp_score": 14,
+              "is_home": true,
+              "game_detail": "2:00 - 2nd",
+              "kickoff_utc": "2026-10-11T20:25:00+00:00",
+              "stat_line": "2/2 FG, 1/1 XP",
+              "injury_status": null
+            },
+            {
               "name": "Chris Olave",
               "position_id": 3,
               "is_starter": true,
@@ -2085,23 +2102,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "4 REC, 46 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Jason Myers",
-              "position_id": 5,
-              "is_starter": true,
-              "slot_id": 17,
-              "points": 5.0,
-              "pro_team_id": 26,
-              "game_status": "live",
-              "opponent": "SF",
-              "own_score": 10,
-              "opp_score": 14,
-              "is_home": true,
-              "game_detail": "2:00 - 2nd",
-              "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "1/1 FG, 1/1 XP",
               "injury_status": null
             },
             {
@@ -2874,7 +2874,7 @@
             "optimal_points": 94.0,
             "efficiency": 0.776595744680851,
             "bench_points": 22.0,
-            "rank": 9
+            "rank": 10
           },
           "season_stats": {
             "weeks_played": 5,
@@ -3141,7 +3141,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 497.0,
-            "points_against": 414.0,
+            "points_against": 419.0,
             "record": {
               "w": 3,
               "l": 1,
@@ -4599,7 +4599,7 @@
             "optimal_points": 82.0,
             "efficiency": 0.8414634146341463,
             "bench_points": 14.0,
-            "rank": 11
+            "rank": 12
           },
           "season_stats": {
             "weeks_played": 5,
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:43:53.344618+00:00",
+          "week": 5,
+          "team_id": 30,
+          "points_before": 5.0,
+          "points_after": 10.0,
+          "delta": 5.0,
+          "is_starter": true,
+          "player": "Jason Myers",
+          "team_name": "Fleetwood Mac S3x Pants",
+          "manager": "Ken Nilson"
+        },
+        {
           "detected_at": "2026-10-11T21:42:23.285867+00:00",
           "week": 5,
           "team_id": 15,
@@ -5374,18 +5386,6 @@
           "player": "Sam LaPorta",
           "team_name": "Fleetwood Mac S3x Pants",
           "manager": "Ken Nilson"
-        },
-        {
-          "detected_at": "2026-10-11T21:25:53.264198+00:00",
-          "week": 5,
-          "team_id": 25,
-          "points_before": 0.0,
-          "points_after": 1.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Jared Goff",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -5684,7 +5684,7 @@
             "a": {
               "team_id": 10,
               "name": "LaPorta Authority ",
-              "score": 94.0
+              "score": 99.0
             },
             "b": {
               "team_id": 4,
@@ -5798,7 +5798,7 @@
           "team_id": 10,
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
-          "lineup_efficiency": 0.8572269262469316,
+          "lineup_efficiency": 0.8581445378350552,
           "bench_points": 264.18,
           "is_provisional": false
         },
@@ -5821,22 +5821,22 @@
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 94.0,
-          "optimal_points": 104.5,
-          "efficiency": 0.8995215311004785,
+          "actual_points": 99.0,
+          "optimal_points": 109.5,
+          "efficiency": 0.9041095890410958,
           "bench_points": 37.0,
-          "rank": 5
+          "rank": 4
         },
         "season_stats": {
           "weeks_played": 5,
-          "points_for": 555.72,
+          "points_for": 560.72,
           "points_against": 607.76,
           "record": {
             "w": 2,
             "l": 2,
             "t": 0
           },
-          "lineup_efficiency": 0.8572269262469316,
+          "lineup_efficiency": 0.8581445378350552,
           "total_bench_points": 264.18,
           "is_provisional": false
         },
@@ -5927,6 +5927,23 @@
             "injury_status": null
           },
           {
+            "name": "Jason Myers",
+            "position_id": 5,
+            "is_starter": true,
+            "slot_id": 17,
+            "points": 10.0,
+            "pro_team_id": 26,
+            "game_status": "live",
+            "opponent": "SF",
+            "own_score": 10,
+            "opp_score": 14,
+            "is_home": true,
+            "game_detail": "2:00 - 2nd",
+            "kickoff_utc": "2026-10-11T20:25:00+00:00",
+            "stat_line": "2/2 FG, 1/1 XP",
+            "injury_status": null
+          },
+          {
             "name": "Chase Brown",
             "position_id": 2,
             "is_starter": true,
@@ -5941,23 +5958,6 @@
             "game_detail": "Final",
             "kickoff_utc": "2026-10-11T17:00:00+00:00",
             "stat_line": "39 YDS",
-            "injury_status": null
-          },
-          {
-            "name": "Jason Myers",
-            "position_id": 5,
-            "is_starter": true,
-            "slot_id": 17,
-            "points": 5.0,
-            "pro_team_id": 26,
-            "game_status": "live",
-            "opponent": "SF",
-            "own_score": 10,
-            "opp_score": 14,
-            "is_home": true,
-            "game_detail": "2:00 - 2nd",
-            "kickoff_utc": "2026-10-11T20:25:00+00:00",
-            "stat_line": "1/1 FG, 1/1 XP",
             "injury_status": null
           },
           {
@@ -6508,7 +6508,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 576.06,
-            "points_against": 519.26,
+            "points_against": 524.26,
             "record": {
               "w": 2,
               "l": 2,
@@ -8153,7 +8153,7 @@
             "optimal_points": 109.88000000000001,
             "efficiency": 0.8691299599563159,
             "bench_points": 44.28,
-            "rank": 4
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 5,
@@ -8775,22 +8775,22 @@
         },
         "10": {
           "week_stats": {
-            "actual_points": 94.0,
-            "optimal_points": 104.5,
-            "efficiency": 0.8995215311004785,
+            "actual_points": 99.0,
+            "optimal_points": 109.5,
+            "efficiency": 0.9041095890410958,
             "bench_points": 37.0,
-            "rank": 5
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 555.72,
+            "points_for": 560.72,
             "points_against": 607.76,
             "record": {
               "w": 2,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.8572269262469316,
+            "lineup_efficiency": 0.8581445378350552,
             "total_bench_points": 264.18,
             "is_provisional": false
           },
@@ -8881,6 +8881,23 @@
               "injury_status": null
             },
             {
+              "name": "Jason Myers",
+              "position_id": 5,
+              "is_starter": true,
+              "slot_id": 17,
+              "points": 10.0,
+              "pro_team_id": 26,
+              "game_status": "live",
+              "opponent": "SF",
+              "own_score": 10,
+              "opp_score": 14,
+              "is_home": true,
+              "game_detail": "2:00 - 2nd",
+              "kickoff_utc": "2026-10-11T20:25:00+00:00",
+              "stat_line": "2/2 FG, 1/1 XP",
+              "injury_status": null
+            },
+            {
               "name": "Chase Brown",
               "position_id": 2,
               "is_starter": true,
@@ -8895,23 +8912,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-11T17:00:00+00:00",
               "stat_line": "39 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Jason Myers",
-              "position_id": 5,
-              "is_starter": true,
-              "slot_id": 17,
-              "points": 5.0,
-              "pro_team_id": 26,
-              "game_status": "live",
-              "opponent": "SF",
-              "own_score": 10,
-              "opp_score": 14,
-              "is_home": true,
-              "game_detail": "2:00 - 2nd",
-              "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "1/1 FG, 1/1 XP",
               "injury_status": null
             },
             {
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:43:57.707363+00:00",
+          "week": 5,
+          "team_id": 10,
+          "points_before": 5.0,
+          "points_after": 10.0,
+          "delta": 5.0,
+          "is_starter": true,
+          "player": "Jason Myers",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
           "detected_at": "2026-10-11T21:42:27.695718+00:00",
           "week": 5,
           "team_id": 8,
@@ -10675,18 +10687,6 @@
           "player": "Brock Purdy",
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-11T21:27:27.834174+00:00",
-          "week": 5,
-          "team_id": 6,
-          "points_before": 4.0,
-          "points_after": 11.1,
-          "delta": 7.1,
-          "is_starter": true,
-          "player": "Christian McCaffrey",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
