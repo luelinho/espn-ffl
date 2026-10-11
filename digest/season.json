@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T21:44:08.338271+00:00",
+  "generated_at": "2026-10-11T21:45:38.374903+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -280,7 +280,7 @@
             "b": {
               "team_id": 31,
               "name": "Father Drew",
-              "score": 70.0
+              "score": 71.0
             },
             "live": true
           },
@@ -332,7 +332,7 @@
             "b": {
               "team_id": 1,
               "name": "Lights, Kamara, Action! ",
-              "score": 94.0
+              "score": 92.0
             },
             "live": true
           },
@@ -388,7 +388,7 @@
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.925013300892133,
+          "lineup_efficiency": 0.9250894043928941,
           "bench_points": 168.0,
           "is_provisional": false
         },
@@ -436,7 +436,7 @@
           "team_id": 1,
           "team_name": "Lights, Kamara, Action! ",
           "manager": "James Prince",
-          "lineup_efficiency": 0.847906932946992,
+          "lineup_efficiency": 0.8477368649197812,
           "bench_points": 172.0,
           "is_provisional": false
         },
@@ -1669,22 +1669,22 @@
         },
         "31": {
           "week_stats": {
-            "actual_points": 70.0,
-            "optimal_points": 72.0,
-            "efficiency": 0.9722222222222222,
+            "actual_points": 71.0,
+            "optimal_points": 73.0,
+            "efficiency": 0.9726027397260274,
             "bench_points": 13.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 539.0,
+            "points_for": 540.0,
             "points_against": 563.0,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.925013300892133,
+            "lineup_efficiency": 0.9250894043928941,
             "total_bench_points": 168.0,
             "is_provisional": false
           },
@@ -1762,7 +1762,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 7.0,
+              "points": 8.0,
               "pro_team_id": 22,
               "game_status": "live",
               "opponent": "DET",
@@ -1771,7 +1771,7 @@
               "is_home": true,
               "game_detail": "4:50 - 2nd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "59 YDS, TD",
+              "stat_line": "67 YDS, TD",
               "injury_status": null
             },
             {
@@ -2008,7 +2008,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 501.0,
-            "points_against": 522.0,
+            "points_against": 520.0,
             "record": {
               "w": 2,
               "l": 2,
@@ -2397,7 +2397,7 @@
               "is_home": true,
               "game_detail": "4:50 - 2nd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "27 YDS",
+              "stat_line": "28 YDS",
               "injury_status": null
             },
             {
@@ -3132,22 +3132,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 94.0,
-            "optimal_points": 98.0,
-            "efficiency": 0.9591836734693877,
+            "actual_points": 92.0,
+            "optimal_points": 96.0,
+            "efficiency": 0.9583333333333334,
             "bench_points": 4.0,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 497.0,
+            "points_for": 495.0,
             "points_against": 419.0,
             "record": {
               "w": 3,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.847906932946992,
+            "lineup_efficiency": 0.8477368649197812,
             "total_bench_points": 172.0,
             "is_provisional": false
           },
@@ -3225,7 +3225,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 9.0,
+              "points": 7.0,
               "pro_team_id": 8,
               "game_status": "live",
               "opponent": "ARI",
@@ -4604,7 +4604,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 714.0,
-            "points_against": 500.0,
+            "points_against": 501.0,
             "record": {
               "w": 4,
               "l": 0,
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:45:23.292787+00:00",
+          "week": 5,
+          "team_id": 31,
+          "points_before": 7.0,
+          "points_after": 8.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Jacoby Brissett",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
           "detected_at": "2026-10-11T21:43:53.344618+00:00",
           "week": 5,
           "team_id": 30,
@@ -5374,18 +5386,6 @@
           "player": "Eddy Pineiro",
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda"
-        },
-        {
-          "detected_at": "2026-10-11T21:25:53.265934+00:00",
-          "week": 5,
-          "team_id": 30,
-          "points_before": 2.0,
-          "points_after": 4.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Sam LaPorta",
-          "team_name": "Fleetwood Mac S3x Pants",
-          "manager": "Ken Nilson"
         }
       ],
       "alerts": {
@@ -5663,7 +5663,7 @@
             "b": {
               "team_id": 9,
               "name": "Spider 2 Y Banana",
-              "score": 41.1
+              "score": 41.2
             },
             "live": true
           },
@@ -5697,7 +5697,7 @@
             "a": {
               "team_id": 11,
               "name": "I'M RICK JAMES, BLITZ! ",
-              "score": 88.86
+              "score": 89.18
             },
             "b": {
               "team_id": 6,
@@ -5782,7 +5782,7 @@
           "team_id": 11,
           "team_name": "I'M RICK JAMES, BLITZ! ",
           "manager": "Katherine DeLoach",
-          "lineup_efficiency": 0.8738096013716635,
+          "lineup_efficiency": 0.8738711729565756,
           "bench_points": 238.3,
           "is_provisional": false
         },
@@ -5814,7 +5814,7 @@
           "team_id": 9,
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison",
-          "lineup_efficiency": 0.7579721183339091,
+          "lineup_efficiency": 0.7580835381164241,
           "bench_points": 360.08,
           "is_provisional": false
         }
@@ -6212,7 +6212,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 516.94,
-            "points_against": 558.38,
+            "points_against": 558.48,
             "record": {
               "w": 1,
               "l": 3,
@@ -7802,22 +7802,22 @@
         },
         "11": {
           "week_stats": {
-            "actual_points": 88.86,
-            "optimal_points": 98.16,
-            "efficiency": 0.9052567237163814,
+            "actual_points": 89.17999999999999,
+            "optimal_points": 98.48000000000002,
+            "efficiency": 0.9055645816409421,
             "bench_points": 19.6,
             "rank": 7
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 586.6600000000001,
+            "points_for": 586.98,
             "points_against": 587.12,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8738096013716635,
+            "lineup_efficiency": 0.8738711729565756,
             "total_bench_points": 238.3,
             "is_provisional": false
           },
@@ -7895,7 +7895,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 8.06,
+              "points": 8.38,
               "pro_team_id": 22,
               "game_status": "live",
               "opponent": "DET",
@@ -7904,7 +7904,7 @@
               "is_home": true,
               "game_detail": "4:50 - 2nd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "59 YDS, TD",
+              "stat_line": "67 YDS, TD",
               "injury_status": null
             },
             {
@@ -8158,7 +8158,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 614.52,
-            "points_against": 544.66,
+            "points_against": 544.98,
             "record": {
               "w": 3,
               "l": 1,
@@ -9799,22 +9799,22 @@
         },
         "9": {
           "week_stats": {
-            "actual_points": 41.1,
-            "optimal_points": 115.56,
-            "efficiency": 0.3556593977154725,
+            "actual_points": 41.199999999999996,
+            "optimal_points": 115.66,
+            "efficiency": 0.3562164966280477,
             "bench_points": 90.78,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 470.84000000000003,
+            "points_for": 470.94,
             "points_against": 693.16,
             "record": {
               "w": 0,
               "l": 4,
               "t": 0
             },
-            "lineup_efficiency": 0.7579721183339091,
+            "lineup_efficiency": 0.7580835381164241,
             "total_bench_points": 360.08,
             "is_provisional": false
           },
@@ -9875,7 +9875,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 2.7,
+              "points": 2.8,
               "pro_team_id": 22,
               "game_status": "live",
               "opponent": "DET",
@@ -9884,7 +9884,7 @@
               "is_home": true,
               "game_detail": "4:50 - 2nd",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "27 YDS",
+              "stat_line": "28 YDS",
               "injury_status": null
             },
             {
@@ -10449,6 +10449,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:45:27.657008+00:00",
+          "week": 5,
+          "team_id": 11,
+          "points_before": 8.06,
+          "points_after": 8.38,
+          "delta": 0.32,
+          "is_starter": true,
+          "player": "Jacoby Brissett",
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach"
+        },
+        {
+          "detected_at": "2026-10-11T21:45:27.655685+00:00",
+          "week": 5,
+          "team_id": 9,
+          "points_before": 2.7,
+          "points_after": 2.8,
+          "delta": 0.1,
+          "is_starter": true,
+          "player": "Jeremiyah Love",
+          "team_name": "Spider 2 Y Banana",
+          "manager": "Stacks Harrison"
+        },
+        {
           "detected_at": "2026-10-11T21:43:57.707363+00:00",
           "week": 5,
           "team_id": 10,
@@ -10663,30 +10687,6 @@
           "player": "Jake Bates",
           "team_name": "Hawk Tua on my Penix",
           "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-11T21:28:57.692908+00:00",
-          "week": 5,
-          "team_id": 4,
-          "points_before": 1.2,
-          "points_after": 6.72,
-          "delta": 5.52,
-          "is_starter": false,
-          "player": "Jared Goff",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-10-11T21:28:57.690716+00:00",
-          "week": 5,
-          "team_id": 1,
-          "points_before": 6.0,
-          "points_after": 6.04,
-          "delta": 0.04,
-          "is_starter": false,
-          "player": "Brock Purdy",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
         }
       ],
       "alerts": {
@@ -10694,7 +10694,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 9: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=41.1"
+            "description": "League 581297461 week 5 team 9: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=41.2"
           },
           {
             "severity": "warning",
