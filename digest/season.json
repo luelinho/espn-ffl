@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T21:23:08.341165+00:00",
+  "generated_at": "2026-10-11T21:24:38.396165+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -1975,7 +1975,7 @@
               "is_home": true,
               "game_detail": "1:48 - 2nd",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "7 YDS",
+              "stat_line": "8 YDS",
               "injury_status": null
             },
             {
@@ -5734,8 +5734,8 @@
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.9249823189358585,
-          "bench_points": 225.86,
+          "lineup_efficiency": 0.924745652626424,
+          "bench_points": 225.96,
           "is_provisional": false
         },
         {
@@ -9157,9 +9157,9 @@
         "2": {
           "week_stats": {
             "actual_points": 80.56,
-            "optimal_points": 82.46000000000001,
-            "efficiency": 0.9769585253456221,
-            "bench_points": 13.74,
+            "optimal_points": 82.56,
+            "efficiency": 0.9757751937984496,
+            "bench_points": 13.84,
             "rank": 9
           },
           "season_stats": {
@@ -9171,8 +9171,8 @@
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.9249823189358585,
-            "total_bench_points": 225.86,
+            "lineup_efficiency": 0.924745652626424,
+            "total_bench_points": 225.96,
             "is_provisional": false
           },
           "roster": [
@@ -9368,7 +9368,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 0.7,
+              "points": 0.8,
               "pro_team_id": 24,
               "game_status": "live",
               "opponent": "DEN",
@@ -9377,7 +9377,7 @@
               "is_home": true,
               "game_detail": "1:48 - 2nd",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "7 YDS",
+              "stat_line": "8 YDS",
               "injury_status": null
             },
             {
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:24:27.603686+00:00",
+          "week": 5,
+          "team_id": 2,
+          "points_before": 0.7,
+          "points_after": 0.8,
+          "delta": 0.1,
+          "is_starter": false,
+          "player": "Keaton Mitchell",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-11T21:21:27.622414+00:00",
           "week": 5,
           "team_id": 1,
@@ -10675,18 +10687,6 @@
           "player": "Sam LaPorta",
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-11T21:09:27.578337+00:00",
-          "week": 5,
-          "team_id": 5,
-          "points_before": 4.8,
-          "points_after": 6.4,
-          "delta": 1.6,
-          "is_starter": true,
-          "player": "Jaxon Smith-Njigba",
-          "team_name": "Johnny Sins",
-          "manager": "Gib Terwilliger"
         }
       ],
       "alerts": {
