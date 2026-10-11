@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T21:20:08.803215+00:00",
+  "generated_at": "2026-10-11T21:21:38.318249+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -5727,7 +5727,7 @@
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
           "lineup_efficiency": 0.944067876165392,
-          "bench_points": 240.52,
+          "bench_points": 240.72,
           "is_provisional": false
         },
         {
@@ -6849,7 +6849,7 @@
             "actual_points": 81.34,
             "optimal_points": 96.74000000000001,
             "efficiency": 0.8408104196816208,
-            "bench_points": 24.1,
+            "bench_points": 24.3,
             "rank": 7
           },
           "season_stats": {
@@ -6862,7 +6862,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.944067876165392,
-            "total_bench_points": 240.52,
+            "total_bench_points": 240.72,
             "is_provisional": false
           },
           "roster": [
@@ -7075,7 +7075,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 5.8,
+              "points": 6.0,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "SEA",
@@ -10449,6 +10449,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T21:21:27.622414+00:00",
+          "week": 5,
+          "team_id": 1,
+          "points_before": 5.8,
+          "points_after": 6.0,
+          "delta": 0.2,
+          "is_starter": false,
+          "player": "Brock Purdy",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-11T21:19:58.003292+00:00",
           "week": 5,
           "team_id": 3,
@@ -10675,18 +10687,6 @@
           "player": "Jaxon Smith-Njigba",
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger"
-        },
-        {
-          "detected_at": "2026-10-11T21:09:27.578039+00:00",
-          "week": 5,
-          "team_id": 4,
-          "points_before": 0.28,
-          "points_after": 0.76,
-          "delta": 0.48,
-          "is_starter": false,
-          "player": "Jared Goff",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
         }
       ],
       "alerts": {
