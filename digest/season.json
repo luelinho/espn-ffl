@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T20:51:38.626966+00:00",
+  "generated_at": "2026-10-11T20:53:08.734619+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -262,7 +262,7 @@
             "a": {
               "team_id": 12,
               "name": "Auto Drafted \ud83d\ude43",
-              "score": 81.0
+              "score": 83.0
             },
             "b": {
               "team_id": 18,
@@ -428,7 +428,7 @@
           "team_id": 12,
           "team_name": "Auto Drafted \ud83d\ude43",
           "manager": "Marvin Cox",
-          "lineup_efficiency": 0.8823998541406777,
+          "lineup_efficiency": 0.8830663125390948,
           "bench_points": 211.0,
           "is_provisional": false
         },
@@ -586,7 +586,7 @@
             "is_home": true,
             "game_detail": "4:40 - 1st",
             "kickoff_utc": "2026-10-11T20:25:00+00:00",
-            "stat_line": "14 YDS, TD",
+            "stat_line": "13 YDS, TD",
             "injury_status": null
           },
           {
@@ -764,22 +764,22 @@
       "teams_detail": {
         "12": {
           "week_stats": {
-            "actual_points": 81.0,
-            "optimal_points": 97.0,
-            "efficiency": 0.8350515463917526,
+            "actual_points": 83.0,
+            "optimal_points": 99.0,
+            "efficiency": 0.8383838383838383,
             "bench_points": 16.0,
-            "rank": 8
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 486.0,
+            "points_for": 488.0,
             "points_against": 546.0,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8823998541406777,
+            "lineup_efficiency": 0.8830663125390948,
             "total_bench_points": 211.0,
             "is_provisional": false
           },
@@ -891,7 +891,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 1.0,
+              "points": 3.0,
               "pro_team_id": 24,
               "game_status": "live",
               "opponent": "DEN",
@@ -900,7 +900,7 @@
               "is_home": true,
               "game_detail": "13:13 - 2nd",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "9 YDS",
+              "stat_line": "20 YDS",
               "injury_status": null
             },
             {
@@ -2287,7 +2287,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 621.0,
-            "points_against": 571.0,
+            "points_against": 573.0,
             "record": {
               "w": 3,
               "l": 1,
@@ -2693,7 +2693,7 @@
               "is_home": true,
               "game_detail": "4:40 - 1st",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "14 YDS, TD",
+              "stat_line": "13 YDS, TD",
               "injury_status": null
             },
             {
@@ -3432,7 +3432,7 @@
             "optimal_points": 86.0,
             "efficiency": 0.9651162790697675,
             "bench_points": 1.0,
-            "rank": 7
+            "rank": 8
           },
           "season_stats": {
             "weeks_played": 5,
@@ -5148,6 +5148,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T20:52:53.295550+00:00",
+          "week": 5,
+          "team_id": 12,
+          "points_before": 1.0,
+          "points_after": 3.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Omarion Hampton",
+          "team_name": "Auto Drafted \ud83d\ude43",
+          "manager": "Marvin Cox"
+        },
+        {
           "detected_at": "2026-10-11T20:51:23.371294+00:00",
           "week": 5,
           "team_id": 12,
@@ -5374,18 +5386,6 @@
           "player": "Jacoby Brissett",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-11T20:36:23.266335+00:00",
-          "week": 5,
-          "team_id": 29,
-          "points_before": 0.0,
-          "points_after": 1.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Michael Wilson",
-          "team_name": "Kelsey not  Kelce ",
-          "manager": "Kelsey Prince"
         }
       ],
       "alerts": {
@@ -5710,7 +5710,7 @@
             "a": {
               "team_id": 12,
               "name": "God of Warren",
-              "score": 116.72
+              "score": 116.62
             },
             "b": {
               "team_id": 5,
@@ -5742,8 +5742,8 @@
           "team_id": 12,
           "team_name": "God of Warren",
           "manager": "Spencer Gillis",
-          "lineup_efficiency": 0.9003535572572299,
-          "bench_points": 249.78,
+          "lineup_efficiency": 0.8986575315874019,
+          "bench_points": 250.88000000000002,
           "is_provisional": false
         },
         {
@@ -5783,7 +5783,7 @@
           "team_name": "I'M RICK JAMES, BLITZ! ",
           "manager": "Katherine DeLoach",
           "lineup_efficiency": 0.8738018766854602,
-          "bench_points": 237.6,
+          "bench_points": 237.7,
           "is_provisional": false
         },
         {
@@ -7176,23 +7176,23 @@
         },
         "12": {
           "week_stats": {
-            "actual_points": 116.72,
-            "optimal_points": 122.84,
-            "efficiency": 0.950179094757408,
-            "bench_points": 9.8,
+            "actual_points": 116.61999999999999,
+            "optimal_points": 123.84000000000002,
+            "efficiency": 0.9416989664082686,
+            "bench_points": 10.9,
             "rank": 2
           },
           "season_stats": {
             "weeks_played": 5,
-            "points_for": 590.56,
+            "points_for": 590.46,
             "points_against": 609.5,
             "record": {
               "w": 1,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.9003535572572299,
-            "total_bench_points": 249.78,
+            "lineup_efficiency": 0.8986575315874019,
+            "total_bench_points": 250.88000000000002,
             "is_provisional": false
           },
           "roster": [
@@ -7269,7 +7269,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 9.3,
+              "points": 9.2,
               "pro_team_id": 26,
               "game_status": "live",
               "opponent": "SF",
@@ -7278,7 +7278,7 @@
               "is_home": true,
               "game_detail": "4:40 - 1st",
               "kickoff_utc": "2026-10-11T20:25:00+00:00",
-              "stat_line": "14 YDS, TD",
+              "stat_line": "13 YDS, TD",
               "injury_status": null
             },
             {
@@ -7388,7 +7388,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 2.5,
+              "points": 3.6,
               "pro_team_id": 24,
               "game_status": "live",
               "opponent": "DEN",
@@ -7397,7 +7397,7 @@
               "is_home": true,
               "game_detail": "13:13 - 2nd",
               "kickoff_utc": "2026-10-11T20:05:00+00:00",
-              "stat_line": "9 YDS",
+              "stat_line": "20 YDS",
               "injury_status": null
             },
             {
@@ -7805,7 +7805,7 @@
             "actual_points": 88.82,
             "optimal_points": 98.12,
             "efficiency": 0.9052181002853648,
-            "bench_points": 18.9,
+            "bench_points": 19.0,
             "rank": 5
           },
           "season_stats": {
@@ -7818,7 +7818,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8738018766854602,
-            "total_bench_points": 237.6,
+            "total_bench_points": 237.7,
             "is_provisional": false
           },
           "roster": [
@@ -8065,7 +8065,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 1.4,
+              "points": 1.5,
               "pro_team_id": 24,
               "game_status": "live",
               "opponent": "DEN",
@@ -8488,7 +8488,7 @@
           "season_stats": {
             "weeks_played": 5,
             "points_for": 690.9,
-            "points_against": 608.88,
+            "points_against": 608.78,
             "record": {
               "w": 4,
               "l": 0,
@@ -10449,6 +10449,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-11T20:52:57.916685+00:00",
+          "week": 5,
+          "team_id": 12,
+          "points_before": 2.5,
+          "points_after": 3.6,
+          "delta": 1.1,
+          "is_starter": false,
+          "player": "Omarion Hampton",
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis"
+        },
+        {
+          "detected_at": "2026-10-11T20:52:57.916310+00:00",
+          "week": 5,
+          "team_id": 11,
+          "points_before": 1.4,
+          "points_after": 1.5,
+          "delta": 0.1,
+          "is_starter": false,
+          "player": "Justin Herbert",
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach"
+        },
+        {
           "detected_at": "2026-10-11T20:51:27.910534+00:00",
           "week": 5,
           "team_id": 12,
@@ -10663,30 +10687,6 @@
           "player": "Omarion Hampton",
           "team_name": "God of Warren",
           "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-10-11T20:40:57.620283+00:00",
-          "week": 5,
-          "team_id": 11,
-          "points_before": 2.24,
-          "points_after": 8.02,
-          "delta": 5.78,
-          "is_starter": true,
-          "player": "Jacoby Brissett",
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach"
-        },
-        {
-          "detected_at": "2026-10-11T20:39:27.470417+00:00",
-          "week": 5,
-          "team_id": 11,
-          "points_before": 0.76,
-          "points_after": 1.16,
-          "delta": 0.4,
-          "is_starter": false,
-          "player": "Justin Herbert",
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach"
         }
       ],
       "alerts": {
@@ -10709,7 +10709,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 5 team 12: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=116.72"
+            "description": "League 581297461 week 5 team 12: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=116.62"
           },
           {
             "severity": "warning",
