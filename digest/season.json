@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T15:56:46.608383+00:00",
+  "generated_at": "2026-10-18T15:58:16.245305+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -409,14 +409,6 @@
           "is_provisional": false
         },
         {
-          "team_id": 32,
-          "team_name": "Bama boys heavy 251",
-          "manager": "Nkhrumba Overton Jr.",
-          "lineup_efficiency": 0.8904110632799989,
-          "bench_points": 210.0,
-          "is_provisional": false
-        },
-        {
           "team_id": 12,
           "team_name": "Auto Drafted \ud83d\ude43",
           "manager": "Marvin Cox",
@@ -430,6 +422,14 @@
           "manager": "James Prince",
           "lineup_efficiency": 0.8861859495246543,
           "bench_points": 192.0,
+          "is_provisional": false
+        },
+        {
+          "team_id": 32,
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr.",
+          "lineup_efficiency": 0.8791378537309272,
+          "bench_points": 213.0,
           "is_provisional": false
         },
         {
@@ -1061,9 +1061,9 @@
         "32": {
           "week_stats": {
             "actual_points": 17.0,
-            "optimal_points": 26.0,
-            "efficiency": 0.6538461538461539,
-            "bench_points": 9.0,
+            "optimal_points": 29.0,
+            "efficiency": 0.5862068965517241,
+            "bench_points": 12.0,
             "rank": 7
           },
           "season_stats": {
@@ -1075,8 +1075,8 @@
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8904110632799989,
-            "total_bench_points": 210.0,
+            "lineup_efficiency": 0.8791378537309272,
+            "total_bench_points": 213.0,
             "is_provisional": false
           },
           "roster": [
@@ -1234,6 +1234,23 @@
               "injury_status": null
             },
             {
+              "name": "Dalton Schultz",
+              "position_id": 4,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": 7.0,
+              "pro_team_id": 34,
+              "game_status": "live",
+              "opponent": "JAX",
+              "own_score": 24,
+              "opp_score": 21,
+              "is_home": false,
+              "game_detail": "2:34 - 3rd",
+              "kickoff_utc": "2026-10-18T13:30:00+00:00",
+              "stat_line": "4 REC, 33 YDS",
+              "injury_status": null
+            },
+            {
               "name": "Bo Nix",
               "position_id": 1,
               "is_starter": false,
@@ -1248,23 +1265,6 @@
               "game_detail": "Final/OT",
               "kickoff_utc": "2026-10-16T00:15:00+00:00",
               "stat_line": "107 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Dalton Schultz",
-              "position_id": 4,
-              "is_starter": false,
-              "slot_id": 20,
-              "points": 4.0,
-              "pro_team_id": 34,
-              "game_status": "live",
-              "opponent": "JAX",
-              "own_score": 24,
-              "opp_score": 21,
-              "is_home": false,
-              "game_detail": "2:34 - 3rd",
-              "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "3 REC, 17 YDS",
               "injury_status": null
             },
             {
@@ -1356,7 +1356,7 @@
               "is_home": false,
               "game_detail": "2:34 - 3rd",
               "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "221 YDS, 3 TD",
+              "stat_line": "237 YDS, 3 TD",
               "injury_status": null
             },
             {
@@ -4879,6 +4879,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-18T15:58:00.671167+00:00",
+          "week": 6,
+          "team_id": 32,
+          "points_before": 4.0,
+          "points_after": 7.0,
+          "delta": 3.0,
+          "is_starter": false,
+          "player": "Dalton Schultz",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
           "detected_at": "2026-10-18T15:53:30.768034+00:00",
           "week": 6,
           "team_id": 25,
@@ -5105,18 +5117,6 @@
           "player": "Marvin Harrison Jr.",
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer"
-        },
-        {
-          "detected_at": "2026-10-18T14:38:56.954538+00:00",
-          "week": 6,
-          "team_id": 16,
-          "points_before": 8.0,
-          "points_after": 9.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "C.J. Stroud",
-          "team_name": "Bijan, demons!",
-          "manager": "Harry Hinson"
         }
       ],
       "alerts": {
@@ -5381,7 +5381,7 @@
             "b": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 9.9
+              "score": 12.5
             },
             "live": true
           },
@@ -5505,8 +5505,8 @@
           "team_id": 5,
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger",
-          "lineup_efficiency": 0.8277467113205561,
-          "bench_points": 340.84000000000003,
+          "lineup_efficiency": 0.8265981030658471,
+          "bench_points": 341.48,
           "is_provisional": false
         },
         {
@@ -7761,15 +7761,15 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 9.9,
-            "optimal_points": 9.9,
+            "actual_points": 12.5,
+            "optimal_points": 12.5,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 5
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 626.8,
+            "points_for": 629.4,
             "points_against": 575.58,
             "record": {
               "w": 3,
@@ -7781,6 +7781,23 @@
             "is_provisional": false
           },
           "roster": [
+            {
+              "name": "Dalton Schultz",
+              "position_id": 4,
+              "is_starter": true,
+              "slot_id": 6,
+              "points": 7.3,
+              "pro_team_id": 34,
+              "game_status": "live",
+              "opponent": "JAX",
+              "own_score": 24,
+              "opp_score": 21,
+              "is_home": false,
+              "game_detail": "2:34 - 3rd",
+              "kickoff_utc": "2026-10-18T13:30:00+00:00",
+              "stat_line": "4 REC, 33 YDS",
+              "injury_status": null
+            },
             {
               "name": "Nico Collins",
               "position_id": 3,
@@ -7796,23 +7813,6 @@
               "game_detail": "2:34 - 3rd",
               "kickoff_utc": "2026-10-18T13:30:00+00:00",
               "stat_line": "1 REC, 42 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Dalton Schultz",
-              "position_id": 4,
-              "is_starter": true,
-              "slot_id": 6,
-              "points": 4.7,
-              "pro_team_id": 34,
-              "game_status": "live",
-              "opponent": "JAX",
-              "own_score": 24,
-              "opp_score": 21,
-              "is_home": false,
-              "game_detail": "2:34 - 3rd",
-              "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "3 REC, 17 YDS",
               "injury_status": null
             },
             {
@@ -8075,9 +8075,9 @@
         "5": {
           "week_stats": {
             "actual_points": 36.8,
-            "optimal_points": 58.14,
-            "efficiency": 0.632954936360509,
-            "bench_points": 21.34,
+            "optimal_points": 58.78,
+            "efficiency": 0.6260632868322558,
+            "bench_points": 21.98,
             "rank": 1
           },
           "season_stats": {
@@ -8089,8 +8089,8 @@
               "l": 0,
               "t": 0
             },
-            "lineup_efficiency": 0.8277467113205561,
-            "total_bench_points": 340.84000000000003,
+            "lineup_efficiency": 0.8265981030658471,
+            "total_bench_points": 341.48,
             "is_provisional": false
           },
           "roster": [
@@ -8252,7 +8252,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 21.34,
+              "points": 21.98,
               "pro_team_id": 34,
               "game_status": "live",
               "opponent": "JAX",
@@ -8261,7 +8261,7 @@
               "is_home": false,
               "game_detail": "2:34 - 3rd",
               "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "221 YDS, 3 TD",
+              "stat_line": "237 YDS, 3 TD",
               "injury_status": null
             },
             {
@@ -8687,12 +8687,12 @@
             "optimal_points": 20.9,
             "efficiency": 0.5741626794258373,
             "bench_points": 14.9,
-            "rank": 4
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 6,
             "points_for": 653.02,
-            "points_against": 534.52,
+            "points_against": 537.12,
             "record": {
               "w": 4,
               "l": 1,
@@ -9947,6 +9947,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-18T15:58:05.108576+00:00",
+          "week": 6,
+          "team_id": 6,
+          "points_before": 4.7,
+          "points_after": 7.3,
+          "delta": 2.6,
+          "is_starter": true,
+          "player": "Dalton Schultz",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
+          "detected_at": "2026-10-18T15:58:05.108175+00:00",
+          "week": 6,
+          "team_id": 5,
+          "points_before": 21.34,
+          "points_after": 21.98,
+          "delta": 0.64,
+          "is_starter": false,
+          "player": "C.J. Stroud",
+          "team_name": "Johnny Sins",
+          "manager": "Gib Terwilliger"
+        },
+        {
           "detected_at": "2026-10-18T15:53:35.156034+00:00",
           "week": 6,
           "team_id": 5,
@@ -10157,30 +10181,6 @@
           "points_before": 8.6,
           "points_after": 9.36,
           "delta": 0.76,
-          "is_starter": false,
-          "player": "Trevor Lawrence",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-10-18T14:52:31.350351+00:00",
-          "week": 6,
-          "team_id": 12,
-          "points_before": 1.9,
-          "points_after": 3.8,
-          "delta": 1.9,
-          "is_starter": true,
-          "player": "Jakobi Meyers",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-10-18T14:52:31.350266+00:00",
-          "week": 6,
-          "team_id": 12,
-          "points_before": 8.24,
-          "points_after": 8.6,
-          "delta": 0.36,
           "is_starter": false,
           "player": "Trevor Lawrence",
           "team_name": "God of Warren",
