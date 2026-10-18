@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T14:54:13.281356+00:00",
+  "generated_at": "2026-10-18T14:55:42.759023+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -267,7 +267,7 @@
             "b": {
               "team_id": 18,
               "name": "G.E.T S.O.M.E ",
-              "score": 10.0
+              "score": 14.0
             },
             "live": true
           },
@@ -288,7 +288,7 @@
             "a": {
               "team_id": 17,
               "name": "Teenage Tuten Ninja Turtles",
-              "score": 30.0
+              "score": 37.0
             },
             "b": {
               "team_id": 29,
@@ -409,6 +409,14 @@
           "is_provisional": false
         },
         {
+          "team_id": 18,
+          "team_name": "G.E.T S.O.M.E ",
+          "manager": "Donnie Palmer",
+          "lineup_efficiency": 0.8923712521784131,
+          "bench_points": 209.0,
+          "is_provisional": false
+        },
+        {
           "team_id": 12,
           "team_name": "Auto Drafted \ud83d\ude43",
           "manager": "Marvin Cox",
@@ -430,14 +438,6 @@
           "manager": "James Prince",
           "lineup_efficiency": 0.8861859495246543,
           "bench_points": 192.0,
-          "is_provisional": false
-        },
-        {
-          "team_id": 18,
-          "team_name": "G.E.T S.O.M.E ",
-          "manager": "Donnie Palmer",
-          "lineup_efficiency": 0.8854268077339685,
-          "bench_points": 209.0,
           "is_provisional": false
         },
         {
@@ -768,7 +768,7 @@
             "optimal_points": 11.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 5
+            "rank": 6
           },
           "season_stats": {
             "weeks_played": 6,
@@ -2125,22 +2125,22 @@
         },
         "18": {
           "week_stats": {
-            "actual_points": 10.0,
-            "optimal_points": 12.0,
-            "efficiency": 0.8333333333333334,
+            "actual_points": 14.0,
+            "optimal_points": 16.0,
+            "efficiency": 0.875,
             "bench_points": 2.0,
-            "rank": 6
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 653.0,
+            "points_for": 657.0,
             "points_against": 553.0,
             "record": {
               "w": 4,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8854268077339685,
+            "lineup_efficiency": 0.8923712521784131,
             "total_bench_points": 209.0,
             "is_provisional": false
           },
@@ -2150,7 +2150,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 10.0,
+              "points": 14.0,
               "pro_team_id": 30,
               "game_status": "live",
               "opponent": "HOU",
@@ -2159,7 +2159,7 @@
               "is_home": true,
               "game_detail": "1:16 - 2nd",
               "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "154 YDS, TD, INT",
+              "stat_line": "156 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -2709,7 +2709,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 485.0,
-            "points_against": 703.0,
+            "points_against": 710.0,
             "record": {
               "w": 0,
               "l": 5,
@@ -2971,7 +2971,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 528.0,
-            "points_against": 459.0,
+            "points_against": 463.0,
             "record": {
               "w": 4,
               "l": 1,
@@ -3935,7 +3935,7 @@
               "is_home": false,
               "game_detail": "1:16 - 2nd",
               "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "INT, 7 PA",
+              "stat_line": "INT, 13 PA",
               "injury_status": null
             },
             {
@@ -4027,15 +4027,15 @@
         },
         "17": {
           "week_stats": {
-            "actual_points": 30.0,
-            "optimal_points": 30.0,
+            "actual_points": 37.0,
+            "optimal_points": 37.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 552.0,
+            "points_for": 559.0,
             "points_against": 549.0,
             "record": {
               "w": 1,
@@ -4047,6 +4047,23 @@
             "is_provisional": false
           },
           "roster": [
+            {
+              "name": "Bhayshul Tuten",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 18.0,
+              "pro_team_id": 30,
+              "game_status": "live",
+              "opponent": "HOU",
+              "own_score": 7,
+              "opp_score": 10,
+              "is_home": true,
+              "game_detail": "1:16 - 2nd",
+              "kickoff_utc": "2026-10-18T13:30:00+00:00",
+              "stat_line": "21 YDS",
+              "injury_status": null
+            },
             {
               "name": "J.K. Dobbins",
               "position_id": 2,
@@ -4062,23 +4079,6 @@
               "game_detail": "Final/OT",
               "kickoff_utc": "2026-10-16T00:15:00+00:00",
               "stat_line": "41 YDS, TD",
-              "injury_status": null
-            },
-            {
-              "name": "Bhayshul Tuten",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 11.0,
-              "pro_team_id": 30,
-              "game_status": "live",
-              "opponent": "HOU",
-              "own_score": 7,
-              "opp_score": 10,
-              "is_home": true,
-              "game_detail": "1:16 - 2nd",
-              "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "21 YDS",
               "injury_status": null
             },
             {
@@ -4862,6 +4862,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-18T14:55:27.026258+00:00",
+          "week": 6,
+          "team_id": 18,
+          "points_before": 10.0,
+          "points_after": 14.0,
+          "delta": 4.0,
+          "is_starter": true,
+          "player": "Trevor Lawrence",
+          "team_name": "G.E.T S.O.M.E ",
+          "manager": "Donnie Palmer"
+        },
+        {
+          "detected_at": "2026-10-18T14:55:27.025716+00:00",
+          "week": 6,
+          "team_id": 17,
+          "points_before": 11.0,
+          "points_after": 18.0,
+          "delta": 7.0,
+          "is_starter": true,
+          "player": "Bhayshul Tuten",
+          "team_name": "Teenage Tuten Ninja Turtles",
+          "manager": "Holden Shepherd"
+        },
+        {
           "detected_at": "2026-10-18T14:53:57.175852+00:00",
           "week": 6,
           "team_id": 18,
@@ -5076,30 +5100,6 @@
           "player": "Trey McBride",
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams"
-        },
-        {
-          "detected_at": "2026-10-11T23:18:23.795198+00:00",
-          "week": 5,
-          "team_id": 12,
-          "points_before": 13.0,
-          "points_after": 14.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Broncos D/ST",
-          "team_name": "Auto Drafted \ud83d\ude43",
-          "manager": "Marvin Cox"
-        },
-        {
-          "detected_at": "2026-10-11T23:16:53.777169+00:00",
-          "week": 5,
-          "team_id": 31,
-          "points_before": 20.0,
-          "points_after": 22.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Jacoby Brissett",
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson"
         }
       ],
       "alerts": {
@@ -5122,7 +5122,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 6 team 17: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=30.0"
+            "description": "League 1618731 week 6 team 17: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=37.0"
           },
           {
             "severity": "warning",
@@ -5411,7 +5411,7 @@
             "a": {
               "team_id": 7,
               "name": "Nabers know my name",
-              "score": 18.8
+              "score": 26.0
             },
             "b": {
               "team_id": 1,
@@ -5488,7 +5488,7 @@
           "team_id": 7,
           "team_name": "Nabers know my name",
           "manager": "Aaron Lechelt",
-          "lineup_efficiency": 0.8468248131469575,
+          "lineup_efficiency": 0.8558103829310754,
           "bench_points": 340.53999999999996,
           "is_provisional": false
         },
@@ -5517,19 +5517,19 @@
           "is_provisional": false
         },
         {
-          "team_id": 12,
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis",
-          "lineup_efficiency": 0.7636903066255863,
-          "bench_points": 328.78000000000003,
-          "is_provisional": false
-        },
-        {
           "team_id": 10,
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
           "lineup_efficiency": 0.7581822006548062,
           "bench_points": 317.88,
+          "is_provisional": false
+        },
+        {
+          "team_id": 12,
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis",
+          "lineup_efficiency": 0.7576074306609138,
+          "bench_points": 332.86,
           "is_provisional": false
         }
       ],
@@ -6484,7 +6484,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 689.22,
-            "points_against": 625.6,
+            "points_against": 632.8,
             "record": {
               "w": 3,
               "l": 2,
@@ -6789,9 +6789,9 @@
         "12": {
           "week_stats": {
             "actual_points": 15.0,
-            "optimal_points": 38.96000000000001,
-            "efficiency": 0.38501026694045165,
-            "bench_points": 23.96,
+            "optimal_points": 43.040000000000006,
+            "efficiency": 0.3485130111524163,
+            "bench_points": 28.04,
             "rank": 3
           },
           "season_stats": {
@@ -6803,8 +6803,8 @@
               "l": 4,
               "t": 0
             },
-            "lineup_efficiency": 0.7636903066255863,
-            "total_bench_points": 328.78000000000003,
+            "lineup_efficiency": 0.7576074306609138,
+            "total_bench_points": 332.86,
             "is_provisional": false
           },
           "roster": [
@@ -6983,7 +6983,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 9.36,
+              "points": 13.44,
               "pro_team_id": 30,
               "game_status": "live",
               "opponent": "HOU",
@@ -6992,7 +6992,7 @@
               "is_home": true,
               "game_detail": "1:16 - 2nd",
               "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "154 YDS, TD, INT",
+              "stat_line": "156 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -8928,22 +8928,22 @@
         },
         "7": {
           "week_stats": {
-            "actual_points": 18.8,
-            "optimal_points": 24.700000000000003,
-            "efficiency": 0.7611336032388664,
+            "actual_points": 26.0,
+            "optimal_points": 31.9,
+            "efficiency": 0.8150470219435737,
             "bench_points": 5.9,
             "rank": 2
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 636.72,
+            "points_for": 643.92,
             "points_against": 533.62,
             "record": {
               "w": 4,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8468248131469575,
+            "lineup_efficiency": 0.8558103829310754,
             "total_bench_points": 340.53999999999996,
             "is_provisional": false
           },
@@ -8953,7 +8953,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 11.8,
+              "points": 19.0,
               "pro_team_id": 30,
               "game_status": "live",
               "opponent": "HOU",
@@ -8979,7 +8979,7 @@
               "is_home": false,
               "game_detail": "1:16 - 2nd",
               "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "INT, 7 PA",
+              "stat_line": "INT, 13 PA",
               "injury_status": null
             },
             {
@@ -9877,6 +9877,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-18T14:55:31.380543+00:00",
+          "week": 6,
+          "team_id": 12,
+          "points_before": 9.36,
+          "points_after": 13.44,
+          "delta": 4.08,
+          "is_starter": false,
+          "player": "Trevor Lawrence",
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis"
+        },
+        {
+          "detected_at": "2026-10-18T14:55:31.378247+00:00",
+          "week": 6,
+          "team_id": 7,
+          "points_before": 11.8,
+          "points_after": 19.0,
+          "delta": 7.2,
+          "is_starter": true,
+          "player": "Bhayshul Tuten",
+          "team_name": "Nabers know my name",
+          "manager": "Aaron Lechelt"
+        },
+        {
           "detected_at": "2026-10-18T14:54:01.905892+00:00",
           "week": 6,
           "team_id": 12,
@@ -10091,30 +10115,6 @@
           "player": "Jason Myers",
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-11T23:21:28.830651+00:00",
-          "week": 5,
-          "team_id": 12,
-          "points_before": 13.1,
-          "points_after": 13.2,
-          "delta": 0.1,
-          "is_starter": true,
-          "player": "Emanuel Wilson",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-10-11T23:19:58.156114+00:00",
-          "week": 5,
-          "team_id": 12,
-          "points_before": 12.9,
-          "points_after": 13.1,
-          "delta": 0.2,
-          "is_starter": true,
-          "player": "Emanuel Wilson",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
         }
       ],
       "alerts": {
@@ -10142,7 +10142,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 6 team 7: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=18.8"
+            "description": "League 581297461 week 6 team 7: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=26.0"
           }
         ],
         "total_unresolved": 67
