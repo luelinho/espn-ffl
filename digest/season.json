@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T14:52:42.548865+00:00",
+  "generated_at": "2026-10-18T14:54:13.281356+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -267,7 +267,7 @@
             "b": {
               "team_id": 18,
               "name": "G.E.T S.O.M.E ",
-              "score": 9.0
+              "score": 10.0
             },
             "live": true
           },
@@ -436,7 +436,7 @@
           "team_id": 18,
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer",
-          "lineup_efficiency": 0.8829015552087162,
+          "lineup_efficiency": 0.8854268077339685,
           "bench_points": 209.0,
           "is_provisional": false
         },
@@ -1326,7 +1326,7 @@
             "optimal_points": 17.0,
             "efficiency": 0.5294117647058824,
             "bench_points": 8.0,
-            "rank": 7
+            "rank": 8
           },
           "season_stats": {
             "weeks_played": 6,
@@ -1867,7 +1867,7 @@
             "optimal_points": 10.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 6
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 6,
@@ -2125,22 +2125,22 @@
         },
         "18": {
           "week_stats": {
-            "actual_points": 9.0,
-            "optimal_points": 11.0,
-            "efficiency": 0.8181818181818182,
+            "actual_points": 10.0,
+            "optimal_points": 12.0,
+            "efficiency": 0.8333333333333334,
             "bench_points": 2.0,
-            "rank": 8
+            "rank": 6
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 652.0,
+            "points_for": 653.0,
             "points_against": 553.0,
             "record": {
               "w": 4,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8829015552087162,
+            "lineup_efficiency": 0.8854268077339685,
             "total_bench_points": 209.0,
             "is_provisional": false
           },
@@ -2150,7 +2150,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 9.0,
+              "points": 10.0,
               "pro_team_id": 30,
               "game_status": "live",
               "opponent": "HOU",
@@ -2159,7 +2159,7 @@
               "is_home": true,
               "game_detail": "1:16 - 2nd",
               "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "135 YDS, TD, INT",
+              "stat_line": "154 YDS, TD, INT",
               "injury_status": null
             },
             {
@@ -2971,7 +2971,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 528.0,
-            "points_against": 458.0,
+            "points_against": 459.0,
             "record": {
               "w": 4,
               "l": 1,
@@ -4862,6 +4862,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-18T14:53:57.175852+00:00",
+          "week": 6,
+          "team_id": 18,
+          "points_before": 9.0,
+          "points_after": 10.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Trevor Lawrence",
+          "team_name": "G.E.T S.O.M.E ",
+          "manager": "Donnie Palmer"
+        },
+        {
           "detected_at": "2026-10-18T14:52:26.991454+00:00",
           "week": 6,
           "team_id": 30,
@@ -5086,18 +5098,6 @@
           "delta": 2.0,
           "is_starter": true,
           "player": "Jacoby Brissett",
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-11T23:16:53.776684+00:00",
-          "week": 5,
-          "team_id": 31,
-          "points_before": 15.0,
-          "points_after": 17.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Jaxon Smith-Njigba",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
         }
@@ -5520,8 +5520,8 @@
           "team_id": 12,
           "team_name": "God of Warren",
           "manager": "Spencer Gillis",
-          "lineup_efficiency": 0.7649669549801884,
-          "bench_points": 328.02000000000004,
+          "lineup_efficiency": 0.7636903066255863,
+          "bench_points": 328.78000000000003,
           "is_provisional": false
         },
         {
@@ -6789,9 +6789,9 @@
         "12": {
           "week_stats": {
             "actual_points": 15.0,
-            "optimal_points": 38.2,
-            "efficiency": 0.3926701570680628,
-            "bench_points": 23.2,
+            "optimal_points": 38.96000000000001,
+            "efficiency": 0.38501026694045165,
+            "bench_points": 23.96,
             "rank": 3
           },
           "season_stats": {
@@ -6803,8 +6803,8 @@
               "l": 4,
               "t": 0
             },
-            "lineup_efficiency": 0.7649669549801884,
-            "total_bench_points": 328.02000000000004,
+            "lineup_efficiency": 0.7636903066255863,
+            "total_bench_points": 328.78000000000003,
             "is_provisional": false
           },
           "roster": [
@@ -6983,7 +6983,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 8.6,
+              "points": 9.36,
               "pro_team_id": 30,
               "game_status": "live",
               "opponent": "HOU",
@@ -6992,7 +6992,7 @@
               "is_home": true,
               "game_detail": "1:16 - 2nd",
               "kickoff_utc": "2026-10-18T13:30:00+00:00",
-              "stat_line": "135 YDS, TD, INT",
+              "stat_line": "154 YDS, TD, INT",
               "injury_status": null
             },
             {
@@ -9877,6 +9877,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-18T14:54:01.905892+00:00",
+          "week": 6,
+          "team_id": 12,
+          "points_before": 8.6,
+          "points_after": 9.36,
+          "delta": 0.76,
+          "is_starter": false,
+          "player": "Trevor Lawrence",
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis"
+        },
+        {
           "detected_at": "2026-10-18T14:52:31.350351+00:00",
           "week": 6,
           "team_id": 12,
@@ -10103,18 +10115,6 @@
           "player": "Emanuel Wilson",
           "team_name": "God of Warren",
           "manager": "Spencer Gillis"
-        },
-        {
-          "detected_at": "2026-10-11T23:19:58.155581+00:00",
-          "week": 5,
-          "team_id": 11,
-          "points_before": 20.92,
-          "points_after": 25.28,
-          "delta": 4.36,
-          "is_starter": true,
-          "player": "Jacoby Brissett",
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach"
         }
       ],
       "alerts": {
