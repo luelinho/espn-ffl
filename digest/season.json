@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T15:04:43.069914+00:00",
+  "generated_at": "2026-10-18T15:06:13.160153+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -5528,8 +5528,8 @@
           "team_id": 12,
           "team_name": "God of Warren",
           "manager": "Spencer Gillis",
-          "lineup_efficiency": 0.7523159508944456,
-          "bench_points": 332.86,
+          "lineup_efficiency": 0.752444905516068,
+          "bench_points": 332.76,
           "is_provisional": false
         }
       ],
@@ -6785,6 +6785,23 @@
               "injury_status": "QUESTIONABLE"
             },
             {
+              "name": "Tyjae Spears",
+              "position_id": 2,
+              "is_starter": false,
+              "slot_id": 20,
+              "points": null,
+              "pro_team_id": 10,
+              "game_status": "not_started",
+              "opponent": "IND",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": false,
+              "game_detail": "10/18 - 1:00 PM EDT",
+              "kickoff_utc": "2026-10-18T17:00:00+00:00",
+              "stat_line": null,
+              "injury_status": "QUESTIONABLE"
+            },
+            {
               "name": "Ollie Gordon II",
               "position_id": 2,
               "is_starter": false,
@@ -6806,9 +6823,9 @@
         "12": {
           "week_stats": {
             "actual_points": 13.0,
-            "optimal_points": 41.040000000000006,
-            "efficiency": 0.3167641325536062,
-            "bench_points": 28.04,
+            "optimal_points": 40.94,
+            "efficiency": 0.31753786028334147,
+            "bench_points": 27.939999999999998,
             "rank": 3
           },
           "season_stats": {
@@ -6820,8 +6837,8 @@
               "l": 4,
               "t": 0
             },
-            "lineup_efficiency": 0.7523159508944456,
-            "total_bench_points": 332.86,
+            "lineup_efficiency": 0.752444905516068,
+            "total_bench_points": 332.76,
             "is_provisional": false
           },
           "roster": [
@@ -7000,7 +7017,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 13.44,
+              "points": 13.34,
               "pro_team_id": 30,
               "game_status": "live",
               "opponent": "HOU",
@@ -9745,6 +9762,19 @@
       "activity": [
         {
           "kind": "freeagent",
+          "proposed_at": "2026-10-18T15:04:49.012000+00:00",
+          "team_id": 1,
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels",
+          "adds": [
+            "Tyjae Spears"
+          ],
+          "drops": [
+            "Rico Dowdle"
+          ]
+        },
+        {
+          "kind": "freeagent",
           "proposed_at": "2026-10-18T14:55:51.680000+00:00",
           "team_id": 1,
           "team_name": "Double D Kupps",
@@ -9878,19 +9908,6 @@
           ],
           "drops": [
             "Rico Dowdle"
-          ]
-        },
-        {
-          "kind": "freeagent",
-          "proposed_at": "2026-10-15T17:44:40.392000+00:00",
-          "team_id": 10,
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola",
-          "adds": [
-            "Rashid Shaheed"
-          ],
-          "drops": [
-            "Deshaun Watson"
           ]
         }
       ],
