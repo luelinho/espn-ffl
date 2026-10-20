@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T01:20:05.865642+00:00",
+  "generated_at": "2026-10-20T01:21:35.245667+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -340,7 +340,7 @@
             "a": {
               "team_id": 32,
               "name": "Bama boys heavy 251",
-              "score": 77.0
+              "score": 78.0
             },
             "b": {
               "team_id": 15,
@@ -380,7 +380,7 @@
           "team_id": 32,
           "team_name": "Bama boys heavy 251",
           "manager": "Nkhrumba Overton Jr.",
-          "lineup_efficiency": 0.9342144820834176,
+          "lineup_efficiency": 0.9343778807762281,
           "bench_points": 220.0,
           "is_provisional": false
         },
@@ -1060,22 +1060,22 @@
         },
         "32": {
           "week_stats": {
-            "actual_points": 77.0,
-            "optimal_points": 84.0,
-            "efficiency": 0.9166666666666666,
+            "actual_points": 78.0,
+            "optimal_points": 85.0,
+            "efficiency": 0.9176470588235294,
             "bench_points": 19.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 644.0,
+            "points_for": 645.0,
             "points_against": 730.0,
             "record": {
               "w": 2,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.9342144820834176,
+            "lineup_efficiency": 0.9343778807762281,
             "total_bench_points": 220.0,
             "is_provisional": false
           },
@@ -1102,7 +1102,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 15.0,
+              "points": 16.0,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "WSH",
@@ -1111,7 +1111,7 @@
               "is_home": true,
               "game_detail": "6:26 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "29 YDS, TD",
+              "stat_line": "38 YDS, TD",
               "injury_status": null
             },
             {
@@ -4349,7 +4349,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 826.0,
-            "points_against": 618.0,
+            "points_against": 619.0,
             "record": {
               "w": 5,
               "l": 0,
@@ -4911,6 +4911,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:21:18.701140+00:00",
+          "week": 6,
+          "team_id": 32,
+          "points_before": 15.0,
+          "points_after": 16.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Christian McCaffrey",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
           "detected_at": "2026-10-20T01:19:49.146521+00:00",
           "week": 6,
           "team_id": 32,
@@ -5137,18 +5149,6 @@
           "player": "Brock Purdy",
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson"
-        },
-        {
-          "detected_at": "2026-10-19T00:06:10.474560+00:00",
-          "week": 6,
-          "team_id": 32,
-          "points_before": 3.0,
-          "points_after": 6.0,
-          "delta": 3.0,
-          "is_starter": true,
-          "player": "Cameron Dicker",
-          "team_name": "Bama boys heavy 251",
-          "manager": "Nkhrumba Overton Jr."
         }
       ],
       "alerts": {
@@ -5171,7 +5171,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 6 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=77.0"
+            "description": "League 1618731 week 6 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=78.0"
           },
           {
             "severity": "warning",
@@ -5413,7 +5413,7 @@
             "b": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 96.36
+              "score": 97.26
             },
             "live": true
           },
@@ -5521,7 +5521,7 @@
           "team_id": 6,
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
-          "lineup_efficiency": 0.8934819899990326,
+          "lineup_efficiency": 0.8936080781887757,
           "bench_points": 389.26,
           "is_provisional": false
         },
@@ -7827,26 +7827,43 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 96.36,
-            "optimal_points": 105.86000000000001,
-            "efficiency": 0.9102588324201775,
+            "actual_points": 97.26,
+            "optimal_points": 106.76,
+            "efficiency": 0.9110153615586362,
             "bench_points": 30.0,
             "rank": 9
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 713.26,
+            "points_for": 714.16,
             "points_against": 671.18,
             "record": {
               "w": 3,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.8934819899990326,
+            "lineup_efficiency": 0.8936080781887757,
             "total_bench_points": 389.26,
             "is_provisional": false
           },
           "roster": [
+            {
+              "name": "Christian McCaffrey",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 17.6,
+              "pro_team_id": 25,
+              "game_status": "live",
+              "opponent": "WSH",
+              "own_score": 13,
+              "opp_score": 3,
+              "is_home": true,
+              "game_detail": "6:26 - 2nd",
+              "kickoff_utc": "2026-10-20T00:15:00+00:00",
+              "stat_line": "38 YDS, TD",
+              "injury_status": null
+            },
             {
               "name": "Luther Burden III",
               "position_id": 3,
@@ -7862,23 +7879,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-18T17:00:00+00:00",
               "stat_line": "8 REC, 95 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Christian McCaffrey",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 16.7,
-              "pro_team_id": 25,
-              "game_status": "live",
-              "opponent": "WSH",
-              "own_score": 13,
-              "opp_score": 3,
-              "is_home": true,
-              "game_detail": "6:26 - 2nd",
-              "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "29 YDS, TD",
               "injury_status": null
             },
             {
@@ -8758,7 +8758,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 748.62,
-            "points_against": 620.98,
+            "points_against": 621.88,
             "record": {
               "w": 4,
               "l": 1,
@@ -10030,6 +10030,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:21:23.086044+00:00",
+          "week": 6,
+          "team_id": 6,
+          "points_before": 16.7,
+          "points_after": 17.6,
+          "delta": 0.9,
+          "is_starter": true,
+          "player": "Christian McCaffrey",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
           "detected_at": "2026-10-20T01:19:53.691570+00:00",
           "week": 6,
           "team_id": 6,
@@ -10256,18 +10268,6 @@
           "player": "George Kittle",
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-10-20T00:36:58.307981+00:00",
-          "week": 6,
-          "team_id": 1,
-          "points_before": 8.08,
-          "points_after": 8.56,
-          "delta": 0.48,
-          "is_starter": true,
-          "player": "Brock Purdy",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
         }
       ],
       "alerts": {
