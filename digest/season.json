@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T01:27:36.066065+00:00",
+  "generated_at": "2026-10-20T01:29:05.634049+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -340,7 +340,7 @@
             "a": {
               "team_id": 32,
               "name": "Bama boys heavy 251",
-              "score": 78.0
+              "score": 79.0
             },
             "b": {
               "team_id": 15,
@@ -380,7 +380,7 @@
           "team_id": 32,
           "team_name": "Bama boys heavy 251",
           "manager": "Nkhrumba Overton Jr.",
-          "lineup_efficiency": 0.9343778807762281,
+          "lineup_efficiency": 0.9345374794994384,
           "bench_points": 220.0,
           "is_provisional": false
         },
@@ -1060,22 +1060,22 @@
         },
         "32": {
           "week_stats": {
-            "actual_points": 78.0,
-            "optimal_points": 85.0,
-            "efficiency": 0.9176470588235294,
+            "actual_points": 79.0,
+            "optimal_points": 86.0,
+            "efficiency": 0.9186046511627907,
             "bench_points": 19.0,
             "rank": 11
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 645.0,
+            "points_for": 646.0,
             "points_against": 730.0,
             "record": {
               "w": 2,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.9343778807762281,
+            "lineup_efficiency": 0.9345374794994384,
             "total_bench_points": 220.0,
             "is_provisional": false
           },
@@ -1102,7 +1102,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 16.0,
+              "points": 17.0,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "WSH",
@@ -1111,7 +1111,7 @@
               "is_home": true,
               "game_detail": "2:00 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "38 YDS, TD",
+              "stat_line": "43 YDS, TD",
               "injury_status": null
             },
             {
@@ -4349,7 +4349,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 826.0,
-            "points_against": 619.0,
+            "points_against": 620.0,
             "record": {
               "w": 5,
               "l": 0,
@@ -4911,6 +4911,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:28:48.880038+00:00",
+          "week": 6,
+          "team_id": 32,
+          "points_before": 16.0,
+          "points_after": 17.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Christian McCaffrey",
+          "team_name": "Bama boys heavy 251",
+          "manager": "Nkhrumba Overton Jr."
+        },
+        {
           "detected_at": "2026-10-20T01:25:48.790773+00:00",
           "week": 6,
           "team_id": 26,
@@ -5137,18 +5149,6 @@
           "player": "Christian McCaffrey",
           "team_name": "Bama boys heavy 251",
           "manager": "Nkhrumba Overton Jr."
-        },
-        {
-          "detected_at": "2026-10-20T00:33:53.803878+00:00",
-          "week": 6,
-          "team_id": 31,
-          "points_before": 3.0,
-          "points_after": 9.0,
-          "delta": 6.0,
-          "is_starter": true,
-          "player": "Mike Evans",
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson"
         }
       ],
       "alerts": {
@@ -5171,7 +5171,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 6 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=78.0"
+            "description": "League 1618731 week 6 team 32: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=79.0"
           },
           {
             "severity": "warning",
@@ -5413,7 +5413,7 @@
             "b": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 97.26
+              "score": 97.76
             },
             "live": true
           },
@@ -5521,7 +5521,7 @@
           "team_id": 6,
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach",
-          "lineup_efficiency": 0.8936080781887757,
+          "lineup_efficiency": 0.8936772128758612,
           "bench_points": 389.26,
           "is_provisional": false
         },
@@ -7827,22 +7827,22 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 97.26,
-            "optimal_points": 106.76,
-            "efficiency": 0.9110153615586362,
+            "actual_points": 97.76,
+            "optimal_points": 107.26,
+            "efficiency": 0.9114301696811486,
             "bench_points": 30.0,
             "rank": 9
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 714.16,
+            "points_for": 714.66,
             "points_against": 671.18,
             "record": {
               "w": 3,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.8936080781887757,
+            "lineup_efficiency": 0.8936772128758612,
             "total_bench_points": 389.26,
             "is_provisional": false
           },
@@ -7852,7 +7852,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 17.6,
+              "points": 18.1,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "WSH",
@@ -7861,7 +7861,7 @@
               "is_home": true,
               "game_detail": "2:00 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "38 YDS, TD",
+              "stat_line": "43 YDS, TD",
               "injury_status": null
             },
             {
@@ -8758,7 +8758,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 748.62,
-            "points_against": 621.88,
+            "points_against": 622.38,
             "record": {
               "w": 4,
               "l": 1,
@@ -10030,6 +10030,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:28:53.382656+00:00",
+          "week": 6,
+          "team_id": 6,
+          "points_before": 17.6,
+          "points_after": 18.1,
+          "delta": 0.5,
+          "is_starter": true,
+          "player": "Christian McCaffrey",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
           "detected_at": "2026-10-20T01:25:53.318950+00:00",
           "week": 6,
           "team_id": 1,
@@ -10256,18 +10268,6 @@
           "player": "George Kittle",
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-10-20T00:53:58.915545+00:00",
-          "week": 6,
-          "team_id": 1,
-          "points_before": 9.0,
-          "points_after": 10.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "49ers D/ST",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
         }
       ],
       "alerts": {
