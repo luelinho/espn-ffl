@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T01:15:35.168330+00:00",
+  "generated_at": "2026-10-20T01:17:05.354062+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -280,7 +280,7 @@
             "b": {
               "team_id": 19,
               "name": "Shivakamini Somakandarkram",
-              "score": 136.0
+              "score": 137.0
             },
             "live": true
           },
@@ -1331,7 +1331,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 674.0,
-            "points_against": 735.0,
+            "points_against": 736.0,
             "record": {
               "w": 3,
               "l": 2,
@@ -3411,7 +3411,7 @@
               "is_home": false,
               "game_detail": "9:01 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "83 YDS",
+              "stat_line": "88 YDS",
               "injury_status": null
             },
             {
@@ -3782,15 +3782,15 @@
         },
         "19": {
           "week_stats": {
-            "actual_points": 136.0,
-            "optimal_points": 136.0,
+            "actual_points": 137.0,
+            "optimal_points": 137.0,
             "efficiency": 1.0,
             "bench_points": -2.0,
             "rank": 2
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 675.0,
+            "points_for": 676.0,
             "points_against": 593.0,
             "record": {
               "w": 3,
@@ -3943,7 +3943,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 0.0,
+              "points": 1.0,
               "pro_team_id": 28,
               "game_status": "live",
               "opponent": "SF",
@@ -4911,6 +4911,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:16:48.659574+00:00",
+          "week": 6,
+          "team_id": 19,
+          "points_before": 0.0,
+          "points_after": 1.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Rachaad White",
+          "team_name": "Shivakamini Somakandarkram",
+          "manager": "Kenneth Strack"
+        },
+        {
           "detected_at": "2026-10-20T01:15:18.779143+00:00",
           "week": 6,
           "team_id": 28,
@@ -5137,18 +5149,6 @@
           "player": "Josh Allen",
           "team_name": "Bama boys heavy 251",
           "manager": "Nkhrumba Overton Jr."
-        },
-        {
-          "detected_at": "2026-10-19T00:06:10.474199+00:00",
-          "week": 6,
-          "team_id": 31,
-          "points_before": 4.0,
-          "points_after": 8.0,
-          "delta": 4.0,
-          "is_starter": true,
-          "player": "Jacoby Brissett",
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson"
         }
       ],
       "alerts": {
@@ -5473,7 +5473,7 @@
             "a": {
               "team_id": 9,
               "name": "Spider 2 Y Banana",
-              "score": 111.98
+              "score": 113.48
             },
             "b": {
               "team_id": 10,
@@ -5505,8 +5505,8 @@
           "team_id": 9,
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison",
-          "lineup_efficiency": 0.9072335609562255,
-          "bench_points": 359.62,
+          "lineup_efficiency": 0.9072649066791826,
+          "bench_points": 359.82,
           "is_provisional": false
         },
         {
@@ -5593,7 +5593,7 @@
         "season_stats": {
           "weeks_played": 6,
           "points_for": 711.06,
-          "points_against": 776.84,
+          "points_against": 778.34,
           "record": {
             "w": 3,
             "l": 2,
@@ -8445,7 +8445,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 711.06,
-            "points_against": 776.84,
+            "points_against": 778.34,
             "record": {
               "w": 3,
               "l": 2,
@@ -9392,23 +9392,23 @@
         },
         "9": {
           "week_stats": {
-            "actual_points": 111.98,
-            "optimal_points": 113.62000000000002,
-            "efficiency": 0.9855659214926948,
-            "bench_points": 27.54,
+            "actual_points": 113.48,
+            "optimal_points": 115.12000000000002,
+            "efficiency": 0.9857539958304377,
+            "bench_points": 27.74,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 685.84,
+            "points_for": 687.34,
             "points_against": 784.1,
             "record": {
               "w": 1,
               "l": 4,
               "t": 0
             },
-            "lineup_efficiency": 0.9072335609562255,
-            "total_bench_points": 359.62,
+            "lineup_efficiency": 0.9072649066791826,
+            "total_bench_points": 359.82,
             "is_provisional": false
           },
           "roster": [
@@ -9553,7 +9553,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 0.2,
+              "points": 1.7,
               "pro_team_id": 28,
               "game_status": "live",
               "opponent": "SF",
@@ -9587,7 +9587,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 4.02,
+              "points": 4.22,
               "pro_team_id": 28,
               "game_status": "live",
               "opponent": "SF",
@@ -9596,7 +9596,7 @@
               "is_home": false,
               "game_detail": "9:01 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "83 YDS",
+              "stat_line": "88 YDS",
               "injury_status": null
             },
             {
@@ -10030,6 +10030,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:16:53.180790+00:00",
+          "week": 6,
+          "team_id": 9,
+          "points_before": 0.2,
+          "points_after": 1.7,
+          "delta": 1.5,
+          "is_starter": true,
+          "player": "Rachaad White",
+          "team_name": "Spider 2 Y Banana",
+          "manager": "Stacks Harrison"
+        },
+        {
+          "detected_at": "2026-10-20T01:16:53.180469+00:00",
+          "week": 6,
+          "team_id": 9,
+          "points_before": 4.02,
+          "points_after": 4.22,
+          "delta": 0.2,
+          "is_starter": false,
+          "player": "Jayden Daniels",
+          "team_name": "Spider 2 Y Banana",
+          "manager": "Stacks Harrison"
+        },
+        {
           "detected_at": "2026-10-20T01:15:23.090364+00:00",
           "week": 6,
           "team_id": 9,
@@ -10244,30 +10268,6 @@
           "player": "Brock Purdy",
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-20T00:33:58.406948+00:00",
-          "week": 6,
-          "team_id": 1,
-          "points_before": 3.4,
-          "points_after": 9.8,
-          "delta": 6.4,
-          "is_starter": true,
-          "player": "Mike Evans",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-19T00:22:16.468108+00:00",
-          "week": 6,
-          "team_id": 12,
-          "points_before": 4.2,
-          "points_after": 7.2,
-          "delta": 3.0,
-          "is_starter": true,
-          "player": "Michael Wilson",
-          "team_name": "God of Warren",
-          "manager": "Spencer Gillis"
         }
       ],
       "alerts": {
@@ -10290,7 +10290,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 6 team 9: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=111.98"
+            "description": "League 581297461 week 6 team 9: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=113.48"
           },
           {
             "severity": "warning",
