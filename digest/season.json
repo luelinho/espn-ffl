@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T01:59:05.525983+00:00",
+  "generated_at": "2026-10-20T02:00:35.231282+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -280,7 +280,7 @@
             "b": {
               "team_id": 19,
               "name": "Shivakamini Somakandarkram",
-              "score": 135.0
+              "score": 136.0
             },
             "live": true
           },
@@ -1331,7 +1331,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 674.0,
-            "points_against": 734.0,
+            "points_against": 735.0,
             "record": {
               "w": 3,
               "l": 2,
@@ -1653,7 +1653,7 @@
               "game_detail": "14:21 - 3rd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
               "stat_line": "3 REC, 94 YDS",
-              "injury_status": "QUESTIONABLE"
+              "injury_status": "OUT"
             },
             {
               "name": "Nico Collins",
@@ -3782,15 +3782,15 @@
         },
         "19": {
           "week_stats": {
-            "actual_points": 135.0,
-            "optimal_points": 135.0,
+            "actual_points": 136.0,
+            "optimal_points": 136.0,
             "efficiency": 1.0,
             "bench_points": -2.0,
             "rank": 2
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 674.0,
+            "points_for": 675.0,
             "points_against": 593.0,
             "record": {
               "w": 3,
@@ -3909,7 +3909,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 9.0,
+              "points": 10.0,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "WSH",
@@ -4911,6 +4911,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T02:00:18.801991+00:00",
+          "week": 6,
+          "team_id": 19,
+          "points_before": 9.0,
+          "points_after": 10.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "49ers D/ST",
+          "team_name": "Shivakamini Somakandarkram",
+          "manager": "Kenneth Strack"
+        },
+        {
           "detected_at": "2026-10-20T01:55:48.755194+00:00",
           "week": 6,
           "team_id": 28,
@@ -5137,18 +5149,6 @@
           "player": "Brock Purdy",
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson"
-        },
-        {
-          "detected_at": "2026-10-20T01:08:08.863846+00:00",
-          "week": 6,
-          "team_id": 16,
-          "points_before": 1.0,
-          "points_after": 3.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Stefon Diggs",
-          "team_name": "Bijan, demons!",
-          "manager": "Harry Hinson"
         }
       ],
       "alerts": {
@@ -5465,7 +5465,7 @@
             "b": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 97.16
+              "score": 98.16
             },
             "live": true
           },
@@ -5489,7 +5489,7 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.9232503433949959,
+          "lineup_efficiency": 0.9234838514725708,
           "bench_points": 319.08000000000004,
           "is_provisional": false
         },
@@ -6524,22 +6524,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 97.16,
-            "optimal_points": 116.26,
-            "efficiency": 0.8357130569413384,
+            "actual_points": 98.16,
+            "optimal_points": 117.26,
+            "efficiency": 0.8371141054067883,
             "bench_points": 40.02,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 786.38,
+            "points_for": 787.38,
             "points_against": 724.04,
             "record": {
               "w": 3,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.9232503433949959,
+            "lineup_efficiency": 0.9234838514725708,
             "total_bench_points": 319.08000000000004,
             "is_provisional": false
           },
@@ -6610,7 +6610,24 @@
               "game_detail": "14:21 - 3rd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
               "stat_line": "3 REC, 94 YDS",
-              "injury_status": "QUESTIONABLE"
+              "injury_status": "OUT"
+            },
+            {
+              "name": "49ers D/ST",
+              "position_id": 16,
+              "is_starter": true,
+              "slot_id": 16,
+              "points": 10.0,
+              "pro_team_id": 25,
+              "game_status": "live",
+              "opponent": "WSH",
+              "own_score": 20,
+              "opp_score": 3,
+              "is_home": true,
+              "game_detail": "14:21 - 3rd",
+              "kickoff_utc": "2026-10-20T00:15:00+00:00",
+              "stat_line": "3 PA",
+              "injury_status": null
             },
             {
               "name": "Kyren Williams",
@@ -6627,23 +6644,6 @@
               "game_detail": "Final",
               "kickoff_utc": "2026-10-18T20:05:00+00:00",
               "stat_line": "50 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "49ers D/ST",
-              "position_id": 16,
-              "is_starter": true,
-              "slot_id": 16,
-              "points": 9.0,
-              "pro_team_id": 25,
-              "game_status": "live",
-              "opponent": "WSH",
-              "own_score": 20,
-              "opp_score": 3,
-              "is_home": true,
-              "game_detail": "14:21 - 3rd",
-              "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "3 PA",
               "injury_status": null
             },
             {
@@ -9088,7 +9088,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 735.16,
-            "points_against": 630.78,
+            "points_against": 631.78,
             "record": {
               "w": 4,
               "l": 1,
@@ -10030,6 +10030,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T02:00:23.180797+00:00",
+          "week": 6,
+          "team_id": 1,
+          "points_before": 9.0,
+          "points_after": 10.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "49ers D/ST",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-20T01:58:53.223917+00:00",
           "week": 6,
           "team_id": 9,
@@ -10256,18 +10268,6 @@
           "player": "Jayden Daniels",
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-10-20T01:15:23.086145+00:00",
-          "week": 6,
-          "team_id": 1,
-          "points_before": 10.0,
-          "points_after": 11.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "49ers D/ST",
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels"
         }
       ],
       "alerts": {
