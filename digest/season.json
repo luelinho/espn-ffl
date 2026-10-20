@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T01:57:35.830561+00:00",
+  "generated_at": "2026-10-20T01:59:05.525983+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -3411,7 +3411,7 @@
               "is_home": false,
               "game_detail": "14:21 - 3rd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "106 YDS",
+              "stat_line": "117 YDS",
               "injury_status": null
             },
             {
@@ -5506,7 +5506,7 @@
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison",
           "lineup_efficiency": 0.9072772174328722,
-          "bench_points": 360.44,
+          "bench_points": 360.88,
           "is_provisional": false
         },
         {
@@ -9395,7 +9395,7 @@
             "actual_points": 114.08,
             "optimal_points": 115.72000000000001,
             "efficiency": 0.9858278603525751,
-            "bench_points": 28.36,
+            "bench_points": 28.8,
             "rank": 3
           },
           "season_stats": {
@@ -9408,7 +9408,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.9072772174328722,
-            "total_bench_points": 360.44,
+            "total_bench_points": 360.88,
             "is_provisional": false
           },
           "roster": [
@@ -9587,7 +9587,7 @@
               "position_id": 1,
               "is_starter": false,
               "slot_id": 20,
-              "points": 4.84,
+              "points": 5.28,
               "pro_team_id": 28,
               "game_status": "live",
               "opponent": "SF",
@@ -9596,7 +9596,7 @@
               "is_home": false,
               "game_detail": "14:21 - 3rd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "106 YDS",
+              "stat_line": "117 YDS",
               "injury_status": null
             },
             {
@@ -10030,6 +10030,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:58:53.223917+00:00",
+          "week": 6,
+          "team_id": 9,
+          "points_before": 4.84,
+          "points_after": 5.28,
+          "delta": 0.44,
+          "is_starter": false,
+          "player": "Jayden Daniels",
+          "team_name": "Spider 2 Y Banana",
+          "manager": "Stacks Harrison"
+        },
+        {
           "detected_at": "2026-10-20T01:55:53.300379+00:00",
           "week": 6,
           "team_id": 9,
@@ -10256,18 +10268,6 @@
           "player": "49ers D/ST",
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-20T01:10:53.224917+00:00",
-          "week": 6,
-          "team_id": 6,
-          "points_before": 13.7,
-          "points_after": 14.4,
-          "delta": 0.7,
-          "is_starter": true,
-          "player": "Christian McCaffrey",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
