@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T01:21:35.245667+00:00",
+  "generated_at": "2026-10-20T01:23:04.823882+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -3639,7 +3639,7 @@
               "is_home": true,
               "game_detail": "6:26 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "184 YDS, TD",
+              "stat_line": "194 YDS, TD",
               "injury_status": null
             },
             {
@@ -5465,7 +5465,7 @@
             "b": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 94.06
+              "score": 94.46
             },
             "live": true
           },
@@ -5489,7 +5489,7 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.9225002409979742,
+          "lineup_efficiency": 0.9225993296192262,
           "bench_points": 319.08000000000004,
           "is_provisional": false
         },
@@ -6524,22 +6524,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 94.06,
-            "optimal_points": 113.16,
-            "efficiency": 0.8312124425592082,
+            "actual_points": 94.46,
+            "optimal_points": 113.56,
+            "efficiency": 0.8318069742867206,
             "bench_points": 40.02,
             "rank": 10
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 783.28,
+            "points_for": 783.68,
             "points_against": 724.04,
             "record": {
               "w": 3,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.9225002409979742,
+            "lineup_efficiency": 0.9225993296192262,
             "total_bench_points": 319.08000000000004,
             "is_provisional": false
           },
@@ -6583,7 +6583,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 12.06,
+              "points": 12.46,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "WSH",
@@ -6592,7 +6592,7 @@
               "is_home": true,
               "game_detail": "6:26 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "184 YDS, TD",
+              "stat_line": "194 YDS, TD",
               "injury_status": null
             },
             {
@@ -9088,7 +9088,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 735.16,
-            "points_against": 627.6800000000001,
+            "points_against": 628.08,
             "record": {
               "w": 4,
               "l": 1,
@@ -10030,6 +10030,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:22:52.884643+00:00",
+          "week": 6,
+          "team_id": 1,
+          "points_before": 12.06,
+          "points_after": 12.46,
+          "delta": 0.4,
+          "is_starter": true,
+          "player": "Brock Purdy",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-20T01:21:23.086044+00:00",
           "week": 6,
           "team_id": 6,
@@ -10256,18 +10268,6 @@
           "player": "Brock Purdy",
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-20T00:36:58.308971+00:00",
-          "week": 6,
-          "team_id": 2,
-          "points_before": 8.1,
-          "points_after": 10.3,
-          "delta": 2.2,
-          "is_starter": true,
-          "player": "George Kittle",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
         }
       ],
       "alerts": {
