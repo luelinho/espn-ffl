@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T01:32:04.846598+00:00",
+  "generated_at": "2026-10-20T01:33:35.482686+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -345,7 +345,7 @@
             "b": {
               "team_id": 15,
               "name": "Uncle Rico's QB Camp",
-              "score": 105.0
+              "score": 106.0
             },
             "live": true
           }
@@ -1069,7 +1069,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 646.0,
-            "points_against": 730.0,
+            "points_against": 731.0,
             "record": {
               "w": 2,
               "l": 3,
@@ -3605,7 +3605,7 @@
               "is_home": true,
               "game_detail": "1:03 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "210 YDS, TD",
+              "stat_line": "214 YDS, TD",
               "injury_status": null
             },
             {
@@ -4340,15 +4340,15 @@
         },
         "15": {
           "week_stats": {
-            "actual_points": 105.0,
-            "optimal_points": 105.0,
+            "actual_points": 106.0,
+            "optimal_points": 106.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 826.0,
+            "points_for": 827.0,
             "points_against": 620.0,
             "record": {
               "w": 5,
@@ -4382,7 +4382,7 @@
               "position_id": 4,
               "is_starter": true,
               "slot_id": 23,
-              "points": 12.0,
+              "points": 13.0,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "WSH",
@@ -4391,7 +4391,7 @@
               "is_home": true,
               "game_detail": "1:03 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "3 REC, 30 YDS, TD",
+              "stat_line": "4 REC, 34 YDS, TD",
               "injury_status": null
             },
             {
@@ -4911,6 +4911,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:33:18.720871+00:00",
+          "week": 6,
+          "team_id": 15,
+          "points_before": 12.0,
+          "points_after": 13.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "George Kittle",
+          "team_name": "Uncle Rico's QB Camp",
+          "manager": "Ben Williams"
+        },
+        {
           "detected_at": "2026-10-20T01:30:19.541659+00:00",
           "week": 6,
           "team_id": 31,
@@ -5137,18 +5149,6 @@
           "player": "George Kittle",
           "team_name": "Uncle Rico's QB Camp",
           "manager": "Ben Williams"
-        },
-        {
-          "detected_at": "2026-10-20T00:53:52.562039+00:00",
-          "week": 6,
-          "team_id": 32,
-          "points_before": 6.0,
-          "points_after": 12.0,
-          "delta": 6.0,
-          "is_starter": true,
-          "player": "Christian McCaffrey",
-          "team_name": "Bama boys heavy 251",
-          "manager": "Nkhrumba Overton Jr."
         }
       ],
       "alerts": {
@@ -5166,7 +5166,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 6 team 15: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=105.0"
+            "description": "League 1618731 week 6 team 15: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=106.0"
           },
           {
             "severity": "warning",
@@ -5408,7 +5408,7 @@
             "a": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 107.6
+              "score": 109.0
             },
             "b": {
               "team_id": 6,
@@ -5465,7 +5465,7 @@
             "b": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 98.8
+              "score": 98.96
             },
             "live": true
           },
@@ -5489,7 +5489,7 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.9236312178459659,
+          "lineup_efficiency": 0.9236678097927394,
           "bench_points": 319.08000000000004,
           "is_provisional": false
         },
@@ -5513,7 +5513,7 @@
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
-          "lineup_efficiency": 0.8991147360592454,
+          "lineup_efficiency": 0.9010549766490786,
           "bench_points": 343.12,
           "is_provisional": false
         },
@@ -6524,22 +6524,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 98.8,
-            "optimal_points": 117.9,
-            "efficiency": 0.8379983036471585,
+            "actual_points": 98.96,
+            "optimal_points": 118.06,
+            "efficiency": 0.8382178553277994,
             "bench_points": 40.02,
             "rank": 9
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 788.02,
+            "points_for": 788.18,
             "points_against": 724.04,
             "record": {
               "w": 3,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.9236312178459659,
+            "lineup_efficiency": 0.9236678097927394,
             "total_bench_points": 319.08000000000004,
             "is_provisional": false
           },
@@ -6583,7 +6583,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 14.2,
+              "points": 14.36,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "WSH",
@@ -6592,7 +6592,7 @@
               "is_home": true,
               "game_detail": "1:03 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "210 YDS, TD",
+              "stat_line": "214 YDS, TD",
               "injury_status": null
             },
             {
@@ -7205,7 +7205,7 @@
             "optimal_points": 124.3,
             "efficiency": 0.8696701528559936,
             "bench_points": 26.38,
-            "rank": 4
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 6,
@@ -7836,7 +7836,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 714.66,
-            "points_against": 671.18,
+            "points_against": 672.58,
             "record": {
               "w": 3,
               "l": 2,
@@ -8749,22 +8749,22 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 107.6,
+            "actual_points": 109.0,
             "optimal_points": 120.26,
-            "efficiency": 0.8947280891401962,
+            "efficiency": 0.9063695326791951,
             "bench_points": 77.16,
-            "rank": 5
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 748.62,
+            "points_for": 750.02,
             "points_against": 622.38,
             "record": {
               "w": 4,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8991147360592454,
+            "lineup_efficiency": 0.9010549766490786,
             "total_bench_points": 343.12,
             "is_provisional": false
           },
@@ -8842,7 +8842,7 @@
               "position_id": 4,
               "is_starter": true,
               "slot_id": 6,
-              "points": 12.0,
+              "points": 13.4,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "WSH",
@@ -8851,7 +8851,7 @@
               "is_home": true,
               "game_detail": "1:03 - 2nd",
               "kickoff_utc": "2026-10-20T00:15:00+00:00",
-              "stat_line": "3 REC, 30 YDS, TD",
+              "stat_line": "4 REC, 34 YDS, TD",
               "injury_status": null
             },
             {
@@ -9088,7 +9088,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 735.16,
-            "points_against": 632.4200000000001,
+            "points_against": 632.58,
             "record": {
               "w": 4,
               "l": 1,
@@ -10030,6 +10030,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:33:23.332918+00:00",
+          "week": 6,
+          "team_id": 2,
+          "points_before": 12.0,
+          "points_after": 13.4,
+          "delta": 1.4,
+          "is_starter": true,
+          "player": "George Kittle",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
+          "detected_at": "2026-10-20T01:33:23.331906+00:00",
+          "week": 6,
+          "team_id": 1,
+          "points_before": 14.2,
+          "points_after": 14.36,
+          "delta": 0.16,
+          "is_starter": true,
+          "player": "Brock Purdy",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-20T01:30:23.905144+00:00",
           "week": 6,
           "team_id": 1,
@@ -10240,30 +10264,6 @@
           "points_before": 1.8,
           "points_after": 3.7,
           "delta": 1.9,
-          "is_starter": false,
-          "player": "Stefon Diggs",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-20T00:53:58.919421+00:00",
-          "week": 6,
-          "team_id": 9,
-          "points_before": 1.38,
-          "points_after": 1.7,
-          "delta": 0.32,
-          "is_starter": false,
-          "player": "Jayden Daniels",
-          "team_name": "Spider 2 Y Banana",
-          "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-10-20T00:53:58.919076+00:00",
-          "week": 6,
-          "team_id": 8,
-          "points_before": 0.0,
-          "points_after": 1.8,
-          "delta": 1.8,
           "is_starter": false,
           "player": "Stefon Diggs",
           "team_name": "Hawk Tua on my Penix",
