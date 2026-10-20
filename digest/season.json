@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T01:33:35.482686+00:00",
+  "generated_at": "2026-10-20T01:35:05.006818+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 26,
               "name": "Purdy Good Team",
-              "score": 119.0
+              "score": 120.0
             },
             "b": {
               "team_id": 30,
@@ -412,7 +412,7 @@
           "team_id": 26,
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson",
-          "lineup_efficiency": 0.8843650488701084,
+          "lineup_efficiency": 0.8855305500356095,
           "bench_points": 316.0,
           "is_provisional": false
         },
@@ -1889,7 +1889,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 618.0,
-            "points_against": 669.0,
+            "points_against": 670.0,
             "record": {
               "w": 2,
               "l": 3,
@@ -3520,22 +3520,22 @@
         },
         "26": {
           "week_stats": {
-            "actual_points": 119.0,
+            "actual_points": 120.0,
             "optimal_points": 143.0,
-            "efficiency": 0.8321678321678322,
+            "efficiency": 0.8391608391608392,
             "bench_points": 45.0,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 757.0,
+            "points_for": 758.0,
             "points_against": 640.0,
             "record": {
               "w": 4,
               "l": 1,
               "t": 0
             },
-            "lineup_efficiency": 0.8843650488701084,
+            "lineup_efficiency": 0.8855305500356095,
             "total_bench_points": 316.0,
             "is_provisional": false
           },
@@ -3596,7 +3596,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 15.0,
+              "points": 16.0,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "WSH",
@@ -4911,6 +4911,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:34:48.523547+00:00",
+          "week": 6,
+          "team_id": 26,
+          "points_before": 15.0,
+          "points_after": 16.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Brock Purdy",
+          "team_name": "Purdy Good Team",
+          "manager": "Hayley Hinson"
+        },
+        {
           "detected_at": "2026-10-20T01:33:18.720871+00:00",
           "week": 6,
           "team_id": 15,
@@ -5137,18 +5149,6 @@
           "player": "Stefon Diggs",
           "team_name": "Bijan, demons!",
           "manager": "Harry Hinson"
-        },
-        {
-          "detected_at": "2026-10-20T00:55:39.429778+00:00",
-          "week": 6,
-          "team_id": 15,
-          "points_before": 10.0,
-          "points_after": 12.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "George Kittle",
-          "team_name": "Uncle Rico's QB Camp",
-          "manager": "Ben Williams"
         }
       ],
       "alerts": {
@@ -5465,7 +5465,7 @@
             "b": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 98.96
+              "score": 99.16
             },
             "live": true
           },
@@ -5489,7 +5489,7 @@
           "team_id": 1,
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels",
-          "lineup_efficiency": 0.9236678097927394,
+          "lineup_efficiency": 0.9237134104874438,
           "bench_points": 319.08000000000004,
           "is_provisional": false
         },
@@ -6524,22 +6524,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 98.96,
-            "optimal_points": 118.06,
-            "efficiency": 0.8382178553277994,
+            "actual_points": 99.16,
+            "optimal_points": 118.26,
+            "efficiency": 0.8384914594960257,
             "bench_points": 40.02,
             "rank": 9
           },
           "season_stats": {
             "weeks_played": 6,
-            "points_for": 788.18,
+            "points_for": 788.38,
             "points_against": 724.04,
             "record": {
               "w": 3,
               "l": 2,
               "t": 0
             },
-            "lineup_efficiency": 0.9236678097927394,
+            "lineup_efficiency": 0.9237134104874438,
             "total_bench_points": 319.08000000000004,
             "is_provisional": false
           },
@@ -6583,7 +6583,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 14.36,
+              "points": 14.56,
               "pro_team_id": 25,
               "game_status": "live",
               "opponent": "WSH",
@@ -9088,7 +9088,7 @@
           "season_stats": {
             "weeks_played": 6,
             "points_for": 735.16,
-            "points_against": 632.58,
+            "points_against": 632.78,
             "record": {
               "w": 4,
               "l": 1,
@@ -10030,6 +10030,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-20T01:34:52.895914+00:00",
+          "week": 6,
+          "team_id": 1,
+          "points_before": 14.36,
+          "points_after": 14.56,
+          "delta": 0.2,
+          "is_starter": true,
+          "player": "Brock Purdy",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-20T01:33:23.332918+00:00",
           "week": 6,
           "team_id": 2,
@@ -10256,18 +10268,6 @@
           "player": "Jayden Daniels",
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-10-20T01:05:25.374051+00:00",
-          "week": 6,
-          "team_id": 8,
-          "points_before": 1.8,
-          "points_after": 3.7,
-          "delta": 1.9,
-          "is_starter": false,
-          "player": "Stefon Diggs",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
         }
       ],
       "alerts": {
