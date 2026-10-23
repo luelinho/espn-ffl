@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:33:05.033086+00:00",
+  "generated_at": "2026-10-23T02:34:37.175422+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 25.2
+              "score": 25.6
             },
             "live": true
           },
@@ -8609,15 +8609,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 25.2,
-            "optimal_points": 25.2,
+            "actual_points": 25.6,
+            "optimal_points": 25.6,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 772.72,
+            "points_for": 773.12,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8634,7 +8634,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 25.2,
+              "points": 25.6,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8931,7 +8931,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 653.48,
+            "points_against": 653.88,
             "record": {
               "w": 5,
               "l": 1,
@@ -9881,6 +9881,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T02:34:24.188956+00:00",
+          "week": 7,
+          "team_id": 2,
+          "points_before": 25.2,
+          "points_after": 25.6,
+          "delta": 0.4,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-23T02:32:52.402757+00:00",
           "week": 7,
           "team_id": 2,
@@ -10107,18 +10119,6 @@
           "player": "Colston Loveland",
           "team_name": "I'M RICK JAMES, BLITZ! ",
           "manager": "Katherine DeLoach"
-        },
-        {
-          "detected_at": "2026-10-23T02:07:23.336025+00:00",
-          "week": 7,
-          "team_id": 8,
-          "points_before": 13.92,
-          "points_after": 18.4,
-          "delta": 4.48,
-          "is_starter": true,
-          "player": "Caleb Williams",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
         }
       ],
       "alerts": {
