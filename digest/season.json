@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T01:10:38.769431+00:00",
+  "generated_at": "2026-10-23T01:12:10.012972+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -518,7 +518,7 @@
             "is_home": true,
             "game_detail": "11:33 - 2nd",
             "kickoff_utc": "2026-10-23T00:15:00+00:00",
-            "stat_line": "11 YDS, TD",
+            "stat_line": "16 YDS, TD",
             "injury_status": null
           },
           {
@@ -2455,7 +2455,7 @@
               "is_home": true,
               "game_detail": "11:33 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "11 YDS, TD",
+              "stat_line": "16 YDS, TD",
               "injury_status": null
             },
             {
@@ -5388,7 +5388,7 @@
             "a": {
               "team_id": 10,
               "name": "LaPorta Authority ",
-              "score": 8.1
+              "score": 8.6
             },
             "b": {
               "team_id": 12,
@@ -5497,7 +5497,7 @@
           "team_id": 10,
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
-          "lineup_efficiency": 0.7692581613422436,
+          "lineup_efficiency": 0.7713962612128886,
           "bench_points": 364.78,
           "is_provisional": false
         },
@@ -5512,22 +5512,22 @@
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 8.1,
-          "optimal_points": 16.1,
-          "efficiency": 0.5031055900621118,
+          "actual_points": 8.6,
+          "optimal_points": 16.6,
+          "efficiency": 0.5180722891566264,
           "bench_points": 8.0,
           "rank": 3
         },
         "season_stats": {
           "weeks_played": 7,
-          "points_for": 680.26,
+          "points_for": 680.76,
           "points_against": 756.04,
           "record": {
             "w": 3,
             "l": 3,
             "t": 0
           },
-          "lineup_efficiency": 0.7692581613422436,
+          "lineup_efficiency": 0.7713962612128886,
           "total_bench_points": 364.78,
           "is_provisional": false
         },
@@ -5537,7 +5537,7 @@
             "position_id": 2,
             "is_starter": true,
             "slot_id": 2,
-            "points": 8.1,
+            "points": 8.6,
             "pro_team_id": 3,
             "game_status": "live",
             "opponent": "NE",
@@ -5546,7 +5546,7 @@
             "is_home": true,
             "game_detail": "11:33 - 2nd",
             "kickoff_utc": "2026-10-23T00:15:00+00:00",
-            "stat_line": "11 YDS, TD",
+            "stat_line": "16 YDS, TD",
             "injury_status": null
           },
           {
@@ -6757,7 +6757,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 670.06,
-            "points_against": 667.76,
+            "points_against": 668.26,
             "record": {
               "w": 1,
               "l": 5,
@@ -8262,22 +8262,22 @@
         },
         "10": {
           "week_stats": {
-            "actual_points": 8.1,
-            "optimal_points": 16.1,
-            "efficiency": 0.5031055900621118,
+            "actual_points": 8.6,
+            "optimal_points": 16.6,
+            "efficiency": 0.5180722891566264,
             "bench_points": 8.0,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 680.26,
+            "points_for": 680.76,
             "points_against": 756.04,
             "record": {
               "w": 3,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.7692581613422436,
+            "lineup_efficiency": 0.7713962612128886,
             "total_bench_points": 364.78,
             "is_provisional": false
           },
@@ -8287,7 +8287,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 8.1,
+              "points": 8.6,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -8296,7 +8296,7 @@
               "is_home": true,
               "game_detail": "11:33 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "11 YDS, TD",
+              "stat_line": "16 YDS, TD",
               "injury_status": null
             },
             {
@@ -9868,6 +9868,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:11:56.795419+00:00",
+          "week": 7,
+          "team_id": 10,
+          "points_before": 8.1,
+          "points_after": 8.6,
+          "delta": 0.5,
+          "is_starter": true,
+          "player": "D'Andre Swift",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
           "detected_at": "2026-10-23T01:10:24.259444+00:00",
           "week": 7,
           "team_id": 8,
@@ -10094,18 +10106,6 @@
           "player": "DeMario Douglas",
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-23T00:40:23.269165+00:00",
-          "week": 7,
-          "team_id": 10,
-          "points_before": 0.6,
-          "points_after": 1.6,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "D'Andre Swift",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -10118,7 +10118,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 7 team 10: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=8.1"
+            "description": "League 581297461 week 7 team 10: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=8.6"
           },
           {
             "severity": "warning",
