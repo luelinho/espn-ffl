@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T01:04:35.452758+00:00",
+  "generated_at": "2026-10-23T01:06:06.209089+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -306,7 +306,7 @@
             "b": {
               "team_id": 25,
               "name": "Goff Is My Copilot",
-              "score": 27.0
+              "score": 26.0
             },
             "live": true
           },
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 19,
               "name": "Shivakamini Somakandarkram",
-              "score": 3.0
+              "score": 9.0
             },
             "b": {
               "team_id": 17,
@@ -467,15 +467,15 @@
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 27.0,
-          "optimal_points": 27.0,
+          "actual_points": 26.0,
+          "optimal_points": 26.0,
           "efficiency": 1.0,
           "bench_points": 0.0,
           "rank": 1
         },
         "season_stats": {
           "weeks_played": 7,
-          "points_for": 777.0,
+          "points_for": 776.0,
           "points_against": 667.0,
           "record": {
             "w": 4,
@@ -509,7 +509,7 @@
             "position_id": 16,
             "is_starter": true,
             "slot_id": 16,
-            "points": 9.0,
+            "points": 8.0,
             "pro_team_id": 3,
             "game_status": "live",
             "opponent": "NE",
@@ -518,7 +518,7 @@
             "is_home": true,
             "game_detail": "12:16 - 2nd",
             "kickoff_utc": "2026-10-23T00:15:00+00:00",
-            "stat_line": "0 PA",
+            "stat_line": "6 PA",
             "injury_status": null
           },
           {
@@ -1571,7 +1571,7 @@
             "optimal_points": 11.0,
             "efficiency": 0.8181818181818182,
             "bench_points": 2.0,
-            "rank": 2
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
@@ -2134,7 +2134,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 737.0,
-            "points_against": 648.0,
+            "points_against": 647.0,
             "record": {
               "w": 5,
               "l": 1,
@@ -2404,15 +2404,15 @@
         },
         "25": {
           "week_stats": {
-            "actual_points": 27.0,
-            "optimal_points": 27.0,
+            "actual_points": 26.0,
+            "optimal_points": 26.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 777.0,
+            "points_for": 776.0,
             "points_against": 667.0,
             "record": {
               "w": 4,
@@ -2446,7 +2446,7 @@
               "position_id": 16,
               "is_starter": true,
               "slot_id": 16,
-              "points": 9.0,
+              "points": 8.0,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -2455,7 +2455,7 @@
               "is_home": true,
               "game_detail": "12:16 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "0 PA",
+              "stat_line": "6 PA",
               "injury_status": null
             },
             {
@@ -3714,15 +3714,15 @@
         },
         "19": {
           "week_stats": {
-            "actual_points": 3.0,
-            "optimal_points": 3.0,
+            "actual_points": 9.0,
+            "optimal_points": 9.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 3
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 672.0,
+            "points_for": 678.0,
             "points_against": 627.0,
             "record": {
               "w": 4,
@@ -3739,7 +3739,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 3.0,
+              "points": 9.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -4002,7 +4002,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 629.0,
-            "points_against": 594.0,
+            "points_against": 600.0,
             "record": {
               "w": 2,
               "l": 4,
@@ -4588,8 +4588,8 @@
           "added": "Patriots D/ST",
           "dropped": "Bears D/ST",
           "added_pts": 5.0,
-          "dropped_pts": 44.0,
-          "net": -39.0,
+          "dropped_pts": 42.0,
+          "net": -37.0,
           "horizon_weeks": 3,
           "is_complete": false,
           "week": 5
@@ -4597,7 +4597,7 @@
         {
           "added": "Bears D/ST",
           "dropped": "Samaje Perine",
-          "added_pts": 22.0,
+          "added_pts": 21.0,
           "dropped_pts": null,
           "net": null,
           "horizon_weeks": 3,
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:05:48.593503+00:00",
+          "week": 7,
+          "team_id": 19,
+          "points_before": 3.0,
+          "points_after": 9.0,
+          "delta": 6.0,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Shivakamini Somakandarkram",
+          "manager": "Kenneth Strack"
+        },
+        {
           "detected_at": "2026-10-23T01:01:18.174926+00:00",
           "week": 7,
           "team_id": 31,
@@ -5065,18 +5077,6 @@
           "player": "Rachaad White",
           "team_name": "Shivakamini Somakandarkram",
           "manager": "Kenneth Strack"
-        },
-        {
-          "detected_at": "2026-10-23T00:25:21.923569+00:00",
-          "week": 6,
-          "team_id": 16,
-          "points_before": 13.0,
-          "points_after": 16.0,
-          "delta": 3.0,
-          "is_starter": false,
-          "player": "Stefon Diggs",
-          "team_name": "Bijan, demons!",
-          "manager": "Harry Hinson"
         }
       ],
       "alerts": {
@@ -5104,7 +5104,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 7 team 19: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=3.0"
+            "description": "League 1618731 week 7 team 19: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=9.0"
           }
         ],
         "total_unresolved": 91
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 3.64
+              "score": 9.74
             },
             "live": true
           },
@@ -5506,7 +5506,7 @@
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger",
           "lineup_efficiency": 0.749386078581593,
-          "bench_points": 372.38,
+          "bench_points": 371.38,
           "is_provisional": false
         }
       ],
@@ -5516,7 +5516,7 @@
           "optimal_points": 16.1,
           "efficiency": 0.5031055900621118,
           "bench_points": 8.0,
-          "rank": 2
+          "rank": 3
         },
         "season_stats": {
           "weeks_played": 7,
@@ -7048,7 +7048,7 @@
             "optimal_points": 3.8,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 3
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 7,
@@ -7967,9 +7967,9 @@
         "5": {
           "week_stats": {
             "actual_points": 0.0,
-            "optimal_points": 9.0,
+            "optimal_points": 8.0,
             "efficiency": 0.0,
-            "bench_points": 9.0,
+            "bench_points": 8.0,
             "rank": 10
           },
           "season_stats": {
@@ -7982,7 +7982,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.749386078581593,
-            "total_bench_points": 372.38,
+            "total_bench_points": 371.38,
             "is_provisional": false
           },
           "roster": [
@@ -8144,7 +8144,7 @@
               "position_id": 16,
               "is_starter": false,
               "slot_id": 20,
-              "points": 9.0,
+              "points": 8.0,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -8153,7 +8153,7 @@
               "is_home": true,
               "game_detail": "12:16 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "0 PA",
+              "stat_line": "6 PA",
               "injury_status": null
             },
             {
@@ -8266,7 +8266,7 @@
             "optimal_points": 16.1,
             "efficiency": 0.5031055900621118,
             "bench_points": 8.0,
-            "rank": 2
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
@@ -8592,15 +8592,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 3.64,
-            "optimal_points": 3.64,
+            "actual_points": 9.74,
+            "optimal_points": 9.74,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 4
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 751.16,
+            "points_for": 757.26,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8617,7 +8617,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 3.64,
+              "points": 9.74,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8914,7 +8914,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 631.92,
+            "points_against": 638.02,
             "record": {
               "w": 5,
               "l": 1,
@@ -9868,6 +9868,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:05:53.387241+00:00",
+          "week": 7,
+          "team_id": 2,
+          "points_before": 3.64,
+          "points_after": 9.74,
+          "delta": 6.1,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-23T01:02:52.734558+00:00",
           "week": 7,
           "team_id": 2,
@@ -10094,18 +10106,6 @@
           "player": "D'Andre Swift",
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-23T00:32:52.298831+00:00",
-          "week": 7,
-          "team_id": 11,
-          "points_before": 3.5,
-          "points_after": 4.0,
-          "delta": 0.5,
-          "is_starter": false,
-          "player": "TreVeyon Henderson",
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach"
         }
       ],
       "alerts": {
