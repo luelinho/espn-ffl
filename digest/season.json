@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:00:06.118023+00:00",
+  "generated_at": "2026-10-23T02:01:34.890197+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -327,7 +327,7 @@
             "a": {
               "team_id": 28,
               "name": "Maybe to much Jagging off? ",
-              "score": 2.0
+              "score": 3.0
             },
             "b": {
               "team_id": 32,
@@ -518,7 +518,7 @@
             "is_home": true,
             "game_detail": "Halftime",
             "kickoff_utc": "2026-10-23T00:15:00+00:00",
-            "stat_line": "37 YDS, TD",
+            "stat_line": "38 YDS, TD",
             "injury_status": null
           },
           {
@@ -1030,12 +1030,12 @@
             "optimal_points": 3.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 4
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 7,
             "points_for": 662.0,
-            "points_against": 741.0,
+            "points_against": 742.0,
             "record": {
               "w": 2,
               "l": 4,
@@ -1601,7 +1601,7 @@
               "is_home": true,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "167 YDS, TD",
+              "stat_line": "174 YDS, TD",
               "injury_status": null
             },
             {
@@ -2455,7 +2455,7 @@
               "is_home": true,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "37 YDS, TD",
+              "stat_line": "38 YDS, TD",
               "injury_status": null
             },
             {
@@ -3190,15 +3190,15 @@
         },
         "28": {
           "week_stats": {
-            "actual_points": 2.0,
-            "optimal_points": 2.0,
+            "actual_points": 3.0,
+            "optimal_points": 3.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 5
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 617.0,
+            "points_for": 618.0,
             "points_against": 762.0,
             "record": {
               "w": 3,
@@ -3215,7 +3215,7 @@
               "position_id": 4,
               "is_starter": true,
               "slot_id": 6,
-              "points": 2.0,
+              "points": 3.0,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -3224,7 +3224,7 @@
               "is_home": true,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1 REC, 11 YDS",
+              "stat_line": "2 REC, 18 YDS",
               "injury_status": null
             },
             {
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T02:01:17.443366+00:00",
+          "week": 7,
+          "team_id": 28,
+          "points_before": 2.0,
+          "points_after": 3.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Colston Loveland",
+          "team_name": "Maybe to much Jagging off? ",
+          "manager": "Ryan Gajda"
+        },
+        {
           "detected_at": "2026-10-23T01:46:17.432540+00:00",
           "week": 7,
           "team_id": 19,
@@ -5065,18 +5077,6 @@
           "player": "Caleb Williams",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-23T01:05:48.593503+00:00",
-          "week": 7,
-          "team_id": 19,
-          "points_before": 3.0,
-          "points_after": 9.0,
-          "delta": 6.0,
-          "is_starter": true,
-          "player": "Drake Maye",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
         }
       ],
       "alerts": {
@@ -5099,7 +5099,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 7 team 28: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=2.0"
+            "description": "League 1618731 week 7 team 28: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=3.0"
           },
           {
             "severity": "warning",
@@ -5375,7 +5375,7 @@
             "a": {
               "team_id": 8,
               "name": "Hawk Tua on my Penix",
-              "score": 10.68
+              "score": 10.96
             },
             "b": {
               "team_id": 3,
@@ -5388,7 +5388,7 @@
             "a": {
               "team_id": 10,
               "name": "LaPorta Authority ",
-              "score": 10.7
+              "score": 10.8
             },
             "b": {
               "team_id": 12,
@@ -5401,7 +5401,7 @@
             "a": {
               "team_id": 11,
               "name": "I'M RICK JAMES, BLITZ! ",
-              "score": 2.1
+              "score": 3.8
             },
             "b": {
               "team_id": 9,
@@ -5462,19 +5462,19 @@
           "is_provisional": false
         },
         {
+          "team_id": 11,
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach",
+          "lineup_efficiency": 0.8297466683943809,
+          "bench_points": 302.1,
+          "is_provisional": false
+        },
+        {
           "team_id": 7,
           "team_name": "Nabers know my name",
           "manager": "Aaron Lechelt",
           "lineup_efficiency": 0.8209412253438649,
           "bench_points": 404.88,
-          "is_provisional": false
-        },
-        {
-          "team_id": 11,
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach",
-          "lineup_efficiency": 0.8093299266661639,
-          "bench_points": 302.1,
           "is_provisional": false
         },
         {
@@ -5505,29 +5505,29 @@
           "team_id": 10,
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
-          "lineup_efficiency": 0.7475030302092487,
+          "lineup_efficiency": 0.7478061022577404,
           "bench_points": 376.58,
           "is_provisional": false
         }
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 10.7,
-          "optimal_points": 30.5,
-          "efficiency": 0.3508196721311475,
+          "actual_points": 10.8,
+          "optimal_points": 30.6,
+          "efficiency": 0.35294117647058826,
           "bench_points": 19.8,
-          "rank": 3
+          "rank": 4
         },
         "season_stats": {
           "weeks_played": 7,
-          "points_for": 682.86,
+          "points_for": 682.96,
           "points_against": 756.04,
           "record": {
             "w": 3,
             "l": 3,
             "t": 0
           },
-          "lineup_efficiency": 0.7475030302092487,
+          "lineup_efficiency": 0.7478061022577404,
           "total_bench_points": 376.58,
           "is_provisional": false
         },
@@ -5537,7 +5537,7 @@
             "position_id": 2,
             "is_starter": true,
             "slot_id": 2,
-            "points": 10.7,
+            "points": 10.8,
             "pro_team_id": 3,
             "game_status": "live",
             "opponent": "NE",
@@ -5546,7 +5546,7 @@
             "is_home": true,
             "game_detail": "Halftime",
             "kickoff_utc": "2026-10-23T00:15:00+00:00",
-            "stat_line": "37 YDS, TD",
+            "stat_line": "38 YDS, TD",
             "injury_status": null
           },
           {
@@ -5847,12 +5847,12 @@
             "optimal_points": 2.8,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 5
+            "rank": 6
           },
           "season_stats": {
             "weeks_played": 7,
             "points_for": 548.28,
-            "points_against": 781.02,
+            "points_against": 781.3,
             "record": {
               "w": 2,
               "l": 4,
@@ -6752,12 +6752,12 @@
             "optimal_points": 2.6,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 6
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 7,
             "points_for": 670.06,
-            "points_against": 670.36,
+            "points_against": 670.46,
             "record": {
               "w": 1,
               "l": 5,
@@ -7044,15 +7044,15 @@
         },
         "8": {
           "week_stats": {
-            "actual_points": 10.68,
-            "optimal_points": 10.68,
+            "actual_points": 10.96,
+            "optimal_points": 10.96,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 4
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 636.8,
+            "points_for": 637.08,
             "points_against": 816.6,
             "record": {
               "w": 1,
@@ -7069,7 +7069,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 10.68,
+              "points": 10.96,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -7078,7 +7078,7 @@
               "is_home": true,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "167 YDS, TD",
+              "stat_line": "174 YDS, TD",
               "injury_status": null
             },
             {
@@ -7357,22 +7357,22 @@
         },
         "11": {
           "week_stats": {
-            "actual_points": 2.1,
-            "optimal_points": 6.1,
-            "efficiency": 0.34426229508196726,
+            "actual_points": 3.8,
+            "optimal_points": 7.8,
+            "efficiency": 0.48717948717948717,
             "bench_points": 4.0,
-            "rank": 7
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 733.0,
+            "points_for": 734.7,
             "points_against": 655.3,
             "record": {
               "w": 3,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8093299266661639,
+            "lineup_efficiency": 0.8297466683943809,
             "total_bench_points": 302.1,
             "is_provisional": false
           },
@@ -7382,7 +7382,7 @@
               "position_id": 4,
               "is_starter": true,
               "slot_id": 6,
-              "points": 2.1,
+              "points": 3.8,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -7391,7 +7391,7 @@
               "is_home": true,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1 REC, 11 YDS",
+              "stat_line": "2 REC, 18 YDS",
               "injury_status": null
             },
             {
@@ -8262,22 +8262,22 @@
         },
         "10": {
           "week_stats": {
-            "actual_points": 10.7,
-            "optimal_points": 30.5,
-            "efficiency": 0.3508196721311475,
+            "actual_points": 10.8,
+            "optimal_points": 30.6,
+            "efficiency": 0.35294117647058826,
             "bench_points": 19.8,
-            "rank": 3
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 682.86,
+            "points_for": 682.96,
             "points_against": 756.04,
             "record": {
               "w": 3,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.7475030302092487,
+            "lineup_efficiency": 0.7478061022577404,
             "total_bench_points": 376.58,
             "is_provisional": false
           },
@@ -8287,7 +8287,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 10.7,
+              "points": 10.8,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -8296,7 +8296,7 @@
               "is_home": true,
               "game_detail": "Halftime",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "37 YDS, TD",
+              "stat_line": "38 YDS, TD",
               "injury_status": null
             },
             {
@@ -9227,7 +9227,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 662.44,
-            "points_against": 747.3,
+            "points_against": 749.0,
             "record": {
               "w": 2,
               "l": 4,
@@ -9868,6 +9868,42 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T02:01:22.306847+00:00",
+          "week": 7,
+          "team_id": 11,
+          "points_before": 2.1,
+          "points_after": 3.8,
+          "delta": 1.7,
+          "is_starter": true,
+          "player": "Colston Loveland",
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach"
+        },
+        {
+          "detected_at": "2026-10-23T02:01:22.306467+00:00",
+          "week": 7,
+          "team_id": 10,
+          "points_before": 10.7,
+          "points_after": 10.8,
+          "delta": 0.1,
+          "is_starter": true,
+          "player": "D'Andre Swift",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
+          "detected_at": "2026-10-23T02:01:22.305737+00:00",
+          "week": 7,
+          "team_id": 8,
+          "points_before": 10.68,
+          "points_after": 10.96,
+          "delta": 0.28,
+          "is_starter": true,
+          "player": "Caleb Williams",
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians"
+        },
+        {
           "detected_at": "2026-10-23T01:46:22.216231+00:00",
           "week": 7,
           "team_id": 10,
@@ -10070,42 +10106,6 @@
           "player": "Caleb Williams",
           "team_name": "Hawk Tua on my Penix",
           "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-23T01:14:53.130861+00:00",
-          "week": 7,
-          "team_id": 4,
-          "points_before": 0.0,
-          "points_after": 1.6,
-          "delta": 1.6,
-          "is_starter": false,
-          "player": "Rome Odunze",
-          "team_name": "Ashley's Astounding Team",
-          "manager": "Ashley Couey"
-        },
-        {
-          "detected_at": "2026-10-23T01:11:56.795419+00:00",
-          "week": 7,
-          "team_id": 10,
-          "points_before": 8.1,
-          "points_after": 8.6,
-          "delta": 0.5,
-          "is_starter": true,
-          "player": "D'Andre Swift",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-23T01:10:24.259444+00:00",
-          "week": 7,
-          "team_id": 8,
-          "points_before": 3.8,
-          "points_after": 4.32,
-          "delta": 0.52,
-          "is_starter": true,
-          "player": "Caleb Williams",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
         }
       ],
       "alerts": {
@@ -10118,7 +10118,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 7 team 10: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=10.7"
+            "description": "League 581297461 week 7 team 10: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=10.8"
           },
           {
             "severity": "warning",
@@ -10128,12 +10128,12 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 7 team 8: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=10.68"
+            "description": "League 581297461 week 7 team 8: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=10.96"
           },
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 7 team 11: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=2.1"
+            "description": "League 581297461 week 7 team 11: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=3.8"
           }
         ],
         "total_unresolved": 80
