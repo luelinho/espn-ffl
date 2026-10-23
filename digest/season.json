@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T01:15:05.829174+00:00",
+  "generated_at": "2026-10-23T01:16:37.329391+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -5349,7 +5349,7 @@
             "a": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 10.4
+              "score": 11.1
             },
             "b": {
               "team_id": 4,
@@ -6148,7 +6148,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 698.96,
-            "points_against": 706.02,
+            "points_against": 706.72,
             "record": {
               "w": 2,
               "l": 4,
@@ -7653,15 +7653,15 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 10.4,
-            "optimal_points": 10.4,
+            "actual_points": 11.1,
+            "optimal_points": 11.1,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 728.38,
+            "points_for": 729.08,
             "points_against": 670.08,
             "record": {
               "w": 3,
@@ -7678,7 +7678,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 23,
-              "points": 10.4,
+              "points": 11.1,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -9868,6 +9868,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:16:22.662028+00:00",
+          "week": 7,
+          "team_id": 6,
+          "points_before": 10.4,
+          "points_after": 11.1,
+          "delta": 0.7,
+          "is_starter": true,
+          "player": "Luther Burden III",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
           "detected_at": "2026-10-23T01:14:53.133038+00:00",
           "week": 7,
           "team_id": 10,
@@ -10094,18 +10106,6 @@
           "player": "Caleb Williams",
           "team_name": "Hawk Tua on my Penix",
           "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-23T00:47:53.334566+00:00",
-          "week": 7,
-          "team_id": 6,
-          "points_before": 3.6,
-          "points_after": 10.4,
-          "delta": 6.8,
-          "is_starter": true,
-          "player": "Luther Burden III",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
