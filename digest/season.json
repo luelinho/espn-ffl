@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:13:35.667258+00:00",
+  "generated_at": "2026-10-23T02:15:04.984097+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -388,8 +388,8 @@
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.9032409908502949,
-          "bench_points": 225.0,
+          "lineup_efficiency": 0.896622127088574,
+          "bench_points": 227.0,
           "is_provisional": false
         },
         {
@@ -1568,9 +1568,9 @@
         "31": {
           "week_stats": {
             "actual_points": 30.0,
-            "optimal_points": 35.0,
-            "efficiency": 0.8571428571428571,
-            "bench_points": 5.0,
+            "optimal_points": 37.0,
+            "efficiency": 0.8108108108108109,
+            "bench_points": 7.0,
             "rank": 2
           },
           "season_stats": {
@@ -1582,8 +1582,8 @@
               "l": 5,
               "t": 0
             },
-            "lineup_efficiency": 0.9032409908502949,
-            "total_bench_points": 225.0,
+            "lineup_efficiency": 0.896622127088574,
+            "total_bench_points": 227.0,
             "is_provisional": false
           },
           "roster": [
@@ -1745,7 +1745,7 @@
               "position_id": 4,
               "is_starter": false,
               "slot_id": 20,
-              "points": 5.0,
+              "points": 7.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -1754,7 +1754,7 @@
               "is_home": false,
               "game_detail": "9:41 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "2 REC, 30 YDS",
+              "stat_line": "3 REC, 43 YDS",
               "injury_status": null
             },
             {
@@ -3748,7 +3748,7 @@
               "is_home": false,
               "game_detail": "9:41 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "183 YDS, TD, INT",
+              "stat_line": "196 YDS, TD, INT",
               "injury_status": null
             },
             {
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T02:14:47.803330+00:00",
+          "week": 7,
+          "team_id": 31,
+          "points_before": 5.0,
+          "points_after": 7.0,
+          "delta": 2.0,
+          "is_starter": false,
+          "player": "Hunter Henry",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
           "detected_at": "2026-10-23T02:13:18.583803+00:00",
           "week": 7,
           "team_id": 16,
@@ -5063,18 +5075,6 @@
           "delta": 10.0,
           "is_starter": true,
           "player": "Luther Burden III",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-23T01:38:49.917562+00:00",
-          "week": 7,
-          "team_id": 25,
-          "points_before": 9.0,
-          "points_after": 10.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "D'Andre Swift",
           "team_name": "Goff Is My Copilot",
           "manager": "Luel Waktola"
         }
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 17.52
+              "score": 18.04
             },
             "live": true
           },
@@ -5393,7 +5393,7 @@
             "b": {
               "team_id": 12,
               "name": "God of Warren",
-              "score": 5.0
+              "score": 7.3
             },
             "live": true
           },
@@ -5521,7 +5521,7 @@
         "season_stats": {
           "weeks_played": 7,
           "points_for": 685.96,
-          "points_against": 758.44,
+          "points_against": 760.74,
           "record": {
             "w": 3,
             "l": 3,
@@ -6748,15 +6748,15 @@
         },
         "12": {
           "week_stats": {
-            "actual_points": 5.0,
-            "optimal_points": 5.0,
+            "actual_points": 7.3,
+            "optimal_points": 7.3,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 6
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 672.46,
+            "points_for": 674.76,
             "points_against": 673.46,
             "record": {
               "w": 1,
@@ -6773,7 +6773,7 @@
               "position_id": 4,
               "is_starter": true,
               "slot_id": 6,
-              "points": 5.0,
+              "points": 7.3,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -6782,7 +6782,7 @@
               "is_home": false,
               "game_detail": "9:41 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "2 REC, 30 YDS",
+              "stat_line": "3 REC, 43 YDS",
               "injury_status": null
             },
             {
@@ -8288,7 +8288,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 685.96,
-            "points_against": 758.44,
+            "points_against": 760.74,
             "record": {
               "w": 3,
               "l": 3,
@@ -8609,15 +8609,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 17.52,
-            "optimal_points": 17.52,
+            "actual_points": 18.04,
+            "optimal_points": 18.04,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 765.04,
+            "points_for": 765.56,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8634,7 +8634,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 17.52,
+              "points": 18.04,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8643,7 +8643,7 @@
               "is_home": false,
               "game_detail": "9:41 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "183 YDS, TD, INT",
+              "stat_line": "196 YDS, TD, INT",
               "injury_status": null
             },
             {
@@ -8931,7 +8931,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 645.8000000000001,
+            "points_against": 646.32,
             "record": {
               "w": 5,
               "l": 1,
@@ -9881,6 +9881,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T02:14:52.463718+00:00",
+          "week": 7,
+          "team_id": 12,
+          "points_before": 5.0,
+          "points_after": 7.3,
+          "delta": 2.3,
+          "is_starter": true,
+          "player": "Hunter Henry",
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis"
+        },
+        {
+          "detected_at": "2026-10-23T02:14:52.459969+00:00",
+          "week": 7,
+          "team_id": 2,
+          "points_before": 17.52,
+          "points_after": 18.04,
+          "delta": 0.52,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-23T02:13:23.221913+00:00",
           "week": 7,
           "team_id": 10,
@@ -10095,30 +10119,6 @@
           "player": "Drake Maye",
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-10-23T01:41:52.347681+00:00",
-          "week": 7,
-          "team_id": 8,
-          "points_before": 5.72,
-          "points_after": 10.68,
-          "delta": 4.96,
-          "is_starter": true,
-          "player": "Caleb Williams",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-23T01:41:52.346921+00:00",
-          "week": 7,
-          "team_id": 6,
-          "points_before": 14.3,
-          "points_after": 23.7,
-          "delta": 9.4,
-          "is_starter": true,
-          "player": "Luther Burden III",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
@@ -10126,7 +10126,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 7 team 12: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=5.0"
+            "description": "League 581297461 week 7 team 12: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=7.3"
           },
           {
             "severity": "warning",
