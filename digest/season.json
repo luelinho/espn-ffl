@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T00:52:39.665664+00:00",
+  "generated_at": "2026-10-23T00:54:05.952114+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -445,7 +445,7 @@
           "team_name": "Bijan, demons!",
           "manager": "Harry Hinson",
           "lineup_efficiency": 0.8099096477003453,
-          "bench_points": 204.0,
+          "bench_points": 206.0,
           "is_provisional": false
         },
         {
@@ -1289,9 +1289,9 @@
         "16": {
           "week_stats": {
             "actual_points": 0.0,
-            "optimal_points": 2.0,
+            "optimal_points": 4.0,
             "efficiency": 0.0,
-            "bench_points": 2.0,
+            "bench_points": 4.0,
             "rank": 9
           },
           "season_stats": {
@@ -1304,7 +1304,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8099096477003453,
-            "total_bench_points": 204.0,
+            "total_bench_points": 206.0,
             "is_provisional": false
           },
           "roster": [
@@ -1466,7 +1466,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 2.0,
+              "points": 4.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -3748,7 +3748,7 @@
               "is_home": false,
               "game_detail": "1:38 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "32 YDS",
+              "stat_line": "36 YDS",
               "injury_status": null
             },
             {
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T00:53:47.915878+00:00",
+          "week": 7,
+          "team_id": 16,
+          "points_before": 2.0,
+          "points_after": 4.0,
+          "delta": 2.0,
+          "is_starter": false,
+          "player": "Rhamondre Stevenson",
+          "team_name": "Bijan, demons!",
+          "manager": "Harry Hinson"
+        },
+        {
           "detected_at": "2026-10-23T00:50:48.055553+00:00",
           "week": 7,
           "team_id": 31,
@@ -5065,18 +5077,6 @@
           "player": "Brock Purdy",
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson"
-        },
-        {
-          "detected_at": "2026-10-20T02:23:46.437178+00:00",
-          "week": 6,
-          "team_id": 19,
-          "points_before": 1.0,
-          "points_after": 2.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Rachaad White",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
         }
       ],
       "alerts": {
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 1.28
+              "score": 1.44
             },
             "live": true
           },
@@ -5489,8 +5489,8 @@
           "team_id": 10,
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
-          "lineup_efficiency": 0.8016330384376176,
-          "bench_points": 359.78,
+          "lineup_efficiency": 0.789957362761942,
+          "bench_points": 361.18,
           "is_provisional": false
         },
         {
@@ -5513,9 +5513,9 @@
       "my_team_detail": {
         "week_stats": {
           "actual_points": 8.1,
-          "optimal_points": 11.1,
-          "efficiency": 0.7297297297297297,
-          "bench_points": 3.0,
+          "optimal_points": 12.5,
+          "efficiency": 0.648,
+          "bench_points": 4.4,
           "rank": 2
         },
         "season_stats": {
@@ -5527,8 +5527,8 @@
             "l": 3,
             "t": 0
           },
-          "lineup_efficiency": 0.8016330384376176,
-          "total_bench_points": 359.78,
+          "lineup_efficiency": 0.789957362761942,
+          "total_bench_points": 361.18,
           "is_provisional": false
         },
         "roster": [
@@ -5690,7 +5690,7 @@
             "position_id": 2,
             "is_starter": false,
             "slot_id": 20,
-            "points": 3.0,
+            "points": 4.4,
             "pro_team_id": 17,
             "game_status": "live",
             "opponent": "CHI",
@@ -8263,9 +8263,9 @@
         "10": {
           "week_stats": {
             "actual_points": 8.1,
-            "optimal_points": 11.1,
-            "efficiency": 0.7297297297297297,
-            "bench_points": 3.0,
+            "optimal_points": 12.5,
+            "efficiency": 0.648,
+            "bench_points": 4.4,
             "rank": 2
           },
           "season_stats": {
@@ -8277,8 +8277,8 @@
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.8016330384376176,
-            "total_bench_points": 359.78,
+            "lineup_efficiency": 0.789957362761942,
+            "total_bench_points": 361.18,
             "is_provisional": false
           },
           "roster": [
@@ -8440,7 +8440,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 3.0,
+              "points": 4.4,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8592,15 +8592,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 1.28,
-            "optimal_points": 1.28,
+            "actual_points": 1.44,
+            "optimal_points": 1.44,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 748.8,
+            "points_for": 748.96,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8617,7 +8617,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 1.28,
+              "points": 1.44,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8626,7 +8626,7 @@
               "is_home": false,
               "game_detail": "1:38 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "32 YDS",
+              "stat_line": "36 YDS",
               "injury_status": null
             },
             {
@@ -8914,7 +8914,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 629.5600000000001,
+            "points_against": 629.72,
             "record": {
               "w": 5,
               "l": 1,
@@ -9868,6 +9868,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T00:53:52.660883+00:00",
+          "week": 7,
+          "team_id": 10,
+          "points_before": 3.0,
+          "points_after": 4.4,
+          "delta": 1.4,
+          "is_starter": false,
+          "player": "Rhamondre Stevenson",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
+          "detected_at": "2026-10-23T00:53:52.658034+00:00",
+          "week": 7,
+          "team_id": 2,
+          "points_before": 1.28,
+          "points_after": 1.44,
+          "delta": 0.16,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-23T00:50:53.280147+00:00",
           "week": 7,
           "team_id": 10,
@@ -10082,30 +10106,6 @@
           "player": "Jayden Daniels",
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-10-20T02:37:17.846993+00:00",
-          "week": 6,
-          "team_id": 8,
-          "points_before": 3.7,
-          "points_after": 13.1,
-          "delta": 9.4,
-          "is_starter": false,
-          "player": "Stefon Diggs",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-20T02:37:17.844819+00:00",
-          "week": 6,
-          "team_id": 6,
-          "points_before": 24.2,
-          "points_after": 28.9,
-          "delta": 4.7,
-          "is_starter": true,
-          "player": "Christian McCaffrey",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
