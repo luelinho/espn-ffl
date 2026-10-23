@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T00:54:05.952114+00:00",
+  "generated_at": "2026-10-23T00:55:41.382733+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 19,
               "name": "Shivakamini Somakandarkram",
-              "score": 1.0
+              "score": 2.0
             },
             "b": {
               "team_id": 17,
@@ -1475,7 +1475,7 @@
               "is_home": false,
               "game_detail": "1:38 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1 YDS",
+              "stat_line": "5 YDS",
               "injury_status": null
             },
             {
@@ -3194,7 +3194,7 @@
             "optimal_points": 2.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 4
+            "rank": 5
           },
           "season_stats": {
             "weeks_played": 7,
@@ -3714,15 +3714,15 @@
         },
         "19": {
           "week_stats": {
-            "actual_points": 1.0,
-            "optimal_points": 1.0,
+            "actual_points": 2.0,
+            "optimal_points": 2.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 5
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 670.0,
+            "points_for": 671.0,
             "points_against": 627.0,
             "record": {
               "w": 4,
@@ -3739,7 +3739,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 1.0,
+              "points": 2.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -3748,7 +3748,7 @@
               "is_home": false,
               "game_detail": "1:38 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "36 YDS",
+              "stat_line": "51 YDS",
               "injury_status": null
             },
             {
@@ -4002,7 +4002,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 629.0,
-            "points_against": 592.0,
+            "points_against": 593.0,
             "record": {
               "w": 2,
               "l": 4,
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T00:55:20.494364+00:00",
+          "week": 7,
+          "team_id": 19,
+          "points_before": 1.0,
+          "points_after": 2.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Shivakamini Somakandarkram",
+          "manager": "Kenneth Strack"
+        },
+        {
           "detected_at": "2026-10-23T00:53:47.915878+00:00",
           "week": 7,
           "team_id": 16,
@@ -5065,18 +5077,6 @@
           "player": "Jayden Daniels",
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda"
-        },
-        {
-          "detected_at": "2026-10-20T02:23:46.437874+00:00",
-          "week": 6,
-          "team_id": 26,
-          "points_before": 16.0,
-          "points_after": 18.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Brock Purdy",
-          "team_name": "Purdy Good Team",
-          "manager": "Hayley Hinson"
         }
       ],
       "alerts": {
@@ -5104,7 +5104,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 7 team 19: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=1.0"
+            "description": "League 1618731 week 7 team 19: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=2.0"
           }
         ],
         "total_unresolved": 91
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 1.44
+              "score": 2.04
             },
             "live": true
           },
@@ -5489,8 +5489,8 @@
           "team_id": 10,
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
-          "lineup_efficiency": 0.789957362761942,
-          "bench_points": 361.18,
+          "lineup_efficiency": 0.7870869308682542,
+          "bench_points": 361.58,
           "is_provisional": false
         },
         {
@@ -5513,9 +5513,9 @@
       "my_team_detail": {
         "week_stats": {
           "actual_points": 8.1,
-          "optimal_points": 12.5,
-          "efficiency": 0.648,
-          "bench_points": 4.4,
+          "optimal_points": 12.899999999999999,
+          "efficiency": 0.627906976744186,
+          "bench_points": 4.8,
           "rank": 2
         },
         "season_stats": {
@@ -5527,8 +5527,8 @@
             "l": 3,
             "t": 0
           },
-          "lineup_efficiency": 0.789957362761942,
-          "total_bench_points": 361.18,
+          "lineup_efficiency": 0.7870869308682542,
+          "total_bench_points": 361.58,
           "is_provisional": false
         },
         "roster": [
@@ -5690,7 +5690,7 @@
             "position_id": 2,
             "is_starter": false,
             "slot_id": 20,
-            "points": 4.4,
+            "points": 4.8,
             "pro_team_id": 17,
             "game_status": "live",
             "opponent": "CHI",
@@ -5699,7 +5699,7 @@
             "is_home": false,
             "game_detail": "1:38 - 1st",
             "kickoff_utc": "2026-10-23T00:15:00+00:00",
-            "stat_line": "1 YDS",
+            "stat_line": "5 YDS",
             "injury_status": null
           },
           {
@@ -8263,9 +8263,9 @@
         "10": {
           "week_stats": {
             "actual_points": 8.1,
-            "optimal_points": 12.5,
-            "efficiency": 0.648,
-            "bench_points": 4.4,
+            "optimal_points": 12.899999999999999,
+            "efficiency": 0.627906976744186,
+            "bench_points": 4.8,
             "rank": 2
           },
           "season_stats": {
@@ -8277,8 +8277,8 @@
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.789957362761942,
-            "total_bench_points": 361.18,
+            "lineup_efficiency": 0.7870869308682542,
+            "total_bench_points": 361.58,
             "is_provisional": false
           },
           "roster": [
@@ -8440,7 +8440,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 4.4,
+              "points": 4.8,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8449,7 +8449,7 @@
               "is_home": false,
               "game_detail": "1:38 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1 YDS",
+              "stat_line": "5 YDS",
               "injury_status": null
             },
             {
@@ -8592,15 +8592,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 1.44,
-            "optimal_points": 1.44,
+            "actual_points": 2.04,
+            "optimal_points": 2.04,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 748.96,
+            "points_for": 749.56,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8617,7 +8617,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 1.44,
+              "points": 2.04,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8626,7 +8626,7 @@
               "is_home": false,
               "game_detail": "1:38 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "36 YDS",
+              "stat_line": "51 YDS",
               "injury_status": null
             },
             {
@@ -8914,7 +8914,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 629.72,
+            "points_against": 630.32,
             "record": {
               "w": 5,
               "l": 1,
@@ -9868,6 +9868,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T00:55:27.076150+00:00",
+          "week": 7,
+          "team_id": 10,
+          "points_before": 4.4,
+          "points_after": 4.8,
+          "delta": 0.4,
+          "is_starter": false,
+          "player": "Rhamondre Stevenson",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
+          "detected_at": "2026-10-23T00:55:27.072553+00:00",
+          "week": 7,
+          "team_id": 2,
+          "points_before": 1.44,
+          "points_after": 2.04,
+          "delta": 0.6,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-23T00:53:52.660883+00:00",
           "week": 7,
           "team_id": 10,
@@ -10082,30 +10106,6 @@
           "player": "Brock Purdy",
           "team_name": "Double D Kupps",
           "manager": "Omar Teugels"
-        },
-        {
-          "detected_at": "2026-10-20T02:37:17.849141+00:00",
-          "week": 6,
-          "team_id": 9,
-          "points_before": 2.3,
-          "points_after": 3.4,
-          "delta": 1.1,
-          "is_starter": true,
-          "player": "Rachaad White",
-          "team_name": "Spider 2 Y Banana",
-          "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-10-20T02:37:17.848854+00:00",
-          "week": 6,
-          "team_id": 9,
-          "points_before": 5.28,
-          "points_after": 10.92,
-          "delta": 5.64,
-          "is_starter": false,
-          "player": "Jayden Daniels",
-          "team_name": "Spider 2 Y Banana",
-          "manager": "Stacks Harrison"
         }
       ],
       "alerts": {
