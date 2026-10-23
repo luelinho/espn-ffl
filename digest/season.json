@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T01:40:36.039381+00:00",
+  "generated_at": "2026-10-23T01:42:04.699890+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -293,7 +293,7 @@
             "b": {
               "team_id": 31,
               "name": "Father Drew",
-              "score": 15.0
+              "score": 21.0
             },
             "live": true
           },
@@ -306,7 +306,7 @@
             "b": {
               "team_id": 25,
               "name": "Goff Is My Copilot",
-              "score": 32.0
+              "score": 42.0
             },
             "live": true
           },
@@ -388,7 +388,7 @@
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.9068424314265254,
+          "lineup_efficiency": 0.9112267938671538,
           "bench_points": 222.0,
           "is_provisional": false
         },
@@ -467,15 +467,15 @@
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 32.0,
-          "optimal_points": 32.0,
+          "actual_points": 42.0,
+          "optimal_points": 42.0,
           "efficiency": 1.0,
           "bench_points": 0.0,
           "rank": 1
         },
         "season_stats": {
           "weeks_played": 7,
-          "points_for": 782.0,
+          "points_for": 792.0,
           "points_against": 668.0,
           "record": {
             "w": 4,
@@ -492,7 +492,7 @@
             "position_id": 3,
             "is_starter": true,
             "slot_id": 4,
-            "points": 13.0,
+            "points": 23.0,
             "pro_team_id": 3,
             "game_status": "live",
             "opponent": "NE",
@@ -501,7 +501,7 @@
             "is_home": true,
             "game_detail": "2:00 - 2nd",
             "kickoff_utc": "2026-10-23T00:15:00+00:00",
-            "stat_line": "3 REC, 106 YDS",
+            "stat_line": "4 REC, 130 YDS, TD",
             "injury_status": null
           },
           {
@@ -1297,7 +1297,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 708.0,
-            "points_against": 744.0,
+            "points_against": 750.0,
             "record": {
               "w": 3,
               "l": 3,
@@ -1567,49 +1567,32 @@
         },
         "31": {
           "week_stats": {
-            "actual_points": 15.0,
-            "optimal_points": 17.0,
-            "efficiency": 0.8823529411764706,
+            "actual_points": 21.0,
+            "optimal_points": 23.0,
+            "efficiency": 0.9130434782608695,
             "bench_points": 2.0,
             "rank": 2
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 679.0,
+            "points_for": 685.0,
             "points_against": 664.0,
             "record": {
               "w": 1,
               "l": 5,
               "t": 0
             },
-            "lineup_efficiency": 0.9068424314265254,
+            "lineup_efficiency": 0.9112267938671538,
             "total_bench_points": 222.0,
             "is_provisional": false
           },
           "roster": [
             {
-              "name": "Cairo Santos",
-              "position_id": 5,
-              "is_starter": true,
-              "slot_id": 17,
-              "points": 8.0,
-              "pro_team_id": 3,
-              "game_status": "live",
-              "opponent": "NE",
-              "own_score": 13,
-              "opp_score": 7,
-              "is_home": true,
-              "game_detail": "2:00 - 2nd",
-              "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "2/2 FG, 1/1 XP",
-              "injury_status": null
-            },
-            {
               "name": "Caleb Williams",
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 7.0,
+              "points": 12.0,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -1618,7 +1601,24 @@
               "is_home": true,
               "game_detail": "2:00 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "143 YDS",
+              "stat_line": "167 YDS, TD",
+              "injury_status": null
+            },
+            {
+              "name": "Cairo Santos",
+              "position_id": 5,
+              "is_starter": true,
+              "slot_id": 17,
+              "points": 9.0,
+              "pro_team_id": 3,
+              "game_status": "live",
+              "opponent": "NE",
+              "own_score": 13,
+              "opp_score": 7,
+              "is_home": true,
+              "game_detail": "2:00 - 2nd",
+              "kickoff_utc": "2026-10-23T00:15:00+00:00",
+              "stat_line": "2/2 FG, 2/2 XP",
               "injury_status": null
             },
             {
@@ -2134,7 +2134,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 738.0,
-            "points_against": 653.0,
+            "points_against": 663.0,
             "record": {
               "w": 5,
               "l": 1,
@@ -2404,15 +2404,15 @@
         },
         "25": {
           "week_stats": {
-            "actual_points": 32.0,
-            "optimal_points": 32.0,
+            "actual_points": 42.0,
+            "optimal_points": 42.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 782.0,
+            "points_for": 792.0,
             "points_against": 668.0,
             "record": {
               "w": 4,
@@ -2429,7 +2429,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 13.0,
+              "points": 23.0,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -2438,7 +2438,7 @@
               "is_home": true,
               "game_detail": "2:00 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "3 REC, 106 YDS",
+              "stat_line": "4 REC, 130 YDS, TD",
               "injury_status": null
             },
             {
@@ -4839,6 +4839,42 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:41:47.715853+00:00",
+          "week": 7,
+          "team_id": 31,
+          "points_before": 8.0,
+          "points_after": 9.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Cairo Santos",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
+          "detected_at": "2026-10-23T01:41:47.715764+00:00",
+          "week": 7,
+          "team_id": 31,
+          "points_before": 7.0,
+          "points_after": 12.0,
+          "delta": 5.0,
+          "is_starter": true,
+          "player": "Caleb Williams",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
+          "detected_at": "2026-10-23T01:41:47.714003+00:00",
+          "week": 7,
+          "team_id": 25,
+          "points_before": 13.0,
+          "points_after": 23.0,
+          "delta": 10.0,
+          "is_starter": true,
+          "player": "Luther Burden III",
+          "team_name": "Goff Is My Copilot",
+          "manager": "Luel Waktola"
+        },
+        {
           "detected_at": "2026-10-23T01:38:49.917562+00:00",
           "week": 7,
           "team_id": 25,
@@ -5041,42 +5077,6 @@
           "player": "Rhamondre Stevenson",
           "team_name": "Bijan, demons!",
           "manager": "Harry Hinson"
-        },
-        {
-          "detected_at": "2026-10-23T00:55:20.494364+00:00",
-          "week": 7,
-          "team_id": 19,
-          "points_before": 1.0,
-          "points_after": 2.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Drake Maye",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
-        },
-        {
-          "detected_at": "2026-10-23T00:53:47.915878+00:00",
-          "week": 7,
-          "team_id": 16,
-          "points_before": 2.0,
-          "points_after": 4.0,
-          "delta": 2.0,
-          "is_starter": false,
-          "player": "Rhamondre Stevenson",
-          "team_name": "Bijan, demons!",
-          "manager": "Harry Hinson"
-        },
-        {
-          "detected_at": "2026-10-23T00:50:48.055553+00:00",
-          "week": 7,
-          "team_id": 31,
-          "points_before": 4.0,
-          "points_after": 5.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Cairo Santos",
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson"
         }
       ],
       "alerts": {
@@ -5349,7 +5349,7 @@
             "a": {
               "team_id": 6,
               "name": "Jalen My Way Downtown  ",
-              "score": 14.3
+              "score": 23.7
             },
             "b": {
               "team_id": 4,
@@ -5375,7 +5375,7 @@
             "a": {
               "team_id": 8,
               "name": "Hawk Tua on my Penix",
-              "score": 5.72
+              "score": 10.68
             },
             "b": {
               "team_id": 3,
@@ -5852,7 +5852,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 545.48,
-            "points_against": 776.06,
+            "points_against": 781.02,
             "record": {
               "w": 2,
               "l": 4,
@@ -6148,7 +6148,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 698.96,
-            "points_against": 709.92,
+            "points_against": 719.3199999999999,
             "record": {
               "w": 2,
               "l": 4,
@@ -7044,15 +7044,15 @@
         },
         "8": {
           "week_stats": {
-            "actual_points": 5.72,
-            "optimal_points": 5.72,
+            "actual_points": 10.68,
+            "optimal_points": 10.68,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 4
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 631.84,
+            "points_for": 636.8,
             "points_against": 813.8,
             "record": {
               "w": 1,
@@ -7069,7 +7069,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 5.72,
+              "points": 10.68,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -7078,7 +7078,7 @@
               "is_home": true,
               "game_detail": "2:00 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "143 YDS",
+              "stat_line": "167 YDS, TD",
               "injury_status": null
             },
             {
@@ -7653,15 +7653,15 @@
         },
         "6": {
           "week_stats": {
-            "actual_points": 14.3,
-            "optimal_points": 14.3,
+            "actual_points": 23.7,
+            "optimal_points": 23.7,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 732.28,
+            "points_for": 741.68,
             "points_against": 670.08,
             "record": {
               "w": 3,
@@ -7678,7 +7678,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 23,
-              "points": 14.3,
+              "points": 23.7,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -7687,7 +7687,7 @@
               "is_home": true,
               "game_detail": "2:00 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "3 REC, 106 YDS",
+              "stat_line": "4 REC, 130 YDS, TD",
               "injury_status": null
             },
             {
@@ -8596,7 +8596,7 @@
             "optimal_points": 10.32,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 3
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 7,
@@ -9868,6 +9868,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:41:52.347681+00:00",
+          "week": 7,
+          "team_id": 8,
+          "points_before": 5.72,
+          "points_after": 10.68,
+          "delta": 4.96,
+          "is_starter": true,
+          "player": "Caleb Williams",
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians"
+        },
+        {
+          "detected_at": "2026-10-23T01:41:52.346921+00:00",
+          "week": 7,
+          "team_id": 6,
+          "points_before": 14.3,
+          "points_after": 23.7,
+          "delta": 9.4,
+          "is_starter": true,
+          "player": "Luther Burden III",
+          "team_name": "Jalen My Way Downtown  ",
+          "manager": "Kimberly DeLoach"
+        },
+        {
           "detected_at": "2026-10-23T01:38:55.028603+00:00",
           "week": 7,
           "team_id": 10,
@@ -10082,30 +10106,6 @@
           "player": "Rhamondre Stevenson",
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-23T01:01:22.795858+00:00",
-          "week": 7,
-          "team_id": 2,
-          "points_before": 2.4,
-          "points_after": 3.04,
-          "delta": 0.64,
-          "is_starter": true,
-          "player": "Drake Maye",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-10-23T00:59:53.574840+00:00",
-          "week": 7,
-          "team_id": 10,
-          "points_before": 4.8,
-          "points_after": 6.7,
-          "delta": 1.9,
-          "is_starter": false,
-          "player": "Rhamondre Stevenson",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -10123,7 +10123,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 7 team 8: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=5.72"
+            "description": "League 581297461 week 7 team 8: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=10.68"
           },
           {
             "severity": "warning",
