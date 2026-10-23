@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T01:24:13.386241+00:00",
+  "generated_at": "2026-10-23T01:25:39.801348+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 19,
               "name": "Shivakamini Somakandarkram",
-              "score": 11.0
+              "score": 13.0
             },
             "b": {
               "team_id": 17,
@@ -1571,7 +1571,7 @@
             "optimal_points": 15.0,
             "efficiency": 0.8666666666666667,
             "bench_points": 2.0,
-            "rank": 2
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
@@ -3714,15 +3714,15 @@
         },
         "19": {
           "week_stats": {
-            "actual_points": 11.0,
-            "optimal_points": 11.0,
+            "actual_points": 13.0,
+            "optimal_points": 13.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 3
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 680.0,
+            "points_for": 682.0,
             "points_against": 627.0,
             "record": {
               "w": 4,
@@ -3739,7 +3739,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 11.0,
+              "points": 13.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -4002,7 +4002,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 629.0,
-            "points_against": 602.0,
+            "points_against": 604.0,
             "record": {
               "w": 2,
               "l": 4,
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:25:19.710049+00:00",
+          "week": 7,
+          "team_id": 19,
+          "points_before": 11.0,
+          "points_after": 13.0,
+          "delta": 2.0,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Shivakamini Somakandarkram",
+          "manager": "Kenneth Strack"
+        },
+        {
           "detected_at": "2026-10-23T01:23:50.328926+00:00",
           "week": 7,
           "team_id": 19,
@@ -5065,18 +5077,6 @@
           "player": "DeMario Douglas",
           "team_name": "Auto Drafted \ud83d\ude43",
           "manager": "Marvin Cox"
-        },
-        {
-          "detected_at": "2026-10-23T00:40:18.434275+00:00",
-          "week": 7,
-          "team_id": 25,
-          "points_before": 0.0,
-          "points_after": 1.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "D'Andre Swift",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -5104,7 +5104,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 7 team 19: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=11.0"
+            "description": "League 1618731 week 7 team 19: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=13.0"
           }
         ],
         "total_unresolved": 92
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 10.82
+              "score": 12.32
             },
             "live": true
           },
@@ -7657,7 +7657,7 @@
             "optimal_points": 11.1,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 1
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 7,
@@ -8592,15 +8592,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 10.82,
-            "optimal_points": 10.82,
+            "actual_points": 12.32,
+            "optimal_points": 12.32,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 2
+            "rank": 1
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 758.34,
+            "points_for": 759.84,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8617,7 +8617,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 10.82,
+              "points": 12.32,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8914,7 +8914,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 639.1,
+            "points_against": 640.6,
             "record": {
               "w": 5,
               "l": 1,
@@ -9868,6 +9868,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:25:25.894392+00:00",
+          "week": 7,
+          "team_id": 2,
+          "points_before": 10.82,
+          "points_after": 12.32,
+          "delta": 1.5,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-23T01:23:57.291502+00:00",
           "week": 7,
           "team_id": 2,
@@ -10094,18 +10106,6 @@
           "player": "Drake Maye",
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-10-23T00:50:53.280147+00:00",
-          "week": 7,
-          "team_id": 10,
-          "points_before": 1.7,
-          "points_after": 8.1,
-          "delta": 6.4,
-          "is_starter": true,
-          "player": "D'Andre Swift",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
