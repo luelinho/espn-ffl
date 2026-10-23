@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T01:18:06.942553+00:00",
+  "generated_at": "2026-10-23T01:19:36.818462+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -293,7 +293,7 @@
             "b": {
               "team_id": 31,
               "name": "Father Drew",
-              "score": 10.0
+              "score": 13.0
             },
             "live": true
           },
@@ -388,7 +388,7 @@
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.8998396303060773,
+          "lineup_efficiency": 0.904601535067982,
           "bench_points": 222.0,
           "is_provisional": false
         },
@@ -1297,7 +1297,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 708.0,
-            "points_against": 739.0,
+            "points_against": 742.0,
             "record": {
               "w": 3,
               "l": 3,
@@ -1567,22 +1567,22 @@
         },
         "31": {
           "week_stats": {
-            "actual_points": 10.0,
-            "optimal_points": 12.0,
-            "efficiency": 0.8333333333333334,
+            "actual_points": 13.0,
+            "optimal_points": 15.0,
+            "efficiency": 0.8666666666666667,
             "bench_points": 2.0,
             "rank": 2
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 674.0,
+            "points_for": 677.0,
             "points_against": 664.0,
             "record": {
               "w": 1,
               "l": 5,
               "t": 0
             },
-            "lineup_efficiency": 0.8998396303060773,
+            "lineup_efficiency": 0.904601535067982,
             "total_bench_points": 222.0,
             "is_provisional": false
           },
@@ -1592,7 +1592,7 @@
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
-              "points": 5.0,
+              "points": 8.0,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -1601,7 +1601,7 @@
               "is_home": true,
               "game_detail": "7:49 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1/1 FG, 1/1 XP",
+              "stat_line": "2/2 FG, 1/1 XP",
               "injury_status": null
             },
             {
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:19:19.536296+00:00",
+          "week": 7,
+          "team_id": 31,
+          "points_before": 5.0,
+          "points_after": 8.0,
+          "delta": 3.0,
+          "is_starter": true,
+          "player": "Cairo Santos",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
           "detected_at": "2026-10-23T01:14:47.922457+00:00",
           "week": 7,
           "team_id": 25,
@@ -5065,18 +5077,6 @@
           "player": "Christian McCaffrey",
           "team_name": "Bama boys heavy 251",
           "manager": "Nkhrumba Overton Jr."
-        },
-        {
-          "detected_at": "2026-10-23T00:25:21.927786+00:00",
-          "week": 6,
-          "team_id": 30,
-          "points_before": 1.0,
-          "points_after": 2.0,
-          "delta": 1.0,
-          "is_starter": false,
-          "player": "Austin Ekeler",
-          "team_name": "Fleetwood Mac S3x Pants",
-          "manager": "Ken Nilson"
         }
       ],
       "alerts": {
