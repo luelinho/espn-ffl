@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:12:04.898630+00:00",
+  "generated_at": "2026-10-23T02:13:35.667258+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -445,7 +445,7 @@
           "team_name": "Bijan, demons!",
           "manager": "Harry Hinson",
           "lineup_efficiency": 0.8099096477003453,
-          "bench_points": 221.0,
+          "bench_points": 222.0,
           "is_provisional": false
         },
         {
@@ -1289,9 +1289,9 @@
         "16": {
           "week_stats": {
             "actual_points": 0.0,
-            "optimal_points": 19.0,
+            "optimal_points": 20.0,
             "efficiency": 0.0,
-            "bench_points": 19.0,
+            "bench_points": 20.0,
             "rank": 10
           },
           "season_stats": {
@@ -1304,7 +1304,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.8099096477003453,
-            "total_bench_points": 221.0,
+            "total_bench_points": 222.0,
             "is_provisional": false
           },
           "roster": [
@@ -1466,7 +1466,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 19.0,
+              "points": 20.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -1475,7 +1475,7 @@
               "is_home": false,
               "game_detail": "9:41 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "18 YDS",
+              "stat_line": "21 YDS",
               "injury_status": null
             },
             {
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T02:13:18.583803+00:00",
+          "week": 7,
+          "team_id": 16,
+          "points_before": 19.0,
+          "points_after": 20.0,
+          "delta": 1.0,
+          "is_starter": false,
+          "player": "Rhamondre Stevenson",
+          "team_name": "Bijan, demons!",
+          "manager": "Harry Hinson"
+        },
+        {
           "detected_at": "2026-10-23T02:11:47.491981+00:00",
           "week": 7,
           "team_id": 31,
@@ -5065,18 +5077,6 @@
           "player": "D'Andre Swift",
           "team_name": "Goff Is My Copilot",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-23T01:34:19.398740+00:00",
-          "week": 7,
-          "team_id": 31,
-          "points_before": 6.0,
-          "points_after": 7.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Caleb Williams",
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson"
         }
       ],
       "alerts": {
@@ -5486,19 +5486,19 @@
           "is_provisional": false
         },
         {
-          "team_id": 10,
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola",
-          "lineup_efficiency": 0.7560594035782684,
-          "bench_points": 376.58,
-          "is_provisional": false
-        },
-        {
           "team_id": 4,
           "team_name": "Ashley's Astounding Team",
           "manager": "Ashley Couey",
           "lineup_efficiency": 0.7555478229154012,
           "bench_points": 402.0,
+          "is_provisional": false
+        },
+        {
+          "team_id": 10,
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola",
+          "lineup_efficiency": 0.755540169335899,
+          "bench_points": 376.88,
           "is_provisional": false
         },
         {
@@ -5513,9 +5513,9 @@
       "my_team_detail": {
         "week_stats": {
           "actual_points": 13.8,
-          "optimal_points": 33.6,
-          "efficiency": 0.4107142857142857,
-          "bench_points": 19.8,
+          "optimal_points": 33.900000000000006,
+          "efficiency": 0.4070796460176991,
+          "bench_points": 20.1,
           "rank": 5
         },
         "season_stats": {
@@ -5527,8 +5527,8 @@
             "l": 3,
             "t": 0
           },
-          "lineup_efficiency": 0.7560594035782684,
-          "total_bench_points": 376.58,
+          "lineup_efficiency": 0.755540169335899,
+          "total_bench_points": 376.88,
           "is_provisional": false
         },
         "roster": [
@@ -5690,7 +5690,7 @@
             "position_id": 2,
             "is_starter": false,
             "slot_id": 20,
-            "points": 19.8,
+            "points": 20.1,
             "pro_team_id": 17,
             "game_status": "live",
             "opponent": "CHI",
@@ -5699,7 +5699,7 @@
             "is_home": false,
             "game_detail": "9:41 - 3rd",
             "kickoff_utc": "2026-10-23T00:15:00+00:00",
-            "stat_line": "18 YDS",
+            "stat_line": "21 YDS",
             "injury_status": null
           },
           {
@@ -7184,19 +7184,36 @@
               "injury_status": null
             },
             {
-              "name": "Brian Thomas Jr.",
+              "name": "Amon-Ra St. Brown",
               "position_id": 3,
               "is_starter": true,
               "slot_id": 23,
               "points": null,
-              "pro_team_id": 30,
-              "game_status": "bye",
-              "opponent": null,
-              "own_score": null,
-              "opp_score": null,
-              "is_home": null,
-              "game_detail": null,
-              "kickoff_utc": null,
+              "pro_team_id": 8,
+              "game_status": "not_started",
+              "opponent": "GB",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "10/25 - 4:25 PM EDT",
+              "kickoff_utc": "2026-10-25T20:25:00+00:00",
+              "stat_line": null,
+              "injury_status": null
+            },
+            {
+              "name": "Ryan Fitzgerald",
+              "position_id": 5,
+              "is_starter": true,
+              "slot_id": 17,
+              "points": null,
+              "pro_team_id": 29,
+              "game_status": "not_started",
+              "opponent": "TB",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "10/25 - 1:00 PM EDT",
+              "kickoff_utc": "2026-10-25T17:00:00+00:00",
               "stat_line": null,
               "injury_status": null
             },
@@ -7337,19 +7354,19 @@
               "injury_status": "INJURY_RESERVE"
             },
             {
-              "name": "Amon-Ra St. Brown",
+              "name": "Brian Thomas Jr.",
               "position_id": 3,
               "is_starter": false,
               "slot_id": 20,
               "points": null,
-              "pro_team_id": 8,
-              "game_status": "not_started",
-              "opponent": "GB",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "10/25 - 4:25 PM EDT",
-              "kickoff_utc": "2026-10-25T20:25:00+00:00",
+              "pro_team_id": 30,
+              "game_status": "bye",
+              "opponent": null,
+              "own_score": null,
+              "opp_score": null,
+              "is_home": null,
+              "game_detail": null,
+              "kickoff_utc": null,
               "stat_line": null,
               "injury_status": null
             }
@@ -8263,9 +8280,9 @@
         "10": {
           "week_stats": {
             "actual_points": 13.8,
-            "optimal_points": 33.6,
-            "efficiency": 0.4107142857142857,
-            "bench_points": 19.8,
+            "optimal_points": 33.900000000000006,
+            "efficiency": 0.4070796460176991,
+            "bench_points": 20.1,
             "rank": 5
           },
           "season_stats": {
@@ -8277,8 +8294,8 @@
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.7560594035782684,
-            "total_bench_points": 376.58,
+            "lineup_efficiency": 0.755540169335899,
+            "total_bench_points": 376.88,
             "is_provisional": false
           },
           "roster": [
@@ -8440,7 +8457,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 19.8,
+              "points": 20.1,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8449,7 +8466,7 @@
               "is_home": false,
               "game_detail": "9:41 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "18 YDS",
+              "stat_line": "21 YDS",
               "injury_status": null
             },
             {
@@ -9715,6 +9732,28 @@
       "activity": [
         {
           "kind": "freeagent",
+          "proposed_at": "2026-10-23T02:12:23.452000+00:00",
+          "team_id": 8,
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians",
+          "adds": [
+            "Ryan Fitzgerald"
+          ],
+          "drops": []
+        },
+        {
+          "kind": "freeagent",
+          "proposed_at": "2026-10-23T02:12:13.371000+00:00",
+          "team_id": 8,
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians",
+          "adds": [],
+          "drops": [
+            "Tyler Bass"
+          ]
+        },
+        {
+          "kind": "freeagent",
           "proposed_at": "2026-10-22T18:31:57.909000+00:00",
           "team_id": 10,
           "team_name": "LaPorta Authority ",
@@ -9838,35 +9877,21 @@
             "Cooper Kupp"
           ],
           "drops": []
-        },
-        {
-          "kind": "waiver",
-          "proposed_at": "2026-10-21T07:45:15.504000+00:00",
-          "team_id": 2,
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers",
-          "adds": [
-            "Will Reichard"
-          ],
-          "drops": [
-            "Keaton Mitchell"
-          ]
-        },
-        {
-          "kind": "waiver",
-          "proposed_at": "2026-10-21T07:45:15.504000+00:00",
-          "team_id": 11,
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach",
-          "adds": [
-            "Nick Folk"
-          ],
-          "drops": [
-            "Justin Herbert"
-          ]
         }
       ],
       "scoring_events": [
+        {
+          "detected_at": "2026-10-23T02:13:23.221913+00:00",
+          "week": 7,
+          "team_id": 10,
+          "points_before": 19.8,
+          "points_after": 20.1,
+          "delta": 0.3,
+          "is_starter": false,
+          "player": "Rhamondre Stevenson",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
         {
           "detected_at": "2026-10-23T02:11:52.286608+00:00",
           "week": 7,
@@ -10094,18 +10119,6 @@
           "player": "Luther Burden III",
           "team_name": "Jalen My Way Downtown  ",
           "manager": "Kimberly DeLoach"
-        },
-        {
-          "detected_at": "2026-10-23T01:38:55.028603+00:00",
-          "week": 7,
-          "team_id": 10,
-          "points_before": 9.1,
-          "points_after": 10.7,
-          "delta": 1.6,
-          "is_starter": true,
-          "player": "D'Andre Swift",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
