@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T03:01:47.802896+00:00",
+  "generated_at": "2026-10-23T03:03:08.839298+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -3748,7 +3748,7 @@
               "is_home": false,
               "game_detail": "5:34 - 4th",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "287 YDS, 2 TD, INT",
+              "stat_line": "288 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 26.08
+              "score": 26.12
             },
             "live": true
           },
@@ -5489,8 +5489,8 @@
           "team_id": 10,
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola",
-          "lineup_efficiency": 0.7612307313686439,
-          "bench_points": 379.18,
+          "lineup_efficiency": 0.7610734781736238,
+          "bench_points": 379.28,
           "is_provisional": false
         },
         {
@@ -5513,9 +5513,9 @@
       "my_team_detail": {
         "week_stats": {
           "actual_points": 18.1,
-          "optimal_points": 40.5,
-          "efficiency": 0.44691358024691363,
-          "bench_points": 22.4,
+          "optimal_points": 40.6,
+          "efficiency": 0.4458128078817734,
+          "bench_points": 22.5,
           "rank": 5
         },
         "season_stats": {
@@ -5527,8 +5527,8 @@
             "l": 3,
             "t": 0
           },
-          "lineup_efficiency": 0.7612307313686439,
-          "total_bench_points": 379.18,
+          "lineup_efficiency": 0.7610734781736238,
+          "total_bench_points": 379.28,
           "is_provisional": false
         },
         "roster": [
@@ -5690,7 +5690,7 @@
             "position_id": 2,
             "is_starter": false,
             "slot_id": 20,
-            "points": 22.4,
+            "points": 22.5,
             "pro_team_id": 17,
             "game_status": "live",
             "opponent": "CHI",
@@ -8280,9 +8280,9 @@
         "10": {
           "week_stats": {
             "actual_points": 18.1,
-            "optimal_points": 40.5,
-            "efficiency": 0.44691358024691363,
-            "bench_points": 22.4,
+            "optimal_points": 40.6,
+            "efficiency": 0.4458128078817734,
+            "bench_points": 22.5,
             "rank": 5
           },
           "season_stats": {
@@ -8294,8 +8294,8 @@
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.7612307313686439,
-            "total_bench_points": 379.18,
+            "lineup_efficiency": 0.7610734781736238,
+            "total_bench_points": 379.28,
             "is_provisional": false
           },
           "roster": [
@@ -8457,7 +8457,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 22.4,
+              "points": 22.5,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8609,15 +8609,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 26.08,
-            "optimal_points": 26.08,
+            "actual_points": 26.12,
+            "optimal_points": 26.12,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 773.6,
+            "points_for": 773.64,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8634,7 +8634,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 26.08,
+              "points": 26.12,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8643,7 +8643,7 @@
               "is_home": false,
               "game_detail": "5:34 - 4th",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "287 YDS, 2 TD, INT",
+              "stat_line": "288 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -8931,7 +8931,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 654.36,
+            "points_against": 654.4,
             "record": {
               "w": 5,
               "l": 1,
@@ -9881,6 +9881,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T03:02:55.889394+00:00",
+          "week": 7,
+          "team_id": 10,
+          "points_before": 22.4,
+          "points_after": 22.5,
+          "delta": 0.1,
+          "is_starter": false,
+          "player": "Rhamondre Stevenson",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
+          "detected_at": "2026-10-23T03:02:55.886119+00:00",
+          "week": 7,
+          "team_id": 2,
+          "points_before": 26.08,
+          "points_after": 26.12,
+          "delta": 0.04,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-23T02:59:57.260668+00:00",
           "week": 7,
           "team_id": 10,
@@ -10095,30 +10119,6 @@
           "player": "Rhamondre Stevenson",
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-23T02:31:24.325120+00:00",
-          "week": 7,
-          "team_id": 2,
-          "points_before": 24.32,
-          "points_after": 24.88,
-          "delta": 0.56,
-          "is_starter": true,
-          "player": "Drake Maye",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-10-23T02:26:54.225320+00:00",
-          "week": 7,
-          "team_id": 11,
-          "points_before": 16.8,
-          "points_after": 18.1,
-          "delta": 1.3,
-          "is_starter": true,
-          "player": "Colston Loveland",
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach"
         }
       ],
       "alerts": {
