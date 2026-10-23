@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T01:37:42.317336+00:00",
+  "generated_at": "2026-10-23T01:39:08.760859+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -306,7 +306,7 @@
             "b": {
               "team_id": 25,
               "name": "Goff Is My Copilot",
-              "score": 31.0
+              "score": 32.0
             },
             "live": true
           },
@@ -467,15 +467,15 @@
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 31.0,
-          "optimal_points": 31.0,
+          "actual_points": 32.0,
+          "optimal_points": 32.0,
           "efficiency": 1.0,
           "bench_points": 0.0,
           "rank": 1
         },
         "season_stats": {
           "weeks_played": 7,
-          "points_for": 781.0,
+          "points_for": 782.0,
           "points_against": 668.0,
           "record": {
             "w": 4,
@@ -505,6 +505,23 @@
             "injury_status": null
           },
           {
+            "name": "D'Andre Swift",
+            "position_id": 2,
+            "is_starter": true,
+            "slot_id": 2,
+            "points": 10.0,
+            "pro_team_id": 3,
+            "game_status": "live",
+            "opponent": "NE",
+            "own_score": 13,
+            "opp_score": 7,
+            "is_home": true,
+            "game_detail": "2:00 - 2nd",
+            "kickoff_utc": "2026-10-23T00:15:00+00:00",
+            "stat_line": "37 YDS, TD",
+            "injury_status": null
+          },
+          {
             "name": "Bears D/ST",
             "position_id": 16,
             "is_starter": true,
@@ -519,23 +536,6 @@
             "game_detail": "2:00 - 2nd",
             "kickoff_utc": "2026-10-23T00:15:00+00:00",
             "stat_line": "INT, 7 PA",
-            "injury_status": null
-          },
-          {
-            "name": "D'Andre Swift",
-            "position_id": 2,
-            "is_starter": true,
-            "slot_id": 2,
-            "points": 9.0,
-            "pro_team_id": 3,
-            "game_status": "live",
-            "opponent": "NE",
-            "own_score": 13,
-            "opp_score": 7,
-            "is_home": true,
-            "game_detail": "2:00 - 2nd",
-            "kickoff_utc": "2026-10-23T00:15:00+00:00",
-            "stat_line": "21 YDS, TD",
             "injury_status": null
           },
           {
@@ -2134,7 +2134,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 738.0,
-            "points_against": 652.0,
+            "points_against": 653.0,
             "record": {
               "w": 5,
               "l": 1,
@@ -2404,15 +2404,15 @@
         },
         "25": {
           "week_stats": {
-            "actual_points": 31.0,
-            "optimal_points": 31.0,
+            "actual_points": 32.0,
+            "optimal_points": 32.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 781.0,
+            "points_for": 782.0,
             "points_against": 668.0,
             "record": {
               "w": 4,
@@ -2442,6 +2442,23 @@
               "injury_status": null
             },
             {
+              "name": "D'Andre Swift",
+              "position_id": 2,
+              "is_starter": true,
+              "slot_id": 2,
+              "points": 10.0,
+              "pro_team_id": 3,
+              "game_status": "live",
+              "opponent": "NE",
+              "own_score": 13,
+              "opp_score": 7,
+              "is_home": true,
+              "game_detail": "2:00 - 2nd",
+              "kickoff_utc": "2026-10-23T00:15:00+00:00",
+              "stat_line": "37 YDS, TD",
+              "injury_status": null
+            },
+            {
               "name": "Bears D/ST",
               "position_id": 16,
               "is_starter": true,
@@ -2456,23 +2473,6 @@
               "game_detail": "2:00 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
               "stat_line": "INT, 7 PA",
-              "injury_status": null
-            },
-            {
-              "name": "D'Andre Swift",
-              "position_id": 2,
-              "is_starter": true,
-              "slot_id": 2,
-              "points": 9.0,
-              "pro_team_id": 3,
-              "game_status": "live",
-              "opponent": "NE",
-              "own_score": 13,
-              "opp_score": 7,
-              "is_home": true,
-              "game_detail": "2:00 - 2nd",
-              "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "21 YDS, TD",
               "injury_status": null
             },
             {
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:38:49.917562+00:00",
+          "week": 7,
+          "team_id": 25,
+          "points_before": 9.0,
+          "points_after": 10.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "D'Andre Swift",
+          "team_name": "Goff Is My Copilot",
+          "manager": "Luel Waktola"
+        },
+        {
           "detected_at": "2026-10-23T01:34:19.398740+00:00",
           "week": 7,
           "team_id": 31,
@@ -5065,18 +5077,6 @@
           "player": "Cairo Santos",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-23T00:50:48.050343+00:00",
-          "week": 7,
-          "team_id": 25,
-          "points_before": 1.0,
-          "points_after": 8.0,
-          "delta": 7.0,
-          "is_starter": true,
-          "player": "D'Andre Swift",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -5388,7 +5388,7 @@
             "a": {
               "team_id": 10,
               "name": "LaPorta Authority ",
-              "score": 9.1
+              "score": 10.7
             },
             "b": {
               "team_id": 12,
@@ -5478,19 +5478,19 @@
           "is_provisional": false
         },
         {
+          "team_id": 10,
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola",
+          "lineup_efficiency": 0.779127721814654,
+          "bench_points": 364.78,
+          "is_provisional": false
+        },
+        {
           "team_id": 3,
           "team_name": "8 - 9",
           "manager": "Marcus Bess",
           "lineup_efficiency": 0.7763453681825266,
           "bench_points": 269.58,
-          "is_provisional": false
-        },
-        {
-          "team_id": 10,
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola",
-          "lineup_efficiency": 0.7734093260033789,
-          "bench_points": 364.78,
           "is_provisional": false
         },
         {
@@ -5512,22 +5512,22 @@
       ],
       "my_team_detail": {
         "week_stats": {
-          "actual_points": 9.1,
-          "optimal_points": 17.1,
-          "efficiency": 0.5321637426900584,
+          "actual_points": 10.7,
+          "optimal_points": 18.7,
+          "efficiency": 0.5721925133689839,
           "bench_points": 8.0,
-          "rank": 3
+          "rank": 2
         },
         "season_stats": {
           "weeks_played": 7,
-          "points_for": 681.26,
+          "points_for": 682.86,
           "points_against": 756.04,
           "record": {
             "w": 3,
             "l": 3,
             "t": 0
           },
-          "lineup_efficiency": 0.7734093260033789,
+          "lineup_efficiency": 0.779127721814654,
           "total_bench_points": 364.78,
           "is_provisional": false
         },
@@ -5537,7 +5537,7 @@
             "position_id": 2,
             "is_starter": true,
             "slot_id": 2,
-            "points": 9.1,
+            "points": 10.7,
             "pro_team_id": 3,
             "game_status": "live",
             "opponent": "NE",
@@ -5546,7 +5546,7 @@
             "is_home": true,
             "game_detail": "2:00 - 2nd",
             "kickoff_utc": "2026-10-23T00:15:00+00:00",
-            "stat_line": "21 YDS, TD",
+            "stat_line": "37 YDS, TD",
             "injury_status": null
           },
           {
@@ -6757,7 +6757,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 670.06,
-            "points_against": 668.76,
+            "points_against": 670.36,
             "record": {
               "w": 1,
               "l": 5,
@@ -8262,22 +8262,22 @@
         },
         "10": {
           "week_stats": {
-            "actual_points": 9.1,
-            "optimal_points": 17.1,
-            "efficiency": 0.5321637426900584,
+            "actual_points": 10.7,
+            "optimal_points": 18.7,
+            "efficiency": 0.5721925133689839,
             "bench_points": 8.0,
-            "rank": 3
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 681.26,
+            "points_for": 682.86,
             "points_against": 756.04,
             "record": {
               "w": 3,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.7734093260033789,
+            "lineup_efficiency": 0.779127721814654,
             "total_bench_points": 364.78,
             "is_provisional": false
           },
@@ -8287,7 +8287,7 @@
               "position_id": 2,
               "is_starter": true,
               "slot_id": 2,
-              "points": 9.1,
+              "points": 10.7,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -8296,7 +8296,7 @@
               "is_home": true,
               "game_detail": "2:00 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "21 YDS, TD",
+              "stat_line": "37 YDS, TD",
               "injury_status": null
             },
             {
@@ -8596,7 +8596,7 @@
             "optimal_points": 10.32,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 2
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
@@ -9868,6 +9868,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:38:55.028603+00:00",
+          "week": 7,
+          "team_id": 10,
+          "points_before": 9.1,
+          "points_after": 10.7,
+          "delta": 1.6,
+          "is_starter": true,
+          "player": "D'Andre Swift",
+          "team_name": "LaPorta Authority ",
+          "manager": "Luel Waktola"
+        },
+        {
           "detected_at": "2026-10-23T01:34:26.480572+00:00",
           "week": 7,
           "team_id": 8,
@@ -10094,18 +10106,6 @@
           "player": "Rhamondre Stevenson",
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-23T00:59:53.571993+00:00",
-          "week": 7,
-          "team_id": 2,
-          "points_before": 2.04,
-          "points_after": 2.4,
-          "delta": 0.36,
-          "is_starter": true,
-          "player": "Drake Maye",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
         }
       ],
       "alerts": {
@@ -10118,7 +10118,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 7 team 10: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=9.1"
+            "description": "League 581297461 week 7 team 10: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=10.7"
           },
           {
             "severity": "warning",
