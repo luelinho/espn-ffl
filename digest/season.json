@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T00:27:07.632042+00:00",
+  "generated_at": "2026-10-23T00:28:40.629116+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -293,7 +293,7 @@
             "b": {
               "team_id": 31,
               "name": "Father Drew",
-              "score": 1.0
+              "score": 5.0
             },
             "live": true
           },
@@ -1030,7 +1030,7 @@
             "optimal_points": 3.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 2
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
@@ -1297,7 +1297,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 708.0,
-            "points_against": 730.0,
+            "points_against": 734.0,
             "record": {
               "w": 3,
               "l": 3,
@@ -1567,15 +1567,15 @@
         },
         "31": {
           "week_stats": {
-            "actual_points": 1.0,
-            "optimal_points": 1.0,
+            "actual_points": 5.0,
+            "optimal_points": 5.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 4
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 665.0,
+            "points_for": 669.0,
             "points_against": 664.0,
             "record": {
               "w": 1,
@@ -1587,6 +1587,23 @@
             "is_provisional": false
           },
           "roster": [
+            {
+              "name": "Cairo Santos",
+              "position_id": 5,
+              "is_starter": true,
+              "slot_id": 17,
+              "points": 4.0,
+              "pro_team_id": 3,
+              "game_status": "live",
+              "opponent": "NE",
+              "own_score": 0,
+              "opp_score": 0,
+              "is_home": true,
+              "game_detail": "11:30 - 1st",
+              "kickoff_utc": "2026-10-23T00:15:00+00:00",
+              "stat_line": "1/1 FG",
+              "injury_status": null
+            },
             {
               "name": "Caleb Williams",
               "position_id": 1,
@@ -1602,23 +1619,6 @@
               "game_detail": "11:30 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
               "stat_line": "26 YDS",
-              "injury_status": null
-            },
-            {
-              "name": "Cairo Santos",
-              "position_id": 5,
-              "is_starter": true,
-              "slot_id": 17,
-              "points": 0.0,
-              "pro_team_id": 3,
-              "game_status": "live",
-              "opponent": "NE",
-              "own_score": 0,
-              "opp_score": 0,
-              "is_home": true,
-              "game_detail": "11:30 - 1st",
-              "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": null,
               "injury_status": null
             },
             {
@@ -3718,7 +3718,7 @@
             "optimal_points": 1.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 3
+            "rank": 4
           },
           "season_stats": {
             "weeks_played": 7,
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T00:28:19.026967+00:00",
+          "week": 7,
+          "team_id": 31,
+          "points_before": 0.0,
+          "points_after": 4.0,
+          "delta": 4.0,
+          "is_starter": true,
+          "player": "Cairo Santos",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
           "detected_at": "2026-10-23T00:25:21.928299+00:00",
           "week": 6,
           "team_id": 32,
@@ -5065,18 +5077,6 @@
           "player": "Brock Purdy",
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson"
-        },
-        {
-          "detected_at": "2026-10-20T01:33:18.720871+00:00",
-          "week": 6,
-          "team_id": 15,
-          "points_before": 12.0,
-          "points_after": 13.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "George Kittle",
-          "team_name": "Uncle Rico's QB Camp",
-          "manager": "Ben Williams"
         }
       ],
       "alerts": {
