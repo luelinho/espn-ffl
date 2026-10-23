@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:10:35.483476+00:00",
+  "generated_at": "2026-10-23T02:12:04.898630+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -314,7 +314,7 @@
             "a": {
               "team_id": 19,
               "name": "Shivakamini Somakandarkram",
-              "score": 18.0
+              "score": 19.0
             },
             "b": {
               "team_id": 17,
@@ -377,19 +377,19 @@
           "is_provisional": false
         },
         {
-          "team_id": 31,
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.9147205826870296,
-          "bench_points": 222.0,
-          "is_provisional": false
-        },
-        {
           "team_id": 18,
           "team_name": "G.E.T S.O.M.E ",
           "manager": "Donnie Palmer",
           "lineup_efficiency": 0.9121729170076264,
           "bench_points": 258.0,
+          "is_provisional": false
+        },
+        {
+          "team_id": 31,
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson",
+          "lineup_efficiency": 0.9032409908502949,
+          "bench_points": 225.0,
           "is_provisional": false
         },
         {
@@ -1568,9 +1568,9 @@
         "31": {
           "week_stats": {
             "actual_points": 30.0,
-            "optimal_points": 32.0,
-            "efficiency": 0.9375,
-            "bench_points": 2.0,
+            "optimal_points": 35.0,
+            "efficiency": 0.8571428571428571,
+            "bench_points": 5.0,
             "rank": 2
           },
           "season_stats": {
@@ -1582,8 +1582,8 @@
               "l": 5,
               "t": 0
             },
-            "lineup_efficiency": 0.9147205826870296,
-            "total_bench_points": 222.0,
+            "lineup_efficiency": 0.9032409908502949,
+            "total_bench_points": 225.0,
             "is_provisional": false
           },
           "roster": [
@@ -1745,7 +1745,7 @@
               "position_id": 4,
               "is_starter": false,
               "slot_id": 20,
-              "points": 2.0,
+              "points": 5.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -1754,7 +1754,7 @@
               "is_home": false,
               "game_detail": "9:41 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1 REC, 16 YDS",
+              "stat_line": "2 REC, 30 YDS",
               "injury_status": null
             },
             {
@@ -3714,15 +3714,15 @@
         },
         "19": {
           "week_stats": {
-            "actual_points": 18.0,
-            "optimal_points": 18.0,
+            "actual_points": 19.0,
+            "optimal_points": 19.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 687.0,
+            "points_for": 688.0,
             "points_against": 627.0,
             "record": {
               "w": 4,
@@ -3739,7 +3739,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 18.0,
+              "points": 19.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -3748,7 +3748,7 @@
               "is_home": false,
               "game_detail": "9:41 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "169 YDS, TD, INT",
+              "stat_line": "183 YDS, TD, INT",
               "injury_status": null
             },
             {
@@ -4002,7 +4002,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 629.0,
-            "points_against": 609.0,
+            "points_against": 610.0,
             "record": {
               "w": 2,
               "l": 4,
@@ -4839,6 +4839,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T02:11:47.491981+00:00",
+          "week": 7,
+          "team_id": 31,
+          "points_before": 2.0,
+          "points_after": 5.0,
+          "delta": 3.0,
+          "is_starter": false,
+          "player": "Hunter Henry",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
+          "detected_at": "2026-10-23T02:11:47.489954+00:00",
+          "week": 7,
+          "team_id": 19,
+          "points_before": 18.0,
+          "points_after": 19.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Shivakamini Somakandarkram",
+          "manager": "Kenneth Strack"
+        },
+        {
           "detected_at": "2026-10-23T02:07:18.454819+00:00",
           "week": 7,
           "team_id": 31,
@@ -5053,30 +5077,6 @@
           "player": "Caleb Williams",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-23T01:34:19.397237+00:00",
-          "week": 7,
-          "team_id": 25,
-          "points_before": 10.0,
-          "points_after": 13.0,
-          "delta": 3.0,
-          "is_starter": true,
-          "player": "Luther Burden III",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-23T01:29:56.774876+00:00",
-          "week": 7,
-          "team_id": 31,
-          "points_before": 5.0,
-          "points_after": 6.0,
-          "delta": 1.0,
-          "is_starter": true,
-          "player": "Caleb Williams",
-          "team_name": "Father Drew",
-          "manager": "Andrew Williamson"
         }
       ],
       "alerts": {
@@ -5104,7 +5104,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 1618731 week 7 team 19: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=18.0"
+            "description": "League 1618731 week 7 team 19: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=19.0"
           }
         ],
         "total_unresolved": 92
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 16.96
+              "score": 17.52
             },
             "live": true
           },
@@ -5393,7 +5393,7 @@
             "b": {
               "team_id": 12,
               "name": "God of Warren",
-              "score": 2.6
+              "score": 5.0
             },
             "live": true
           },
@@ -5521,7 +5521,7 @@
         "season_stats": {
           "weeks_played": 7,
           "points_for": 685.96,
-          "points_against": 756.04,
+          "points_against": 758.44,
           "record": {
             "w": 3,
             "l": 3,
@@ -5847,7 +5847,7 @@
             "optimal_points": 2.8,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 6
+            "rank": 7
           },
           "season_stats": {
             "weeks_played": 7,
@@ -6748,15 +6748,15 @@
         },
         "12": {
           "week_stats": {
-            "actual_points": 2.6,
-            "optimal_points": 2.6,
+            "actual_points": 5.0,
+            "optimal_points": 5.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 7
+            "rank": 6
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 670.06,
+            "points_for": 672.46,
             "points_against": 673.46,
             "record": {
               "w": 1,
@@ -6773,7 +6773,7 @@
               "position_id": 4,
               "is_starter": true,
               "slot_id": 6,
-              "points": 2.6,
+              "points": 5.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -6782,7 +6782,7 @@
               "is_home": false,
               "game_detail": "9:41 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1 REC, 16 YDS",
+              "stat_line": "2 REC, 30 YDS",
               "injury_status": null
             },
             {
@@ -8271,7 +8271,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 685.96,
-            "points_against": 756.04,
+            "points_against": 758.44,
             "record": {
               "w": 3,
               "l": 3,
@@ -8592,15 +8592,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 16.96,
-            "optimal_points": 16.96,
+            "actual_points": 17.52,
+            "optimal_points": 17.52,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 764.48,
+            "points_for": 765.04,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8617,7 +8617,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 16.96,
+              "points": 17.52,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8626,7 +8626,7 @@
               "is_home": false,
               "game_detail": "9:41 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "169 YDS, TD, INT",
+              "stat_line": "183 YDS, TD, INT",
               "injury_status": null
             },
             {
@@ -8914,7 +8914,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 645.24,
+            "points_against": 645.8000000000001,
             "record": {
               "w": 5,
               "l": 1,
@@ -9868,6 +9868,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T02:11:52.286608+00:00",
+          "week": 7,
+          "team_id": 12,
+          "points_before": 2.6,
+          "points_after": 5.0,
+          "delta": 2.4,
+          "is_starter": true,
+          "player": "Hunter Henry",
+          "team_name": "God of Warren",
+          "manager": "Spencer Gillis"
+        },
+        {
+          "detected_at": "2026-10-23T02:11:52.282848+00:00",
+          "week": 7,
+          "team_id": 2,
+          "points_before": 16.96,
+          "points_after": 17.52,
+          "delta": 0.56,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
           "detected_at": "2026-10-23T02:07:23.337178+00:00",
           "week": 7,
           "team_id": 11,
@@ -10082,30 +10106,6 @@
           "player": "D'Andre Swift",
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-23T01:34:26.480572+00:00",
-          "week": 7,
-          "team_id": 8,
-          "points_before": 4.84,
-          "points_after": 5.72,
-          "delta": 0.88,
-          "is_starter": true,
-          "player": "Caleb Williams",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-23T01:34:26.479745+00:00",
-          "week": 7,
-          "team_id": 6,
-          "points_before": 11.1,
-          "points_after": 14.3,
-          "delta": 3.2,
-          "is_starter": true,
-          "player": "Luther Burden III",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
@@ -10113,7 +10113,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 7 team 12: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=2.6"
+            "description": "League 581297461 week 7 team 12: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=5.0"
           },
           {
             "severity": "warning",
