@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T00:42:04.750452+00:00",
+  "generated_at": "2026-10-23T00:43:36.364501+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -433,14 +433,6 @@
           "is_provisional": false
         },
         {
-          "team_id": 12,
-          "team_name": "Auto Drafted \ud83d\ude43",
-          "manager": "Marvin Cox",
-          "lineup_efficiency": 0.8514132093071947,
-          "bench_points": 286.0,
-          "is_provisional": false
-        },
-        {
           "team_id": 30,
           "team_name": "Fleetwood Mac S3x Pants",
           "manager": "Ken Nilson",
@@ -462,6 +454,14 @@
           "manager": "Kelsey Prince",
           "lineup_efficiency": 0.78725001496663,
           "bench_points": 310.0,
+          "is_provisional": false
+        },
+        {
+          "team_id": 12,
+          "team_name": "Auto Drafted \ud83d\ude43",
+          "manager": "Marvin Cox",
+          "lineup_efficiency": 0.7297827508347383,
+          "bench_points": 287.0,
           "is_provisional": false
         }
       ],
@@ -748,9 +748,9 @@
         "12": {
           "week_stats": {
             "actual_points": 0.0,
-            "optimal_points": 0.0,
-            "efficiency": null,
-            "bench_points": 0.0,
+            "optimal_points": 1.0,
+            "efficiency": 0.0,
+            "bench_points": 1.0,
             "rank": 6
           },
           "season_stats": {
@@ -762,8 +762,8 @@
               "l": 5,
               "t": 0
             },
-            "lineup_efficiency": 0.8514132093071947,
-            "total_bench_points": 286.0,
+            "lineup_efficiency": 0.7297827508347383,
+            "total_bench_points": 287.0,
             "is_provisional": false
           },
           "roster": [
@@ -925,7 +925,7 @@
               "position_id": 3,
               "is_starter": false,
               "slot_id": 20,
-              "points": 0.0,
+              "points": 1.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -934,7 +934,7 @@
               "is_home": false,
               "game_detail": "5:11 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": null,
+              "stat_line": "1 REC, -1 YDS",
               "injury_status": null
             },
             {
@@ -3748,7 +3748,7 @@
               "is_home": false,
               "game_detail": "5:11 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "33 YDS",
+              "stat_line": "32 YDS",
               "injury_status": null
             },
             {
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T00:43:17.643554+00:00",
+          "week": 7,
+          "team_id": 12,
+          "points_before": 0.0,
+          "points_after": 1.0,
+          "delta": 1.0,
+          "is_starter": false,
+          "player": "DeMario Douglas",
+          "team_name": "Auto Drafted \ud83d\ude43",
+          "manager": "Marvin Cox"
+        },
+        {
           "detected_at": "2026-10-23T00:40:18.434275+00:00",
           "week": 7,
           "team_id": 25,
@@ -5065,18 +5077,6 @@
           "player": "Eddy Pineiro",
           "team_name": "Maybe to much Jagging off? ",
           "manager": "Ryan Gajda"
-        },
-        {
-          "detected_at": "2026-10-20T01:36:18.520943+00:00",
-          "week": 6,
-          "team_id": 32,
-          "points_before": 17.0,
-          "points_after": 23.0,
-          "delta": 6.0,
-          "is_starter": true,
-          "player": "Christian McCaffrey",
-          "team_name": "Bama boys heavy 251",
-          "manager": "Nkhrumba Overton Jr."
         }
       ],
       "alerts": {
@@ -5336,7 +5336,7 @@
             "a": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 0.0
+              "score": 0.9
             },
             "b": {
               "team_id": 5,
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 1.32
+              "score": 1.28
             },
             "live": true
           },
@@ -5422,19 +5422,19 @@
           "is_provisional": false
         },
         {
+          "team_id": 1,
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels",
+          "lineup_efficiency": 0.9201595495253219,
+          "bench_points": 357.08,
+          "is_provisional": false
+        },
+        {
           "team_id": 2,
           "team_name": "Mile High Club",
           "manager": "Bryan Rogers",
           "lineup_efficiency": 0.909396946597764,
           "bench_points": 350.12,
-          "is_provisional": false
-        },
-        {
-          "team_id": 1,
-          "team_name": "Double D Kupps",
-          "manager": "Omar Teugels",
-          "lineup_efficiency": 0.9068528077795421,
-          "bench_points": 357.08,
           "is_provisional": false
         },
         {
@@ -6435,22 +6435,22 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 0.0,
-            "optimal_points": 0.0,
-            "efficiency": null,
+            "actual_points": 0.9,
+            "optimal_points": 0.9,
+            "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 5
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 783.88,
+            "points_for": 784.78,
             "points_against": 679.1,
             "record": {
               "w": 3,
               "l": 3,
               "t": 0
             },
-            "lineup_efficiency": 0.9068528077795421,
+            "lineup_efficiency": 0.9201595495253219,
             "total_bench_points": 357.08,
             "is_provisional": false
           },
@@ -6460,7 +6460,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 0.0,
+              "points": 0.9,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -6469,7 +6469,7 @@
               "is_home": false,
               "game_detail": "5:11 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": null,
+              "stat_line": "1 REC, -1 YDS",
               "injury_status": null
             },
             {
@@ -7975,7 +7975,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 838.34,
-            "points_against": 684.94,
+            "points_against": 685.84,
             "record": {
               "w": 6,
               "l": 0,
@@ -8592,15 +8592,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 1.32,
-            "optimal_points": 1.32,
+            "actual_points": 1.28,
+            "optimal_points": 1.28,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 748.84,
+            "points_for": 748.8,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8617,7 +8617,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 1.32,
+              "points": 1.28,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8626,7 +8626,7 @@
               "is_home": false,
               "game_detail": "5:11 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "33 YDS",
+              "stat_line": "32 YDS",
               "injury_status": null
             },
             {
@@ -8914,7 +8914,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 629.6,
+            "points_against": 629.5600000000001,
             "record": {
               "w": 5,
               "l": 1,
@@ -9868,6 +9868,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T00:43:22.468290+00:00",
+          "week": 7,
+          "team_id": 1,
+          "points_before": 0.0,
+          "points_after": 0.9,
+          "delta": 0.9,
+          "is_starter": true,
+          "player": "DeMario Douglas",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-23T00:40:23.269165+00:00",
           "week": 7,
           "team_id": 10,
@@ -10094,18 +10106,6 @@
           "player": "Jayden Daniels",
           "team_name": "Spider 2 Y Banana",
           "manager": "Stacks Harrison"
-        },
-        {
-          "detected_at": "2026-10-20T01:55:53.300379+00:00",
-          "week": 6,
-          "team_id": 9,
-          "points_before": 1.7,
-          "points_after": 2.3,
-          "delta": 0.6,
-          "is_starter": true,
-          "player": "Rachaad White",
-          "team_name": "Spider 2 Y Banana",
-          "manager": "Stacks Harrison"
         }
       ],
       "alerts": {
@@ -10123,20 +10123,20 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
+            "description": "League 581297461 week 7 team 1: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=0.9"
+          },
+          {
+            "severity": "warning",
+            "category": "team_total_mismatch",
             "description": "League 581297461 week 7 team 6: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=3.6"
           },
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 7 team 2: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=1.32"
-          },
-          {
-            "severity": "warning",
-            "category": "team_total_mismatch",
-            "description": "League 581297461 week 6 team 12: ESPN mMatchup.totalPoints=88.24 vs. summed roster points=108.94"
+            "description": "League 581297461 week 7 team 2: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=1.28"
           }
         ],
-        "total_unresolved": 76
+        "total_unresolved": 77
       }
     }
   },
