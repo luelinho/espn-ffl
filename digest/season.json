@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T03:18:11.342032+00:00",
+  "generated_at": "2026-10-23T03:19:48.471982+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -934,7 +934,7 @@
               "is_home": false,
               "game_detail": "1:34 - 4th",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "2 REC, 7 YDS",
+              "stat_line": "3 REC, 23 YDS",
               "injury_status": null
             },
             {
@@ -3748,7 +3748,7 @@
               "is_home": false,
               "game_detail": "1:34 - 4th",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "305 YDS, 2 TD, INT",
+              "stat_line": "321 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -5336,7 +5336,7 @@
             "a": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 2.7
+              "score": 5.3
             },
             "b": {
               "team_id": 5,
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 26.8
+              "score": 27.44
             },
             "live": true
           },
@@ -6435,15 +6435,15 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 2.7,
-            "optimal_points": 2.7,
+            "actual_points": 5.3,
+            "optimal_points": 5.3,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 8
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 786.58,
+            "points_for": 789.18,
             "points_against": 679.1,
             "record": {
               "w": 3,
@@ -6460,7 +6460,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 2.7,
+              "points": 5.3,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -6469,7 +6469,7 @@
               "is_home": false,
               "game_detail": "1:34 - 4th",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "2 REC, 7 YDS",
+              "stat_line": "3 REC, 23 YDS",
               "injury_status": null
             },
             {
@@ -7992,7 +7992,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 838.34,
-            "points_against": 687.64,
+            "points_against": 690.24,
             "record": {
               "w": 6,
               "l": 0,
@@ -8609,15 +8609,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 26.8,
-            "optimal_points": 26.8,
+            "actual_points": 27.44,
+            "optimal_points": 27.44,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 774.32,
+            "points_for": 774.96,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8634,7 +8634,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 26.8,
+              "points": 27.44,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8643,7 +8643,7 @@
               "is_home": false,
               "game_detail": "1:34 - 4th",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "305 YDS, 2 TD, INT",
+              "stat_line": "321 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -8931,7 +8931,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 655.08,
+            "points_against": 655.72,
             "record": {
               "w": 5,
               "l": 1,
@@ -9881,6 +9881,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T03:19:32.502398+00:00",
+          "week": 7,
+          "team_id": 2,
+          "points_before": 26.8,
+          "points_after": 27.44,
+          "delta": 0.64,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
+          "detected_at": "2026-10-23T03:19:32.502144+00:00",
+          "week": 7,
+          "team_id": 1,
+          "points_before": 2.7,
+          "points_after": 5.3,
+          "delta": 2.6,
+          "is_starter": true,
+          "player": "DeMario Douglas",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-23T03:17:56.965466+00:00",
           "week": 7,
           "team_id": 12,
@@ -10095,30 +10119,6 @@
           "player": "Bears D/ST",
           "team_name": "Johnny Sins",
           "manager": "Gib Terwilliger"
-        },
-        {
-          "detected_at": "2026-10-23T02:55:28.918969+00:00",
-          "week": 7,
-          "team_id": 2,
-          "points_before": 25.6,
-          "points_after": 26.08,
-          "delta": 0.48,
-          "is_starter": true,
-          "player": "Drake Maye",
-          "team_name": "Mile High Club",
-          "manager": "Bryan Rogers"
-        },
-        {
-          "detected_at": "2026-10-23T02:49:22.952766+00:00",
-          "week": 7,
-          "team_id": 11,
-          "points_before": 18.0,
-          "points_after": 19.9,
-          "delta": 1.9,
-          "is_starter": true,
-          "player": "Colston Loveland",
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach"
         }
       ],
       "alerts": {
