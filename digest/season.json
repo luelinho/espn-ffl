@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T03:13:48.906813+00:00",
+  "generated_at": "2026-10-23T03:15:24.750547+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -293,7 +293,7 @@
             "b": {
               "team_id": 31,
               "name": "Father Drew",
-              "score": 34.0
+              "score": 39.0
             },
             "live": true
           },
@@ -396,7 +396,7 @@
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.8863820733702594,
+          "lineup_efficiency": 0.8900357087374496,
           "bench_points": 232.0,
           "is_provisional": false
         },
@@ -1297,7 +1297,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 708.0,
-            "points_against": 763.0,
+            "points_against": 768.0,
             "record": {
               "w": 3,
               "l": 3,
@@ -1567,22 +1567,22 @@
         },
         "31": {
           "week_stats": {
-            "actual_points": 34.0,
-            "optimal_points": 46.0,
-            "efficiency": 0.7391304347826086,
+            "actual_points": 39.0,
+            "optimal_points": 51.0,
+            "efficiency": 0.7647058823529411,
             "bench_points": 12.0,
             "rank": 2
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 698.0,
+            "points_for": 703.0,
             "points_against": 664.0,
             "record": {
               "w": 1,
               "l": 5,
               "t": 0
             },
-            "lineup_efficiency": 0.8863820733702594,
+            "lineup_efficiency": 0.8900357087374496,
             "total_bench_points": 232.0,
             "is_provisional": false
           },
@@ -1609,7 +1609,7 @@
               "position_id": 5,
               "is_starter": true,
               "slot_id": 17,
-              "points": 9.0,
+              "points": 14.0,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -1618,7 +1618,7 @@
               "is_home": true,
               "game_detail": "1:46 - 4th",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "2/3 FG, 3/3 XP",
+              "stat_line": "3/4 FG, 3/3 XP",
               "injury_status": null
             },
             {
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T03:14:57.533897+00:00",
+          "week": 7,
+          "team_id": 31,
+          "points_before": 9.0,
+          "points_after": 14.0,
+          "delta": 5.0,
+          "is_starter": true,
+          "player": "Cairo Santos",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
           "detected_at": "2026-10-23T03:07:21.514420+00:00",
           "week": 7,
           "team_id": 25,
@@ -5065,18 +5077,6 @@
           "player": "Drake Maye",
           "team_name": "Shivakamini Somakandarkram",
           "manager": "Kenneth Strack"
-        },
-        {
-          "detected_at": "2026-10-23T02:26:49.000006+00:00",
-          "week": 7,
-          "team_id": 28,
-          "points_before": 16.0,
-          "points_after": 18.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "Colston Loveland",
-          "team_name": "Maybe to much Jagging off? ",
-          "manager": "Ryan Gajda"
         }
       ],
       "alerts": {
