@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T00:31:34.640886+00:00",
+  "generated_at": "2026-10-23T00:33:04.795206+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -1060,7 +1060,7 @@
               "is_home": false,
               "game_detail": "9:46 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1 YDS",
+              "stat_line": "6 YDS",
               "injury_status": null
             },
             {
@@ -5490,7 +5490,7 @@
           "team_name": "I'M RICK JAMES, BLITZ! ",
           "manager": "Katherine DeLoach",
           "lineup_efficiency": 0.7601495987973114,
-          "bench_points": 301.6,
+          "bench_points": 302.1,
           "is_provisional": false
         },
         {
@@ -7358,9 +7358,9 @@
         "11": {
           "week_stats": {
             "actual_points": 0.0,
-            "optimal_points": 3.5,
+            "optimal_points": 4.0,
             "efficiency": 0.0,
-            "bench_points": 3.5,
+            "bench_points": 4.0,
             "rank": 11
           },
           "season_stats": {
@@ -7373,7 +7373,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.7601495987973114,
-            "total_bench_points": 301.6,
+            "total_bench_points": 302.1,
             "is_provisional": false
           },
           "roster": [
@@ -7535,7 +7535,7 @@
               "position_id": 2,
               "is_starter": false,
               "slot_id": 20,
-              "points": 3.5,
+              "points": 4.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -7544,7 +7544,7 @@
               "is_home": false,
               "game_detail": "9:46 - 1st",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1 YDS",
+              "stat_line": "6 YDS",
               "injury_status": null
             },
             {
@@ -9868,6 +9868,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T00:32:52.298831+00:00",
+          "week": 7,
+          "team_id": 11,
+          "points_before": 3.5,
+          "points_after": 4.0,
+          "delta": 0.5,
+          "is_starter": false,
+          "player": "TreVeyon Henderson",
+          "team_name": "I'M RICK JAMES, BLITZ! ",
+          "manager": "Katherine DeLoach"
+        },
+        {
           "detected_at": "2026-10-23T00:31:22.383589+00:00",
           "week": 7,
           "team_id": 11,
@@ -10094,18 +10106,6 @@
           "player": "Eddy Pineiro",
           "team_name": "8 - 9",
           "manager": "Marcus Bess"
-        },
-        {
-          "detected_at": "2026-10-20T01:36:22.899599+00:00",
-          "week": 6,
-          "team_id": 6,
-          "points_before": 18.1,
-          "points_after": 24.2,
-          "delta": 6.1,
-          "is_starter": true,
-          "player": "Christian McCaffrey",
-          "team_name": "Jalen My Way Downtown  ",
-          "manager": "Kimberly DeLoach"
         }
       ],
       "alerts": {
