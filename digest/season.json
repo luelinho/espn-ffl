@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T01:09:05.771608+00:00",
+  "generated_at": "2026-10-23T01:10:38.769431+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -293,7 +293,7 @@
             "b": {
               "team_id": 31,
               "name": "Father Drew",
-              "score": 9.0
+              "score": 10.0
             },
             "live": true
           },
@@ -380,7 +380,7 @@
           "team_id": 31,
           "team_name": "Father Drew",
           "manager": "Andrew Williamson",
-          "lineup_efficiency": 0.897675128141575,
+          "lineup_efficiency": 0.8998396303060773,
           "bench_points": 222.0,
           "is_provisional": false
         },
@@ -1297,7 +1297,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 708.0,
-            "points_against": 738.0,
+            "points_against": 739.0,
             "record": {
               "w": 3,
               "l": 3,
@@ -1567,22 +1567,22 @@
         },
         "31": {
           "week_stats": {
-            "actual_points": 9.0,
-            "optimal_points": 11.0,
-            "efficiency": 0.8181818181818182,
+            "actual_points": 10.0,
+            "optimal_points": 12.0,
+            "efficiency": 0.8333333333333334,
             "bench_points": 2.0,
-            "rank": 3
+            "rank": 2
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 673.0,
+            "points_for": 674.0,
             "points_against": 664.0,
             "record": {
               "w": 1,
               "l": 5,
               "t": 0
             },
-            "lineup_efficiency": 0.897675128141575,
+            "lineup_efficiency": 0.8998396303060773,
             "total_bench_points": 222.0,
             "is_provisional": false
           },
@@ -1609,7 +1609,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 4.0,
+              "points": 5.0,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -1618,7 +1618,7 @@
               "is_home": true,
               "game_detail": "11:33 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "95 YDS",
+              "stat_line": "108 YDS",
               "injury_status": null
             },
             {
@@ -3718,7 +3718,7 @@
             "optimal_points": 9.0,
             "efficiency": 1.0,
             "bench_points": 0.0,
-            "rank": 2
+            "rank": 3
           },
           "season_stats": {
             "weeks_played": 7,
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:10:19.417627+00:00",
+          "week": 7,
+          "team_id": 31,
+          "points_before": 4.0,
+          "points_after": 5.0,
+          "delta": 1.0,
+          "is_starter": true,
+          "player": "Caleb Williams",
+          "team_name": "Father Drew",
+          "manager": "Andrew Williamson"
+        },
+        {
           "detected_at": "2026-10-23T01:05:48.593503+00:00",
           "week": 7,
           "team_id": 19,
@@ -5065,18 +5077,6 @@
           "player": "Brock Purdy",
           "team_name": "Purdy Good Team",
           "manager": "Hayley Hinson"
-        },
-        {
-          "detected_at": "2026-10-23T00:25:21.925633+00:00",
-          "week": 6,
-          "team_id": 19,
-          "points_before": 2.0,
-          "points_after": 15.0,
-          "delta": 13.0,
-          "is_starter": false,
-          "player": "Rachaad White",
-          "team_name": "Shivakamini Somakandarkram",
-          "manager": "Kenneth Strack"
         }
       ],
       "alerts": {
@@ -5375,7 +5375,7 @@
             "a": {
               "team_id": 8,
               "name": "Hawk Tua on my Penix",
-              "score": 3.8
+              "score": 4.32
             },
             "b": {
               "team_id": 3,
@@ -5852,7 +5852,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 545.48,
-            "points_against": 774.14,
+            "points_against": 774.66,
             "record": {
               "w": 2,
               "l": 4,
@@ -7044,15 +7044,15 @@
         },
         "8": {
           "week_stats": {
-            "actual_points": 3.8,
-            "optimal_points": 3.8,
+            "actual_points": 4.32,
+            "optimal_points": 4.32,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 4
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 629.92,
+            "points_for": 630.44,
             "points_against": 813.8,
             "record": {
               "w": 1,
@@ -7069,7 +7069,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 3.8,
+              "points": 4.32,
               "pro_team_id": 3,
               "game_status": "live",
               "opponent": "NE",
@@ -7078,7 +7078,7 @@
               "is_home": true,
               "game_detail": "11:33 - 2nd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "95 YDS",
+              "stat_line": "108 YDS",
               "injury_status": null
             },
             {
@@ -9868,6 +9868,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T01:10:24.259444+00:00",
+          "week": 7,
+          "team_id": 8,
+          "points_before": 3.8,
+          "points_after": 4.32,
+          "delta": 0.52,
+          "is_starter": true,
+          "player": "Caleb Williams",
+          "team_name": "Hawk Tua on my Penix",
+          "manager": "William Millians"
+        },
+        {
           "detected_at": "2026-10-23T01:05:53.387241+00:00",
           "week": 7,
           "team_id": 2,
@@ -10094,18 +10106,6 @@
           "player": "D'Andre Swift",
           "team_name": "LaPorta Authority ",
           "manager": "Luel Waktola"
-        },
-        {
-          "detected_at": "2026-10-23T00:37:21.963367+00:00",
-          "week": 7,
-          "team_id": 10,
-          "points_before": 0.3,
-          "points_after": 0.7,
-          "delta": 0.4,
-          "is_starter": true,
-          "player": "D'Andre Swift",
-          "team_name": "LaPorta Authority ",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -10123,7 +10123,7 @@
           {
             "severity": "warning",
             "category": "team_total_mismatch",
-            "description": "League 581297461 week 7 team 8: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=3.8"
+            "description": "League 581297461 week 7 team 8: ESPN mMatchup.totalPoints=0.0 vs. summed roster points=4.32"
           },
           {
             "severity": "warning",
