@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:31:36.961814+00:00",
+  "generated_at": "2026-10-23T02:33:05.033086+00:00",
   "season_year": 2026,
   "leagues": {
     "1618731": {
@@ -461,7 +461,7 @@
           "team_name": "Auto Drafted \ud83d\ude43",
           "manager": "Marvin Cox",
           "lineup_efficiency": 0.7297827508347383,
-          "bench_points": 287.0,
+          "bench_points": 288.0,
           "is_provisional": false
         }
       ],
@@ -748,9 +748,9 @@
         "12": {
           "week_stats": {
             "actual_points": 0.0,
-            "optimal_points": 1.0,
+            "optimal_points": 2.0,
             "efficiency": 0.0,
-            "bench_points": 1.0,
+            "bench_points": 2.0,
             "rank": 8
           },
           "season_stats": {
@@ -763,7 +763,7 @@
               "t": 0
             },
             "lineup_efficiency": 0.7297827508347383,
-            "total_bench_points": 287.0,
+            "total_bench_points": 288.0,
             "is_provisional": false
           },
           "roster": [
@@ -925,7 +925,7 @@
               "position_id": 3,
               "is_starter": false,
               "slot_id": 20,
-              "points": 1.0,
+              "points": 2.0,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -934,7 +934,7 @@
               "is_home": false,
               "game_detail": "2:50 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1 REC, -1 YDS",
+              "stat_line": "2 REC, 7 YDS",
               "injury_status": null
             },
             {
@@ -3748,7 +3748,7 @@
               "is_home": false,
               "game_detail": "2:50 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "267 YDS, 2 TD, INT",
+              "stat_line": "275 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -4839,6 +4839,18 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T02:32:47.740398+00:00",
+          "week": 7,
+          "team_id": 12,
+          "points_before": 1.0,
+          "points_after": 2.0,
+          "delta": 1.0,
+          "is_starter": false,
+          "player": "DeMario Douglas",
+          "team_name": "Auto Drafted \ud83d\ude43",
+          "manager": "Marvin Cox"
+        },
+        {
           "detected_at": "2026-10-23T02:31:19.395121+00:00",
           "week": 7,
           "team_id": 31,
@@ -5065,18 +5077,6 @@
           "player": "Caleb Williams",
           "team_name": "Father Drew",
           "manager": "Andrew Williamson"
-        },
-        {
-          "detected_at": "2026-10-23T02:04:17.698549+00:00",
-          "week": 7,
-          "team_id": 25,
-          "points_before": 11.0,
-          "points_after": 13.0,
-          "delta": 2.0,
-          "is_starter": true,
-          "player": "D'Andre Swift",
-          "team_name": "Goff Is My Copilot",
-          "manager": "Luel Waktola"
         }
       ],
       "alerts": {
@@ -5336,7 +5336,7 @@
             "a": {
               "team_id": 1,
               "name": "Double D Kupps",
-              "score": 0.9
+              "score": 2.7
             },
             "b": {
               "team_id": 5,
@@ -5367,7 +5367,7 @@
             "b": {
               "team_id": 2,
               "name": "Mile High Club",
-              "score": 24.88
+              "score": 25.2
             },
             "live": true
           },
@@ -6435,15 +6435,15 @@
         },
         "1": {
           "week_stats": {
-            "actual_points": 0.9,
-            "optimal_points": 0.9,
+            "actual_points": 2.7,
+            "optimal_points": 2.7,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 8
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 784.78,
+            "points_for": 786.58,
             "points_against": 679.1,
             "record": {
               "w": 3,
@@ -6460,7 +6460,7 @@
               "position_id": 3,
               "is_starter": true,
               "slot_id": 4,
-              "points": 0.9,
+              "points": 2.7,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -6469,7 +6469,7 @@
               "is_home": false,
               "game_detail": "2:50 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "1 REC, -1 YDS",
+              "stat_line": "2 REC, 7 YDS",
               "injury_status": null
             },
             {
@@ -7992,7 +7992,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 838.34,
-            "points_against": 685.84,
+            "points_against": 687.64,
             "record": {
               "w": 6,
               "l": 0,
@@ -8609,15 +8609,15 @@
         },
         "2": {
           "week_stats": {
-            "actual_points": 24.88,
-            "optimal_points": 24.88,
+            "actual_points": 25.2,
+            "optimal_points": 25.2,
             "efficiency": 1.0,
             "bench_points": 0.0,
             "rank": 1
           },
           "season_stats": {
             "weeks_played": 7,
-            "points_for": 772.4,
+            "points_for": 772.72,
             "points_against": 625.7,
             "record": {
               "w": 5,
@@ -8634,7 +8634,7 @@
               "position_id": 1,
               "is_starter": true,
               "slot_id": 0,
-              "points": 24.88,
+              "points": 25.2,
               "pro_team_id": 17,
               "game_status": "live",
               "opponent": "CHI",
@@ -8643,7 +8643,7 @@
               "is_home": false,
               "game_detail": "2:50 - 3rd",
               "kickoff_utc": "2026-10-23T00:15:00+00:00",
-              "stat_line": "267 YDS, 2 TD, INT",
+              "stat_line": "275 YDS, 2 TD, INT",
               "injury_status": null
             },
             {
@@ -8931,7 +8931,7 @@
           "season_stats": {
             "weeks_played": 7,
             "points_for": 690.22,
-            "points_against": 653.16,
+            "points_against": 653.48,
             "record": {
               "w": 5,
               "l": 1,
@@ -9881,6 +9881,30 @@
       ],
       "scoring_events": [
         {
+          "detected_at": "2026-10-23T02:32:52.402757+00:00",
+          "week": 7,
+          "team_id": 2,
+          "points_before": 24.88,
+          "points_after": 25.2,
+          "delta": 0.32,
+          "is_starter": true,
+          "player": "Drake Maye",
+          "team_name": "Mile High Club",
+          "manager": "Bryan Rogers"
+        },
+        {
+          "detected_at": "2026-10-23T02:32:52.402569+00:00",
+          "week": 7,
+          "team_id": 1,
+          "points_before": 0.9,
+          "points_after": 2.7,
+          "delta": 1.8,
+          "is_starter": true,
+          "player": "DeMario Douglas",
+          "team_name": "Double D Kupps",
+          "manager": "Omar Teugels"
+        },
+        {
           "detected_at": "2026-10-23T02:31:24.328839+00:00",
           "week": 7,
           "team_id": 12,
@@ -10091,30 +10115,6 @@
           "points_before": 13.92,
           "points_after": 18.4,
           "delta": 4.48,
-          "is_starter": true,
-          "player": "Caleb Williams",
-          "team_name": "Hawk Tua on my Penix",
-          "manager": "William Millians"
-        },
-        {
-          "detected_at": "2026-10-23T02:05:52.614328+00:00",
-          "week": 7,
-          "team_id": 11,
-          "points_before": 3.8,
-          "points_after": 8.6,
-          "delta": 4.8,
-          "is_starter": true,
-          "player": "Colston Loveland",
-          "team_name": "I'M RICK JAMES, BLITZ! ",
-          "manager": "Katherine DeLoach"
-        },
-        {
-          "detected_at": "2026-10-23T02:05:52.613226+00:00",
-          "week": 7,
-          "team_id": 8,
-          "points_before": 11.9,
-          "points_after": 13.92,
-          "delta": 2.02,
           "is_starter": true,
           "player": "Caleb Williams",
           "team_name": "Hawk Tua on my Penix",
